@@ -4,10 +4,11 @@
   xmlns:app="http://schemas.android.com/apk/res-auto">
 
   <Preference
-    android:key="@string/pref_osm_profile"
-    android:title="@string/profile"
-    app:singleLineTitle="false"
-    android:order="1"/>
+      android:key="@string/pref_osm_profile"
+      android:order="1"
+      android:title="@string/profile"
+      android:visibility="gone"
+      app:singleLineTitle="false" />
   <androidx.preference.PreferenceCategory
     android:key="@string/pref_settings_general"
     android:title="@string/prefs_group_general"
