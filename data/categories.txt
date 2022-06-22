@@ -176,7 +176,7 @@ cs:2Čerpací stanice|Benzinová pumpa|benzinka
 da:Brændstof|Benzin
 nl:3Benzine
 fi:3Huoltoasema
-fr:3Essence
+fr:3Stations-service|4Essence|4Carburant
 de:3Tankstelle
 hu:Benzinkút
 id:Bahan bakar
@@ -292,7 +292,7 @@ cs:Hotel|Hotely
 da:Hotel|Hoteller
 nl:Hotel|Hotels
 fi:Hotelli|Hotellit
-fr:Hôtel|Hôtels
+fr:Hôtel|Hôtels|4Hébergement
 de:Hotel|Hotels
 hu:Szálloda|Szállodák|Hotel|Hotelek
 id:Hotel|Hotel
@@ -514,6 +514,7 @@ fa:خود پرداز
 @rv
 en:2RV Facilities|4Caravan|Vanlife|5Campervan|5Motorhome
 be:Для аўтадамоў|5Аўтадом|5Трэйлер|5Караван|Дом на колах
+fr:3Aménagements pour camping-car|caravane|mobile home
 ru:Для автодомов|5Автодом|5Трейлер|Дом на колёсах
 ro:Pentru rulote|3Rulotă|RV
 tr:4Karavan Tesisleri
@@ -1767,7 +1768,7 @@ el:Κατάστημα πληροφορικής
 sk:Obchod s výpočtovou technikou
 fa:فروشگاه کامپیوتر
 
-shop-confectionery|@food
+shop-confectionery|craft-confectionery
 en:4Sweets|4confectionery|candies|candy store|U+1F36C|U+1F36D|cake shop|sweetshop|tuck shop|pastry|candy shop|cake shop
 en-AU:Lollies|Candy
 ru:4Кондитерская|кондитерские изделия|сладости|торты|десерты|пирожные
@@ -2172,7 +2173,7 @@ da:4Togstation|4station|3jernbane
 nl:4Station|4spoorwegen|spoor|3trein
 fi:Rautatieasema
 fr:3Gare|4chemin de fer|3train
-de:4Bahnhof|3Haltepunkt|3Station|Zug|Bahn|ÖPNV
+de:4Bahnhof|3Haltepunkt|3Station|Zug|Bahn|ÖPNV|Hbf
 hu:3Vasútállomás|Vasúti megálló|Vonatmegálló|4vonat|4megálló
 id:Rel kereta api
 it:3Stazione ferroviaria|3treno
@@ -3207,6 +3208,29 @@ el:Ενοικιάσεις ποδηλάτων|δίκυκλο|ποδήλατο|ε�
 sk:2Požičovňa bicyklov|bicykle|požičovňa
 sw:Kodi ya baiskeli|baiskeli|kodi
 fa:مکان اجاره دوچرخه
+
+amenity-bicycle_repair_station
+en:4Bicycle Repair Station|cycle|bike|4repair of bicycles
+ar:تصليح الدراجات
+cs:Oprava jízdních kol|4jízdní kolo|3kolo|Oprava
+da:4Cykel reparation
+de:4Fahrradreparatur|Radservicestation|Radreparatur
+es:Reparación de bicicletas|4bicicleta
+fa:تعمیر دوچرخه
+fi:Polkupyörän korjaus
+fr:Réparation de vélos|vélo|bicyclette|réparation
+hu:4Kerékpár javítás|kerékpár
+it:Riparazione di biciclette|4bicicletta|bici
+ja:自転車修理
+ko:자전거 수리
+nl:4Fiets reparatie
+pt:Conserto de bicicleta|4bicicleta
+pt-BR:Oficina de bicicletas|4bicicleta
+ru:4Велоремонт|велосипед|ремонт|ремонт велосипедов
+tr:4Bisiklet tamiri|4Bisiklet
+uk:4Велоремонт|велосипед|ремонт|ремонт велосипедів
+zh-Hans:1自行车修理
+zh-Hant:1自行車修理
 
 amenity-car_sharing
 en:Car Share|3carsharing|car|sharing|U+1F697|U+1F698|U+1F699|carpool|carsharing services|car sharing|4rideshare
@@ -4761,7 +4785,7 @@ it:WC
 ja:お手洗い|便所|厠
 pl:wc|ubikacja|wychodek
 pt:Casa de banho|WC|Sanitários|lavatório
-pt-BR:toalete|wc|sanitários
+pt-BR:toalete|wc|sanitários|lavabo|privada
 es:3Baños|aseos|3lavabo|inodoro|baño|wc
 eu:3Komunak|3konketa
 sv:WC|toalett
@@ -4772,7 +4796,7 @@ sk:3Toalety|wc
 mr:शौचालय
 
 amenity-university
-en:4University|U+1F393
+en:4University|U+1F393|Uni
 ru:4Университет|вуз|4институт
 bg:4Университет|ВУЗ|кампус|4институт|корпус
 ar:جامعة
@@ -7085,6 +7109,14 @@ sk:Mobilný operátor
 fa:اپراتور تلفن همراه
 mr:दूरसंचार कंपनी
 
+craft-beekeeper
+en:Beekeeper
+ru:Пчеловод
+
+craft-blacksmith
+en:Blacksmith
+ru:Кузнец
+
 craft-brewery
 en:Craft brewery|4Brewery|brew house|beer|beer bar|craft beer
 ru:5Пивоварня|пивзавод|производство пива|пивоваренный завод
@@ -7189,6 +7221,14 @@ el:Ηλεκτρολόγος
 sk:4Elektrikár
 fa:برق کار
 mr:इलेक्ट्रिशियन|विद्युत कामगार
+
+craft-electronics_repair
+en:Electronics repair
+ru:Ремонт электроники
+
+craft-handicraft
+en:Handicraft
+ru:Декоратор
 
 craft-metal_construction
 en:5Metal Worker
@@ -7295,6 +7335,10 @@ el:Υποδηματοποιός|τσαγκάρης
 sk:Oprava obuvy
 fa:کفاش
 mr:चांभार
+
+craft-winery
+en:4Winery|Wine
+ru:4Винодельня|Вино
 
 craft-tailor
 en:4Tailor|clothes alteration|alterations
@@ -7885,7 +7929,7 @@ cs:4Veterinář
 da:Dyrlæge
 nl:Dierenarts
 fi:Eläinlääkäri
-fr:Docteur vétérinaire
+fr:Docteur vétérinaire|véto
 de:Tierarzt
 hu:Állatorvos
 id:Dokter Hewan
@@ -8482,7 +8526,7 @@ cs:Automat na nápoje
 da:Automat for drikkevarer|drikkevarer
 nl:Drankautomaat
 fi:Juoma-automaatti
-fr:Distributeur de boissons
+fr:Distributeur de boissons|cannettes
 de:Getränkeautomat
 hu:Italautomata
 id:Mesin penjual minuman
@@ -8514,7 +8558,7 @@ be:Аўтамат з ежай|5перакус|4снэкі
 de:Essensautomat
 es:Máquina expendedora de comida|Comida|Snacks
 eu:4Janaria saltzeko makina|Elikagaia|Askariak
-fr:Distributeur de aliments|Aliments
+fr:Distributeur d'aliments|Aliments
 it:Distributore automatico di alimenti|Macchinetta automatica|Snack
 ru:Автомат с едой|5перекус|4снэки
 uk:Автомат з їжею|5перекус|4снекі
@@ -8621,6 +8665,7 @@ amenity-vending_machine-excrement_bags
 en:5Excrement Bags Dispenser|4Poop Bags|3Dog Poop Bags|Animal Waste
 be:5Мяшкі дзеля экскрыментаў|Какашкі|5Пакеты для какашак
 de:Hundetütenspender|Hundekotsäckchenspender
+fr:5Distributeur de sacs à excréments
 ru:5Пакеты для экскрементов|Какашки|Пакеты для какашек
 tr:5Dışkı torbası dispenseri
 uk:5Мішки для екскрементів|Какашки|5Пакети для какашок
@@ -8630,6 +8675,7 @@ amenity-parcel_locker|@post
 en:4Parcel Locker|4Parcel Pickup
 be:3Паштамат|5Атрыманне пасылак
 de:Paketstation|Paket Abholstation|Paket SB|Paket Versandstation
+fr:Consigne automatique pour colis|3locker
 ru:3Почтомат|Постамат|5Получение посылок
 tr:4koli dolabı
 uk:3Поштомат|5Отримання посилок
@@ -8828,7 +8874,7 @@ cs:Prodej ryb
 da:Fiskehandler
 nl:Visboer|vismarkt|vis|zeevoedsel|schelpdier
 fi:Kalakauppias
-fr:Poissonnier
+fr:Poissonnier|fruits de mer
 de:Fischhändler|Fischmarkt|Fisch|Meeresfrüchte|Schaltier
 hu:Halüzlet
 id:Penjual Ikan
@@ -9039,7 +9085,7 @@ cs:Turistická mapa
 da:Turistkort
 nl:Toeristische kaart|toeristenkaart
 fi:Turistikartta
-fr:Carte touristique
+fr:Carte touristique|Plan
 de:Touristenkarte
 hu:Turistatérkép
 id:Peta wisata
@@ -9667,7 +9713,7 @@ cs:Byty
 da:Lejligheder
 nl:5Appartementen
 fi:Loma-asunnot
-fr:5Appart'hôtel
+fr:5Appart'hôtel|Meublé de tourisme
 de:5Appartements
 hu:5Apartmanok
 id:5Apartemen
@@ -9812,7 +9858,7 @@ el:Παγωτατζίδικο
 es:5Heladería
 eu:5Izozkitegia
 fi:5Jäätelökioski
-fr:Stand de crème glacée
+fr:Stand de crème glacée|Marchand de glaces
 hu:5Fagylaltárus
 id:Kios Es Krim
 it:Chiosco gelati
@@ -10102,7 +10148,7 @@ el:Γυμναστήριο
 es:Gimnasio
 eu:Gimnasioa
 fi:Kuntokeskus
-fr:Station de fitness
+fr:Station de fitness|Parcours de santé
 hu:3Fitneszpark
 id:Stasiun Kebugaran
 it:Centro fitness
@@ -10139,7 +10185,7 @@ el:Ασφαλιστικό γραφείο
 es:Oficina de seguros
 eu:Aseguru bulegoa
 fi:Vakuutuslaitos
-fr:Bureau d’assurance
+fr:Bureau d’assurance|assureur
 hu:Biztosító
 id:Kantor Asuransi
 it:Ufficio assicurazioni
@@ -10494,7 +10540,7 @@ cs:4Videopůjčovna
 da:4Videobutik
 nl:4Videowinkel
 fi:4Videokauppa
-fr:Boutique de vidéos
+fr:Boutique de vidéos|videostore
 de:4Videoshop
 hu:4Videotéka
 id:Toko video
