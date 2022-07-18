@@ -75,7 +75,7 @@
 "bookmarks" = "Markagailuak";
 
 /* Default bookmark list name */
-"core_my_places" = "Nire lekuak";
+"core_my_places" = "Nire tokiak";
 
 /* Editor title above street and house number */
 "address" = "Norabidea";
@@ -431,7 +431,7 @@
 
 "dialog_routing_disclaimer_recommendations" = "— Iradokitako ibilbideak gomendio gisa soilik ulertu behar dira;";
 
-"dialog_routing_disclaimer_borders" = "— Kontuz ibili muga-eremuak dituzten ibilbideetan: gure aplikazioak sortutako ibilbideek batzuetan herrialdeen mugak zeharkatu ditzakete baimendu gabeko lekuetan;";
+"dialog_routing_disclaimer_borders" = "— Kontuz ibili muga-eremuak dituzten ibilbideetan: gure aplikazioak sortutako ibilbideek batzuetan herrialdeen mugak zeharkatu ditzakete baimendu gabeko tokietan;";
 
 "dialog_routing_disclaimer_beware" = "Egon adi eta seguru errepideetan!";
 
@@ -523,9 +523,9 @@
 
 "p2p_start" = "Hasi";
 
-"p2p_from_here" = "Bertatik";
+"p2p_from_here" = "Hemendik";
 
-"p2p_to_here" = "Bidea";
+"p2p_to_here" = "Bidea hona";
 
 "p2p_only_from_current" = "Nabigazioa zure uneko kokapenetik soilik dago erabilgarri.";
 
@@ -601,9 +601,9 @@
 
 "thank_you" = "Eskerrik asko";
 
-"edit_place" = "Editatu lekua";
+"edit_place" = "Editatu tokia";
 
-"place_name" = "Lekuaren izena";
+"place_name" = "Tokiaren izena";
 
 "add_language" = "Gehitu hizkuntza bat";
 
@@ -660,7 +660,7 @@
 
 "editor_add_place_title" = "Gehitu";
 
-"editor_edit_place_name_hint" = "Lekuaren izena";
+"editor_edit_place_name_hint" = "Tokiaren izena";
 
 "editor_edit_place_category_title" = "Kategoria";
 
@@ -696,7 +696,7 @@
 "error_enter_correct_zip_code" = "Mesedez, idatzi posta-kode zuzena";
 
 /* Place Page title for long tap */
-"core_placepage_unknown_place" = "Leku ezezaguna";
+"core_placepage_unknown_place" = "Toki ezezaguna";
 
 "editor_other_info" = "Bidali oharra OSM editoreei";
 
@@ -774,11 +774,11 @@
 
 "editor_reset_edits_button" = "Berreskuratu";
 
-"editor_remove_place_message" = "Gehitutako lekua kendu?";
+"editor_remove_place_message" = "Gehitutako tokia ezabatu?";
 
 "editor_remove_place_button" = "Kendu";
 
-"editor_place_doesnt_exist" = "Lekua ez da existitzen";
+"editor_place_doesnt_exist" = "Tokia ez da existitzen";
 
 "text_more_button" = "…gehi";
 
@@ -838,7 +838,7 @@
 "mobile_data" = "Internet mugikorra";
 
 /* NOTE to translators: please synchronize your translation with the English one. */
-"mobile_data_description" = "Internet mugikorra behar da lekuei buruzko informazio zehatza bistaratzeko, hala nola argazkiak, prezioak eta iritziak.";
+"mobile_data_description" = "Internet mugikorra behar da tokiei buruzko informazio zehatza bistaratzeko, hala nola argazkiak, prezioak eta iritziak.";
 
 "mobile_data_option_never" = "Inoiz erabili";
 
@@ -970,7 +970,7 @@
 
 "speedcam_option_never" = "Inoiz ez";
 
-"place_description_title" = "Leku deskribapena";
+"place_description_title" = "Tokiaren deskribapena";
 
 "speedcams_notice_message" = "Auto - abiadura-kamerei buruz ohartarazten du abiadura muga gainditzeko arriskua badago\nBeti - beti erne kamerei buruz\nInoiz - inoiz ez abisatu kamerari buruz";
 
@@ -1111,7 +1111,7 @@
 
 "food_places" = "Janari";
 
-"tourist_places" = "Leku interesgarriak";
+"tourist_places" = "Toki interesgarriak";
 
 "museums" = "Museoak";
 
@@ -1139,7 +1139,7 @@
 
 "search_in_the_list" = "Bilatu zerrendan";
 
-"religious_places" = "Leku sakratuak";
+"religious_places" = "Erlijio-guneak";
 
 "transit_not_found" = "Metro-nabigazioa oraindik ez dago erabilgarri eskualde honetan";
 
@@ -2368,39 +2368,39 @@
 
 "type.mountain_pass" = "Mountain Pass";
 
-"type.natural" = "Natural";
+"type.natural" = "Natura";
 
-"type.natural.bare_rock" = "Bare Rock";
+"type.natural.bare_rock" = "Harkaitz biluzi";
 
 "type.natural.bay" = "Badia";
 
 "type.natural.beach" = "Hondartza";
 
-"type.natural.beach.sand" = "Sandy Beach";
+"type.natural.beach.sand" = "Hondartza hondartza";
 
-"type.natural.beach.gravel" = "Gravel Beach";
+"type.natural.beach.gravel" = "Legar Hondartza";
 
 "type.natural.cape" = "Lurmuturra";
 
 "type.natural.cave_entrance" = "Haitzuloa";
 
-"type.natural.cliff" = "Cliff";
+"type.natural.cliff" = "Labar";
 
-"type.natural.earth_bank" = "Earth Bank";
+"type.natural.earth_bank" = "Labarra";
 
-"type.man_made.embankment" = "Embankment";
+"type.man_made.embankment" = "Lubeta";
 
-"type.natural.coastline" = "Coastline";
+"type.natural.coastline" = "Itsasertz";
 
 "type.natural.geyser" = "Geyser";
 
 "type.natural.glacier" = "Glaziarra";
 
-"type.natural.grassland" = "Landa";
+"type.natural.grassland" = "Belartza";
 
-"type.natural.heath" = "Heath";
+"type.natural.heath" = "Zakardi";
 
-"type.natural.hot_spring" = "Hot Spring";
+"type.natural.hot_spring" = "Ur termal";
 
 "type.natural.water.lake" = "Lakua";
 
@@ -2414,17 +2414,17 @@
 
 "type.natural.water.river" = "Ibai";
 
-"type.natural.land" = "Land";
+"type.natural.land" = "Lur lehor";
 
-"type.natural.meadow" = "Meadow";
+"type.natural.meadow" = "Belardi";
 
-"type.natural.orchard" = "Orchard";
+"type.natural.orchard" = "Baratzea";
 
 "type.natural.peak" = "Goiena";
 
-"type.natural.saddle" = "Mountain Saddle";
+"type.natural.saddle" = "Mendiko jarlekua";
 
-"type.natural.rock" = "Rock";
+"type.natural.rock" = "Arroka";
 
 "type.natural.scrub" = "Sastrakak";
 
@@ -2434,9 +2434,9 @@
 
 "type.natural.tree" = "Zuhaitza";
 
-"type.natural.tree_row" = "Tree Row";
+"type.natural.tree_row" = "Zuhaitz ilara";
 
-"type.natural.vineyard" = "Vineyard";
+"type.natural.vineyard" = "Mahasti";
 
 "type.natural.volcano" = "Sumendi";
 
@@ -2444,9 +2444,9 @@
 
 "type.natural.wetland" = "Lur paduratsua";
 
-"type.natural.wetland.bog" = "Wetland";
+"type.natural.wetland.bog" = "Zohikaztegi";
 
-"type.natural.wetland.marsh" = "Wetland";
+"type.natural.wetland.marsh" = "Padura";
 
 "type.noexit" = "Dead End";
 
@@ -2764,6 +2764,8 @@
 
 "type.shop.cosmetics" = "Produktu kosmetikoak";
 
+"type.shop.deli" = "Delicatesen Denda";
+
 "type.shop.department_store" = "Denda handiak";
 
 "type.shop.doityourself" = "Burdindegia";
@@ -2775,6 +2777,8 @@
 "type.shop.erotic" = "Sexu denda";
 
 "type.shop.fabric" = "Denda";
+
+"type.shop.farm" = "Baserriko Janari Denda";
 
 "type.shop.florist" = "Loradenda";
 
@@ -2788,13 +2792,21 @@
 
 "type.shop.greengrocer" = "Fruta denda";
 
+"type.shop.grocery" = "Janariak";
+
 "type.shop.hairdresser" = "Barber-denda";
 
-"type.shop.hardware" = "Burdindegia";
+"type.shop.hardware" = "Hardware denda";
+
+"type.shop.health_food" = "Osasuneko Elikagaien Denda";
+
+"type.shop.houseware" = "Etxeko tresneria denda";
 
 "type.shop.jewelry" = "Bitxiak";
 
 "type.shop.kiosk" = "Kioskoa";
+
+"type.shop.kitchen" = "Sukalde-denda";
 
 "type.shop.laundry" = "Garbitegia";
 
@@ -2818,6 +2830,8 @@
 
 "type.shop.outdoor" = "Ekipamendua";
 
+"type.shop.pastry" = "Gozogintza";
+
 "type.shop.pawnbroker" = "Peoia";
 
 "type.shop.pet" = "Animali denda";
@@ -2825,6 +2839,8 @@
 "type.shop.photo" = "Argazkilaritza artikuluak";
 
 "type.shop.seafood" = "Arrain-denda";
+
+"type.shop.second_hand" = "Bigarren eskuko denda";
 
 "type.shop.shoes" = "Zapata-denda";
 
@@ -2853,6 +2869,52 @@
 "type.shop.video_games" = "Bideo-jokoen denda";
 
 "type.shop.wine" = "Ardo-denda";
+
+"type.shop.antiques" = "Antigoalekoak";
+
+"type.shop.art" = "Arte Denda";
+
+"type.shop.baby_goods" = "Haurrentzako denda";
+
+"type.shop.bag" = "Poltsen Denda";
+
+"type.shop.boutique" = "Boutique";
+
+"type.shop.charity" = "Ongintzazko Denda";
+
+"type.shop.cheese" = "Gazta Denda";
+
+"type.shop.craft" = "Arteak eta Eskulanak";
+
+"type.shop.dairy" = "Esnekiak";
+
+"type.shop.electrical" = "Elektrizitate Denda";
+
+"type.shop.fishing" = "Arrantza Denda";
+
+"type.shop.interior_decoration" = "Barruko Apaingarriak";
+
+"type.shop.lottery" = "Loteria Sarrerak";
+
+"type.shop.medical_supply" = "Medikuntza-hornidura";
+
+"type.shop.nutrition_supplements" = "Nutrizio osagarriak";
+
+"type.shop.paint" = "Margoak";
+
+"type.shop.perfumery" = "Lurringintza";
+
+"type.shop.sewing" = "Josteko hornigaiak";
+
+"type.shop.storage_rental" = "Biltegiratzeko alokairua";
+
+"type.shop.tobacco" = "Tabakoa";
+
+"type.shop.trade" = "Lanbideen hornidurak";
+
+"type.shop.watches" = "Erlojuak";
+
+"type.shop.wholesale" = "Handizkako denda";
 
 "type.sport" = "Kirola";
 
@@ -3045,3 +3107,5 @@
 "type.piste_type.sled" = "Sledding Piste";
 
 "type.building_part" = "Eraikin";
+
+"type.amenity.events_venue" = "Ekitaldien Lekua";

@@ -93,7 +93,7 @@
 "eat" = "Dónde comer";
 
 /* Search category for grocery stores; any changes should be duplicated in categories.txt @food! */
-"food" = "Productos";
+"food" = "Alimentación";
 
 /* Search category for public transport; any changes should be duplicated in categories.txt @transport! */
 "transport" = "Transporte";
@@ -123,7 +123,7 @@
 "nightlife" = "Vida nocturna";
 
 /* Search category for water park/disneyland/playground/toys store; any changes should be duplicated in categories.txt @children! */
-"children" = "Descanso con niños";
+"children" = "Ocio en familia";
 
 /* Search category for banks; any changes should be duplicated in categories.txt @bank! */
 "bank" = "Banco";
@@ -153,7 +153,7 @@
 "water" = "Agua";
 
 /* Search category for RV facilities; any changes should be duplicated in categories.txt @rv! */
-"rv" = "RV Facilities";
+"rv" = "Caravanas";
 
 "share_bookmarks_email_body" = "Hola!\n\Adjunto mis marcadores de la aplicación Organic Maps. Por favor, ábrelos si tienes instalado Organic Maps. O, si no lo tienes, descarga la aplicación para tu dispositivo iOS o Android siguiendo este link: https://omaps.app/get?kmz\n¡Disfruta viajando con Organic Maps!";
 
@@ -1431,7 +1431,7 @@
 
 "type.amenity.restaurant" = "Restaurante";
 
-"type.amenity.sanitary_dump_station" = "Holding Tank Dump Station";
+"type.amenity.sanitary_dump_station" = "Estación de vaciado para caravanas";
 
 "type.amenity.school" = "Escuela";
 
@@ -1475,7 +1475,7 @@
 
 "type.amenity.parcel_locker" = "Taquilla de paquetes";
 
-"type.amenity.vending_machine.fuel" = "Fuel Dispenser";
+"type.amenity.vending_machine.fuel" = "Maquina expendedora de combustible";
 
 "type.amenity.veterinary" = "Clínica veterinaria";
 
@@ -1483,7 +1483,7 @@
 
 "type.amenity.waste_disposal" = "Basura";
 
-"type.amenity.waste_transfer_station" = "Waste Transfer Station";
+"type.amenity.waste_transfer_station" = "Estación de transferencia de residuos";
 
 "type.amenity.water_point" = "Fuente de agua";
 
@@ -1577,25 +1577,25 @@
 
 "type.cemetery.grave" = "Tumba";
 
-"type.craft" = "Craft";
+"type.craft" = "Gremios";
 
-"type.craft.beekeeper" = "Beekeeper";
+"type.craft.beekeeper" = "Apicultor";
 
-"type.craft.blacksmith" = "Blacksmith";
+"type.craft.blacksmith" = "Herrero";
 
 "type.craft.brewery" = "Fábrica de cerveza";
 
 "type.craft.carpenter" = "Carpintero";
 
-"type.craft.confectionery" = "Confectionery";
+"type.craft.confectionery" = "Confitería";
 
 "type.craft.electrician" = "Electricista";
 
-"type.craft.electronics_repair" = "Electronics Repair";
+"type.craft.electronics_repair" = "Reparación de aparatos electrónicos";
 
 "type.craft.gardener" = "Paisajista";
 
-"type.craft.handicraft" = "Handicraft";
+"type.craft.handicraft" = "Artesanía";
 
 /* Heating, Ventilation, and Air Conditioning */
 "type.craft.hvac" = "Aire acondicionado";
@@ -1608,11 +1608,11 @@
 
 "type.craft.plumber" = "Fontanero";
 
-"type.craft.sawmill" = "Sawmill";
+"type.craft.sawmill" = "Serrería";
 
 "type.craft.shoemaker" = "Zapatero";
 
-"type.craft.winery" = "Winery";
+"type.craft.winery" = "Bodega";
 
 "type.craft.tailor" = "Sastre";
 
@@ -2368,39 +2368,39 @@
 
 "type.mountain_pass" = "Mountain Pass";
 
-"type.natural" = "Natural";
+"type.natural" = "Naturaleza";
 
-"type.natural.bare_rock" = "Bare Rock";
+"type.natural.bare_rock" = "Roca desnuda";
 
 "type.natural.bay" = "Bahía";
 
 "type.natural.beach" = "Playa";
 
-"type.natural.beach.sand" = "Sandy Beach";
+"type.natural.beach.sand" = "Playa de arena";
 
-"type.natural.beach.gravel" = "Gravel Beach";
+"type.natural.beach.gravel" = "Playa de grava";
 
 "type.natural.cape" = "Cabo";
 
 "type.natural.cave_entrance" = "Cueva";
 
-"type.natural.cliff" = "Cliff";
+"type.natural.cliff" = "Acantilado";
 
-"type.natural.earth_bank" = "Earth Bank";
+"type.natural.earth_bank" = "Acantilado";
 
-"type.man_made.embankment" = "Embankment";
+"type.man_made.embankment" = "Terraplén";
 
-"type.natural.coastline" = "Coastline";
+"type.natural.coastline" = "Costa";
 
 "type.natural.geyser" = "Geiser";
 
 "type.natural.glacier" = "Glaciar";
 
-"type.natural.grassland" = "Campo";
+"type.natural.grassland" = "Herbazal";
 
-"type.natural.heath" = "Heath";
+"type.natural.heath" = "Brezal";
 
-"type.natural.hot_spring" = "Hot Spring";
+"type.natural.hot_spring" = "Aguas termales";
 
 "type.natural.water.lake" = "Lago";
 
@@ -2414,17 +2414,17 @@
 
 "type.natural.water.river" = "Río";
 
-"type.natural.land" = "Land";
+"type.natural.land" = "Tierra";
 
-"type.natural.meadow" = "Meadow";
+"type.natural.meadow" = "Prado";
 
-"type.natural.orchard" = "Orchard";
+"type.natural.orchard" = "Huerto frutal";
 
 "type.natural.peak" = "Cima";
 
-"type.natural.saddle" = "Mountain Saddle";
+"type.natural.saddle" = "Silla de montaña";
 
-"type.natural.rock" = "Rock";
+"type.natural.rock" = "Roca";
 
 "type.natural.scrub" = "Matorrales";
 
@@ -2434,9 +2434,9 @@
 
 "type.natural.tree" = "Árbol";
 
-"type.natural.tree_row" = "Tree Row";
+"type.natural.tree_row" = "Fila de árboles";
 
-"type.natural.vineyard" = "Vineyard";
+"type.natural.vineyard" = "Viña";
 
 "type.natural.volcano" = "Volcán";
 
@@ -2444,9 +2444,9 @@
 
 "type.natural.wetland" = "Terreno pantanoso";
 
-"type.natural.wetland.bog" = "Wetland";
+"type.natural.wetland.bog" = "Turbera";
 
-"type.natural.wetland.marsh" = "Wetland";
+"type.natural.wetland.marsh" = "Ciénaga";
 
 "type.noexit" = "Dead End";
 
@@ -2764,6 +2764,8 @@
 
 "type.shop.cosmetics" = "Productos cosméticos";
 
+"type.shop.deli" = "Tienda de delicatessen";
+
 "type.shop.department_store" = "Grandes almacenes";
 
 "type.shop.doityourself" = "Ferretería";
@@ -2775,6 +2777,8 @@
 "type.shop.erotic" = "Sex Shop";
 
 "type.shop.fabric" = "Tienda";
+
+"type.shop.farm" = "Tienda de alimentos de granja";
 
 "type.shop.florist" = "Floristería";
 
@@ -2788,13 +2792,21 @@
 
 "type.shop.greengrocer" = "Frutería";
 
+"type.shop.grocery" = "Tienda de comestibles";
+
 "type.shop.hairdresser" = "Peluquería";
 
 "type.shop.hardware" = "Ferretería";
 
+"type.shop.health_food" = "Tienda de comida saludable";
+
+"type.shop.houseware" = "Tienda de artículos para el hogar";
+
 "type.shop.jewelry" = "Joyería";
 
 "type.shop.kiosk" = "Quiosco";
+
+"type.shop.kitchen" = "Tienda de cocina";
 
 "type.shop.laundry" = "Lavandería";
 
@@ -2818,6 +2830,8 @@
 
 "type.shop.outdoor" = "Equipamiento";
 
+"type.shop.pastry" = "Pastelería";
+
 "type.shop.pawnbroker" = "Casa de empeños";
 
 "type.shop.pet" = "Tienda de mascotas";
@@ -2825,6 +2839,8 @@
 "type.shop.photo" = "Artículos de fotografía";
 
 "type.shop.seafood" = "Pescadería";
+
+"type.shop.second_hand" = "Tienda de segunda mano";
 
 "type.shop.shoes" = "Zapatería";
 
@@ -2853,6 +2869,52 @@
 "type.shop.video_games" = "Tienda de videojuegos";
 
 "type.shop.wine" = "Tienda de vinos";
+
+"type.shop.antiques" = "Antigüedades";
+
+"type.shop.art" = "Tienda de artes";
+
+"type.shop.baby_goods" = "Tienda de niños";
+
+"type.shop.bag" = "Tienda de bolsos";
+
+"type.shop.boutique" = "Boutique";
+
+"type.shop.charity" = "Tienda de caridad";
+
+"type.shop.cheese" = "Tienda de queso";
+
+"type.shop.craft" = "Artes y manualidades";
+
+"type.shop.dairy" = "Productos lácteos";
+
+"type.shop.electrical" = "Tienda de electricidad";
+
+"type.shop.fishing" = "Tienda de pesca";
+
+"type.shop.interior_decoration" = "Decoraciones interiores";
+
+"type.shop.lottery" = "Boletos de lotería";
+
+"type.shop.medical_supply" = "Suministros médicos";
+
+"type.shop.nutrition_supplements" = "Suplementos Nutricionales";
+
+"type.shop.paint" = "Pinturas";
+
+"type.shop.perfumery" = "Perfumería";
+
+"type.shop.sewing" = "Materiales de costura";
+
+"type.shop.storage_rental" = "Alquiler de almacenamiento";
+
+"type.shop.tobacco" = "Tabaco";
+
+"type.shop.trade" = "Suministros comerciales";
+
+"type.shop.watches" = "Relojes";
+
+"type.shop.wholesale" = "Almacén al por mayor";
 
 "type.sport" = "Deporte";
 
@@ -3045,3 +3107,5 @@
 "type.piste_type.sled" = "Sledding Piste";
 
 "type.building_part" = "Edificio";
+
+"type.amenity.events_venue" = "Lugar de los eventos";
