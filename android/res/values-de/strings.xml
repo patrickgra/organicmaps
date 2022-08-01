@@ -467,7 +467,7 @@
 	<!-- Error that appears after certain time without location. -->
 	<string name="current_location_unknown_message">Standort nicht gefunden. Möglicherweise befinden Sie sich in einem Gebäude oder einem Tunnel.</string>
 	<string name="current_location_unknown_continue_button">Fortsetzen</string>
-	<string name="current_location_unknown_stop_button">Anhalten</string>
+	<string name="current_location_unknown_stop_button">Beenden</string>
 	<string name="meter">m</string>
 	<string name="kilometer">km</string>
 	<string name="kilometers_per_hour">km/h</string>

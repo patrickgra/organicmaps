@@ -12949,7 +12949,7 @@
     bg = Стоп
     cs = Zastavit
     da = Stop
-    de = Anhalten
+    de = Beenden
     el = Στοπ
     es = Detener
     eu = Gelditu
