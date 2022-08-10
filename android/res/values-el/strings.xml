@@ -336,7 +336,6 @@
 	<string name="routing_arrive">Άφιξη στις %s</string>
 	<string name="categories">Κατηγορίες</string>
 	<string name="history">Ιστορικό</string>
-	<string name="closed">Κλειστό</string>
 	<string name="search_not_found">Ωχ, δεν βρέθηκαν αποτελέσματα.</string>
 	<string name="search_not_found_query">Δοκιμάστε να αλλάξετε τα κριτήρια αναζήτησής σας.</string>
 	<string name="search_history_title">Ιστορικό αναζήτησης</string>
@@ -380,6 +379,7 @@
 	<string name="day_off_today">Κλειστό σήμερα</string>
 	<string name="day_off">Κλειστό</string>
 	<string name="today">Σήμερα</string>
+	<string name="closed">Κλειστό</string>
 	<string name="edit_opening_hours">Επεξεργαστείτε τις ώρες λειτουργίας</string>
 	<string name="no_osm_account">Δεν έχετε λογαριασμό OpenStreetMap;</string>
 	<string name="register_at_openstreetmap">Εγγραφείτε στο OSM</string>
@@ -404,6 +404,7 @@
 	<string name="select_cuisine">Επιλέξτε κουζίνα</string>
 	<!-- login text field -->
 	<string name="email_or_username">Email ή όνομα χρήστη</string>
+	<string name="level">Όροφος</string>
 	<string name="downloader_delete_map_dialog">Όλες οι αλλαγές που έχετε κάνει στο χάρτη θα διαγραφούν μαζί με το χάρτη.</string>
 	<string name="downloader_update_maps">Ενημέρωση χαρτών</string>
 	<string name="downloader_mwm_migration_dialog">Για να δημιουργήσετε μια διαδρομή, πρέπει να ενημερώσετε όλους τους χάρτες και στη συνέχεια να σχεδιάσετε τη διαδρομή ξανά.</string>

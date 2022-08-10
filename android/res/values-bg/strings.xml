@@ -326,7 +326,6 @@
 	<string name="routing_arrive">Пристигане в %s</string>
 	<string name="categories">Категории</string>
 	<string name="history">История</string>
-	<string name="closed">Затворено</string>
 	<string name="search_not_found">За съжаление не са намерени резултати.</string>
 	<string name="search_not_found_query">Опитайте да промените критериите за търсене.</string>
 	<string name="search_history_title">История на търсенията</string>
@@ -368,6 +367,7 @@
 	<string name="day_off_today">Затворено днес</string>
 	<string name="day_off">Затворено</string>
 	<string name="today">Днес</string>
+	<string name="closed">Затворено</string>
 	<string name="edit_opening_hours">Редакция на работното време</string>
 	<string name="no_osm_account">Нямате акаунт в OpenStreetMap?</string>
 	<string name="register_at_openstreetmap">Регистриране в OSM</string>
@@ -393,6 +393,7 @@
 	<string name="select_cuisine">Избор на кухня</string>
 	<!-- login text field -->
 	<string name="email_or_username">Имейл или потребителско име</string>
+	<string name="level">Етаж</string>
 	<string name="downloader_delete_map_dialog">Всички ваши редакции на картата ще бъдат изтрити заедно с нея.</string>
 	<string name="downloader_update_maps">Обновяване на карти</string>
 	<string name="downloader_mwm_migration_dialog">За да създадете маршрут, трябва да актуализирате всички карти и след това да планирате маршрута отново.</string>

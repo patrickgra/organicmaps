@@ -337,7 +337,6 @@
 	<string name="routing_arrive">Aankomst: %s</string>
 	<string name="categories">Categorieën</string>
 	<string name="history">Geschiedenis</string>
-	<string name="closed">Gesloten</string>
 	<string name="search_not_found">Sorry, ik heb niets gevonden.</string>
 	<string name="search_not_found_query">Probeer een andere zoekopdracht.</string>
 	<string name="search_history_title">Zoekgeschiedenis</string>
@@ -379,6 +378,7 @@
 	<string name="day_off_today">Vrije dag vandaag</string>
 	<string name="day_off">Vrije dag</string>
 	<string name="today">Vandaag</string>
+	<string name="closed">Gesloten</string>
 	<string name="edit_opening_hours">Openingsuren bewerken</string>
 	<string name="no_osm_account">Geen account bij OpenStreetMap?</string>
 	<string name="register_at_openstreetmap">Registeren</string>
@@ -402,6 +402,7 @@
 	<string name="select_cuisine">Selecteer Keuken</string>
 	<!-- login text field -->
 	<string name="email_or_username">Emailadres of gebruikersnaam</string>
+	<string name="level">Etage</string>
 	<string name="downloader_delete_map_dialog">Alle wijzigingen aan de kaart zullen samen met de kaart worden verwijderd.</string>
 	<string name="downloader_update_maps">Kaarten updaten</string>
 	<string name="downloader_mwm_migration_dialog">Om een route te creëren, moet je alle kaarten updaten en dan de route opnieuw plannen.</string>

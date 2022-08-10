@@ -503,12 +503,6 @@
 
 "history" = "Riwayat";
 
-"opens_in" = "Opens in %@";
-
-"closes_in" = "Closes in %@";
-
-"closed" = "Tutup";
-
 "search_not_found" = "Maaf, saya tidak menemukan apa pun.";
 
 "search_not_found_query" = "Silakan coba kueri lainnya.";
@@ -578,6 +572,20 @@
 
 "today" = "Hari ini";
 
+"opens_tomorrow_at" = "Opens tomorrow at %@";
+
+"opens_dayoftheweek_at" = "Opens %1$@ at %2$@";
+
+"opens_at" = "Opens at %@";
+
+"opens_in" = "Opens in %@";
+
+"closes_at" = "Closes at %@";
+
+"closes_in" = "Closes in %@";
+
+"closed" = "Tutup";
+
 "add_opening_hours" = "Tambah jam kerja";
 
 "no_osm_account" = "Tidak ada akun di OpenStreetMap?";
@@ -629,6 +637,8 @@
 "email_or_username" = "Surel atau nama pengguna";
 
 "phone" = "Telepon";
+
+"level" = "Tingkat";
 
 "please_note" = "Harap diperhatikan";
 
@@ -749,6 +759,8 @@
 "foot" = "kaki";
 
 "miles_per_hour" = "mpj";
+
+"hour" = "j";
 
 "minute" = "mnt";
 

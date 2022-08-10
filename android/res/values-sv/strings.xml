@@ -333,7 +333,6 @@
 	<string name="routing_arrive">Ankomst: %s</string>
 	<string name="categories">Kategorier</string>
 	<string name="history">Historik</string>
-	<string name="closed">Stängt</string>
 	<string name="search_not_found">Ledsen, jag hittade ingenting.</string>
 	<string name="search_not_found_query">Försök med en annan sökförfrågan.</string>
 	<string name="search_history_title">Sökhistorik</string>
@@ -375,6 +374,7 @@
 	<string name="day_off_today">Stängt idag</string>
 	<string name="day_off">Stängt</string>
 	<string name="today">Idag</string>
+	<string name="closed">Stängt</string>
 	<string name="edit_opening_hours">Redigera öppettider</string>
 	<string name="no_osm_account">Inget konto hos OpenStreetMap?</string>
 	<string name="register_at_openstreetmap">Registrera</string>
@@ -398,6 +398,7 @@
 	<string name="select_cuisine">Välj kök</string>
 	<!-- login text field -->
 	<string name="email_or_username">E-postadress eller användarnamn</string>
+	<string name="level">Våningsplan</string>
 	<string name="downloader_delete_map_dialog">Alla kartändringar kommer att raderas tillsammans med kartan.</string>
 	<string name="downloader_update_maps">Uppdatera kartor</string>
 	<string name="downloader_mwm_migration_dialog">För att skapa en rutt måste du uppdatera alla kartor och sedan planera rutten igen.</string>

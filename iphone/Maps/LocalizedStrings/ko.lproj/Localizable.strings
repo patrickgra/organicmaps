@@ -503,12 +503,6 @@
 
 "history" = "내역";
 
-"opens_in" = "Opens in %@";
-
-"closes_in" = "Closes in %@";
-
-"closed" = "닫음";
-
 "search_not_found" = "죄송합니다. 아무것도 찾지 못했습니다.";
 
 "search_not_found_query" = "다른 쿼리를 시도하십시오.";
@@ -578,6 +572,20 @@
 
 "today" = "오늘";
 
+"opens_tomorrow_at" = "Opens tomorrow at %@";
+
+"opens_dayoftheweek_at" = "Opens %1$@ at %2$@";
+
+"opens_at" = "Opens at %@";
+
+"opens_in" = "Opens in %@";
+
+"closes_at" = "Closes at %@";
+
+"closes_in" = "Closes in %@";
+
+"closed" = "닫음";
+
 "add_opening_hours" = "영업일 추가";
 
 "no_osm_account" = "OpenStreetMap에서 계정이 없습니까?";
@@ -629,6 +637,8 @@
 "email_or_username" = "이메일 또는 사용자 이름";
 
 "phone" = "전화";
+
+"level" = "층";
 
 "please_note" = "참고 사항";
 
@@ -749,6 +759,8 @@
 "foot" = "풋";
 
 "miles_per_hour" = "mph";
+
+"hour" = "t";
 
 "minute" = "min";
 

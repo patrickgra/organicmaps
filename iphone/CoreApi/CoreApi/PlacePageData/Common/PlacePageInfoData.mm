@@ -40,6 +40,19 @@ using namespace osm;
           break;
         case Props::Email:
           _email = ToNSString(rawData.GetEmail());
+          _emailUrl = [NSURL URLWithString:[NSString stringWithFormat:@"mailto:%@", _email]];
+          break;
+        case Props::ContactFacebook:
+          _facebook = ToNSString(rawData.GetFacebookPage());
+          break;
+        case Props::ContactInstagram:
+          _instagram = ToNSString(rawData.GetInstagramPage());
+          break;
+        case Props::ContactTwitter:
+          _twitter = ToNSString(rawData.GetTwitterPage());
+          break;
+        case Props::ContactVk:
+          _vk = ToNSString(rawData.GetVkPage());
           break;
         case Props::Cuisine:
           _cuisine = @(strings::JoinStrings(rawData.GetLocalizedCuisines(), Info::kSubtitleSeparator).c_str());
@@ -50,6 +63,9 @@ using namespace osm;
         case Props::Internet:
           _wifiAvailable = (rawData.GetInternet() == osm::Internet::No)
               ? NSLocalizedString(@"no_available", nil) : NSLocalizedString(@"yes_available", nil);
+          break;
+        case Props::Level:
+          _level = ToNSString(rawData.GetLevel());
           break;
         default:
           break;

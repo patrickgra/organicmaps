@@ -503,12 +503,6 @@
 
 "history" = "Geçmiş";
 
-"opens_in" = "%@ sonra açılıyor";
-
-"closes_in" = "%@ sonra kapanıyor";
-
-"closed" = "Kapalı";
-
 "search_not_found" = "Üzgünüz, hiç bir şey bulamadık.";
 
 "search_not_found_query" = "Lütfen başka bir sorgu girin.";
@@ -578,6 +572,20 @@
 
 "today" = "Bugün";
 
+"opens_tomorrow_at" = "Opens tomorrow at %@";
+
+"opens_dayoftheweek_at" = "Opens %1$@ at %2$@";
+
+"opens_at" = "Opens at %@";
+
+"opens_in" = "%@ sonra açılıyor";
+
+"closes_at" = "Closes at %@";
+
+"closes_in" = "%@ sonra kapanıyor";
+
+"closed" = "Kapalı";
+
 "add_opening_hours" = "Açılış saatlerini ekle";
 
 "no_osm_account" = "OpenStreetMap hesabın yok mu?";
@@ -629,6 +637,8 @@
 "email_or_username" = "E-posta veya kullanıcı adı";
 
 "phone" = "Telefon";
+
+"level" = "Zemin";
 
 "please_note" = "Lütfen dikkat";
 
@@ -749,6 +759,8 @@
 "foot" = "fit";
 
 "miles_per_hour" = "saatte mil";
+
+"hour" = "sa";
 
 "minute" = "dk";
 

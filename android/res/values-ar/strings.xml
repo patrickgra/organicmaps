@@ -359,9 +359,6 @@
 	<string name="routing_arrive">وقت الوصول: %s</string>
 	<string name="categories">التصنيفات</string>
 	<string name="history">سجل البحث</string>
-	<string name="opens_in">يفتح بعد %s</string>
-	<string name="closes_in">يغلق في غضون %s</string>
-	<string name="closed">مغلق</string>
 	<string name="search_not_found">المعذرة، لم أعثر على أية نتائج.</string>
 	<string name="search_not_found_query">يرجى تجربة معاير بحث أخرى.</string>
 	<string name="search_history_title">سجل البحث</string>
@@ -405,6 +402,9 @@
 	<string name="day_off_today">مغلق اليوم</string>
 	<string name="day_off">مغلق</string>
 	<string name="today">اليوم</string>
+	<string name="opens_in">يفتح بعد %s</string>
+	<string name="closes_in">يغلق في غضون %s</string>
+	<string name="closed">مغلق</string>
 	<string name="edit_opening_hours">حرر ساعات العمل</string>
 	<string name="no_osm_account">ليس لديك حساب في خريطة الشارع المفتوحة؟</string>
 	<string name="register_at_openstreetmap">التسجيل في حريطة الشارع المفتوحة</string>
@@ -431,6 +431,7 @@
 	<!-- login text field -->
 	<string name="email_or_username">البريد الإلكتروني أو اسم المستخدم</string>
 	<string name="editor_add_phone">إضافة رقم هاتف</string>
+	<string name="level">طابق</string>
 	<string name="downloader_delete_map_dialog">سيتم حذف جميع التغييرات بالخريطة بالإضافة إلى حذف الخريطة نفسها.</string>
 	<string name="downloader_update_maps">تحديث الخرائط</string>
 	<string name="downloader_mwm_migration_dialog">لإنشاء مسار، فأنت تحتاج إلى تحديث كافة الخرائط ثم إعادة تخطيط المسار مرة أخرى.</string>

@@ -503,12 +503,6 @@
 
 "history" = "Cronologia";
 
-"opens_in" = "Apre tra %@";
-
-"closes_in" = "Chiude tra %@";
-
-"closed" = "Chiuso";
-
 "search_not_found" = "Non ho trovato nulla.";
 
 "search_not_found_query" = "Prova con un'altra ricerca.";
@@ -578,6 +572,20 @@
 
 "today" = "Oggi";
 
+"opens_tomorrow_at" = "Apre domani alle %@";
+
+"opens_dayoftheweek_at" = "Apre %1$@ alle %2$@";
+
+"opens_at" = "Apre alle %@";
+
+"opens_in" = "Apre tra %@";
+
+"closes_at" = "Chiude alle %@";
+
+"closes_in" = "Chiude tra %@";
+
+"closed" = "Chiuso";
+
 "add_opening_hours" = "Aggiungi orari di apertura";
 
 "no_osm_account" = "Non hai un account OpenStreetMap?";
@@ -629,6 +637,8 @@
 "email_or_username" = "E-mail o nome utente";
 
 "phone" = "Telefono";
+
+"level" = "Piano";
 
 "please_note" = "Avviso";
 
@@ -749,6 +759,8 @@
 "foot" = "ft";
 
 "miles_per_hour" = "mph";
+
+"hour" = "h";
 
 "minute" = "min";
 
