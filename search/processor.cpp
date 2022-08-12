@@ -238,6 +238,8 @@ void Processor::SetInputLocale(string const & locale)
 
 void Processor::SetQuery(string const & query, bool categorialRequest /* = false */)
 {
+  LOG(LDEBUG, ("query:", query, "isCategorial:", categorialRequest));
+
   m_query = query;
   m_tokens.clear();
   m_prefix.clear();
@@ -247,38 +249,11 @@ void Processor::SetQuery(string const & query, bool categorialRequest /* = false
   // retrieve all tokens that start with a single hashtag and leave
   // them as is.
 
-  vector<strings::UniString> tokens;
+  Delimiters delims;
   {
-    search::DelimitersWithExceptions delims({'#'});
     auto normalizedQuery = NormalizeAndSimplifyString(query);
     PreprocessBeforeTokenization(normalizedQuery);
-    SplitUniString(normalizedQuery, base::MakeBackInsertFunctor(tokens), delims);
-  }
-
-  search::Delimiters delims;
-  {
-    QueryTokens subTokens;
-    for (auto const & token : tokens)
-    {
-      size_t numHashes = 0;
-      for (; numHashes < token.size() && token[numHashes] == '#'; ++numHashes)
-        ;
-
-      // Splits |token| by hashtags, because all other delimiters are
-      // already removed.
-      subTokens.clear();
-      SplitUniString(token, base::MakeBackInsertFunctor(subTokens), delims);
-      if (subTokens.empty())
-        continue;
-
-      if (numHashes == 1)
-        m_tokens.push_back(strings::MakeUniString("#") + subTokens[0]);
-      else
-        m_tokens.emplace_back(move(subTokens[0]));
-
-      for (size_t i = 1; i < subTokens.size(); ++i)
-        m_tokens.push_back(move(subTokens[i]));
-    }
+    SplitUniString(normalizedQuery, base::MakeBackInsertFunctor(m_tokens), delims);
   }
 
   static_assert(kMaxNumTokens > 0, "");
@@ -542,11 +517,9 @@ void Processor::ForEachCategoryTypeFuzzy(StringSliceBase const & slice, ToDo && 
                                      forward<ToDo>(toDo));
 }
 
-void Processor::Search(SearchParams const & params)
+void Processor::Search(SearchParams params)
 {
   SetDeadline(chrono::steady_clock::now() + params.m_timeout);
-
-  InitEmitter(params);
 
   if (params.m_onStarted)
     params.m_onStarted();
@@ -556,13 +529,11 @@ void Processor::Search(SearchParams const & params)
   {
     Results results;
     results.SetEndMarker(true /* isCancelled */);
-
-    if (params.m_onResults)
-      params.m_onResults(results);
-    else
-      LOG(LERROR, ("OnResults is not set."));
+    params.m_onResults(std::move(results));
     return;
   }
+
+  m_emitter.Init(std::move(params.m_onResults));
 
   bool const viewportSearch = params.m_mode == Mode::Viewport;
 
@@ -906,11 +877,6 @@ void Processor::InitRanker(Geocoder::Params const & geocoderParams,
   params.m_categorialRequest = geocoderParams.IsCategorialRequest();
 
   m_ranker.Init(params, geocoderParams);
-}
-
-void Processor::InitEmitter(SearchParams const & searchParams)
-{
-  m_emitter.Init(searchParams.m_onResults);
 }
 
 void Processor::ClearCaches()
