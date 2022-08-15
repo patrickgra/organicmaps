@@ -1368,6 +1368,12 @@
 
 "type.amenity.parking.underground" = "Parcheggio";
 
+"type.amenity.parking_entrance.private" = "Ingresso parcheggio";
+
+"type.amenity.parking_entrance.permissive" = "Ingresso parcheggio";
+
+"type.amenity.parking_entrance" = "Ingresso parcheggio";
+
 "type.amenity.parking_space" = "Parcheggio";
 
 "type.amenity.parking_space.permissive" = "Parcheggio";
@@ -1375,6 +1381,8 @@
 "type.amenity.parking_space.private" = "Parcheggio";
 
 "type.amenity.parking_space.underground" = "Parcheggio";
+
+"type.amenity.parking_space.disabled" = "Posto auto per disabili";
 
 "type.amenity.payment_terminal" = "Terminale di pagamento";
 

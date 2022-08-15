@@ -1368,6 +1368,12 @@
 
 "type.amenity.parking.underground" = "Parking souterrain";
 
+"type.amenity.parking_entrance.private" = "Entrée du stationnement";
+
+"type.amenity.parking_entrance.permissive" = "Entrée du stationnement";
+
+"type.amenity.parking_entrance" = "Entrée du stationnement";
+
 "type.amenity.parking_space" = "Place de stationnement";
 
 "type.amenity.parking_space.permissive" = "Place de stationnement";
@@ -1375,6 +1381,8 @@
 "type.amenity.parking_space.private" = "Place de stationnement";
 
 "type.amenity.parking_space.underground" = "Place de stationnement";
+
+"type.amenity.parking_space.disabled" = "Place de stationnement handicapé";
 
 "type.amenity.payment_terminal" = "Terminal de paiement";
 

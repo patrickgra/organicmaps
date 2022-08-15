@@ -2188,6 +2188,49 @@
     zh-Hans = 停车场
     zh-Hant = 停車場
 
+  [type.amenity.parking_entrance.private]
+    ref = type.amenity.parking_entrance
+
+  [type.amenity.parking_entrance.permissive]
+    ref = type.amenity.parking_entrance
+
+  [type.amenity.parking_entrance]
+    en = Parking entrance
+    ar = ﺕﺍﺭﺎﻴﺴﻟﺍ ﻑﻮﻗﻭ ﻞﺧﺪﻣ
+    be = Уваход на паркоўку
+    bg = Вход за паркинг
+    cs = Vjezd na parkoviště
+    da = Parkeringsindgang
+    de = Parkplatzeinfahrt
+    el = Είσοδος στάθμευσης
+    es = Entrada al aparcamiento
+    eu = Aparkalekuaren sarrera
+    fa = ﮓﻨﯿﮐﺭﺎﭘ ﯼﺩﻭﺭﻭ
+    fi = Pysäköinti sisäänkäynti
+    fr = Entrée du stationnement
+    he = הינחל הסינכ
+    hu = Parkoló bejárata
+    id = Pintu masuk parkir
+    it = Ingresso parcheggio
+    ja = 駐車場入口
+    ko = 주차장 입구
+    nb = Parkeringsinngang
+    nl = Parkeeringang
+    pl = Wejście na parking
+    pt = Entrada do estacionamento
+    pt-BR = Entrada do estacionamento
+    ro = Intrare parcare
+    ru = Въезд на парковку
+    sk = Vstup na parkovisko
+    sv = Parkering entré
+    sw = Mlango wa maegesho
+    th = ทางเข้าที่จอดรถ
+    tr = Otopark girişi
+    uk = Вхід на паркінг
+    vi = Lối vào bãi đậu xe
+    zh-Hans = 停车场入口
+    zh-Hant = 停車場入口
+
   [type.amenity.parking_space]
     en = Parking Space
     ar = مكان لوقوف السيارات
@@ -2331,6 +2374,42 @@
     vi = Chỗ để xe
     zh-Hans = 停车位
     zh-Hant = 停車地點
+
+  [type.amenity.parking_space.disabled]
+    en = Disabled Parking Space
+    ar = ﺔﺻﺎﺨﻟﺍ ﺕﺎﺟﺎﻴﺘﺣﻻ﻿ﺍ ﻱﻭﺬﻟ ﺕﺍﺭﺎﻴﺴﻟﺍ ﻑﻮﻗﻮﻟ ﻦﻛﺎﻣﺃ
+    be = Паркоўка для інвалідаў
+    bg = Паркомясто за инвалиди
+    cs = Parkovací místo pro invalidy
+    da = Handicapparkeringsplads
+    de = Behindertenparkplatz
+    el = Χώρος στάθμευσης για ΑΜΕΑ
+    es = Plaza de aparcamiento para discapacitados
+    eu = Ezinduentzako aparkalekua
+    fa = ﻦﯿﻟﻮﻠﻌﻣ ﮎﺭﺎﭘ ﯼﺎﺟ
+    fi = Vammaispysäköinti
+    fr = Place de stationnement handicapé
+    he = םיכנל הינח
+    hu = Mozgássérült parkolóhely
+    id = Tempat parkir penyandang cacat
+    it = Posto auto per disabili
+    ja = 身障者用駐車スペース
+    ko = 장애인 주차 공간
+    nb = Parkeringsplass for funksjonshemmede
+    nl = Invalide parkeerplaats
+    pl = Miejsce parkingowe dla niepełnosprawnych
+    pt = Estacionamento para deficientes
+    ro = Loc de parcare pentru persoane cu handicap
+    ru = Парковочное место для инвалидов
+    sk = Parkovacie miesto pre invalidov
+    sv = Handikappparkeringsplats
+    sw = Nafasi ya maegesho iliyozimwa
+    th = ที่จอดรถสำหรับผู้พิการ
+    tr = Engelli park yeri
+    uk = Паркомісце для інвалідів
+    vi = Chỗ đậu xe dành cho người khuyết tật
+    zh-Hans = 残疾人停车位
+    zh-Hant = 殘疾人停車位
 
   [type.amenity.payment_terminal]
     en = Payment Terminal

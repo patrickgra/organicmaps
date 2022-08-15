@@ -789,10 +789,14 @@
 	<string name="type.amenity.parking.permissive">Otopark</string>
 	<string name="type.amenity.parking.private">Otopark</string>
 	<string name="type.amenity.parking.underground">Otopark</string>
+	<string name="type.amenity.parking_entrance.private">Otopark girişi</string>
+	<string name="type.amenity.parking_entrance.permissive">Otopark girişi</string>
+	<string name="type.amenity.parking_entrance">Otopark girişi</string>
 	<string name="type.amenity.parking_space">Park Alanı</string>
 	<string name="type.amenity.parking_space.permissive">Park Alanı</string>
 	<string name="type.amenity.parking_space.private">Park Alanı</string>
 	<string name="type.amenity.parking_space.underground">Park Alanı</string>
+	<string name="type.amenity.parking_space.disabled">Engelli park yeri</string>
 	<string name="type.amenity.payment_terminal">Ödeme Noktası</string>
 	<string name="type.amenity.pharmacy">Eczane</string>
 	<string name="type.amenity.place_of_worship">İbadet Yerleri</string>

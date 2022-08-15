@@ -722,10 +722,14 @@
 	<string name="type.amenity.parking.permissive">Parkir</string>
 	<string name="type.amenity.parking.private">Parkir</string>
 	<string name="type.amenity.parking.underground">Parkir</string>
+	<string name="type.amenity.parking_entrance.private">Pintu masuk parkir</string>
+	<string name="type.amenity.parking_entrance.permissive">Pintu masuk parkir</string>
+	<string name="type.amenity.parking_entrance">Pintu masuk parkir</string>
 	<string name="type.amenity.parking_space">Tempat parkir</string>
 	<string name="type.amenity.parking_space.permissive">Tempat parkir</string>
 	<string name="type.amenity.parking_space.private">Tempat parkir</string>
 	<string name="type.amenity.parking_space.underground">Tempat parkir</string>
+	<string name="type.amenity.parking_space.disabled">Tempat parkir penyandang cacat</string>
 	<string name="type.amenity.payment_terminal">Terminal Pembayaran</string>
 	<string name="type.amenity.pharmacy">Apotek</string>
 	<string name="type.amenity.place_of_worship">Tempat ibadah</string>

@@ -1368,6 +1368,12 @@
 
 "type.amenity.parking.underground" = "ที่จอดรถ";
 
+"type.amenity.parking_entrance.private" = "ทางเข้าที่จอดรถ";
+
+"type.amenity.parking_entrance.permissive" = "ทางเข้าที่จอดรถ";
+
+"type.amenity.parking_entrance" = "ทางเข้าที่จอดรถ";
+
 "type.amenity.parking_space" = "พื้นที่จอดรถ";
 
 "type.amenity.parking_space.permissive" = "พื้นที่จอดรถ";
@@ -1375,6 +1381,8 @@
 "type.amenity.parking_space.private" = "พื้นที่จอดรถ";
 
 "type.amenity.parking_space.underground" = "พื้นที่จอดรถ";
+
+"type.amenity.parking_space.disabled" = "ที่จอดรถสำหรับผู้พิการ";
 
 "type.amenity.payment_terminal" = "จุดชำระเงิน";
 

@@ -1368,6 +1368,12 @@
 
 "type.amenity.parking.underground" = "Parkoviště";
 
+"type.amenity.parking_entrance.private" = "Vjezd na parkoviště";
+
+"type.amenity.parking_entrance.permissive" = "Vjezd na parkoviště";
+
+"type.amenity.parking_entrance" = "Vjezd na parkoviště";
+
 "type.amenity.parking_space" = "Prostor pro parkování";
 
 "type.amenity.parking_space.permissive" = "Prostor pro parkování";
@@ -1375,6 +1381,8 @@
 "type.amenity.parking_space.private" = "Prostor pro parkování";
 
 "type.amenity.parking_space.underground" = "Prostor pro parkování";
+
+"type.amenity.parking_space.disabled" = "Parkovací místo pro invalidy";
 
 "type.amenity.payment_terminal" = "Platební terminál";
 

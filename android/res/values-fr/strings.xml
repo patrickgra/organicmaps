@@ -782,10 +782,14 @@
 	<string name="type.amenity.parking.permissive">Stationnement</string>
 	<string name="type.amenity.parking.private">Stationnement</string>
 	<string name="type.amenity.parking.underground">Parking souterrain</string>
+	<string name="type.amenity.parking_entrance.private">Entrée du stationnement</string>
+	<string name="type.amenity.parking_entrance.permissive">Entrée du stationnement</string>
+	<string name="type.amenity.parking_entrance">Entrée du stationnement</string>
 	<string name="type.amenity.parking_space">Place de stationnement</string>
 	<string name="type.amenity.parking_space.permissive">Place de stationnement</string>
 	<string name="type.amenity.parking_space.private">Place de stationnement</string>
 	<string name="type.amenity.parking_space.underground">Place de stationnement</string>
+	<string name="type.amenity.parking_space.disabled">Place de stationnement handicapé</string>
 	<string name="type.amenity.payment_terminal">Terminal de paiement</string>
 	<string name="type.amenity.pharmacy">Pharmacie</string>
 	<string name="type.amenity.place_of_worship">Lieu de culte</string>

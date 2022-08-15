@@ -741,9 +741,9 @@ barrier|swing_gate;740;
 barrier|chain;741;
 sport|climbing;742;
 sport|yoga;743;
-deprecated|deprecated;744;x
-deprecated|deprecated;745;x
-deprecated|deprecated;746;x
+amenity|parking_entrance;[amenity=parking_entrance];;name;int_name;744;
+amenity|parking_entrance|private;[amenity=parking_entrance][access=private];;name;int_name;745;
+amenity|parking_entrance|permissive;[amenity=parking_entrance][access=permissive];;name;int_name;746;
 deprecated|deprecated;747;x
 deprecated|deprecated;748;x
 deprecated|deprecated;749;x
@@ -836,8 +836,8 @@ deprecated|deprecated;835;x
 deprecated|deprecated;836;x
 deprecated|deprecated;837;x
 deprecated|deprecated;838;x
-deprecated|deprecated;839;x
-deprecated|deprecated;840;x
+landuse|military|danger_area;[landuse=military][military=danger_area][wikipedia?],[landuse=military][military=cordon][wikipedia?];;name;int_name;839;
+boundary|military;840;
 deprecated|deprecated;841;x
 deprecated|deprecated;842;x
 deprecated|deprecated;843;x
@@ -1350,3 +1350,4 @@ recycling|cans;[recycling:cans=yes];;name;int_name;1351;
 recycling|shoes;[recycling:shoes=yes];;name;int_name;1352;
 recycling|green_waste;[recycling:green_waste=yes];;name;int_name;1353;
 recycling|cartons;[recycling:cartons=yes];;name;int_name;1354;
+amenity|parking_space|disabled;[amenity=parking_space][parking_space=disabled];;name;int_name;1355;

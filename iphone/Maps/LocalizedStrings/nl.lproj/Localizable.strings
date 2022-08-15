@@ -1368,6 +1368,12 @@
 
 "type.amenity.parking.underground" = "Parkeerplaats";
 
+"type.amenity.parking_entrance.private" = "Parkeeringang";
+
+"type.amenity.parking_entrance.permissive" = "Parkeeringang";
+
+"type.amenity.parking_entrance" = "Parkeeringang";
+
 "type.amenity.parking_space" = "Parkeerplaats";
 
 "type.amenity.parking_space.permissive" = "Parkeerplaats";
@@ -1375,6 +1381,8 @@
 "type.amenity.parking_space.private" = "Parkeerplaats";
 
 "type.amenity.parking_space.underground" = "Parkeerplaats";
+
+"type.amenity.parking_space.disabled" = "Invalide parkeerplaats";
 
 "type.amenity.payment_terminal" = "Betaalautomaat";
 

@@ -1368,6 +1368,12 @@
 
 "type.amenity.parking.underground" = "停車場";
 
+"type.amenity.parking_entrance.private" = "停車場入口";
+
+"type.amenity.parking_entrance.permissive" = "停車場入口";
+
+"type.amenity.parking_entrance" = "停車場入口";
+
 "type.amenity.parking_space" = "停車地點";
 
 "type.amenity.parking_space.permissive" = "停車地點";
@@ -1375,6 +1381,8 @@
 "type.amenity.parking_space.private" = "停車地點";
 
 "type.amenity.parking_space.underground" = "停車地點";
+
+"type.amenity.parking_space.disabled" = "殘疾人停車位";
 
 "type.amenity.payment_terminal" = "付款終端";
 

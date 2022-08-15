@@ -1368,6 +1368,12 @@
 
 "type.amenity.parking.underground" = "Χώρος στάθμευσης";
 
+"type.amenity.parking_entrance.private" = "Είσοδος στάθμευσης";
+
+"type.amenity.parking_entrance.permissive" = "Είσοδος στάθμευσης";
+
+"type.amenity.parking_entrance" = "Είσοδος στάθμευσης";
+
 "type.amenity.parking_space" = "Χώρος στάθμευσης";
 
 "type.amenity.parking_space.permissive" = "Χώρος στάθμευσης";
@@ -1375,6 +1381,8 @@
 "type.amenity.parking_space.private" = "Χώρος στάθμευσης";
 
 "type.amenity.parking_space.underground" = "Χώρος στάθμευσης";
+
+"type.amenity.parking_space.disabled" = "Χώρος στάθμευσης για ΑΜΕΑ";
 
 "type.amenity.payment_terminal" = "Τερματικό πληρωμών";
 

@@ -749,10 +749,14 @@
 	<string name="type.amenity.parking.permissive">Aparkalekua</string>
 	<string name="type.amenity.parking.private">Aparkalekua</string>
 	<string name="type.amenity.parking.underground">Aparkalekua</string>
+	<string name="type.amenity.parking_entrance.private">Aparkalekuaren sarrera</string>
+	<string name="type.amenity.parking_entrance.permissive">Aparkalekuaren sarrera</string>
+	<string name="type.amenity.parking_entrance">Aparkalekuaren sarrera</string>
 	<string name="type.amenity.parking_space">Aparkaleku</string>
 	<string name="type.amenity.parking_space.permissive">Aparkaleku</string>
 	<string name="type.amenity.parking_space.private">Aparkaleku</string>
 	<string name="type.amenity.parking_space.underground">Aparkaleku</string>
+	<string name="type.amenity.parking_space.disabled">Ezinduentzako aparkalekua</string>
 	<string name="type.amenity.payment_terminal">Ordainketa terminala</string>
 	<string name="type.amenity.pharmacy">Farmazia</string>
 	<string name="type.amenity.place_of_worship">Kultu lekua</string>
