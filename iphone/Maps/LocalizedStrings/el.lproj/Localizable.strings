@@ -590,7 +590,7 @@
 
 "no_osm_account" = "Δεν έχετε λογαριασμό OpenStreetMap;";
 
-"register_at_openstreetmap" = "Εγγραφείτε στο OSM";
+"register_at_openstreetmap" = "Εγγραφείτε στο OpenStreetMap";
 
 "password_8_chars_min" = "Κωδικός πρόσβασης (8 χαρακτήρες ελάχιστο)";
 
@@ -810,10 +810,10 @@
 /* Displayed when saving some edits to the map to warn against publishing personal data */
 "editor_share_to_all_dialog_title" = "Θέλετε να το στείλετε σε όλους τους χρήστες;";
 
-/* iOS Dialog before publishing the modifications to the public map. */
+/* Dialog before publishing the modifications to the public map. */
 "editor_share_to_all_dialog_message_1" = "Βεβαιωθείτε ότι δεν έχετε εισάγει προσωπικά δεδομένα.";
 
-"editor_share_to_all_dialog_message_2" = "Θα ελέγξουμε τις αλλαγές. Εάν έχουμε οποιαδήποτε απορία θα επικοινωνήσουμε μαζί σας μέσω email.";
+"editor_share_to_all_dialog_message_2" = "Οι συντάκτες του OpenStreetMap θα ελέγξουν τις αλλαγές και θα επικοινωνήσουν μαζί σας εάν έχουν απορίες.";
 
 "navigation_stop_button" = "stop";
 
@@ -1216,6 +1216,12 @@
 
 /* edit track screen title */
 "track_title" = "Τροχιά";
+
+/* Telegram group url for the help page */
+"telegram_url" = "https://t.me/OrganicMapsApp";
+
+/* Instagram account url for the help page */
+"instagram_url" = "https://www.instagram.com/organicmaps.app";
 
 
 /********** Types **********/
@@ -2136,9 +2142,27 @@
 
 "type.historic.castle" = "Κάστρο";
 
+"type.historic.castle.castrum" = "Ρωμαϊκό κάστρο";
+
 "type.historic.castle.defensive" = "Κάστρο";
 
+"type.historic.castle.fortified_church" = "Οχυρωμένη εκκλησία";
+
+"type.historic.castle.fortress" = "Φρούριο";
+
+"type.historic.castle.hillfort" = "Φρούριο";
+
+"type.historic.castle.kremlin" = "Κρεμλίνο";
+
+"type.historic.castle.manor" = "Αρχοντικό";
+
+"type.historic.castle.palace" = "Παλάτι";
+
+"type.historic.castle.shiro" = "Ιαπωνικό κάστρο";
+
 "type.historic.castle.stately" = "Κάστρο";
+
+"type.historic.city_gate" = "Πύλη της πόλης";
 
 "type.historic.citywalls" = "City Wall";
 
@@ -2985,9 +3009,9 @@
 
 "type.sport.volleyball" = "Πετοσφαίριση";
 
-"type.sport.9pin" = "Μπόουλινγκ";
-
 "type.sport.10pin" = "Μπόουλινγκ";
+
+"type.sport.9pin" = "Μπόουλινγκ";
 
 "type.sport.padel" = "Padel";
 

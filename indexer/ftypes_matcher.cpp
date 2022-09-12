@@ -519,10 +519,11 @@ AttractionsChecker::AttractionsChecker() : BaseChecker(2 /* level */)
   {
     auto const type = c.GetTypeByPath(e);
     m_types.push_back(type);
-    m_primaryTypes.push_back(type);
   }
-  sort(m_primaryTypes.begin(), m_primaryTypes.end());
+  sort(m_types.begin(), m_types.end());
+  m_additionalTypesStart = m_types.size();
 
+  // Additional types are worse in "hierarchy" priority.
   base::StringIL const additionalAttractionTypes[] = {
       {"tourism", "viewpoint"},
       {"tourism", "attraction"},
@@ -532,23 +533,25 @@ AttractionsChecker::AttractionsChecker() : BaseChecker(2 /* level */)
   {
     auto const type = c.GetTypeByPath(e);
     m_types.push_back(type);
-    m_additionalTypes.push_back(type);
   }
-  sort(m_additionalTypes.begin(), m_additionalTypes.end());
+  sort(m_types.begin() + m_additionalTypesStart, m_types.end());
 }
 
 uint32_t AttractionsChecker::GetBestType(FeatureParams::Types const & types) const
 {
   auto additionalType = ftype::GetEmptyValue();
+  auto const itAdditional = m_types.begin() + m_additionalTypesStart;
+
   for (auto type : types)
   {
     type = PrepareToMatch(type, m_level);
-    if (binary_search(m_primaryTypes.begin(), m_primaryTypes.end(), type))
+    if (binary_search(m_types.begin(), itAdditional, type))
       return type;
 
-    if (binary_search(m_additionalTypes.begin(), m_additionalTypes.end(), type))
+    if (binary_search(itAdditional, m_types.end(), type))
       additionalType = type;
   }
+
   return additionalType;
 }
 
@@ -693,12 +696,16 @@ IsWifiChecker::IsWifiChecker()
   m_types.push_back(classif().GetTypeByPath({"internet_access", "wlan"}));
 }
 
+IsShopChecker::IsShopChecker() : BaseChecker(1)
+{
+  m_types.push_back(classif().GetTypeByPath({"shop"}));
+}
+
 IsEatChecker::IsEatChecker()
 {
   // The order should be the same as in "enum class Type" declaration.
-  /// @todo Should we include shops like: confectionery and pastry, because bakery is already present?
+  /// @todo amenity=ice_cream if we already have biergarten :)
   base::StringIL const types[] = {{"amenity", "cafe"},
-                                  {"shop", "bakery"},
                                   {"amenity", "fast_food"},
                                   {"amenity", "restaurant"},
                                   {"amenity", "bar"},

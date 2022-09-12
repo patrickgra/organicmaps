@@ -235,6 +235,8 @@
 	<string name="help">Hilfe</string>
 	<!-- Button in the main Help dialog -->
 	<string name="faq">Fragen und Antworten</string>
+	<!-- Button in the main menu -->
+	<string name="donate">Spenden</string>
 	<!-- Button in the main Help dialog -->
 	<string name="how_to_support_us">Wie unterstützen Sie uns?</string>
 	<!-- Button in the main Help dialog -->
@@ -406,6 +408,7 @@
 	<string name="no_osm_account">Kein Konto bei OpenStreetMap?</string>
 	<string name="register_at_openstreetmap">Registrieren</string>
 	<string name="login">Anmelden</string>
+	<string name="login_osm">Melden Sie sich bei OpenStreetMap an</string>
 	<string name="password">Passwort</string>
 	<string name="forgot_password">Passwort vergessen?</string>
 	<string name="logout">Abmelden</string>
@@ -447,6 +450,7 @@
 	<string name="editor_report_problem_other_title">Ein anderes Problem</string>
 	<string name="placepage_add_business_button">Organisation hinzufügen</string>
 	<string name="message_invalid_feature_position">Ein Objekt kann hier nicht positioniert werden</string>
+	<string name="osm_presentation">Alle Kartendaten stammen aus dem OpenStreetMap-Projekt. Es ist wie Wikipedia für Karten, wo Sie Orte hinzufügen oder bearbeiten können, und sie werden Millionen von Benutzern auf der ganzen Welt zur Verfügung gestellt.</string>
 	<string name="login_to_make_edits_visible">Melden Sie sich an, damit andere Benutzer Ihre Änderungen sehen können.</string>
 	<!-- Downloaded 10 **of** 20 <- it is that "of" -->
 	<string name="downloader_of">%1$d von %2$d</string>
@@ -507,9 +511,9 @@
 	<string name="placepage_add_place_button">Einen Ort zur Karte hinzufügen</string>
 	<!-- Displayed when saving some edits to the map to warn against publishing personal data -->
 	<string name="editor_share_to_all_dialog_title">An alle Benutzer senden?</string>
-	<!-- iOS Dialog before publishing the modifications to the public map. -->
+	<!-- Dialog before publishing the modifications to the public map. -->
 	<string name="editor_share_to_all_dialog_message_1">Stellen Sie sicher, dass Sie keine persönlichen Daten eingegeben haben.</string>
-	<string name="editor_share_to_all_dialog_message_2">Wir werden die Änderungen prüfen. Wenn wir Fragen haben, werden wir Sie per Email kontaktieren.</string>
+	<string name="editor_share_to_all_dialog_message_2">OpenStreetMap-Redakteure werden die Änderungen prüfen und sich bei Fragen mit Ihnen in Verbindung setzen.</string>
 	<!-- Text under the version number in the Help dialog. TODO: Synchronize other translations with English. -->
 	<string name="about_description">Organic Maps ist eine schnelle und kostenlose Offline-Karten-App ohne Werbung und Tracking. Die Karten basieren auf den Daten von OpenStreetMap.org, so dass Sie selbst Kartenfehler beheben und Orte hinzufügen können. Organic Maps ist ein Open-Source-Projekt, das von Enthusiasten in ihrer Freizeit entwickelt wird. Ihr Feedback und Ihre Unterstützung sind sehr willkommen!</string>
 	<!-- For the first routing -->
@@ -1171,8 +1175,17 @@
 	<string name="type.historic.battlefield">Schlachtfeld</string>
 	<string name="type.historic.boundary_stone">Grenzstein</string>
 	<string name="type.historic.castle">Burg</string>
+	<string name="type.historic.castle.castrum">Römisches Militärlager</string>
 	<string name="type.historic.castle.defensive">Burg</string>
+	<string name="type.historic.castle.fortified_church">Wehrkirche</string>
+	<string name="type.historic.castle.fortress">Festung</string>
+	<string name="type.historic.castle.hillfort">Wallburg</string>
+	<string name="type.historic.castle.kremlin">Kreml</string>
+	<string name="type.historic.castle.manor">Herrenhaus</string>
+	<string name="type.historic.castle.palace">Palais</string>
+	<string name="type.historic.castle.shiro">Japanische Burg</string>
 	<string name="type.historic.castle.stately">Schloss</string>
+	<string name="type.historic.city_gate">Stadttor</string>
 	<string name="type.historic.citywalls">Stadtmauer</string>
 	<string name="type.historic.fort">Festung</string>
 	<string name="type.historic.memorial">Denkmal</string>
@@ -1561,8 +1574,8 @@
 	<string name="type.sport.table_tennis">Tischtennis</string>
 	<string name="type.sport.tennis">Tennisspielfeld</string>
 	<string name="type.sport.volleyball">Volleyball</string>
-	<string name="type.sport.9pin">Bowling</string>
 	<string name="type.sport.10pin">Bowling</string>
+	<string name="type.sport.9pin">Bowling</string>
 	<string name="type.sport.padel">Padel</string>
 	<string name="type.sport.futsal">Futsal</string>
 	<string name="type.sport.ice_hockey">Eishockey</string>

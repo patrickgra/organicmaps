@@ -67,48 +67,50 @@
                 android:text="@string/about_description"
                 android:textAppearance="@style/MwmTextAppearance.Body1" />
 
-            <TextView
-                android:id="@+id/news"
-                style="@style/MwmWidget.TextView.Item"
-                android:text="@string/news"
-                android:visibility="gone"
-                app:drawableStartCompat="@drawable/ic_news" />
+      <TextView android:id="@+id/news"
+          style="@style/MwmWidget.TextView.Item"
+          android:text="@string/news"
+          android:visibility="gone"
+          app:drawableStartCompat="@drawable/ic_news"/>
 
-            <TextView
-                android:id="@+id/faq"
-                style="@style/MwmWidget.TextView.Item"
-                android:text="@string/faq"
-                app:drawableStartCompat="@drawable/ic_question_mark" />
+      <TextView android:id="@+id/faq"
+          style="@style/MwmWidget.TextView.Item"
+          android:text="@string/faq"
+          app:drawableStartCompat="@drawable/ic_question_mark"/>
 
-            <TextView
-                android:id="@+id/report"
-                style="@style/MwmWidget.TextView.Item"
-                android:text="@string/report_a_bug"
-                app:drawableStartCompat="@drawable/ic_report_a_bug" />
+      <TextView android:id="@+id/report"
+          style="@style/MwmWidget.TextView.Item"
+          android:text="@string/report_a_bug"
+          app:drawableStartCompat="@drawable/ic_report_a_bug"/>
 
-            <TextView
-                android:id="@+id/support_us"
-                style="@style/MwmWidget.TextView.Item"
-                android:text="@string/how_to_support_us"
-                android:visibility="gone"
-                app:drawableStartCompat="@drawable/ic_contribute" />
+      <TextView
+          android:id="@+id/donate"
+          style="@style/MwmWidget.TextView.Item"
+          android:text="@string/donate"
+          android:visibility="gone"
+          app:drawableStartCompat="@drawable/ic_donate" />
 
-            <TextView
-                android:id="@+id/rate"
-                style="@style/MwmWidget.TextView.Item"
-                android:text="@string/rate_the_app"
-                android:visibility="gone"
-                app:drawableStartCompat="@drawable/ic_rate" />
+      <TextView
+          android:id="@+id/support_us"
+          style="@style/MwmWidget.TextView.Item"
+          android:text="@string/how_to_support_us"
+          android:visibility="gone"
+          app:drawableStartCompat="@drawable/ic_contribute" />
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginTop="@dimen/margin_quarter"
-                android:layout_marginBottom="@dimen/margin_quarter"
-                android:background="?dividerHorizontal" />
+      <TextView
+          android:id="@+id/rate"
+          style="@style/MwmWidget.TextView.Item"
+          android:text="@string/rate_the_app"
+          android:visibility="gone"
+          app:drawableStartCompat="@drawable/ic_rate" />
 
-            <TextView
-                android:id="@+id/telegram"
+      <View android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:layout_marginTop="@dimen/margin_quarter"
+          android:layout_marginBottom="@dimen/margin_quarter"
+          android:background="?dividerHorizontal"/>
+
+      <TextView android:id="@+id/telegram"
                 style="@style/MwmWidget.TextView.Item"
                 android:text="@string/telegram"
                 android:visibility="gone"

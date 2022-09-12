@@ -139,6 +139,11 @@ public class RichPlacePageController implements PlacePageController, LocationLis
     LocationHelper.INSTANCE.addListener(this);
   }
 
+  public int getPlacePageWidth()
+  {
+    return mPlacePage.getWidth();
+  }
+
   @Override
   public void destroy()
   {
@@ -244,7 +249,10 @@ public class RichPlacePageController implements PlacePageController, LocationLis
 
   private int calculatePeekHeight()
   {
-    final int organicPeekHeight = mPlacePage.getPreviewHeight() + mButtonsLayout.getHeight();
+    // Buttons layout padding is the navigation bar height.
+    // Bottom sheets are displayed above it so we need to remove it from the computed size
+    final int organicPeekHeight = mPlacePage.getPreviewHeight() +
+                                  mButtonsLayout.getHeight() - mButtonsLayout.getPaddingBottom();
     final MapObject object = mPlacePage.getMapObject();
     if (object != null)
     {

@@ -810,10 +810,10 @@
 /* Displayed when saving some edits to the map to warn against publishing personal data */
 "editor_share_to_all_dialog_title" = "Vill du skicka det till alla användare?";
 
-/* iOS Dialog before publishing the modifications to the public map. */
+/* Dialog before publishing the modifications to the public map. */
 "editor_share_to_all_dialog_message_1" = "Se till att du inte angett någon personinformation";
 
-"editor_share_to_all_dialog_message_2" = "Vi kommer att kontrollera ändringar. Om vi har några frågor kontaktar vi dig via e-post.";
+"editor_share_to_all_dialog_message_2" = "OpenStreetMap-redigerare kommer att kontrollera ändringarna och kontakta dig om de har några frågor.";
 
 "navigation_stop_button" = "stopp";
 
@@ -1216,6 +1216,12 @@
 
 /* edit track screen title */
 "track_title" = "Rutt";
+
+/* Telegram group url for the help page */
+"telegram_url" = "https://t.me/OrganicMapsApp";
+
+/* Instagram account url for the help page */
+"instagram_url" = "https://www.instagram.com/organicmaps.app";
 
 
 /********** Types **********/
@@ -2134,11 +2140,29 @@
 
 "type.historic.boundary_stone" = "Boundary Stone";
 
-"type.historic.castle" = "Slott";
+"type.historic.castle" = "Borg";
 
-"type.historic.castle.defensive" = "Slott";
+"type.historic.castle.castrum" = "Castrum";
+
+"type.historic.castle.defensive" = "Borg";
+
+"type.historic.castle.fortified_church" = "Försvarskyrka";
+
+"type.historic.castle.fortress" = "Fästning";
+
+"type.historic.castle.hillfort" = "Fornborg";
+
+"type.historic.castle.kremlin" = "Kreml";
+
+"type.historic.castle.manor" = "Herrgård";
+
+"type.historic.castle.palace" = "Palats";
+
+"type.historic.castle.shiro" = "Japanskt slott";
 
 "type.historic.castle.stately" = "Slott";
+
+"type.historic.city_gate" = "Stadsport";
 
 "type.historic.citywalls" = "City Wall";
 
@@ -2985,9 +3009,9 @@
 
 "type.sport.volleyball" = "Volleyboll";
 
-"type.sport.9pin" = "Bowling";
-
 "type.sport.10pin" = "Bowling";
+
+"type.sport.9pin" = "Bowling";
 
 "type.sport.padel" = "Padel";
 

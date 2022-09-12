@@ -590,7 +590,7 @@
 
 "no_osm_account" = "Нямате акаунт в OpenStreetMap?";
 
-"register_at_openstreetmap" = "Регистриране в OSM";
+"register_at_openstreetmap" = "Регистриране в OpenStreetMap";
 
 "password_8_chars_min" = "Парола (поне 8 символа)";
 
@@ -810,10 +810,10 @@
 /* Displayed when saving some edits to the map to warn against publishing personal data */
 "editor_share_to_all_dialog_title" = "Искате ли да го изпратите на всички потребители?";
 
-/* iOS Dialog before publishing the modifications to the public map. */
+/* Dialog before publishing the modifications to the public map. */
 "editor_share_to_all_dialog_message_1" = "Уверете се, че не сте въвели никакви лични данни.";
 
-"editor_share_to_all_dialog_message_2" = "Ще проверим промените. Ако имаме някакви въпроси, ще се свържем с вас по имейл.";
+"editor_share_to_all_dialog_message_2" = "Редакторите на OpenStreetMap ще проверят промените и ще се свържат с вас, ако имат въпроси.";
 
 "navigation_stop_button" = "stop";
 
@@ -1216,6 +1216,12 @@
 
 /* edit track screen title */
 "track_title" = "Пътека";
+
+/* Telegram group url for the help page */
+"telegram_url" = "https://t.me/OrganicMapsApp";
+
+/* Instagram account url for the help page */
+"instagram_url" = "https://www.instagram.com/organicmaps.app";
 
 
 /********** Types **********/
@@ -2134,11 +2140,29 @@
 
 "type.historic.boundary_stone" = "Boundary Stone";
 
-"type.historic.castle" = "Castle";
+"type.historic.castle" = "Замък";
 
-"type.historic.castle.defensive" = "Castle";
+"type.historic.castle.castrum" = "Каструм";
 
-"type.historic.castle.stately" = "Castle";
+"type.historic.castle.defensive" = "Замък";
+
+"type.historic.castle.fortified_church" = "Укрепена църква";
+
+"type.historic.castle.fortress" = "Крепост";
+
+"type.historic.castle.hillfort" = "Градище";
+
+"type.historic.castle.kremlin" = "Кремъл";
+
+"type.historic.castle.manor" = "Усадба";
+
+"type.historic.castle.palace" = "Дворец";
+
+"type.historic.castle.shiro" = "Японски замък";
+
+"type.historic.castle.stately" = "Замък";
+
+"type.historic.city_gate" = "Градска порта";
 
 "type.historic.citywalls" = "City Wall";
 
@@ -2985,9 +3009,9 @@
 
 "type.sport.volleyball" = "Волейбол";
 
-"type.sport.9pin" = "Боулинг";
-
 "type.sport.10pin" = "Боулинг";
+
+"type.sport.9pin" = "Боулинг";
 
 "type.sport.padel" = "Падел";
 

@@ -240,6 +240,8 @@
 	<string name="help">مساعدة</string>
 	<!-- Button in the main Help dialog -->
 	<string name="faq">اسئلة مكررة</string>
+	<!-- Button in the main menu -->
+	<string name="donate">ﻉﺮﺒﺘﻳ</string>
 	<!-- Button in the main Help dialog -->
 	<string name="how_to_support_us">كيف يمكنك دعمنا؟</string>
 	<!-- Button in the main Help dialog -->
@@ -409,6 +411,7 @@
 	<string name="no_osm_account">ليس لديك حساب في خريطة الشارع المفتوحة؟</string>
 	<string name="register_at_openstreetmap">التسجيل في حريطة الشارع المفتوحة</string>
 	<string name="login">تسجيل الدخول</string>
+	<string name="login_osm">OpenStreetMap ﻰﻟﺇ ﻝﻮﺧﺪﻟﺍ ﻞﻴﺠﺴﺗ</string>
 	<string name="password">كلمة المرور</string>
 	<string name="forgot_password">هل نسيت كلمة المرور؟</string>
 	<string name="logout">تسجيل الخروج</string>
@@ -450,6 +453,7 @@
 	<string name="editor_report_problem_other_title">مشكلة أخرى</string>
 	<string name="placepage_add_business_button">إضافة مؤسسة</string>
 	<string name="message_invalid_feature_position">لا يمكن تحديد موقع الكائن هنا</string>
+	<string name="osm_presentation">.ﻢﻟﺎﻌﻟﺍ ءﺎﺤﻧﺃ ﻊﻴﻤﺟ ﻲﻓ ﻦﻴﻣﺪﺨﺘﺴﻤﻟﺍ ﻦﻴﻳﻼﻤﻟ ﺔﺣﺎﺘﻣ ﺢﺒﺼﺗﻭ ، ﺎﻬﻠﻳﺪﻌﺗ ﻭﺃ ﻦﻛﺎﻣﻷﺍ ﺔﻓﺎﺿﺇ</string>
 	<string name="login_to_make_edits_visible">قم بتسجيل الدخول حتى يتمكن باقي المستخدمين من رؤية التغييرات التي قمت بها.</string>
 	<!-- Downloaded 10 **of** 20 <- it is that "of" -->
 	<string name="downloader_of">%1$d من%2$d</string>
@@ -510,9 +514,9 @@
 	<string name="placepage_add_place_button">إضافة مكان ما للخريطة</string>
 	<!-- Displayed when saving some edits to the map to warn against publishing personal data -->
 	<string name="editor_share_to_all_dialog_title">هل ترغب في إرساله لجميع المستخدمين؟</string>
-	<!-- iOS Dialog before publishing the modifications to the public map. -->
+	<!-- Dialog before publishing the modifications to the public map. -->
 	<string name="editor_share_to_all_dialog_message_1">تأكد من أنك لم تقم بإدخال أية بيانات شخصية.</string>
-	<string name="editor_share_to_all_dialog_message_2">سنقوم بمراجعة هذه التغييرات. إذا كانت لدينا أي أسئلة فسننتواصل معك عبر البريد الإلكتروني.</string>
+	<string name="editor_share_to_all_dialog_message_2">.ﺔﻠﺌﺳﺃ ﻱﺃ ﻢﻬﻳﺪﻟ ﻥﺎﻛ ﺍﺫﺇ ﻚﻌﻣ ﻥﻮﻠﺻﺍﻮﺘﻳﻭ ﺕﺍﺮﻴﻴﻐﺘﻟﺍ ﻦﻣ OpenStreetMap ﻭﺭﺮﺤﻣ ﻖﻘﺤﺘﻴﺳ</string>
 	<!-- Text under the version number in the Help dialog. TODO: Synchronize other translations with English. -->
 	<string name="about_description">Organic Maps هو تطبيق سريع ومجاني للوصول إلى الخرائط بدون اتصال بالانترنت، وهو بدون إعلانات ومتتبعات. إن الخرائط هي مصدرها بيانات خريطة الشارع المفتوحة التي يستطيع الجميع تعديلها، لذلك يمكنك إصلاح أخطاء الخريطة وإضافة الميزات بنفسك. Organic Maps هو مشروع مفتوح المصدر أُنشأ من قبل مجموعة من الهواة في وقت فراغهم. نقدّر جداً مساهماتك ودعمك.</string>
 	<!-- For the first routing -->
@@ -1125,8 +1129,17 @@
 	<string name="type.historic.battlefield">ساحة معركة تاريخية</string>
 	<string name="type.historic.boundary_stone">حجر لتحديد الحدود</string>
 	<string name="type.historic.castle">قلعة</string>
-	<string name="type.historic.castle.defensive">قلعة دفاعية</string>
-	<string name="type.historic.castle.stately">قلعة</string>
+	<string name="type.historic.castle.castrum">كاسترا</string>
+	<string name="type.historic.castle.defensive">قلعة</string>
+	<string name="type.historic.castle.fortified_church">الكنيسة المحصنة</string>
+	<string name="type.historic.castle.fortress">قلعة</string>
+	<string name="type.historic.castle.hillfort">حصون التلال</string>
+	<string name="type.historic.castle.kremlin">كرملين</string>
+	<string name="type.historic.castle.manor">قصر مالك العزبة</string>
+	<string name="type.historic.castle.palace">قصر</string>
+	<string name="type.historic.castle.shiro">قلعة يابانية</string>
+	<string name="type.historic.castle.stately">شاتو</string>
+	<string name="type.historic.city_gate">بوابة مدينة</string>
 	<string name="type.historic.citywalls">جدار المدينة</string>
 	<string name="type.historic.fort">قلعة</string>
 	<string name="type.historic.memorial">نصب تذكاري</string>
@@ -1445,8 +1458,8 @@
 	<string name="type.sport.table_tennis">كرة الطاولة</string>
 	<string name="type.sport.tennis">ملعب تنس</string>
 	<string name="type.sport.volleyball">كرة الطائرة</string>
-	<string name="type.sport.9pin">بولينج بعشرة دبابيس</string>
 	<string name="type.sport.10pin">بولينج بعشرة دبابيس</string>
+	<string name="type.sport.9pin">بولينج بعشرة دبابيس</string>
 	<string name="type.sport.padel">ﻞﻳﺩﺎﺑ</string>
 	<string name="type.sport.futsal">كرة الصالات</string>
 	<string name="type.sport.ice_hockey">هوكي الجليد</string>

@@ -8,6 +8,7 @@ import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.mapswithme.maps.R;
 import com.mapswithme.maps.location.LocationState;
 import com.mapswithme.maps.routing.RoutingController;
@@ -20,7 +21,7 @@ public class MyPositionButton
   private static final int FOLLOW_SHIFT = 1;
 
   @NonNull
-  private final ImageView mButton;
+  private final FloatingActionButton mButton;
   private static final SparseArray<Drawable> mIcons = new SparseArray<>(); // Location mode -> Button icon
 
   private int mMode;
@@ -28,13 +29,14 @@ public class MyPositionButton
 
   private final int mFollowPaddingShift;
 
-  public MyPositionButton(@NonNull View button, @NonNull View.OnClickListener listener)
+  public MyPositionButton(@NonNull View button, int myPositionMode, @NonNull View.OnClickListener listener)
   {
-    mButton = (ImageView) button;
+    mButton = (FloatingActionButton) button;
     mVisible = UiUtils.isVisible(mButton);
     mButton.setOnClickListener(listener);
     mIcons.clear();
     mFollowPaddingShift = (int) (FOLLOW_SHIFT * button.getResources().getDisplayMetrics().density);
+    update(myPositionMode);
   }
 
   @SuppressWarnings("deprecation")
@@ -95,13 +97,8 @@ public class MyPositionButton
            || !mVisible;
   }
 
-  public void show()
+  public void showButton(boolean show)
   {
-    UiUtils.show(mButton);
-  }
-
-  public void hide()
-  {
-    UiUtils.hide(mButton);
+    UiUtils.showIf(show, mButton);
   }
 }
