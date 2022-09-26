@@ -26,8 +26,7 @@ buildscript {
   ext.googleFirebaseServicesEnabled = project.hasProperty('firebase') ?: googleFirebaseServicesDefault
 
   dependencies {
-    classpath 'com.android.tools:r8:3.3.28'
-    classpath 'com.android.tools.build:gradle:7.2.1'
+    classpath 'com.android.tools.build:gradle:7.3.0'
 
     if (googleMobileServicesEnabled) {
       println("Building with Google Mobile Services")
@@ -134,7 +133,7 @@ android {
   compileSdkVersion propCompileSdkVersion.toInteger()
   buildToolsVersion propBuildToolsVersion
 
-  ndkVersion '24.0.8215888'
+  ndkVersion '25.1.8937393'
 
   defaultConfig {
     // Default package name is taken from the manifest and should be app.organicmaps
