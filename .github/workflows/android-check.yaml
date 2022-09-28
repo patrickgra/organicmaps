@@ -42,13 +42,13 @@ jobs:
           sudo apt-get install -y ninja-build
 
       - name: Checkout sources
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           fetch-depth: 200 # enough to get all commits for the current day
 
       - name: Parallel submodules checkout
         shell: bash
-        run: git submodule update --init --recursive --jobs=$(($(nproc) * 2))
+        run: git submodule update --depth 1 --init --recursive --jobs=$(($(nproc) * 20))
 
       - name: Configure in Open Source mode
         shell: bash
