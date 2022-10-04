@@ -1942,6 +1942,7 @@
     de = Interner persönlicher Speicher
     fr = Stockage interne privé
     nl = Intern persoonlijk geheugen
+    pl = Wewnętrzna pamięć prywatna
     pt-BR = Armazenamento interno privado
     ru = Внутренний скрытый накопитель
     tr = Dahili özel depolama
@@ -1957,6 +1958,7 @@
     de = Interner gemeinsamer Speicher
     fr = Stockage interne partagé
     nl = Intern gedeeld geheugen
+    pl = Wewnętrzna pamięć współdzielona
     pt-BR = Armazenamento interno compartilhado
     ru = Внутренний общий накопитель
     tr = Dahili paylaşılan depolama
@@ -1972,6 +1974,7 @@
     de = SD-Karte
     fr = Carte SD
     nl = SD-kaart
+    pl = Karta SD
     pt-BR = Cartão SD
     ru = SD-карта
     tr = SD kart
@@ -1987,6 +1990,7 @@
     de = Externer gemeinsamer Speicher
     fr = Stockage externe partagé
     nl = Extern gedeeld geheugen
+    pl = Zewnętrzna pamięć współdzielona
     pt-BR = Armazenamento externo compartilhado
     ru = Внешний общий накопитель
     tr = Harici paylaşılan depolama
@@ -2002,6 +2006,7 @@
     de = %1$@ frei von %2$@
     fr = %1$@ libres sur %2$@
     nl = %1$@ beschikbaar van %2$@
+    pl = %1$@ wolne z %2$@
     pt-BR = %1$@ livre de %2$@
     ru = %1$@ свободно из %2$@
     tr = %2$@'ın %1$@'ı boş
@@ -2056,6 +2061,7 @@
     de = Fehler beim Verschieben der Karten
     fr = Erreur lors du déplacement des cartes
     nl = Fout bij het verplaatsen van kaartbestanden
+    pl = Błąd przenoszenia plików map
     pt-BR = Erro ao mover arquivos de mapas
     ru = Ошибка перемещения файлов карт
     tr = Harita dosyalarını taşıma hatası
@@ -3037,6 +3043,7 @@
     eu = Karabanak
     fr = Aménagements pour camping-car
     nl = Caravan faciliteiten
+    pl = Kamper
     ro = Pentru rulote
     ru = Для автодомов
     tr = Karavan tesisleri
@@ -3778,7 +3785,7 @@
 
   [version]
     comment = Prints version number in About dialog
-    tags = android,ios
+    tags = ios
     en = Version: %@
     ar = الاصدار: %@
     be = Версія: %@
@@ -5107,7 +5114,7 @@
 
   [vk]
     comment = Text in the editor
-    tags = android
+    tags = android,ios
     en = VK
 
   [editor_line_social_network]
@@ -5124,7 +5131,7 @@
 
   [feedback]
     comment = Settings: Send feedback button and dialog title
-    tags = android,ios
+    tags = android
     en = Feedback
     ar = إرسال التعليقات
     be = Водгук
@@ -9049,6 +9056,7 @@
     fr = Wikipédia
     it = Wikipedia
     mr = विकिपीडिया
+    pl = Wikipedia
     pt = Wikipédia
     pt-BR = Wikipédia
     ro = Wikipedia
@@ -10432,6 +10440,7 @@
     zh-Hant = 今天
 
   [opens_tomorrow_at]
+    tags = ios
     en = Opens tomorrow at %@
     be = Адкрыццё заўтра ў %@
     ca = Obre demà a les %@
@@ -10441,12 +10450,14 @@
     fr = Ouvre demain à %@
     it = Apre domani alle %@
     nl = Opent morgen om %@
+    pl = Otwarcie jutro o %@
     pt = Abre amanhã às %@
     ru = Откроется завтра в %@
     tr = Açılış yarın %@
     uk = Відкриття завтра о %@
 
   [opens_dayoftheweek_at]
+    tags = ios
     en = Opens %1$@ at %2$@
     be = Адкрыццё ў %1$@ у %2$@
     ca = Obre el %1$@ a les %2$@
@@ -10456,12 +10467,14 @@
     fr = Ouvre le %1$@ à %2$@
     it = Apre %1$@ alle %2$@
     nl = Opent %1$@ om %2$@
+    pl = Otwarcie %1$@ o %2$@
     pt = Abre %1$@ às %2$@
     ru = Открывается в %1$@ в %2$@
     tr = Açılış %1$@ %2$@
     uk = Відчиняється в %1$@ о %2$@
 
   [opens_at]
+    tags = ios
     en = Opens at %@
     be = Адкрыццё ў %@
     ca = Obre a les %@
@@ -10471,12 +10484,14 @@
     fr = Ouvre à %@
     it = Apre alle %@
     nl = Opent om %@
+    pl = Otwarcie o %@
     pt = Abre às %@
     ru = Открывается в %@
     tr = Açılış %@
     uk = Відкриття о %@
 
   [opens_in]
+    tags = android,ios
     en = Opens in %@
     ar = يفتح بعد %@
     be = Адчыняецца праз %@
@@ -10487,12 +10502,14 @@
     fr = Ouvert dans %@
     it = Apre tra %@
     nl = Opent over %@
+    pl = Otwarcie za %@
     pt-BR = Abre em %@
     ru = Открывается через %@
     tr = %@ sonra açılıyor
     uk = Відкривається через %@
 
   [closes_at]
+    tags = ios
     en = Closes at %@
     be = Зачыняецца ў %@
     ca = Tanca a les %@
@@ -10502,12 +10519,14 @@
     fr = Ferme à %@
     it = Chiude alle %@
     nl = Sluit om %@
+    pl = Zamknięcie o %@
     pt = Encerra às %@
     ru = Закрывается в %@
     tr = Kapanış %@
     uk = Закривається о %@
 
   [closes_in]
+    tags = android,ios
     en = Closes in %@
     ar = يغلق في غضون %@
     be = Зачыняецца праз %@
@@ -10518,6 +10537,7 @@
     fr = Fermé dans %@
     it = Chiude tra %@
     nl = Sluit over %@
+    pl = Zamknięcie za %@
     pt-BR = Fecha em %@
     ru = Закроется через %@
     tr = %@ sonra kapanıyor
@@ -11057,7 +11077,7 @@
     zh-Hant = 上次上傳
 
   [thank_you]
-    tags = android,ios
+    tags = ios
     en = Thank You
     ar = شكراً لك
     be = Дзякуй
@@ -11380,6 +11400,7 @@
     it = Inserire il nome della via
     mr = कृपया रस्त्याचे नाव जोडा
     nl = Voer een straatnaam in a.u.b.
+    pl = Proszę wpisz nazwę ulicy
     pt-BR = Por favor, digite o nome da rua
     ro = Introdu numele străzii
     ru = Введите название улицы
@@ -14208,46 +14229,6 @@
     zh-Hans = 更多
     zh-Hant = 更多
 
-  [placepage_more_reviews_button]
-    tags = android
-    en = More Reviews
-    ar = المزيد من المراجعات
-    be = Больш водгукаў
-    bg = Още отзиви
-    ca = Més comentaris
-    cs = Více recenzí
-    da = Flere anmeldelser
-    de = Mehr Feedbacks
-    el = Περισσότερα σχόλια
-    es = Más comentarios
-    es-MX = Más comentarios
-    eu = Iruzkin gehiago
-    fa = نقدهای دیگر
-    fi = Lisää arvosteluja
-    fr = Plus d'avis
-    hu = További vélemények
-    id = Ulasan Lainnya
-    it = Altre recensioni
-    ja = レビューを更に表示
-    ko = 더 많은 리뷰
-    mr = अधिक समीक्षणे
-    nb = Flere anmeldelser
-    nl = Meer reacties
-    pl = Więcej opinii
-    pt = Mais comentários
-    pt-BR = Mais avaliações
-    ro = Mai multe recenzii
-    ru = Ещё отзывы
-    sk = Ďalšie recenzie
-    sv = Fler recensioner
-    sw = Maoni Zaidi
-    th = รีวิวอื่น ๆ
-    tr = Diğer Yorumlar
-    uk = Ще відгуки
-    vi = Thêm nhận xét
-    zh-Hans = 更多评论
-    zh-Hant = 更多評論
-
   [book_button]
     tags = ios
     en = Book
@@ -14750,6 +14731,7 @@
     it = Indicare il motivo dell' eliminazione del luogo
     mr = कृपया ठिकाण हटवण्याचे कारण सूचित करा
     nl = Graag de reden voor verwijdering aangeven
+    pl = Proszę opisz powód usunięcia miejsca
     pt-BR = Por favor, explica o motivo pelo qual você está retirando o local
     ro = Indică motivul pentru care ai eliminat locul
     ru = Пожалуйста, укажите причину удаления
@@ -14993,6 +14975,7 @@
     de = Geben Sie eine gültige LINE-Webadresse oder LINE ID ein
     it = Inserisca un indirizzo web LINE valido o un ID LINE
     nl = Voer een geldig LINE-webadres of een LINE ID in
+    pl = Wpisz prawidłowy url LINE lub LINE ID
     ro = Introdu o adresă web LINE valabilă sau un ID LINE
     ru = Введите корректный веб-адрес LINE страницы или LINE ID
     tr = Geçerli bir LINE web adresi veya LINE ID'si girin
@@ -15540,7 +15523,7 @@
 
   [search_in_table]
     comment = A noun - a button name used to show search results in list form
-    tags = android,ios
+    tags = ios
     en = List
     ar = قائمة
     be = Спіс
@@ -16114,7 +16097,7 @@
 
   [feedback_general]
     comment = Settings: "Send general feedback" button
-    tags = android,ios
+    tags = android
     en = General Feedback
     ar = تعقيب عام
     be = Агульны водгук
@@ -23906,6 +23889,7 @@
     fr = Impossible de créer un dossier et de déplacer des fichiers sur la mémoire interne de l'appareil ou sur la carte SD
     mr = उपकरणाच्या अंतर्गत मेमरी किंवा SD-card वर फोल्डर तयार करण्यात आणि फायली हलविण्यात अक्षम
     nl = Het lukt niet om een map aan te maken en bestanden naar het interne geheugen of een SD-kaart te verplaatsen
+    pl = Nie udało się stworzyć folderu i przenieść plików do pamięci wewnętrznej lub karty SD
     pt-BR = Não foi possível criar a pasta e mover os arquivos à memória interna ou sdcard do dispositivo
     ru = Не могу создать папку и переместить файлы на устройстве
     tr = Dahili aygıtın belleğinde veya SD kartta klasör oluşturulamıyor ve dosyalar taşınamıyor
@@ -23919,6 +23903,7 @@
     de = Speicherfehler
     mr = डिस्क त्रुटी
     nl = Schijffout
+    pl = Błąd pamięci
     pt-BR = Erro do armazenamento
     ru = Ошибка диска
     tr = Disk hatası
