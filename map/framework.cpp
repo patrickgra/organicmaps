@@ -1011,6 +1011,7 @@ void Framework::OnSize(int w, int h)
 {
   if (m_drapeEngine != nullptr)
     m_drapeEngine->Resize(std::max(w, 2), std::max(h, 2));
+  m_visibleViewport = m2::RectD(0, 0, w, h);
 }
 
 namespace
@@ -1520,9 +1521,8 @@ void Framework::CreateDrapeEngine(ref_ptr<dp::GraphicsContextFactory> contextFac
   OnSize(params.m_surfaceWidth, params.m_surfaceHeight);
 
   Allow3dMode(allow3d, allow3dBuildings);
-  LoadViewport();
 
-  SetVisibleViewport(m2::RectD(0, 0, params.m_surfaceWidth, params.m_surfaceHeight));
+  LoadViewport();
 
   if (m_connectToGpsTrack)
     GpsTracker::Instance().Connect(bind(&Framework::OnUpdateGpsTrackPointsCallback, this, _1, _2));
@@ -1833,6 +1833,11 @@ url_scheme::SearchRequest Framework::GetParsedSearchRequest() const
 std::string const & Framework::GetParsedAppName() const
 {
   return m_parsedMapApi.GetAppName();
+}
+
+ms::LatLon Framework::GetParsedCenterLatLon() const
+{
+  return m_parsedMapApi.GetCenterLatLon();
 }
 
 FeatureID Framework::GetFeatureAtPoint(m2::PointD const & mercator,

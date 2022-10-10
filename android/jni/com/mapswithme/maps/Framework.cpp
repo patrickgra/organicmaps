@@ -278,9 +278,6 @@ void Framework::Resize(JNIEnv * env, jobject jSurface, int w, int h)
     m_oglContextFactory->CastFactory<AndroidOGLContextFactory>()->UpdateSurfaceSize(w, h);
   }
   m_work.OnSize(w, h);
-
-  //TODO: remove after correct visible rect calculation.
-  frm()->SetVisibleViewport(m2::RectD(0, 0, w, h));
 }
 
 void Framework::DetachSurface(bool destroySurface)
@@ -832,13 +829,26 @@ Java_com_mapswithme_maps_Framework_nativeGetParsedSearchRequest(JNIEnv * env, jc
   // Java signature : ParsedSearchRequest(String query, String locale, double lat, double lon, boolean isSearchOnMap)
   static jmethodID const ctor = jni::GetConstructorID(env, cl, "(Ljava/lang/String;Ljava/lang/String;DDZ)V");
   auto const & r = frm()->GetParsedSearchRequest();
-  return env->NewObject(cl, ctor, jni::ToJavaString(env, r.m_query), jni::ToJavaString(env, r.m_locale), r.m_centerLat, r.m_centerLon, r.m_isSearchOnMap);
+  ms::LatLon const center = frm()->GetParsedCenterLatLon();
+  return env->NewObject(cl, ctor, jni::ToJavaString(env, r.m_query), jni::ToJavaString(env, r.m_locale), center.m_lat, center.m_lon, r.m_isSearchOnMap);
 }
 
 JNIEXPORT jstring JNICALL
 Java_com_mapswithme_maps_Framework_nativeGetParsedAppName(JNIEnv * env, jclass)
 {
   return jni::ToJavaString(env, frm()->GetParsedAppName());
+}
+
+JNIEXPORT jdoubleArray JNICALL
+Java_com_mapswithme_maps_Framework_nativeGetParsedCenterLatLon(JNIEnv * env, jclass)
+{
+  ms::LatLon const center = frm()->GetParsedCenterLatLon();
+
+  double latlon[] = {center.m_lat, center.m_lon};
+  jdoubleArray jLatLon = env->NewDoubleArray(2);
+  env->SetDoubleArrayRegion(jLatLon, 0, 2, latlon);
+
+  return jLatLon;
 }
 
 JNIEXPORT void JNICALL
@@ -1776,12 +1786,10 @@ Java_com_mapswithme_maps_Framework_nativeSetPowerManagerScheme(JNIEnv *, jclass,
 }
 
 JNIEXPORT void JNICALL
-Java_com_mapswithme_maps_Framework_nativeSetViewportCenter(JNIEnv *, jclass, jdouble lat,
-                                                           jdouble lon, jint zoom, jboolean isAnim)
+Java_com_mapswithme_maps_Framework_nativeSetViewportCenter(JNIEnv *, jclass, jdouble lat, jdouble lon, jint zoom)
 {
-  auto const center = mercator::FromLatLon(static_cast<double>(lat),
-                                           static_cast<double>(lon));
-  frm()->SetViewportCenter(center, static_cast<int>(zoom), static_cast<bool>(isAnim));
+  // isAnim = true because of previous nativeTurnOnChoosePositionMode animations.
+  frm()->SetViewportCenter(mercator::FromLatLon(lat, lon), static_cast<int>(zoom), true /* isAnim */);
 }
 
 JNIEXPORT void JNICALL
