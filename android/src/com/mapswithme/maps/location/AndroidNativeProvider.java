@@ -29,7 +29,7 @@ class AndroidNativeProvider extends BaseLocationProvider
       Logger.d(TAG, "Disabled location provider: " + provider);
       mProviderCount--;
       if (mProviderCount < MIN_PROVIDER_COUNT)
-        mListener.onLocationError(LocationHelper.ERROR_GPS_OFF);
+        mListener.onLocationDisabled();
     }
 
     @Override
@@ -69,7 +69,7 @@ class AndroidNativeProvider extends BaseLocationProvider
   @Override
   public void start(long interval)
   {
-    Logger.d(TAG, "start()");
+    Logger.d(TAG);
     if (mActive)
       throw new IllegalStateException("Already started");
     mActive = true;
@@ -78,7 +78,7 @@ class AndroidNativeProvider extends BaseLocationProvider
     mProviderCount = providers.size();
     if (mProviderCount < MIN_PROVIDER_COUNT)
     {
-      mListener.onLocationError(LocationHelper.ERROR_GPS_OFF);
+      mListener.onLocationDisabled();
     }
 
     for (String provider : providers)
@@ -99,7 +99,7 @@ class AndroidNativeProvider extends BaseLocationProvider
   @Override
   public void stop()
   {
-    Logger.d(TAG, "stop()");
+    Logger.d(TAG);
     mLocationManager.removeUpdates(mNativeLocationListener);
     mActive = false;
   }

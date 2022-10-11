@@ -5,7 +5,9 @@ import android.location.Location;
 import android.os.Looper;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
+
+import com.google.android.gms.common.api.ApiException;
+import com.google.android.gms.common.api.ResolvableApiException;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationAvailability;
 import com.google.android.gms.location.LocationCallback;
@@ -13,10 +15,9 @@ import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationResult;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.location.LocationSettingsRequest;
+import com.google.android.gms.location.LocationSettingsStatusCodes;
 import com.google.android.gms.location.SettingsClient;
 import com.mapswithme.util.log.Logger;
-
-import static com.mapswithme.maps.location.LocationHelper.ERROR_NOT_SUPPORTED;
 
 class GoogleFusedLocationProvider extends BaseLocationProvider
 {
@@ -44,12 +45,10 @@ class GoogleFusedLocationProvider extends BaseLocationProvider
     {
       if (!availability.isLocationAvailable()) {
         Logger.w(TAG, "isLocationAvailable returned false");
-        //mListener.onLocationError(ERROR_GPS_OFF);
       }
     }
   }
 
-  @Nullable
   private final GoogleLocationCallback mCallback = new GoogleLocationCallback();
 
   private boolean mActive = false;
@@ -66,9 +65,7 @@ class GoogleFusedLocationProvider extends BaseLocationProvider
   @Override
   public void start(long interval)
   {
-    Logger.d(TAG, "start()");
-    if (mActive)
-      throw new IllegalStateException("Already subscribed");
+    Logger.d(TAG);
     mActive = true;
 
     final LocationRequest locationRequest = LocationRequest.create();
@@ -89,8 +86,27 @@ class GoogleFusedLocationProvider extends BaseLocationProvider
       Logger.d(TAG, "Service is available");
       mFusedLocationClient.requestLocationUpdates(locationRequest, mCallback, Looper.myLooper());
     }).addOnFailureListener(e -> {
+      try
+      {
+        int statusCode = ((ApiException) e).getStatusCode();
+        if (statusCode == LocationSettingsStatusCodes.RESOLUTION_REQUIRED)
+        {
+          // Location settings are not satisfied, but this can
+          // be fixed by showing the user a dialog
+          Logger.w(TAG, "Resolution is required");
+          ResolvableApiException resolvable = (ResolvableApiException) e;
+          mListener.onLocationResolutionRequired(resolvable.getResolution());
+          return;
+        }
+      }
+      catch (ClassCastException ex)
+      {
+        // Ignore, should be an impossible error.
+        // https://developers.google.com/android/reference/com/google/android/gms/location/SettingsClient
+        Logger.e(TAG, "An error that should be impossible: " + ex);
+      }
       Logger.e(TAG, "Service is not available: " + e);
-      mListener.onLocationError(ERROR_NOT_SUPPORTED);
+      mListener.onLocationDisabled();
     });
 
     // onLocationResult() may not always be called regularly, however the device location is known.
@@ -105,7 +121,7 @@ class GoogleFusedLocationProvider extends BaseLocationProvider
   @Override
   protected void stop()
   {
-    Logger.d(TAG, "stop()");
+    Logger.d(TAG);
     mFusedLocationClient.removeLocationUpdates(mCallback);
     mActive = false;
   }
