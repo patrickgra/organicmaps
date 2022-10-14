@@ -1,10 +1,10 @@
 package com.mapswithme.util;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.ActivityNotFoundException;
 import android.content.ClipData;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.res.Resources;
@@ -31,6 +31,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.core.app.NavUtils;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
+
 import com.google.android.material.snackbar.Snackbar;
 import com.mapswithme.maps.BuildConfig;
 import com.mapswithme.maps.MwmApplication;
@@ -388,26 +389,17 @@ public class Utils
     }
 
     final Holder holder = new Holder();
-    new AlertDialog.Builder(context)
-                   .setMessage(message)
-                   .setNegativeButton(android.R.string.cancel, null)
-                   .setPositiveButton(R.string.downloader_retry, new DialogInterface.OnClickListener()
-                   {
-                     @Override
-                     public void onClick(DialogInterface dialog, int which)
-                     {
-                       holder.accepted = true;
-                       checkConnection(context, message, onCheckPassedCallback);
-                     }
-                   }).setOnDismissListener(new DialogInterface.OnDismissListener()
-                   {
-                     @Override
-                     public void onDismiss(DialogInterface dialog)
-                     {
-                       if (!holder.accepted)
-                         onCheckPassedCallback.invoke(false);
-                     }
-                   }).show();
+    new AlertDialog.Builder(context, R.style.MwmTheme_AlertDialog)
+        .setMessage(message)
+        .setNegativeButton(R.string.cancel, null)
+        .setPositiveButton(R.string.downloader_retry, (dialog, which) -> {
+          holder.accepted = true;
+          checkConnection(context, message, onCheckPassedCallback);
+        }).setOnDismissListener(dialog -> {
+          if (!holder.accepted)
+            onCheckPassedCallback.invoke(false);
+        })
+        .show();
   }
 
   public static boolean isAppInstalled(@NonNull Context context, @NonNull String packageName)
@@ -577,6 +569,7 @@ public class Utils
   }
 
   @StringRes
+  @SuppressLint("DiscouragedApi")
   public static int getStringIdByKey(@NonNull Context context, @NonNull String key)
   {
     try
@@ -757,13 +750,6 @@ public class Utils
     calendar.add(Calendar.SECOND, seconds);
     DateFormat dateFormat = new SimpleDateFormat("HH:mm", Locale.getDefault());
     return dateFormat.format(calendar.getTime());
-  }
-
-  @NonNull
-  public static String fixCaseInString(@NonNull String string)
-  {
-    char firstChar = string.charAt(0);
-    return firstChar + string.substring(1).toLowerCase();
   }
 
   private static class SupportInfoWithLogsCallback implements LogsManager.OnZipCompletedListener

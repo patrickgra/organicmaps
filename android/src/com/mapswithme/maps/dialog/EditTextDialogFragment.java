@@ -85,8 +85,8 @@ public class EditTextDialogFragment extends BaseMwmDialogFragment
     final Bundle args = new Bundle();
     args.putString(ARG_TITLE, title);
     args.putString(ARG_INITIAL, initialText);
-    args.putString(ARG_POSITIVE_BUTTON, positiveBtn == null ? null : positiveBtn.toUpperCase());
-    args.putString(ARG_NEGATIVE_BUTTON, negativeBtn == null ? null : negativeBtn.toUpperCase());
+    args.putString(ARG_POSITIVE_BUTTON, positiveBtn == null ? null : positiveBtn);
+    args.putString(ARG_NEGATIVE_BUTTON, negativeBtn == null ? null : negativeBtn);
     args.putString(ARG_HINT, hint);
     args.putInt(ARG_TEXT_LENGTH_LIMIT, textLimit);
     final EditTextDialogFragment fragment = (EditTextDialogFragment) Fragment.instantiate(parent.requireActivity(), EditTextDialogFragment.class.getName());
@@ -119,7 +119,7 @@ public class EditTextDialogFragment extends BaseMwmDialogFragment
       negativeButtonText = args.getString(ARG_NEGATIVE_BUTTON);
     }
 
-    AlertDialog editTextDialog = new AlertDialog.Builder(requireActivity())
+    AlertDialog editTextDialog = new AlertDialog.Builder(requireActivity(), R.style.MwmTheme_AlertDialog)
         .setView(buildView())
         .setNegativeButton(negativeButtonText, null)
         .setPositiveButton(positiveButtonText, (dialog, which) -> {
@@ -133,7 +133,6 @@ public class EditTextDialogFragment extends BaseMwmDialogFragment
       mPositiveButton = editTextDialog.getButton(DialogInterface.BUTTON_POSITIVE);
       this.validateInput(requireActivity(), mInitialText);
     });
-
 
     // Setup validation on input edit.
     mEtInput.addTextChangedListener(new StringUtils.SimpleTextWatcher()

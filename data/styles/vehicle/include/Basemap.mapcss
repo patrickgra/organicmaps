@@ -6,7 +6,7 @@
   3.1 Countries
   3.2 Region
 4.VEGETATION
-5.BEACH & GLACIER
+5.BEACH, GLACIER, DESERT, etc.
 6.WATER
   6.1 Area water(lake,pond etc.)
   6.2 Line water(river,canal etc.)
@@ -37,6 +37,7 @@ area[place=islet]
 
 area[natural=glacier],
 area[natural=beach],
+area[natural=desert],
 area[leisure=beach_resort],
 area[amenity=university],
 area[aeroway=airport][aerodrome=international],
@@ -114,6 +115,7 @@ line[waterway=stream],
 line[waterway=canal],
 line[natural=strait],
 line[waterway=ditch],
+line[barrier=ditch],
 line[waterway=drain],
 {z-index: 50;}
 
@@ -151,7 +153,6 @@ line[barrier=retaining_wall],
 area[building],
 area[building:part],
 area[landuse=garages],
-area[building=train_station],
 {z-index: 150;}
 
 area[aeroway=terminal]
@@ -232,7 +233,7 @@ line|z10-[boundary=administrative][admin_level=4]
 
 area|z10-[landuse=forest],
 area|z10-[leisure=park],
-area|z10-[leisure=garden],
+area|z12-[leisure=garden],
 area|z14-[landuse=grass],
 area|z14-[natural=grassland],
 area|z14-[leisure=golf_course],
@@ -302,10 +303,11 @@ area|z16-[leisure=garden]
 area|z12-[natural=bare_rock],
 {fill-color: @barerock;}
 
-/* 5.BEACH & GLACIER */
+/* 5.BEACH, GLACIER, DESERT, etc. */
 
 area|z0-[natural=glacier],
 area|z10-[natural=beach],
+area|z0-[natural=desert],
 area|z10-[leisure=beach_resort],
 {fill-position: background;	fill-opacity: 1;}
 
@@ -315,6 +317,9 @@ area|z0-[natural=glacier]
 area|z10-[natural=beach],
 area|z10-[leisure=beach_resort],
 {fill-color: @beach;fill-opacity: 0.35;}
+
+area|z0-[natural=desert],
+{fill-color: @desert;}
 
 /* 6.WATER */
 
@@ -392,6 +397,7 @@ node|z16-[waterway=lock_gate],
 {icon-image: dot-m.svg;}
 
 line|z17-[waterway=ditch],
+line|z17-[barrier=ditch],
 line|z17-[waterway=drain],
 {width: 1.8;opacity: 1;color: @river;dashes: 0.9,0.9;}
 
@@ -578,7 +584,6 @@ line|z19-[man_made=cutline],
 area|z15[building],
 area|z15[waterway=dam],
 area|z15[landuse=garages],
-area|z15[building=train_station],
 {fill-color: @building;fill-opacity: 0.65;casing-width: 1;casing-color: @building_border;}
 
 area|z14-[aeroway=terminal],
@@ -586,7 +591,6 @@ area|z16-[building],
 area|z16-[building:part],
 area|z16-[waterway=dam],
 area|z16-[landuse=garages],
-area|z16-[building=train_station],
 {fill-color: @building;fill-opacity: 0.55;casing-width: 1;casing-color: @building_border;}
 
 

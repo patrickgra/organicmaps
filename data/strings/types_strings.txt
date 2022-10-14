@@ -3178,7 +3178,7 @@
     sk = Papierový odpad
     sv = Returpapper
     th = ขยะกระดาษ
-    tr = Kağıt Atıklar
+    tr = Kâğıt Atıklar
     uk = Папір
     vi = Giấy phế liệu
     zh-Hans = 废纸
@@ -3242,7 +3242,7 @@
     nl = Plastic flessen
     pl = Zbieranie plastikowych butelek
     pt = Garrafas de plástico
-    pt-BR = Garrafas plasticas
+    pt-BR = Garrafas plásticas
     ro = Sticle de plastic
     ru = Пластиковые бутылки
     sk = Plastové fľaše
@@ -4297,6 +4297,42 @@
     tr = Bisiklet Bariyeri
     uk = Велосипедна перешкода
 
+  [type.barrier.ditch]
+    en = Moat
+    ar = ﻕﺪﻨﺧ
+    be = Роў
+    bg = Ров
+    cs = Hradní příkop
+    da = Voldgrav
+    de = Graben
+    el = Τάφρος
+    es = Foso
+    eu = Lubanarroa
+    fa = ﻕﺪﻨﺧ
+    fi = Vallihauta
+    fr = Fossé
+    he = ןגֵמָ תלַעָתְ
+    hu = Várárok
+    id = Parit
+    it = Fossato
+    ja = 堀
+    ko = "해자 외호"
+    nb = Vollgrav
+    nl = Gracht
+    pl = Rów
+    pt = Fosso
+    ro = Şanţ
+    ru = Ров
+    sk = Priekopa
+    sv = Vallgrav
+    sw = Moti
+    th = คูเมือง
+    tr = Hendek
+    uk = Рів
+    vi = Hào nước
+    zh-Hans = 沟渠
+    zh-Hant = 護城河
+
   [type.barrier.entrance]
     en = Entrance
     ar = مدخل الحاجز
@@ -4397,6 +4433,13 @@
     ru = Живая изгородь
     tr = Çit
     zh-Hans = 树篱
+
+  [type.barrier.kissing_gate]
+    ref = type.barrier.gate
+    en = Kissing Gate
+    nl = Voetgangershek
+    pt = Quebra-corpo
+    pt-BR = Quebra-corpo
 
   [type.barrier.lift_gate]
     en = Lift Gate
@@ -12032,6 +12075,43 @@
     zh-Hans = 健身驿站
     zh-Hant = 健身房
 
+  [type.leisure.dance]
+    en = Dance Hall
+    ar = ﺺﻗﺮﻟﺍ ﺔﻟﺎﺻ
+    be = Танцавальная зала
+    bg = Зала за танци
+    cs = Taneční hala
+    da = Dansesal
+    de = Tanzsaal
+    el = Αίθουσα χορού
+    es = Salón de baile
+    eu = Dantza Aretoa
+    fa = ﺺﻗﺭ ﻦﻟﺎﺳ
+    fi = Tanssisali
+    fr = Salle de danse
+    he = םידוקיר םלוא
+    hu = Táncterem
+    id = Lantai dansa
+    it = Sala da ballo
+    ja = ダンスホール
+    ko = "댄스홀"
+    nb = Dansesal
+    nl = Danszaal
+    pl = Sala taneczna
+    pt = Salão de dança
+    pt-BR = Salão de dança
+    ro = Sala de dans
+    ru = Танцпол
+    sk = Tanečná hala
+    sv = Danshall
+    sw = Ukumbi wa Ngoma
+    th = แดนซ์ฮอลล์
+    tr = Dans salonu
+    uk = Танцювальний зал
+    vi = Vũ trường
+    zh-Hans = 舞厅
+    zh-Hant = 舞廳
+
   [type.leisure.garden]
     en = Garden
     ar = حديقة
@@ -13685,6 +13765,33 @@
     vi = Bờ biển
     zh-Hans = 海岸线
     zh-Hant = 海岸線
+
+  [type.natural.desert]
+    en = Desert
+    ar = ءﺍﺮﺤﺻ
+    be = Пустыня
+    bg = Пустинен
+    cs = Poušť
+    da = Ørken
+    de = Wüste
+    el = Ερημος
+    es = Desierto
+    eu = Basamortua
+    fa = ﺮﯾﻮﮐ
+    fi = Aavikko
+    fr = Désert
+    he = רבָּדמִ
+    hu = Sivatag
+    id = Gurun
+    it = Deserto
+    ja = 荒野
+    ko = 사막
+    nb = Ørken
+    nl = Woestijn
+    pl = Pustynia
+    pt = Deserto
+    ru = Пустыня
+    uk = Пустиня
 
   [type.natural.geyser]
     en = Geyser
@@ -16839,9 +16946,6 @@
   [type.railway.station.subway.lisboa]
     ref = type.railway.station.subway
 
-  [type.railway.station.subway.lisbon]
-    ref = type.railway.station.subway
-
   [type.railway.station.subway.london]
     ref = type.railway.station.subway
 
@@ -18474,7 +18578,7 @@
     nb = Elektronikk forhandler
     nl = Elektronicazaak
     pl = Sklep ze sprzętem elektronicznym
-    pt = Loja de eletrónica de consumo
+    pt = Loja de electrónica de consumo
     pt-BR = Loja de eletrônicos
     ro = Electronice
     ru = Электротехника
@@ -20042,7 +20146,7 @@
     nl = Videowinkel
     pl = Wypożyczalnia wideo
     pt = Vídeoclube
-    pt-BR = Video locadora
+    pt-BR = Vídeo locadora
     ro = Magazin video
     ru = Магазин видео
     sk = Predajňa s videami
@@ -23264,18 +23368,7 @@
     zh-Hans = 水沟
 
   [type.waterway.ditch.tunnel]
-    en = Ditch
-    de = Graben
-    fr = Fossé
-    ja = 排水路(トンネル)
-    mr = खंदक
-    nl = Duiker
-    pt = Vala
-    pt-BR = Vala
-    ru = Канава
-    tr = Hendek
-    uk = Канава
-    zh-Hans = 水沟
+    ref = type.waterway.ditch
 
   [type.waterway.dock]
     en = Waterway Dock
@@ -23306,17 +23399,7 @@
     zh-Hans = 渠
 
   [type.waterway.drain.tunnel]
-    en = Drain
-    de = Abfluss
-    ja = 用水路
-    mr = नाला
-    nl = Afvoer tunnel
-    pt = Valeta de drenagem
-    pt-BR = Valeta de drenagem
-    ru = Водоотвод
-    tr = Lağım
-    uk = Водовiдвiд
-    zh-Hans = 渠
+    ref = type.waterway.drain
 
   [type.waterway.lock_gate]
     en = Lock Gate
@@ -23387,39 +23470,7 @@
     zh-Hant = 河流
 
   [type.waterway.river.tunnel]
-    en = River
-    ar = نهر
-    be = Рака
-    cs = Řeka
-    da = Flod
-    de = Fluss
-    el = Ποταμός
-    es = Río
-    eu = Ibai
-    fa = رودخانه
-    fi = Joki
-    fr = Rivière
-    hu = Folyó
-    id = Sungai
-    it = Fiume
-    ja = 河川
-    ko = 강
-    mr = नदी
-    nb = Elv
-    nl = Rivier
-    pl = Tunel rzeki
-    pt = Rio
-    pt-BR = Rio
-    ro = Râu
-    ru = Река
-    sk = Rieka
-    sv = Flod
-    th = แม่น้ำ
-    tr = Nehir
-    uk = Річка
-    vi = Sông
-    zh-Hans = 河流
-    zh-Hant = 河流
+    ref = type.waterway.river
 
   [type.waterway.riverbank]
     en = River
@@ -23562,39 +23613,7 @@
     zh-Hant = 溪
 
   [type.waterway.stream.tunnel]
-    en = River
-    ar = نهر
-    be = Рака
-    cs = Řeka
-    da = Flod
-    de = Bach
-    el = Ποταμός
-    es = Río
-    eu = Ibai
-    fa = رودخانه
-    fi = Joki
-    fr = Ruisseau
-    hu = Folyó
-    id = Sungai
-    it = Fiume
-    ja = 小川
-    ko = 강
-    mr = नदी
-    nb = Elv
-    nl = Beek
-    pl = Rzeka
-    pt = Ribeiro
-    pt-BR = Ribeiro
-    ro = Râu
-    ru = Река
-    sk = Rieka
-    sv = Flod
-    th = แม่น้ำ
-    tr = Nehir
-    uk = Річка
-    vi = Sông
-    zh-Hans = 溪
-    zh-Hant = 溪
+    ref = type.waterway.stream
 
   [type.waterway.waterfall]
     en = Waterfall
@@ -23768,19 +23787,7 @@
     zh-Hans = 配备残疾人专用
     zh-Hant = 配備殘疾人專用
 
-  [type.piste_lift]
-    comment = en.wikipedia.org/wiki/Surface_lift
-    en = Surface Lift
-    de = Lift
-    fr = Téléski
-    nl = Sleeplift
-    pt = Telesqui
-    pt-BR = Telesqui
-    ru = Бугельный подъёмник
-    tr = Kayak Teleferiği
-    uk = Бугельний витяг
-
-  [type.piste_lift.j.bar]
+  [type.aerialway.j.bar]
     en = J-bar Lift
     de = Schlepplift
     fr = Téléski
@@ -23791,7 +23798,7 @@
     tr = Kayak Teleferiği
     uk = Бугельний витяг
 
-  [type.piste_lift.magic_carpet]
+  [type.aerialway.magic_carpet]
     en = Magic Carpet
     de = Laufband
     fr = Tapis roulant
@@ -23802,7 +23809,7 @@
     tr = Kayak Teleferiği
     uk = Стрiчковий конвеєр
 
-  [type.piste_lift.platter]
+  [type.aerialway.platter]
     en = Platter Lift
     de = Tellerlift
     nl = Sleeplift
@@ -23812,7 +23819,7 @@
     tr = Tabak Asansörü
     uk = Бугельний витяг
 
-  [type.piste_lift.rope_tow]
+  [type.aerialway.rope_tow]
     en = Rope Tow
     de = Seillift
     nl = Touwlift
@@ -23822,7 +23829,7 @@
     tr = Çekme Halatı
     uk = Бугельний витяг
 
-  [type.piste_lift.t.bar]
+  [type.aerialway.t.bar]
     en = T-bar Lift
     de = T-Bügel-Lift
     nl = Sleeplift (T-beugel)

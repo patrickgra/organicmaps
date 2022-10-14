@@ -45,6 +45,10 @@ ford=stream : highway=ford
 ford=stepping_stones : highway=ford
 ford=yes : highway=ford
 
+barrier=jersey_barrier : barrier=block
+barrier=sliding_gate : barrier=gate
+barrier=turnstile : barrier=stile
+
 drinkable=yes : amenity=drinking_water
 drinking_water=yes : amenity=drinking_water
 water_point=yes : amenity=water_point
@@ -75,6 +79,11 @@ natural=forest    : natural=wood
 natural=shrubbery : natural=scrub
 cliff=yes         : natural=cliff
 
+desert=sand : desert=erg
+desert=yes : desert=erg
+desert=semi_arid : desert=erg
+desert=dune : desert=erg
+
 office=notary : office=lawyer
 office=administrative : office=government
 
@@ -85,6 +94,8 @@ cycleway=opposite_lane : oneway:bicycle=no
 power=transformer : power=substation
 
 organic=limited : organic=yes
+
+amenity=dancing_school : leisure=dance
 
 wifi=yes : internet_access=wlan
 wifi=free : internet_access=wlan
@@ -126,3 +137,9 @@ recycling:paper_packaging=yes   : recycling:paper=yes
 recycling:newspaper=yes         : recycling:paper=yes
 recycling:magazines=yes         : recycling:paper=yes
 recycling:beverage_cartons=yes  : recycling:cartons=yes
+
+piste:lift=platter : aerialway=platter
+piste:lift=t-bar : aerialway=t-bar
+piste:lift=j-bar : aerialway=j-bar
+piste:lift=rope_tow : aerialway=rope_tow
+piste:lift=magic_carpet : aerialway=magic_carpet

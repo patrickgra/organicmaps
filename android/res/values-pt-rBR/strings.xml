@@ -642,7 +642,7 @@
 	<string name="month_ago_sorttype">Um mês atrás</string>
 	<string name="moremonth_ago_sorttype">Mais de um mês atrás</string>
 	<string name="moreyear_ago_sorttype">Mais de um ano atrás</string>
-	<string name="near_me_sorttype">Proximo de mim</string>
+	<string name="near_me_sorttype">Próximo de mim</string>
 	<string name="others_sorttype">Outros</string>
 
 	<!-- SECTION: Bookmark types used for sorting -->
@@ -795,7 +795,7 @@
 	<string name="type.recycling.glass_bottles">Garrafas de vidro</string>
 	<string name="type.recycling.paper">Lixo de papel</string>
 	<string name="type.recycling.plastic">Lixo plástico</string>
-	<string name="type.recycling.plastic_bottles">Garrafas plasticas</string>
+	<string name="type.recycling.plastic_bottles">Garrafas plásticas</string>
 	<string name="type.recycling.scrap_metal">Ferro velho</string>
 	<string name="type.recycling.small_appliances">Lixo eletrônico</string>
 	<string name="type.amenity.restaurant">Restaurante</string>
@@ -827,6 +827,7 @@
 	<string name="type.barrier.fence">Cerca</string>
 	<string name="type.barrier.gate">Portão</string>
 	<string name="type.barrier.hedge">Sebe</string>
+	<string name="type.barrier.kissing_gate">Quebra-corpo</string>
 	<string name="type.barrier.lift_gate">Cancela</string>
 	<string name="type.barrier.retaining_wall">Muro de retenção</string>
 	<string name="type.barrier.stile">Travessia de escada cerca ou muro</string>
@@ -1193,6 +1194,7 @@
 	<string name="type.leisure.dog_park">Parque para cachorros</string>
 	<string name="type.leisure.fitness_centre">Academia de ginástica</string>
 	<string name="type.leisure.fitness_station">Estação de fitness</string>
+	<string name="type.leisure.dance">Salão de dança</string>
 	<string name="type.leisure.garden">Jardim</string>
 	<string name="type.leisure.garden.residential">Jardim residencial</string>
 	<string name="type.leisure.golf_course">Campo de golfe</string>
@@ -1359,7 +1361,6 @@
 	<string name="type.railway.station.subway.lille">Estação de metrô</string>
 	<string name="type.railway.station.subway.lima">Estação de metrô</string>
 	<string name="type.railway.station.subway.lisboa">Estação de metrô</string>
-	<string name="type.railway.station.subway.lisbon">Estação de metrô</string>
 	<string name="type.railway.station.subway.london">Estação de metrô</string>
 	<string name="type.railway.station.subway.lyon">Estação de metrô</string>
 	<string name="type.railway.station.subway.madrid">Estação de metrô</string>
@@ -1611,7 +1612,7 @@
 	<string name="type.shop.travel_agency">Agência de viagem</string>
 	<string name="type.shop.tyres">Loja de pneus</string>
 	<string name="type.shop.variety_store">Loja 1,99</string>
-	<string name="type.shop.video">Video locadora</string>
+	<string name="type.shop.video">Vídeo locadora</string>
 	<string name="type.shop.video_games">Loja de jogos eletrônicos</string>
 	<string name="type.shop.wine">Loja de vinhos</string>
 	<string name="type.shop.antiques">Antiguidades</string>
@@ -1707,13 +1708,11 @@
 	<string name="type.wheelchair.limited">Acesso limitado para cadeira de rodas</string>
 	<string name="type.wheelchair.no">Sem acesso para cadeira de rodas</string>
 	<string name="type.wheelchair.yes">Acesso total para cadeira de rodas</string>
-	<!-- en.wikipedia.org/wiki/Surface_lift -->
-	<string name="type.piste_lift">Telesqui</string>
-	<string name="type.piste_lift.j.bar">Telesqui de barra em J</string>
-	<string name="type.piste_lift.magic_carpet">Tapete deslizante</string>
-	<string name="type.piste_lift.platter">Telesqui de disco</string>
-	<string name="type.piste_lift.rope_tow">Telesqui de corda</string>
-	<string name="type.piste_lift.t.bar">Telesqui de barra em T</string>
+	<string name="type.aerialway.j.bar">Telesqui de barra em J</string>
+	<string name="type.aerialway.magic_carpet">Tapete deslizante</string>
+	<string name="type.aerialway.platter">Telesqui de disco</string>
+	<string name="type.aerialway.rope_tow">Telesqui de corda</string>
+	<string name="type.aerialway.t.bar">Telesqui de barra em T</string>
 	<string name="type.piste_type">Tipo de pista</string>
 	<string name="type.piste_type.downhill">Esqui alpino</string>
 	<string name="type.piste_type.downhill.advanced">Esqui alpino avançado</string>
