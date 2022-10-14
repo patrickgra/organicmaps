@@ -1195,6 +1195,15 @@ public class PlacePageView extends NestedScrollViewClickFixed
 
     final boolean hasNumber = mapObject.hasPhoneNumber();
 
+    boolean needToShowRoutingButtons = RoutingController.get().isPlanning() || showRoutingButton;
+
+    if (needToShowRoutingButtons) {
+      buttons.add(PlacePageButtons.Item.ROUTE_TO);
+    }
+
+    buttons.add(mapObject.getMapObjectType() == MapObject.BOOKMARK ? PlacePageButtons.Item.BOOKMARK_DELETE
+            : PlacePageButtons.Item.BOOKMARK_SAVE);
+
     if (hasNumber)
     {
       buttons.add(PlacePageButtons.Item.CALL);
@@ -1203,18 +1212,9 @@ public class PlacePageView extends NestedScrollViewClickFixed
     else
       mPhoneRecycler.setVisibility(GONE);
 
-    boolean needToShowRoutingButtons = RoutingController.get().isPlanning() || showRoutingButton;
-
-    if (needToShowRoutingButtons && !hasNumber)
-      buttons.add(PlacePageButtons.Item.ROUTE_FROM);
-
-    buttons.add(mapObject.getMapObjectType() == MapObject.BOOKMARK ? PlacePageButtons.Item.BOOKMARK_DELETE
-        : PlacePageButtons.Item.BOOKMARK_SAVE);
-
     if (needToShowRoutingButtons)
     {
-      buttons.add(PlacePageButtons.Item.ROUTE_TO);
-      if (hasNumber)
+      if(!hasNumber)
         buttons.add(PlacePageButtons.Item.ROUTE_FROM);
       if (RoutingController.get().isStopPointAllowed())
         buttons.add(PlacePageButtons.Item.ROUTE_ADD);

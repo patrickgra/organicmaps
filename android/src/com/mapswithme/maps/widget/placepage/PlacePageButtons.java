@@ -278,7 +278,7 @@ public final class PlacePageButtons
       preserveRoutingButtons(res, Item.CALL);
       from = res.indexOf(Item.ROUTE_FROM);
       to = res.indexOf(Item.ROUTE_TO);
-      if (from < mMaxButtons && from > to)
+      if (from < mMaxButtons && from < to)
         Collections.swap(res, to, from);
     }
 
