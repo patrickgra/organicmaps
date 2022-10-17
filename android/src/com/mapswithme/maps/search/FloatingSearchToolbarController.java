@@ -27,6 +27,10 @@ public class FloatingSearchToolbarController extends SearchToolbarController
     mListener = listener;
     // We only want to detect a click on the input and not allow editing.
     disableQueryEditing();
+    getToolbar().setOnApplyWindowInsetsListener((view, windowInsets) -> {
+      UiUtils.setViewInsetsPaddingNoTop(view, windowInsets);
+      return windowInsets;
+    });
   }
 
   @Override
@@ -84,12 +88,6 @@ public class FloatingSearchToolbarController extends SearchToolbarController
   public void setVisibilityListener(@Nullable VisibilityListener visibilityListener)
   {
     mVisibilityListener = visibilityListener;
-  }
-
-  @Override
-  protected boolean useExtendedToolbar()
-  {
-    return false;
   }
 
   public interface SearchToolbarListener

@@ -31,7 +31,12 @@ public class ToolbarController implements Detachable<Activity>
     mToolbar = root.findViewById(getToolbarId());
 
     if (useExtendedToolbar())
-      UiUtils.extendViewWithStatusBar(getToolbar());
+    {
+      getToolbar().setOnApplyWindowInsetsListener((view, windowInsets) -> {
+        UiUtils.extendViewWithStatusBar(getToolbar(), windowInsets);
+        return windowInsets;
+      });
+    }
     UiUtils.setupNavigationIcon(mToolbar, mNavigationClickListener);
     setSupportActionBar(activity, mToolbar);
   }
@@ -44,7 +49,7 @@ public class ToolbarController implements Detachable<Activity>
 
   protected boolean useExtendedToolbar()
   {
-    return true;
+    return false;
   }
 
   @IdRes
