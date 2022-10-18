@@ -61,7 +61,7 @@ public class NavMenu
   {
     mActivity = activity;
     mNavMenuListener = navMenuListener;
-
+    mOnMenuSizeChangedListener = onMenuSizeChangedListener;
     final View bottomFrame = mActivity.findViewById(R.id.nav_bottom_frame);
     mHeaderFrame = bottomFrame.findViewById(R.id.line_frame);
 
