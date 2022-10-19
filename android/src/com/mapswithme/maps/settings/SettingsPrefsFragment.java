@@ -282,7 +282,7 @@ public class SettingsPrefsFragment extends BaseXmlSettingsFragment
 
   private void hidePreferences(){
     PreferenceCategory general = findPreference(getString(R.string.pref_settings_general));
-    general.removePreference(findPreference(getString(R.string.pref_enable_logging)));
+    //general.removePreference(findPreference(getString(R.string.pref_enable_logging)));
     mPreferenceScreen.removePreference(findPreference(getString(R.string.pref_osm_profile)));
   }
 
