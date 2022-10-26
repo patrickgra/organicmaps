@@ -637,6 +637,10 @@
     </activity-alias>
 
     <activity
+        android:name="com.mapswithme.maps.BoardingScreenActivity"
+        android:launchMode="singleTask"/>
+
+    <activity
         android:name="com.mapswithme.maps.MwmActivity"
         android:launchMode="singleTask"
         android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>

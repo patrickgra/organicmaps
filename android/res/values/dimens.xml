@@ -174,4 +174,12 @@
   <dimen name="sharing_options_img_size">18dp</dimen>
   <dimen name="bookmark_purchase_img_width">280dp</dimen>
   <dimen name="square_block_size">168dp</dimen>
+
+  <dimen name="bs_dots_height">30dp</dimen>
+  <dimen name="bs_dots_margin_bottom">20dp</dimen>
+  <dimen name="bs_img_height">200dp</dimen>
+  <dimen name="bs_img_width">200dp</dimen>
+  <dimen name="bs_title">30sp</dimen>
+  <dimen name="bs_desc">16sp</dimen>
+  <dimen name="bs_desc_padding">40dp</dimen>
 </resources>

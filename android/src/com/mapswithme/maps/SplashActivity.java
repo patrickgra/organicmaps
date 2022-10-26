@@ -152,6 +152,8 @@ public class SplashActivity extends AppCompatActivity implements BaseActivity
 
   private void init()
   {
+    if (Counters.isFirstLaunch(this))
+      startActivity(new Intent(SplashActivity.this,BoardingScreenActivity.class));
     MwmApplication app = MwmApplication.from(this);
     try
     {
@@ -169,9 +171,10 @@ public class SplashActivity extends AppCompatActivity implements BaseActivity
         LocationHelper.INSTANCE.start();
     }
 
-    processNavigation();
+    //processNavigation();
   }
 
+  /*
   @SuppressWarnings("unchecked")
   private void processNavigation()
   {
@@ -200,6 +203,8 @@ public class SplashActivity extends AppCompatActivity implements BaseActivity
     startActivity(result);
     finish();
   }
+  */
+
 
   protected void onActivityResult(int requestCode, int resultCode, Intent data)
   {

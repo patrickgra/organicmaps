@@ -1943,4 +1943,23 @@
 	<string name="type.piste_type.sled">Sledding Piste</string>
 	<string name="type.building_part">Building</string>
 	<string name="type.amenity.events_venue">Events Venue</string>
+
+	<string name="hello_first_fragment">Hello first fragment</string>
+	<string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+	<string name="skip">Skip</string>
+	<string name="start">Start</string>
+	<string name="next">Next</string>
+
+	<string name="bs_1_title">Screen 1</string>
+	<string name="bs_1_desc">Description Screen 1</string>
+
+	<string name="bs_2_title">Screen 2</string>
+	<string name="bs_2_desc">Description Screen 2</string>
+
+	<string name="bs_3_title">Screen 3</string>
+	<string name="bs_3_desc">Description Screen 3</string>
+
+	<string name="title_boarding_activity">Boarding Activity</string>
+
 </resources>
