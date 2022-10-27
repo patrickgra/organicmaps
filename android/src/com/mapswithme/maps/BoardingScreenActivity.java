@@ -35,76 +35,7 @@ public class BoardingScreenActivity extends AppCompatActivity {
     public static final String EXTRA_INITIAL_INTENT = "extra_initial_intent";
     private static final int REQUEST_PERMISSIONS = 1;
     private static final int REQ_CODE_API_RESULT = 10;
-    /*
-    @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-
-        preferences = new Preferences(this);
-        if(!preferences.isFirstTimeLaunch()){
-            launchHomeScreen();
-            finish(); //unnecessary?
-        }
-
-        setContentView(R.layout.activity_boarding_screen);
-        changeStatusBarColor();
-        initiateVariables();
-    }
-
-    private void initiateVariables(){
-        viewPager = findViewById(R.id.view_pager);
-        dotsLayout = findViewById(R.id.bs_layoutDots);
-        btnSkip = findViewById(R.id.bs_btn_skip);
-        btnNext = findViewById(R.id.bs_btn_next);
-
-        layouts = new int[]{
-                R.layout.bs_screen1,
-                R.layout.bs_screen2,
-                R.layout.bs_screen3
-        };
-
-        initiateViewPager();
-
-        btnSkip.setOnClickListener(view -> launchHomeScreen());
-        btnNext.setOnClickListener(view -> {
-            int current = getItem(1);
-            if (current < layouts.length){
-                viewPager.setCurrentItem(current);
-            }else {
-                launchHomeScreen();
-            }
-        });
-    }
-
-    private void initiateViewPager(){
-        ViewPager.OnPageChangeListener viewPagerPageOnChangeListener = new ViewPager.OnPageChangeListener() {
-            @Override
-            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-                addBottomDots(position);
-
-                if (position == layouts.length-1){
-                    btnNext.setText(getString(R.string.start));
-                    btnSkip.setVisibility(View.GONE);
-                }else {
-                    btnNext.setText(getString(R.string.next));
-                    btnSkip.setVisibility(View.VISIBLE);
-                }
-            }
-
-            @Override
-            public void onPageSelected(int position) {
-            }
-
-            @Override
-            public void onPageScrollStateChanged(int state) {
-            }
-        };
-
-        myViewPagerAdapter = new MyViewPagerAdapter();
-        viewPager.setAdapter(myViewPagerAdapter);
-        viewPager.addOnPageChangeListener(viewPagerPageOnChangeListener);
-
-    }*/
+ 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -178,6 +109,7 @@ public class BoardingScreenActivity extends AppCompatActivity {
 
     private void launchHomeScreen(){
         //startActivity(new Intent(BoardingScreenActivity.this, MainActivity.class));
+        Counters.setFirstStartDialogSeen(this);
         processNavigation();
         finish();
     }

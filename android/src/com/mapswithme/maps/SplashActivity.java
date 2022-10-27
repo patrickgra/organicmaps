@@ -170,11 +170,11 @@ public class SplashActivity extends AppCompatActivity implements BaseActivity
       if (!LocationHelper.INSTANCE.isActive())
         LocationHelper.INSTANCE.start();
     }
-
-    //processNavigation();
+    if (!Counters.isFirstLaunch(this))
+      processNavigation();
   }
 
-  /*
+
   @SuppressWarnings("unchecked")
   private void processNavigation()
   {
@@ -203,7 +203,7 @@ public class SplashActivity extends AppCompatActivity implements BaseActivity
     startActivity(result);
     finish();
   }
-  */
+
 
 
   protected void onActivityResult(int requestCode, int resultCode, Intent data)
