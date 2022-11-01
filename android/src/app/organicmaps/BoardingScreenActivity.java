@@ -1,4 +1,4 @@
-package com.mapswithme.maps;
+package app.organicmaps;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -20,7 +20,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
-import com.mapswithme.util.Counters;
+import app.organicmaps.util.Counters;
 
 public class BoardingScreenActivity extends AppCompatActivity {
 
