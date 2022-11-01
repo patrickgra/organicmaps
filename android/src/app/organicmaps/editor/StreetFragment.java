@@ -1,4 +1,4 @@
-package com.mapswithme.maps.editor;
+package app.organicmaps.editor;
 
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -10,11 +10,11 @@ import androidx.annotation.CallSuper;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.mapswithme.maps.R;
-import com.mapswithme.maps.base.BaseMwmRecyclerFragment;
-import com.mapswithme.maps.dialog.EditTextDialogFragment;
-import com.mapswithme.maps.editor.data.LocalizedStreet;
-import com.mapswithme.util.Option;
+import app.organicmaps.R;
+import app.organicmaps.base.BaseMwmRecyclerFragment;
+import app.organicmaps.dialog.EditTextDialogFragment;
+import app.organicmaps.editor.data.LocalizedStreet;
+import app.organicmaps.util.Option;
 
 public class StreetFragment extends BaseMwmRecyclerFragment<StreetAdapter>
 {

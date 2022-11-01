@@ -1,4 +1,4 @@
-package com.mapswithme.maps.maplayer.traffic;
+package app.organicmaps.maplayer.traffic;
 
 import androidx.annotation.MainThread;
 import androidx.annotation.NonNull;

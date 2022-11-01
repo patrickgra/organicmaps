@@ -1,9 +1,9 @@
-package com.mapswithme.maps.widget.placepage;
+package app.organicmaps.widget.placepage;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.mapswithme.maps.R;
+import app.organicmaps.R;
 
 public class PlacePageFactory
 {

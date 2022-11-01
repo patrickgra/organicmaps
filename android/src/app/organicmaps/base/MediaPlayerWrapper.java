@@ -1,4 +1,4 @@
-package com.mapswithme.maps.base;
+package app.organicmaps.base;
 
 import android.app.Application;
 import android.content.Context;
@@ -9,7 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.RawRes;
 
-import com.mapswithme.maps.MwmApplication;
+import app.organicmaps.MwmApplication;
 
 public class MediaPlayerWrapper
 {

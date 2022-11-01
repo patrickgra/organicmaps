@@ -1,4 +1,4 @@
-package com.mapswithme.maps;
+package app.organicmaps;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -20,15 +20,15 @@ import com.github.mikephil.charting.data.LineDataSet;
 import com.github.mikephil.charting.formatter.ValueFormatter;
 import com.github.mikephil.charting.highlight.Highlight;
 import com.github.mikephil.charting.listener.OnChartValueSelectedListener;
-import com.mapswithme.maps.base.Hideable;
-import com.mapswithme.maps.base.Initializable;
-import com.mapswithme.maps.bookmarks.data.BookmarkManager;
-import com.mapswithme.maps.bookmarks.data.ElevationInfo;
-import com.mapswithme.maps.widget.placepage.AxisValueFormatter;
-import com.mapswithme.maps.widget.placepage.CurrentLocationMarkerView;
-import com.mapswithme.maps.widget.placepage.FloatingMarkerView;
-import com.mapswithme.util.ThemeUtils;
-import com.mapswithme.util.Utils;
+import app.organicmaps.base.Hideable;
+import app.organicmaps.base.Initializable;
+import app.organicmaps.bookmarks.data.BookmarkManager;
+import app.organicmaps.bookmarks.data.ElevationInfo;
+import app.organicmaps.widget.placepage.AxisValueFormatter;
+import app.organicmaps.widget.placepage.CurrentLocationMarkerView;
+import app.organicmaps.widget.placepage.FloatingMarkerView;
+import app.organicmaps.util.ThemeUtils;
+import app.organicmaps.util.Utils;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -1,4 +1,4 @@
-package com.mapswithme.maps.maplayer.subway;
+package app.organicmaps.maplayer.subway;
 
 import android.app.Application;
 

@@ -1,10 +1,10 @@
-package com.mapswithme.maps.bookmarks.data;
+package app.organicmaps.bookmarks.data;
 
 import androidx.annotation.IntRange;
 import androidx.annotation.NonNull;
 
-import com.mapswithme.maps.Framework;
-import com.mapswithme.util.GeoUtils;
+import app.organicmaps.Framework;
+import app.organicmaps.util.GeoUtils;
 
 public class BookmarkInfo
 {

@@ -1,4 +1,4 @@
-package com.mapswithme.maps.base;
+package app.organicmaps.base;
 
 import android.content.Context;
 import android.view.View;
@@ -6,7 +6,7 @@ import android.view.View;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
-import com.mapswithme.util.Utils;
+import app.organicmaps.util.Utils;
 
 public class BaseMwmFragment extends Fragment implements OnBackPressListener
 {

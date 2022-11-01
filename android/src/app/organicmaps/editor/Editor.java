@@ -1,4 +1,4 @@
-package com.mapswithme.maps.editor;
+package app.organicmaps.editor;
 
 import android.content.Context;
 
@@ -7,17 +7,17 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Size;
 import androidx.annotation.WorkerThread;
 
-import com.mapswithme.maps.BuildConfig;
-import com.mapswithme.maps.Framework;
-import com.mapswithme.maps.MwmApplication;
-import com.mapswithme.maps.background.AppBackgroundTracker;
-import com.mapswithme.maps.background.OsmUploadService;
-import com.mapswithme.maps.bookmarks.data.Metadata;
-import com.mapswithme.maps.editor.data.FeatureCategory;
-import com.mapswithme.maps.editor.data.Language;
-import com.mapswithme.maps.editor.data.LocalizedName;
-import com.mapswithme.maps.editor.data.LocalizedStreet;
-import com.mapswithme.maps.editor.data.NamesDataSource;
+import app.organicmaps.BuildConfig;
+import app.organicmaps.Framework;
+import app.organicmaps.MwmApplication;
+import app.organicmaps.background.AppBackgroundTracker;
+import app.organicmaps.background.OsmUploadService;
+import app.organicmaps.bookmarks.data.Metadata;
+import app.organicmaps.editor.data.FeatureCategory;
+import app.organicmaps.editor.data.Language;
+import app.organicmaps.editor.data.LocalizedName;
+import app.organicmaps.editor.data.LocalizedStreet;
+import app.organicmaps.editor.data.NamesDataSource;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

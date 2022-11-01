@@ -1,6 +1,6 @@
-package com.mapswithme.maps.scheduling;
+package app.organicmaps.scheduling;
 
-import com.mapswithme.maps.background.OsmUploadService;
+import app.organicmaps.background.OsmUploadService;
 
 import java.util.HashMap;
 import java.util.Map;

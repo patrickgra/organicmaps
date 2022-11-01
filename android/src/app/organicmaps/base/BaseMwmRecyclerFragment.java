@@ -1,4 +1,4 @@
-package com.mapswithme.maps.base;
+package app.organicmaps.base;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -15,10 +15,10 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.mapswithme.maps.R;
-import com.mapswithme.maps.widget.PlaceholderView;
-import com.mapswithme.util.UiUtils;
-import com.mapswithme.util.Utils;
+import app.organicmaps.R;
+import app.organicmaps.widget.PlaceholderView;
+import app.organicmaps.util.UiUtils;
+import app.organicmaps.util.Utils;
 
 public abstract class BaseMwmRecyclerFragment<T extends RecyclerView.Adapter> extends Fragment
 {

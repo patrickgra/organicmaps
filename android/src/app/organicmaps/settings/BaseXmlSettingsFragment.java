@@ -1,4 +1,4 @@
-package com.mapswithme.maps.settings;
+package app.organicmaps.settings;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -9,9 +9,9 @@ import androidx.annotation.XmlRes;
 import androidx.core.content.ContextCompat;
 import androidx.preference.PreferenceFragmentCompat;
 
-import com.mapswithme.maps.R;
-import com.mapswithme.util.ThemeUtils;
-import com.mapswithme.util.Utils;
+import app.organicmaps.R;
+import app.organicmaps.util.ThemeUtils;
+import app.organicmaps.util.Utils;
 
 abstract class BaseXmlSettingsFragment extends PreferenceFragmentCompat
 {

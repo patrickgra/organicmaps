@@ -1,9 +1,9 @@
-package com.mapswithme.maps.downloader;
+package app.organicmaps.downloader;
 
 import androidx.fragment.app.Fragment;
 
-import com.mapswithme.maps.base.BaseMwmFragmentActivity;
-import com.mapswithme.maps.base.OnBackPressListener;
+import app.organicmaps.base.BaseMwmFragmentActivity;
+import app.organicmaps.base.OnBackPressListener;
 
 public class DownloaderActivity extends BaseMwmFragmentActivity
 {

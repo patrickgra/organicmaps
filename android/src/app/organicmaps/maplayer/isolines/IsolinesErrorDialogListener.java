@@ -1,4 +1,4 @@
-package com.mapswithme.maps.maplayer.isolines;
+package app.organicmaps.maplayer.isolines;
 
 import androidx.annotation.NonNull;
 

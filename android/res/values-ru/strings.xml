@@ -543,6 +543,7 @@
 	<string name="prefs_languages_information_off_link">Более подробная информация — в этом руководстве.</string>
 	<string name="transliteration_title">Латинская транслитерация</string>
 	<string name="learn_more">Узнать больше</string>
+	<!-- Subway exits for public transport marks on the map -->
 	<string name="core_exit">Выход</string>
 	<string name="routing_add_start_point">Добавьте стартовую точку, чтобы построить маршрут</string>
 	<string name="routing_add_finish_point">Добавьте конечную точку, чтобы построить маршрут</string>
@@ -1223,11 +1224,16 @@
 	<string name="type.historic.city_gate">Городские ворота</string>
 	<string name="type.historic.citywalls">Городская стена</string>
 	<string name="type.historic.fort">Форт</string>
+	<string name="type.historic.gallows">Виселица</string>
 	<string name="type.historic.memorial">Мемориал</string>
+	<string name="type.historic.memorial.cross">Памятный крест</string>
 	<string name="type.historic.memorial.plaque">Памятная доска</string>
 	<string name="type.historic.memorial.sculpture">Скульптура</string>
 	<string name="type.historic.memorial.statue">Статуя</string>
+	<string name="type.historic.memorial.stolperstein">Камни преткновения</string>
+	<string name="type.historic.memorial.war_memorial">Военный мемориал</string>
 	<string name="type.historic.monument">Памятник</string>
+	<string name="type.historic.pillory">Позорный столб</string>
 	<string name="type.historic.ruins">Руины</string>
 	<string name="type.historic.ship">Корабль</string>
 	<string name="type.historic.tomb">Гробница</string>
@@ -1635,7 +1641,6 @@
 	<string name="type.railway.subway_entrance.lille">Вход в метро</string>
 	<string name="type.railway.subway_entrance.lima">Вход в метро</string>
 	<string name="type.railway.subway_entrance.lisboa">Вход в метро</string>
-	<string name="type.railway.subway_entrance.lisbon">Вход в метро</string>
 	<string name="type.railway.subway_entrance.london">Вход в метро</string>
 	<string name="type.railway.subway_entrance.lyon">Вход в метро</string>
 	<string name="type.railway.subway_entrance.madrid">Вход в метро</string>
@@ -1717,9 +1722,9 @@
 	<string name="type.shop.car_repair.tyres">Шиномонтаж</string>
 	<string name="type.shop.caravan">Продажа автодомов</string>
 	<string name="type.shop.chemist">Бытовая химия</string>
-	<string name="type.shop.chocolate">Магазин</string>
+	<string name="type.shop.chocolate">Магазин шоколада</string>
 	<string name="type.shop.clothes">Магазин одежды</string>
-	<string name="type.shop.coffee">Магазин</string>
+	<string name="type.shop.coffee">Магазин кофе</string>
 	<string name="type.shop.computer">Компьютерный магазин</string>
 	<string name="type.shop.confectionery">Кондитерская</string>
 	<string name="type.shop.convenience">Продуктовый магазин</string>
@@ -1751,10 +1756,10 @@
 	<string name="type.shop.mall">Торговый центр</string>
 	<string name="type.shop.massage">Массажный салон</string>
 	<string name="type.shop.mobile_phone">Мобильные телефоны</string>
-	<string name="type.shop.money_lender">Магазин</string>
+	<string name="type.shop.money_lender">Ростовщик</string>
 	<string name="type.shop.motorcycle">Магазин мотоциклов</string>
-	<string name="type.shop.music">Магазин</string>
-	<string name="type.shop.musical_instrument">Магазин</string>
+	<string name="type.shop.music">Музыкальный магазин</string>
+	<string name="type.shop.musical_instrument">Музыкальные инструменты</string>
 	<string name="type.shop.newsagent">Газетный киоск</string>
 	<string name="type.shop.optician">Оптика</string>
 	<string name="type.shop.outdoor">Магазин снаряжения</string>
@@ -1769,7 +1774,7 @@
 	<string name="type.shop.stationery">Канцелярский магазин</string>
 	<string name="type.shop.supermarket">Супермаркет</string>
 	<string name="type.shop.tattoo">Тату-салон</string>
-	<string name="type.shop.tea">Магазин</string>
+	<string name="type.shop.tea">Чайный магазин</string>
 	<string name="type.shop.ticket">Билетная касса</string>
 	<string name="type.shop.toys">Магазин игрушек</string>
 	<string name="type.shop.travel_agency">Турагентство</string>

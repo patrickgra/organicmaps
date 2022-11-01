@@ -1,4 +1,4 @@
-package com.mapswithme.maps.settings;
+package app.organicmaps.settings;
 
 public enum RoadType
 {

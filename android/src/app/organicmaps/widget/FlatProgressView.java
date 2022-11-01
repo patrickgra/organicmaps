@@ -1,4 +1,4 @@
-package com.mapswithme.maps.widget;
+package app.organicmaps.widget;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -9,7 +9,7 @@ import android.graphics.RectF;
 import android.util.AttributeSet;
 import android.view.View;
 
-import com.mapswithme.maps.R;
+import app.organicmaps.R;
 
 public class FlatProgressView extends View
 {

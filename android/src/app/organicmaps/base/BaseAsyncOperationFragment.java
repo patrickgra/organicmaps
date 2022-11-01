@@ -1,13 +1,11 @@
-package com.mapswithme.maps.base;
+package app.organicmaps.base;
 
 import androidx.annotation.StringRes;
 import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.FragmentManager;
 
-import com.mapswithme.maps.R;
-import com.mapswithme.maps.dialog.ProgressDialogFragment;
-
-import java.util.Objects;
+import app.organicmaps.R;
+import app.organicmaps.dialog.ProgressDialogFragment;
 
 public abstract class BaseAsyncOperationFragment extends BaseMwmFragment
 {

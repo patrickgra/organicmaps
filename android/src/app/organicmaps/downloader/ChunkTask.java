@@ -1,12 +1,12 @@
-package com.mapswithme.maps.downloader;
+package app.organicmaps.downloader;
 
 import android.os.AsyncTask;
 import android.util.Base64;
 
-import com.mapswithme.util.Constants;
-import com.mapswithme.util.StringUtils;
-import com.mapswithme.util.Utils;
-import com.mapswithme.util.log.Logger;
+import app.organicmaps.util.Constants;
+import app.organicmaps.util.StringUtils;
+import app.organicmaps.util.Utils;
+import app.organicmaps.util.log.Logger;
 
 import java.io.BufferedInputStream;
 import java.io.DataOutputStream;

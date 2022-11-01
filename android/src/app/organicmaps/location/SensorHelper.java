@@ -1,4 +1,4 @@
-package com.mapswithme.maps.location;
+package app.organicmaps.location;
 
 import android.content.Context;
 import android.hardware.Sensor;
@@ -9,7 +9,7 @@ import android.hardware.SensorManager;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.mapswithme.maps.MwmApplication;
+import app.organicmaps.MwmApplication;
 
 class SensorHelper implements SensorEventListener
 {

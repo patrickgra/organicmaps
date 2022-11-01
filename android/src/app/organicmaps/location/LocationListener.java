@@ -1,4 +1,4 @@
-package com.mapswithme.maps.location;
+package app.organicmaps.location;
 
 import android.location.Location;
 

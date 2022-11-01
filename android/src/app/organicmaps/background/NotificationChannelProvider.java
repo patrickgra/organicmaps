@@ -1,4 +1,4 @@
-package com.mapswithme.maps.background;
+package app.organicmaps.background;
 
 import androidx.annotation.NonNull;
 

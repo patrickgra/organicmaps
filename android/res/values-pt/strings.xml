@@ -512,7 +512,8 @@
 	<string name="prefs_languages_information_off_link">Para obter mais informações, consulte este guia.</string>
 	<string name="transliteration_title">Transliteração para o latim</string>
 	<string name="learn_more">Saber mais</string>
-	<string name="core_exit">Sair</string>
+	<!-- Subway exits for public transport marks on the map -->
+	<string name="core_exit">Saída</string>
 	<string name="routing_add_start_point">Adicionar ponto de partida para planear uma rota</string>
 	<string name="routing_add_finish_point">Adicionar final da viagem para planear uma rota</string>
 	<string name="button_exit">Sair</string>
@@ -807,6 +808,7 @@
 	<string name="type.amenity.vending_machine.drinks">Máquina de venda de bebidas</string>
 	<string name="type.amenity.vending_machine.parking_tickets">Máquina venda de bilhetes de estacionamento</string>
 	<string name="type.amenity.vending_machine.public_transport_tickets">Máquina venda de bilhetes de transporte público</string>
+	<string name="type.amenity.parcel_locker">Cacifo</string>
 	<string name="type.amenity.veterinary">Veterinário</string>
 	<string name="type.amenity.waste_basket">Caixote do lixo</string>
 	<string name="type.amenity.waste_disposal">Contentor do lixo</string>
@@ -1158,11 +1160,16 @@
 	<string name="type.historic.city_gate">Portas da cidade</string>
 	<string name="type.historic.citywalls">Muralha de cidade</string>
 	<string name="type.historic.fort">Forte histórico</string>
+	<string name="type.historic.gallows">Forca</string>
 	<string name="type.historic.memorial">Memorial</string>
+	<string name="type.historic.memorial.cross">Cruz memorial</string>
 	<string name="type.historic.memorial.plaque">Placa comemorativa</string>
 	<string name="type.historic.memorial.sculpture">Escultura memorial</string>
 	<string name="type.historic.memorial.statue">Estátua memorial</string>
+	<string name="type.historic.memorial.stolperstein">Stolperstein</string>
+	<string name="type.historic.memorial.war_memorial">Memorial de guerra</string>
 	<string name="type.historic.monument">Monumento</string>
+	<string name="type.historic.pillory">Pelourinho</string>
 	<string name="type.historic.ruins">Ruínas</string>
 	<string name="type.historic.ship">Barco histórico</string>
 	<string name="type.historic.tomb">Túmulo</string>
@@ -1557,7 +1564,6 @@
 	<string name="type.railway.subway_entrance.lille">Entrada do metro</string>
 	<string name="type.railway.subway_entrance.lima">Entrada do metro</string>
 	<string name="type.railway.subway_entrance.lisboa">Entrada do metro</string>
-	<string name="type.railway.subway_entrance.lisbon">Entrada do metro</string>
 	<string name="type.railway.subway_entrance.london">Entrada do metro</string>
 	<string name="type.railway.subway_entrance.lyon">Entrada do metro</string>
 	<string name="type.railway.subway_entrance.madrid">Entrada do metro</string>
@@ -1650,7 +1656,7 @@
 	<string name="type.shop.department_store">Grande armazém</string>
 	<string name="type.shop.doityourself">Loja de ferramentas e materiais de bricolage</string>
 	<string name="type.shop.dry_cleaning">Lavagem a seco</string>
-	<string name="type.shop.electronics">Loja de electrónica de consumo</string>
+	<string name="type.shop.electronics">Loja de eletrónica de consumo</string>
 	<string name="type.shop.erotic">Loja de artigos eróticos</string>
 	<string name="type.shop.fabric">Loja de tecidos</string>
 	<string name="type.shop.farm">Loja de comida agrícola</string>

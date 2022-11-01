@@ -1,6 +1,5 @@
-package com.mapswithme.maps.editor;
+package app.organicmaps.editor;
 
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -26,22 +25,22 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.textfield.TextInputLayout;
-import com.mapswithme.maps.Framework;
-import com.mapswithme.maps.R;
-import com.mapswithme.maps.base.BaseMwmFragment;
-import com.mapswithme.maps.bookmarks.data.Metadata;
-import com.mapswithme.maps.dialog.EditTextDialogFragment;
-import com.mapswithme.maps.editor.data.LocalizedName;
-import com.mapswithme.maps.editor.data.LocalizedStreet;
-import com.mapswithme.maps.editor.data.TimeFormatUtils;
-import com.mapswithme.maps.editor.data.Timetable;
-import com.mapswithme.util.Constants;
-import com.mapswithme.util.Graphics;
-import com.mapswithme.util.InputUtils;
-import com.mapswithme.util.Option;
-import com.mapswithme.util.StringUtils;
-import com.mapswithme.util.UiUtils;
-import com.mapswithme.util.Utils;
+import app.organicmaps.Framework;
+import app.organicmaps.R;
+import app.organicmaps.base.BaseMwmFragment;
+import app.organicmaps.bookmarks.data.Metadata;
+import app.organicmaps.dialog.EditTextDialogFragment;
+import app.organicmaps.editor.data.LocalizedName;
+import app.organicmaps.editor.data.LocalizedStreet;
+import app.organicmaps.editor.data.TimeFormatUtils;
+import app.organicmaps.editor.data.Timetable;
+import app.organicmaps.util.Constants;
+import app.organicmaps.util.Graphics;
+import app.organicmaps.util.InputUtils;
+import app.organicmaps.util.Option;
+import app.organicmaps.util.StringUtils;
+import app.organicmaps.util.UiUtils;
+import app.organicmaps.util.Utils;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -495,45 +494,30 @@ public class EditorFragment extends BaseMwmFragment implements View.OnClickListe
   @Override
   public void onClick(View v)
   {
-    switch (v.getId())
-    {
-    case R.id.edit_opening_hours:
-    case R.id.empty_opening_hours:
-    case R.id.opening_hours:
+    final int id = v.getId();
+    if (id == R.id.edit_opening_hours || id == R.id.empty_opening_hours || id == R.id.opening_hours)
       mParent.editTimetable();
-      break;
-    case R.id.phone:
-    case R.id.edit_phone:
+    else if (id == R.id.phone || id == R.id.edit_phone)
       mParent.editPhone();
-      break;
-    case R.id.block_wifi:
+    else if (id == R.id.block_wifi)
       mWifi.toggle();
-      break;
-    case R.id.block_street:
+    else if (id == R.id.block_street)
       mParent.editStreet();
-      break;
-    case R.id.block_cuisine:
+    else if (id == R.id.block_cuisine)
       mParent.editCuisine();
-      break;
-    case R.id.category:
+    else if (id == R.id.category)
       mParent.editCategory();
-      break;
-    case R.id.more_names:
-    case R.id.show_additional_names:
-      if (mNamesAdapter.areAdditionalLanguagesShown() && !validateNames())
-        break;
-      showAdditionalNames(!mNamesAdapter.areAdditionalLanguagesShown());
-      break;
-    case R.id.add_langs:
-      mParent.addLanguage();
-      break;
-    case R.id.about_osm:
-      startActivity(new Intent((Intent.ACTION_VIEW), Uri.parse(Constants.Url.OSM_ABOUT)));
-      break;
-    case R.id.reset:
-      reset();
-      break;
+    else if (id == R.id.more_names || id == R.id.show_additional_names)
+    {
+      if (!mNamesAdapter.areAdditionalLanguagesShown() || validateNames())
+        showAdditionalNames(!mNamesAdapter.areAdditionalLanguagesShown());
     }
+    else if (id == R.id.add_langs)
+      mParent.addLanguage();
+    else if (id == R.id.about_osm)
+      startActivity(new Intent((Intent.ACTION_VIEW), Uri.parse(Constants.Url.OSM_ABOUT)));
+    else if (id == R.id.reset)
+      reset();
   }
 
   private void showAdditionalNames(boolean show)

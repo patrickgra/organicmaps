@@ -1,4 +1,4 @@
-package com.mapswithme.util.concurrency;
+package app.organicmaps.util.concurrency;
 
 import android.os.Handler;
 import android.os.Looper;

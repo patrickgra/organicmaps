@@ -1,13 +1,13 @@
-package com.mapswithme.maps.maplayer;
+package app.organicmaps.maplayer;
 
 import android.app.Activity;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 
 import androidx.annotation.NonNull;
-import com.mapswithme.maps.R;
-import com.mapswithme.util.Graphics;
-import com.mapswithme.util.UiUtils;
+import app.organicmaps.R;
+import app.organicmaps.util.Graphics;
+import app.organicmaps.util.UiUtils;
 
 import java.util.List;
 

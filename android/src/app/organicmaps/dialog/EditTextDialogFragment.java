@@ -1,4 +1,4 @@
-package com.mapswithme.maps.dialog;
+package app.organicmaps.dialog;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -20,11 +20,11 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentManager;
 import com.google.android.material.textfield.TextInputLayout;
-import com.mapswithme.maps.R;
-import com.mapswithme.maps.base.BaseMwmDialogFragment;
-import com.mapswithme.util.InputUtils;
-import com.mapswithme.util.Option;
-import com.mapswithme.util.StringUtils;
+import app.organicmaps.R;
+import app.organicmaps.base.BaseMwmDialogFragment;
+import app.organicmaps.util.InputUtils;
+import app.organicmaps.util.Option;
+import app.organicmaps.util.StringUtils;
 
 public class EditTextDialogFragment extends BaseMwmDialogFragment
 {

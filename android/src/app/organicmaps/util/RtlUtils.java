@@ -1,4 +1,4 @@
-package com.mapswithme.util;
+package app.organicmaps.util;
 
 import android.app.Activity;
 import android.view.View;

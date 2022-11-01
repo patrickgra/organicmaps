@@ -1,12 +1,12 @@
-package com.mapswithme.maps;
+package app.organicmaps;
 
 import android.content.Intent;
 import android.util.Log;
 
 import androidx.annotation.NonNull;
 import androidx.core.app.JobIntentService;
-import com.mapswithme.util.CrashlyticsUtils;
-import com.mapswithme.util.log.Logger;
+import app.organicmaps.util.CrashlyticsUtils;
+import app.organicmaps.util.log.Logger;
 
 public abstract class MwmJobIntentService extends JobIntentService
 {

@@ -1,4 +1,4 @@
-package com.mapswithme.maps.editor;
+package app.organicmaps.editor;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,9 +9,9 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.mapswithme.maps.R;
-import com.mapswithme.maps.editor.data.FeatureCategory;
-import com.mapswithme.util.UiUtils;
+import app.organicmaps.R;
+import app.organicmaps.editor.data.FeatureCategory;
+import app.organicmaps.util.UiUtils;
 
 public class FeatureCategoryAdapter extends RecyclerView.Adapter<FeatureCategoryAdapter.FeatureViewHolder>
 {

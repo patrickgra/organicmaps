@@ -1,4 +1,4 @@
-package com.mapswithme.maps.routing;
+package app.organicmaps.routing;
 
 import android.content.Context;
 import android.content.DialogInterface;
@@ -16,19 +16,19 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.core.util.Pair;
 import androidx.fragment.app.FragmentActivity;
 
-import com.mapswithme.maps.Framework;
-import com.mapswithme.maps.MwmApplication;
-import com.mapswithme.maps.R;
-import com.mapswithme.maps.base.Initializable;
-import com.mapswithme.maps.bookmarks.data.FeatureId;
-import com.mapswithme.maps.bookmarks.data.MapObject;
-import com.mapswithme.maps.location.LocationHelper;
-import com.mapswithme.maps.widget.placepage.CoordinatesFormat;
-import com.mapswithme.util.Config;
-import com.mapswithme.util.StringUtils;
-import com.mapswithme.util.Utils;
-import com.mapswithme.util.concurrency.UiThread;
-import com.mapswithme.util.log.Logger;
+import app.organicmaps.Framework;
+import app.organicmaps.MwmApplication;
+import app.organicmaps.R;
+import app.organicmaps.base.Initializable;
+import app.organicmaps.bookmarks.data.FeatureId;
+import app.organicmaps.bookmarks.data.MapObject;
+import app.organicmaps.location.LocationHelper;
+import app.organicmaps.widget.placepage.CoordinatesFormat;
+import app.organicmaps.util.Config;
+import app.organicmaps.util.StringUtils;
+import app.organicmaps.util.Utils;
+import app.organicmaps.util.concurrency.UiThread;
+import app.organicmaps.util.log.Logger;
 
 import java.util.Calendar;
 import java.util.concurrent.TimeUnit;

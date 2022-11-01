@@ -1,4 +1,4 @@
-package com.mapswithme.maps.search;
+package app.organicmaps.search;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -7,11 +7,11 @@ import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.mapswithme.maps.R;
-import com.mapswithme.maps.location.LocationHelper;
-import com.mapswithme.maps.routing.RoutingController;
-import com.mapswithme.maps.widget.SearchToolbarController;
-import com.mapswithme.util.Graphics;
+import app.organicmaps.R;
+import app.organicmaps.location.LocationHelper;
+import app.organicmaps.routing.RoutingController;
+import app.organicmaps.widget.SearchToolbarController;
+import app.organicmaps.util.Graphics;
 
 class SearchHistoryAdapter extends RecyclerView.Adapter<SearchHistoryAdapter.ViewHolder>
 {

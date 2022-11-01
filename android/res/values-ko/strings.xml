@@ -505,6 +505,7 @@
 	<string name="prefs_languages_information_off_link">자세한 내용을 보려면 이 가이드를 확인하세요.</string>
 	<string name="transliteration_title">라틴어로 음역</string>
 	<string name="learn_more">자세히 알아보기</string>
+	<!-- Subway exits for public transport marks on the map -->
 	<string name="core_exit">끝내기</string>
 	<string name="routing_add_start_point">경로 계획을 세우기 위한 시작 지점을 추가하세요</string>
 	<string name="routing_add_finish_point">경로 계획을 세우기 위한 끝 지점을 추가하세요</string>
@@ -1084,11 +1085,16 @@
 	<string name="type.historic.castle.shiro">일본의 성</string>
 	<string name="type.historic.castle.stately">성</string>
 	<string name="type.historic.city_gate">성문</string>
+	<string name="type.historic.gallows">교수대</string>
 	<string name="type.historic.memorial">기념비</string>
+	<string name="type.historic.memorial.cross">기념 십자가</string>
 	<string name="type.historic.memorial.plaque">기념비</string>
 	<string name="type.historic.memorial.sculpture">기념비</string>
 	<string name="type.historic.memorial.statue">기념비</string>
+	<string name="type.historic.memorial.stolperstein">장애물</string>
+	<string name="type.historic.memorial.war_memorial">전쟁기념관</string>
 	<string name="type.historic.monument">기념탑</string>
+	<string name="type.historic.pillory">칼</string>
 	<string name="type.historic.ruins">유적</string>
 	<string name="type.historic.ship">배</string>
 	<string name="type.historic.tomb">무덤</string>
@@ -1393,7 +1399,6 @@
 	<string name="type.railway.subway_entrance.lille">지하철 입구</string>
 	<string name="type.railway.subway_entrance.lima">지하철 입구</string>
 	<string name="type.railway.subway_entrance.lisboa">지하철 입구</string>
-	<string name="type.railway.subway_entrance.lisbon">지하철 입구</string>
 	<string name="type.railway.subway_entrance.london">지하철 입구</string>
 	<string name="type.railway.subway_entrance.lyon">지하철 입구</string>
 	<string name="type.railway.subway_entrance.madrid">지하철 입구</string>

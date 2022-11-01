@@ -1,13 +1,13 @@
-package com.mapswithme.maps.maplayer;
+package app.organicmaps.maplayer;
 
 import android.content.Context;
 
 import androidx.annotation.NonNull;
 
-import com.mapswithme.maps.maplayer.isolines.IsolinesManager;
-import com.mapswithme.maps.maplayer.subway.SubwayManager;
-import com.mapswithme.maps.maplayer.traffic.TrafficManager;
-import com.mapswithme.util.SharedPropertiesUtils;
+import app.organicmaps.maplayer.isolines.IsolinesManager;
+import app.organicmaps.maplayer.subway.SubwayManager;
+import app.organicmaps.maplayer.traffic.TrafficManager;
+import app.organicmaps.util.SharedPropertiesUtils;
 
 public enum Mode
 {

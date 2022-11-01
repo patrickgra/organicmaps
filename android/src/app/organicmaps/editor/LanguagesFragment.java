@@ -1,11 +1,11 @@
-package com.mapswithme.maps.editor;
+package app.organicmaps.editor;
 
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 
-import com.mapswithme.maps.base.BaseMwmRecyclerFragment;
-import com.mapswithme.maps.editor.data.Language;
+import app.organicmaps.base.BaseMwmRecyclerFragment;
+import app.organicmaps.editor.data.Language;
 
 import java.util.ArrayList;
 import java.util.Collections;

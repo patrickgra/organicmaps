@@ -520,7 +520,8 @@
 	<string name="prefs_languages_information_off_link">Para obtener más información, consulte esta guía.</string>
 	<string name="transliteration_title">Transliteración al latín</string>
 	<string name="learn_more">Leer más</string>
-	<string name="core_exit">Salir</string>
+	<!-- Subway exits for public transport marks on the map -->
+	<string name="core_exit">Salida</string>
 	<string name="routing_add_start_point">Buscar un origen para el plan de ruta</string>
 	<string name="routing_add_finish_point">Buscar un destino para el plan de ruta</string>
 	<string name="button_exit">Salir</string>
@@ -1176,7 +1177,13 @@
 	<string name="type.historic.castle.shiro">Castillo japonés</string>
 	<string name="type.historic.castle.stately">Castillo</string>
 	<string name="type.historic.city_gate">Puerta de la ciudad</string>
+	<string name="type.historic.gallows">Horca</string>
+	<string name="type.historic.memorial.cross">Cruz conmemorativa</string>
+	<string name="type.historic.memorial.plaque">Placa conmemorativa</string>
+	<string name="type.historic.memorial.stolperstein">Stolperstein</string>
+	<string name="type.historic.memorial.war_memorial">Monumento a la guerra</string>
 	<string name="type.historic.monument">Monumento</string>
+	<string name="type.historic.pillory">Picota</string>
 	<string name="type.historic.ruins">Ruinas</string>
 	<string name="type.historic.ship">Turismo</string>
 	<string name="type.historic.tomb">Turismo</string>
@@ -1484,7 +1491,6 @@
 	<string name="type.railway.subway_entrance.lille">Entrada al metro</string>
 	<string name="type.railway.subway_entrance.lima">Entrada al metro</string>
 	<string name="type.railway.subway_entrance.lisboa">Entrada al metro</string>
-	<string name="type.railway.subway_entrance.lisbon">Entrada al metro</string>
 	<string name="type.railway.subway_entrance.london">Entrada al metro</string>
 	<string name="type.railway.subway_entrance.lyon">Entrada al metro</string>
 	<string name="type.railway.subway_entrance.madrid">Entrada al metro</string>
@@ -1592,7 +1598,7 @@
 	<string name="type.shop.mobile_phone">Móviles</string>
 	<string name="type.shop.money_lender">Tienda</string>
 	<string name="type.shop.motorcycle">Tienda de motos</string>
-	<string name="type.shop.music">Tienda</string>
+	<string name="type.shop.music">Disquería</string>
 	<string name="type.shop.musical_instrument">Tienda</string>
 	<string name="type.shop.newsagent">Puesto de venta de periódicos</string>
 	<string name="type.shop.optician">Óptica</string>

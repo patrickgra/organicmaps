@@ -1,4 +1,4 @@
-package com.mapswithme.maps.api;
+package app.organicmaps.api;
 
 /**
  * Represents url_scheme::RoutePoint from core.

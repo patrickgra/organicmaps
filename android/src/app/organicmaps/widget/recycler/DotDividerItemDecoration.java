@@ -1,4 +1,4 @@
-package com.mapswithme.maps.widget.recycler;
+package app.organicmaps.widget.recycler;
 
 import android.graphics.Canvas;
 import android.graphics.Rect;

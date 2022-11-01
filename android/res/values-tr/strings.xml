@@ -540,6 +540,7 @@
 	<string name="prefs_languages_information_off_link">Daha fazla bilgi için lütfen bu kılavuzu inceleyin.</string>
 	<string name="transliteration_title">Latin harf çevirisi</string>
 	<string name="learn_more">Daha fazla bilgi edinin</string>
+	<!-- Subway exits for public transport marks on the map -->
 	<string name="core_exit">Çık</string>
 	<string name="routing_add_start_point">Rotayı planlamak için bir başlangıç noktası ekleyin</string>
 	<string name="routing_add_finish_point">Rotayı planlamak için bir varış noktası ekleyin</string>
@@ -825,7 +826,7 @@
 	<string name="type.recycling.batteries">Piller</string>
 	<string name="type.recycling.clothes">Kıyafet</string>
 	<string name="type.recycling.glass_bottles">Cam Şişeler</string>
-	<string name="type.recycling.paper">Kâğıt Atıklar</string>
+	<string name="type.recycling.paper">Kağıt Atıklar</string>
 	<string name="type.recycling.plastic">Plastik Atıklar</string>
 	<string name="type.recycling.plastic_bottles">Plastik Şişeler</string>
 	<string name="type.recycling.scrap_metal">Hurda Metaller</string>
@@ -1208,11 +1209,16 @@
 	<string name="type.historic.city_gate">Şehir kapısı</string>
 	<string name="type.historic.citywalls">Şehir Duvarı</string>
 	<string name="type.historic.fort">Hisar</string>
+	<string name="type.historic.gallows">Darağacı</string>
 	<string name="type.historic.memorial">Abide</string>
+	<string name="type.historic.memorial.cross">Anıt haç</string>
 	<string name="type.historic.memorial.plaque">Hatıra Plaketi</string>
 	<string name="type.historic.memorial.sculpture">Heykel</string>
 	<string name="type.historic.memorial.statue">Heykel</string>
+	<string name="type.historic.memorial.stolperstein">Tökezleyen Taşlar</string>
+	<string name="type.historic.memorial.war_memorial">Savaş anıtı</string>
 	<string name="type.historic.monument">Anıt</string>
+	<string name="type.historic.pillory">Boyunduruk</string>
 	<string name="type.historic.ruins">Harabeler</string>
 	<string name="type.historic.ship">Görülecek yerler</string>
 	<string name="type.historic.tomb">Türbe</string>
@@ -1610,7 +1616,6 @@
 	<string name="type.railway.subway_entrance.lille">Metro Girişi</string>
 	<string name="type.railway.subway_entrance.lima">Metro Girişi</string>
 	<string name="type.railway.subway_entrance.lisboa">Metro Girişi</string>
-	<string name="type.railway.subway_entrance.lisbon">Metro Girişi</string>
 	<string name="type.railway.subway_entrance.london">Metro Girişi</string>
 	<string name="type.railway.subway_entrance.lyon">Metro Girişi</string>
 	<string name="type.railway.subway_entrance.madrid">Metro Girişi</string>

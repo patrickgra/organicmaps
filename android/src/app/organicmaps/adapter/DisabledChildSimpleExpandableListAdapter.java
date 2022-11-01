@@ -1,4 +1,4 @@
-package com.mapswithme.maps.adapter;
+package app.organicmaps.adapter;
 
 import android.content.Context;
 import android.view.View;

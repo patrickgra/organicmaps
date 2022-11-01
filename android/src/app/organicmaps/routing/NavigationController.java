@@ -1,4 +1,4 @@
-package com.mapswithme.maps.routing;
+package app.organicmaps.routing;
 
 import android.app.Activity;
 import android.app.Application;
@@ -19,17 +19,18 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
-import com.mapswithme.maps.Framework;
-import com.mapswithme.maps.MwmActivity;
-import com.mapswithme.maps.R;
-import com.mapswithme.maps.base.MediaPlayerWrapper;
-import com.mapswithme.maps.maplayer.MapButtonsController;
-import com.mapswithme.maps.maplayer.traffic.TrafficManager;
-import com.mapswithme.maps.sound.TtsPlayer;
-import com.mapswithme.maps.widget.menu.MainMenu;
-import com.mapswithme.maps.widget.menu.NavMenu;
-import com.mapswithme.util.UiUtils;
-import com.mapswithme.util.Utils;
+
+import app.organicmaps.Framework;
+import app.organicmaps.MwmActivity;
+import app.organicmaps.R;
+import app.organicmaps.base.MediaPlayerWrapper;
+import app.organicmaps.maplayer.MapButtonsController;
+import app.organicmaps.maplayer.traffic.TrafficManager;
+import app.organicmaps.sound.TtsPlayer;
+import app.organicmaps.widget.menu.MainMenu;
+import app.organicmaps.widget.menu.NavMenu;
+import app.organicmaps.util.UiUtils;
+import app.organicmaps.util.Utils;
 
 public class NavigationController implements Application.ActivityLifecycleCallbacks,
                                              TrafficManager.TrafficCallback,
@@ -217,7 +218,9 @@ public class NavigationController implements Application.ActivityLifecycleCallba
   private void updateStreetView(@NonNull RoutingInfo info)
   {
     boolean hasStreet = !TextUtils.isEmpty(info.nextStreet);
-    UiUtils.showIf(hasStreet, mStreetFrame);
+    // Sic: don't use UiUtils.showIf() here because View.GONE breaks layout
+    // https://github.com/organicmaps/organicmaps/issues/3732
+    UiUtils.visibleIf(hasStreet, mStreetFrame);
     if (!TextUtils.isEmpty(info.nextStreet))
       mNextStreet.setText(info.nextStreet);
   }

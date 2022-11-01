@@ -1,7 +1,6 @@
-package com.mapswithme.util;
+package app.organicmaps.util;
 
 import android.animation.Animator;
-import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.ContentResolver;
 import android.content.Context;
@@ -42,8 +41,8 @@ import androidx.core.view.WindowInsetsCompat;
 import androidx.core.view.WindowInsetsControllerCompat;
 import androidx.recyclerview.widget.RecyclerView;
 import com.google.android.material.textfield.TextInputLayout;
-import com.mapswithme.maps.MwmApplication;
-import com.mapswithme.maps.R;
+import app.organicmaps.MwmApplication;
+import app.organicmaps.R;
 
 import java.util.Objects;
 
@@ -388,9 +387,10 @@ public final class UiUtils
     final View decorView = window.getDecorView();
     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
     {
-      WindowInsetsControllerCompat wic = WindowCompat.getInsetsController(window, decorView);
       // It should not be possible for Window insets controller to be null
-      Objects.requireNonNull(wic).setAppearanceLightStatusBars(isLight);
+      WindowInsetsControllerCompat wic = Objects.requireNonNull(WindowCompat.getInsetsController(window, decorView));
+      if (wic.isAppearanceLightStatusBars() != isLight)
+        wic.setAppearanceLightStatusBars(isLight);
     }
     else
     {

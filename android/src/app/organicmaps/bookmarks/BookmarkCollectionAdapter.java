@@ -1,6 +1,5 @@
-package com.mapswithme.maps.bookmarks;
+package app.organicmaps.bookmarks;
 
-import android.content.res.Resources;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,11 +9,11 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.mapswithme.maps.R;
-import com.mapswithme.maps.adapter.OnItemClickListener;
-import com.mapswithme.maps.bookmarks.data.BookmarkCategory;
-import com.mapswithme.maps.bookmarks.data.BookmarkManager;
-import com.mapswithme.util.UiUtils;
+import app.organicmaps.R;
+import app.organicmaps.adapter.OnItemClickListener;
+import app.organicmaps.bookmarks.data.BookmarkCategory;
+import app.organicmaps.bookmarks.data.BookmarkManager;
+import app.organicmaps.util.UiUtils;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

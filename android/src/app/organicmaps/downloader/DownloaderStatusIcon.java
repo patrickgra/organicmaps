@@ -1,4 +1,4 @@
-package com.mapswithme.maps.downloader;
+package app.organicmaps.downloader;
 
 import android.util.SparseIntArray;
 import android.view.View;
@@ -7,10 +7,10 @@ import android.widget.ImageView;
 import androidx.annotation.AttrRes;
 import androidx.annotation.DrawableRes;
 
-import com.mapswithme.maps.R;
-import com.mapswithme.maps.widget.WheelProgressView;
-import com.mapswithme.util.ThemeUtils;
-import com.mapswithme.util.UiUtils;
+import app.organicmaps.R;
+import app.organicmaps.widget.WheelProgressView;
+import app.organicmaps.util.ThemeUtils;
+import app.organicmaps.util.UiUtils;
 
 public class DownloaderStatusIcon
 {

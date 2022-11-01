@@ -1,4 +1,4 @@
-package com.mapswithme.maps.settings;
+package app.organicmaps.settings;
 
 import android.graphics.Rect;
 import android.os.Bundle;
@@ -9,7 +9,7 @@ import android.view.ViewGroup;
 import androidx.annotation.LayoutRes;
 import androidx.annotation.Nullable;
 
-import com.mapswithme.maps.base.BaseMwmFragment;
+import app.organicmaps.base.BaseMwmFragment;
 
 abstract class BaseSettingsFragment extends BaseMwmFragment
 {

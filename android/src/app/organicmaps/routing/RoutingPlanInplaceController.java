@@ -1,4 +1,4 @@
-package com.mapswithme.maps.routing;
+package app.organicmaps.routing;
 
 import android.animation.Animator;
 import android.animation.ValueAnimator;
@@ -7,9 +7,9 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.mapswithme.maps.MwmActivity;
-import com.mapswithme.maps.R;
-import com.mapswithme.util.UiUtils;
+import app.organicmaps.MwmActivity;
+import app.organicmaps.R;
+import app.organicmaps.util.UiUtils;
 
 public class RoutingPlanInplaceController extends RoutingPlanController
 {

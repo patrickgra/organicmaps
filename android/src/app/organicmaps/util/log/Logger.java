@@ -1,11 +1,11 @@
-package com.mapswithme.util.log;
+package app.organicmaps.util.log;
 
 import android.util.Log;
 
 import androidx.annotation.Keep;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import com.mapswithme.maps.BuildConfig;
+import app.organicmaps.BuildConfig;
 import net.jcip.annotations.ThreadSafe;
 
 import java.io.File;

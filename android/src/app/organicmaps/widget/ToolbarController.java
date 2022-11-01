@@ -1,4 +1,4 @@
-package com.mapswithme.maps.widget;
+package app.organicmaps.widget;
 
 import android.app.Activity;
 import android.view.View;
@@ -11,10 +11,10 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-import com.mapswithme.maps.R;
-import com.mapswithme.maps.base.Detachable;
-import com.mapswithme.util.UiUtils;
-import com.mapswithme.util.Utils;
+import app.organicmaps.R;
+import app.organicmaps.base.Detachable;
+import app.organicmaps.util.UiUtils;
+import app.organicmaps.util.Utils;
 
 public class ToolbarController implements Detachable<Activity>
 {

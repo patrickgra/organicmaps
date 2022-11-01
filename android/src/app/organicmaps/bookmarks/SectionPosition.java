@@ -1,4 +1,4 @@
-package com.mapswithme.maps.bookmarks;
+package app.organicmaps.bookmarks;
 
 public class SectionPosition
 {

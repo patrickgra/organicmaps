@@ -1,4 +1,4 @@
-package com.mapswithme.maps.widget.placepage;
+package app.organicmaps.widget.placepage;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -13,10 +13,10 @@ import androidx.annotation.Nullable;
 import androidx.core.view.GestureDetectorCompat;
 
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
-import com.mapswithme.maps.Framework;
-import com.mapswithme.maps.R;
-import com.mapswithme.util.UiUtils;
-import com.mapswithme.util.bottomsheet.MenuBottomSheetItem;
+import app.organicmaps.Framework;
+import app.organicmaps.R;
+import app.organicmaps.util.UiUtils;
+import app.organicmaps.util.bottomsheet.MenuBottomSheetItem;
 
 import java.util.ArrayList;
 import java.util.Objects;
@@ -50,12 +50,6 @@ public class SimplePlacePageController implements PlacePageController
           onHiddenInternal();
           if (mStateListener != null)
             mStateListener.onPlacePageClosed();
-        }
-
-        @Override
-        public void onSheetDirectionIconChange()
-        {
-          // No op.
         }
 
         @Override

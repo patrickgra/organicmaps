@@ -1,4 +1,4 @@
-package com.mapswithme.util;
+package app.organicmaps.util;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -9,7 +9,7 @@ import androidx.annotation.ColorInt;
 import androidx.annotation.NonNull;
 import androidx.annotation.StyleRes;
 
-import com.mapswithme.maps.R;
+import app.organicmaps.R;
 
 public final class ThemeUtils
 {

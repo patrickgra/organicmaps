@@ -1,4 +1,4 @@
-package com.mapswithme.maps.base;
+package app.organicmaps.base;
 
 import android.app.Activity;
 import android.content.Context;
@@ -18,15 +18,14 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentFactory;
 import androidx.fragment.app.FragmentManager;
 
-import com.mapswithme.maps.MwmApplication;
-import com.mapswithme.maps.R;
-import com.mapswithme.maps.SplashActivity;
-import com.mapswithme.util.Config;
-import com.mapswithme.util.RtlUtils;
-import com.mapswithme.util.ThemeUtils;
-import com.mapswithme.util.UiUtils;
-import com.mapswithme.util.Utils;
-import com.mapswithme.util.log.Logger;
+import app.organicmaps.MwmApplication;
+import app.organicmaps.R;
+import app.organicmaps.SplashActivity;
+import app.organicmaps.util.Config;
+import app.organicmaps.util.RtlUtils;
+import app.organicmaps.util.ThemeUtils;
+import app.organicmaps.util.Utils;
+import app.organicmaps.util.log.Logger;
 
 public abstract class BaseMwmFragmentActivity extends AppCompatActivity
                                   implements BaseActivity

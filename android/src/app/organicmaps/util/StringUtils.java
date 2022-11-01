@@ -1,4 +1,4 @@
-package com.mapswithme.util;
+package app.organicmaps.util;
 
 import android.content.Context;
 import android.text.Editable;
@@ -7,8 +7,8 @@ import android.util.Pair;
 
 import androidx.annotation.NonNull;
 
-import com.mapswithme.maps.MwmApplication;
-import com.mapswithme.maps.R;
+import app.organicmaps.MwmApplication;
+import app.organicmaps.R;
 
 import java.util.Locale;
 

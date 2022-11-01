@@ -1,4 +1,4 @@
-package com.mapswithme.maps.maplayer;
+package app.organicmaps.maplayer;
 
 import java.util.ArrayList;
 import java.util.List;

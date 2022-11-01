@@ -1,12 +1,12 @@
-package com.mapswithme.maps.downloader;
+package app.organicmaps.downloader;
 
 import android.view.View;
 import android.widget.Button;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.mapswithme.maps.R;
-import com.mapswithme.util.StringUtils;
-import com.mapswithme.util.UiUtils;
+import app.organicmaps.R;
+import app.organicmaps.util.StringUtils;
+import app.organicmaps.util.UiUtils;
 
 class BottomPanel
 {

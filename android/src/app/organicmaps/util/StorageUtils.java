@@ -1,4 +1,4 @@
-package com.mapswithme.util;
+package app.organicmaps.util;
 
 import android.app.Application;
 import android.content.ContentResolver;
@@ -11,8 +11,8 @@ import android.provider.DocumentsContract;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.core.content.FileProvider;
-import com.mapswithme.maps.BuildConfig;
-import com.mapswithme.util.log.Logger;
+import app.organicmaps.BuildConfig;
+import app.organicmaps.util.log.Logger;
 
 import java.io.File;
 import java.io.FileInputStream;

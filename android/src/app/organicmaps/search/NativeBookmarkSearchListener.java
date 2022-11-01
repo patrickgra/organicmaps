@@ -1,4 +1,4 @@
-package com.mapswithme.maps.search;
+package app.organicmaps.search;
 
 import androidx.annotation.Nullable;
 

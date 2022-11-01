@@ -1,4 +1,4 @@
-package com.mapswithme.maps.maplayer;
+package app.organicmaps.maplayer;
 
 import android.view.View;
 import android.widget.ImageView;
@@ -8,8 +8,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.mapswithme.maps.R;
-import com.mapswithme.maps.adapter.OnItemClickListener;
+import app.organicmaps.R;
+import app.organicmaps.adapter.OnItemClickListener;
 
 class LayerHolder extends RecyclerView.ViewHolder
 {

@@ -507,6 +507,7 @@
 	<string name="prefs_languages_information_off_link">สำหรับข้อมูลเพิ่มเติม กรุณาเข้าชมคำแนะนำนี้</string>
 	<string name="transliteration_title">การทับศัพท์เป็นภาษาละติน</string>
 	<string name="learn_more">ศึกษาเพิ่มเติม</string>
+	<!-- Subway exits for public transport marks on the map -->
 	<string name="core_exit">ออก</string>
 	<string name="routing_add_start_point">เพิ่มจุดเริ่มต้นเพื่อวางแผนเส้นทาง</string>
 	<string name="routing_add_finish_point">เพิ่มจุดสิ้นสุดเพื่อวางแผนเส้นทาง</string>
@@ -1089,10 +1090,14 @@
 	<string name="type.historic.castle.stately">ปราสาท</string>
 	<string name="type.historic.city_gate">ประตูเมือง</string>
 	<string name="type.historic.memorial">ที่ระลึก</string>
+	<string name="type.historic.memorial.cross">อนุสรณ์สถานข้าม</string>
 	<string name="type.historic.memorial.plaque">ที่ระลึก</string>
 	<string name="type.historic.memorial.sculpture">ที่ระลึก</string>
 	<string name="type.historic.memorial.statue">ที่ระลึก</string>
+	<string name="type.historic.memorial.stolperstein">อุปสรรค์</string>
+	<string name="type.historic.memorial.war_memorial">อนุสรณ์สถานสงคราม</string>
 	<string name="type.historic.monument">อนุสาวรีย์</string>
+	<string name="type.historic.pillory">ประจาน</string>
 	<string name="type.historic.ruins">ซากปรักหักพัง</string>
 	<string name="type.historic.ship">สถานที่ท่องเที่ยว</string>
 	<string name="type.historic.tomb">สถานที่ท่องเที่ยว</string>
@@ -1396,7 +1401,6 @@
 	<string name="type.railway.subway_entrance.lille">ทางเข้ารถไฟใต้ดิน</string>
 	<string name="type.railway.subway_entrance.lima">ทางเข้ารถไฟใต้ดิน</string>
 	<string name="type.railway.subway_entrance.lisboa">ทางเข้ารถไฟใต้ดิน</string>
-	<string name="type.railway.subway_entrance.lisbon">ทางเข้ารถไฟใต้ดิน</string>
 	<string name="type.railway.subway_entrance.london">ทางเข้ารถไฟใต้ดิน</string>
 	<string name="type.railway.subway_entrance.lyon">ทางเข้ารถไฟใต้ดิน</string>
 	<string name="type.railway.subway_entrance.madrid">ทางเข้ารถไฟใต้ดิน</string>

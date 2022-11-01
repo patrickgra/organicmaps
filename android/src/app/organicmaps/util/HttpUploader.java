@@ -1,4 +1,4 @@
-package com.mapswithme.util;
+package app.organicmaps.util;
 
 import android.os.Build;
 import android.text.TextUtils;
@@ -6,7 +6,7 @@ import android.util.Base64;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import com.mapswithme.util.log.Logger;
+import app.organicmaps.util.log.Logger;
 
 import javax.net.ssl.HttpsURLConnection;
 import javax.net.ssl.SSLSocketFactory;

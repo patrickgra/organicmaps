@@ -1,9 +1,9 @@
-package com.mapswithme.maps.bookmarks.data;
+package app.organicmaps.bookmarks.data;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.mapswithme.maps.content.DataSource;
+import app.organicmaps.content.DataSource;
 
 import java.util.List;
 

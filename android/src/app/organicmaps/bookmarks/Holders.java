@@ -1,4 +1,4 @@
-package com.mapswithme.maps.bookmarks;
+package app.organicmaps.bookmarks;
 
 import android.graphics.drawable.Drawable;
 import android.location.Location;
@@ -15,17 +15,17 @@ import androidx.annotation.Nullable;
 import androidx.annotation.PluralsRes;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.mapswithme.maps.R;
-import com.mapswithme.maps.adapter.OnItemClickListener;
-import com.mapswithme.maps.bookmarks.data.BookmarkCategory;
-import com.mapswithme.maps.bookmarks.data.BookmarkInfo;
-import com.mapswithme.maps.bookmarks.data.BookmarkManager;
-import com.mapswithme.maps.bookmarks.data.Track;
-import com.mapswithme.maps.location.LocationHelper;
-import com.mapswithme.maps.widget.recycler.RecyclerClickListener;
-import com.mapswithme.maps.widget.recycler.RecyclerLongClickListener;
-import com.mapswithme.util.Graphics;
-import com.mapswithme.util.UiUtils;
+import app.organicmaps.R;
+import app.organicmaps.adapter.OnItemClickListener;
+import app.organicmaps.bookmarks.data.BookmarkCategory;
+import app.organicmaps.bookmarks.data.BookmarkInfo;
+import app.organicmaps.bookmarks.data.BookmarkManager;
+import app.organicmaps.bookmarks.data.Track;
+import app.organicmaps.location.LocationHelper;
+import app.organicmaps.widget.recycler.RecyclerClickListener;
+import app.organicmaps.widget.recycler.RecyclerLongClickListener;
+import app.organicmaps.util.Graphics;
+import app.organicmaps.util.UiUtils;
 
 public class Holders
 {

@@ -1,4 +1,4 @@
-package com.mapswithme.maps;
+package app.organicmaps;
 
 interface MapRenderingListener
 {

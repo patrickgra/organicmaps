@@ -1,4 +1,4 @@
-package com.mapswithme.maps.downloader;
+package app.organicmaps.downloader;
 
 import android.location.Location;
 import android.text.TextUtils;
@@ -9,16 +9,16 @@ import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 
-import com.mapswithme.maps.MwmActivity;
-import com.mapswithme.maps.R;
-import com.mapswithme.maps.background.Notifier;
-import com.mapswithme.maps.location.LocationHelper;
-import com.mapswithme.maps.routing.RoutingController;
-import com.mapswithme.maps.widget.WheelProgressView;
-import com.mapswithme.util.Config;
-import com.mapswithme.util.ConnectionState;
-import com.mapswithme.util.StringUtils;
-import com.mapswithme.util.UiUtils;
+import app.organicmaps.MwmActivity;
+import app.organicmaps.R;
+import app.organicmaps.background.Notifier;
+import app.organicmaps.location.LocationHelper;
+import app.organicmaps.routing.RoutingController;
+import app.organicmaps.widget.WheelProgressView;
+import app.organicmaps.util.Config;
+import app.organicmaps.util.ConnectionState;
+import app.organicmaps.util.StringUtils;
+import app.organicmaps.util.UiUtils;
 
 import java.util.List;
 

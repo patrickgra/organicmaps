@@ -1,4 +1,4 @@
-package com.mapswithme.maps.routing;
+package app.organicmaps.routing;
 
 import static androidx.core.app.NotificationCompat.Builder;
 
@@ -20,15 +20,15 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.core.app.NotificationCompat;
 
-import com.mapswithme.maps.Framework;
-import com.mapswithme.maps.MwmActivity;
-import com.mapswithme.maps.R;
-import com.mapswithme.maps.location.LocationHelper;
-import com.mapswithme.maps.location.LocationListener;
-import com.mapswithme.maps.sound.TtsPlayer;
-import com.mapswithme.util.StringUtils;
-import com.mapswithme.util.Utils;
-import com.mapswithme.util.log.Logger;
+import app.organicmaps.Framework;
+import app.organicmaps.MwmActivity;
+import app.organicmaps.R;
+import app.organicmaps.location.LocationHelper;
+import app.organicmaps.location.LocationListener;
+import app.organicmaps.sound.TtsPlayer;
+import app.organicmaps.util.StringUtils;
+import app.organicmaps.util.Utils;
+import app.organicmaps.util.log.Logger;
 
 public class NavigationService extends Service
 {

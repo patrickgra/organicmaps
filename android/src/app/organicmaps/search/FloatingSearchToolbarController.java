@@ -1,12 +1,12 @@
-package com.mapswithme.maps.search;
+package app.organicmaps.search;
 
 import android.app.Activity;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.mapswithme.maps.widget.SearchToolbarController;
-import com.mapswithme.util.UiUtils;
+import app.organicmaps.widget.SearchToolbarController;
+import app.organicmaps.util.UiUtils;
 
 public class FloatingSearchToolbarController extends SearchToolbarController
 {

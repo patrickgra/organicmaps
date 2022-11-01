@@ -1,11 +1,11 @@
-package com.mapswithme.maps.downloader;
+package app.organicmaps.downloader;
 
 import android.app.Application;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.mapswithme.util.Utils;
+import app.organicmaps.util.Utils;
 
 class ExpandRetryConfirmationListener extends RetryFailedDownloadConfirmationListener
 {

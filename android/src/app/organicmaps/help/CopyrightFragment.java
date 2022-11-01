@@ -1,4 +1,4 @@
-package com.mapswithme.maps.help;
+package app.organicmaps.help;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,11 +8,11 @@ import android.view.ViewGroup;
 
 import androidx.annotation.Nullable;
 
-import com.mapswithme.maps.R;
-import com.mapswithme.maps.WebContainerDelegate;
-import com.mapswithme.maps.base.BaseMwmFragment;
-import com.mapswithme.maps.base.OnBackPressListener;
-import com.mapswithme.util.Constants;
+import app.organicmaps.R;
+import app.organicmaps.WebContainerDelegate;
+import app.organicmaps.base.BaseMwmFragment;
+import app.organicmaps.base.OnBackPressListener;
+import app.organicmaps.util.Constants;
 
 public class CopyrightFragment extends BaseMwmFragment implements OnBackPressListener
 {

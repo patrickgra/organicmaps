@@ -1,4 +1,4 @@
-package com.mapswithme.maps.search;
+package app.organicmaps.search;
 
 import android.app.Activity;
 import android.content.Context;
@@ -14,7 +14,6 @@ import androidx.annotation.CallSuper;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.Toolbar;
-import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -22,26 +21,25 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.material.appbar.AppBarLayout;
-import com.google.android.material.behavior.HideBottomViewOnScrollBehavior;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.tabs.TabLayout;
-import com.mapswithme.maps.Framework;
-import com.mapswithme.maps.MwmActivity;
-import com.mapswithme.maps.R;
-import com.mapswithme.maps.base.BaseMwmFragment;
-import com.mapswithme.maps.base.OnBackPressListener;
-import com.mapswithme.maps.bookmarks.data.FeatureId;
-import com.mapswithme.maps.bookmarks.data.MapObject;
-import com.mapswithme.maps.downloader.CountrySuggestFragment;
-import com.mapswithme.maps.downloader.MapManager;
-import com.mapswithme.maps.location.LocationHelper;
-import com.mapswithme.maps.location.LocationListener;
-import com.mapswithme.maps.routing.RoutingController;
-import com.mapswithme.maps.widget.PlaceholderView;
-import com.mapswithme.maps.widget.SearchToolbarController;
-import com.mapswithme.util.SharedPropertiesUtils;
-import com.mapswithme.util.UiUtils;
-import com.mapswithme.util.Utils;
+import app.organicmaps.Framework;
+import app.organicmaps.MwmActivity;
+import app.organicmaps.R;
+import app.organicmaps.base.BaseMwmFragment;
+import app.organicmaps.base.OnBackPressListener;
+import app.organicmaps.bookmarks.data.FeatureId;
+import app.organicmaps.bookmarks.data.MapObject;
+import app.organicmaps.downloader.CountrySuggestFragment;
+import app.organicmaps.downloader.MapManager;
+import app.organicmaps.location.LocationHelper;
+import app.organicmaps.location.LocationListener;
+import app.organicmaps.routing.RoutingController;
+import app.organicmaps.widget.PlaceholderView;
+import app.organicmaps.widget.SearchToolbarController;
+import app.organicmaps.util.SharedPropertiesUtils;
+import app.organicmaps.util.UiUtils;
+import app.organicmaps.util.Utils;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -424,7 +422,7 @@ public class SearchFragment extends BaseMwmFragment
 
     SearchEngine.INSTANCE.searchInteractive(
         query, isCategory(), !TextUtils.isEmpty(mInitialLocale)
-               ? mInitialLocale : com.mapswithme.util.Language.getKeyboardLocale(requireContext()),
+               ? mInitialLocale : app.organicmaps.util.Language.getKeyboardLocale(requireContext()),
         mLastQueryTimestamp, false /* isMapAndTable */);
 
     SearchEngine.INSTANCE.setQuery(query);

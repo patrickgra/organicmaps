@@ -1,4 +1,4 @@
-package com.mapswithme.maps.bookmarks.data;
+package app.organicmaps.bookmarks.data;
 
 import android.content.ContentResolver;
 import android.database.Cursor;
@@ -11,14 +11,14 @@ import androidx.annotation.MainThread;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.WorkerThread;
-import com.mapswithme.maps.Framework;
-import com.mapswithme.maps.base.DataChangedListener;
-import com.mapswithme.maps.base.Observable;
-import com.mapswithme.util.KeyValue;
-import com.mapswithme.util.StorageUtils;
-import com.mapswithme.util.UTM;
-import com.mapswithme.util.concurrency.UiThread;
-import com.mapswithme.util.log.Logger;
+import app.organicmaps.Framework;
+import app.organicmaps.base.DataChangedListener;
+import app.organicmaps.base.Observable;
+import app.organicmaps.util.KeyValue;
+import app.organicmaps.util.StorageUtils;
+import app.organicmaps.util.UTM;
+import app.organicmaps.util.concurrency.UiThread;
+import app.organicmaps.util.log.Logger;
 
 import java.io.File;
 import java.io.IOException;

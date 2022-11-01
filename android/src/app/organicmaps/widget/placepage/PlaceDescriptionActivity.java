@@ -1,4 +1,4 @@
-package com.mapswithme.maps.widget.placepage;
+package app.organicmaps.widget.placepage;
 
 import android.content.Context;
 import android.content.Intent;
@@ -6,7 +6,7 @@ import android.content.Intent;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
-import com.mapswithme.maps.base.BaseToolbarActivity;
+import app.organicmaps.base.BaseToolbarActivity;
 
 public class PlaceDescriptionActivity extends BaseToolbarActivity
 {

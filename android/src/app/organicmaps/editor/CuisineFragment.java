@@ -1,8 +1,8 @@
-package com.mapswithme.maps.editor;
+package app.organicmaps.editor;
 
 import androidx.annotation.NonNull;
 
-import com.mapswithme.maps.base.BaseMwmRecyclerFragment;
+import app.organicmaps.base.BaseMwmRecyclerFragment;
 
 public class CuisineFragment extends BaseMwmRecyclerFragment<CuisineAdapter>
 {

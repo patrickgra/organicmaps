@@ -1,4 +1,4 @@
-package com.mapswithme.maps.bookmarks;
+package app.organicmaps.bookmarks;
 
 import android.content.res.Resources;
 import android.view.LayoutInflater;
@@ -10,14 +10,14 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.mapswithme.maps.R;
-import com.mapswithme.maps.bookmarks.data.BookmarkCategory;
-import com.mapswithme.maps.bookmarks.data.BookmarkInfo;
-import com.mapswithme.maps.bookmarks.data.BookmarkManager;
-import com.mapswithme.maps.bookmarks.data.SortedBlock;
-import com.mapswithme.maps.content.DataSource;
-import com.mapswithme.maps.widget.recycler.RecyclerClickListener;
-import com.mapswithme.maps.widget.recycler.RecyclerLongClickListener;
+import app.organicmaps.R;
+import app.organicmaps.bookmarks.data.BookmarkCategory;
+import app.organicmaps.bookmarks.data.BookmarkInfo;
+import app.organicmaps.bookmarks.data.BookmarkManager;
+import app.organicmaps.bookmarks.data.SortedBlock;
+import app.organicmaps.content.DataSource;
+import app.organicmaps.widget.recycler.RecyclerClickListener;
+import app.organicmaps.widget.recycler.RecyclerLongClickListener;
 
 import java.util.ArrayList;
 import java.util.Arrays;

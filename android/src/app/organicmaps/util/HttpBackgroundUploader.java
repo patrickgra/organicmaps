@@ -1,4 +1,4 @@
-package com.mapswithme.util;
+package app.organicmaps.util;
 
 import androidx.annotation.NonNull;
 import androidx.work.Constraints;
@@ -7,7 +7,7 @@ import androidx.work.NetworkType;
 import androidx.work.OneTimeWorkRequest;
 import androidx.work.WorkManager;
 import com.google.gson.Gson;
-import com.mapswithme.util.log.Logger;
+import app.organicmaps.util.log.Logger;
 
 public class HttpBackgroundUploader extends AbstractHttpUploader
 {

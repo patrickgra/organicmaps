@@ -1,4 +1,4 @@
-package com.mapswithme.maps.base;
+package app.organicmaps.base;
 
 import android.app.Application;
 import android.content.Context;
@@ -10,8 +10,8 @@ import androidx.annotation.Nullable;
 import androidx.annotation.StyleRes;
 import androidx.fragment.app.DialogFragment;
 
-import com.mapswithme.maps.R;
-import com.mapswithme.util.ThemeUtils;
+import app.organicmaps.R;
+import app.organicmaps.util.ThemeUtils;
 
 public class BaseMwmDialogFragment extends DialogFragment
 {

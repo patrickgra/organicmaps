@@ -1,4 +1,4 @@
-package com.mapswithme.maps.routing;
+package app.organicmaps.routing;
 
 import android.os.Parcel;
 import android.os.Parcelable;

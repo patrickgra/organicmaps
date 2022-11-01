@@ -1,4 +1,4 @@
-package com.mapswithme.maps.bookmarks.data;
+package app.organicmaps.bookmarks.data;
 
 import androidx.annotation.IntDef;
 import androidx.annotation.NonNull;

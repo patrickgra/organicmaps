@@ -505,6 +505,7 @@
 	<string name="prefs_languages_information_off_link">Untuk informasi selengkapnya, bacalah panduan ini.</string>
 	<string name="transliteration_title">Transliterasi ke dalam bahasa Latin</string>
 	<string name="learn_more">Pelajari selengkapnya</string>
+	<!-- Subway exits for public transport marks on the map -->
 	<string name="core_exit">Keluar</string>
 	<string name="routing_add_start_point">Tambahkan titik awal untuk merencanakan rute</string>
 	<string name="routing_add_finish_point">Tambahkan titik akhir untuk merencanakan rute</string>
@@ -1080,11 +1081,16 @@
 	<string name="type.historic.castle.shiro">Istana Jepang</string>
 	<string name="type.historic.castle.stately">Kastel</string>
 	<string name="type.historic.city_gate">Gerbang kota</string>
+	<string name="type.historic.gallows">Tiang gantungan</string>
 	<string name="type.historic.memorial">Tugu peringatan</string>
+	<string name="type.historic.memorial.cross">Salib peringatan</string>
 	<string name="type.historic.memorial.plaque">Tugu peringatan</string>
 	<string name="type.historic.memorial.sculpture">Tugu peringatan</string>
 	<string name="type.historic.memorial.statue">Tugu peringatan</string>
+	<string name="type.historic.memorial.stolperstein">Stolperstein</string>
+	<string name="type.historic.memorial.war_memorial">Tugu peringatan perang</string>
 	<string name="type.historic.monument">Monumen</string>
+	<string name="type.historic.pillory">Pilar</string>
 	<string name="type.historic.ruins">Reruntuhan</string>
 	<string name="type.historic.ship">Pemandangan</string>
 	<string name="type.historic.tomb">Pemandangan</string>
@@ -1386,7 +1392,6 @@
 	<string name="type.railway.subway_entrance.lille">Pintu masuk kereta bawah tanah</string>
 	<string name="type.railway.subway_entrance.lima">Pintu masuk kereta bawah tanah</string>
 	<string name="type.railway.subway_entrance.lisboa">Pintu masuk kereta bawah tanah</string>
-	<string name="type.railway.subway_entrance.lisbon">Pintu masuk kereta bawah tanah</string>
 	<string name="type.railway.subway_entrance.london">Pintu masuk kereta bawah tanah</string>
 	<string name="type.railway.subway_entrance.lyon">Pintu masuk kereta bawah tanah</string>
 	<string name="type.railway.subway_entrance.madrid">Pintu masuk kereta bawah tanah</string>

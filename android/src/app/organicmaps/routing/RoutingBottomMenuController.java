@@ -1,4 +1,4 @@
-package com.mapswithme.maps.routing;
+package app.organicmaps.routing;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -27,14 +27,14 @@ import androidx.annotation.Nullable;
 import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.mapswithme.maps.Framework;
-import com.mapswithme.maps.R;
-import com.mapswithme.maps.location.LocationHelper;
-import com.mapswithme.maps.widget.recycler.DotDividerItemDecoration;
-import com.mapswithme.maps.widget.recycler.MultilineLayoutManager;
-import com.mapswithme.util.Graphics;
-import com.mapswithme.util.ThemeUtils;
-import com.mapswithme.util.UiUtils;
+import app.organicmaps.Framework;
+import app.organicmaps.R;
+import app.organicmaps.location.LocationHelper;
+import app.organicmaps.widget.recycler.DotDividerItemDecoration;
+import app.organicmaps.widget.recycler.MultilineLayoutManager;
+import app.organicmaps.util.Graphics;
+import app.organicmaps.util.ThemeUtils;
+import app.organicmaps.util.UiUtils;
 
 import java.util.Locale;
 
@@ -383,20 +383,14 @@ final class RoutingBottomMenuController implements View.OnClickListener
   @Override
   public void onClick(View v)
   {
-    switch (v.getId())
+    final int id = v.getId();
+    if (id == R.id.btn__my_position_use && mListener != null)
+      mListener.onUseMyPositionAsStart();
+    else if (id == R.id.btn__search_point && mListener != null)
     {
-      case R.id.btn__my_position_use:
-        if (mListener != null)
-          mListener.onUseMyPositionAsStart();
-        break;
-      case R.id.btn__search_point:
-        if (mListener != null)
-        {
-          @RoutePointInfo.RouteMarkType
-          int pointType = (Integer) mActionMessage.getTag();
-          mListener.onSearchRoutePoint(pointType);
-        }
-        break;
+      @RoutePointInfo.RouteMarkType
+      int pointType = (Integer) mActionMessage.getTag();
+      mListener.onSearchRoutePoint(pointType);
     }
   }
 }

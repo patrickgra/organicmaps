@@ -1,4 +1,4 @@
-package com.mapswithme.maps.maplayer;
+package app.organicmaps.maplayer;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -8,9 +8,9 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.mapswithme.maps.R;
-import com.mapswithme.util.SharedPropertiesUtils;
-import com.mapswithme.util.UiUtils;
+import app.organicmaps.R;
+import app.organicmaps.util.SharedPropertiesUtils;
+import app.organicmaps.util.UiUtils;
 
 import java.util.List;
 

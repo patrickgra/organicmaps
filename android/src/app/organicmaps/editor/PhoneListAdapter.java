@@ -1,4 +1,4 @@
-package com.mapswithme.maps.editor;
+package app.organicmaps.editor;
 
 import android.text.TextUtils;
 import android.view.LayoutInflater;
@@ -11,9 +11,9 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.textfield.TextInputLayout;
-import com.mapswithme.maps.R;
-import com.mapswithme.util.StringUtils;
-import com.mapswithme.util.UiUtils;
+import app.organicmaps.R;
+import app.organicmaps.util.StringUtils;
+import app.organicmaps.util.UiUtils;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,10 +1,9 @@
-package com.mapswithme.maps.routing;
+package app.organicmaps.routing;
 
 import android.annotation.SuppressLint;
 import android.app.Dialog;
 import android.content.DialogInterface;
 import android.graphics.drawable.ColorDrawable;
-import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,12 +15,12 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 
-import com.mapswithme.maps.R;
-import com.mapswithme.maps.adapter.DisabledChildSimpleExpandableListAdapter;
-import com.mapswithme.maps.base.BaseMwmDialogFragment;
-import com.mapswithme.maps.downloader.CountryItem;
-import com.mapswithme.util.StringUtils;
-import com.mapswithme.util.UiUtils;
+import app.organicmaps.R;
+import app.organicmaps.adapter.DisabledChildSimpleExpandableListAdapter;
+import app.organicmaps.base.BaseMwmDialogFragment;
+import app.organicmaps.downloader.CountryItem;
+import app.organicmaps.util.StringUtils;
+import app.organicmaps.util.UiUtils;
 
 import java.util.ArrayList;
 import java.util.HashMap;

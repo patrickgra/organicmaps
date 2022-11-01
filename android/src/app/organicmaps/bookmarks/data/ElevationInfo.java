@@ -1,12 +1,11 @@
-package com.mapswithme.maps.bookmarks.data;
+package app.organicmaps.bookmarks.data;
 
 import android.os.Parcel;
 import android.os.Parcelable;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 
-import com.mapswithme.maps.widget.placepage.PlacePageData;
+import app.organicmaps.widget.placepage.PlacePageData;
 
 import java.util.ArrayList;
 import java.util.Arrays;

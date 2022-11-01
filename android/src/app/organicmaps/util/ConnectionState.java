@@ -1,6 +1,6 @@
-package com.mapswithme.util;
+package app.organicmaps.util;
 
-import static com.mapswithme.util.ConnectionState.Type.NONE;
+import static app.organicmaps.util.ConnectionState.Type.NONE;
 
 import android.content.Context;
 import android.net.ConnectivityManager;
@@ -10,8 +10,8 @@ import android.telephony.TelephonyManager;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.mapswithme.maps.MwmApplication;
-import com.mapswithme.maps.base.Initializable;
+import app.organicmaps.MwmApplication;
+import app.organicmaps.base.Initializable;
 
 public enum ConnectionState implements Initializable<Context>
 {

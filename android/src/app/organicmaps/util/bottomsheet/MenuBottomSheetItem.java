@@ -1,4 +1,4 @@
-package com.mapswithme.util.bottomsheet;
+package app.organicmaps.util.bottomsheet;
 
 public class MenuBottomSheetItem
 {

@@ -1,4 +1,4 @@
-package com.mapswithme.maps.editor;
+package app.organicmaps.editor;
 
 import android.content.res.Resources;
 import android.view.LayoutInflater;
@@ -10,11 +10,11 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.mapswithme.maps.MwmApplication;
-import com.mapswithme.maps.R;
-import com.mapswithme.maps.dialog.EditTextDialogFragment;
-import com.mapswithme.maps.editor.data.LocalizedStreet;
-import com.mapswithme.util.UiUtils;
+import app.organicmaps.MwmApplication;
+import app.organicmaps.R;
+import app.organicmaps.dialog.EditTextDialogFragment;
+import app.organicmaps.editor.data.LocalizedStreet;
+import app.organicmaps.util.UiUtils;
 
 public class StreetAdapter extends RecyclerView.Adapter<StreetAdapter.BaseViewHolder>
 {

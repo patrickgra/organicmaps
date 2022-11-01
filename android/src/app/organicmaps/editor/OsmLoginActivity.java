@@ -1,8 +1,8 @@
-package com.mapswithme.maps.editor;
+package app.organicmaps.editor;
 
 import androidx.fragment.app.Fragment;
 
-import com.mapswithme.maps.base.BaseMwmFragmentActivity;
+import app.organicmaps.base.BaseMwmFragmentActivity;
 
 public class OsmLoginActivity extends BaseMwmFragmentActivity
 {

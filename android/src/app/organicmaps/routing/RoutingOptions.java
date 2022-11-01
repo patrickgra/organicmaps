@@ -1,8 +1,8 @@
-package com.mapswithme.maps.routing;
+package app.organicmaps.routing;
 
 import androidx.annotation.NonNull;
 
-import com.mapswithme.maps.settings.RoadType;
+import app.organicmaps.settings.RoadType;
 
 import java.util.HashSet;
 import java.util.Set;

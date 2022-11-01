@@ -1,4 +1,4 @@
-package com.mapswithme.maps.maplayer;
+package app.organicmaps.maplayer;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -16,14 +16,14 @@ import androidx.fragment.app.Fragment;
 import com.google.android.material.badge.BadgeDrawable;
 import com.google.android.material.badge.BadgeUtils;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.mapswithme.maps.R;
-import com.mapswithme.maps.downloader.MapManager;
-import com.mapswithme.maps.downloader.UpdateInfo;
-import com.mapswithme.maps.routing.RoutingController;
-import com.mapswithme.maps.widget.menu.MyPositionButton;
-import com.mapswithme.maps.widget.placepage.PlacePageController;
-import com.mapswithme.util.Config;
-import com.mapswithme.util.UiUtils;
+import app.organicmaps.R;
+import app.organicmaps.downloader.MapManager;
+import app.organicmaps.downloader.UpdateInfo;
+import app.organicmaps.routing.RoutingController;
+import app.organicmaps.widget.menu.MyPositionButton;
+import app.organicmaps.widget.placepage.PlacePageController;
+import app.organicmaps.util.Config;
+import app.organicmaps.util.UiUtils;
 
 import java.util.HashMap;
 import java.util.Map;

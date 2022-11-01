@@ -1,4 +1,4 @@
-package com.mapswithme.maps.editor;
+package app.organicmaps.editor;
 
 import android.util.SparseArray;
 import android.view.LayoutInflater;
@@ -17,12 +17,12 @@ import androidx.appcompat.widget.SwitchCompat;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.mapswithme.maps.R;
-import com.mapswithme.maps.editor.data.HoursMinutes;
-import com.mapswithme.maps.editor.data.TimeFormatUtils;
-import com.mapswithme.maps.editor.data.Timespan;
-import com.mapswithme.maps.editor.data.Timetable;
-import com.mapswithme.util.UiUtils;
+import app.organicmaps.R;
+import app.organicmaps.editor.data.HoursMinutes;
+import app.organicmaps.editor.data.TimeFormatUtils;
+import app.organicmaps.editor.data.Timespan;
+import app.organicmaps.editor.data.Timetable;
+import app.organicmaps.util.UiUtils;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -262,38 +262,29 @@ class SimpleTimetableAdapter extends RecyclerView.Adapter<SimpleTimetableAdapter
     @Override
     public void onClick(View v)
     {
-      switch (v.getId())
-      {
-      case R.id.time_open:
+      final int id = v.getId();
+      if (id == R.id.time_open)
         pickTime(getAdapterPosition(), HoursMinutesPickerFragment.TAB_FROM, ID_OPENING);
-        break;
-      case R.id.time_close:
+      else if (id == R.id.time_close)
         pickTime(getAdapterPosition(), HoursMinutesPickerFragment.TAB_TO, ID_OPENING);
-        break;
-      case R.id.tv__remove_timetable:
+      else if (id == R.id.tv__remove_timetable)
         removeTimetable(getAdapterPosition());
-        break;
-      case R.id.tv__add_closed:
+      else if (id == R.id.tv__add_closed)
         pickTime(getAdapterPosition(), HoursMinutesPickerFragment.TAB_FROM, ID_CLOSING);
-        break;
-      case R.id.allday:
+      else if (id == R.id.allday)
         swAllday.toggle();
-        break;
-      }
     }
 
     @Override
     public void onCheckedChanged(CompoundButton buttonView, boolean isChecked)
     {
-      switch (buttonView.getId())
-      {
-      case R.id.sw__allday:
+      final int id = buttonView.getId();
+      if (id == R.id.sw__allday)
         setFullday(getAdapterPosition(), isChecked);
-        break;
-      case R.id.chb__day:
+      else if (id == R.id.chb__day)
+      {
         final int dayIndex = (Integer) buttonView.getTag();
         switchWorkingDay(dayIndex);
-        break;
       }
     }
 

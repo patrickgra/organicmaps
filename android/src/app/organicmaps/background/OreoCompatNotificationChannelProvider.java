@@ -1,4 +1,4 @@
-package com.mapswithme.maps.background;
+package app.organicmaps.background;
 
 import android.annotation.TargetApi;
 import android.app.Application;
@@ -8,7 +8,7 @@ import android.os.Build;
 
 import androidx.annotation.NonNull;
 
-import com.mapswithme.maps.R;
+import app.organicmaps.R;
 
 import java.util.Objects;
 

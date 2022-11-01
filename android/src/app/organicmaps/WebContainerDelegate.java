@@ -1,4 +1,4 @@
-package com.mapswithme.maps;
+package app.organicmaps;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -10,8 +10,8 @@ import android.webkit.WebViewClient;
 
 import androidx.annotation.NonNull;
 
-import com.mapswithme.maps.base.OnBackPressListener;
-import com.mapswithme.util.UiUtils;
+import app.organicmaps.base.OnBackPressListener;
+import app.organicmaps.util.UiUtils;
 
 public abstract class WebContainerDelegate implements OnBackPressListener
 {

@@ -1,4 +1,4 @@
-package com.mapswithme.maps.widget.placepage;
+package app.organicmaps.widget.placepage;
 
 public interface PlacePageStateListener
 {

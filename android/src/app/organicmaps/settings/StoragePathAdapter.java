@@ -1,4 +1,4 @@
-package com.mapswithme.maps.settings;
+package app.organicmaps.settings;
 
 import android.app.Activity;
 import android.text.SpannableStringBuilder;
@@ -11,9 +11,9 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.CheckedTextView;
 
-import com.mapswithme.maps.R;
-import com.mapswithme.util.ThemeUtils;
-import com.mapswithme.util.UiUtils;
+import app.organicmaps.R;
+import app.organicmaps.util.ThemeUtils;
+import app.organicmaps.util.UiUtils;
 
 class StoragePathAdapter extends BaseAdapter
 {

@@ -1,8 +1,8 @@
-package com.mapswithme.maps.widget.placepage;
+package app.organicmaps.widget.placepage;
 
 import androidx.annotation.NonNull;
 
-import com.mapswithme.maps.settings.RoadType;
+import app.organicmaps.settings.RoadType;
 
 public interface RoutingModeListener
 {

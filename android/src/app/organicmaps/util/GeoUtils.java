@@ -1,8 +1,8 @@
-package com.mapswithme.util;
+package app.organicmaps.util;
 
 import androidx.annotation.NonNull;
 
-import com.mapswithme.maps.bookmarks.data.ParcelablePointD;
+import app.organicmaps.bookmarks.data.ParcelablePointD;
 
 public class GeoUtils
 {

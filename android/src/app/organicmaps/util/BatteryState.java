@@ -1,4 +1,4 @@
-package com.mapswithme.util;
+package app.organicmaps.util;
 
 import android.content.Context;
 import android.content.Intent;
@@ -9,7 +9,7 @@ import androidx.annotation.IntDef;
 import androidx.annotation.IntRange;
 import androidx.annotation.NonNull;
 
-import com.mapswithme.maps.MwmApplication;
+import app.organicmaps.MwmApplication;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

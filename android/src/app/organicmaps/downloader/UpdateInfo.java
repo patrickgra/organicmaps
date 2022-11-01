@@ -1,4 +1,4 @@
-package com.mapswithme.maps.downloader;
+package app.organicmaps.downloader;
 
 /**
  * Info about data to be updated. Created by native code.

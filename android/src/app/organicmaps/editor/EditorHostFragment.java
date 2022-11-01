@@ -1,4 +1,4 @@
-package com.mapswithme.maps.editor;
+package app.organicmaps.editor;
 
 import android.app.Activity;
 import android.content.Context;
@@ -17,20 +17,20 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.Fragment;
 
 import androidx.fragment.app.FragmentManager;
-import com.mapswithme.maps.MwmApplication;
-import com.mapswithme.maps.R;
-import com.mapswithme.maps.base.BaseMwmToolbarFragment;
-import com.mapswithme.maps.base.OnBackPressListener;
-import com.mapswithme.maps.editor.data.Language;
-import com.mapswithme.maps.editor.data.LocalizedName;
-import com.mapswithme.maps.editor.data.LocalizedStreet;
-import com.mapswithme.maps.editor.data.NamesDataSource;
-import com.mapswithme.maps.editor.data.PhoneFragment;
-import com.mapswithme.maps.widget.SearchToolbarController;
-import com.mapswithme.maps.widget.ToolbarController;
-import com.mapswithme.util.ConnectionState;
-import com.mapswithme.util.UiUtils;
-import com.mapswithme.util.Utils;
+import app.organicmaps.MwmApplication;
+import app.organicmaps.R;
+import app.organicmaps.base.BaseMwmToolbarFragment;
+import app.organicmaps.base.OnBackPressListener;
+import app.organicmaps.editor.data.Language;
+import app.organicmaps.editor.data.LocalizedName;
+import app.organicmaps.editor.data.LocalizedStreet;
+import app.organicmaps.editor.data.NamesDataSource;
+import app.organicmaps.editor.data.PhoneFragment;
+import app.organicmaps.widget.SearchToolbarController;
+import app.organicmaps.widget.ToolbarController;
+import app.organicmaps.util.ConnectionState;
+import app.organicmaps.util.UiUtils;
+import app.organicmaps.util.Utils;
 
 import java.util.ArrayList;
 import java.util.List;

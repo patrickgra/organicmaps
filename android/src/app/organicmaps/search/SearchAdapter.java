@@ -1,9 +1,8 @@
-package com.mapswithme.maps.search;
+package app.organicmaps.search;
 
 import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.Typeface;
-import android.graphics.drawable.Drawable;
 import android.text.SpannableStringBuilder;
 import android.text.Spanned;
 import android.text.TextUtils;
@@ -19,11 +18,11 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.mapswithme.maps.R;
-import com.mapswithme.util.Graphics;
-import com.mapswithme.util.ThemeUtils;
-import com.mapswithme.util.UiUtils;
-import com.mapswithme.util.Utils;
+import app.organicmaps.R;
+import app.organicmaps.util.Graphics;
+import app.organicmaps.util.ThemeUtils;
+import app.organicmaps.util.UiUtils;
+import app.organicmaps.util.Utils;
 
 class SearchAdapter extends RecyclerView.Adapter<SearchAdapter.SearchDataViewHolder>
 {

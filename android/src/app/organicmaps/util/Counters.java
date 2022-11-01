@@ -1,4 +1,4 @@
-package com.mapswithme.util;
+package app.organicmaps.util;
 
 import android.content.Context;
 import android.text.TextUtils;
@@ -6,12 +6,11 @@ import android.text.format.DateUtils;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.DialogFragment;
-import androidx.fragment.app.FragmentManager;
 import androidx.preference.PreferenceManager;
 
-import com.mapswithme.maps.BuildConfig;
-import com.mapswithme.maps.MwmApplication;
-import com.mapswithme.maps.R;
+import app.organicmaps.BuildConfig;
+import app.organicmaps.MwmApplication;
+import app.organicmaps.R;
 
 public final class Counters
 {

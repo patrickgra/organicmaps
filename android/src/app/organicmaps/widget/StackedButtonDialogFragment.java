@@ -1,4 +1,4 @@
-package com.mapswithme.maps.widget;
+package app.organicmaps.widget;
 
 import android.app.Dialog;
 import android.os.Bundle;
@@ -9,9 +9,9 @@ import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import com.mapswithme.maps.R;
-import com.mapswithme.util.Config;
-import com.mapswithme.util.NetworkPolicy;
+import app.organicmaps.R;
+import app.organicmaps.util.Config;
+import app.organicmaps.util.NetworkPolicy;
 
 public class StackedButtonDialogFragment extends DialogFragment
 {

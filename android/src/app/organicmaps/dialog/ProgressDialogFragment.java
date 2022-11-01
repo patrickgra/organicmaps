@@ -1,4 +1,4 @@
-package com.mapswithme.maps.dialog;
+package app.organicmaps.dialog;
 
 import android.app.Activity;
 import android.app.Dialog;
@@ -14,9 +14,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
 
-import com.mapswithme.maps.R;
-
-import java.util.Objects;
+import app.organicmaps.R;
 
 public class ProgressDialogFragment extends DialogFragment
 {

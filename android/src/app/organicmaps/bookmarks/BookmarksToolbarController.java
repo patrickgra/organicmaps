@@ -1,11 +1,11 @@
-package com.mapswithme.maps.bookmarks;
+package app.organicmaps.bookmarks;
 
 import android.app.Activity;
 import android.view.View;
 
 import androidx.annotation.NonNull;
 
-import com.mapswithme.maps.widget.SearchToolbarController;
+import app.organicmaps.widget.SearchToolbarController;
 
 public class BookmarksToolbarController extends SearchToolbarController
 {

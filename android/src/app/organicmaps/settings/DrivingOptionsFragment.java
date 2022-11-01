@@ -1,4 +1,4 @@
-package com.mapswithme.maps.settings;
+package app.organicmaps.settings;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -11,9 +11,9 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.SwitchCompat;
 
-import com.mapswithme.maps.R;
-import com.mapswithme.maps.base.BaseMwmToolbarFragment;
-import com.mapswithme.maps.routing.RoutingOptions;
+import app.organicmaps.R;
+import app.organicmaps.base.BaseMwmToolbarFragment;
+import app.organicmaps.routing.RoutingOptions;
 
 import java.util.ArrayList;
 import java.util.Collections;

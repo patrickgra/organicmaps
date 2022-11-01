@@ -1,4 +1,4 @@
-package com.mapswithme.maps.widget.placepage;
+package app.organicmaps.widget.placepage;
 
 import android.os.Bundle;
 import android.view.View;
@@ -9,12 +9,12 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.core.widget.NestedScrollView;
 
-import com.mapswithme.maps.ChartController;
-import com.mapswithme.maps.Framework;
-import com.mapswithme.maps.R;
-import com.mapswithme.maps.bookmarks.data.ElevationInfo;
-import com.mapswithme.maps.routing.RoutingController;
-import com.mapswithme.util.UiUtils;
+import app.organicmaps.ChartController;
+import app.organicmaps.Framework;
+import app.organicmaps.R;
+import app.organicmaps.bookmarks.data.ElevationInfo;
+import app.organicmaps.routing.RoutingController;
+import app.organicmaps.util.UiUtils;
 
 import java.util.Objects;
 

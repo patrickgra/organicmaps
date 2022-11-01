@@ -1,10 +1,10 @@
-package com.mapswithme.maps.downloader;
+package app.organicmaps.downloader;
 
 import android.app.Application;
 
 import androidx.annotation.NonNull;
 
-import com.mapswithme.maps.background.Notifier;
+import app.organicmaps.background.Notifier;
 
 public class RetryFailedDownloadConfirmationListener implements Runnable
 {

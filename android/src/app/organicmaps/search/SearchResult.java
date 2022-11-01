@@ -1,8 +1,8 @@
-package com.mapswithme.maps.search;
+package app.organicmaps.search;
 
 import androidx.annotation.NonNull;
 
-import com.mapswithme.maps.bookmarks.data.FeatureId;
+import app.organicmaps.bookmarks.data.FeatureId;
 
 /**
  * Class instances are created from native code.

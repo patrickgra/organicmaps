@@ -1,4 +1,4 @@
-package com.mapswithme.maps.background;
+package app.organicmaps.background;
 
 import android.app.Activity;
 import android.app.Application;
@@ -7,10 +7,10 @@ import android.os.Bundle;
 import android.util.SparseArray;
 
 import androidx.annotation.NonNull;
-import com.mapswithme.maps.MwmApplication;
-import com.mapswithme.util.Listeners;
-import com.mapswithme.util.concurrency.UiThread;
-import com.mapswithme.util.log.Logger;
+import app.organicmaps.MwmApplication;
+import app.organicmaps.util.Listeners;
+import app.organicmaps.util.concurrency.UiThread;
+import app.organicmaps.util.log.Logger;
 
 import java.lang.ref.WeakReference;
 

@@ -1,4 +1,4 @@
-package com.mapswithme.maps.widget.placepage;
+package app.organicmaps.widget.placepage;
 
 import android.app.Activity;
 import android.app.Application;
@@ -7,10 +7,10 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 
 import androidx.annotation.Nullable;
-import com.mapswithme.maps.base.Initializable;
-import com.mapswithme.maps.base.Savable;
-import com.mapswithme.maps.base.Supportable;
-import com.mapswithme.util.bottomsheet.MenuBottomSheetItem;
+import app.organicmaps.base.Initializable;
+import app.organicmaps.base.Savable;
+import app.organicmaps.base.Supportable;
+import app.organicmaps.util.bottomsheet.MenuBottomSheetItem;
 
 import java.util.ArrayList;
 

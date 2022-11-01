@@ -1,8 +1,8 @@
-package com.mapswithme.util;
+package app.organicmaps.util;
 
 import androidx.annotation.IntDef;
 
-import com.mapswithme.maps.Framework;
+import app.organicmaps.Framework;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

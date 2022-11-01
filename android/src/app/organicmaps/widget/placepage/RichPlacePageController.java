@@ -1,4 +1,4 @@
-package com.mapswithme.maps.widget.placepage;
+package app.organicmaps.widget.placepage;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -7,20 +7,19 @@ import android.location.Location;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.WindowInsets;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.core.view.GestureDetectorCompat;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
-import com.mapswithme.maps.Framework;
-import com.mapswithme.maps.R;
-import com.mapswithme.maps.bookmarks.data.MapObject;
-import com.mapswithme.maps.location.LocationHelper;
-import com.mapswithme.maps.location.LocationListener;
-import com.mapswithme.util.UiUtils;
-import com.mapswithme.util.bottomsheet.MenuBottomSheetItem;
-import com.mapswithme.util.log.Logger;
+import app.organicmaps.Framework;
+import app.organicmaps.R;
+import app.organicmaps.bookmarks.data.MapObject;
+import app.organicmaps.location.LocationHelper;
+import app.organicmaps.location.LocationListener;
+import app.organicmaps.util.UiUtils;
+import app.organicmaps.util.bottomsheet.MenuBottomSheetItem;
+import app.organicmaps.util.log.Logger;
 
 import java.util.ArrayList;
 import java.util.Objects;
@@ -51,12 +50,6 @@ public class RichPlacePageController implements PlacePageController, LocationLis
     public void onSheetHidden()
     {
       onHiddenInternal();
-    }
-
-    @Override
-    public void onSheetDirectionIconChange()
-    {
-      // No op.
     }
 
     @Override

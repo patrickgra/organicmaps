@@ -1,4 +1,4 @@
-package com.mapswithme.maps.base;
+package app.organicmaps.base;
 
 import android.os.Bundle;
 import android.view.View;
@@ -6,7 +6,7 @@ import android.view.View;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.mapswithme.maps.widget.ToolbarController;
+import app.organicmaps.widget.ToolbarController;
 
 public class BaseMwmToolbarFragment extends BaseAsyncOperationFragment
 {

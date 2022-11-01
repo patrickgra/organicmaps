@@ -1,4 +1,4 @@
-package com.mapswithme.maps.maplayer.traffic.widget;
+package app.organicmaps.maplayer.traffic.widget;
 
 import android.app.Activity;
 import android.app.Dialog;
@@ -7,9 +7,9 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 
-import com.mapswithme.maps.R;
-import com.mapswithme.maps.maplayer.traffic.TrafficManager;
-import com.mapswithme.util.Utils;
+import app.organicmaps.R;
+import app.organicmaps.maplayer.traffic.TrafficManager;
+import app.organicmaps.util.Utils;
 
 public class TrafficButtonController implements TrafficManager.TrafficCallback
 {

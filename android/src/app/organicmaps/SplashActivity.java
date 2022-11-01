@@ -1,4 +1,4 @@
-package com.mapswithme.maps;
+package app.organicmaps;
 
 import static android.Manifest.permission.ACCESS_COARSE_LOCATION;
 import static android.Manifest.permission.ACCESS_FINE_LOCATION;
@@ -15,15 +15,14 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
-import com.mapswithme.maps.base.BaseActivity;
-import com.mapswithme.maps.base.BaseActivityDelegate;
-import com.mapswithme.maps.location.LocationHelper;
-import com.mapswithme.util.Config;
-import com.mapswithme.util.Counters;
-import com.mapswithme.util.LocationUtils;
-import com.mapswithme.util.ThemeUtils;
-import com.mapswithme.util.UiUtils;
-import com.mapswithme.util.concurrency.UiThread;
+import app.organicmaps.base.BaseActivity;
+import app.organicmaps.base.BaseActivityDelegate;
+import app.organicmaps.location.LocationHelper;
+import app.organicmaps.util.Config;
+import app.organicmaps.util.Counters;
+import app.organicmaps.util.LocationUtils;
+import app.organicmaps.util.ThemeUtils;
+import app.organicmaps.util.concurrency.UiThread;
 
 import java.io.IOException;
 

@@ -1,4 +1,4 @@
-package com.mapswithme.maps.bookmarks.data;
+package app.organicmaps.bookmarks.data;
 
 import android.graphics.Point;
 import android.os.Parcel;

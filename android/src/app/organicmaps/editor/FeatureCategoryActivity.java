@@ -1,11 +1,11 @@
-package com.mapswithme.maps.editor;
+package app.organicmaps.editor;
 
 import android.content.Intent;
 
 import androidx.fragment.app.Fragment;
 
-import com.mapswithme.maps.base.BaseMwmFragmentActivity;
-import com.mapswithme.maps.editor.data.FeatureCategory;
+import app.organicmaps.base.BaseMwmFragmentActivity;
+import app.organicmaps.editor.data.FeatureCategory;
 
 public class FeatureCategoryActivity extends BaseMwmFragmentActivity implements FeatureCategoryFragment.FeatureCategoryListener
 {

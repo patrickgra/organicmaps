@@ -1,4 +1,4 @@
-package com.mapswithme.maps.widget;
+package app.organicmaps.widget;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -18,9 +18,9 @@ import androidx.appcompat.widget.AppCompatImageView;
 import androidx.core.content.res.ResourcesCompat;
 import androidx.core.graphics.drawable.DrawableCompat;
 
-import com.mapswithme.maps.R;
-import com.mapswithme.util.Graphics;
-import com.mapswithme.util.ThemeUtils;
+import app.organicmaps.R;
+import app.organicmaps.util.Graphics;
+import app.organicmaps.util.ThemeUtils;
 
 /**
  * Draws progress wheel, consisting of circle with background and 'stop' button in the center of the circle.

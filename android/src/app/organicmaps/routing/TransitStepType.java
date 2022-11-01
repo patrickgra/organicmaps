@@ -1,8 +1,8 @@
-package com.mapswithme.maps.routing;
+package app.organicmaps.routing;
 
 import androidx.annotation.DrawableRes;
 
-import com.mapswithme.maps.R;
+import app.organicmaps.R;
 
 public enum TransitStepType
 {

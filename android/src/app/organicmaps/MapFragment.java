@@ -1,4 +1,4 @@
-package com.mapswithme.maps;
+package app.organicmaps;
 
 import android.content.Context;
 import android.graphics.Rect;
@@ -16,12 +16,12 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 
-import com.mapswithme.maps.base.BaseMwmFragment;
-import com.mapswithme.maps.location.LocationHelper;
-import com.mapswithme.util.Config;
-import com.mapswithme.util.UiUtils;
-import com.mapswithme.util.concurrency.UiThread;
-import com.mapswithme.util.log.Logger;
+import app.organicmaps.base.BaseMwmFragment;
+import app.organicmaps.location.LocationHelper;
+import app.organicmaps.util.Config;
+import app.organicmaps.util.UiUtils;
+import app.organicmaps.util.concurrency.UiThread;
+import app.organicmaps.util.log.Logger;
 
 public class MapFragment extends BaseMwmFragment
                       implements View.OnTouchListener,
@@ -202,7 +202,7 @@ public class MapFragment extends BaseMwmFragment
 
     final boolean firstStart = LocationHelper.INSTANCE.isInFirstRun();
     if (!nativeCreateEngine(surface, (int) exactDensityDpi, firstStart, mLaunchByDeepLink,
-                            BuildConfig.VERSION_CODE))
+                            app.organicmaps.BuildConfig.VERSION_CODE))
     {
       reportUnsupported();
       return;

@@ -1,4 +1,4 @@
-package com.mapswithme.maps.base;
+package app.organicmaps.base;
 
 /**
  * Interface for activities to implement to perform custom 'up' navigation

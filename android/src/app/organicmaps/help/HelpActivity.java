@@ -1,8 +1,8 @@
-package com.mapswithme.maps.help;
+package app.organicmaps.help;
 
 import androidx.fragment.app.Fragment;
 
-import com.mapswithme.maps.base.BaseToolbarActivity;
+import app.organicmaps.base.BaseToolbarActivity;
 
 public class HelpActivity extends BaseToolbarActivity
 {

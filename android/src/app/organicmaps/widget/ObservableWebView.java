@@ -1,4 +1,4 @@
-package com.mapswithme.maps.widget;
+package app.organicmaps.widget;
 
 import android.content.Context;
 import android.util.AttributeSet;

@@ -1,4 +1,4 @@
-package com.mapswithme.util.log;
+package app.organicmaps.util.log;
 
 import android.app.ActivityManager;
 import android.app.Application;
@@ -14,10 +14,10 @@ import android.util.Log;
 import androidx.annotation.Keep;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import com.mapswithme.maps.BuildConfig;
-import com.mapswithme.maps.MwmApplication;
-import com.mapswithme.maps.R;
-import com.mapswithme.util.StringUtils;
+import app.organicmaps.BuildConfig;
+import app.organicmaps.MwmApplication;
+import app.organicmaps.R;
+import app.organicmaps.util.StringUtils;
 
 import net.jcip.annotations.ThreadSafe;
 

@@ -1,12 +1,12 @@
-package com.mapswithme.maps.location;
+package app.organicmaps.location;
 
 import android.content.Context;
 import android.content.Intent;
 import android.location.LocationManager;
 import android.text.TextUtils;
 
-import com.mapswithme.maps.MwmApplication;
-import com.mapswithme.maps.MwmBroadcastReceiver;
+import app.organicmaps.MwmApplication;
+import app.organicmaps.MwmBroadcastReceiver;
 
 public class GPSCheck extends MwmBroadcastReceiver
 {

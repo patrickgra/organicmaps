@@ -1,4 +1,4 @@
-package com.mapswithme.maps.maplayer.subway;
+package app.organicmaps.maplayer.subway;
 
 import android.app.Application;
 import android.content.Context;
@@ -6,9 +6,9 @@ import android.content.Context;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.mapswithme.maps.Framework;
-import com.mapswithme.maps.MwmApplication;
-import com.mapswithme.maps.base.Initializable;
+import app.organicmaps.Framework;
+import app.organicmaps.MwmApplication;
+import app.organicmaps.base.Initializable;
 
 public class SubwayManager implements Initializable<Void>
 {

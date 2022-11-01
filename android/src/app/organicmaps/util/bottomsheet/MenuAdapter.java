@@ -1,4 +1,4 @@
-package com.mapswithme.util.bottomsheet;
+package app.organicmaps.util.bottomsheet;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,7 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.mapswithme.maps.R;
+import app.organicmaps.R;
 
 import java.util.ArrayList;
 

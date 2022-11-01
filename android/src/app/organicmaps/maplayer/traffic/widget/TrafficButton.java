@@ -1,4 +1,4 @@
-package com.mapswithme.maps.maplayer.traffic.widget;
+package app.organicmaps.maplayer.traffic.widget;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -11,9 +11,9 @@ import android.widget.RelativeLayout;
 import androidx.annotation.NonNull;
 import androidx.core.content.res.ResourcesCompat;
 
-import com.mapswithme.maps.R;
-import com.mapswithme.util.ThemeUtils;
-import com.mapswithme.util.UiUtils;
+import app.organicmaps.R;
+import app.organicmaps.util.ThemeUtils;
+import app.organicmaps.util.UiUtils;
 
 import java.util.Objects;
 

@@ -1,4 +1,4 @@
-package com.mapswithme.maps.widget.placepage;
+package app.organicmaps.widget.placepage;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -7,10 +7,10 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-import com.mapswithme.maps.R;
-import com.mapswithme.maps.editor.data.Timespan;
-import com.mapswithme.maps.editor.data.Timetable;
-import com.mapswithme.util.UiUtils;
+import app.organicmaps.R;
+import app.organicmaps.editor.data.Timespan;
+import app.organicmaps.editor.data.Timetable;
+import app.organicmaps.util.UiUtils;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -18,8 +18,8 @@ import java.util.Calendar;
 import java.util.Collections;
 import java.util.List;
 
-import static com.mapswithme.maps.editor.data.TimeFormatUtils.formatNonBusinessTime;
-import static com.mapswithme.maps.editor.data.TimeFormatUtils.formatWeekdaysRange;
+import static app.organicmaps.editor.data.TimeFormatUtils.formatNonBusinessTime;
+import static app.organicmaps.editor.data.TimeFormatUtils.formatWeekdaysRange;
 
 public class PlaceOpeningHoursAdapter extends RecyclerView.Adapter<PlaceOpeningHoursAdapter.ViewHolder>
 {

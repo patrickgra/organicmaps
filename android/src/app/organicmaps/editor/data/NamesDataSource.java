@@ -1,4 +1,4 @@
-package com.mapswithme.maps.editor.data;
+package app.organicmaps.editor.data;
 
 /**
  * Class which contains array of localized names with following priority:

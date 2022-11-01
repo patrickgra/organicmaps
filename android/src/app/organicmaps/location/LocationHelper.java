@@ -1,8 +1,8 @@
-package com.mapswithme.maps.location;
+package app.organicmaps.location;
 
 import static android.Manifest.permission.ACCESS_COARSE_LOCATION;
 import static android.Manifest.permission.ACCESS_FINE_LOCATION;
-import static com.mapswithme.util.concurrency.UiThread.runLater;
+import static app.organicmaps.util.concurrency.UiThread.runLater;
 
 import android.app.Activity;
 import android.app.Dialog;
@@ -22,20 +22,20 @@ import androidx.annotation.UiThread;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.mapswithme.maps.Framework;
-import com.mapswithme.maps.MwmApplication;
-import com.mapswithme.maps.R;
-import com.mapswithme.maps.background.AppBackgroundTracker;
-import com.mapswithme.maps.base.Initializable;
-import com.mapswithme.maps.bookmarks.data.FeatureId;
-import com.mapswithme.maps.bookmarks.data.MapObject;
-import com.mapswithme.maps.routing.RoutingController;
-import com.mapswithme.util.Config;
-import com.mapswithme.util.Listeners;
-import com.mapswithme.util.LocationUtils;
-import com.mapswithme.util.NetworkPolicy;
-import com.mapswithme.util.Utils;
-import com.mapswithme.util.log.Logger;
+import app.organicmaps.Framework;
+import app.organicmaps.MwmApplication;
+import app.organicmaps.R;
+import app.organicmaps.background.AppBackgroundTracker;
+import app.organicmaps.base.Initializable;
+import app.organicmaps.bookmarks.data.FeatureId;
+import app.organicmaps.bookmarks.data.MapObject;
+import app.organicmaps.routing.RoutingController;
+import app.organicmaps.util.Config;
+import app.organicmaps.util.Listeners;
+import app.organicmaps.util.LocationUtils;
+import app.organicmaps.util.NetworkPolicy;
+import app.organicmaps.util.Utils;
+import app.organicmaps.util.log.Logger;
 
 public enum LocationHelper implements Initializable<Context>, AppBackgroundTracker.OnTransitionListener, BaseLocationProvider.Listener
 {
@@ -137,9 +137,12 @@ public enum LocationHelper implements Initializable<Context>, AppBackgroundTrack
   @Nullable
   public Location getSavedLocation() { return mSavedLocation; }
 
-  public void switchToNextMode()
+  public void onLocationButtonClicked()
   {
     Logger.d(TAG);
+    // Ensure that we actually request locations. We don't have turn-off mode, so this call is ok.
+    if (!mActive)
+      start();
     LocationState.nativeSwitchToNextMode();
   }
 
@@ -354,7 +357,12 @@ public enum LocationHelper implements Initializable<Context>, AppBackgroundTrack
     Logger.d(TAG, "active = " + mActive + " permissions = " + LocationUtils.isLocationGranted(mContext) +
         " settings = " + LocationUtils.areLocationServicesTurnedOn(mContext) + " isAnnoying = " + mErrorDialogAnnoying);
 
-    if (!mActive || !LocationUtils.isLocationGranted(mContext) || !LocationUtils.areLocationServicesTurnedOn(mContext))
+    if (!mActive)
+      return;
+
+    /// @todo Should we stop current location request (before returns below)?
+
+    if (!LocationUtils.isLocationGranted(mContext) || !LocationUtils.areLocationServicesTurnedOn(mContext))
       return;
 
     if (mUiCallback == null || mErrorDialogAnnoying || (mErrorDialog != null && mErrorDialog.isShowing()))
@@ -372,9 +380,7 @@ public enum LocationHelper implements Initializable<Context>, AppBackgroundTrack
         })
         .setPositiveButton(R.string.current_location_unknown_continue_button, (dialog, which) ->
         {
-          if (!isActive())
-            start();
-          switchToNextMode();
+          onLocationButtonClicked();
           setLocationErrorDialogAnnoying(true);
         })
         .show();
@@ -579,9 +585,8 @@ public enum LocationHelper implements Initializable<Context>, AppBackgroundTrack
         .registerForActivityResult(new ActivityResultContracts.StartIntentSenderForResult(),
             result -> onLocationResolutionResult(result.getResultCode()));
 
-    if (!Config.isScreenSleepEnabled()) {
+    if (!Config.isScreenSleepEnabled())
       Utils.keepScreenOn(true, mUiCallback.requireActivity().getWindow());
-    }
 
     LocationState.nativeSetLocationPendingTimeoutListener(this::onLocationPendingTimeout);
     LocationState.nativeSetListener(mUiCallback);

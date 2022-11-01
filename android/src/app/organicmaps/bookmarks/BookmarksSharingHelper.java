@@ -1,4 +1,4 @@
-package com.mapswithme.maps.bookmarks;
+package app.organicmaps.bookmarks;
 
 import android.app.Activity;
 import android.app.ProgressDialog;
@@ -8,11 +8,11 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.FragmentActivity;
 
-import com.mapswithme.maps.R;
-import com.mapswithme.maps.bookmarks.data.BookmarkManager;
-import com.mapswithme.maps.bookmarks.data.BookmarkSharingResult;
-import com.mapswithme.util.SharingUtils;
-import com.mapswithme.util.log.Logger;
+import app.organicmaps.R;
+import app.organicmaps.bookmarks.data.BookmarkManager;
+import app.organicmaps.bookmarks.data.BookmarkSharingResult;
+import app.organicmaps.util.SharingUtils;
+import app.organicmaps.util.log.Logger;
 
 public enum BookmarksSharingHelper
 {

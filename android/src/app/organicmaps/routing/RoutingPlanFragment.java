@@ -1,4 +1,4 @@
-package com.mapswithme.maps.routing;
+package app.organicmaps.routing;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,10 +9,10 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.FragmentActivity;
 
-import com.mapswithme.maps.Framework;
-import com.mapswithme.maps.R;
-import com.mapswithme.maps.base.BaseMwmFragment;
-import com.mapswithme.maps.base.OnBackPressListener;
+import app.organicmaps.Framework;
+import app.organicmaps.R;
+import app.organicmaps.base.BaseMwmFragment;
+import app.organicmaps.base.OnBackPressListener;
 
 public class RoutingPlanFragment extends BaseMwmFragment
                               implements OnBackPressListener

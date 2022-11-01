@@ -1,4 +1,4 @@
-package com.mapswithme.maps.search;
+package app.organicmaps.search;
 
 import android.content.Context;
 import android.text.TextUtils;
@@ -6,7 +6,7 @@ import android.util.Pair;
 
 import androidx.annotation.NonNull;
 
-import com.mapswithme.util.Language;
+import app.organicmaps.util.Language;
 
 import java.util.ArrayList;
 import java.util.List;

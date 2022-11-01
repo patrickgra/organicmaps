@@ -1,19 +1,17 @@
-package com.mapswithme.maps.widget.recycler;
+package app.organicmaps.widget.recycler;
 
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.drawable.Drawable;
 import android.view.View;
 
-import androidx.annotation.DimenRes;
 import androidx.annotation.Dimension;
-import androidx.annotation.DrawableRes;
 import androidx.annotation.NonNull;
 import androidx.appcompat.content.res.AppCompatResources;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.mapswithme.maps.R;
-import com.mapswithme.maps.bookmarks.Holders;
+import app.organicmaps.R;
+import app.organicmaps.bookmarks.Holders;
 
 import java.util.Objects;
 

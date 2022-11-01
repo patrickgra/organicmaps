@@ -1,4 +1,4 @@
-package com.mapswithme.util;
+package app.organicmaps.util;
 
 import android.content.Context;
 import android.content.res.ColorStateList;
@@ -20,7 +20,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.content.res.AppCompatResources;
 import androidx.core.graphics.drawable.DrawableCompat;
 
-import com.mapswithme.maps.R;
+import app.organicmaps.R;
 
 import java.util.Objects;
 

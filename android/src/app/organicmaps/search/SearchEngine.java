@@ -1,16 +1,16 @@
-package com.mapswithme.maps.search;
+package app.organicmaps.search;
 
 import android.content.Context;
 
 import androidx.annotation.MainThread;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import com.mapswithme.maps.Framework;
-import com.mapswithme.maps.api.ParsedMwmRequest;
-import com.mapswithme.maps.base.Initializable;
-import com.mapswithme.util.Language;
-import com.mapswithme.util.Listeners;
-import com.mapswithme.util.concurrency.UiThread;
+import app.organicmaps.Framework;
+import app.organicmaps.api.ParsedMwmRequest;
+import app.organicmaps.base.Initializable;
+import app.organicmaps.util.Language;
+import app.organicmaps.util.Listeners;
+import app.organicmaps.util.concurrency.UiThread;
 
 import java.nio.charset.StandardCharsets;
 

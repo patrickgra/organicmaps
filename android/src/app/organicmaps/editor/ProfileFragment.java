@@ -1,4 +1,4 @@
-package com.mapswithme.maps.editor;
+package app.organicmaps.editor;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -13,12 +13,12 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 
-import com.mapswithme.maps.R;
-import com.mapswithme.maps.base.BaseMwmToolbarFragment;
-import com.mapswithme.util.Constants;
-import com.mapswithme.util.UiUtils;
-import com.mapswithme.util.concurrency.ThreadPool;
-import com.mapswithme.util.concurrency.UiThread;
+import app.organicmaps.R;
+import app.organicmaps.base.BaseMwmToolbarFragment;
+import app.organicmaps.util.Constants;
+import app.organicmaps.util.UiUtils;
+import app.organicmaps.util.concurrency.ThreadPool;
+import app.organicmaps.util.concurrency.UiThread;
 
 public class ProfileFragment extends BaseMwmToolbarFragment
 {

@@ -1,4 +1,4 @@
-package com.mapswithme.util.concurrency;
+package app.organicmaps.util.concurrency;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.LinkedBlockingQueue;

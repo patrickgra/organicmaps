@@ -1,4 +1,4 @@
-package com.mapswithme.maps.editor;
+package app.organicmaps.editor;
 
 import android.annotation.SuppressLint;
 import android.app.Dialog;
@@ -21,11 +21,11 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
 import com.google.android.material.tabs.TabLayout;
-import com.mapswithme.maps.R;
-import com.mapswithme.maps.base.BaseMwmDialogFragment;
-import com.mapswithme.maps.editor.data.HoursMinutes;
-import com.mapswithme.util.DateUtils;
-import com.mapswithme.util.ThemeUtils;
+import app.organicmaps.R;
+import app.organicmaps.base.BaseMwmDialogFragment;
+import app.organicmaps.editor.data.HoursMinutes;
+import app.organicmaps.util.DateUtils;
+import app.organicmaps.util.ThemeUtils;
 
 public class HoursMinutesPickerFragment extends BaseMwmDialogFragment
 {

@@ -1,21 +1,21 @@
-package com.mapswithme.util;
+package app.organicmaps.util;
 
-import static com.mapswithme.util.Counters.KEY_APP_FIRST_INSTALL_FLAVOR;
-import static com.mapswithme.util.Counters.KEY_APP_FIRST_INSTALL_VERSION;
-import static com.mapswithme.util.Counters.KEY_APP_LAST_SESSION_TIMESTAMP;
-import static com.mapswithme.util.Counters.KEY_APP_LAUNCH_NUMBER;
-import static com.mapswithme.util.Counters.KEY_APP_SESSION_NUMBER;
-import static com.mapswithme.util.Counters.KEY_LIKES_LAST_RATED_SESSION;
-import static com.mapswithme.util.Counters.KEY_MISC_FIRST_START_DIALOG_SEEN;
-import static com.mapswithme.util.Counters.KEY_MISC_NEWS_LAST_VERSION;
+import static app.organicmaps.util.Counters.KEY_APP_FIRST_INSTALL_FLAVOR;
+import static app.organicmaps.util.Counters.KEY_APP_FIRST_INSTALL_VERSION;
+import static app.organicmaps.util.Counters.KEY_APP_LAST_SESSION_TIMESTAMP;
+import static app.organicmaps.util.Counters.KEY_APP_LAUNCH_NUMBER;
+import static app.organicmaps.util.Counters.KEY_APP_SESSION_NUMBER;
+import static app.organicmaps.util.Counters.KEY_LIKES_LAST_RATED_SESSION;
+import static app.organicmaps.util.Counters.KEY_MISC_FIRST_START_DIALOG_SEEN;
+import static app.organicmaps.util.Counters.KEY_MISC_NEWS_LAST_VERSION;
 
 import android.content.Context;
 
 import androidx.annotation.NonNull;
 
-import com.mapswithme.maps.BuildConfig;
-import com.mapswithme.maps.MwmApplication;
-import com.mapswithme.maps.R;
+import app.organicmaps.BuildConfig;
+import app.organicmaps.MwmApplication;
+import app.organicmaps.R;
 
 public final class Config
 {

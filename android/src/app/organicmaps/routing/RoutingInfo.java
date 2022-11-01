@@ -1,11 +1,11 @@
-package com.mapswithme.maps.routing;
+package app.organicmaps.routing;
 
 import android.widget.ImageView;
 
 import androidx.annotation.DrawableRes;
 import androidx.annotation.NonNull;
 
-import com.mapswithme.maps.R;
+import app.organicmaps.R;
 
 public class RoutingInfo
 {

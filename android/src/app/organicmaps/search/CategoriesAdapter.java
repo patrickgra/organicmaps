@@ -1,4 +1,4 @@
-package com.mapswithme.maps.search;
+package app.organicmaps.search;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -17,8 +17,8 @@ import androidx.annotation.StringRes;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.mapswithme.maps.R;
-import com.mapswithme.util.ThemeUtils;
+import app.organicmaps.R;
+import app.organicmaps.util.ThemeUtils;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

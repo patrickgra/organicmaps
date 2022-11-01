@@ -1,6 +1,6 @@
-package com.mapswithme.maps.api;
+package app.organicmaps.api;
 
-import com.mapswithme.maps.Framework;
+import app.organicmaps.Framework;
 
 /**
  * Represents Framework::ParsedRoutingData from core.

@@ -1,4 +1,4 @@
-package com.mapswithme.maps.routing;
+package app.organicmaps.routing;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -13,14 +13,14 @@ import androidx.annotation.IdRes;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.mapswithme.maps.Framework;
-import com.mapswithme.maps.MwmApplication;
-import com.mapswithme.maps.R;
-import com.mapswithme.maps.settings.DrivingOptionsActivity;
-import com.mapswithme.maps.widget.RoutingToolbarButton;
-import com.mapswithme.maps.widget.ToolbarController;
-import com.mapswithme.maps.widget.WheelProgressView;
-import com.mapswithme.util.UiUtils;
+import app.organicmaps.Framework;
+import app.organicmaps.MwmApplication;
+import app.organicmaps.R;
+import app.organicmaps.settings.DrivingOptionsActivity;
+import app.organicmaps.widget.RoutingToolbarButton;
+import app.organicmaps.widget.ToolbarController;
+import app.organicmaps.widget.WheelProgressView;
+import app.organicmaps.util.UiUtils;
 
 public class RoutingPlanController extends ToolbarController
 {

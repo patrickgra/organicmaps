@@ -1,4 +1,4 @@
-package com.mapswithme.maps.location;
+package app.organicmaps.location;
 
 import android.annotation.SuppressLint;
 import android.net.SSLCertificateSocketFactory;
@@ -6,8 +6,8 @@ import android.os.SystemClock;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import com.mapswithme.maps.BuildConfig;
-import com.mapswithme.util.log.Logger;
+import app.organicmaps.BuildConfig;
+import app.organicmaps.util.log.Logger;
 
 import javax.net.SocketFactory;
 import javax.net.ssl.SSLSocketFactory;

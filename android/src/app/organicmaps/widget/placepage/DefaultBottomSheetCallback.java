@@ -1,12 +1,12 @@
-package com.mapswithme.maps.widget.placepage;
+package app.organicmaps.widget.placepage;
 
 import android.view.View;
 
 import androidx.annotation.NonNull;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
-import com.mapswithme.util.log.Logger;
+import app.organicmaps.util.log.Logger;
 
-import static com.mapswithme.maps.widget.placepage.PlacePageUtils.isExpandedState;
+import static app.organicmaps.widget.placepage.PlacePageUtils.isExpandedState;
 
 public class DefaultBottomSheetCallback extends BottomSheetBehavior.BottomSheetCallback
 {
@@ -24,17 +24,15 @@ public class DefaultBottomSheetCallback extends BottomSheetBehavior.BottomSheetC
   {
     Logger.d(TAG, "State change, new = " + PlacePageUtils.toString(newState));
     if (PlacePageUtils.isSettlingState(newState) || PlacePageUtils.isDraggingState(newState))
-    {
       return;
-    }
+
+    mSheetChangedListener.onSheetSlideFinish();
 
     if (PlacePageUtils.isHiddenState(newState))
     {
       mSheetChangedListener.onSheetHidden();
       return;
     }
-
-    mSheetChangedListener.onSheetDirectionIconChange();
 
     if (isExpandedState(newState))
     {
@@ -49,10 +47,5 @@ public class DefaultBottomSheetCallback extends BottomSheetBehavior.BottomSheetC
   public void onSlide(@NonNull View bottomSheet, float slideOffset)
   {
     mSheetChangedListener.onSheetSliding(bottomSheet.getTop());
-
-    if (slideOffset < 0)
-      return;
-
-    mSheetChangedListener.onSheetSlideFinish();
   }
 }

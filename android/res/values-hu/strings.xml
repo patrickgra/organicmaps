@@ -505,6 +505,7 @@
 	<string name="prefs_languages_information_off_link">További tájékoztatást találhat még ebben az útmutatóban.</string>
 	<string name="transliteration_title">Átírás latin nyelvre</string>
 	<string name="learn_more">Tudjon meg többet</string>
+	<!-- Subway exits for public transport marks on the map -->
 	<string name="core_exit">Kilépés</string>
 	<string name="routing_add_start_point">Adjon hozzá kiindulási pontot az útvonal megtervezéséhez</string>
 	<string name="routing_add_finish_point">Adjon hozzá végpontot az útvonal tervezéséhez</string>
@@ -1085,11 +1086,16 @@
 	<string name="type.historic.castle.shiro">Japán várkastélyai</string>
 	<string name="type.historic.castle.stately">Kastély</string>
 	<string name="type.historic.city_gate">Városi kapu</string>
+	<string name="type.historic.gallows">Akasztófa</string>
 	<string name="type.historic.memorial">Emlékmű</string>
+	<string name="type.historic.memorial.cross">Emlékkereszt</string>
 	<string name="type.historic.memorial.plaque">Emlékmű</string>
 	<string name="type.historic.memorial.sculpture">Emlékmű</string>
 	<string name="type.historic.memorial.statue">Emlékmű</string>
+	<string name="type.historic.memorial.stolperstein">Botlatókő</string>
+	<string name="type.historic.memorial.war_memorial">Háborús emlékmű</string>
 	<string name="type.historic.monument">Műemlék</string>
+	<string name="type.historic.pillory">Pellengér</string>
 	<string name="type.historic.ruins">Romok</string>
 	<string name="type.historic.ship">Túrizmus</string>
 	<string name="type.historic.tomb">Túrizmus</string>
@@ -1391,7 +1397,6 @@
 	<string name="type.railway.subway_entrance.lille">Földalatti bejárat</string>
 	<string name="type.railway.subway_entrance.lima">Földalatti bejárat</string>
 	<string name="type.railway.subway_entrance.lisboa">Földalatti bejárat</string>
-	<string name="type.railway.subway_entrance.lisbon">Földalatti bejárat</string>
 	<string name="type.railway.subway_entrance.london">Földalatti bejárat</string>
 	<string name="type.railway.subway_entrance.lyon">Földalatti bejárat</string>
 	<string name="type.railway.subway_entrance.madrid">Földalatti bejárat</string>

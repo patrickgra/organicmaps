@@ -1,4 +1,4 @@
-package com.mapswithme.maps.location;
+package app.organicmaps.location;
 
 import android.content.Context;
 import android.location.Location;
@@ -7,8 +7,8 @@ import android.location.LocationManager;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
-import com.mapswithme.maps.MwmApplication;
-import com.mapswithme.util.log.Logger;
+import app.organicmaps.MwmApplication;
+import app.organicmaps.util.log.Logger;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.mapswithme.maps.routing;
+package app.organicmaps.routing;
 
 import android.content.Context;
 import android.content.DialogInterface;
@@ -9,13 +9,12 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.FragmentFactory;
-import androidx.fragment.app.FragmentManager;
 
-import com.mapswithme.maps.R;
-import com.mapswithme.maps.downloader.CountryItem;
-import com.mapswithme.maps.downloader.MapManager;
-import com.mapswithme.maps.widget.WheelProgressView;
-import com.mapswithme.util.UiUtils;
+import app.organicmaps.R;
+import app.organicmaps.downloader.CountryItem;
+import app.organicmaps.downloader.MapManager;
+import app.organicmaps.widget.WheelProgressView;
+import app.organicmaps.util.UiUtils;
 
 import java.util.HashSet;
 import java.util.List;

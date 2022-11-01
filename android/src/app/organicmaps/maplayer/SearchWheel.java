@@ -1,4 +1,4 @@
-package com.mapswithme.maps.maplayer;
+package app.organicmaps.maplayer;
 
 import android.animation.Animator;
 import android.animation.AnimatorInflater;
@@ -15,13 +15,13 @@ import androidx.annotation.IdRes;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.StringRes;
-import com.mapswithme.maps.R;
-import com.mapswithme.maps.routing.RoutingController;
-import com.mapswithme.maps.search.SearchEngine;
-import com.mapswithme.util.Graphics;
-import com.mapswithme.util.StringUtils;
-import com.mapswithme.util.UiUtils;
-import com.mapswithme.util.concurrency.UiThread;
+import app.organicmaps.R;
+import app.organicmaps.routing.RoutingController;
+import app.organicmaps.search.SearchEngine;
+import app.organicmaps.util.Graphics;
+import app.organicmaps.util.StringUtils;
+import app.organicmaps.util.UiUtils;
+import app.organicmaps.util.concurrency.UiThread;
 
 public class SearchWheel implements View.OnClickListener
 {
@@ -253,43 +253,44 @@ public class SearchWheel implements View.OnClickListener
   @Override
   public void onClick(View v)
   {
-    switch (v.getId())
+    final int id = v.getId();
+    if (id == R.id.btn_search)
+      onSearchButtonClick(v);
+    else if (id == R.id.touch_interceptor)
+      toggleSearchLayout();
+    else if (id == R.id.search_fuel ||
+        id == R.id.search_parking ||
+        id == R.id.search_eat ||
+        id == R.id.search_food ||
+        id == R.id.search_atm)
+      startSearch(SearchOption.fromResId(id));
+  }
+
+  private void onSearchButtonClick(View v)
+  {
+    if (!RoutingController.get().isNavigating())
     {
-    case R.id.btn_search:
-      if (!RoutingController.get().isNavigating())
-      {
-        if (TextUtils.isEmpty(SearchEngine.INSTANCE.getQuery()))
-          showSearchInParent();
-        else
-          mOnSearchCanceledListener.onClick(v);
-        return;
-      }
-
-      if (mCurrentOption != null || !TextUtils.isEmpty(SearchEngine.INSTANCE.getQuery()))
-      {
-        mOnSearchCanceledListener.onClick(v);
-        refreshSearchVisibility();
-        return;
-      }
-
-      if (mIsExpanded)
-      {
+      if (TextUtils.isEmpty(SearchEngine.INSTANCE.getQuery()))
         showSearchInParent();
-        return;
-      }
-
-      toggleSearchLayout();
-      break;
-    case R.id.touch_interceptor:
-      toggleSearchLayout();
-      break;
-    case R.id.search_fuel:
-    case R.id.search_parking:
-    case R.id.search_eat:
-    case R.id.search_food:
-    case R.id.search_atm:
-      startSearch(SearchOption.fromResId(v.getId()));
+      else
+        mOnSearchCanceledListener.onClick(v);
+      return;
     }
+
+    if (mCurrentOption != null || !TextUtils.isEmpty(SearchEngine.INSTANCE.getQuery()))
+    {
+      mOnSearchCanceledListener.onClick(v);
+      refreshSearchVisibility();
+      return;
+    }
+
+    if (mIsExpanded)
+    {
+      showSearchInParent();
+      return;
+    }
+
+    toggleSearchLayout();
   }
 
   private void showSearchInParent()

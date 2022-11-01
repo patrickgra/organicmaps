@@ -1,7 +1,7 @@
-package com.mapswithme.maps.bookmarks;
+package app.organicmaps.bookmarks;
 
-import static com.mapswithme.maps.bookmarks.Holders.CategoryViewHolder;
-import static com.mapswithme.maps.bookmarks.Holders.HeaderViewHolder;
+import static app.organicmaps.bookmarks.Holders.CategoryViewHolder;
+import static app.organicmaps.bookmarks.Holders.HeaderViewHolder;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -12,10 +12,10 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.mapswithme.maps.R;
-import com.mapswithme.maps.adapter.OnItemClickListener;
-import com.mapswithme.maps.bookmarks.data.BookmarkCategory;
-import com.mapswithme.maps.bookmarks.data.BookmarkManager;
+import app.organicmaps.R;
+import app.organicmaps.adapter.OnItemClickListener;
+import app.organicmaps.bookmarks.data.BookmarkCategory;
+import app.organicmaps.bookmarks.data.BookmarkManager;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.mapswithme.maps.downloader;
+package app.organicmaps.downloader;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -21,15 +21,15 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.mapswithme.maps.MwmActivity;
-import com.mapswithme.maps.R;
-import com.mapswithme.maps.intent.Factory;
-import com.mapswithme.maps.location.LocationHelper;
-import com.mapswithme.maps.routing.RoutingController;
-import com.mapswithme.util.StringUtils;
-import com.mapswithme.util.UiUtils;
-import com.mapswithme.util.bottomsheet.MenuBottomSheetFragment;
-import com.mapswithme.util.bottomsheet.MenuBottomSheetItem;
+import app.organicmaps.MwmActivity;
+import app.organicmaps.R;
+import app.organicmaps.intent.Factory;
+import app.organicmaps.location.LocationHelper;
+import app.organicmaps.routing.RoutingController;
+import app.organicmaps.util.StringUtils;
+import app.organicmaps.util.UiUtils;
+import app.organicmaps.util.bottomsheet.MenuBottomSheetFragment;
+import app.organicmaps.util.bottomsheet.MenuBottomSheetItem;
 import com.timehop.stickyheadersrecyclerview.StickyRecyclerHeadersAdapter;
 import com.timehop.stickyheadersrecyclerview.StickyRecyclerHeadersDecoration;
 

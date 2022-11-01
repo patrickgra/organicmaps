@@ -1,4 +1,4 @@
-package com.mapswithme.maps.content;
+package app.organicmaps.content;
 
 import androidx.annotation.NonNull;
 

@@ -1,4 +1,4 @@
-package com.mapswithme.util;
+package app.organicmaps.util;
 
 import android.content.ClipData;
 import android.content.Context;
@@ -10,10 +10,10 @@ import android.text.TextUtils;
 
 import androidx.annotation.NonNull;
 
-import com.mapswithme.maps.Framework;
-import com.mapswithme.maps.R;
-import com.mapswithme.maps.bookmarks.data.BookmarkInfo;
-import com.mapswithme.maps.bookmarks.data.MapObject;
+import app.organicmaps.Framework;
+import app.organicmaps.R;
+import app.organicmaps.bookmarks.data.BookmarkInfo;
+import app.organicmaps.bookmarks.data.MapObject;
 
 public class SharingUtils
 {
@@ -118,7 +118,7 @@ public class SharingUtils
     // Prevent sharing to ourselves (supported from API Level 24).
     if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.N)
     {
-      ComponentName[] excludeSelf = { new ComponentName(context, com.mapswithme.maps.SplashActivity.class) };
+      ComponentName[] excludeSelf = { new ComponentName(context, app.organicmaps.SplashActivity.class) };
       chooser.putExtra(Intent.EXTRA_EXCLUDE_COMPONENTS, excludeSelf);
     }
 

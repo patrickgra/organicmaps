@@ -874,6 +874,7 @@
 
 "transliteration_title" = "音譯為拉丁文";
 
+/* Subway exits for public transport marks on the map */
 "core_exit" = "退出";
 
 "routing_add_start_point" = "新增起點以計劃路線";
@@ -1227,7 +1228,7 @@
 
 "type.aerialway.cable_car" = "纜車";
 
-"type.aerialway.chair_lift" = "Aerialway";
+"type.aerialway.chair_lift" = "Chair lift";
 
 "type.aerialway.drag_lift" = "纜車要素";
 
@@ -1456,7 +1457,7 @@
 
 "type.recycling.green_waste" = "Green/Organic Waste";
 
-"type.recycling.cartons" = "Bewerage Cartons";
+"type.recycling.cartons" = "Beverage Cartons";
 
 "type.amenity.restaurant" = "餐廳";
 
@@ -2173,7 +2174,11 @@
 
 "type.historic.fort" = "歷史要塞";
 
+"type.historic.gallows" = "絞架";
+
 "type.historic.memorial" = "紀念館";
+
+"type.historic.memorial.cross" = "紀念十字架";
 
 "type.historic.memorial.plaque" = "紀念牌匾";
 
@@ -2181,7 +2186,13 @@
 
 "type.historic.memorial.statue" = "塑像";
 
+"type.historic.memorial.stolperstein" = "絆腳石";
+
+"type.historic.memorial.war_memorial" = "戰爭紀念建築";
+
 "type.historic.monument" = "紀念碑";
+
+"type.historic.pillory" = "刑柱";
 
 "type.historic.ruins" = "廢墟";
 
@@ -2397,7 +2408,7 @@
 
 "type.man_made.tower" = "塔";
 
-"type.man_made.wastewater_plant" = "Wastewater Plant";
+"type.man_made.wastewater_plant" = "Wastewater treatment plant";
 
 "type.man_made.water_tap" = "水龍頭";
 
@@ -3024,8 +3035,6 @@
 "type.railway.subway_entrance.lima" = "地鐵入口";
 
 "type.railway.subway_entrance.lisboa" = "地鐵入口";
-
-"type.railway.subway_entrance.lisbon" = "地鐵入口";
 
 "type.railway.subway_entrance.london" = "地鐵入口";
 

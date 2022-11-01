@@ -1,4 +1,4 @@
-package com.mapswithme.maps.background;
+package app.organicmaps.background;
 
 import android.app.Application;
 import android.app.Notification;
@@ -13,10 +13,10 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.core.app.NotificationCompat;
 
-import com.mapswithme.maps.MwmActivity;
-import com.mapswithme.maps.R;
-import com.mapswithme.util.StringUtils;
-import com.mapswithme.util.UiUtils;
+import app.organicmaps.MwmActivity;
+import app.organicmaps.R;
+import app.organicmaps.util.StringUtils;
+import app.organicmaps.util.UiUtils;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

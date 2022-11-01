@@ -1,4 +1,4 @@
-package com.mapswithme.util;
+package app.organicmaps.util;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -33,13 +33,13 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
 import com.google.android.material.snackbar.Snackbar;
-import com.mapswithme.maps.BuildConfig;
-import com.mapswithme.maps.MwmApplication;
-import com.mapswithme.maps.R;
-import com.mapswithme.maps.base.CustomNavigateUpListener;
-import com.mapswithme.util.concurrency.UiThread;
-import com.mapswithme.util.log.Logger;
-import com.mapswithme.util.log.LogsManager;
+import app.organicmaps.BuildConfig;
+import app.organicmaps.MwmApplication;
+import app.organicmaps.R;
+import app.organicmaps.base.CustomNavigateUpListener;
+import app.organicmaps.util.concurrency.UiThread;
+import app.organicmaps.util.log.Logger;
+import app.organicmaps.util.log.LogsManager;
 
 import java.io.Closeable;
 import java.io.IOException;

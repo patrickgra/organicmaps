@@ -1,10 +1,10 @@
-package com.mapswithme.maps.maplayer.traffic;
+package app.organicmaps.maplayer.traffic;
 
 import androidx.annotation.MainThread;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import com.mapswithme.maps.base.Initializable;
-import com.mapswithme.util.log.Logger;
+import app.organicmaps.base.Initializable;
+import app.organicmaps.util.log.Logger;
 
 import java.util.ArrayList;
 import java.util.List;

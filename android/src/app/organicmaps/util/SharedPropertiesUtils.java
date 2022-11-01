@@ -1,7 +1,7 @@
-package com.mapswithme.util;
+package app.organicmaps.util;
 
-import static com.mapswithme.util.Config.KEY_PREF_CRASHLYTICS;
-import static com.mapswithme.util.Config.KEY_PREF_STATISTICS;
+import static app.organicmaps.util.Config.KEY_PREF_CRASHLYTICS;
+import static app.organicmaps.util.Config.KEY_PREF_STATISTICS;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -9,9 +9,9 @@ import android.preference.PreferenceManager;
 
 import androidx.annotation.NonNull;
 
-import com.mapswithme.maps.MwmApplication;
-import com.mapswithme.maps.R;
-import com.mapswithme.maps.maplayer.Mode;
+import app.organicmaps.MwmApplication;
+import app.organicmaps.R;
+import app.organicmaps.maplayer.Mode;
 
 import java.io.IOException;
 import java.util.Locale;

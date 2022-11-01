@@ -503,6 +503,7 @@
 	<string name="prefs_languages_information_off_link">詳細については、このガイドをご確認ください。</string>
 	<string name="transliteration_title">ラテン文字への字訳</string>
 	<string name="learn_more">詳細情報</string>
+	<!-- Subway exits for public transport marks on the map -->
 	<string name="core_exit">終了</string>
 	<string name="routing_add_start_point">ルートを計画するには出発地点を追加してください</string>
 	<string name="routing_add_finish_point">ルートを計画するには到着地点を追加してください</string>
@@ -1128,11 +1129,16 @@
 	<string name="type.historic.city_gate">城門</string>
 	<string name="type.historic.citywalls">歴史的な城壁</string>
 	<string name="type.historic.fort">歴史的な要塞</string>
+	<string name="type.historic.gallows">絞首台</string>
 	<string name="type.historic.memorial">記念碑</string>
+	<string name="type.historic.memorial.cross">メモリアルクロス</string>
 	<string name="type.historic.memorial.plaque">銘板</string>
 	<string name="type.historic.memorial.sculpture">彫刻</string>
 	<string name="type.historic.memorial.statue">塑像</string>
+	<string name="type.historic.memorial.stolperstein">ストルパーシュタイン</string>
+	<string name="type.historic.memorial.war_memorial">戦争記念施設</string>
 	<string name="type.historic.monument">記念碑</string>
+	<string name="type.historic.pillory">さらし台</string>
 	<string name="type.historic.ruins">古跡</string>
 	<string name="type.historic.ship">退役船</string>
 	<string name="type.historic.tomb">墓</string>
@@ -1521,7 +1527,6 @@
 	<string name="type.railway.subway_entrance.lille">地下鉄入り口</string>
 	<string name="type.railway.subway_entrance.lima">地下鉄入り口</string>
 	<string name="type.railway.subway_entrance.lisboa">地下鉄入り口</string>
-	<string name="type.railway.subway_entrance.lisbon">地下鉄入り口</string>
 	<string name="type.railway.subway_entrance.london">地下鉄入り口</string>
 	<string name="type.railway.subway_entrance.lyon">地下鉄入り口</string>
 	<string name="type.railway.subway_entrance.madrid">地下鉄入り口</string>

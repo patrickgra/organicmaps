@@ -1,4 +1,4 @@
-package com.mapswithme.maps.widget.placepage;
+package app.organicmaps.widget.placepage;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
@@ -17,16 +17,16 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
-import com.mapswithme.maps.R;
-import com.mapswithme.maps.base.BaseMwmDialogFragment;
-import com.mapswithme.maps.bookmarks.ChooseBookmarkCategoryFragment;
-import com.mapswithme.maps.bookmarks.ChooseBookmarkCategoryFragment.Listener;
-import com.mapswithme.maps.bookmarks.data.BookmarkCategory;
-import com.mapswithme.maps.bookmarks.data.BookmarkInfo;
-import com.mapswithme.maps.bookmarks.data.BookmarkManager;
-import com.mapswithme.maps.bookmarks.data.Icon;
-import com.mapswithme.util.Graphics;
-import com.mapswithme.util.UiUtils;
+import app.organicmaps.R;
+import app.organicmaps.base.BaseMwmDialogFragment;
+import app.organicmaps.bookmarks.ChooseBookmarkCategoryFragment;
+import app.organicmaps.bookmarks.ChooseBookmarkCategoryFragment.Listener;
+import app.organicmaps.bookmarks.data.BookmarkCategory;
+import app.organicmaps.bookmarks.data.BookmarkInfo;
+import app.organicmaps.bookmarks.data.BookmarkManager;
+import app.organicmaps.bookmarks.data.Icon;
+import app.organicmaps.util.Graphics;
+import app.organicmaps.util.UiUtils;
 
 import java.util.List;
 
@@ -150,15 +150,11 @@ public class EditBookmarkFragment extends BaseMwmDialogFragment implements View.
   @Override
   public void onClick(View v)
   {
-    switch (v.getId())
-    {
-    case R.id.iv__bookmark_color:
+    final int id = v.getId();
+    if (id == R.id.iv__bookmark_color)
       selectBookmarkColor();
-      break;
-    case R.id.tv__bookmark_set:
+    else if (id == R.id.tv__bookmark_set)
       selectBookmarkSet();
-      break;
-    }
   }
 
   private void selectBookmarkSet()

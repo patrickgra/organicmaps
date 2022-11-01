@@ -1,4 +1,4 @@
-package com.mapswithme.maps.downloader;
+package app.organicmaps.downloader;
 
 import android.location.Location;
 import android.os.Bundle;
@@ -12,14 +12,14 @@ import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 
-import com.mapswithme.maps.R;
-import com.mapswithme.maps.base.BaseMwmFragment;
-import com.mapswithme.maps.base.BaseMwmFragmentActivity;
-import com.mapswithme.maps.location.LocationHelper;
-import com.mapswithme.maps.widget.WheelProgressView;
-import com.mapswithme.util.StringUtils;
-import com.mapswithme.util.UiUtils;
-import com.mapswithme.util.Utils;
+import app.organicmaps.R;
+import app.organicmaps.base.BaseMwmFragment;
+import app.organicmaps.base.BaseMwmFragmentActivity;
+import app.organicmaps.location.LocationHelper;
+import app.organicmaps.widget.WheelProgressView;
+import app.organicmaps.util.StringUtils;
+import app.organicmaps.util.UiUtils;
+import app.organicmaps.util.Utils;
 
 import java.util.List;
 
@@ -201,27 +201,17 @@ public class CountrySuggestFragment extends BaseMwmFragment implements View.OnCl
   @Override
   public void onClick(View v)
   {
-    switch (v.getId())
+    final int id = v.getId();
+    if (id == R.id.btn__download_map)
     {
-    case R.id.btn__download_map:
-      MapManager.warn3gAndDownload(requireActivity(), mCurrentCountry.id, new Runnable()
-      {
-        @Override
-        public void run()
-        {
-          mDownloadingCountry = mCurrentCountry;
-        }
-      });
-      break;
-
-    case R.id.btn__select_map:
+      MapManager.warn3gAndDownload(requireActivity(), mCurrentCountry.id, () -> mDownloadingCountry = mCurrentCountry);
+    }
+    else if (id == R.id.btn__select_map)
+    {
       BaseMwmFragmentActivity activity = Utils.castTo(requireActivity());
       activity.replaceFragment(DownloaderFragment.class, null, null);
-      break;
-
-    case R.id.wpv__download_progress:
-      MapManager.nativeCancel(mDownloadingCountry.id);
-      break;
     }
+    else if (id == R.id.wpv__download_progress)
+      MapManager.nativeCancel(mDownloadingCountry.id);
   }
 }

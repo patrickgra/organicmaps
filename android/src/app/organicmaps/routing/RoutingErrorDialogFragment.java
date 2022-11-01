@@ -1,4 +1,4 @@
-package com.mapswithme.maps.routing;
+package app.organicmaps.routing;
 
 import android.content.Context;
 import android.content.DialogInterface;
@@ -10,14 +10,13 @@ import android.widget.Button;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
-import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentFactory;
 import androidx.fragment.app.FragmentManager;
 
-import com.mapswithme.maps.R;
-import com.mapswithme.maps.downloader.CountryItem;
-import com.mapswithme.maps.downloader.MapManager;
-import com.mapswithme.util.UiUtils;
+import app.organicmaps.R;
+import app.organicmaps.downloader.CountryItem;
+import app.organicmaps.downloader.MapManager;
+import app.organicmaps.util.UiUtils;
 
 public class RoutingErrorDialogFragment extends BaseRoutingErrorDialogFragment
 {

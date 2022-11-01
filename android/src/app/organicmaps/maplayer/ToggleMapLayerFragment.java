@@ -1,4 +1,4 @@
-package com.mapswithme.maps.maplayer;
+package app.organicmaps.maplayer;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -12,11 +12,11 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.mapswithme.maps.R;
-import com.mapswithme.maps.maplayer.isolines.IsolinesManager;
-import com.mapswithme.maps.widget.recycler.SpanningLinearLayoutManager;
-import com.mapswithme.util.SharedPropertiesUtils;
-import com.mapswithme.util.Utils;
+import app.organicmaps.R;
+import app.organicmaps.maplayer.isolines.IsolinesManager;
+import app.organicmaps.widget.recycler.SpanningLinearLayoutManager;
+import app.organicmaps.util.SharedPropertiesUtils;
+import app.organicmaps.util.Utils;
 
 import java.util.ArrayList;
 import java.util.List;

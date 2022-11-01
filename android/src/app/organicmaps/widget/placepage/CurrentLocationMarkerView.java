@@ -1,4 +1,4 @@
-package com.mapswithme.maps.widget.placepage;
+package app.organicmaps.widget.placepage;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -7,7 +7,7 @@ import androidx.annotation.NonNull;
 
 import com.github.mikephil.charting.components.MarkerView;
 import com.github.mikephil.charting.utils.MPPointF;
-import com.mapswithme.maps.R;
+import app.organicmaps.R;
 
 @SuppressLint("ViewConstructor")
 public

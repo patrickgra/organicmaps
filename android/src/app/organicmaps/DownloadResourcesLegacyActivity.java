@@ -1,4 +1,4 @@
-package com.mapswithme.maps;
+package app.organicmaps;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -19,21 +19,21 @@ import androidx.annotation.StringRes;
 import androidx.annotation.StyleRes;
 import androidx.appcompat.app.AlertDialog;
 
-import com.mapswithme.maps.api.ParsedMwmRequest;
-import com.mapswithme.maps.base.BaseMwmFragmentActivity;
-import com.mapswithme.maps.downloader.CountryItem;
-import com.mapswithme.maps.downloader.MapManager;
-import com.mapswithme.maps.intent.Factory;
-import com.mapswithme.maps.intent.IntentProcessor;
-import com.mapswithme.maps.intent.MapTask;
-import com.mapswithme.maps.location.LocationHelper;
-import com.mapswithme.maps.location.LocationListener;
-import com.mapswithme.util.ConnectionState;
-import com.mapswithme.util.CrashlyticsUtils;
-import com.mapswithme.util.StringUtils;
-import com.mapswithme.util.UiUtils;
-import com.mapswithme.util.Utils;
-import com.mapswithme.util.log.Logger;
+import app.organicmaps.api.ParsedMwmRequest;
+import app.organicmaps.base.BaseMwmFragmentActivity;
+import app.organicmaps.downloader.CountryItem;
+import app.organicmaps.downloader.MapManager;
+import app.organicmaps.intent.Factory;
+import app.organicmaps.intent.IntentProcessor;
+import app.organicmaps.intent.MapTask;
+import app.organicmaps.location.LocationHelper;
+import app.organicmaps.location.LocationListener;
+import app.organicmaps.util.ConnectionState;
+import app.organicmaps.util.CrashlyticsUtils;
+import app.organicmaps.util.StringUtils;
+import app.organicmaps.util.UiUtils;
+import app.organicmaps.util.Utils;
+import app.organicmaps.util.log.Logger;
 
 import java.util.List;
 

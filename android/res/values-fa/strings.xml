@@ -502,6 +502,7 @@
 	<string name="prefs_languages_information_off_link">برای اطلاعات بیشتر لطفا این راهنما را بررسی کنید.</string>
 	<string name="transliteration_title">ترجمه به لاتین</string>
 	<string name="learn_more">بیشتر بدانید</string>
+	<!-- Subway exits for public transport marks on the map -->
 	<string name="core_exit">خروج</string>
 	<string name="routing_add_start_point">یک نقطه شروع برای برنامه ریزی یک مسیر اضافه کنید</string>
 	<string name="routing_add_finish_point">یک مقصد برای برنامه ریزی یک مسیر اضافه کنید</string>
@@ -1000,11 +1001,16 @@
 	<string name="type.historic.castle.shiro">قلعه ژاپنی</string>
 	<string name="type.historic.castle.stately">گردشگری</string>
 	<string name="type.historic.city_gate">دروازه شهر</string>
+	<string name="type.historic.gallows">چوبه دار</string>
 	<string name="type.historic.memorial">گردشگری</string>
+	<string name="type.historic.memorial.cross">صلیب یادبود</string>
 	<string name="type.historic.memorial.plaque">گردشگری</string>
 	<string name="type.historic.memorial.sculpture">گردشگری</string>
 	<string name="type.historic.memorial.statue">گردشگری</string>
+	<string name="type.historic.memorial.stolperstein">سنگ مانع</string>
+	<string name="type.historic.memorial.war_memorial">رزم‌یاد</string>
 	<string name="type.historic.monument">گردشگری</string>
+	<string name="type.historic.pillory">تخته‌بند</string>
 	<string name="type.historic.ruins">گردشگری</string>
 	<string name="type.historic.ship">گردشگری</string>
 	<string name="type.historic.tomb">گردشگری</string>
@@ -1306,7 +1312,6 @@
 	<string name="type.railway.subway_entrance.lille">ورودی مترو</string>
 	<string name="type.railway.subway_entrance.lima">ورودی مترو</string>
 	<string name="type.railway.subway_entrance.lisboa">ورودی مترو</string>
-	<string name="type.railway.subway_entrance.lisbon">ورودی مترو</string>
 	<string name="type.railway.subway_entrance.london">ورودی مترو</string>
 	<string name="type.railway.subway_entrance.lyon">ورودی مترو</string>
 	<string name="type.railway.subway_entrance.madrid">ورودی مترو</string>

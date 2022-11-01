@@ -1,4 +1,4 @@
-package com.mapswithme.maps;
+package app.organicmaps;
 
 import android.app.Application;
 import android.content.Context;
@@ -7,33 +7,33 @@ import android.os.Handler;
 import android.os.Message;
 
 import androidx.annotation.NonNull;
-import com.mapswithme.maps.background.AppBackgroundTracker;
-import com.mapswithme.maps.background.NotificationChannelFactory;
-import com.mapswithme.maps.background.NotificationChannelProvider;
-import com.mapswithme.maps.background.Notifier;
-import com.mapswithme.maps.base.MediaPlayerWrapper;
-import com.mapswithme.maps.bookmarks.data.BookmarkManager;
-import com.mapswithme.maps.downloader.CountryItem;
-import com.mapswithme.maps.downloader.MapManager;
-import com.mapswithme.maps.editor.Editor;
-import com.mapswithme.maps.location.LocationHelper;
-import com.mapswithme.maps.maplayer.isolines.IsolinesManager;
-import com.mapswithme.maps.maplayer.subway.SubwayManager;
-import com.mapswithme.maps.maplayer.traffic.TrafficManager;
-import com.mapswithme.maps.routing.RoutingController;
-import com.mapswithme.maps.search.SearchEngine;
-import com.mapswithme.maps.settings.StoragePathManager;
-import com.mapswithme.maps.sound.TtsPlayer;
-import com.mapswithme.util.Config;
-import com.mapswithme.util.ConnectionState;
-import com.mapswithme.util.Counters;
-import com.mapswithme.util.CrashlyticsUtils;
-import com.mapswithme.util.SharedPropertiesUtils;
-import com.mapswithme.util.StorageUtils;
-import com.mapswithme.util.ThemeSwitcher;
-import com.mapswithme.util.UiUtils;
-import com.mapswithme.util.log.Logger;
-import com.mapswithme.util.log.LogsManager;
+import app.organicmaps.background.AppBackgroundTracker;
+import app.organicmaps.background.NotificationChannelFactory;
+import app.organicmaps.background.NotificationChannelProvider;
+import app.organicmaps.background.Notifier;
+import app.organicmaps.base.MediaPlayerWrapper;
+import app.organicmaps.bookmarks.data.BookmarkManager;
+import app.organicmaps.downloader.CountryItem;
+import app.organicmaps.downloader.MapManager;
+import app.organicmaps.editor.Editor;
+import app.organicmaps.location.LocationHelper;
+import app.organicmaps.maplayer.isolines.IsolinesManager;
+import app.organicmaps.maplayer.subway.SubwayManager;
+import app.organicmaps.maplayer.traffic.TrafficManager;
+import app.organicmaps.routing.RoutingController;
+import app.organicmaps.search.SearchEngine;
+import app.organicmaps.settings.StoragePathManager;
+import app.organicmaps.sound.TtsPlayer;
+import app.organicmaps.util.Config;
+import app.organicmaps.util.ConnectionState;
+import app.organicmaps.util.Counters;
+import app.organicmaps.util.CrashlyticsUtils;
+import app.organicmaps.util.SharedPropertiesUtils;
+import app.organicmaps.util.StorageUtils;
+import app.organicmaps.util.ThemeSwitcher;
+import app.organicmaps.util.UiUtils;
+import app.organicmaps.util.log.Logger;
+import app.organicmaps.util.log.LogsManager;
 
 import java.io.IOException;
 import java.util.List;
@@ -167,8 +167,8 @@ public class MwmApplication extends Application implements AppBackgroundTracker.
                        writablePath,
                        privatePath,
                        tempPath,
-                       BuildConfig.FLAVOR,
-                       BuildConfig.BUILD_TYPE, UiUtils.isTablet(this));
+                       app.organicmaps.BuildConfig.FLAVOR,
+                       app.organicmaps.BuildConfig.BUILD_TYPE, UiUtils.isTablet(this));
     Config.setStoragePath(writablePath);
     Config.setStatisticsEnabled(SharedPropertiesUtils.isStatisticsEnabled(this));
 

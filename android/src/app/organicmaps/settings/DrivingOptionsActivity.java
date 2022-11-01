@@ -1,4 +1,4 @@
-package com.mapswithme.maps.settings;
+package app.organicmaps.settings;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -6,8 +6,8 @@ import android.content.Intent;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
-import com.mapswithme.maps.MwmActivity;
-import com.mapswithme.maps.base.BaseMwmFragmentActivity;
+import app.organicmaps.MwmActivity;
+import app.organicmaps.base.BaseMwmFragmentActivity;
 
 public class DrivingOptionsActivity extends BaseMwmFragmentActivity
 {

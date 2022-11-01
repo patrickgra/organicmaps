@@ -1,4 +1,4 @@
-package com.mapswithme.maps.search;
+package app.organicmaps.search;
 
 import android.os.Parcel;
 import android.os.Parcelable;

@@ -1,4 +1,4 @@
-package com.mapswithme.maps.editor;
+package app.organicmaps.editor;
 
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -11,9 +11,9 @@ import androidx.annotation.IntRange;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.mapswithme.maps.R;
-import com.mapswithme.maps.base.BaseMwmToolbarFragment;
-import com.mapswithme.util.UiUtils;
+import app.organicmaps.R;
+import app.organicmaps.base.BaseMwmToolbarFragment;
+import app.organicmaps.util.UiUtils;
 
 public class ReportFragment extends BaseMwmToolbarFragment implements View.OnClickListener
 {
@@ -72,26 +72,20 @@ public class ReportFragment extends BaseMwmToolbarFragment implements View.OnCli
   @Override
   public void onClick(View v)
   {
-    switch (v.getId())
-    {
-    case R.id.problem_not_exist:
-//    case R.id.problem_closed_repair:
-//    case R.id.problem_duplicated_place:
+    final int id = v.getId();
+    if (id == R.id.problem_not_exist)
       sendNotExist();
-      break;
-
-    case R.id.problem_other:
+    else if (id == R.id.problem_other)
+    {
       mAdvancedMode = true;
       refreshProblems();
-      break;
-
-    case R.id.save:
+    }
+    else if (id == R.id.save)
+    {
       String text = mProblemInput.getText().toString().trim();
       if (TextUtils.isEmpty(text))
         return;
-
       send(text);
-      break;
     }
   }
 }

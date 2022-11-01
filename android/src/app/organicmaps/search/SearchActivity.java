@@ -1,4 +1,4 @@
-package com.mapswithme.maps.search;
+package app.organicmaps.search;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -8,8 +8,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.StyleRes;
 import androidx.fragment.app.Fragment;
-import com.mapswithme.maps.base.BaseMwmFragmentActivity;
-import com.mapswithme.util.ThemeUtils;
+import app.organicmaps.base.BaseMwmFragmentActivity;
+import app.organicmaps.util.ThemeUtils;
 
 public class SearchActivity extends BaseMwmFragmentActivity
 {

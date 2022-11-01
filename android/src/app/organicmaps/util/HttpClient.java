@@ -22,12 +22,12 @@
  * SOFTWARE.
  *******************************************************************************/
 
-package com.mapswithme.util;
+package app.organicmaps.util;
 
 import android.text.TextUtils;
 
 import androidx.annotation.NonNull;
-import com.mapswithme.util.log.Logger;
+import app.organicmaps.util.log.Logger;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;

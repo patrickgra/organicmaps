@@ -503,6 +503,7 @@
 	<string name="prefs_languages_information_off_link">Kolla in den här guiden för mer information.</string>
 	<string name="transliteration_title">Transkribering till latin</string>
 	<string name="learn_more">Läs mer</string>
+	<!-- Subway exits for public transport marks on the map -->
 	<string name="core_exit">Avsluta</string>
 	<string name="routing_add_start_point">Lägg till startpunkt för att planera en rutt</string>
 	<string name="routing_add_finish_point">Lägg till slutpunkt för att planera en rutt</string>
@@ -1079,10 +1080,15 @@
 	<string name="type.historic.castle.shiro">Japanskt slott</string>
 	<string name="type.historic.castle.stately">Slott</string>
 	<string name="type.historic.city_gate">Stadsport</string>
+	<string name="type.historic.gallows">Galge</string>
 	<string name="type.historic.memorial">Minnesmärke</string>
+	<string name="type.historic.memorial.cross">Kors till minne</string>
 	<string name="type.historic.memorial.plaque">Minnesmärke</string>
 	<string name="type.historic.memorial.sculpture">Minnesmärke</string>
 	<string name="type.historic.memorial.statue">Minnesmärke</string>
+	<string name="type.historic.memorial.stolperstein">Snubbelsten</string>
+	<string name="type.historic.memorial.war_memorial">Krigsmonument</string>
+	<string name="type.historic.pillory">Skampåle</string>
 	<string name="type.historic.ruins">Ruiner</string>
 	<string name="type.historic.ship">Attraktion</string>
 	<string name="type.historic.tomb">Attraktion</string>
@@ -1383,7 +1389,6 @@
 	<string name="type.railway.subway_entrance.lille">Tunnelbana entré</string>
 	<string name="type.railway.subway_entrance.lima">Tunnelbana entré</string>
 	<string name="type.railway.subway_entrance.lisboa">Tunnelbana entré</string>
-	<string name="type.railway.subway_entrance.lisbon">Tunnelbana entré</string>
 	<string name="type.railway.subway_entrance.london">Tunnelbana entré</string>
 	<string name="type.railway.subway_entrance.lyon">Tunnelbana entré</string>
 	<string name="type.railway.subway_entrance.madrid">Tunnelbana entré</string>

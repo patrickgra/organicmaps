@@ -1,4 +1,4 @@
-package com.mapswithme.maps.routing;
+package app.organicmaps.routing;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -19,9 +19,9 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.core.content.res.ResourcesCompat;
 import androidx.core.graphics.drawable.DrawableCompat;
-import com.mapswithme.maps.R;
-import com.mapswithme.maps.widget.recycler.MultilineLayoutManager;
-import com.mapswithme.util.ThemeUtils;
+import app.organicmaps.R;
+import app.organicmaps.widget.recycler.MultilineLayoutManager;
+import app.organicmaps.util.ThemeUtils;
 
 /**
  * Represents a specific transit step. It displays a transit info, such as a number, color, etc., for

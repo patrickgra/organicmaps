@@ -874,6 +874,7 @@
 
 "transliteration_title" = "Tafsiri kwa lugha ya Kilatini";
 
+/* Subway exits for public transport marks on the map */
 "core_exit" = "Toka";
 
 "routing_add_start_point" = "Ongeza eneo la kuanzia ili kupanga njia ya kufuata";
@@ -1225,15 +1226,15 @@
 
 "type.aerialway" = "Aerialway";
 
-"type.aerialway.cable_car" = "Aerialway";
+"type.aerialway.cable_car" = "Cable car";
 
-"type.aerialway.chair_lift" = "Aerialway";
+"type.aerialway.chair_lift" = "Chair lift";
 
-"type.aerialway.drag_lift" = "Aerialway";
+"type.aerialway.drag_lift" = "Drag lift";
 
-"type.aerialway.gondola" = "Aerialway";
+"type.aerialway.gondola" = "Gondola";
 
-"type.aerialway.mixed_lift" = "Aerialway";
+"type.aerialway.mixed_lift" = "Mixed lift";
 
 "type.aerialway.station" = "Aerialway Station";
 
@@ -1456,7 +1457,7 @@
 
 "type.recycling.green_waste" = "Green/Organic Waste";
 
-"type.recycling.cartons" = "Bewerage Cartons";
+"type.recycling.cartons" = "Beverage Cartons";
 
 "type.amenity.restaurant" = "Restaurant";
 
@@ -2173,15 +2174,25 @@
 
 "type.historic.fort" = "Fort";
 
+"type.historic.gallows" = "Kunyongea";
+
 "type.historic.memorial" = "Memorial";
 
-"type.historic.memorial.plaque" = "Commemorative plaque";
+"type.historic.memorial.cross" = "Msalaba wa kumbukumbu";
+
+"type.historic.memorial.plaque" = "Plaque";
 
 "type.historic.memorial.sculpture" = "Sculpture";
 
 "type.historic.memorial.statue" = "Statue";
 
+"type.historic.memorial.stolperstein" = "Kikwazo";
+
+"type.historic.memorial.war_memorial" = "Kumbukumbu ya vita";
+
 "type.historic.monument" = "Monument";
+
+"type.historic.pillory" = "Pillory";
 
 "type.historic.ruins" = "Ruins";
 
@@ -2397,7 +2408,7 @@
 
 "type.man_made.tower" = "Tower";
 
-"type.man_made.wastewater_plant" = "Wastewater Plant";
+"type.man_made.wastewater_plant" = "Wastewater treatment plant";
 
 "type.man_made.water_tap" = "Water Tap";
 
@@ -3025,8 +3036,6 @@
 
 "type.railway.subway_entrance.lisboa" = "Lango la kuingilia stesheni ya reli";
 
-"type.railway.subway_entrance.lisbon" = "Lango la kuingilia stesheni ya reli";
-
 "type.railway.subway_entrance.london" = "Lango la kuingilia stesheni ya reli";
 
 "type.railway.subway_entrance.lyon" = "Lango la kuingilia stesheni ya reli";
@@ -3189,11 +3198,11 @@
 
 "type.shop.chemist" = "Chemist Shop";
 
-"type.shop.chocolate" = "Shop";
+"type.shop.chocolate" = "Chocolate Shop";
 
 "type.shop.clothes" = "Clothes Shop";
 
-"type.shop.coffee" = "Shop";
+"type.shop.coffee" = "Coffee Store";
 
 "type.shop.computer" = "Computer Store";
 
@@ -3217,7 +3226,7 @@
 
 "type.shop.erotic" = "Erotic Shop";
 
-"type.shop.fabric" = "Shop";
+"type.shop.fabric" = "Fabric Shop";
 
 "type.shop.farm" = "Duka la Chakula cha shambani";
 
@@ -3257,13 +3266,13 @@
 
 "type.shop.mobile_phone" = "Cell Phones";
 
-"type.shop.money_lender" = "Shop";
+"type.shop.money_lender" = "Money Lender";
 
 "type.shop.motorcycle" = "Motorcycle Shop";
 
-"type.shop.music" = "Shop";
+"type.shop.music" = "Record Store";
 
-"type.shop.musical_instrument" = "Shop";
+"type.shop.musical_instrument" = "Musical Instruments";
 
 "type.shop.newsagent" = "Newspaper Stand";
 
@@ -3293,7 +3302,7 @@
 
 "type.shop.tattoo" = "Tattoo Parlour";
 
-"type.shop.tea" = "Shop";
+"type.shop.tea" = "Tea Store";
 
 "type.shop.ticket" = "Ticket Shop";
 

@@ -1,8 +1,7 @@
-package com.mapswithme.maps.downloader;
+package app.organicmaps.downloader;
 
 import android.app.Activity;
 import android.app.Application;
-import android.content.DialogInterface;
 import android.text.TextUtils;
 
 import androidx.annotation.NonNull;
@@ -11,9 +10,9 @@ import androidx.annotation.StringRes;
 import androidx.annotation.UiThread;
 import androidx.appcompat.app.AlertDialog;
 
-import com.mapswithme.maps.R;
-import com.mapswithme.util.ConnectionState;
-import com.mapswithme.util.Utils;
+import app.organicmaps.R;
+import app.organicmaps.util.ConnectionState;
+import app.organicmaps.util.Utils;
 
 import java.lang.ref.WeakReference;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.mapswithme.maps.editor.data;
+package app.organicmaps.editor.data;
 
 import android.os.Parcel;
 import android.os.Parcelable;

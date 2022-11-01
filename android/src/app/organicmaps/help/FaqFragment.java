@@ -1,4 +1,4 @@
-package com.mapswithme.maps.help;
+package app.organicmaps.help;
 
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -12,11 +12,11 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 
-import com.mapswithme.maps.R;
-import com.mapswithme.maps.WebContainerDelegate;
-import com.mapswithme.maps.base.BaseMwmFragment;
-import com.mapswithme.util.Constants;
-import com.mapswithme.util.Utils;
+import app.organicmaps.R;
+import app.organicmaps.WebContainerDelegate;
+import app.organicmaps.base.BaseMwmFragment;
+import app.organicmaps.util.Constants;
+import app.organicmaps.util.Utils;
 
 public class FaqFragment extends BaseMwmFragment
 {

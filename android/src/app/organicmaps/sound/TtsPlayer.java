@@ -1,4 +1,4 @@
-package com.mapswithme.maps.sound;
+package app.organicmaps.sound;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -10,13 +10,13 @@ import android.text.TextUtils;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import com.mapswithme.maps.Framework;
-import com.mapswithme.maps.MwmApplication;
-import com.mapswithme.maps.R;
-import com.mapswithme.maps.base.Initializable;
-import com.mapswithme.maps.base.MediaPlayerWrapper;
-import com.mapswithme.util.Config;
-import com.mapswithme.util.log.Logger;
+import app.organicmaps.Framework;
+import app.organicmaps.MwmApplication;
+import app.organicmaps.R;
+import app.organicmaps.base.Initializable;
+import app.organicmaps.base.MediaPlayerWrapper;
+import app.organicmaps.util.Config;
+import app.organicmaps.util.log.Logger;
 
 import java.util.ArrayList;
 import java.util.List;

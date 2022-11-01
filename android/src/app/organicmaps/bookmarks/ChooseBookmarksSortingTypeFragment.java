@@ -1,4 +1,4 @@
-package com.mapswithme.maps.bookmarks;
+package app.organicmaps.bookmarks;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -13,10 +13,10 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
-import com.mapswithme.maps.R;
-import com.mapswithme.maps.base.BaseMwmDialogFragment;
-import com.mapswithme.maps.bookmarks.data.BookmarkManager;
-import com.mapswithme.util.UiUtils;
+import app.organicmaps.R;
+import app.organicmaps.base.BaseMwmDialogFragment;
+import app.organicmaps.bookmarks.data.BookmarkManager;
+import app.organicmaps.util.UiUtils;
 
 public class ChooseBookmarksSortingTypeFragment extends BaseMwmDialogFragment
     implements RadioGroup.OnCheckedChangeListener
@@ -144,20 +144,13 @@ public class ChooseBookmarksSortingTypeFragment extends BaseMwmDialogFragment
   @Override
   public void onCheckedChanged(RadioGroup group, @IdRes int id)
   {
-    switch (id)
-    {
-      case R.id.sort_by_default:
-        resetSorting();
-        break;
-      case R.id.sort_by_type:
-        setSortingType(BookmarkManager.SORT_BY_TYPE);
-        break;
-      case R.id.sort_by_distance:
-        setSortingType(BookmarkManager.SORT_BY_DISTANCE);
-        break;
-      case R.id.sort_by_time:
-        setSortingType(BookmarkManager.SORT_BY_TIME);
-        break;
-    }
+    if (id == R.id.sort_by_default)
+      resetSorting();
+    else if (id == R.id.sort_by_type)
+      setSortingType(BookmarkManager.SORT_BY_TYPE);
+    else if (id == R.id.sort_by_distance)
+      setSortingType(BookmarkManager.SORT_BY_DISTANCE);
+    else if (id == R.id.sort_by_time)
+      setSortingType(BookmarkManager.SORT_BY_TIME);
   }
 }

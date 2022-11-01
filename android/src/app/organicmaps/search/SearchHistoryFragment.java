@@ -1,4 +1,4 @@
-package com.mapswithme.maps.search;
+package app.organicmaps.search;
 
 import android.os.Bundle;
 import android.view.View;
@@ -10,11 +10,11 @@ import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.mapswithme.maps.R;
-import com.mapswithme.maps.base.BaseMwmRecyclerFragment;
-import com.mapswithme.maps.widget.PlaceholderView;
-import com.mapswithme.maps.widget.SearchToolbarController;
-import com.mapswithme.util.UiUtils;
+import app.organicmaps.R;
+import app.organicmaps.base.BaseMwmRecyclerFragment;
+import app.organicmaps.widget.PlaceholderView;
+import app.organicmaps.widget.SearchToolbarController;
+import app.organicmaps.util.UiUtils;
 
 public class SearchHistoryFragment extends BaseMwmRecyclerFragment<SearchHistoryAdapter>
 {

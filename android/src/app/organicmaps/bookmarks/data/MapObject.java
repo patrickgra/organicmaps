@@ -1,4 +1,4 @@
-package com.mapswithme.maps.bookmarks.data;
+package app.organicmaps.bookmarks.data;
 
 import android.os.Parcel;
 import android.text.TextUtils;
@@ -7,10 +7,10 @@ import androidx.annotation.IntDef;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.mapswithme.maps.routing.RoutePointInfo;
-import com.mapswithme.maps.search.Popularity;
-import com.mapswithme.maps.search.PopularityProvider;
-import com.mapswithme.maps.widget.placepage.PlacePageData;
+import app.organicmaps.routing.RoutePointInfo;
+import app.organicmaps.search.Popularity;
+import app.organicmaps.search.PopularityProvider;
+import app.organicmaps.widget.placepage.PlacePageData;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

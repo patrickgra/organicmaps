@@ -1,11 +1,11 @@
-package com.mapswithme.maps.downloader;
+package app.organicmaps.downloader;
 
 import android.text.TextUtils;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.mapswithme.util.StringUtils;
+import app.organicmaps.util.StringUtils;
 
 /**
  * Class representing a single item in countries hierarchy.

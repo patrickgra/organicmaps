@@ -1,4 +1,4 @@
-package com.mapswithme.maps.bookmarks.data;
+package app.organicmaps.bookmarks.data;
 
 import android.annotation.SuppressLint;
 import android.os.Parcel;
@@ -7,10 +7,10 @@ import androidx.annotation.IntRange;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.mapswithme.maps.Framework;
-import com.mapswithme.maps.routing.RoutePointInfo;
-import com.mapswithme.maps.search.Popularity;
-import com.mapswithme.util.Constants;
+import app.organicmaps.Framework;
+import app.organicmaps.routing.RoutePointInfo;
+import app.organicmaps.search.Popularity;
+import app.organicmaps.util.Constants;
 
 // TODO consider refactoring to remove hack with MapObject unmarshalling itself and Bookmark at the same time.
 @SuppressLint("ParcelCreator")

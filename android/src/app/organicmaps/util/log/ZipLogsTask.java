@@ -1,4 +1,4 @@
-package com.mapswithme.util.log;
+package app.organicmaps.util.log;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;

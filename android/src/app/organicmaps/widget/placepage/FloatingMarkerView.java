@@ -1,5 +1,5 @@
 
-package com.mapswithme.maps.widget.placepage;
+package app.organicmaps.widget.placepage;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -18,9 +18,9 @@ import com.github.mikephil.charting.components.IMarker;
 import com.github.mikephil.charting.data.Entry;
 import com.github.mikephil.charting.highlight.Highlight;
 import com.github.mikephil.charting.utils.MPPointF;
-import com.mapswithme.maps.Framework;
-import com.mapswithme.maps.R;
-import com.mapswithme.util.StringUtils;
+import app.organicmaps.Framework;
+import app.organicmaps.R;
+import app.organicmaps.util.StringUtils;
 
 @SuppressLint("ViewConstructor")
 public class FloatingMarkerView extends RelativeLayout implements IMarker

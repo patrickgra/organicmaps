@@ -1,4 +1,4 @@
-package com.mapswithme.maps.sound;
+package app.organicmaps.sound;
 
 import android.speech.tts.TextToSpeech;
 

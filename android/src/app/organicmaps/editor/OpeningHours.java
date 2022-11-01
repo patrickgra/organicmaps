@@ -1,11 +1,11 @@
-package com.mapswithme.maps.editor;
+package app.organicmaps.editor;
 
 import androidx.annotation.IntRange;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.mapswithme.maps.editor.data.Timespan;
-import com.mapswithme.maps.editor.data.Timetable;
+import app.organicmaps.editor.data.Timespan;
+import app.organicmaps.editor.data.Timetable;
 
 public final class OpeningHours
 {

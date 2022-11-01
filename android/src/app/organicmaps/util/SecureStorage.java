@@ -1,11 +1,11 @@
-package com.mapswithme.util;
+package app.organicmaps.util;
 
 import android.content.Context;
 import android.content.SharedPreferences;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import com.mapswithme.util.log.Logger;
+import app.organicmaps.util.log.Logger;
 
 public final class SecureStorage
 {

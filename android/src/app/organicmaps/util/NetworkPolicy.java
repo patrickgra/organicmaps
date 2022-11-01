@@ -1,9 +1,9 @@
-package com.mapswithme.util;
+package app.organicmaps.util;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.FragmentManager;
 
-import com.mapswithme.maps.widget.StackedButtonDialogFragment;
+import app.organicmaps.widget.StackedButtonDialogFragment;
 
 import java.util.concurrent.TimeUnit;
 

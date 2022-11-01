@@ -1,4 +1,4 @@
-package com.mapswithme.maps.search;
+package app.organicmaps.search;
 
 import android.content.Context;
 import android.util.SparseArray;
@@ -10,8 +10,8 @@ import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.material.tabs.TabLayout;
-import com.mapswithme.maps.R;
-import com.mapswithme.util.Graphics;
+import app.organicmaps.R;
+import app.organicmaps.util.Graphics;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,11 +1,11 @@
-package com.mapswithme.maps.editor.data;
+package app.organicmaps.editor.data;
 
 import android.os.Parcel;
 import android.os.Parcelable;
 
 import androidx.annotation.IntRange;
 
-import com.mapswithme.util.StringUtils;
+import app.organicmaps.util.StringUtils;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;

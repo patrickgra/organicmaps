@@ -1,10 +1,10 @@
-package com.mapswithme.maps.maplayer.isolines;
+package app.organicmaps.maplayer.isolines;
 
 import android.app.Application;
 
 import androidx.annotation.NonNull;
 
-import com.mapswithme.maps.base.Detachable;
+import app.organicmaps.base.Detachable;
 
 class OnIsolinesChangedListenerImpl implements OnIsolinesChangedListener, Detachable<IsolinesErrorDialogListener>
 {

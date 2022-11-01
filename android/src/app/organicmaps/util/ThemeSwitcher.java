@@ -1,4 +1,4 @@
-package com.mapswithme.util;
+package app.organicmaps.util;
 
 import android.app.Activity;
 import android.content.Context;
@@ -7,14 +7,14 @@ import android.location.Location;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.mapswithme.maps.Framework;
-import com.mapswithme.maps.MwmApplication;
-import com.mapswithme.maps.R;
-import com.mapswithme.maps.base.Initializable;
-import com.mapswithme.maps.downloader.DownloaderStatusIcon;
-import com.mapswithme.maps.location.LocationHelper;
-import com.mapswithme.maps.routing.RoutingController;
-import com.mapswithme.util.concurrency.UiThread;
+import app.organicmaps.Framework;
+import app.organicmaps.MwmApplication;
+import app.organicmaps.R;
+import app.organicmaps.base.Initializable;
+import app.organicmaps.downloader.DownloaderStatusIcon;
+import app.organicmaps.location.LocationHelper;
+import app.organicmaps.routing.RoutingController;
+import app.organicmaps.util.concurrency.UiThread;
 
 public enum ThemeSwitcher implements Initializable<Context>
 {

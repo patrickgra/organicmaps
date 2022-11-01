@@ -1,12 +1,12 @@
-package com.mapswithme.maps.location;
+package app.organicmaps.location;
 
 import android.app.Activity;
 import android.content.Context;
 
 import androidx.annotation.NonNull;
 
-import com.mapswithme.maps.MwmApplication;
-import com.mapswithme.util.LocationUtils;
+import app.organicmaps.MwmApplication;
+import app.organicmaps.util.LocationUtils;
 
 
 public final class CompassData

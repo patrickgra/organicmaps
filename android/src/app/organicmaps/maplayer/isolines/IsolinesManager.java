@@ -1,4 +1,4 @@
-package com.mapswithme.maps.maplayer.isolines;
+package app.organicmaps.maplayer.isolines;
 
 import android.app.Application;
 import android.content.Context;
@@ -6,10 +6,10 @@ import android.content.Context;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.mapswithme.maps.Framework;
-import com.mapswithme.maps.MwmApplication;
-import com.mapswithme.maps.base.Detachable;
-import com.mapswithme.maps.base.Initializable;
+import app.organicmaps.Framework;
+import app.organicmaps.MwmApplication;
+import app.organicmaps.base.Detachable;
+import app.organicmaps.base.Initializable;
 
 public class IsolinesManager implements Initializable<Void>, Detachable<IsolinesErrorDialogListener>
 {

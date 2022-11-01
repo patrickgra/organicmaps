@@ -1,4 +1,4 @@
-package com.mapswithme.maps.maplayer;
+package app.organicmaps.maplayer;
 
 import android.content.Context;
 import android.view.View;
@@ -7,9 +7,9 @@ import androidx.annotation.DrawableRes;
 import androidx.annotation.NonNull;
 import androidx.annotation.StringRes;
 
-import com.mapswithme.maps.R;
-import com.mapswithme.maps.adapter.OnItemClickListener;
-import com.mapswithme.util.ThemeUtils;
+import app.organicmaps.R;
+import app.organicmaps.adapter.OnItemClickListener;
+import app.organicmaps.util.ThemeUtils;
 
 public class LayerBottomSheetItem
 {

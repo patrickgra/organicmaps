@@ -1,4 +1,4 @@
-package com.mapswithme.maps.settings;
+package app.organicmaps.settings;
 
 import android.app.Application;
 import android.content.BroadcastReceiver;
@@ -13,12 +13,12 @@ import android.text.TextUtils;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import com.mapswithme.maps.Framework;
-import com.mapswithme.maps.R;
-import com.mapswithme.maps.downloader.MapManager;
-import com.mapswithme.util.Config;
-import com.mapswithme.util.StorageUtils;
-import com.mapswithme.util.log.Logger;
+import app.organicmaps.Framework;
+import app.organicmaps.R;
+import app.organicmaps.downloader.MapManager;
+import app.organicmaps.util.Config;
+import app.organicmaps.util.StorageUtils;
+import app.organicmaps.util.log.Logger;
 
 import java.io.File;
 import java.io.FilenameFilter;

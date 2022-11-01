@@ -1,4 +1,4 @@
-package com.mapswithme.util.bottomsheet;
+package app.organicmaps.util.bottomsheet;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -14,8 +14,8 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
-import com.mapswithme.maps.R;
-import com.mapswithme.util.UiUtils;
+import app.organicmaps.R;
+import app.organicmaps.util.UiUtils;
 
 import java.util.ArrayList;
 

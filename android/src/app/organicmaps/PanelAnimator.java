@@ -1,4 +1,4 @@
-package com.mapswithme.maps;
+package app.organicmaps;
 
 import android.animation.Animator;
 import android.animation.ValueAnimator;
@@ -11,8 +11,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import com.mapswithme.util.Listeners;
-import com.mapswithme.util.UiUtils;
+import app.organicmaps.util.Listeners;
+import app.organicmaps.util.UiUtils;
 
 class PanelAnimator
 {

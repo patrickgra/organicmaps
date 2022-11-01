@@ -1,4 +1,4 @@
-package com.mapswithme.maps.settings;
+package app.organicmaps.settings;
 
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -8,8 +8,8 @@ import androidx.preference.Preference;
 import androidx.preference.PreferenceFragmentCompat;
 import androidx.preference.PreferenceScreen;
 
-import com.mapswithme.maps.R;
-import com.mapswithme.maps.base.BaseToolbarActivity;
+import app.organicmaps.R;
+import app.organicmaps.base.BaseToolbarActivity;
 
 public class SettingsActivity extends BaseToolbarActivity
                               implements PreferenceFragmentCompat.OnPreferenceStartFragmentCallback,

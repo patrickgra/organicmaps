@@ -1,4 +1,4 @@
-package com.mapswithme.maps.widget;
+package app.organicmaps.widget;
 
 import android.app.Activity;
 import android.content.ActivityNotFoundException;
@@ -15,10 +15,10 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.StringRes;
 
-import com.mapswithme.maps.R;
-import com.mapswithme.util.InputUtils;
-import com.mapswithme.util.StringUtils;
-import com.mapswithme.util.UiUtils;
+import app.organicmaps.R;
+import app.organicmaps.util.InputUtils;
+import app.organicmaps.util.StringUtils;
+import app.organicmaps.util.UiUtils;
 
 public class SearchToolbarController extends ToolbarController implements View.OnClickListener
 {
@@ -199,20 +199,13 @@ public class SearchToolbarController extends ToolbarController implements View.O
   @Override
   public void onClick(View v)
   {
-    switch (v.getId())
-    {
-    case R.id.clear:
+    final int id = v.getId();
+    if (id == R.id.clear)
       onClearClick();
-      break;
-
-    case R.id.query:
+    else if (id == R.id.query)
       onQueryClick(getQuery());
-      break;
-
-    case R.id.voice_input:
+    else if (id == R.id.voice_input)
       onVoiceInputClick();
-      break;
-    }
   }
 
   public void showSearchControls(boolean show)

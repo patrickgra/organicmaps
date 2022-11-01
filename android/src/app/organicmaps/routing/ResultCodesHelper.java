@@ -1,4 +1,4 @@
-package com.mapswithme.maps.routing;
+package app.organicmaps.routing;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -7,9 +7,9 @@ import android.util.Pair;
 import androidx.annotation.NonNull;
 import androidx.annotation.StringRes;
 
-import com.mapswithme.maps.MwmApplication;
-import com.mapswithme.maps.R;
-import com.mapswithme.maps.location.LocationHelper;
+import app.organicmaps.MwmApplication;
+import app.organicmaps.R;
+import app.organicmaps.location.LocationHelper;
 
 import java.util.ArrayList;
 import java.util.List;

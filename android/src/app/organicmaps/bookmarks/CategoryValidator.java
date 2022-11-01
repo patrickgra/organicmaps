@@ -1,4 +1,4 @@
-package com.mapswithme.maps.bookmarks;
+package app.organicmaps.bookmarks;
 
 import android.app.Activity;
 import android.text.TextUtils;
@@ -6,10 +6,10 @@ import android.text.TextUtils;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.mapswithme.maps.R;
-import com.mapswithme.maps.bookmarks.data.BookmarkManager;
-import com.mapswithme.maps.dialog.EditTextDialogFragment;
-import com.mapswithme.util.Option;
+import app.organicmaps.R;
+import app.organicmaps.bookmarks.data.BookmarkManager;
+import app.organicmaps.dialog.EditTextDialogFragment;
+import app.organicmaps.util.Option;
 
 class CategoryValidator implements EditTextDialogFragment.Validator
 {

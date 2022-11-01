@@ -1,4 +1,4 @@
-package com.mapswithme.maps.location;
+package app.organicmaps.location;
 
 import androidx.annotation.IntDef;
 import androidx.annotation.NonNull;

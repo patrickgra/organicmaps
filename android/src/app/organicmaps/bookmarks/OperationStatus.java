@@ -1,12 +1,12 @@
-package com.mapswithme.maps.bookmarks;
+package app.organicmaps.bookmarks;
 
 import android.os.Parcel;
 import android.os.Parcelable;
 
 import androidx.annotation.Nullable;
 
-import com.mapswithme.maps.bookmarks.data.Error;
-import com.mapswithme.maps.bookmarks.data.Result;
+import app.organicmaps.bookmarks.data.Error;
+import app.organicmaps.bookmarks.data.Result;
 
 public class OperationStatus implements Parcelable
 {

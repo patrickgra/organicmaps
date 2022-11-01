@@ -1,4 +1,4 @@
-package com.mapswithme.maps.widget.placepage;
+package app.organicmaps.widget.placepage;
 
 import android.app.Activity;
 import android.content.Context;
@@ -35,40 +35,40 @@ import androidx.core.widget.NestedScrollViewClickFixed;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.RecyclerView;
-import com.mapswithme.maps.Framework;
-import com.mapswithme.maps.MwmActivity;
-import com.mapswithme.maps.MwmApplication;
-import com.mapswithme.maps.R;
-import com.mapswithme.maps.api.Const;
-import com.mapswithme.maps.api.ParsedMwmRequest;
-import com.mapswithme.maps.bookmarks.data.Bookmark;
-import com.mapswithme.maps.bookmarks.data.BookmarkManager;
-import com.mapswithme.maps.bookmarks.data.DistanceAndAzimut;
-import com.mapswithme.maps.bookmarks.data.MapObject;
-import com.mapswithme.maps.bookmarks.data.Metadata;
-import com.mapswithme.maps.bookmarks.data.RoadWarningMarkType;
-import com.mapswithme.maps.downloader.CountryItem;
-import com.mapswithme.maps.downloader.DownloaderStatusIcon;
-import com.mapswithme.maps.downloader.MapManager;
-import com.mapswithme.maps.editor.Editor;
-import com.mapswithme.maps.editor.OpeningHours;
-import com.mapswithme.maps.editor.data.TimeFormatUtils;
-import com.mapswithme.maps.editor.data.Timespan;
-import com.mapswithme.maps.editor.data.Timetable;
-import com.mapswithme.maps.location.LocationHelper;
-import com.mapswithme.maps.routing.RoutingController;
-import com.mapswithme.maps.search.Popularity;
-import com.mapswithme.maps.settings.RoadType;
-import com.mapswithme.maps.widget.ArrowView;
-import com.mapswithme.util.Graphics;
-import com.mapswithme.util.SharingUtils;
-import com.mapswithme.util.StringUtils;
-import com.mapswithme.util.ThemeUtils;
-import com.mapswithme.util.UiUtils;
-import com.mapswithme.util.Utils;
-import com.mapswithme.util.bottomsheet.MenuBottomSheetItem;
-import com.mapswithme.util.concurrency.UiThread;
-import com.mapswithme.util.log.Logger;
+import app.organicmaps.Framework;
+import app.organicmaps.MwmActivity;
+import app.organicmaps.MwmApplication;
+import app.organicmaps.R;
+import app.organicmaps.api.Const;
+import app.organicmaps.api.ParsedMwmRequest;
+import app.organicmaps.bookmarks.data.Bookmark;
+import app.organicmaps.bookmarks.data.BookmarkManager;
+import app.organicmaps.bookmarks.data.DistanceAndAzimut;
+import app.organicmaps.bookmarks.data.MapObject;
+import app.organicmaps.bookmarks.data.Metadata;
+import app.organicmaps.bookmarks.data.RoadWarningMarkType;
+import app.organicmaps.downloader.CountryItem;
+import app.organicmaps.downloader.DownloaderStatusIcon;
+import app.organicmaps.downloader.MapManager;
+import app.organicmaps.editor.Editor;
+import app.organicmaps.editor.OpeningHours;
+import app.organicmaps.editor.data.TimeFormatUtils;
+import app.organicmaps.editor.data.Timespan;
+import app.organicmaps.editor.data.Timetable;
+import app.organicmaps.location.LocationHelper;
+import app.organicmaps.routing.RoutingController;
+import app.organicmaps.search.Popularity;
+import app.organicmaps.settings.RoadType;
+import app.organicmaps.widget.ArrowView;
+import app.organicmaps.util.Graphics;
+import app.organicmaps.util.SharingUtils;
+import app.organicmaps.util.StringUtils;
+import app.organicmaps.util.ThemeUtils;
+import app.organicmaps.util.UiUtils;
+import app.organicmaps.util.Utils;
+import app.organicmaps.util.bottomsheet.MenuBottomSheetItem;
+import app.organicmaps.util.concurrency.UiThread;
+import app.organicmaps.util.log.Logger;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -1337,81 +1337,78 @@ public class PlacePageView extends NestedScrollViewClickFixed
   @Override
   public void onClick(View v)
   {
-    switch (v.getId())
+    final int id = v.getId();
+    if (id == R.id.tv__title || id == R.id.tv__secondary_title || id == R.id.tv__address)
     {
-      case R.id.tv__title:
-      case R.id.tv__secondary_title:
-      case R.id.tv__address:
-        // A workaround to make single taps toggle the bottom sheet.
-        if (mPlacePageGestureListener != null)
-        {
-          mPlacePageGestureListener.onSingleTapConfirmed(null);
-        }
-        break;
-      case R.id.ll__place_editor:
-        if (mMapObject == null)
-        {
-          Logger.e(TAG, "Cannot start editor, map object is null!");
-          break;
-        }
-        requireActivity().showEditor();
-        break;
-      case R.id.ll__add_organisation:
-        addOrganisation();
-        break;
-      case R.id.ll__place_add:
-        addPlace();
-        break;
-      case R.id.ll__place_latlon:
-        final int formatIndex = visibleCoordsFormat.indexOf(mCoordsFormat);
-        mCoordsFormat = visibleCoordsFormat.get((formatIndex + 1) % visibleCoordsFormat.size());
-        MwmApplication.prefs(getContext()).edit().putInt(PREF_COORDINATES_FORMAT, mCoordsFormat.getId()).apply();
-        if (mMapObject == null)
-        {
-          Logger.e(TAG, "A LatLon cannot be refreshed, mMapObject is null");
-          break;
-        }
-        refreshLatLon(mMapObject);
-        break;
-      case R.id.ll__place_website:
-        Utils.openUrl(getContext(), mTvWebsite.getText().toString());
-        break;
-      case R.id.ll__place_wikimedia:
-        Utils.openUrl(getContext(), mMapObject.getMetadata(Metadata.MetadataType.FMD_WIKIMEDIA_COMMONS));
-        break;
-      case R.id.ll__place_facebook:
-        final String facebookPage = mMapObject.getMetadata(Metadata.MetadataType.FMD_CONTACT_FACEBOOK);
-        Utils.openUrl(getContext(), "https://m.facebook.com/"+facebookPage);
-        break;
-      case R.id.ll__place_instagram:
-        final String instagramPage = mMapObject.getMetadata(Metadata.MetadataType.FMD_CONTACT_INSTAGRAM);
-        Utils.openUrl(getContext(), "https://instagram.com/"+instagramPage);
-        break;
-      case R.id.ll__place_twitter:
-        final String twitterPage = mMapObject.getMetadata(Metadata.MetadataType.FMD_CONTACT_TWITTER);
-        Utils.openUrl(getContext(), "https://mobile.twitter.com/"+twitterPage);
-        break;
-      case R.id.ll__place_vk:
-        final String vkPage = mMapObject.getMetadata(Metadata.MetadataType.FMD_CONTACT_VK);
-        Utils.openUrl(getContext(), "https://vk.com/" + vkPage);
-        break;
-      case R.id.ll__place_line:
-        final String linePage = mMapObject.getMetadata(Metadata.MetadataType.FMD_CONTACT_LINE);
-        if (linePage.indexOf('/') >= 0)
-          Utils.openUrl(getContext(), "https://" + linePage);
-        else
-          Utils.openUrl(getContext(), "https://line.me/R/ti/p/@" + linePage);
-        break;
-      case R.id.ll__place_wiki:
-        Utils.openUrl(getContext(), mMapObject.getMetadata(Metadata.MetadataType.FMD_WIKIPEDIA));
-        break;
-      case R.id.direction_frame:
-        showBigDirection();
-        break;
-      case R.id.ll__place_email:
-        Utils.sendTo(getContext(), mTvEmail.getText().toString());
-        break;
+      // A workaround to make single taps toggle the bottom sheet.
+      if (mPlacePageGestureListener != null)
+      {
+        mPlacePageGestureListener.onSingleTapConfirmed(null);
+      }
     }
+    else if (id == R.id.ll__place_editor)
+    {
+      if (mMapObject == null)
+      {
+        Logger.e(TAG, "Cannot start editor, map object is null!");
+        return;
+      }
+      requireActivity().showEditor();
+    }
+    else if (id == R.id.ll__add_organisation)
+      addOrganisation();
+    else if (id == R.id.ll__place_add)
+      addPlace();
+    else if (id == R.id.ll__place_latlon)
+    {
+      final int formatIndex = visibleCoordsFormat.indexOf(mCoordsFormat);
+      mCoordsFormat = visibleCoordsFormat.get((formatIndex + 1) % visibleCoordsFormat.size());
+      MwmApplication.prefs(getContext()).edit().putInt(PREF_COORDINATES_FORMAT, mCoordsFormat.getId()).apply();
+      if (mMapObject == null)
+      {
+        Logger.e(TAG, "A LatLon cannot be refreshed, mMapObject is null");
+        return;
+      }
+      refreshLatLon(mMapObject);
+    }
+    else if (id == R.id.ll__place_website)
+      Utils.openUrl(getContext(), mTvWebsite.getText().toString());
+    else if (id == R.id.ll__place_wikimedia)
+      Utils.openUrl(getContext(), mMapObject.getMetadata(Metadata.MetadataType.FMD_WIKIMEDIA_COMMONS));
+    else if (id == R.id.ll__place_facebook)
+    {
+      final String facebookPage = mMapObject.getMetadata(Metadata.MetadataType.FMD_CONTACT_FACEBOOK);
+      Utils.openUrl(getContext(), "https://m.facebook.com/" + facebookPage);
+    }
+    else if (id == R.id.ll__place_instagram)
+    {
+      final String instagramPage = mMapObject.getMetadata(Metadata.MetadataType.FMD_CONTACT_INSTAGRAM);
+      Utils.openUrl(getContext(), "https://instagram.com/" + instagramPage);
+    }
+    else if (id == R.id.ll__place_twitter)
+    {
+      final String twitterPage = mMapObject.getMetadata(Metadata.MetadataType.FMD_CONTACT_TWITTER);
+      Utils.openUrl(getContext(), "https://mobile.twitter.com/" + twitterPage);
+    }
+    else if (id == R.id.ll__place_vk)
+    {
+      final String vkPage = mMapObject.getMetadata(Metadata.MetadataType.FMD_CONTACT_VK);
+      Utils.openUrl(getContext(), "https://vk.com/" + vkPage);
+    }
+    else if (id == R.id.ll__place_line)
+    {
+      final String linePage = mMapObject.getMetadata(Metadata.MetadataType.FMD_CONTACT_LINE);
+      if (linePage.indexOf('/') >= 0)
+        Utils.openUrl(getContext(), "https://" + linePage);
+      else
+        Utils.openUrl(getContext(), "https://line.me/R/ti/p/@" + linePage);
+    }
+    else if (id == R.id.ll__place_wiki)
+      Utils.openUrl(getContext(), mMapObject.getMetadata(Metadata.MetadataType.FMD_WIKIPEDIA));
+    else if (id == R.id.direction_frame)
+      showBigDirection();
+    else if (id == R.id.ll__place_email)
+      Utils.sendTo(getContext(), mTvEmail.getText().toString());
   }
 
   private void toggleIsBookmark(@NonNull MapObject mapObject)
@@ -1426,7 +1423,7 @@ public class PlacePageView extends NestedScrollViewClickFixed
   {
     final FragmentManager fragmentManager = requireActivity().getSupportFragmentManager();
     final DirectionFragment fragment = (DirectionFragment) fragmentManager.getFragmentFactory()
-      .instantiate(getContext().getClassLoader(), DirectionFragment.class.getName());
+        .instantiate(getContext().getClassLoader(), DirectionFragment.class.getName());
     fragment.setMapObject(mMapObject);
     fragment.show(fragmentManager, null);
   }
@@ -1438,100 +1435,94 @@ public class PlacePageView extends NestedScrollViewClickFixed
   public boolean onLongClick(View v)
   {
     final List<String> items = new ArrayList<>();
-    switch (v.getId())
+    final int id = v.getId();
+    if (id == R.id.tv__title)
+      items.add(mTvTitle.getText().toString());
+    else if (id == R.id.tv__secondary_title)
+      items.add(mTvSecondaryTitle.getText().toString());
+    else if (id == R.id.tv__address)
+      items.add(mTvAddress.getText().toString());
+    else if (id == R.id.tv__bookmark_notes)
+      items.add(mTvBookmarkNote.getText().toString());
+    else if (id == R.id.poi_description)
+      items.add(mPlaceDescriptionView.getText().toString());
+    else if (id == R.id.ll__place_latlon)
     {
-      case R.id.tv__title:
-        items.add(mTvTitle.getText().toString());
-        break;
-      case R.id.tv__secondary_title:
-        items.add(mTvSecondaryTitle.getText().toString());
-        break;
-      case R.id.tv__address:
-        items.add(mTvAddress.getText().toString());
-        break;
-      case R.id.tv__bookmark_notes:
-        items.add(mTvBookmarkNote.getText().toString());
-        break;
-      case R.id.poi_description:
-        items.add(mPlaceDescriptionView.getText().toString());
-        break;
-      case R.id.ll__place_latlon:
-        if (mMapObject == null)
-        {
-          Logger.e(TAG, "A long click tap on LatLon cannot be handled, mMapObject is null!");
-          break;
-        }
+      if (mMapObject != null)
+      {
         final double lat = mMapObject.getLat();
         final double lon = mMapObject.getLon();
-        for(CoordinatesFormat format: visibleCoordsFormat)
+        for (CoordinatesFormat format : visibleCoordsFormat)
           items.add(Framework.nativeFormatLatLon(lat, lon, format.getId()));
-        break;
-      case R.id.ll__place_website:
-        items.add(mTvWebsite.getText().toString());
-        break;
-      case R.id.ll__place_wikimedia:
-        items.add(mMapObject.getMetadata(Metadata.MetadataType.FMD_WIKIMEDIA_COMMONS));
-        break;
-      case R.id.ll__place_facebook:
-        final String facebookPage = mMapObject.getMetadata(Metadata.MetadataType.FMD_CONTACT_FACEBOOK);
-        if (facebookPage.indexOf('/') == -1)
-          items.add(facebookPage); // Show username along with URL.
-        items.add("https://m.facebook.com/" + facebookPage);
-        break;
-      case R.id.ll__place_instagram:
-        final String instagramPage = mMapObject.getMetadata(Metadata.MetadataType.FMD_CONTACT_INSTAGRAM);
-        if (instagramPage.indexOf('/') == -1)
-          items.add(instagramPage); // Show username along with URL.
-        items.add("https://instagram.com/" + instagramPage);
-        break;
-      case R.id.ll__place_twitter:
-        final String twitterPage = mMapObject.getMetadata(Metadata.MetadataType.FMD_CONTACT_TWITTER);
-        if (twitterPage.indexOf('/') == -1)
-          items.add(twitterPage); // Show username along with URL.
-        items.add("https://mobile.twitter.com/" + twitterPage);
-        break;
-      case R.id.ll__place_vk:
-        final String vkPage = mMapObject.getMetadata(Metadata.MetadataType.FMD_CONTACT_VK);
-        if (vkPage.indexOf('/') == -1)
-          items.add(vkPage); // Show username along with URL.
-        items.add("https://vk.com/" + vkPage);
-        break;
-      case R.id.ll__place_line:
-        final String linePage = mMapObject.getMetadata(Metadata.MetadataType.FMD_CONTACT_LINE);
-        if (linePage.indexOf('/') >= 0)
-          items.add("https://" + linePage);
-        else
-        {
-          items.add(linePage); // Show username along with URL.
-          items.add("https://line.me/R/ti/p/@" + linePage);
-        }
-        break;
-      case R.id.ll__place_email:
-        items.add(mTvEmail.getText().toString());
-        break;
-      case R.id.ll__place_schedule:
-        final String ohStr = mMapObject.getMetadata(Metadata.MetadataType.FMD_OPEN_HOURS);
-        final Timetable[] timetables = OpeningHours.nativeTimetablesFromString(ohStr);
-        items.add(TimeFormatUtils.formatTimetables(getResources(), ohStr, timetables));
-        break;
-      case R.id.ll__place_operator:
-        items.add(mTvOperator.getText().toString());
-        break;
-      case R.id.ll__place_wiki:
-        items.add(mMapObject.getMetadata(Metadata.MetadataType.FMD_WIKIPEDIA));
-        break;
-      case R.id.ll__place_level:
-        items.add(mTvLevel.getText().toString());
-        break;
+      }
+      else
+        Logger.e(TAG, "A long click tap on LatLon cannot be handled, mMapObject is null!");
     }
+    else if (id == R.id.ll__place_website)
+      items.add(mTvWebsite.getText().toString());
+    else if (id == R.id.ll__place_wikimedia)
+      items.add(mMapObject.getMetadata(Metadata.MetadataType.FMD_WIKIMEDIA_COMMONS));
+    else if (id == R.id.ll__place_facebook)
+    {
+      final String facebookPage = mMapObject.getMetadata(Metadata.MetadataType.FMD_CONTACT_FACEBOOK);
+      if (facebookPage.indexOf('/') == -1)
+        items.add(facebookPage); // Show username along with URL.
+      items.add("https://m.facebook.com/" + facebookPage);
+    }
+    else if (id == R.id.ll__place_instagram)
+    {
+      final String instagramPage = mMapObject.getMetadata(Metadata.MetadataType.FMD_CONTACT_INSTAGRAM);
+      if (instagramPage.indexOf('/') == -1)
+        items.add(instagramPage); // Show username along with URL.
+      items.add("https://instagram.com/" + instagramPage);
+    }
+    else if (id == R.id.ll__place_twitter)
+    {
+      final String twitterPage = mMapObject.getMetadata(Metadata.MetadataType.FMD_CONTACT_TWITTER);
+      if (twitterPage.indexOf('/') == -1)
+        items.add(twitterPage); // Show username along with URL.
+      items.add("https://mobile.twitter.com/" + twitterPage);
+    }
+    else if (id == R.id.ll__place_vk)
+    {
+      final String vkPage = mMapObject.getMetadata(Metadata.MetadataType.FMD_CONTACT_VK);
+      if (vkPage.indexOf('/') == -1)
+        items.add(vkPage); // Show username along with URL.
+      items.add("https://vk.com/" + vkPage);
+    }
+    else if (id == R.id.ll__place_line)
+    {
+      final String linePage = mMapObject.getMetadata(Metadata.MetadataType.FMD_CONTACT_LINE);
+      if (linePage.indexOf('/') >= 0)
+        items.add("https://" + linePage);
+      else
+      {
+        items.add(linePage); // Show username along with URL.
+        items.add("https://line.me/R/ti/p/@" + linePage);
+      }
+    }
+    else if (id == R.id.ll__place_email)
+      items.add(mTvEmail.getText().toString());
+    else if (id == R.id.ll__place_schedule)
+    {
+      final String ohStr = mMapObject.getMetadata(Metadata.MetadataType.FMD_OPEN_HOURS);
+      final Timetable[] timetables = OpeningHours.nativeTimetablesFromString(ohStr);
+      items.add(TimeFormatUtils.formatTimetables(getResources(), ohStr, timetables));
+    }
+    else if (id == R.id.ll__place_operator)
+      items.add(mTvOperator.getText().toString());
+    else if (id == R.id.ll__place_wiki)
+      items.add(mMapObject.getMetadata(Metadata.MetadataType.FMD_WIKIPEDIA));
+    else if (id == R.id.ll__place_level)
+      items.add(mTvLevel.getText().toString());
 
     final Context ctx = getContext();
     if (items.size() == 1)
     {
       Utils.copyTextToClipboard(ctx, items.get(0));
       Utils.showSnackbarAbove(mDetails,
-                              getRootView().findViewById(R.id.pp_buttons_layout),
-                              ctx.getString(R.string.copied_to_clipboard, items.get(0)));
+          getRootView().findViewById(R.id.pp_buttons_layout),
+          ctx.getString(R.string.copied_to_clipboard, items.get(0)));
     }
     else
     {
@@ -1543,11 +1534,11 @@ public class PlacePageView extends NestedScrollViewClickFixed
         menu.add(Menu.NONE, i, i, String.format("%s %s", copyText, items.get(i)));
 
       popup.setOnMenuItemClickListener(item -> {
-        final int id = item.getItemId();
-        Utils.copyTextToClipboard(ctx, items.get(id));
+        final int itemId = item.getItemId();
+        Utils.copyTextToClipboard(ctx, items.get(itemId));
         Utils.showSnackbarAbove(mDetails,
-                                getRootView().findViewById(R.id.pp_buttons_layout),
-                                ctx.getString(R.string.copied_to_clipboard, items.get(id)));
+            getRootView().findViewById(R.id.pp_buttons_layout),
+            ctx.getString(R.string.copied_to_clipboard, items.get(itemId)));
         return true;
       });
       popup.show();

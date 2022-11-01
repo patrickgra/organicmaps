@@ -1,10 +1,10 @@
-package com.mapswithme.maps.background;
+package app.organicmaps.background;
 
 import android.app.Application;
 
 import androidx.annotation.NonNull;
 
-import com.mapswithme.util.Utils;
+import app.organicmaps.util.Utils;
 
 public class NotificationChannelFactory
 {

@@ -1,4 +1,4 @@
-package com.mapswithme.maps.bookmarks;
+package app.organicmaps.bookmarks;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
@@ -8,9 +8,9 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 
-import com.mapswithme.maps.R;
-import com.mapswithme.maps.bookmarks.data.Icon;
-import com.mapswithme.util.Graphics;
+import app.organicmaps.R;
+import app.organicmaps.bookmarks.data.Icon;
+import app.organicmaps.util.Graphics;
 
 import java.util.List;
 

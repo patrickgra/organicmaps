@@ -1,11 +1,11 @@
-package com.mapswithme.maps.widget.placepage;
+package app.organicmaps.widget.placepage;
 
 import androidx.annotation.NonNull;
 
 import com.github.mikephil.charting.charts.BarLineChartBase;
 import com.github.mikephil.charting.formatter.DefaultValueFormatter;
-import com.mapswithme.maps.Framework;
-import com.mapswithme.util.StringUtils;
+import app.organicmaps.Framework;
+import app.organicmaps.util.StringUtils;
 
 public class AxisValueFormatter extends DefaultValueFormatter
 {

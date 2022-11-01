@@ -1,4 +1,4 @@
-package com.mapswithme.maps.editor;
+package app.organicmaps.editor;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -10,10 +10,8 @@ import androidx.annotation.Size;
 import androidx.annotation.WorkerThread;
 import androidx.fragment.app.FragmentManager;
 
-import com.mapswithme.maps.MwmApplication;
-import com.mapswithme.util.NetworkPolicy;
-
-import java.lang.ref.WeakReference;
+import app.organicmaps.MwmApplication;
+import app.organicmaps.util.NetworkPolicy;
 
 public final class OsmOAuth
 {

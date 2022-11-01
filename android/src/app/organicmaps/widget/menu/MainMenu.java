@@ -1,8 +1,8 @@
-package com.mapswithme.maps.widget.menu;
+package app.organicmaps.widget.menu;
 
 import android.view.View;
 
-import com.mapswithme.util.UiUtils;
+import app.organicmaps.util.UiUtils;
 
 public class MainMenu
 {

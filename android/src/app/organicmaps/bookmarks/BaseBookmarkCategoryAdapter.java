@@ -1,11 +1,11 @@
-package com.mapswithme.maps.bookmarks;
+package app.organicmaps.bookmarks;
 
 import android.content.Context;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.mapswithme.maps.bookmarks.data.BookmarkCategory;
+import app.organicmaps.bookmarks.data.BookmarkCategory;
 
 import java.util.List;
 

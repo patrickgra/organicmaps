@@ -1,4 +1,4 @@
-package com.mapswithme.maps.editor;
+package app.organicmaps.editor;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -8,9 +8,9 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.mapswithme.maps.R;
-import com.mapswithme.maps.base.BaseMwmRecyclerFragment;
-import com.mapswithme.maps.editor.data.HoursMinutes;
+import app.organicmaps.R;
+import app.organicmaps.base.BaseMwmRecyclerFragment;
+import app.organicmaps.editor.data.HoursMinutes;
 
 public class SimpleTimetableFragment extends BaseMwmRecyclerFragment<SimpleTimetableAdapter>
                                   implements TimetableProvider,

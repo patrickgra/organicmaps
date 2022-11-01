@@ -1,4 +1,4 @@
-package com.mapswithme.maps.editor.data;
+package app.organicmaps.editor.data;
 
 import androidx.annotation.IntRange;
 import androidx.annotation.NonNull;

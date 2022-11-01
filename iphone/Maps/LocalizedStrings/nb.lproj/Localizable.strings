@@ -874,6 +874,7 @@
 
 "transliteration_title" = "Omskrivning til latin";
 
+/* Subway exits for public transport marks on the map */
 "core_exit" = "Avslutt";
 
 "routing_add_start_point" = "Angi startpunkt for å planlegge rute";
@@ -1225,15 +1226,15 @@
 
 "type.aerialway" = "Aerialway";
 
-"type.aerialway.cable_car" = "Aerialway";
+"type.aerialway.cable_car" = "Cable car";
 
-"type.aerialway.chair_lift" = "Aerialway";
+"type.aerialway.chair_lift" = "Chair lift";
 
-"type.aerialway.drag_lift" = "Aerialway";
+"type.aerialway.drag_lift" = "Drag lift";
 
-"type.aerialway.gondola" = "Aerialway";
+"type.aerialway.gondola" = "Gondola";
 
-"type.aerialway.mixed_lift" = "Aerialway";
+"type.aerialway.mixed_lift" = "Mixed lift";
 
 "type.aerialway.station" = "Kabelbanestasjon";
 
@@ -1456,7 +1457,7 @@
 
 "type.recycling.green_waste" = "Green/Organic Waste";
 
-"type.recycling.cartons" = "Bewerage Cartons";
+"type.recycling.cartons" = "Beverage Cartons";
 
 "type.amenity.restaurant" = "Restaurant";
 
@@ -2173,7 +2174,11 @@
 
 "type.historic.fort" = "Fort";
 
+"type.historic.gallows" = "Galge";
+
 "type.historic.memorial" = "Minnesmerke";
+
+"type.historic.memorial.cross" = "Minnekors";
 
 "type.historic.memorial.plaque" = "Minnesmerke";
 
@@ -2181,7 +2186,13 @@
 
 "type.historic.memorial.statue" = "Minnesmerke";
 
+"type.historic.memorial.stolperstein" = "Snublesteiner";
+
+"type.historic.memorial.war_memorial" = "Krigsminnesmerke";
+
 "type.historic.monument" = "Monument";
+
+"type.historic.pillory" = "Pilry";
 
 "type.historic.ruins" = "Ruiner";
 
@@ -2397,7 +2408,7 @@
 
 "type.man_made.tower" = "Tårn";
 
-"type.man_made.wastewater_plant" = "Wastewater Plant";
+"type.man_made.wastewater_plant" = "Wastewater treatment plant";
 
 "type.man_made.water_tap" = "Vannkran";
 
@@ -3024,8 +3035,6 @@
 "type.railway.subway_entrance.lima" = "T-bane inngang";
 
 "type.railway.subway_entrance.lisboa" = "T-bane inngang";
-
-"type.railway.subway_entrance.lisbon" = "T-bane inngang";
 
 "type.railway.subway_entrance.london" = "T-bane inngang";
 

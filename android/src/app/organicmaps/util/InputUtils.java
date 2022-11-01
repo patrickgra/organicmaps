@@ -1,4 +1,4 @@
-package com.mapswithme.util;
+package app.organicmaps.util;
 
 import android.content.Context;
 import android.content.Intent;
@@ -9,7 +9,7 @@ import android.widget.EditText;
 
 import androidx.annotation.NonNull;
 
-import com.mapswithme.util.concurrency.UiThread;
+import app.organicmaps.util.concurrency.UiThread;
 
 import java.util.ArrayList;
 

@@ -1,4 +1,4 @@
-package com.mapswithme.maps.maplayer.isolines;
+package app.organicmaps.maplayer.isolines;
 
 import android.content.Context;
 import android.view.View;
@@ -7,8 +7,8 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.mapswithme.maps.R;
-import com.mapswithme.util.Utils;
+import app.organicmaps.R;
+import app.organicmaps.util.Utils;
 
 public enum IsolinesState
 {

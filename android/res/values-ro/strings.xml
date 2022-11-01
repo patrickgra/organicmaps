@@ -521,6 +521,7 @@
 	<string name="prefs_languages_information_off_link">Consultă acest ghid pentru informații suplimentare.</string>
 	<string name="transliteration_title">Transcrie în alfabet latin</string>
 	<string name="learn_more">Mai multe</string>
+	<!-- Subway exits for public transport marks on the map -->
 	<string name="core_exit">Ieșire</string>
 	<string name="routing_add_start_point">Adaugă un punct de plecare pentru a planifica un traseu</string>
 	<string name="routing_add_finish_point">Adaugă un punct de sosire pentru a planifica un traseu</string>
@@ -1107,10 +1108,15 @@
 	<string name="type.historic.castle.shiro">Castelul japonez</string>
 	<string name="type.historic.castle.stately">Castel</string>
 	<string name="type.historic.city_gate">Poarta orașului</string>
+	<string name="type.historic.gallows">Spânzurătoare</string>
 	<string name="type.historic.memorial">Comemorare</string>
+	<string name="type.historic.memorial.cross">Cruce comemorativă</string>
 	<string name="type.historic.memorial.plaque">Comemorare</string>
 	<string name="type.historic.memorial.sculpture">Comemorare</string>
 	<string name="type.historic.memorial.statue">Comemorare</string>
+	<string name="type.historic.memorial.stolperstein">Blocaj de poticnire</string>
+	<string name="type.historic.memorial.war_memorial">Memorial de război</string>
+	<string name="type.historic.pillory">Stâlpul infamiei</string>
 	<string name="type.historic.ruins">Ruine</string>
 	<string name="type.historic.ship">Obiective turistice</string>
 	<string name="type.historic.tomb">Obiective turistice</string>
@@ -1412,7 +1418,6 @@
 	<string name="type.railway.subway_entrance.lille">Intrare în metro</string>
 	<string name="type.railway.subway_entrance.lima">Intrare în metro</string>
 	<string name="type.railway.subway_entrance.lisboa">Intrare în metro</string>
-	<string name="type.railway.subway_entrance.lisbon">Intrare în metro</string>
 	<string name="type.railway.subway_entrance.london">Intrare în metro</string>
 	<string name="type.railway.subway_entrance.lyon">Intrare în metro</string>
 	<string name="type.railway.subway_entrance.madrid">Intrare în metro</string>

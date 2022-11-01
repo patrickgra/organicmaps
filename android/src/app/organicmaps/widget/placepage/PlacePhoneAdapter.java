@@ -1,18 +1,16 @@
-package com.mapswithme.maps.widget.placepage;
+package app.organicmaps.widget.placepage;
 
 import android.content.Context;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
-import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.PopupMenu;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-import com.mapswithme.maps.R;
-import com.mapswithme.util.Utils;
+import app.organicmaps.R;
+import app.organicmaps.util.Utils;
 
 import java.util.ArrayList;
 import java.util.Collections;

@@ -1,4 +1,4 @@
-package com.mapswithme.maps.editor;
+package app.organicmaps.editor;
 
 import android.os.Bundle;
 import android.text.Editable;
@@ -14,12 +14,12 @@ import androidx.annotation.DrawableRes;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.mapswithme.maps.R;
-import com.mapswithme.maps.base.BaseMwmFragment;
-import com.mapswithme.util.Constants;
-import com.mapswithme.util.Graphics;
-import com.mapswithme.util.InputUtils;
-import com.mapswithme.util.UiUtils;
+import app.organicmaps.R;
+import app.organicmaps.base.BaseMwmFragment;
+import app.organicmaps.util.Constants;
+import app.organicmaps.util.Graphics;
+import app.organicmaps.util.InputUtils;
+import app.organicmaps.util.UiUtils;
 
 public class AdvancedTimetableFragment extends BaseMwmFragment
                                        implements View.OnClickListener, TimetableProvider
@@ -91,11 +91,8 @@ public class AdvancedTimetableFragment extends BaseMwmFragment
   @Override
   public void onClick(View v)
   {
-    switch (v.getId())
-    {
-    case R.id.examples:
+    if (v.getId() == R.id.examples)
       showExample(!mIsExampleShown);
-    }
   }
 
   @Nullable

@@ -1,14 +1,12 @@
-package com.mapswithme.maps.editor.data;
+package app.organicmaps.editor.data;
 
-import android.content.Context;
 import android.content.res.Resources;
 
 import androidx.annotation.IntRange;
 import androidx.annotation.NonNull;
 
-import com.mapswithme.maps.MwmApplication;
-import com.mapswithme.maps.R;
-import com.mapswithme.util.Utils;
+import app.organicmaps.R;
+import app.organicmaps.util.Utils;
 
 import java.text.DateFormatSymbols;
 import java.util.Locale;

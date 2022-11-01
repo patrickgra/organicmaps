@@ -1,4 +1,4 @@
-package com.mapswithme.maps;
+package app.organicmaps;
 
 import android.graphics.Bitmap;
 
@@ -7,19 +7,19 @@ import androidx.annotation.MainThread;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.Size;
-import com.mapswithme.maps.api.ParsedRoutingData;
-import com.mapswithme.maps.api.ParsedSearchRequest;
-import com.mapswithme.maps.api.ParsingResult;
-import com.mapswithme.maps.bookmarks.data.DistanceAndAzimut;
-import com.mapswithme.maps.bookmarks.data.FeatureId;
-import com.mapswithme.maps.bookmarks.data.MapObject;
-import com.mapswithme.maps.routing.RouteMarkData;
-import com.mapswithme.maps.routing.RoutePointInfo;
-import com.mapswithme.maps.routing.RoutingInfo;
-import com.mapswithme.maps.routing.TransitRouteInfo;
-import com.mapswithme.maps.settings.SettingsPrefsFragment;
-import com.mapswithme.maps.widget.placepage.PlacePageData;
-import com.mapswithme.util.Constants;
+import app.organicmaps.api.ParsedRoutingData;
+import app.organicmaps.api.ParsedSearchRequest;
+import app.organicmaps.api.ParsingResult;
+import app.organicmaps.bookmarks.data.DistanceAndAzimut;
+import app.organicmaps.bookmarks.data.FeatureId;
+import app.organicmaps.bookmarks.data.MapObject;
+import app.organicmaps.routing.RouteMarkData;
+import app.organicmaps.routing.RoutePointInfo;
+import app.organicmaps.routing.RoutingInfo;
+import app.organicmaps.routing.TransitRouteInfo;
+import app.organicmaps.settings.SettingsPrefsFragment;
+import app.organicmaps.widget.placepage.PlacePageData;
+import app.organicmaps.util.Constants;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

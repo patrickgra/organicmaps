@@ -1,13 +1,13 @@
-package com.mapswithme.maps.bookmarks;
+package app.organicmaps.bookmarks;
 
 import android.content.Intent;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
-import com.mapswithme.maps.R;
-import com.mapswithme.maps.base.BaseMwmFragmentActivity;
-import com.mapswithme.maps.bookmarks.data.BookmarkCategory;
+import app.organicmaps.R;
+import app.organicmaps.base.BaseMwmFragmentActivity;
+import app.organicmaps.bookmarks.data.BookmarkCategory;
 
 public class BookmarkCategorySettingsActivity extends BaseMwmFragmentActivity
 {

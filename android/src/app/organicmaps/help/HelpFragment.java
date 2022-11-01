@@ -1,4 +1,4 @@
-package com.mapswithme.maps.help;
+package app.organicmaps.help;
 
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -11,14 +11,14 @@ import androidx.annotation.IdRes;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.mapswithme.maps.BuildConfig;
-import com.mapswithme.maps.Framework;
-import com.mapswithme.maps.R;
-import com.mapswithme.maps.base.BaseMwmFragment;
-import com.mapswithme.util.Config;
-import com.mapswithme.util.Constants;
-import com.mapswithme.util.Graphics;
-import com.mapswithme.util.Utils;
+import app.organicmaps.BuildConfig;
+import app.organicmaps.Framework;
+import app.organicmaps.R;
+import app.organicmaps.base.BaseMwmFragment;
+import app.organicmaps.util.Config;
+import app.organicmaps.util.Constants;
+import app.organicmaps.util.Graphics;
+import app.organicmaps.util.Utils;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

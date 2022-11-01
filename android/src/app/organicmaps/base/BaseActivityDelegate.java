@@ -1,4 +1,4 @@
-package com.mapswithme.maps.base;
+package app.organicmaps.base;
 
 import android.content.Intent;
 import android.text.TextUtils;
@@ -6,11 +6,11 @@ import android.util.Log;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import com.mapswithme.util.Config;
-import com.mapswithme.util.CrashlyticsUtils;
-import com.mapswithme.util.Utils;
-import com.mapswithme.util.concurrency.UiThread;
-import com.mapswithme.util.log.Logger;
+import app.organicmaps.util.Config;
+import app.organicmaps.util.CrashlyticsUtils;
+import app.organicmaps.util.Utils;
+import app.organicmaps.util.concurrency.UiThread;
+import app.organicmaps.util.log.Logger;
 
 public class BaseActivityDelegate
 {

@@ -1,4 +1,4 @@
-package com.mapswithme.maps.editor;
+package app.organicmaps.editor;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -16,10 +16,10 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 
-import com.mapswithme.maps.R;
-import com.mapswithme.maps.base.BaseMwmFragment;
-import com.mapswithme.maps.base.OnBackPressListener;
-import com.mapswithme.util.UiUtils;
+import app.organicmaps.R;
+import app.organicmaps.base.BaseMwmFragment;
+import app.organicmaps.base.OnBackPressListener;
+import app.organicmaps.util.UiUtils;
 
 public class TimetableContainerFragment extends BaseMwmFragment implements OnBackPressListener,
                                                                            TimetableChangedListener

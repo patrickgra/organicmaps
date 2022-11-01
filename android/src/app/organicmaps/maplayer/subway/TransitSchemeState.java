@@ -1,11 +1,11 @@
-package com.mapswithme.maps.maplayer.subway;
+package app.organicmaps.maplayer.subway;
 
 import android.content.Context;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 
-import com.mapswithme.maps.R;
+import app.organicmaps.R;
 
 enum TransitSchemeState
 {

@@ -54,7 +54,7 @@ import androidx.core.view.ScrollingView;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.accessibility.AccessibilityNodeInfoCompat;
 import androidx.core.view.accessibility.AccessibilityRecordCompat;
-import com.mapswithme.util.log.Logger;
+import app.organicmaps.util.log.Logger;
 
 import java.util.List;
 

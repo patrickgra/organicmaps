@@ -1,4 +1,4 @@
-package com.mapswithme.maps.downloader;
+package app.organicmaps.downloader;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,14 +10,14 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.mapswithme.maps.R;
-import com.mapswithme.maps.base.BaseMwmRecyclerFragment;
-import com.mapswithme.maps.base.OnBackPressListener;
-import com.mapswithme.maps.search.NativeMapSearchListener;
-import com.mapswithme.maps.search.SearchEngine;
-import com.mapswithme.maps.widget.PlaceholderView;
-import com.mapswithme.util.bottomsheet.MenuBottomSheetFragment;
-import com.mapswithme.util.bottomsheet.MenuBottomSheetItem;
+import app.organicmaps.R;
+import app.organicmaps.base.BaseMwmRecyclerFragment;
+import app.organicmaps.base.OnBackPressListener;
+import app.organicmaps.search.NativeMapSearchListener;
+import app.organicmaps.search.SearchEngine;
+import app.organicmaps.widget.PlaceholderView;
+import app.organicmaps.util.bottomsheet.MenuBottomSheetFragment;
+import app.organicmaps.util.bottomsheet.MenuBottomSheetItem;
 
 import java.util.ArrayList;
 import java.util.List;

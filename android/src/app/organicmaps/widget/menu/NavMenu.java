@@ -1,4 +1,4 @@
-package com.mapswithme.maps.widget.menu;
+package app.organicmaps.widget.menu;
 
 import android.location.Location;
 import android.util.Pair;
@@ -10,14 +10,14 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
-import com.mapswithme.maps.R;
-import com.mapswithme.maps.location.LocationHelper;
-import com.mapswithme.maps.routing.RoutingInfo;
-import com.mapswithme.maps.sound.TtsPlayer;
-import com.mapswithme.maps.widget.FlatProgressView;
-import com.mapswithme.util.Graphics;
-import com.mapswithme.util.StringUtils;
-import com.mapswithme.util.UiUtils;
+import app.organicmaps.R;
+import app.organicmaps.location.LocationHelper;
+import app.organicmaps.routing.RoutingInfo;
+import app.organicmaps.sound.TtsPlayer;
+import app.organicmaps.widget.FlatProgressView;
+import app.organicmaps.util.Graphics;
+import app.organicmaps.util.StringUtils;
+import app.organicmaps.util.UiUtils;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;

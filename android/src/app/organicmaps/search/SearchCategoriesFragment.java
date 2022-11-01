@@ -1,4 +1,4 @@
-package com.mapswithme.maps.search;
+package app.organicmaps.search;
 
 import android.os.Bundle;
 import android.view.View;
@@ -6,8 +6,8 @@ import android.view.View;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.mapswithme.maps.R;
-import com.mapswithme.maps.base.BaseMwmRecyclerFragment;
+import app.organicmaps.R;
+import app.organicmaps.base.BaseMwmRecyclerFragment;
 
 public class SearchCategoriesFragment extends BaseMwmRecyclerFragment<CategoriesAdapter>
     implements CategoriesAdapter.CategoriesUiListener

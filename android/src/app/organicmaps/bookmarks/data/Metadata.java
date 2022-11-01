@@ -1,4 +1,4 @@
-package com.mapswithme.maps.bookmarks.data;
+package app.organicmaps.bookmarks.data;
 
 import android.os.Parcel;
 import android.os.Parcelable;
@@ -9,8 +9,6 @@ import androidx.annotation.Nullable;
 
 import java.util.HashMap;
 import java.util.Map;
-
-import com.mapswithme.util.log.Logger;
 
 public class Metadata implements Parcelable
 {

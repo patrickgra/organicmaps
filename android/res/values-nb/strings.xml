@@ -505,6 +505,7 @@
 	<string name="prefs_languages_information_off_link">Les denne veiledningen for mer informasjon.</string>
 	<string name="transliteration_title">Omskrivning til latin</string>
 	<string name="learn_more">Finn ut mer</string>
+	<!-- Subway exits for public transport marks on the map -->
 	<string name="core_exit">Avslutt</string>
 	<string name="routing_add_start_point">Angi startpunkt for å planlegge rute</string>
 	<string name="routing_add_finish_point">Angi sluttpunkt for å planlegge rute</string>
@@ -1082,10 +1083,15 @@
 	<string name="type.historic.castle.shiro">Japanske borger</string>
 	<string name="type.historic.castle.stately">Slott</string>
 	<string name="type.historic.city_gate">Byport</string>
+	<string name="type.historic.gallows">Galge</string>
 	<string name="type.historic.memorial">Minnesmerke</string>
+	<string name="type.historic.memorial.cross">Minnekors</string>
 	<string name="type.historic.memorial.plaque">Minnesmerke</string>
 	<string name="type.historic.memorial.sculpture">Minnesmerke</string>
 	<string name="type.historic.memorial.statue">Minnesmerke</string>
+	<string name="type.historic.memorial.stolperstein">Snublesteiner</string>
+	<string name="type.historic.memorial.war_memorial">Krigsminnesmerke</string>
+	<string name="type.historic.pillory">Pilry</string>
 	<string name="type.historic.ruins">Ruiner</string>
 	<string name="type.historic.ship">Severdigheter</string>
 	<string name="type.historic.tomb">Severdigheter</string>
@@ -1387,7 +1393,6 @@
 	<string name="type.railway.subway_entrance.lille">T-bane inngang</string>
 	<string name="type.railway.subway_entrance.lima">T-bane inngang</string>
 	<string name="type.railway.subway_entrance.lisboa">T-bane inngang</string>
-	<string name="type.railway.subway_entrance.lisbon">T-bane inngang</string>
 	<string name="type.railway.subway_entrance.london">T-bane inngang</string>
 	<string name="type.railway.subway_entrance.lyon">T-bane inngang</string>
 	<string name="type.railway.subway_entrance.madrid">T-bane inngang</string>

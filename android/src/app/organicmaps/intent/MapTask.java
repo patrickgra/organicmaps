@@ -1,8 +1,8 @@
-package com.mapswithme.maps.intent;
+package app.organicmaps.intent;
 
 import androidx.annotation.NonNull;
 
-import com.mapswithme.maps.MwmActivity;
+import app.organicmaps.MwmActivity;
 
 import java.io.Serializable;
 

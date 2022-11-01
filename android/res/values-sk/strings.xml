@@ -503,6 +503,7 @@
 	<string name="prefs_languages_information_off_link">Viac informácií nájdete v tomto návode.</string>
 	<string name="transliteration_title">Prepis do latinčiny</string>
 	<string name="learn_more">Zistiť viac</string>
+	<!-- Subway exits for public transport marks on the map -->
 	<string name="core_exit">Ukončiť</string>
 	<string name="routing_add_start_point">Pridaním počiatočného bodu začnite plánovať trasu</string>
 	<string name="routing_add_finish_point">Pridaním cieľového bodu naplánujete trasu</string>
@@ -1083,11 +1084,16 @@
 	<string name="type.historic.castle.shiro">Japonský hrad</string>
 	<string name="type.historic.castle.stately">Zámok</string>
 	<string name="type.historic.city_gate">Mestská brána</string>
+	<string name="type.historic.gallows">Šibenica</string>
 	<string name="type.historic.memorial">Pomník</string>
+	<string name="type.historic.memorial.cross">Pamätný kríž</string>
 	<string name="type.historic.memorial.plaque">Pomník</string>
 	<string name="type.historic.memorial.sculpture">Pomník</string>
 	<string name="type.historic.memorial.statue">Pomník</string>
+	<string name="type.historic.memorial.stolperstein">Kameň úrazu</string>
+	<string name="type.historic.memorial.war_memorial">Vojnový pamätník</string>
 	<string name="type.historic.monument">Zaujímavosť</string>
+	<string name="type.historic.pillory">Pranier</string>
 	<string name="type.historic.ruins">Zrúcanina</string>
 	<string name="type.historic.ship">Pamätihodnosť</string>
 	<string name="type.historic.tomb">Pamätihodnosť</string>
@@ -1388,7 +1394,6 @@
 	<string name="type.railway.subway_entrance.lille">Vstup do metra</string>
 	<string name="type.railway.subway_entrance.lima">Vstup do metra</string>
 	<string name="type.railway.subway_entrance.lisboa">Vstup do metra</string>
-	<string name="type.railway.subway_entrance.lisbon">Vstup do metra</string>
 	<string name="type.railway.subway_entrance.london">Vstup do metra</string>
 	<string name="type.railway.subway_entrance.lyon">Vstup do metra</string>
 	<string name="type.railway.subway_entrance.madrid">Vstup do metra</string>
@@ -1490,7 +1495,7 @@
 	<string name="type.shop.jewelry">Klenotníctvo</string>
 	<string name="type.shop.kitchen">Kuchynský obchod</string>
 	<string name="type.shop.laundry">Práčovňa</string>
-	<string name="type.shop.mall">The Mall</string>
+	<string name="type.shop.mall">Mall</string>
 	<string name="type.shop.massage">Masážny salón</string>
 	<string name="type.shop.mobile_phone">Mobilné telefóny</string>
 	<string name="type.shop.money_lender">Obchod</string>

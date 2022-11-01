@@ -1,4 +1,4 @@
-package com.mapswithme.util;
+package app.organicmaps.util;
 
 import android.content.Context;
 
@@ -6,7 +6,7 @@ import androidx.annotation.NonNull;
 import androidx.work.Worker;
 import androidx.work.WorkerParameters;
 import com.google.gson.Gson;
-import com.mapswithme.util.log.Logger;
+import app.organicmaps.util.log.Logger;
 
 import java.io.File;
 import java.util.Objects;

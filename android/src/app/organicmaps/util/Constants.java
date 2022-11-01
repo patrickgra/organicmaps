@@ -1,6 +1,6 @@
-package com.mapswithme.util;
+package app.organicmaps.util;
 
-import com.mapswithme.maps.BuildConfig;
+import app.organicmaps.BuildConfig;
 
 public final class Constants
 {

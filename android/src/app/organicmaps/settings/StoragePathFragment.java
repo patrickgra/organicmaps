@@ -1,4 +1,4 @@
-package com.mapswithme.maps.settings;
+package app.organicmaps.settings;
 
 import android.app.ProgressDialog;
 import android.os.Bundle;
@@ -12,14 +12,14 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 
-import com.mapswithme.maps.Framework;
-import com.mapswithme.maps.R;
-import com.mapswithme.maps.base.OnBackPressListener;
-import com.mapswithme.util.Config;
-import com.mapswithme.util.StorageUtils;
-import com.mapswithme.util.Utils;
-import com.mapswithme.util.concurrency.ThreadPool;
-import com.mapswithme.util.concurrency.UiThread;
+import app.organicmaps.Framework;
+import app.organicmaps.R;
+import app.organicmaps.base.OnBackPressListener;
+import app.organicmaps.util.Config;
+import app.organicmaps.util.StorageUtils;
+import app.organicmaps.util.Utils;
+import app.organicmaps.util.concurrency.ThreadPool;
+import app.organicmaps.util.concurrency.UiThread;
 
 import java.io.File;
 import java.util.List;

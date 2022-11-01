@@ -1,4 +1,4 @@
-package com.mapswithme.maps.intent;
+package app.organicmaps.intent;
 
 import android.content.Intent;
 

@@ -1,4 +1,4 @@
-package com.mapswithme.maps.widget.placepage;
+package app.organicmaps.widget.placepage;
 
 import android.location.Location;
 import android.os.Bundle;
@@ -10,15 +10,15 @@ import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 
-import com.mapswithme.maps.Framework;
-import com.mapswithme.maps.R;
-import com.mapswithme.maps.base.BaseMwmDialogFragment;
-import com.mapswithme.maps.bookmarks.data.DistanceAndAzimut;
-import com.mapswithme.maps.bookmarks.data.MapObject;
-import com.mapswithme.maps.location.LocationHelper;
-import com.mapswithme.maps.location.LocationListener;
-import com.mapswithme.maps.widget.ArrowView;
-import com.mapswithme.util.UiUtils;
+import app.organicmaps.Framework;
+import app.organicmaps.R;
+import app.organicmaps.base.BaseMwmDialogFragment;
+import app.organicmaps.bookmarks.data.DistanceAndAzimut;
+import app.organicmaps.bookmarks.data.MapObject;
+import app.organicmaps.location.LocationHelper;
+import app.organicmaps.location.LocationListener;
+import app.organicmaps.widget.ArrowView;
+import app.organicmaps.util.UiUtils;
 
 public class DirectionFragment extends BaseMwmDialogFragment
                             implements LocationListener

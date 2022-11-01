@@ -1,4 +1,4 @@
-package com.mapswithme.maps.bookmarks;
+package app.organicmaps.bookmarks;
 
 import android.app.Activity;
 import android.content.Context;
@@ -11,11 +11,11 @@ import androidx.annotation.Nullable;
 import androidx.annotation.StyleRes;
 import androidx.fragment.app.Fragment;
 
-import com.mapswithme.maps.R;
-import com.mapswithme.maps.base.BaseToolbarActivity;
-import com.mapswithme.maps.bookmarks.data.BookmarkCategory;
-import com.mapswithme.maps.bookmarks.data.BookmarkManager;
-import com.mapswithme.util.ThemeUtils;
+import app.organicmaps.R;
+import app.organicmaps.base.BaseToolbarActivity;
+import app.organicmaps.bookmarks.data.BookmarkCategory;
+import app.organicmaps.bookmarks.data.BookmarkManager;
+import app.organicmaps.util.ThemeUtils;
 
 public class BookmarkCategoriesActivity extends BaseToolbarActivity
 {

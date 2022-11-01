@@ -1,4 +1,4 @@
-package com.mapswithme.maps.editor;
+package app.organicmaps.editor;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,13 +9,13 @@ import androidx.annotation.CallSuper;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.mapswithme.maps.R;
-import com.mapswithme.maps.base.BaseMwmRecyclerFragment;
-import com.mapswithme.maps.editor.data.FeatureCategory;
-import com.mapswithme.maps.widget.SearchToolbarController;
-import com.mapswithme.maps.widget.ToolbarController;
-import com.mapswithme.util.Language;
-import com.mapswithme.util.Utils;
+import app.organicmaps.R;
+import app.organicmaps.base.BaseMwmRecyclerFragment;
+import app.organicmaps.editor.data.FeatureCategory;
+import app.organicmaps.widget.SearchToolbarController;
+import app.organicmaps.widget.ToolbarController;
+import app.organicmaps.util.Language;
+import app.organicmaps.util.Utils;
 
 import java.util.Arrays;
 

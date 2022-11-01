@@ -1,12 +1,12 @@
-package com.mapswithme.maps.background;
+package app.organicmaps.background;
 
 import android.content.Context;
 import android.content.Intent;
 
 import androidx.annotation.NonNull;
 
-import com.mapswithme.maps.MwmApplication;
-import com.mapswithme.maps.MwmBroadcastReceiver;
+import app.organicmaps.MwmApplication;
+import app.organicmaps.MwmBroadcastReceiver;
 
 public class UpgradeReceiver extends MwmBroadcastReceiver
 {

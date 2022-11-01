@@ -1,4 +1,4 @@
-package com.mapswithme.maps.background;
+package app.organicmaps.background;
 
 import android.content.Context;
 import android.content.Intent;
@@ -6,9 +6,9 @@ import android.content.Intent;
 import androidx.annotation.NonNull;
 import androidx.core.app.JobIntentService;
 
-import com.mapswithme.maps.MwmJobIntentService;
-import com.mapswithme.maps.editor.Editor;
-import com.mapswithme.maps.scheduling.JobIdMap;
+import app.organicmaps.MwmJobIntentService;
+import app.organicmaps.editor.Editor;
+import app.organicmaps.scheduling.JobIdMap;
 
 public class OsmUploadService extends MwmJobIntentService
 {

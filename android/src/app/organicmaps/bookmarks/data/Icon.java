@@ -1,4 +1,4 @@
-package com.mapswithme.maps.bookmarks.data;
+package app.organicmaps.bookmarks.data;
 
 import android.os.Parcel;
 import android.os.Parcelable;
@@ -7,7 +7,7 @@ import androidx.annotation.DrawableRes;
 import androidx.annotation.IntDef;
 import androidx.annotation.NonNull;
 
-import com.mapswithme.maps.R;
+import app.organicmaps.R;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
