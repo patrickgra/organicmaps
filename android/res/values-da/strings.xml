@@ -507,6 +507,7 @@
 	<string name="prefs_languages_information_off_link">Se denne vejledning for flere oplysninger.</string>
 	<string name="transliteration_title">Translitteration til latinsk</string>
 	<string name="learn_more">Flere oplysninger</string>
+	<!-- Subway exits for public transport marks on the map -->
 	<string name="core_exit">Afslut</string>
 	<string name="routing_add_start_point">Tilføj startpunkt for at planlægge en rute</string>
 	<string name="routing_add_finish_point">Tilføj slutpunkt for at planlægge en rute</string>
@@ -1080,10 +1081,15 @@
 	<string name="type.historic.castle.shiro">Japansk slot</string>
 	<string name="type.historic.castle.stately">Slot</string>
 	<string name="type.historic.city_gate">Byport</string>
+	<string name="type.historic.gallows">Galge</string>
 	<string name="type.historic.memorial">Mindesmærke</string>
+	<string name="type.historic.memorial.cross">Mindesmærkekors</string>
 	<string name="type.historic.memorial.plaque">Mindesmærke</string>
 	<string name="type.historic.memorial.sculpture">Mindesmærke</string>
 	<string name="type.historic.memorial.statue">Mindesmærke</string>
+	<string name="type.historic.memorial.stolperstein">Stolpersten</string>
+	<string name="type.historic.memorial.war_memorial">Krigsmindesmærke</string>
+	<string name="type.historic.pillory">Kag</string>
 	<string name="type.historic.ruins">Ruiner</string>
 	<string name="type.historic.ship">Turisme</string>
 	<string name="type.historic.tomb">Turisme</string>
@@ -1384,7 +1390,6 @@
 	<string name="type.railway.subway_entrance.lille">Indgang til undergrundsbane</string>
 	<string name="type.railway.subway_entrance.lima">Indgang til undergrundsbane</string>
 	<string name="type.railway.subway_entrance.lisboa">Indgang til undergrundsbane</string>
-	<string name="type.railway.subway_entrance.lisbon">Indgang til undergrundsbane</string>
 	<string name="type.railway.subway_entrance.london">Indgang til undergrundsbane</string>
 	<string name="type.railway.subway_entrance.lyon">Indgang til undergrundsbane</string>
 	<string name="type.railway.subway_entrance.madrid">Indgang til undergrundsbane</string>

@@ -874,7 +874,8 @@
 
 "transliteration_title" = "Latinezko transliterazioa";
 
-"core_exit" = "Utzi";
+/* Subway exits for public transport marks on the map */
+"core_exit" = "Irteera";
 
 "routing_add_start_point" = "Bilatu ibilbide-planaren iturria";
 
@@ -2173,15 +2174,25 @@
 
 "type.historic.fort" = "Fort";
 
+"type.historic.gallows" = "Urkamendi";
+
 "type.historic.memorial" = "Memorial";
 
-"type.historic.memorial.plaque" = "Commemorative plaque";
+"type.historic.memorial.cross" = "Oroimenezko gurutzea";
+
+"type.historic.memorial.plaque" = "Oroitzapenezko plaka";
 
 "type.historic.memorial.sculpture" = "Sculpture";
 
 "type.historic.memorial.statue" = "Statue";
 
+"type.historic.memorial.stolperstein" = "Stolperstein";
+
+"type.historic.memorial.war_memorial" = "Gerra memoriala";
+
 "type.historic.monument" = "Monumentua";
+
+"type.historic.pillory" = "Urkabe";
 
 "type.historic.ruins" = "Hondakinak";
 
@@ -2397,7 +2408,7 @@
 
 "type.man_made.tower" = "Dorrea";
 
-"type.man_made.wastewater_plant" = "Wastewater Plant";
+"type.man_made.wastewater_plant" = "Wastewater treatment plant";
 
 "type.man_made.water_tap" = "Ura hartzea";
 
@@ -3024,8 +3035,6 @@
 "type.railway.subway_entrance.lima" = "Metroko sarrera";
 
 "type.railway.subway_entrance.lisboa" = "Metroko sarrera";
-
-"type.railway.subway_entrance.lisbon" = "Metroko sarrera";
 
 "type.railway.subway_entrance.london" = "Metroko sarrera";
 

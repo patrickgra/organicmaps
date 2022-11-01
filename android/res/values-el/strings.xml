@@ -499,6 +499,7 @@
 	<string name="prefs_languages_information_off_link">Για περισσότερες πληροφορίες δείτε αυτό τον οδηγό.</string>
 	<string name="transliteration_title">Μεταγραφή στα Λατινικά</string>
 	<string name="learn_more">Μάθετε περισσότερα</string>
+	<!-- Subway exits for public transport marks on the map -->
 	<string name="core_exit">Έξοδος</string>
 	<string name="routing_add_start_point">Προσθέστε αφετηρία για να σχεδιάσετε μια διαδρομή</string>
 	<string name="routing_add_finish_point">Προσθέστε τελικό προορισμό, για να σχεδιάσετε μια διαδρομή</string>
@@ -1085,11 +1086,16 @@
 	<string name="type.historic.castle.shiro">Ιαπωνικό κάστρο</string>
 	<string name="type.historic.castle.stately">Κάστρο</string>
 	<string name="type.historic.city_gate">Πύλη της πόλης</string>
+	<string name="type.historic.gallows">Αγχόνη</string>
 	<string name="type.historic.memorial">Μνημείο</string>
+	<string name="type.historic.memorial.cross">Σταυρός μνήμης</string>
 	<string name="type.historic.memorial.plaque">Μνημείο</string>
 	<string name="type.historic.memorial.sculpture">Μνημείο</string>
 	<string name="type.historic.memorial.statue">Μνημείο</string>
+	<string name="type.historic.memorial.stolperstein">Λίθοι Μνήμης</string>
+	<string name="type.historic.memorial.war_memorial">Μνημείο του Αγνώστου Στρατιώτη</string>
 	<string name="type.historic.monument">Μνημείο</string>
+	<string name="type.historic.pillory">Κύφωνας</string>
 	<string name="type.historic.ruins">Ερείπια</string>
 	<string name="type.historic.ship">Αξιοθέατο</string>
 	<string name="type.historic.tomb">Αξιοθέατο</string>
@@ -1395,7 +1401,6 @@
 	<string name="type.railway.subway_entrance.lille">Είσοδος μετρό</string>
 	<string name="type.railway.subway_entrance.lima">Είσοδος μετρό</string>
 	<string name="type.railway.subway_entrance.lisboa">Είσοδος μετρό</string>
-	<string name="type.railway.subway_entrance.lisbon">Είσοδος μετρό</string>
 	<string name="type.railway.subway_entrance.london">Είσοδος μετρό</string>
 	<string name="type.railway.subway_entrance.lyon">Είσοδος μετρό</string>
 	<string name="type.railway.subway_entrance.madrid">Είσοδος μετρό</string>

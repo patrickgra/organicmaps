@@ -874,7 +874,8 @@
 
 "transliteration_title" = "Transliteración al alfabeto latino";
 
-"core_exit" = "Salir";
+/* Subway exits for public transport marks on the map */
+"core_exit" = "Salida";
 
 "routing_add_start_point" = "Buscar un origen para el plan de ruta";
 
@@ -2173,15 +2174,25 @@
 
 "type.historic.fort" = "Fort";
 
+"type.historic.gallows" = "Horca";
+
 "type.historic.memorial" = "Memorial";
 
-"type.historic.memorial.plaque" = "Commemorative plaque";
+"type.historic.memorial.cross" = "Cruz conmemorativa";
+
+"type.historic.memorial.plaque" = "Placa conmemorativa";
 
 "type.historic.memorial.sculpture" = "Sculpture";
 
 "type.historic.memorial.statue" = "Statue";
 
+"type.historic.memorial.stolperstein" = "Stolperstein";
+
+"type.historic.memorial.war_memorial" = "Monumento a la guerra";
+
 "type.historic.monument" = "Monumento";
+
+"type.historic.pillory" = "Picota";
 
 "type.historic.ruins" = "Ruinas";
 
@@ -2397,7 +2408,7 @@
 
 "type.man_made.tower" = "Torre";
 
-"type.man_made.wastewater_plant" = "Wastewater Plant";
+"type.man_made.wastewater_plant" = "Wastewater treatment plant";
 
 "type.man_made.water_tap" = "Toma de agua";
 
@@ -3025,8 +3036,6 @@
 
 "type.railway.subway_entrance.lisboa" = "Entrada de metro";
 
-"type.railway.subway_entrance.lisbon" = "Entrada de metro";
-
 "type.railway.subway_entrance.london" = "Entrada de metro";
 
 "type.railway.subway_entrance.lyon" = "Entrada de metro";
@@ -3261,7 +3270,7 @@
 
 "type.shop.motorcycle" = "Tienda de motos";
 
-"type.shop.music" = "Tienda";
+"type.shop.music" = "Disquería";
 
 "type.shop.musical_instrument" = "Tienda";
 

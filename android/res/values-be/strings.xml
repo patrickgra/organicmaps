@@ -534,6 +534,7 @@
 	<string name="prefs_languages_information_off_link">Больш падрабязная інфармацыя знаходзіцца ў гэтым кіраўніцтве.</string>
 	<string name="transliteration_title">Транслітарацыя лацінкай</string>
 	<string name="learn_more">Даведацца больш</string>
+	<!-- Subway exits for public transport marks on the map -->
 	<string name="core_exit">Выхад</string>
 	<string name="routing_add_start_point">Дадайце пункт адпраўлення каб пракласці маршрут</string>
 	<string name="routing_add_finish_point">Дадайце пункт прызначэння каб пракласці маршрут</string>
@@ -790,6 +791,7 @@
 	<string name="type.craft.winery">Вінакурня</string>
 	<string name="type.craft.tailor">Кравец</string>
 	<string name="type.cuisine.bubble_tea">Чай з бурбалкамі</string>
+	<string name="type.cuisine.deli">Дэлікатэсы</string>
 	<string name="type.emergency.defibrillator">Дэфібрылятар</string>
 	<string name="type.emergency.fire_hydrant">Пажарны гідрант</string>
 	<string name="type.healthcare.laboratory">Медыцынская лабараторыя</string>
@@ -898,6 +900,12 @@
 	<string name="type.historic.castle.shiro">Японскі замак</string>
 	<string name="type.historic.castle.stately">Замак</string>
 	<string name="type.historic.city_gate">Гарадская брама</string>
+	<string name="type.historic.gallows">Шыбеніца</string>
+	<string name="type.historic.memorial.cross">Памятны крыж</string>
+	<string name="type.historic.memorial.plaque">Памятная дошка</string>
+	<string name="type.historic.memorial.stolperstein">Камяні спатыкнення</string>
+	<string name="type.historic.memorial.war_memorial">Ваенны мемарыял</string>
+	<string name="type.historic.pillory">Пазорны слуп</string>
 	<string name="type.landuse.basin">Рэзервуар</string>
 	<!-- In most (European) countries, сemeteries are usually independent of places of worship (e.g. military cemeteries), while grave yards are usually the yard of a place of worship. -->
 	<string name="type.landuse.cemetery">Могілкі</string>
@@ -996,6 +1004,8 @@
 	<string name="type.railway.platform">Чыгуначная платформа</string>
 	<string name="type.shop.beverages">Напоі</string>
 	<string name="type.shop.caravan">Продаж аўтадамоў</string>
+	<string name="type.shop.chocolate">Крама шакалада</string>
+	<string name="type.shop.coffee">Крама кавы</string>
 	<string name="type.shop.cosmetics">Касметыка</string>
 	<string name="type.shop.deli">Дэлікатэсная крама</string>
 	<string name="type.shop.farm">Сельскагаспадарчыя прадукты</string>
@@ -1005,8 +1015,12 @@
 	<string name="type.shop.health_food">Крама здаровай ежы</string>
 	<string name="type.shop.houseware">Крама посуду</string>
 	<string name="type.shop.kitchen">Крама для кухні</string>
+	<string name="type.shop.money_lender">Ліхвяр</string>
+	<string name="type.shop.music">Музычная крама</string>
+	<string name="type.shop.musical_instrument">Музычныя інструменты</string>
 	<string name="type.shop.pastry">Кандытарскія вырабы</string>
 	<string name="type.shop.second_hand">Крама сэканд-хэнд</string>
+	<string name="type.shop.tea">Крама гарбаты</string>
 	<string name="type.shop.antiques">Антыкварыят</string>
 	<string name="type.shop.art">Крама мастацтваў</string>
 	<string name="type.shop.baby_goods">Дзіцячая крама</string>

@@ -874,6 +874,7 @@
 
 "transliteration_title" = "Transliterasi ke dalam bahasa Latin";
 
+/* Subway exits for public transport marks on the map */
 "core_exit" = "Keluar";
 
 "routing_add_start_point" = "Tambahkan titik awal untuk merencanakan rute";
@@ -1225,15 +1226,15 @@
 
 "type.aerialway" = "Aerialway";
 
-"type.aerialway.cable_car" = "Aerialway";
+"type.aerialway.cable_car" = "Cable car";
 
-"type.aerialway.chair_lift" = "Aerialway";
+"type.aerialway.chair_lift" = "Chair lift";
 
-"type.aerialway.drag_lift" = "Aerialway";
+"type.aerialway.drag_lift" = "Drag lift";
 
-"type.aerialway.gondola" = "Aerialway";
+"type.aerialway.gondola" = "Gondola";
 
-"type.aerialway.mixed_lift" = "Aerialway";
+"type.aerialway.mixed_lift" = "Mixed lift";
 
 "type.aerialway.station" = "Stasiun kereta gantung";
 
@@ -1456,7 +1457,7 @@
 
 "type.recycling.green_waste" = "Green/Organic Waste";
 
-"type.recycling.cartons" = "Bewerage Cartons";
+"type.recycling.cartons" = "Beverage Cartons";
 
 "type.amenity.restaurant" = "Restoran";
 
@@ -2173,7 +2174,11 @@
 
 "type.historic.fort" = "Fort";
 
+"type.historic.gallows" = "Tiang gantungan";
+
 "type.historic.memorial" = "Tugu peringatan";
+
+"type.historic.memorial.cross" = "Salib peringatan";
 
 "type.historic.memorial.plaque" = "Tugu peringatan";
 
@@ -2181,7 +2186,13 @@
 
 "type.historic.memorial.statue" = "Tugu peringatan";
 
+"type.historic.memorial.stolperstein" = "Stolperstein";
+
+"type.historic.memorial.war_memorial" = "Tugu peringatan perang";
+
 "type.historic.monument" = "Monumen";
+
+"type.historic.pillory" = "Pilar";
 
 "type.historic.ruins" = "Reruntuhan";
 
@@ -2397,7 +2408,7 @@
 
 "type.man_made.tower" = "Menara";
 
-"type.man_made.wastewater_plant" = "Wastewater Plant";
+"type.man_made.wastewater_plant" = "Wastewater treatment plant";
 
 "type.man_made.water_tap" = "Keran Air";
 
@@ -3024,8 +3035,6 @@
 "type.railway.subway_entrance.lima" = "Pintu masuk kereta bawah tanah";
 
 "type.railway.subway_entrance.lisboa" = "Pintu masuk kereta bawah tanah";
-
-"type.railway.subway_entrance.lisbon" = "Pintu masuk kereta bawah tanah";
 
 "type.railway.subway_entrance.london" = "Pintu masuk kereta bawah tanah";
 

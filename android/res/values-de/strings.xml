@@ -536,7 +536,8 @@
 	<string name="prefs_languages_information_off_link">Weitere Informationen finden Sie in dieser Anleitung.</string>
 	<string name="transliteration_title">Transliteration ins Lateinische</string>
 	<string name="learn_more">Weitere Informationen</string>
-	<string name="core_exit">Beenden</string>
+	<!-- Subway exits for public transport marks on the map -->
+	<string name="core_exit">Ausgang</string>
 	<string name="routing_add_start_point">Fügen Sie einen Startpunkt hinzu, um eine Route zu planen</string>
 	<string name="routing_add_finish_point">Fügen Sie ein Ziel hinzu, um eine Route zu planen</string>
 	<string name="button_exit">Beenden</string>
@@ -1190,10 +1191,15 @@
 	<string name="type.historic.city_gate">Stadttor</string>
 	<string name="type.historic.citywalls">Stadtmauer</string>
 	<string name="type.historic.fort">Festung</string>
+	<string name="type.historic.gallows">Galgen</string>
 	<string name="type.historic.memorial">Denkmal</string>
+	<string name="type.historic.memorial.cross">Gedenkkreuz</string>
 	<string name="type.historic.memorial.plaque">Gedenktafel</string>
 	<string name="type.historic.memorial.sculpture">Skulptur</string>
 	<string name="type.historic.memorial.statue">Statue</string>
+	<string name="type.historic.memorial.stolperstein">Stolperstein</string>
+	<string name="type.historic.memorial.war_memorial">Kriegerdenkmal</string>
+	<string name="type.historic.pillory">Pranger</string>
 	<string name="type.historic.ruins">Ruine</string>
 	<string name="type.historic.ship">Schiff</string>
 	<string name="type.historic.tomb">Grabstätte</string>
@@ -1583,7 +1589,6 @@
 	<string name="type.railway.subway_entrance.lille">U-Bahn-Eingang</string>
 	<string name="type.railway.subway_entrance.lima">U-Bahn-Eingang</string>
 	<string name="type.railway.subway_entrance.lisboa">U-Bahn-Eingang</string>
-	<string name="type.railway.subway_entrance.lisbon">U-Bahn-Eingang</string>
 	<string name="type.railway.subway_entrance.london">U-Bahn-Eingang</string>
 	<string name="type.railway.subway_entrance.lyon">U-Bahn-Eingang</string>
 	<string name="type.railway.subway_entrance.madrid">U-Bahn-Eingang</string>
@@ -1726,7 +1731,7 @@
 	<string name="type.shop.wine">Wein- und Spirituosengeschäft</string>
 	<string name="type.shop.antiques">Antiquitäten</string>
 	<string name="type.shop.art">Kunstgeschäft</string>
-	<string name="type.shop.baby_goods">Kinderladen</string>
+	<string name="type.shop.baby_goods">Babybedarf</string>
 	<string name="type.shop.bag">Taschen Shop</string>
 	<string name="type.shop.boutique">Boutique</string>
 	<string name="type.shop.charity">Wohltätigkeitsladen</string>

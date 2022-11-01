@@ -874,6 +874,7 @@
 
 "transliteration_title" = "Prepis do latinčiny";
 
+/* Subway exits for public transport marks on the map */
 "core_exit" = "Ukončiť";
 
 "routing_add_start_point" = "Pridaním počiatočného bodu začnite plánovať trasu";
@@ -1225,15 +1226,15 @@
 
 "type.aerialway" = "Aerialway";
 
-"type.aerialway.cable_car" = "Aerialway";
+"type.aerialway.cable_car" = "Cable car";
 
-"type.aerialway.chair_lift" = "Aerialway";
+"type.aerialway.chair_lift" = "Chair lift";
 
-"type.aerialway.drag_lift" = "Aerialway";
+"type.aerialway.drag_lift" = "Drag lift";
 
-"type.aerialway.gondola" = "Aerialway";
+"type.aerialway.gondola" = "Gondola";
 
-"type.aerialway.mixed_lift" = "Aerialway";
+"type.aerialway.mixed_lift" = "Mixed lift";
 
 "type.aerialway.station" = "Lanovka";
 
@@ -1456,7 +1457,7 @@
 
 "type.recycling.green_waste" = "Green/Organic Waste";
 
-"type.recycling.cartons" = "Bewerage Cartons";
+"type.recycling.cartons" = "Beverage Cartons";
 
 "type.amenity.restaurant" = "Reštaurácia";
 
@@ -2173,7 +2174,11 @@
 
 "type.historic.fort" = "Fort";
 
+"type.historic.gallows" = "Šibenica";
+
 "type.historic.memorial" = "Pomník";
+
+"type.historic.memorial.cross" = "Pamätný kríž";
 
 "type.historic.memorial.plaque" = "Pomník";
 
@@ -2181,7 +2186,13 @@
 
 "type.historic.memorial.statue" = "Pomník";
 
+"type.historic.memorial.stolperstein" = "Kameň úrazu";
+
+"type.historic.memorial.war_memorial" = "Vojnový pamätník";
+
 "type.historic.monument" = "Zaujímavosť";
+
+"type.historic.pillory" = "Pranier";
 
 "type.historic.ruins" = "Zrúcanina";
 
@@ -2397,7 +2408,7 @@
 
 "type.man_made.tower" = "Veža";
 
-"type.man_made.wastewater_plant" = "Wastewater Plant";
+"type.man_made.wastewater_plant" = "Wastewater treatment plant";
 
 "type.man_made.water_tap" = "Vodovodný kohútik";
 
@@ -3025,8 +3036,6 @@
 
 "type.railway.subway_entrance.lisboa" = "Vstup do metra";
 
-"type.railway.subway_entrance.lisbon" = "Vstup do metra";
-
 "type.railway.subway_entrance.london" = "Vstup do metra";
 
 "type.railway.subway_entrance.lyon" = "Vstup do metra";
@@ -3251,7 +3260,7 @@
 
 "type.shop.laundry" = "Práčovňa";
 
-"type.shop.mall" = "The Mall";
+"type.shop.mall" = "Mall";
 
 "type.shop.massage" = "Masážny salón";
 

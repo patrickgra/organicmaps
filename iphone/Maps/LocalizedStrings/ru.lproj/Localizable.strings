@@ -874,6 +874,7 @@
 
 "transliteration_title" = "Латинская транслитерация";
 
+/* Subway exits for public transport marks on the map */
 "core_exit" = "Выход";
 
 "routing_add_start_point" = "Добавьте стартовую точку, чтобы построить маршрут";
@@ -2173,7 +2174,11 @@
 
 "type.historic.fort" = "Форт";
 
+"type.historic.gallows" = "Виселица";
+
 "type.historic.memorial" = "Мемориал";
+
+"type.historic.memorial.cross" = "Памятный крест";
 
 "type.historic.memorial.plaque" = "Памятная доска";
 
@@ -2181,7 +2186,13 @@
 
 "type.historic.memorial.statue" = "Статуя";
 
+"type.historic.memorial.stolperstein" = "Камни преткновения";
+
+"type.historic.memorial.war_memorial" = "Военный мемориал";
+
 "type.historic.monument" = "Памятник";
+
+"type.historic.pillory" = "Позорный столб";
 
 "type.historic.ruins" = "Руины";
 
@@ -3025,8 +3036,6 @@
 
 "type.railway.subway_entrance.lisboa" = "Вход в метро";
 
-"type.railway.subway_entrance.lisbon" = "Вход в метро";
-
 "type.railway.subway_entrance.london" = "Вход в метро";
 
 "type.railway.subway_entrance.lyon" = "Вход в метро";
@@ -3189,11 +3198,11 @@
 
 "type.shop.chemist" = "Бытовая химия";
 
-"type.shop.chocolate" = "Магазин";
+"type.shop.chocolate" = "Магазин шоколада";
 
 "type.shop.clothes" = "Магазин одежды";
 
-"type.shop.coffee" = "Магазин";
+"type.shop.coffee" = "Магазин кофе";
 
 "type.shop.computer" = "Компьютерный магазин";
 
@@ -3257,13 +3266,13 @@
 
 "type.shop.mobile_phone" = "Мобильные телефоны";
 
-"type.shop.money_lender" = "Магазин";
+"type.shop.money_lender" = "Ростовщик";
 
 "type.shop.motorcycle" = "Магазин мотоциклов";
 
-"type.shop.music" = "Магазин";
+"type.shop.music" = "Музыкальный магазин";
 
-"type.shop.musical_instrument" = "Магазин";
+"type.shop.musical_instrument" = "Музыкальные инструменты";
 
 "type.shop.newsagent" = "Газетный киоск";
 
@@ -3293,7 +3302,7 @@
 
 "type.shop.tattoo" = "Тату-салон";
 
-"type.shop.tea" = "Магазин";
+"type.shop.tea" = "Чайный магазин";
 
 "type.shop.ticket" = "Билетная касса";
 

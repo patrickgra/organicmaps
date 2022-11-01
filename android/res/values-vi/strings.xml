@@ -505,6 +505,7 @@
 	<string name="prefs_languages_information_off_link">Để biết thêm thông tin, vui lòng kiểm tra bài hướng dẫn này.</string>
 	<string name="transliteration_title">Chuyển ngữ sang chữ Latinh</string>
 	<string name="learn_more">Tìm hiểu thêm</string>
+	<!-- Subway exits for public transport marks on the map -->
 	<string name="core_exit">Lối ra</string>
 	<string name="routing_add_start_point">Bổ sung điểm bắt đầu để lập kế hoạch lộ trình</string>
 	<string name="routing_add_finish_point">Bổ sung điểm kết thúc để lập kế hoạch lộ trình</string>
@@ -1085,11 +1086,16 @@
 	<string name="type.historic.castle.shiro">Lâu đài nhật bản</string>
 	<string name="type.historic.castle.stately">Pháo đài</string>
 	<string name="type.historic.city_gate">Cổng thành</string>
+	<string name="type.historic.gallows">Giá treo cổ</string>
 	<string name="type.historic.memorial">Đài tưởng niệm</string>
+	<string name="type.historic.memorial.cross">Thánh giá tưởng niệm</string>
 	<string name="type.historic.memorial.plaque">Đài tưởng niệm</string>
 	<string name="type.historic.memorial.sculpture">Đài tưởng niệm</string>
 	<string name="type.historic.memorial.statue">Đài tưởng niệm</string>
+	<string name="type.historic.memorial.stolperstein">Vấp ngã</string>
+	<string name="type.historic.memorial.war_memorial">Đài tưởng niệm chiến tranh</string>
 	<string name="type.historic.monument">Tượng đài</string>
+	<string name="type.historic.pillory">Thuốc viên</string>
 	<string name="type.historic.ruins">Phế tích</string>
 	<string name="type.historic.ship">Diểm tham quan</string>
 	<string name="type.historic.tomb">Diểm tham quan</string>
@@ -1391,7 +1397,6 @@
 	<string name="type.railway.subway_entrance.lille">Lỗi vào Metro</string>
 	<string name="type.railway.subway_entrance.lima">Lỗi vào Metro</string>
 	<string name="type.railway.subway_entrance.lisboa">Lỗi vào Metro</string>
-	<string name="type.railway.subway_entrance.lisbon">Lỗi vào Metro</string>
 	<string name="type.railway.subway_entrance.london">Lỗi vào Metro</string>
 	<string name="type.railway.subway_entrance.lyon">Lỗi vào Metro</string>
 	<string name="type.railway.subway_entrance.madrid">Lỗi vào Metro</string>

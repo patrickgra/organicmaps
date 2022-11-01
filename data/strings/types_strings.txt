@@ -2157,6 +2157,7 @@
     de = Privatparkplatz
     el = Ιδιωτικός χώρος στάθμευσης
     es = Aparcamiento privado
+    es-MX = Aparcamiento privado
     eu = Aparkaleku pribatua
     fa = ﯽﺻﺎﺼﺘﺧﺍ ﮓﻨﯿﮐﺭﺎﭘ
     fi = Yksityinen pysäköinti
@@ -2270,6 +2271,7 @@
     de = Parkplatzeinfahrt
     el = Είσοδος στάθμευσης
     es = Entrada al aparcamiento
+    es-MX = Entrada al aparcamiento
     eu = Aparkalekuaren sarrera
     fa = ﮓﻨﯿﮐﺭﺎﭘ ﯼﺩﻭﺭﻭ
     fi = Pysäköinnin sisäänkäynti
@@ -3052,7 +3054,7 @@
     nl = Recycling container
     pl = Pojemnik do recyklingu
     pt = Contentor de reciclagem
-    pt-BR = Recipiente de reciclagem
+    pt-BR = Contêiner de reciclagem
     ro = Containere pentru reciclare
     ru = Контейнер для вторсырья
     sk = Recyklačný odpad
@@ -3198,7 +3200,7 @@
     nl = Papierafval
     pl = Makulatura
     pt = Papel
-    pt-BR = Lixo de papel
+    pt-BR = Papel
     ro = Deșeuri de hârtie
     ru = Бумага
     sk = Papierový odpad
@@ -3233,7 +3235,7 @@
     nl = Plastic afval
     pl = Śmieci z plastiku
     pt = Plásticos
-    pt-BR = Lixo plástico
+    pt-BR = Plástico
     ro = Deșeuri de plastic
     ru = Пластик
     sk = Plastový odpad
@@ -3268,7 +3270,7 @@
     nl = Plastic flessen
     pl = Zbieranie plastikowych butelek
     pt = Garrafas de plástico
-    pt-BR = Garrafas plasticas
+    pt-BR = Garrafas plásticas
     ro = Sticle de plastic
     ru = Пластиковые бутылки
     sk = Plastové fľaše
@@ -3304,7 +3306,7 @@
     nl = Schroot
     pl = Złom
     pt = Sucata
-    pt-BR = Ferro velho
+    pt-BR = Sucata
     ro = Resturi de metal
     ru = Металлолом
     sk = Kovový šrot
@@ -3339,7 +3341,7 @@
     nl = Elektronisch afval
     pl = Odpady elektryczne
     pt = Pequenos eletrodomésticos
-    pt-BR = Lixo eletrônico
+    pt-BR = Eletrônicos
     ro = Deșeuri electrice
     ru = Электроотходы
     sk = Elektronický odpad
@@ -3361,6 +3363,7 @@
     it = Cartone
     mr = पुठ्ठा
     nl = Karton
+    pt-BR = Papelão
     ru = Картон
     tr = Karton
     uk = Картон
@@ -3375,6 +3378,7 @@
     it = Lattine
     mr = कॅन
     nl = Blikafval
+    pt-BR = Latas
     ru = Жестяные и алюминиевые банки
     tr = Teneke ve alüminyum kutular
     uk = Бляшані та алюмінієві банки
@@ -3389,6 +3393,7 @@
     it = Scarpe
     mr = पादत्राणे
     nl = Schoenen
+    pt-BR = Sapatos
     ru = Обувь
     tr = Ayakkabılar
     uk = Взуття
@@ -3402,6 +3407,7 @@
     fr = Déchets organiques
     it = Umido
     nl = GFT afval
+    pt-BR = Lixo verde/orgânico
     ru = Органика / Пищевые отходы
     tr = Yeşil/Organik Atık
     uk = Органіка / Харчові відходи
@@ -3415,6 +3421,7 @@
     fr = Briques alimentaires
     mr = पेय कार्टन
     nl = Drankverpakkingen
+    pt-BR = Caixa de bebidas
     ru = Тетрапак и аналоги
     tr = İçecek Kartonları
     uk = Тетрапак та аналоги
@@ -3456,6 +3463,8 @@
     fr = Station de vidange
     it = Area servizi camper
     nl = Caravantoilet cassette-leegpunt
+    pl = Miejsce opróżniania toalety dla kamperów
+    pt-BR = Estação de despejo de esgotos
     ru = Слив для туалетов транспортных средств
     tr = Tank Boşaltma İstasyonu
     uk = Злив для туалетів транспортних засобів
@@ -3821,6 +3830,7 @@
     it = Distributore di caffè
     mr = कॉफी विक्रीयंत्र
     nl = Koffieautomaat
+    pt-BR = Máquina de café
     ru = Кофейный автомат
     uk = Кавовий автомат
 
@@ -3835,6 +3845,7 @@
     it = Distributore di profilattici
     mr = कंडोम विक्रीयंत्र
     nl = Condoomautomaat
+    pt-BR = Máquina de venda de preservativos
     ru = Автомат с презервативами
     uk = Автомат з презервативами
 
@@ -3884,6 +3895,7 @@
     it = Distributore di alimenti
     mr = अन्न विक्रीयंत्र
     nl = Etenswarenautomaat
+    pt-BR = Máquina de venda de comidas
     ru = Автомат с едой
     uk = Автомат з їжею
 
@@ -3898,6 +3910,7 @@
     it = Distributore di giornali
     mr = वृत्तपत्र विक्रीयंत्र
     nl = Krantenautomaat
+    pt-BR = Máquina de venda de jornais
     ru = Газетный автомат
     uk = Газетний автомат
 
@@ -3924,7 +3937,7 @@
     nl = Betaalautomaat parkeerplaats
     pl = Parkometr
     pt = Máquina venda de bilhetes de estacionamento
-    pt-BR = Máquina venda de tíquetes de estacionamento
+    pt-BR = Máquina de venda de tíquetes de estacionamento
     ro = Parcomat
     ru = Паркомат
     sk = Automat na výdaj parkovacích lístkov
@@ -3960,7 +3973,7 @@
     nl = Kaartjesautomaat voor openbaar vervoer
     pl = Automat biletowy do transportu publicznego
     pt = Máquina venda de bilhetes de transporte público
-    pt-BR = Máquinas automáticas de venda de passagens de transporte público
+    pt-BR = Máquina de venda de passagens de transporte público
     ro = Automat de vânzare a biletelor pentru transportul public
     ru = Автомат по продаже билетов
     sk = Predajný automat na lístky verejnej dopravy
@@ -3984,6 +3997,7 @@
     it = Distributore di dolciumi
     mr = मिठाई विक्रीयंत्र
     nl = Snoepautomaat
+    pt-BR = Máquina de venda de doces
     ru = Автомат со сладостями
     uk = Автомат із солодощами
 
@@ -3996,6 +4010,7 @@
     fr = Distributeur de sacs à excréments
     mr = मलमूत्र पिशव्या विक्रीयंत्र
     nl = Hondenpoepzakjesdispenser
+    pt-BR = Saquinhos de lixo
     ru = Пакеты для экскрементов
     tr = Dışkı Torbası Dağıtıcı
     uk = Мішки для екскрементів
@@ -4010,6 +4025,8 @@
     it = Punto di ritiro
     mr = पार्सल लॉकर
     nl = Pakketjeskluis
+    pt = Cacifo
+    pt-BR = Armário de encomendas
     ru = Почтомат
     tr = Kilitlenebilen Kutu Dolaplar
     uk = Поштомат
@@ -4022,6 +4039,7 @@
     fi = Bensa-automaatti
     mr = इंधन विक्रीयंत्र
     nl = Tankautomaat
+    pt-BR = Bomba de combustível
     ru = Топливная колонка
     tr = Yakıt Dağıtıcı
     uk = Паливна колонка
@@ -4136,6 +4154,8 @@
     it = Centro trasferimento rifiuti
     mr = कचरा हस्तांतरण केंद्र
     nl = Overslagstation voor afval
+    pl = Stacja przeładunku odpadów
+    pt-BR = Estação de transferência de resíduos
     ru = Станция перевалки отходов
     tr = Atık Transfer İstasyonu
     uk = Станція передачі сміття
@@ -4248,7 +4268,7 @@
     nl = Pilaar
     pl = Słupek
     pt = Pilarete
-    pt-BR = Pilar
+    pt-BR = Pilarete
     ro = Stâlp
     ru = Столбик
     sk = Pilier
@@ -4762,6 +4782,7 @@
   [type.boundary.administrative.country]
     en = National Border
     es = Frontera de país
+    es-MX = Frontera de país
     eu = Herrialdeko muga
     fi = Valtakunnanraja
     fr = Frontière nationale
@@ -4812,7 +4833,6 @@
     ref = type.boundary.administrative.country
     es = Frontera de nación
     eu = Nazio muga
-    it = Confine nazionale
     nl = Natiegrens
     pt = Fronteira de nação
     pt-BR = Fronteira de nação
@@ -6605,6 +6625,8 @@
   [type.cuisine.deli]
     en = Deli
     ar = أطعمة مبردة
+    be = Дэлікатэсы
+    bg = Деликатеси
     cs = Lahůdky
     da = Deli
     de = Delikatessen
@@ -9035,6 +9057,7 @@
     de = Fußweg
     el = Διαδρομή
     es = Camino
+    es-MX = Camino
     eu = Bidea
     fa = مسیر
     fi = Polku
@@ -9405,7 +9428,6 @@
   [type.highway.path.hiking]
     ref = type.highway.path
     de = Wanderweg
-    it = Sentiero
     nl = Wandelpad
     pt-BR = Caminho pedonal
 
@@ -9540,7 +9562,6 @@
   [type.highway.primary_link]
     ref = type.highway.primary
     en = Primary Road Ramp
-    it = Strada
     mr = प्राथमिक मार्ग उतार
     pt-BR = Saída de rodovia
     ru = Съезд с шоссе
@@ -9826,7 +9847,6 @@
   [type.highway.secondary_link]
     ref = type.highway.secondary
     en = Secondary Road Ramp
-    it = Strada
     mr = दुय्यम मार्ग उतार
     pt-BR = Saída de rodovia
     ru = Съезд с автодороги
@@ -10170,7 +10190,7 @@
     zh-Hant = 紅綠燈
 
   [type.highway.trunk]
-    en = National Highway
+    en = Trunk Road
     ar = شارع وطني
     cs = Ulice
     da = Gade
@@ -10213,7 +10233,7 @@
 
   [type.highway.trunk_link]
     ref = type.highway.trunk
-    en = National Highway Ramp
+    en = Trunk Road Ramp
     mr = राष्ट्रीय महामार्ग उतार
     pt-BR = Saída de rodovia
     ru = Съезд с трассы
@@ -10909,6 +10929,43 @@
     zh-Hans = 历史要塞
     zh-Hant = 歷史要塞
 
+  [type.historic.gallows]
+    en = Gallows
+    ar = مشنقة
+    be = Шыбеніца
+    bg = Бесилка
+    cs = Šibenice
+    da = Galge
+    de = Galgen
+    el = Αγχόνη
+    es = Horca
+    eu = Urkamendi
+    fa = چوبه دار
+    fi = Sappeja
+    fr = Potence
+    he = גרדום
+    hu = Akasztófa
+    id = Tiang gantungan
+    it = Forca
+    ja = 絞首台
+    ko = 교수대
+    mr = फाशी
+    nb = Galge
+    nl = Galg
+    pl = Szubienica
+    pt = Forca
+    pt-BR = Galo
+    ro = Spânzurătoare
+    ru = Виселица
+    sk = Šibenica
+    sv = Galge
+    sw = Kunyongea
+    tr = Darağacı
+    uk = Шибениця
+    vi = Giá treo cổ
+    zh-Hans = 绞架
+    zh-Hant = 絞架
+
   [type.historic.memorial]
     en = Memorial
     ar = نصب تذكاري
@@ -10941,23 +10998,67 @@
     zh-Hans = 纪念物
     zh-Hant = 紀念館
 
+  [type.historic.memorial.cross]
+    en = Memorial cross
+    ar = الصليب التذكاري
+    be = Памятны крыж
+    bg = Мемориален кръст
+    cs = Pamětní kříž
+    da = Mindesmærkekors
+    de = Gedenkkreuz
+    el = Σταυρός μνήμης
+    es = Cruz conmemorativa
+    eu = Oroimenezko gurutzea
+    fa = صلیب یادبود
+    fi = Muistoristi
+    fr = Croix commémorative
+    he = צלב זיכרון
+    hu = Emlékkereszt
+    id = Salib peringatan
+    it = Croce commemorativa
+    ja = メモリアルクロス
+    ko = 기념 십자가
+    mr = मेमोरियल क्रॉस
+    nb = Minnekors
+    nl = Herdenkingskruis
+    pl = Krzyż pomnikowy
+    pt = Cruz memorial
+    pt-BR = Cruz de memorial
+    ro = Cruce comemorativă
+    ru = Памятный крест
+    sk = Pamätný kríž
+    sv = Kors till minne
+    sw = Msalaba wa kumbukumbu
+    th = อนุสรณ์สถานข้าม
+    tr = Anıt haç
+    uk = Пам'ятний хрест
+    vi = Thánh giá tưởng niệm
+    zh-Hans = 纪念十字架
+    zh-Hant = 紀念十字架
+
   [type.historic.memorial.plaque]
     en = Commemorative plaque
     ar = لوحة تذكارية
+    be = Памятная дошка
+    bg = Паметна плоча
     cs = Pomník
     da = Mindesmærke
     de = Gedenktafel
     el = Μνημείο
+    es = Placa conmemorativa
+    eu = Oroitzapenezko plaka
     fa = گردشگری
     fi = Muistomerkki
     fr = Plaque commémorative
+    he = לוחית זיכרון
     hu = Emlékmű
     id = Tugu peringatan
     it = Memoriale
     ja = 銘板
     ko = 기념비
+    mr = फलक
     nb = Minnesmerke
-    nl = Plaquette
+    nl = Gedenkplaat
     pl = Tablica pamiątkowa
     pt = Placa comemorativa
     pt-BR = Placa comemorativa
@@ -10965,6 +11066,7 @@
     ru = Памятная доска
     sk = Pomník
     sv = Minnesmärke
+    sw = Plaque
     th = ที่ระลึก
     tr = Hatıra Plaketi
     uk = Дошка пам'яті
@@ -11036,6 +11138,80 @@
     zh-Hans = 塑像
     zh-Hant = 塑像
 
+  [type.historic.memorial.stolperstein]
+    en = Stolperstein
+    ar = حجر عثرة
+    be = Камяні спатыкнення
+    bg = Cпънка
+    cs = Stolperstein
+    da = Stolpersten
+    de = Stolperstein
+    el = Λίθοι Μνήμης
+    es = Stolperstein
+    eu = Stolperstein
+    fa = سنگ مانع
+    fi = Kompastuskivet
+    fr = Stolperstein
+    he = אבן נגף
+    hu = Botlatókő
+    id = Stolperstein
+    it = Pietre d'inciampo
+    ja = ストルパーシュタイン
+    ko = 장애물
+    mr = अडथळा
+    nb = Snublesteiner
+    nl = Stolperstein
+    pl = Kamień pamięci
+    pt = Stolperstein
+    ro = Blocaj de poticnire
+    ru = Камни преткновения
+    sk = Kameň úrazu
+    sv = Snubbelsten
+    sw = Kikwazo
+    th = อุปสรรค์
+    tr = Tökezleyen Taşlar
+    uk = Камені спотикання
+    vi = Vấp ngã
+    zh-Hans = 绊脚石
+    zh-Hant = 絆腳石
+
+  [type.historic.memorial.war_memorial]
+    en = War memorial
+    ar = نصب حرب
+    be = Ваенны мемарыял
+    bg = Военен паметник
+    cs = Válečný památník
+    da = Krigsmindesmærke
+    de = Kriegerdenkmal
+    el = Μνημείο του Αγνώστου Στρατιώτη
+    es = Monumento a la guerra
+    eu = Gerra memoriala
+    fa = رزم‌یاد
+    fi = Sotamuistomerkki
+    fr = Monument aux morts
+    he = אנדרטת מלחמה
+    hu = Háborús emlékmű
+    id = Tugu peringatan perang
+    it = Monumento ai caduti
+    ja = 戦争記念施設
+    ko = 전쟁기념관
+    mr = युद्ध स्मारक
+    nb = Krigsminnesmerke
+    nl = Oorlogsmonument
+    pl = Pomnik wojenny
+    pt = Memorial de guerra
+    ro = Memorial de război
+    ru = Военный мемориал
+    sk = Vojnový pamätník
+    sv = Krigsmonument
+    sw = Kumbukumbu ya vita
+    th = อนุสรณ์สถานสงคราม
+    tr = Savaş anıtı
+    uk = Військовий меморіал
+    vi = Đài tưởng niệm chiến tranh
+    zh-Hans = 战争纪念建筑
+    zh-Hant = 戰爭紀念建築
+
   [type.historic.monument]
     en = Monument
     ar = صرح
@@ -11053,6 +11229,7 @@
     ko = 기념탑
     mr = स्मारक
     nl = Monument
+    pl = Monument
     pt = Monumento
     pt-BR = Monumento
     ru = Памятник
@@ -11063,6 +11240,43 @@
     vi = Tượng đài
     zh-Hans = 纪念堂
     zh-Hant = 紀念碑
+
+  [type.historic.pillory]
+    en = Pillory
+    ar = مشهرة
+    be = Пазорны слуп
+    bg = Позорен стълб
+    cs = Pranýř
+    da = Kag
+    de = Pranger
+    el = Κύφωνας
+    es = Picota
+    eu = Urkabe
+    fa = تخته‌بند
+    fi = Häpeäpaalu
+    fr = Pilori
+    he = עמוד הקלון
+    hu = Pellengér
+    id = Pilar
+    it = Gogna
+    ja = さらし台
+    ko = 칼
+    mr = पिलोरी
+    nb = Pilry
+    nl = Schandpaal
+    pl = Pręgierz
+    pt = Pelourinho
+    ro = Stâlpul infamiei
+    ru = Позорный столб
+    sk = Pranier
+    sv = Skampåle
+    sw = Pillory
+    th = ประจาน
+    tr = Boyunduruk
+    uk = Ганебний стовп
+    vi = Thuốc viên
+    zh-Hans = 刑柱
+    zh-Hant = 刑柱
 
   [type.historic.ruins]
     en = Ruins
@@ -11395,13 +11609,11 @@
     comment = In most (European) countries, сemeteries are usually independent of places of worship (e.g. military cemeteries), while grave yards are usually the yard of a place of worship.
     ref = type.amenity.grave_yard
     en = Cemetery
-    it = Cimitero
     nl = Begraafplaats
 
   [type.landuse.cemetery.christian]
     ref = type.amenity.grave_yard.christian
     en = Christian Cemetery
-    it = Cimitero cristiano
     nl = Christelijke begraafplaats
 
   [type.landuse.churchyard]
@@ -11482,6 +11694,7 @@
     it = Strutture didattiche
     mr = शैक्षणिक सुविधा
     nl = Educatieve voorzieningen
+    pl = Placówki oświatowe
     pt-BR = Instituições educacionais
     ru = Образовательные учреждения
     uk = Освітній заклади
@@ -12272,7 +12485,6 @@
     ref = type.leisure.garden
     en = Residential Garden
     be = Частный сад
-    nl = Tuin
     pl = Ogród przydomowy
     pt = Jardim residencial
     pt-BR = Jardim residencial
@@ -16473,7 +16685,6 @@
   [type.railway.halt]
     ref = type.railway.station
     de = Haltepunkt
-    nl = Station
     pl = Przystanek kolejowy
     pt = Apeadeiro
     pt-BR = Ponto de parada
@@ -16872,6 +17083,7 @@
     de = Bahnhof
     el = Σιδηροδρομικός σταθμός
     es = Estación de tren
+    es-MX = Estación de tren
     eu = Tren geltokian
     fa = ایستگاه قطار
     fi = Rautatieasema
@@ -17097,9 +17309,6 @@
     ref = type.railway.station.subway
 
   [type.railway.station.subway.lisboa]
-    ref = type.railway.station.subway
-
-  [type.railway.station.subway.lisbon]
     ref = type.railway.station.subway
 
   [type.railway.station.subway.london]
@@ -17499,9 +17708,6 @@
   [type.railway.subway_entrance.lisboa]
     ref = type.railway.subway_entrance
 
-  [type.railway.subway_entrance.lisbon]
-    ref = type.railway.subway_entrance
-
   [type.railway.subway_entrance.london]
     ref = type.railway.subway_entrance
 
@@ -17822,7 +18028,7 @@
     de = Shuttlezug
     nl = Shuttle-trein
     pt = Rota de comboio vaivem
-    pt-BR = Rota de trem vaivem
+    pt-BR = Rota de trem vaivém
     ru = Челночная линия
     tr = Servis Treni
 
@@ -17882,7 +18088,7 @@
     nl = Slijterij
     pl = Sklep monopolowy
     pt = Loja de bebidas alcoolicas
-    pt-BR = Loja de bebidas alcoolicas
+    pt-BR = Loja de bebidas alcoólicas
     ro = Băuturi alcoolice
     ru = Магазин алкоголя
     sk = Liehoviny
@@ -18308,8 +18514,9 @@
     zh-Hant = 藥妝店
 
   [type.shop.chocolate]
-    en = Shop
+    en = Chocolate Shop
     ar = متجر
+    be = Крама шакалада
     cs = Obchod
     da = Butik
     de = Schokoladengeschäft
@@ -18331,7 +18538,7 @@
     pt = Loja de chocolates
     pt-BR = Loja de chocolates
     ro = Magazin
-    ru = Магазин
+    ru = Магазин шоколада
     sk = Obchod
     sv = Butik
     th = ร้านค้า
@@ -18376,8 +18583,9 @@
     zh-Hant = 買衣服
 
   [type.shop.coffee]
-    en = Shop
+    en = Coffee Store
     ar = متجر
+    be = Крама кавы
     cs = Obchod
     da = Butik
     de = Kaffeegeschäft
@@ -18399,7 +18607,7 @@
     pt = Loja de café
     pt-BR = Loja de café
     ro = Magazin
-    ru = Магазин
+    ru = Магазин кофе
     sk = Obchod
     sv = Butik
     th = ร้านค้า
@@ -18672,7 +18880,7 @@
     nl = IJzerhandel
     pl = Sklep narzędziowy
     pt = Loja de ferramentas e materiais de bricolage
-    pt-BR = Loja de ferramentas e materiais de bricolage
+    pt-BR = Loja de ferramentas e materiais de bricolagem
     ro = Magazin de bricolaj
     ru = Хозяйственный
     sk = Železiarstvo
@@ -18786,7 +18994,7 @@
     zh-Hant = 情趣用品店
 
   [type.shop.fabric]
-    en = Shop
+    en = Fabric Shop
     ar = متجر
     cs = Obchod
     da = Butik
@@ -19143,7 +19351,6 @@
     fr = Quincaillerie
     he = ןיינב ירמוחל תונח
     hu = Hardver üzlet
-    it = Ferramenta
     ja = ホームセンター
     nl = IJzerwaren
     pl = Sklep z narzędziami
@@ -19468,8 +19675,9 @@
     zh-Hant = 手機專賣店
 
   [type.shop.money_lender]
-    en = Shop
+    en = Money Lender
     ar = متجر
+    be = Ліхвяр
     cs = Obchod
     da = Butik
     de = Geldverleiher
@@ -19491,7 +19699,7 @@
     pt = Prestamista
     pt-BR = Prestamista
     ro = Magazin
-    ru = Магазин
+    ru = Ростовщик
     sk = Obchod
     sv = Butik
     th = ร้านค้า
@@ -19536,13 +19744,14 @@
     zh-Hant = 機車行
 
   [type.shop.music]
-    en = Shop
+    en = Record Store
     ar = متجر
+    be = Музычная крама
     cs = Obchod
     da = Butik
     de = Musikgeschäft
     el = Κατάστημα
-    es = Tienda
+    es = Disquería
     eu = Denda
     fa = فروشگاه
     fi = Kauppa
@@ -19559,7 +19768,7 @@
     pt = Loja de música
     pt-BR = Loja de música
     ro = Magazin
-    ru = Магазин
+    ru = Музыкальный магазин
     sk = Obchod
     sv = Butik
     th = ร้านค้า
@@ -19570,8 +19779,9 @@
     zh-Hant = 購物
 
   [type.shop.musical_instrument]
-    en = Shop
+    en = Musical Instruments
     ar = متجر
+    be = Музычныя інструменты
     cs = Obchod
     da = Butik
     de = Musikinstrumenteladen
@@ -19593,7 +19803,7 @@
     pt = Loja de instrumentos musicais
     pt-BR = Loja de instrumentos musicais
     ro = Magazin
-    ru = Магазин
+    ru = Музыкальные инструменты
     sk = Obchod
     sv = Butik
     th = ร้านค้า
@@ -19730,7 +19940,7 @@
     nl = Banketbakker
     pl = Ciasto
     pt = Pastelaria
-    pt-BR = Pastelaria
+    pt-BR = Confeitaria
     ro = Patiserie
     ru = Выпечка
     sk = Pečivo
@@ -20081,8 +20291,9 @@
     zh-Hant = 刺青店
 
   [type.shop.tea]
-    en = Shop
+    en = Tea Store
     ar = متجر
+    be = Крама гарбаты
     cs = Obchod
     da = Butik
     de = Teegeschäft
@@ -20104,7 +20315,7 @@
     pt = Loja de chás
     pt-BR = Loja de chás
     ro = Magazin
-    ru = Магазин
+    ru = Чайный магазин
     sk = Obchod
     sv = Butik
     th = ร้านค้า
@@ -20307,7 +20518,7 @@
     nl = Videowinkel
     pl = Wypożyczalnia wideo
     pt = Vídeoclube
-    pt-BR = Video locadora
+    pt-BR = Videolocadora
     ro = Magazin video
     ru = Магазин видео
     sk = Predajňa s videami
@@ -20471,13 +20682,13 @@
     bg = Детски магазин
     cs = Dětský obchod
     da = Børnebutik
-    de = Kinderladen
+    de = Babybedarf
     el = Παιδικό κατάστημα
     es = Tienda de niños
     eu = Haurrentzako denda
     fa = ﻥﺎﮐﺩﻮﮐ ﻩﺎﮕﺷﻭﺮﻓ
     fi = Lasten kauppa
-    fr = Magasin pour enfants
+    fr = Magasin de puériculture
     he = םידליל תונח
     hu = Gyermekbolt
     id = Toko anak-anak
@@ -20673,7 +20884,7 @@
     nl = Kunst en ambacht
     pl = Sztuka i rzemiosło
     pt = Artes e Ofícios
-    pt-BR = Artes e Ofícios
+    pt-BR = Artes e ofícios
     ro = Arte și Meserii
     ru = Искусства и ремесла
     sk = Umenie a remeslá
@@ -20699,7 +20910,7 @@
     eu = Esnekiak
     fa = ﯽﻨﺒﻟ ﺕﻻﻮﺼﺤﻣ
     fi = Maitotuotteet
-    fr = Les produits laitiers
+    fr = Crémerie
     he = בלח ירצומ
     hu = Tejtermékek
     id = Produk susu
@@ -20736,7 +20947,7 @@
     eu = Elektrizitate Denda
     fa = ﯽﮑﯾﺮﺘﮑﻟﺍ ﻡﺯﺍﻮﻟ ﻩﺯﺎﻐﻣ
     fi = Sähköliike
-    fr = Store électrique
+    fr = Magasin de fournitures et d'appareils électriques
     he = למשח תונח
     hu = Elektronikai üzlet
     id = Toko elektronik
@@ -20821,7 +21032,7 @@
     nl = Interieurdecoraties
     pl = Dekoracje wnętrz
     pt = Decorações de Interiores
-    pt-BR = Decorações de Interiores
+    pt-BR = Decoração de interiores
     ro = Decoratiuni interioare
     ru = Украшения для интерьера
     sk = Interiérové dekorácie
@@ -20958,7 +21169,7 @@
     eu = Margoak
     fa = ﺪﻨﮐ ﯽﻣ ﮓﻧﺭ
     fi = Maalit
-    fr = Des peintures
+    fr = Magasin de peinture
     he = םיעבצ
     hu = Festékek
     id = Cat
@@ -21032,7 +21243,7 @@
     eu = Josteko hornigaiak
     fa = ﯽﻃﺎﯿﺧ ﻡﺯﺍﻮﻟ
     fi = Ompelutarvikkeet
-    fr = Matériel de couture
+    fr = Mercerie
     he = הריפת דויצ
     hu = Varrás kellékek
     id = Perlengkapan Jahit
@@ -21080,7 +21291,7 @@
     nl = Opslag verhuur
     pl = Wynajem magazynu
     pt = Aluguel de Armazenamento
-    pt-BR = Aluguel de Armazenamento
+    pt-BR = Aluguel de armazenamento
     ro = Închiriere depozitare
     ru = Аренда склада
     sk = Prenájom skladu
@@ -21106,7 +21317,7 @@
     eu = Tabakoa
     fa = ﻮﮐﺎﺒﻨﺗ
     fi = Tupakka
-    fr = Le tabac
+    fr = Bureau de tabac
     he = קבָּטַ
     hu = Dohány
     id = Tembakau
@@ -21143,7 +21354,7 @@
     eu = Lanbideen hornidurak
     fa = ﻡﺯﺍﻮﻟ ﺕﺭﺎﺠﺗ
     fi = Kauppa tarvikkeita
-    fr = Fournitures de métiers
+    fr = Grossiste
     he = הקפסאב רחוס
     hu = Kellékekkel kereskedik
     id = Perlengkapan Perdagangan
@@ -21841,7 +22052,7 @@
     nl = Diverse sporten
     pl = Różne sporty
     pt = Vários desportos
-    pt-BR = Vários desportos
+    pt-BR = Poliesportivo
     ro = Sporturi Diverse
     ru = Различные виды спорта
     sk = Rôzne športy

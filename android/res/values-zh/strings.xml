@@ -515,6 +515,7 @@
 	<string name="prefs_languages_information_off_link">如需了解更多信息，请查阅此指南。</string>
 	<string name="transliteration_title">直译成拉丁文</string>
 	<string name="learn_more">了解更多</string>
+	<!-- Subway exits for public transport marks on the map -->
 	<string name="core_exit">退出</string>
 	<string name="routing_add_start_point">添加起点以规划路线</string>
 	<string name="routing_add_finish_point">添加终点以规划路线</string>
@@ -1151,11 +1152,16 @@
 	<string name="type.historic.city_gate">城门</string>
 	<string name="type.historic.citywalls">历史城墙</string>
 	<string name="type.historic.fort">历史要塞</string>
+	<string name="type.historic.gallows">绞架</string>
 	<string name="type.historic.memorial">纪念物</string>
+	<string name="type.historic.memorial.cross">纪念十字架</string>
 	<string name="type.historic.memorial.plaque">纪念牌匾</string>
 	<string name="type.historic.memorial.sculpture">雕塑</string>
 	<string name="type.historic.memorial.statue">塑像</string>
+	<string name="type.historic.memorial.stolperstein">绊脚石</string>
+	<string name="type.historic.memorial.war_memorial">战争纪念建筑</string>
 	<string name="type.historic.monument">纪念堂</string>
+	<string name="type.historic.pillory">刑柱</string>
 	<string name="type.historic.ruins">废墟</string>
 	<string name="type.historic.ship">历史船</string>
 	<string name="type.historic.tomb">陵墓</string>
@@ -1525,7 +1531,6 @@
 	<string name="type.railway.subway_entrance.lille">地铁出入口</string>
 	<string name="type.railway.subway_entrance.lima">地铁出入口</string>
 	<string name="type.railway.subway_entrance.lisboa">地铁出入口</string>
-	<string name="type.railway.subway_entrance.lisbon">地铁出入口</string>
 	<string name="type.railway.subway_entrance.london">地铁出入口</string>
 	<string name="type.railway.subway_entrance.lyon">地铁出入口</string>
 	<string name="type.railway.subway_entrance.madrid">地铁出入口</string>

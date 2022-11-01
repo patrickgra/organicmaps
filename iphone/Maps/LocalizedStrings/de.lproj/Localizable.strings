@@ -874,7 +874,8 @@
 
 "transliteration_title" = "Transliteration ins Lateinische";
 
-"core_exit" = "Beenden";
+/* Subway exits for public transport marks on the map */
+"core_exit" = "Ausgang";
 
 "routing_add_start_point" = "Fügen Sie einen Startpunkt hinzu, um eine Route zu planen";
 
@@ -2173,7 +2174,11 @@
 
 "type.historic.fort" = "Festung";
 
+"type.historic.gallows" = "Galgen";
+
 "type.historic.memorial" = "Denkmal";
+
+"type.historic.memorial.cross" = "Gedenkkreuz";
 
 "type.historic.memorial.plaque" = "Gedenktafel";
 
@@ -2181,7 +2186,13 @@
 
 "type.historic.memorial.statue" = "Statue";
 
+"type.historic.memorial.stolperstein" = "Stolperstein";
+
+"type.historic.memorial.war_memorial" = "Kriegerdenkmal";
+
 "type.historic.monument" = "Monument";
+
+"type.historic.pillory" = "Pranger";
 
 "type.historic.ruins" = "Ruine";
 
@@ -3025,8 +3036,6 @@
 
 "type.railway.subway_entrance.lisboa" = "U-Bahn-Eingang";
 
-"type.railway.subway_entrance.lisbon" = "U-Bahn-Eingang";
-
 "type.railway.subway_entrance.london" = "U-Bahn-Eingang";
 
 "type.railway.subway_entrance.lyon" = "U-Bahn-Eingang";
@@ -3315,7 +3324,7 @@
 
 "type.shop.art" = "Kunstgeschäft";
 
-"type.shop.baby_goods" = "Kinderladen";
+"type.shop.baby_goods" = "Babybedarf";
 
 "type.shop.bag" = "Taschen Shop";
 

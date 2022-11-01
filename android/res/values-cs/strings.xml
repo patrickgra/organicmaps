@@ -507,6 +507,7 @@
 	<string name="prefs_languages_information_off_link">Více informací najdete v tomto návodu.</string>
 	<string name="transliteration_title">Přepis do latinky</string>
 	<string name="learn_more">Zjistit více</string>
+	<!-- Subway exits for public transport marks on the map -->
 	<string name="core_exit">Ukončit</string>
 	<string name="routing_add_start_point">Zadejte výchozí bod pro plánování trasy</string>
 	<string name="routing_add_finish_point">Zadejte cílový bod pro plánování trasy</string>
@@ -1086,11 +1087,16 @@
 	<string name="type.historic.castle.shiro">Japonský hrad</string>
 	<string name="type.historic.castle.stately">Zámek</string>
 	<string name="type.historic.city_gate">Městská brána</string>
+	<string name="type.historic.gallows">Šibenice</string>
 	<string name="type.historic.memorial">Pomník</string>
+	<string name="type.historic.memorial.cross">Pamětní kříž</string>
 	<string name="type.historic.memorial.plaque">Pomník</string>
 	<string name="type.historic.memorial.sculpture">Pomník</string>
 	<string name="type.historic.memorial.statue">Pomník</string>
+	<string name="type.historic.memorial.stolperstein">Stolperstein</string>
+	<string name="type.historic.memorial.war_memorial">Válečný památník</string>
 	<string name="type.historic.monument">Zajímavost</string>
+	<string name="type.historic.pillory">Pranýř</string>
 	<string name="type.historic.ruins">Ruiny</string>
 	<string name="type.historic.ship">Pamětihodnost</string>
 	<string name="type.historic.tomb">Pamětihodnost</string>
@@ -1393,7 +1399,6 @@
 	<string name="type.railway.subway_entrance.lille">Vchod do podchodu</string>
 	<string name="type.railway.subway_entrance.lima">Vchod do podchodu</string>
 	<string name="type.railway.subway_entrance.lisboa">Vchod do podchodu</string>
-	<string name="type.railway.subway_entrance.lisbon">Vchod do podchodu</string>
 	<string name="type.railway.subway_entrance.london">Vchod do podchodu</string>
 	<string name="type.railway.subway_entrance.lyon">Vchod do podchodu</string>
 	<string name="type.railway.subway_entrance.madrid">Vchod do podchodu</string>

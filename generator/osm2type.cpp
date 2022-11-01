@@ -468,18 +468,15 @@ string DetermineSurface(OsmElement * p)
   if (!isHighway || (surface.empty() && smoothness.empty()))
     return {};
 
-  // According to this:
-  // https://wiki.openstreetmap.org/wiki/Tag:surface=compacted
-  // Surfaces by quality: asphalt, concrete, paving stones, compacted.
+  // According to https://wiki.openstreetmap.org/wiki/Key:surface
   static base::StringIL pavedSurfaces = {
-      "asphalt",  "cobblestone",    "cobblestone:flattened", "chipseal", "compacted",
-      "concrete", "concrete:lanes", "concrete:plates", "fine_gravel", "metal",
-      "paved", "paving_stones", "pebblestone", "sett", "unhewn_cobblestone", "wood"
+      "asphalt",  "cobblestone", "chipseal", "concrete", "concrete:lanes", "concrete:plates",
+      "metal", "paved", "paving_stones", "sett", "unhewn_cobblestone", "wood"
   };
 
   static base::StringIL badSurfaces = {
-      "cobblestone", "dirt", "earth", "fine_gravel",  "grass", "gravel", "ground", "metal",
-      "mud", "pebblestone", "sand", "sett", "snow", "unhewn_cobblestone", "wood", "woodchips"
+      "cobblestone", "dirt", "earth", "grass", "gravel", "ground", "metal", "mud",
+      "pebblestone", "sand", "sett", "snow", "unhewn_cobblestone", "wood", "woodchips"
   };
 
   static base::StringIL badSmoothness = {
@@ -577,43 +574,6 @@ void PreprocessElement(OsmElement * p)
       break;
     }
   }
-
-  // Merge attraction and memorial types to predefined set of values
-  p->UpdateTag("artwork_type", [](string & value) {
-    if (value.empty())
-      return;
-    if (value == "mural" || value == "graffiti" || value == "azulejo" || value == "tilework")
-      value = "painting";
-    else if (value == "stone" || value == "installation")
-      value = "sculpture";
-    else if (value == "bust")
-      value = "statue";
-  });
-
-  string const & memorialType = p->GetTag("memorial:type");
-  p->UpdateTag("memorial", [&memorialType](string & value) {
-    if (value.empty())
-    {
-      if (memorialType.empty())
-        return;
-      else
-        value = memorialType;
-    }
-
-    if (value == "blue_plaque" || value == "stolperstein")
-    {
-      value = "plaque";
-    }
-    else if (value == "war_memorial" || value == "stele" || value == "obelisk" ||
-             value == "stone" || value == "cross")
-    {
-      value = "sculpture";
-    }
-    else if (value == "bust" || value == "person")
-    {
-      value = "statue";
-    }
-  });
 
   p->UpdateTag("attraction", [](string & value) {
     // "specified" is a special value which means we have the "attraction" tag,

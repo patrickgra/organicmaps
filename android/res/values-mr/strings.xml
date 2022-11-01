@@ -513,6 +513,7 @@
 	<string name="prefs_languages_information_off_link">अधिक माहितीसाठी कृपया ही मार्गदर्शिका पहा.</string>
 	<string name="transliteration_title">लॅटिनमध्ये (इंग्रजीची अक्षरे) लिप्यंतरण</string>
 	<string name="learn_more">अधिक जाणून घ्या</string>
+	<!-- Subway exits for public transport marks on the map -->
 	<string name="core_exit">बाहेर पडा</string>
 	<string name="routing_add_start_point">मार्ग नियोजित करण्यासाठी प्रारंभ बिंदू जोडा</string>
 	<string name="routing_add_finish_point">मार्ग नियोजित करण्यासाठी इष्टस्थान जोडा</string>
@@ -1090,10 +1091,16 @@
 	<string name="type.historic.city_gate">शहराचा दरवाजा</string>
 	<string name="type.historic.citywalls">शहराची भिंत</string>
 	<string name="type.historic.fort">दुर्ग</string>
+	<string name="type.historic.gallows">फाशी</string>
 	<string name="type.historic.memorial">स्मारक</string>
+	<string name="type.historic.memorial.cross">मेमोरियल क्रॉस</string>
+	<string name="type.historic.memorial.plaque">फलक</string>
 	<string name="type.historic.memorial.sculpture">शिल्प</string>
 	<string name="type.historic.memorial.statue">पुतळा</string>
+	<string name="type.historic.memorial.stolperstein">अडथळा</string>
+	<string name="type.historic.memorial.war_memorial">युद्ध स्मारक</string>
 	<string name="type.historic.monument">स्मारक</string>
+	<string name="type.historic.pillory">पिलोरी</string>
 	<string name="type.historic.ruins">अवशेष</string>
 	<string name="type.historic.ship">जहाज</string>
 	<string name="type.historic.tomb">थडगे</string>
@@ -1466,7 +1473,6 @@
 	<string name="type.railway.subway_entrance.lille">भुयारी प्रवेशद्वार</string>
 	<string name="type.railway.subway_entrance.lima">भुयारी प्रवेशद्वार</string>
 	<string name="type.railway.subway_entrance.lisboa">भुयारी प्रवेशद्वार</string>
-	<string name="type.railway.subway_entrance.lisbon">भुयारी प्रवेशद्वार</string>
 	<string name="type.railway.subway_entrance.london">भुयारी प्रवेशद्वार</string>
 	<string name="type.railway.subway_entrance.lyon">भुयारी प्रवेशद्वार</string>
 	<string name="type.railway.subway_entrance.madrid">भुयारी प्रवेशद्वार</string>

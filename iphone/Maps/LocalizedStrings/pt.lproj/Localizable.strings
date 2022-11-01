@@ -874,7 +874,8 @@
 
 "transliteration_title" = "Transliteração para o latim";
 
-"core_exit" = "Sair";
+/* Subway exits for public transport marks on the map */
+"core_exit" = "Saída";
 
 "routing_add_start_point" = "Adicionar ponto de partida para planear uma rota";
 
@@ -1456,7 +1457,7 @@
 
 "type.recycling.green_waste" = "Green/Organic Waste";
 
-"type.recycling.cartons" = "Bewerage Cartons";
+"type.recycling.cartons" = "Beverage Cartons";
 
 "type.amenity.restaurant" = "Restaurante";
 
@@ -1502,7 +1503,7 @@
 
 "type.amenity.vending_machine.excrement_bags" = "Excrement Bags Dispenser";
 
-"type.amenity.parcel_locker" = "Parcel Locker";
+"type.amenity.parcel_locker" = "Cacifo";
 
 "type.amenity.vending_machine.fuel" = "Fuel Dispenser";
 
@@ -2173,7 +2174,11 @@
 
 "type.historic.fort" = "Forte histórico";
 
+"type.historic.gallows" = "Forca";
+
 "type.historic.memorial" = "Memorial";
+
+"type.historic.memorial.cross" = "Cruz memorial";
 
 "type.historic.memorial.plaque" = "Placa comemorativa";
 
@@ -2181,7 +2186,13 @@
 
 "type.historic.memorial.statue" = "Estátua memorial";
 
+"type.historic.memorial.stolperstein" = "Stolperstein";
+
+"type.historic.memorial.war_memorial" = "Memorial de guerra";
+
 "type.historic.monument" = "Monumento";
+
+"type.historic.pillory" = "Pelourinho";
 
 "type.historic.ruins" = "Ruínas";
 
@@ -3025,8 +3036,6 @@
 
 "type.railway.subway_entrance.lisboa" = "Entrada do metro";
 
-"type.railway.subway_entrance.lisbon" = "Entrada do metro";
-
 "type.railway.subway_entrance.london" = "Entrada do metro";
 
 "type.railway.subway_entrance.lyon" = "Entrada do metro";
@@ -3213,7 +3222,7 @@
 
 "type.shop.dry_cleaning" = "Lavagem a seco";
 
-"type.shop.electronics" = "Loja de electrónica de consumo";
+"type.shop.electronics" = "Loja de eletrónica de consumo";
 
 "type.shop.erotic" = "Loja de artigos eróticos";
 
