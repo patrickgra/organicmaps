@@ -513,6 +513,12 @@
 
 "clear_search" = "Zoekgeschiedenis wissen";
 
+/* Place Page link to Wikipedia article (if map object has it). */
+"read_in_wikipedia" = "Wikipedia";
+
+/* Place Page link to Wikimedia Commons. */
+"wikimedia_commons" = "Wikimedia Commons";
+
 "p2p_your_location" = "Uw locatie";
 
 "p2p_start" = "Beginnen";
@@ -2200,7 +2206,7 @@
 
 "type.historic.tomb" = "Graftombe";
 
-"type.historic.wayside_cross" = "Kruis";
+"type.historic.wayside_cross" = "Wegkruis";
 
 "type.historic.wayside_shrine" = "Kruisbeeld";
 
