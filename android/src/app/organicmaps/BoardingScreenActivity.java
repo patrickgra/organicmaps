@@ -100,7 +100,9 @@ public class BoardingScreenActivity extends AppCompatActivity {
         layouts = new int[]{
                 R.layout.bs_screen1,
                 R.layout.bs_screen2,
-                R.layout.bs_screen3};
+                R.layout.bs_screen3,
+                R.layout.bs_screen4,
+                R.layout.bs_screen5};
     }
 
     private int getItem(int i){

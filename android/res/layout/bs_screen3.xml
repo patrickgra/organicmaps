@@ -22,12 +22,12 @@
             android:text="@string/bs_3_title"
             android:textColor="@android:color/white"
             android:textSize="@dimen/bs_title"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/bs_title_margin" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
             android:paddingLeft="@dimen/bs_desc_padding"
             android:paddingRight="@dimen/bs_desc_padding"
             android:text="@string/bs_3_desc"
