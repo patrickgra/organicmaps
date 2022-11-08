@@ -513,6 +513,12 @@
 
 "clear_search" = "پاک کردن سابقه جست وجو ها";
 
+/* Place Page link to Wikipedia article (if map object has it). */
+"read_in_wikipedia" = "ویکی پدیا";
+
+/* Place Page link to Wikimedia Commons. */
+"wikimedia_commons" = "Wikimedia Commons";
+
 "p2p_your_location" = "موقعیت شما";
 
 "p2p_start" = "شروع";
@@ -1527,7 +1533,7 @@
 
 "type.barrier.chain" = "Chain";
 
-"type.barrier.city_wall" = "City Wall";
+"type.barrier.city_wall" = "دیوار شهر";
 
 "type.barrier.cycle_barrier" = "Cycle Barrier";
 
@@ -2138,13 +2144,13 @@
 
 /********** Types: Historic **********/
 
-"type.historic" = "Historic";
+"type.historic" = "شیء تاریخی";
 
 "type.historic.archaeological_site" = "گردشگری";
 
-"type.historic.battlefield" = "Battlefield";
+"type.historic.battlefield" = "میدان جنگ";
 
-"type.historic.boundary_stone" = "Boundary Stone";
+"type.historic.boundary_stone" = "نشانگر مرز";
 
 "type.historic.castle" = "قلعه";
 
@@ -2170,9 +2176,9 @@
 
 "type.historic.city_gate" = "دروازه شهر";
 
-"type.historic.citywalls" = "City Wall";
+"type.historic.citywalls" = "دیوار شهر";
 
-"type.historic.fort" = "Fort";
+"type.historic.fort" = "دژ";
 
 "type.historic.gallows" = "چوبه دار";
 
@@ -2200,9 +2206,9 @@
 
 "type.historic.tomb" = "گردشگری";
 
-"type.historic.wayside_cross" = "Christian Cross";
+"type.historic.wayside_cross" = "صلیب کنار راه";
 
-"type.historic.wayside_shrine" = "Shrine";
+"type.historic.wayside_shrine" = "حرم کنار راه";
 
 "type.hwtag" = "hwtag";
 

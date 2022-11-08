@@ -513,6 +513,12 @@
 
 "clear_search" = "Șterge istoricul căutărilor";
 
+/* Place Page link to Wikipedia article (if map object has it). */
+"read_in_wikipedia" = "Wikipedia";
+
+/* Place Page link to Wikimedia Commons. */
+"wikimedia_commons" = "Wikimedia Commons";
+
 "p2p_your_location" = "Poziția ta";
 
 "p2p_start" = "Pornește";
@@ -1527,7 +1533,7 @@
 
 "type.barrier.chain" = "Chain";
 
-"type.barrier.city_wall" = "City Wall";
+"type.barrier.city_wall" = "Zidurile orașului";
 
 "type.barrier.cycle_barrier" = "Cycle Barrier";
 
@@ -2138,13 +2144,13 @@
 
 /********** Types: Historic **********/
 
-"type.historic" = "Historic";
+"type.historic" = "Obiect istoric";
 
 "type.historic.archaeological_site" = "Sit arheologic";
 
-"type.historic.battlefield" = "Battlefield";
+"type.historic.battlefield" = "Câmpul de luptă";
 
-"type.historic.boundary_stone" = "Boundary Stone";
+"type.historic.boundary_stone" = "Piatră de hotar";
 
 "type.historic.castle" = "Castel";
 
@@ -2170,7 +2176,7 @@
 
 "type.historic.city_gate" = "Poarta orașului";
 
-"type.historic.citywalls" = "City Wall";
+"type.historic.citywalls" = "Zidurile orașului";
 
 "type.historic.fort" = "Fort";
 
@@ -2196,13 +2202,13 @@
 
 "type.historic.ruins" = "Ruine";
 
-"type.historic.ship" = "Obiective turistice";
+"type.historic.ship" = "Navă";
 
-"type.historic.tomb" = "Obiective turistice";
+"type.historic.tomb" = "Mormânt";
 
-"type.historic.wayside_cross" = "Christian Cross";
+"type.historic.wayside_cross" = "Troiță";
 
-"type.historic.wayside_shrine" = "Shrine";
+"type.historic.wayside_shrine" = "Altarul de la marginea drumului";
 
 "type.hwtag" = "hwtag";
 

@@ -513,6 +513,12 @@
 
 "clear_search" = "Suchverlauf löschen";
 
+/* Place Page link to Wikipedia article (if map object has it). */
+"read_in_wikipedia" = "Wikipedia";
+
+/* Place Page link to Wikimedia Commons. */
+"wikimedia_commons" = "Wikimedia Commons";
+
 "p2p_your_location" = "Ihr Standort";
 
 "p2p_start" = "Start";
@@ -2172,7 +2178,7 @@
 
 "type.historic.citywalls" = "Stadtmauer";
 
-"type.historic.fort" = "Festung";
+"type.historic.fort" = "Fort";
 
 "type.historic.gallows" = "Galgen";
 
