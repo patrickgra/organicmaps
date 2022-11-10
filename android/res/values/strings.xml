@@ -1954,12 +1954,12 @@
 	<string name="hello_first_fragment">Hello first fragment</string>
 	<string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 
-	<string name="skip">Skip</string>
+	<string name="skip">Überspringen</string>
 	<string name="start">Start</string>
-	<string name="next">Next</string>
+	<string name="next">Weiter</string>
 
 	<string name="bs_1_title">Ein Ziel suchen</string>
-	<string name="bs_1_desc">Hier öffnest du die Suche. Gebe in die Suchzeile ein wonach du suchst und wähle danach einen der Vorschläge aus.</string>
+	<string name="bs_1_desc">Hier öffnest du die Suche. Gebe in die Suchzeile ein, wonach du suchst, und wähle danach einen der Vorschläge aus.</string>
 
 	<string name="bs_2_title">Zum Ziel navigieren</string>
 	<string name="bs_2_desc">Drücke hier, um den gewünschten Ort als Ziel deiner Route zu wählen.</string>
@@ -1974,5 +1974,10 @@
 	<string name="bs_5_desc">Drücke hier, um das Favoriten Menü zu öffnen und deine Favoriten zu verwalten.</string>
 
 	<string name="title_boarding_activity">Boarding Activity</string>
+
+	<!-- Zeige beim nächsten Start den Boarding Screen -->
+	<string name="pref_boarding_screen">Boarding Screen</string>
+	<string name="boarding_screen_title">Erklärungen</string>
+	<string name="boarding_screen_summary">Zeige beim nächsten Start erneut die Erklärungen.</string>
 
 </resources>

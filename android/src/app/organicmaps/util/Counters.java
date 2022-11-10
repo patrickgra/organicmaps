@@ -51,6 +51,14 @@ public final class Counters
         .apply();
   }
 
+  public static void resetFirstStartDialogSeen(@NonNull Context context)
+  {
+    MwmApplication.prefs(context)
+            .edit()
+            .putBoolean(KEY_MISC_FIRST_START_DIALOG_SEEN, false)
+            .apply();
+  }
+
   public static void resetAppSessionCounters(@NonNull Context context)
   {
     MwmApplication.prefs(context).edit()

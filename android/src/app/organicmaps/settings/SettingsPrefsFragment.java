@@ -40,6 +40,8 @@ import app.organicmaps.util.UiUtils;
 import app.organicmaps.util.Utils;
 import app.organicmaps.util.log.LogsManager;
 
+import app.organicmaps.util.Counters;
+
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -345,6 +347,10 @@ public class SettingsPrefsFragment extends BaseXmlSettingsFragment
     else if (preference.getKey() != null && preference.getKey().equals(getString(R.string.pref_help)))
     {
       startActivity(new Intent(requireActivity(), HelpActivity.class));
+    }
+    else if (preference.getKey() != null && preference.getKey().equals(getString(R.string.pref_boarding_screen)))
+    {
+      Counters.resetFirstStartDialogSeen(requireContext());
     }
     return super.onPreferenceTreeClick(preference);
   }
