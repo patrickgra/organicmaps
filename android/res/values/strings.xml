@@ -1978,6 +1978,6 @@
 	<!-- Zeige beim nächsten Start den Boarding Screen -->
 	<string name="pref_boarding_screen">Boarding Screen</string>
 	<string name="boarding_screen_title">Erklärungen</string>
-	<string name="boarding_screen_summary">Zeige beim nächsten Start erneut die Erklärungen.</string>
+	<string name="boarding_screen_summary">Zeige die Erklärungen erneut.</string>
 
 </resources>

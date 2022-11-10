@@ -41,6 +41,7 @@ import app.organicmaps.util.Utils;
 import app.organicmaps.util.log.LogsManager;
 
 import app.organicmaps.util.Counters;
+import app.organicmaps.BoardingScreenActivity;
 
 import java.util.HashMap;
 import java.util.List;
@@ -351,6 +352,7 @@ public class SettingsPrefsFragment extends BaseXmlSettingsFragment
     else if (preference.getKey() != null && preference.getKey().equals(getString(R.string.pref_boarding_screen)))
     {
       Counters.resetFirstStartDialogSeen(requireContext());
+      startActivity(new Intent(requireActivity(), BoardingScreenActivity.class));
     }
     return super.onPreferenceTreeClick(preference);
   }
