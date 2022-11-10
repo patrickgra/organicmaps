@@ -276,13 +276,6 @@ public class SettingsPrefsFragment extends BaseXmlSettingsFragment
     initScreenSleepEnabledPrefsCallbacks();
     initShowOnLockScreenPrefsCallbacks();
     updateTts();
-    hidePreferences();
-  }
-
-  private void hidePreferences(){
-    PreferenceCategory general = findPreference(getString(R.string.pref_settings_general));
-    //general.removePreference(findPreference(getString(R.string.pref_enable_logging)));
-    mPreferenceScreen.removePreference(findPreference(getString(R.string.pref_osm_profile)));
   }
 
   private void initSpeedCamerasPrefs()
