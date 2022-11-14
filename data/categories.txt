@@ -17,8 +17,8 @@
 # will also match historic-memorial-statue, historic-memorial-plaque, etc.
 #
 # Syntax:
-# @   - indicates the beginning of the group of searh terms translations
-# :   - used to separate the name of the language and translated search synonims.
+# @   - indicates the beginning of the group of search terms translations
+# :   - used to separate the name of the language and translated search synonyms.
 # |   - used to separate several categories/groups or translated synonyms.
 # 1-9 - digits in front of a synonym indicate the number of symbols that need to be
 #       typed in a search query to make this synonym appear in the list of suggestions.
@@ -515,14 +515,38 @@ fa:خود پرداز
 en:2RV Facilities|4Caravan|Vanlife|5Campervan|5Motorhome
 ar:منشآت للمنازل المتنقلة
 be:Для аўтадамоў|5Аўтадом|5Трэйлер|5Караван|Дом на колах
-fr:3Aménagements pour camping-car|caravane|mobile home
+bg:За RV
+cs:Pro RV
+da:Til RV
+de:Einrichtungen für Wohnmobile|4Wohnmobile
+el:Για RV
 es:Caravanas|Autocaravanas
+eu:Karabanak
+fa:RV ﯼﺍﺮﺑ
+fi:RV tilat
+fr:Aménagements pour camping-car|4caravane|mobile home
+he:םינאוורק רובע
+hu:RV számára
+id:Untuk RV
+ja:RV用
+ko:RV용
+it:Per camper
+nb:Bobilanlegg
+nl:Caravan faciliteiten|4Caravans|5Campers
 pl:Kamper
-ru:Для автодомов|5Автодом|5Трейлер|Дом на колёсах
+pt:Para trailers
+pt-BR:Para trailers
 ro:Pentru rulote|3Rulotă|RV
+ru:Для автодомов|5Автодом|5Трейлер|Дом на колёсах
+sk:Pre RV
+sv:För husbil
+sw:Kwa RV
+th:สำหรับ RV
 tr:4Karavan Tesisleri
 uk:Для автобудинків|5Автодім|5Автобудинок|5Трейлер|5Караван|Будинок на колесах
-nl:4Caravan faciliteiten|4Caravans|5Campers
+vi:Đối với RV
+zh-Hans:房车用
+zh-Hant:房車用
 
 amenity-atm|@atm
 en:money|U+1F3E7|U+1F4B2|U+1F4B3|U+1F4B4|U+1F4B5|U+1F4B6|U+1F4B7
@@ -4566,6 +4590,44 @@ uk:Медична лабораторія
 vi:Phòng thí nghiệm y tế
 zh-Hans:医学实验室
 zh-Hant:醫學實驗室
+
+healthcare-physiotherapist
+en:Physiotherapist
+ru:Физиотерапевт
+ar:اخصائي علاج طبيعي
+be:Фізіятэрапеўт
+bg:Физиотерапевт
+cs:Fyzioterapeut
+da:Fysioterapeut
+de:Physiotherapeut
+el:Φυσικοθεραπευτής
+es:Fisioterapeuta
+eu:Fisioterapeuta
+fa:فیزیوتراپیست
+fi:Fysioterapeutti
+fr:Physiothérapeute
+he:פיזיותרפיסט
+hu:Fizioterapeuta
+id:Fisioterapis
+it:Fisioterapista
+ja:理学療法士
+ko:물리치료사
+mr:फिजिओथेरपिस्ट
+nb:Fysioterapeut
+nl:Fysiotherapeut
+pl:Fizjoterapeuta
+pt:Fisioterapeuta
+pt-BR:Fisioterapeuta
+ro:Fizioterapeut
+sk:Fyzioterapeut
+sv:Fysioterapeut
+sw:Mtaalamu wa Physiotherapist
+th:นักกายภาพบำบัด
+tr:Fizyoterapist
+uk:Фізіотерапевт
+vi:Nhà vật lý trị liệu
+zh-Hans:物理治疗师
+zh-Hant:物理治療師
 
 amenity-hunting_stand
 en:Hunting Stand
