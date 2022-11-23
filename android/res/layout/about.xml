@@ -1,71 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+  <androidx.core.widget.NestedScrollView
+      android:id="@+id/content_frame"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
 
-    <androidx.core.widget.NestedScrollView
-        android:id="@+id/content_frame"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/margin_base"
+          android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="@dimen/margin_base_plus"
+            android:src="@mipmap/ic_launcher" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:orientation="vertical">
+          <TextView
+              android:id="@+id/version"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center_horizontal"
+              android:textAppearance="@style/MwmTextAppearance.Body2"
+              android:textIsSelectable="true"
+              android:selectAllOnFocus="true"
+              tools:text="2021.10.15-15-Google" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
+          <TextView
+              android:id="@+id/data_version"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center_horizontal"
+              android:textAppearance="@style/MwmTextAppearance.Body2"
+              android:textIsSelectable="true"
+              android:selectAllOnFocus="true"
+              tools:text="OpenStreetMap Data: 3 January 2022" />
+        </LinearLayout>
+      </LinearLayout>
+
+      <TextView android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/margin_base"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginStart="@dimen/margin_base_plus"
-                    android:src="@mipmap/ic_launcher" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:id="@+id/version"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center_horizontal"
-                        android:selectAllOnFocus="true"
-                        android:textAppearance="@style/MwmTextAppearance.Body2"
-                        android:textIsSelectable="true"
-                        tools:text="2021.10.15-15-Google" />
-
-                    <TextView
-                        android:id="@+id/data_version"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center_horizontal"
-                        android:selectAllOnFocus="true"
-                        android:textAppearance="@style/MwmTextAppearance.Body2"
-                        android:textIsSelectable="true"
-                        tools:text="OpenStreetMap Data: 3 January 2022" />
-                </LinearLayout>
-            </LinearLayout>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/margin_base"
-                android:layout_marginTop="@dimen/margin_base"
-                android:layout_marginEnd="@dimen/margin_base"
-                android:layout_marginBottom="@dimen/margin_base"
                 android:gravity="center_horizontal"
-                android:text="@string/about_description"
-                android:textAppearance="@style/MwmTextAppearance.Body1" />
+                android:layout_marginTop="@dimen/margin_base"
+                android:layout_marginBottom="@dimen/margin_base"
+                android:layout_marginStart="@dimen/margin_base"
+                android:layout_marginEnd="@dimen/margin_base"
+                android:textAppearance="@style/MwmTextAppearance.Body1"
+                android:text="@string/about_description"/>
 
       <TextView android:id="@+id/news"
           style="@style/MwmWidget.TextView.Item"
@@ -116,78 +111,70 @@
                 android:visibility="gone"
                 app:drawableStartCompat="@drawable/ic_telegram" />
 
-            <TextView
-                android:id="@+id/github"
+      <TextView android:id="@+id/github"
                 style="@style/MwmWidget.TextView.Item"
                 android:text="@string/github"
                 android:visibility="gone"
                 app:drawableStartCompat="@drawable/ic_github" />
 
-            <TextView
-                android:id="@+id/web"
+      <TextView android:id="@+id/web"
                 style="@style/MwmWidget.TextView.Item"
                 android:text="@string/website"
                 android:visibility="gone"
                 app:drawableStartCompat="@drawable/ic_website" />
 
-            <TextView
-                android:id="@+id/email"
+      <TextView android:id="@+id/email"
                 style="@style/MwmWidget.TextView.Item"
                 android:text="@string/email"
                 android:visibility="gone"
                 app:drawableStartCompat="@drawable/ic_email" />
 
-            <TextView
-                android:id="@+id/facebook"
+      <TextView android:id="@+id/matrix"
+                style="@style/MwmWidget.TextView.Item"
+                android:text="@string/matrix"
+                android:visibility="gone"
+                app:drawableStartCompat="@drawable/ic_matrix"/>
+
+      <TextView android:id="@+id/mastodon"
+                style="@style/MwmWidget.TextView.Item"
+                android:text="@string/mastodon"
+                app:drawableStartCompat="@drawable/ic_mastodon"/>
+
+      <TextView android:id="@+id/facebook"
                 style="@style/MwmWidget.TextView.Item"
                 android:text="@string/facebook"
                 android:visibility="gone"
                 app:drawableStartCompat="@drawable/ic_facebook" />
 
-            <TextView
-                android:id="@+id/twitter"
+      <TextView android:id="@+id/twitter"
                 style="@style/MwmWidget.TextView.Item"
                 android:text="@string/twitter"
                 android:visibility="gone"
                 app:drawableStartCompat="@drawable/ic_twitter" />
 
-            <TextView
-                android:id="@+id/instagram"
+      <TextView android:id="@+id/instagram"
                 style="@style/MwmWidget.TextView.Item"
                 android:text="@string/instagram"
                 android:visibility="gone"
                 app:drawableStartCompat="@drawable/ic_instagram" />
 
-            <TextView
-                android:id="@+id/matrix"
-                style="@style/MwmWidget.TextView.Item"
-                android:text="@string/matrix"
-                android:visibility="gone"
-                app:drawableStartCompat="@drawable/ic_matrix" />
-
-            <TextView
-                android:id="@+id/openstreetmap"
+      <TextView android:id="@+id/openstreetmap"
                 style="@style/MwmWidget.TextView.Item"
                 android:text="@string/openstreetmap"
                 android:visibility="gone"
                 app:drawableStartCompat="@drawable/ic_openstreetmap" />
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginTop="@dimen/margin_quarter"
-                android:layout_marginBottom="@dimen/margin_quarter"
-                android:background="?dividerHorizontal"
-                android:visibility="gone" />
-
-            <TextView
-                android:id="@+id/privacy_policy"
+      <View android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/margin_quarter"
+            android:layout_marginBottom="@dimen/margin_quarter"
+            android:background="?dividerHorizontal"
+            android:visibility="gone"/>
+      <TextView android:id="@+id/privacy_policy"
                 style="@style/MwmWidget.TextView.Item"
                 android:text="@string/privacy_policy"
-                android:visibility="gone" />
-
-            <TextView
-                android:id="@+id/term_of_use_link"
+                android:visibility="gone"/>
+      <TextView android:id="@+id/term_of_use_link"
                 style="@style/MwmWidget.TextView.Item"
                 android:text="@string/terms_of_use"
                 android:visibility="gone" />
@@ -195,9 +182,9 @@
             <TextView
                 android:id="@+id/copyright"
                 style="@style/MwmWidget.TextView.Item"
-                android:text="@string/copyright" />
-        </LinearLayout>
-    </androidx.core.widget.NestedScrollView>
+                android:text="@string/copyright"/>
+    </LinearLayout>
+  </androidx.core.widget.NestedScrollView>
 
-    <include layout="@layout/shadow_top" />
+  <include layout="@layout/shadow_top"/>
 </FrameLayout>
