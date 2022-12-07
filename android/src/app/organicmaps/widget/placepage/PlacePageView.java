@@ -1231,7 +1231,7 @@ public class PlacePageView extends NestedScrollViewClickFixed
     mButtons.setItems(buttons);
   }
 
-  public void refreshLocation(Location l)
+  public void refreshLocation(@NonNull Location l)
   {
     if (mMapObject == null)
     {

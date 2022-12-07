@@ -125,7 +125,7 @@ jobs:
       - name: Checkout world_feed_integration_tests_data
         uses: actions/checkout@v3
         with:
-          repository: omapsapp/world_feed_integration_tests_data
+          repository: organicmaps/world_feed_integration_tests_data
           path: data/world_feed_integration_tests_data
 
       - name: Tests
