@@ -23,7 +23,7 @@
 	<string name="core_my_position">La mia posizione</string>
 	<!-- Update maps later/Buy pro version later button text -->
 	<string name="later">Più tardi</string>
-	<!-- View and button titles for accessibility -->
+	<!-- View and button titles for accessibility, please also edit it in iphone/plist.txt -->
 	<string name="search">Cerca</string>
 	<!-- Search box placeholder text; Used when searching on the map itself, not when searching for a map -->
 	<string name="search_map">Cerca sulla mappa</string>
@@ -60,7 +60,7 @@
 	<string name="bookmark_color">Colore Luogo preferito</string>
 	<!-- Add Bookmark list dialog - hint when the list name is empty -->
 	<string name="bookmark_set_name">Nome dell\'elenco</string>
-	<!-- "Bookmarks" dialog title -->
+	<!-- "Bookmarks" dialog title, please also edit it in iphone/plist.txt -->
 	<string name="bookmarks">Luoghi preferiti</string>
 	<!-- Default bookmark list name -->
 	<string name="core_my_places">I miei luoghi</string>
@@ -130,6 +130,8 @@
 	<string name="recycling">Riciclo</string>
 	<!-- Search category for water; any changes should be duplicated in categories.txt @water! also used to sort bookmarks by type -->
 	<string name="water">Acqua</string>
+	<!-- Search category for RV facilities; any changes should be duplicated in categories.txt @rv! -->
+	<string name="rv">Per camper</string>
 	<!-- Notes field in Bookmarks view -->
 	<string name="description">Informazioni</string>
 	<!-- Email Subject when sharing bookmark list -->
@@ -690,6 +692,8 @@
 	<string name="enable_show_on_lock_screen_description">Quando è abilitata, non è necessario sbloccare il dispositivo ogni volta mentre l\'app è in esecuzione.</string>
 	<!-- OpenStreetMap text on splash screen -->
 	<string name="splash_subtitle">Dati della mappa da OpenStreetMap</string>
+	<!-- Translated Organic Maps site, add new translations here: https://github.com/organicmaps/organicmaps.github.io/tree/master/content -->
+	<string name="translated_om_site_url">https://organicmaps.app/it/</string>
 
 	<!-- SECTION: Types -->
 	<string name="type.aerialway">Impianto a fune</string>
@@ -986,6 +990,7 @@
 	<string name="type.emergency.phone">Telefono di emergenza</string>
 	<string name="type.entrance">Ingresso</string>
 	<string name="type.healthcare.laboratory">Laboratorio Medico</string>
+	<string name="type.healthcare.physiotherapist">Fisioterapista</string>
 
 	<!-- SECTION: Types: Roads -->
 	<string name="type.highway">Via</string>

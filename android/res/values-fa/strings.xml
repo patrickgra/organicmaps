@@ -12,7 +12,7 @@
 	<string name="delete">حذف</string>
 	<string name="download_maps">دانلود نقشه ها</string>
 	<!-- Settings/Downloader - info for country when download fails -->
-	<string name="download_has_failed">دانلود ناموفق بود . برای تلاش مجدد لمس کنید</string>
+	<string name="download_has_failed">دانلود ناموفق بود. برای تلاش مجدد لمس کنید</string>
 	<!-- Settings/Downloader - info for country which started downloading -->
 	<string name="downloading">درحال دانلود</string>
 	<!-- Choose measurement on first launch alert - choose metric system button -->
@@ -26,7 +26,7 @@
 	<string name="core_my_position">مکان من</string>
 	<!-- Update maps later/Buy pro version later button text -->
 	<string name="later">بعداً</string>
-	<!-- View and button titles for accessibility -->
+	<!-- View and button titles for accessibility, please also edit it in iphone/plist.txt -->
 	<string name="search">جست‌وجو</string>
 	<!-- Search box placeholder text; Used when searching on the map itself, not when searching for a map -->
 	<string name="search_map">جست‌وجوی نقشه</string>
@@ -59,7 +59,7 @@
 	<string name="add_new_set">اضافه کردن مجموعه جدید</string>
 	<!-- Bookmark Color dialog title -->
 	<string name="bookmark_color">رنگ نشانه</string>
-	<!-- "Bookmarks" dialog title -->
+	<!-- "Bookmarks" dialog title, please also edit it in iphone/plist.txt -->
 	<string name="bookmarks">نشانه ها</string>
 	<!-- Default bookmark list name -->
 	<string name="core_my_places">مکان من</string>
@@ -129,6 +129,8 @@
 	<string name="recycling">بازیافت</string>
 	<!-- Search category for water; any changes should be duplicated in categories.txt @water! also used to sort bookmarks by type -->
 	<string name="water">اب</string>
+	<!-- Search category for RV facilities; any changes should be duplicated in categories.txt @rv! -->
+	<string name="rv">RV ﯼﺍﺮﺑ</string>
 	<!-- Notes field in Bookmarks view -->
 	<string name="description">یادداشت ها</string>
 	<!-- message title of loading file -->
@@ -150,7 +152,7 @@
 	<!-- Share by email button text, also used in editor and About. -->
 	<string name="email">ایمیل</string>
 	<!-- Text for message when used successfully copied something -->
-	<string name="copied_to_clipboard">کپی در کلیپ برد :%1$s</string>
+	<string name="copied_to_clipboard">کپی در کلیپ برد: %1$s</string>
 	<!-- Used for bookmark editing -->
 	<string name="done">انجام شد</string>
 	<!-- Data version in «About» screen, %@ is replaced by a local, human readable date. -->
@@ -662,7 +664,7 @@
 	<string name="enable_screen_sleep_description">درصورت فعال بودن ، بعد از یک دوره عدم فعالیت به صفحه اجازه خواب داده می شود.</string>
 	<!-- OpenStreetMap text on splash screen -->
 	<string name="splash_subtitle">OpenStreetMap ﺯﺍ ﻪﺸﻘﻧ ﯼﺎﻫ ﻩﺩﺍﺩ</string>
-	<!-- Telegram group url for the help page -->
+	<!-- Telegram group url for the "?" About page -->
 	<string name="telegram_url">https://t.me/OrganicMapsIR</string>
 
 	<!-- SECTION: Types -->
@@ -825,6 +827,7 @@
 	<string name="type.emergency.phone">تلفن اضطراری</string>
 	<string name="type.entrance">ورودی</string>
 	<string name="type.healthcare.laboratory">ﯽﮑﺷﺰﭘ ﻩﺎﮕﺸﯾﺎﻣﺯﺁ</string>
+	<string name="type.healthcare.physiotherapist">فیزیوتراپیست</string>
 
 	<!-- SECTION: Types: Roads -->
 	<!-- These translations are used for all type.highway.*.bridge. -->

@@ -35,7 +35,7 @@
 /* Update maps later/Buy pro version later button text */
 "later" = "Daha sonra";
 
-/* View and button titles for accessibility */
+/* View and button titles for accessibility, please also edit it in iphone/plist.txt */
 "search" = "Ara";
 
 /* Settings/Downloader - 3G download warning dialog confirm button */
@@ -71,7 +71,7 @@
 /* "Bookmark Lists" dialog title */
 "bookmark_sets" = "Yer İmi Listeleri";
 
-/* "Bookmarks" dialog title */
+/* "Bookmarks" dialog title, please also edit it in iphone/plist.txt */
 "bookmarks" = "Yer İmleri";
 
 /* Default bookmark list name */
@@ -274,6 +274,9 @@
 "matrix" = "[matrix]";
 
 /* Text in menu */
+"mastodon" = "Mastodon";
+
+/* Text in menu */
 "facebook" = "Facebook";
 
 /* Text in menu */
@@ -296,6 +299,9 @@
 
 /* Button in the main Help dialog */
 "faq" = "Sıkça Sorulan Sorular";
+
+/* Button in the main menu */
+"donate" = "Bağış yapın";
 
 /* Button in the main Help dialog */
 "how_to_support_us" = "Sizi nasıl destekleyebilirim?";
@@ -1221,11 +1227,14 @@
 /* edit track screen title */
 "track_title" = "Kayıt";
 
-/* Telegram group url for the help page */
+/* Telegram group url for the "?" About page */
 "telegram_url" = "https://t.me/OrganicMapsTR";
 
-/* Instagram account url for the help page */
+/* Instagram account url for the "?" About page */
 "instagram_url" = "https://www.instagram.com/organicmapstr";
+
+/* Translated Organic Maps site, add new translations here: https://github.com/organicmaps/organicmaps.github.io/tree/master/content */
+"translated_om_site_url" = "https://organicmaps.app/tr/";
 
 
 /********** Types **********/
@@ -1839,6 +1848,8 @@
 "type.entrance" = "Giriş";
 
 "type.healthcare.laboratory" = "Tıbbi Laboratuvar";
+
+"type.healthcare.physiotherapist" = "Fizyoterapist";
 
 
 /********** Types: Roads **********/
@@ -3248,7 +3259,7 @@
 
 "type.shop.greengrocer" = "Manav";
 
-"type.shop.grocery" = "Bakkal";
+"type.shop.grocery" = "Market";
 
 "type.shop.hairdresser" = "Kuaför";
 
@@ -3459,7 +3470,7 @@
 
 "type.tourism.attraction" = "Görülecek Yerler";
 
-"type.tourism.attraction.animal" = "Görülecek Yerler";
+"type.tourism.attraction.animal" = "Hayvanat bahçesi";
 
 "type.tourism.attraction.specified" = "Görülecek Yerler";
 
@@ -3503,11 +3514,11 @@
 
 "type.tourism.zoo" = "Hayvanat Bahçesi";
 
-"type.traffic_calming" = "Hız Kesici (Tümsek)";
+"type.traffic_calming" = "Hız Kesici (Kasis)";
 
-"type.traffic_calming.bump" = "Hız Kesici (Tümsek)";
+"type.traffic_calming.bump" = "Hız Kesici (Kasis)";
 
-"type.traffic_calming.hump" = "Hız Kesici (Tümsek)";
+"type.traffic_calming.hump" = "Hız Kesici (Kasis)";
 
 "type.waterway" = "Su Yolu";
 
@@ -3527,7 +3538,7 @@
 
 "type.waterway.drain.tunnel" = "Lağım";
 
-"type.waterway.lock_gate" = "Kilit Kapısı";
+"type.waterway.lock_gate" = "Eklüz Kapağı";
 
 "type.waterway.river" = "Nehir";
 
@@ -3563,7 +3574,7 @@
 
 "type.aerialway.rope_tow" = "Çekme Halatı";
 
-"type.aerialway.t.bar" = "T-bar Lift";
+"type.aerialway.t.bar" = "Kayakçı teleferiği";
 
 "type.piste_type" = "Kayakçı Taşıyıcı";
 

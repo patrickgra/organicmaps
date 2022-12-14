@@ -26,7 +26,7 @@
 	<string name="core_my_position">Моє місцезнаходження</string>
 	<!-- Update maps later/Buy pro version later button text -->
 	<string name="later">Не зараз</string>
-	<!-- View and button titles for accessibility -->
+	<!-- View and button titles for accessibility, please also edit it in iphone/plist.txt -->
 	<string name="search">Пошук</string>
 	<!-- Search box placeholder text; Used when searching on the map itself, not when searching for a map -->
 	<string name="search_map">Пошук на мапі</string>
@@ -63,7 +63,7 @@
 	<string name="bookmark_color">Колір мiтки</string>
 	<!-- Add Bookmark list dialog - hint when the list name is empty -->
 	<string name="bookmark_set_name">Назва списка мiток</string>
-	<!-- "Bookmarks" dialog title -->
+	<!-- "Bookmarks" dialog title, please also edit it in iphone/plist.txt -->
 	<string name="bookmarks">Мітки</string>
 	<!-- Default bookmark list name -->
 	<string name="core_my_places">Мої Мітки</string>
@@ -232,7 +232,7 @@
 	<!-- Button in the main Help dialog -->
 	<string name="faq">Питання та відповіді</string>
 	<!-- Button in the main menu -->
-	<string name="donate">Пожертвувати</string>
+	<string name="donate">Підтримати грошима</string>
 	<!-- Button in the main Help dialog -->
 	<string name="how_to_support_us">Як нас підтримати?</string>
 	<!-- Button in the main Help dialog -->
@@ -1001,6 +1001,7 @@
 	<string name="type.emergency.phone">Аварійний телефон</string>
 	<string name="type.entrance">Вхід</string>
 	<string name="type.healthcare.laboratory">Медична лабораторія</string>
+	<string name="type.healthcare.physiotherapist">Фізіотерапевт</string>
 
 	<!-- SECTION: Types: Roads -->
 	<string name="type.highway">Дорога</string>

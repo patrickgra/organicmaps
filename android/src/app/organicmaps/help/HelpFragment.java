@@ -17,12 +17,9 @@ import app.organicmaps.R;
 import app.organicmaps.base.BaseMwmFragment;
 import app.organicmaps.util.Config;
 import app.organicmaps.util.Constants;
+import app.organicmaps.util.DateUtils;
 import app.organicmaps.util.Graphics;
 import app.organicmaps.util.Utils;
-
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.Locale;
 
 public class HelpFragment extends BaseMwmFragment implements View.OnClickListener
 {
@@ -36,22 +33,6 @@ public class HelpFragment extends BaseMwmFragment implements View.OnClickListene
       Graphics.tint(view);
   }
 
-  // Converts 220131 to locale-dependent date (e.g. 31 January 2022),
-  private String localDate(long v)
-  {
-    final SimpleDateFormat format = new SimpleDateFormat("yyMMdd", Locale.getDefault());
-    final String strVersion = String.valueOf(v);
-    try {
-      final Date date = format.parse(strVersion);
-      if (date == null)
-        return strVersion;
-      return java.text.DateFormat.getDateInstance().format(date);
-    } catch (java.text.ParseException e) {
-      e.printStackTrace();
-      return strVersion;
-    }
-  }
-
   @Override
   public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState)
   {
@@ -62,7 +43,7 @@ public class HelpFragment extends BaseMwmFragment implements View.OnClickListene
         .setText(BuildConfig.VERSION_NAME);
 
     ((TextView) root.findViewById(R.id.data_version))
-        .setText(getString(R.string.data_version, localDate(Framework.nativeGetDataVersion())));
+        .setText(getString(R.string.data_version, DateUtils.getLocalDate(Framework.nativeGetDataVersion())));
 
     setupItem(R.id.news, true, root);
     setupItem(R.id.web, true, root);
@@ -73,6 +54,7 @@ public class HelpFragment extends BaseMwmFragment implements View.OnClickListene
     setupItem(R.id.facebook, false, root);
     setupItem(R.id.twitter, false, root);
     setupItem(R.id.matrix, true, root);
+    setupItem(R.id.mastodon, false, root);
     setupItem(R.id.openstreetmap, true, root);
     setupItem(R.id.faq, true, root);
     setupItem(R.id.report, true, root);
@@ -88,7 +70,10 @@ public class HelpFragment extends BaseMwmFragment implements View.OnClickListene
       setupItem(R.id.donate, true, root);
       setupItem(R.id.support_us, true, root);
     }
-    setupItem(R.id.rate, true, root);
+    if (BuildConfig.REVIEW_URL.isEmpty())
+      root.findViewById(R.id.rate).setVisibility(View.GONE);
+    else
+      setupItem(R.id.rate, true, root);
     setupItem(R.id.copyright, false, root);
     View termOfUseView = root.findViewById(R.id.term_of_use_link);
     View privacyPolicyView = root.findViewById(R.id.privacy_policy);
@@ -105,12 +90,12 @@ public class HelpFragment extends BaseMwmFragment implements View.OnClickListene
 
   private void onPrivacyPolicyClick()
   {
-    openLink(getResources().getString(R.string.privacy_policy_url));
+    openLink(getResources().getString(R.string.translated_om_site_url) + "policy/");
   }
 
   private void onTermOfUseClick()
   {
-    openLink(getResources().getString(R.string.terms_of_use_url));
+    openLink(getResources().getString(R.string.translated_om_site_url) + "terms/");
   }
 
   @Override
@@ -118,9 +103,9 @@ public class HelpFragment extends BaseMwmFragment implements View.OnClickListene
   {
     final int id = v.getId();
     if (id == R.id.web)
-      openLink(Constants.Url.WEB_SITE);
+      openLink(getResources().getString(R.string.translated_om_site_url));
     else if (id == R.id.news)
-      openLink(Constants.Url.NEWS);
+      openLink(getResources().getString(R.string.translated_om_site_url) + "news/");
     else if (id == R.id.email)
       Utils.sendTo(requireContext(), BuildConfig.SUPPORT_MAIL, "Organic Maps");
     else if (id == R.id.github)
@@ -135,6 +120,8 @@ public class HelpFragment extends BaseMwmFragment implements View.OnClickListene
       openLink(Constants.Url.TWITTER);
     else if (id == R.id.matrix)
       openLink(Constants.Url.MATRIX);
+    else if (id == R.id.mastodon)
+      openLink(Constants.Url.MASTODON);
     else if (id == R.id.openstreetmap)
       openLink(Constants.Url.OSM_ABOUT);
     else if (id == R.id.faq)
@@ -142,7 +129,7 @@ public class HelpFragment extends BaseMwmFragment implements View.OnClickListene
     else if (id == R.id.report)
       Utils.sendBugReport(requireActivity(), "");
     else if (id == R.id.support_us)
-      openLink(Constants.Url.SUPPORT_US);
+      openLink(getResources().getString(R.string.translated_om_site_url) + "support-us/");
     else if (id == R.id.donate)
       openLink(mDonateUrl);
     else if (id == R.id.rate)

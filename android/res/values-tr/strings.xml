@@ -25,7 +25,7 @@
 	<string name="core_my_position">Konumum</string>
 	<!-- Update maps later/Buy pro version later button text -->
 	<string name="later">Daha sonra</string>
-	<!-- View and button titles for accessibility -->
+	<!-- View and button titles for accessibility, please also edit it in iphone/plist.txt -->
 	<string name="search">Ara</string>
 	<!-- Search box placeholder text; Used when searching on the map itself, not when searching for a map -->
 	<string name="search_map">Haritada Ara</string>
@@ -62,7 +62,7 @@
 	<string name="bookmark_color">Yer İmi Rengi</string>
 	<!-- Add Bookmark list dialog - hint when the list name is empty -->
 	<string name="bookmark_set_name">Yer İmi Listesi Adı</string>
-	<!-- "Bookmarks" dialog title -->
+	<!-- "Bookmarks" dialog title, please also edit it in iphone/plist.txt -->
 	<string name="bookmarks">Yer İmleri</string>
 	<!-- Default bookmark list name -->
 	<string name="core_my_places">Yerlerim</string>
@@ -236,7 +236,7 @@
 	<!-- Button in the main Help dialog -->
 	<string name="faq">Sıkça Sorulan Sorular</string>
 	<!-- Button in the main menu -->
-	<string name="donate">Bağış Yapın</string>
+	<string name="donate">Bağış yapın</string>
 	<!-- Button in the main Help dialog -->
 	<string name="how_to_support_us">Sizi nasıl destekleyebilirim?</string>
 	<!-- Button in the main Help dialog -->
@@ -711,10 +711,12 @@
 	<string name="enable_show_on_lock_screen_description">Etkinleştirildiğinde, uygulama çalışırken her seferinde cihazınızın kilidini açmanıza gerek kalmaz.</string>
 	<!-- OpenStreetMap text on splash screen -->
 	<string name="splash_subtitle">Harita verileri OpenStreetMap\'ten</string>
-	<!-- Telegram group url for the help page -->
+	<!-- Telegram group url for the "?" About page -->
 	<string name="telegram_url">https://t.me/OrganicMapsTR</string>
-	<!-- Instagram account url for the help page -->
+	<!-- Instagram account url for the "?" About page -->
 	<string name="instagram_url">https://www.instagram.com/organicmapstr</string>
+	<!-- Translated Organic Maps site, add new translations here: https://github.com/organicmaps/organicmaps.github.io/tree/master/content -->
+	<string name="translated_om_site_url">https://organicmaps.app/tr/</string>
 
 	<!-- SECTION: Types -->
 	<string name="type.aerialway">Teleferik</string>
@@ -1018,6 +1020,7 @@
 	<string name="type.emergency.phone">Acil Telefon</string>
 	<string name="type.entrance">Giriş</string>
 	<string name="type.healthcare.laboratory">Tıbbi Laboratuvar</string>
+	<string name="type.healthcare.physiotherapist">Fizyoterapist</string>
 
 	<!-- SECTION: Types: Roads -->
 	<string name="type.highway">Otoyol</string>
@@ -1719,7 +1722,7 @@
 	<string name="type.shop.garden_centre">Bahçe Mağazası</string>
 	<string name="type.shop.gift">Hediyelik Eşya Mağazası</string>
 	<string name="type.shop.greengrocer">Manav</string>
-	<string name="type.shop.grocery">Bakkal</string>
+	<string name="type.shop.grocery">Market</string>
 	<string name="type.shop.hairdresser">Kuaför</string>
 	<string name="type.shop.hardware">Donanım mağazası</string>
 	<string name="type.shop.health_food">Sağlık Gıda Mağazası</string>
@@ -1825,7 +1828,7 @@
 	<string name="type.tourism.artwork.sculpture">Heykel</string>
 	<string name="type.tourism.artwork.statue">Heykel</string>
 	<string name="type.tourism.attraction">Görülecek Yerler</string>
-	<string name="type.tourism.attraction.animal">Görülecek Yerler</string>
+	<string name="type.tourism.attraction.animal">Hayvanat bahçesi</string>
 	<string name="type.tourism.attraction.specified">Görülecek Yerler</string>
 	<string name="type.tourism.camp_site">Kamp Alanı</string>
 	<string name="type.tourism.caravan_site">Karavan Parkı</string>
@@ -1847,9 +1850,9 @@
 	<string name="type.tourism.viewpoint">Manzara</string>
 	<string name="type.tourism.wilderness_hut">Vahşi Doğa Kulübesi</string>
 	<string name="type.tourism.zoo">Hayvanat Bahçesi</string>
-	<string name="type.traffic_calming">Hız Kesici (Tümsek)</string>
-	<string name="type.traffic_calming.bump">Hız Kesici (Tümsek)</string>
-	<string name="type.traffic_calming.hump">Hız Kesici (Tümsek)</string>
+	<string name="type.traffic_calming">Hız Kesici (Kasis)</string>
+	<string name="type.traffic_calming.bump">Hız Kesici (Kasis)</string>
+	<string name="type.traffic_calming.hump">Hız Kesici (Kasis)</string>
 	<string name="type.waterway">Su Yolu</string>
 	<string name="type.waterway.canal">Kanal</string>
 	<string name="type.waterway.canal.tunnel">Kanal</string>
@@ -1859,7 +1862,7 @@
 	<string name="type.waterway.dock">Rıhtım</string>
 	<string name="type.waterway.drain">Lağım</string>
 	<string name="type.waterway.drain.tunnel">Lağım</string>
-	<string name="type.waterway.lock_gate">Kilit Kapısı</string>
+	<string name="type.waterway.lock_gate">Eklüz Kapağı</string>
 	<string name="type.waterway.river">Nehir</string>
 	<string name="type.waterway.river.tunnel">Nehir</string>
 	<string name="type.waterway.riverbank">Nehir</string>
@@ -1877,6 +1880,7 @@
 	<string name="type.aerialway.magic_carpet">Kayak Teleferiği</string>
 	<string name="type.aerialway.platter">Tabak Asansörü</string>
 	<string name="type.aerialway.rope_tow">Çekme Halatı</string>
+	<string name="type.aerialway.t.bar">Kayakçı teleferiği</string>
 	<string name="type.piste_type">Kayakçı Taşıyıcı</string>
 	<string name="type.piste_type.downhill">Yokuş Aşağı Kayak Pisti</string>
 	<string name="type.piste_type.downhill.advanced">Gelişmiş kayak pisti</string>

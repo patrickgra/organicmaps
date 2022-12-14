@@ -35,7 +35,7 @@
 /* Update maps later/Buy pro version later button text */
 "later" = "Later";
 
-/* View and button titles for accessibility */
+/* View and button titles for accessibility, please also edit it in iphone/plist.txt */
 "search" = "Zoeken";
 
 /* Settings/Downloader - 3G download warning dialog confirm button */
@@ -71,7 +71,7 @@
 /* "Bookmark Lists" dialog title */
 "bookmark_sets" = "Bladwijzergroepen";
 
-/* "Bookmarks" dialog title */
+/* "Bookmarks" dialog title, please also edit it in iphone/plist.txt */
 "bookmarks" = "Bladwijzers";
 
 /* Default bookmark list name */
@@ -274,6 +274,9 @@
 "matrix" = "[matrix]";
 
 /* Text in menu */
+"mastodon" = "Mastodon";
+
+/* Text in menu */
 "facebook" = "Facebook";
 
 /* Text in menu */
@@ -296,6 +299,9 @@
 
 /* Button in the main Help dialog */
 "faq" = "Vragen en antwoorden";
+
+/* Button in the main menu */
+"donate" = "Doneren";
 
 /* Button in the main Help dialog */
 "how_to_support_us" = "Hoe ons te steunen?";
@@ -1221,11 +1227,14 @@
 /* edit track screen title */
 "track_title" = "Track";
 
-/* Telegram group url for the help page */
+/* Telegram group url for the "?" About page */
 "telegram_url" = "https://t.me/OrganicMapsApp";
 
-/* Instagram account url for the help page */
+/* Instagram account url for the "?" About page */
 "instagram_url" = "https://www.instagram.com/organicmaps.app";
+
+/* Translated Organic Maps site, add new translations here: https://github.com/organicmaps/organicmaps.github.io/tree/master/content */
+"translated_om_site_url" = "https://organicmaps.app/";
 
 
 /********** Types **********/
@@ -1839,6 +1848,8 @@
 "type.entrance" = "Ingang";
 
 "type.healthcare.laboratory" = "Medisch laboratorium";
+
+"type.healthcare.physiotherapist" = "Fysiotherapeut";
 
 
 /********** Types: Roads **********/

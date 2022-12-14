@@ -61,9 +61,6 @@ df::ColorConstant const kRoadShieldBlueBackgroundColor = "RoadShieldBlueBackgrou
 df::ColorConstant const kRoadShieldRedBackgroundColor = "RoadShieldRedBackground";
 df::ColorConstant const kRoadShieldOrangeBackgroundColor = "RoadShieldOrangeBackground";
 
-int const kLineSimplifyLevelStart = 10;
-int const kLineSimplifyLevelEnd = 12;
-
 uint32_t const kPathTextBaseTextIndex = 128;
 uint32_t const kShieldBaseTextIndex = 0;
 int const kShieldMinVisibleZoomLevel = 10;
@@ -518,6 +515,7 @@ void ApplyPointFeature::Finish(ref_ptr<dp::TextureManager> texMng)
     params.m_minVisibleScale = m_minVisibleScale;
     params.m_rank = m_rank;
     params.m_symbolName = m_symbolRule->name();
+    ASSERT_GREATER_OR_EQUAL(m_symbolRule->min_distance(), 0, ());
     params.m_extendingSize = static_cast<uint32_t>(mainScale * m_symbolRule->min_distance() * poiExtendScale);
     params.m_posZ = m_posZ;
     params.m_hasArea = m_hasArea;
@@ -779,8 +777,7 @@ ApplyLineFeatureGeometry::ApplyLineFeatureGeometry(TileKey const & tileKey,
   : TBase(tileKey, insertShape, id, minVisibleScale, rank, CaptionDescription())
   , m_currentScaleGtoP(static_cast<float>(currentScaleGtoP))
   , m_minSegmentSqrLength(base::Pow2(4.0 * df::VisualParams::Instance().GetVisualScale() / currentScaleGtoP))
-  , m_simplify(tileKey.m_zoomLevel >= kLineSimplifyLevelStart &&
-               tileKey.m_zoomLevel <= kLineSimplifyLevelEnd)
+  , m_simplify(tileKey.m_zoomLevel >= 10 && tileKey.m_zoomLevel <= 12)
   , m_smooth(smooth)
   , m_initialPointsCount(pointsCount)
 #ifdef LINES_GENERATION_CALC_FILTERED_POINTS
@@ -1149,12 +1146,13 @@ void ApplyLineFeatureAdditional::Finish(ref_ptr<dp::TextureManager> texMng,
   if (shieldPositions.empty())
     return;
 
+  // Set default shield's icon min distance.
   ASSERT(m_shieldRule != nullptr, ());
-  int constexpr kDefaultMinDistance = 50;
-  int minDistance = m_shieldRule->min_distance() != 0 ? m_shieldRule->min_distance()
-                                                      : kDefaultMinDistance;
-  if (minDistance < 0)
-    minDistance = kDefaultMinDistance;
+  int minDistance = m_shieldRule->min_distance();
+  ASSERT_GREATER_OR_EQUAL(minDistance, 0, ());
+  if (minDistance <= 0)
+    minDistance = 50;
+
   uint32_t const scaledMinDistance = static_cast<uint32_t>(vs * minDistance);
 
   uint8_t shieldIndex = 0;

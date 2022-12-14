@@ -119,23 +119,17 @@ area[vending=parking_tickets]
 
 node[shop],
 area[shop],
-node[amenity=marketplace],
-area[amenity=marketplace],
 node[amenity=veterinary],
 area[amenity=veterinary],
 node[leisure=playground],
 node[historic=ruins],
 area[historic=ruins],
-node[historic=ship],
-area[historic=ship],
 node[tourism=artwork][artwork_type=sculpture],
 area[tourism=artwork][artwork_type=sculpture],
 node[tourism=caravan_site],
 area[tourism=caravan_site],
 node[amenity=bicycle_parking],
 area[amenity=bicycle_parking],
-node[amenity=dentist],
-area[amenity=dentist],
 node[leisure=water_park],
 area[leisure=water_park],
 node[amenity=taxi],
@@ -154,10 +148,6 @@ node[shop=money_lender],
 area[shop=money_lender],
 node[amenity=childcare],
 area[amenity=childcare],
-node[amenity=post_office],
-area[amenity=post_office],
-node[amenity=car_sharing],
-area[amenity=car_sharing],
 node[power=station],
 area[power=station],
 node[power=substation],
@@ -261,12 +251,12 @@ node[amenity=bicycle_repair_station],
 area[amenity=bicycle_repair_station],
 node[amenity=car_wash],
 area[amenity=car_wash],
+node[amenity=car_sharing],
+area[amenity=car_sharing],
 node[amenity=car_rental],
 area[amenity=car_rental],
 node|z18-[office],
 area|z18-[office],
-node[amenity=nightclub],
-area[amenity=nightclub],
 node[amenity=fire_station],
 area[amenity=fire_station],
 node[amenity=atm],
@@ -274,7 +264,12 @@ area[amenity=atm],
 node[amenity=bureau_de_change],
 node[shop=pawnbroker],
 area[shop=pawnbroker],
-node[amenity=library]
+node[amenity=library],
+area[amenity=library],
+node[shop=charity],
+area[shop=charity],
+node[shop=second_hand],
+area[shop=second_hand],
 {z-index: 2500;}
 
 node[amenity=fuel],
@@ -295,6 +290,8 @@ node[aerialway=magic_carpet],
 node[aerialway=platter],
 node[aerialway=rope_tow],
 node[railway=level_crossing],
+node[amenity=marketplace],
+area[amenity=marketplace],
 node[shop=supermarket],
 area[shop=supermarket],
 node[shop=car_repair][service=tyres],
@@ -303,12 +300,18 @@ node[shop=caravan],
 area[shop=caravan],
 node[highway=services],
 area[highway=services],
+node[amenity=post_office],
+area[amenity=post_office],
+node[amenity=dentist],
+area[amenity=dentist],
 node[amenity=clinic],
 area[amenity=clinic],
 node[amenity=doctors],
 area[amenity=doctors],
 node[healthcare=laboratory],
 area[healthcare=laboratory],
+node[healthcare=physiotherapist],
+area[healthcare=physiotherapist],
 node[leisure=swimming_pool],
 area[leisure=swimming_pool],
 area[aeroway=heliport],
@@ -323,6 +326,8 @@ node[amenity=courthouse],
 area[amenity=courthouse],
 node[amenity=cinema],
 area[amenity=cinema],
+node[amenity=nightclub],
+area[amenity=nightclub],
 node[amenity=police],
 area[amenity=police],
 node[amenity=prison],
@@ -350,10 +355,6 @@ area[tourism=attraction][attraction=animal],
 
 node[amenity=cafe],
 area[amenity=cafe],
-node[shop=charity],
-area[shop=charity],
-node[shop=second_hand],
-area[shop=second_hand],
 node[amenity=theatre],
 area[amenity=theatre]
 {z-index: 2790;}
@@ -372,7 +373,9 @@ area[amenity=bar]
 node[amenity=pub],
 area[amenity=pub],
 node[amenity=biergarten],
-area[amenity=biergarten]
+area[amenity=biergarten],
+node[amenity=ice_cream],
+area[amenity=ice_cream],
 {z-index: 2782;}
 
 node[historic=monument],
@@ -439,6 +442,9 @@ area|z16-[tourism=attraction][attraction=animal],
 node[tourism=theme_park],
 area[tourism=theme_park]
 {z-index: 2872;}
+node[historic=ship],
+area[historic=ship],
+{z-index: 2873;}
 node[tourism=gallery]
 {z-index: 2874;}
 node[tourism=museum],
@@ -1355,7 +1361,7 @@ area|z15[amenity=food_court]
 {icon-image: fastfood-m.svg;icon-min-distance: 28;}
 node|z15[amenity=bar],
 area|z15[amenity=bar]
-{icon-image: beer-m.svg;icon-min-distance: 28;}
+{icon-image: bar-m.svg;icon-min-distance: 28;}
 node|z15[amenity=pub],
 area|z15[amenity=pub],
 node|z15[amenity=biergarten],
@@ -1375,7 +1381,7 @@ area|z16-[amenity=food_court]
 {icon-image: fastfood-m.svg;icon-min-distance: 12;}
 node|z16-[amenity=bar],
 area|z16-[amenity=bar]
-{icon-image: beer-m.svg;icon-min-distance: 12;}
+{icon-image: bar-m.svg;icon-min-distance: 12;}
 node|z16-[amenity=pub],
 area|z16-[amenity=pub],
 node|z16-[amenity=biergarten],
@@ -1455,6 +1461,8 @@ node|z17-[amenity=doctors],
 area|z17-[amenity=doctors],
 node|z17-[healthcare=laboratory],
 area|z17-[healthcare=laboratory],
+node|z17-[healthcare=physiotherapist],
+area|z17-[healthcare=physiotherapist],
 node|z17-[amenity=dentist],
 area|z17-[amenity=dentist],
 node|z17-[amenity=casino],
@@ -1562,11 +1570,14 @@ area|z18-[craft]
 
 /* Declare _before_ all concrete shops to avoid icons override */
 node|z16-[shop],
-area|z16-[shop]
+area|z16-[shop],
+{icon-min-distance: 10;}
+node|z18-[shop],
+area|z18-[shop]
 {icon-image: shop-m.svg;text-offset: 1;font-size: 10;icon-min-distance: 10;}
 
-node|z18-[shop=massage],
-area|z18-[shop=massage]
+node|z17-[shop=massage],
+area|z17-[shop=massage]
 {icon-image: sauna-m.svg;font-size: 11;text-optional: true;}
 
 /* 5.1 Hospital */
@@ -1606,6 +1617,12 @@ area|z17[amenity=dentist]
 node|z18-[amenity=dentist],
 area|z18-[amenity=dentist]
 {icon-image: dentist-m.svg;font-size: 11;text-optional: true;}
+node|z17[healthcare=physiotherapist],
+area|z17[healthcare=physiotherapist]
+{icon-image: physiotherapist-m.svg;}
+node|z18-[healthcare=physiotherapist],
+area|z18-[healthcare=physiotherapist]
+{icon-image: physiotherapist-m.svg;font-size: 11;text-optional: true;}
 
 node|z16-[amenity=veterinary],
 area|z16-[amenity=veterinary]
@@ -1899,7 +1916,7 @@ area|z18-[amenity=place_of_worship][religion=taoist]
 
 node|z16-[amenity=nightclub],
 area|z16-[amenity=nightclub]
-{icon-image: bar-m.svg;font-size: 11;}
+{icon-image: nightclub-m.svg;font-size: 11;}
 
 node|z16[amenity=bank],
 area|z16[amenity=bank]
@@ -2072,9 +2089,11 @@ node|z17-[office=lawyer],
 area|z17-[office=lawyer]
 {icon-image: lawyer-m.svg;icon-min-distance: 10;text-optional: true;}
 
-node|z17-[amenity=telephone],
-node|z17-[emergency=phone]
+node|z17-[amenity=telephone]
 {icon-image: phone-m.svg;icon-min-distance: 30;}
+
+node|z17-[emergency=phone]
+{icon-image: emergency-phone-m.svg;icon-min-distance: 30;}
 
 node|z17-[amenity=recycling],
 area|z17-[amenity=recycling],
@@ -2292,10 +2311,11 @@ node|z16[shop=clothes],
 area|z16[shop=clothes]
 {icon-image: clothes-m.svg;}
 node|z16[shop=computer],
-area|z16[shop=computer],
+area|z16[shop=computer]
+{icon-image: computer-m.svg;}
 node|z16[shop=video_games],
 area|z16[shop=video_games]
-{icon-image: computer-m.svg;}
+{icon-image: video-games-m.svg;}
 node|z16[shop=tattoo],
 area|z16[shop=tattoo]
 {icon-image: hand-m.svg;}
@@ -2358,12 +2378,13 @@ area|z16[shop=gift]
 {icon-image: gift-m.svg;}
 node|z16[shop=music],
 area|z16[shop=music],
+{icon-image: music-m.svg;}
 node|z16[shop=video],
 area|z16[shop=video]
 {icon-image: media-m.svg;}
 node|z16[shop=musical_instrument],
 area|z16[shop=musical_instrument]
-{icon-image: music-m.svg;}
+{icon-image: musical-instrument-m.svg;}
 node|z16[shop=greengrocer],
 area|z16[shop=greengrocer]
 {icon-image: greengrocer-m.svg;}
@@ -2478,10 +2499,11 @@ node|z17-[shop=clothes],
 area|z17-[shop=clothes]
 {icon-image: clothes-m.svg;icon-min-distance: 24;text-optional: true;}
 node|z17-[shop=computer],
-area|z17-[shop=computer],
+area|z17-[shop=computer]
+{icon-image: computer-m.svg;icon-min-distance: 24;text-optional: true;}
 node|z17-[shop=video_games],
 area|z17-[shop=video_games]
-{icon-image: computer-m.svg;icon-min-distance: 24;text-optional: true;}
+{icon-image: video-games-m.svg;icon-min-distance: 24;text-optional: true;}
 node|z17-[shop=tattoo],
 area|z17-[shop=tattoo]
 {icon-image: hand-m.svg;icon-min-distance: 24;text-optional: true;}
@@ -2544,12 +2566,13 @@ area|z17-[shop=gift]
 {icon-image: gift-m.svg;icon-min-distance: 24;text-optional: true;}
 node|z17-[shop=music],
 area|z17-[shop=music],
+{icon-image: music-m.svg;icon-min-distance: 24;text-optional: true;}
 node|z17-[shop=video],
 area|z17-[shop=video]
 {icon-image: media-m.svg;icon-min-distance: 24;text-optional: true;}
 node|z17-[shop=musical_instrument],
 area|z17-[shop=musical_instrument]
-{icon-image: music-m.svg;icon-min-distance: 24;text-optional: true;}
+{icon-image: musical-instrument-m.svg;icon-min-distance: 24;text-optional: true;}
 node|z17-[shop=greengrocer],
 area|z17-[shop=greengrocer]
 {icon-image: greengrocer-m.svg;icon-min-distance: 24;text-optional: true;}

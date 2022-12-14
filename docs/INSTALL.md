@@ -68,12 +68,9 @@ Check `./configure.sh --help` to see how to copy the configs automatically from 
 
 ### Preparing
 
-You need a Linux or a Mac machine to build a desktop version of Organic Maps.
+You need a Linux or a Mac machine to build a desktop version of Organic Maps. [Windows](#windows) users can use the [WSL](https://learn.microsoft.com/en-us/windows/wsl/) (Windows Subsystem for Linux) and follow ["Linux or Mac"](#linux-or-mac) steps described below.
 
-- We haven't compiled Organic Maps on Windows in a long time, though it is possible.
-  It is likely some make files should be updated.
-  If you succeed, please submit a tutorial.
-  You'll need to have python3, cmake, ninja in the PATH and also to have Qt5 installed.
+### Linux or Mac
 
 Ensure that you have at least 20GB of free space.
 
@@ -132,6 +129,38 @@ _macOS:_
 brew install cmake ninja qt@5
 ```
 
+### Windows
+
+We haven't compiled Organic Maps on Windows *natively* in a long time, though it is possible.
+Some files should be updated. There is a work in progress on [windows](https://github.com/organicmaps/organicmaps/tree/windows) branch.
+Please contribute if you have time.
+You'll need to have python3, cmake, ninja, and QT5 in the PATH, and Visual Studio 2022 or Visual Studio 2022 Build Tools installed. Use [Visual Studio Developer Command Prompt](https://learn.microsoft.com/en-us/visualstudio/ide/reference/command-prompt-powershell?view=vs-2022) or generate Visual Studio project files with CMake to build the project.
+
+However, it is possible to use the WSL (Windows Subsystem for Linux) to run GUI applications. 
+
+#### Windows 11 (WSL)
+
+Since Windows 11 Build 22000 running GUI apps from the WSL is supported [out-of-the box](https://learn.microsoft.com/en-us/windows/wsl/tutorials/gui-apps). After [building](#building-1) the app you should be able to [run](#running) it without any additional steps.
+
+#### Windows 10 (WSL)
+
+For Windows 10 you should do these steps (taken from [here](https://techcommunity.microsoft.com/t5/windows-dev-appconsult/running-wsl-gui-apps-on-windows-10/ba-p/1493242), check this blog post if you have any problems):
+1. Download and install [VcXsrv Windows X Server](https://sourceforge.net/projects/vcxsrv/).
+2. Run _XLaunch_ app to launch X Server. During settings make sure "Disable access control" checkbox is selected.
+3. (optionally) Click "Save configuration" and save configuration to some file (for example to _config.xlaunch_). With this you will be able to quickly run desktop app in the future.
+4. When asked about firewall, allow access for public and private networks.
+5. Add this line:
+    ```bash
+    export DISPLAY=$(ip route|awk '/^default/{print $3}'):0.0
+    ```
+    to _/etc/bash.bashrc_ file.
+6. Close WSL and open it again.
+
+Now when you want to run the desktop app you just need to first launch the X Server on Windows (for example, by running previously saved _config.xlaunch_ file) and then you should be able to [build](#building-1) and [run](#running) the app from WSL.
+
+Running X Server is also required to run `generate_symbols.sh` script when you change icons for [styles](STYLES.md)
+
+
 ### Building
 
 To build a desktop app:
@@ -148,6 +177,14 @@ Besides _desktop_ there are other targets like _generator_tool_, to see a full l
 ```bash
 tools/unix/build_omim.sh -d help
 ```
+
+#### Build issues
+
+- If you get "not enough memory" errors during builds, you may disable
+  [CMake Unity Builds](https://cmake.org/cmake/help/latest/prop_tgt/UNITY_BUILD.html) by `export UNITY_DISABLE=1`
+  or by passing `-DUNITY_DISABLE=1` option to `cmake` invocation. Or you can reduce Unity build batch size from
+  the default `50` to a lower value (2-16) by `export UNITY_BUILD_BATCH_SIZE=8`.
+  Note that these changes may significantly increase the build time.
 
 ### Running
 
@@ -200,6 +237,19 @@ ln -s ../data/ data
 ```
 
 Some tests [are known to be broken](https://github.com/organicmaps/organicmaps/issues?q=is%3Aissue+is%3Aopen+label%3ATests).
+
+### Debug commands
+
+Desktop app has some "hidden" debug commands that you can trigger by entering them in Offline Search input. 
+
+For example you can switch theme which is very useful for checking [styles](STYLES.md) changes.
+To switch themes you can enter this commands:
+- `?light` - Day theme
+- `?dark` - Night theme
+- `?vlight` - Day theme for vehicle navigation
+- `?vdark` - Night theme for vehicle navigation
+
+There are also other commands for turning on/off isolines, antialiasing, etc. Check [the code](https://github.com/organicmaps/organicmaps/blob/6ae19b40c2b7a515338eb128547df05da13bdb78/map/framework.cpp#L2570-L2671) to learn about them.
 
 ### More options
 

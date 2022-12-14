@@ -81,11 +81,10 @@ public class NavigationController implements Application.ActivityLifecycleCallba
     }
   };
 
-  public NavigationController(AppCompatActivity activity, @NonNull MapButtonsController mapButtonsController, View.OnClickListener onSettingsClickListener,
-                              NavMenu.OnMenuSizeChangedListener onMenuSizeChangedListener)
+  public NavigationController(AppCompatActivity activity, @NonNull MapButtonsController mapButtonsController, View.OnClickListener onSettingsClickListener)
   {
     mFrame = activity.findViewById(R.id.navigation_frame);
-    mNavMenu = new NavMenu(activity, this, onMenuSizeChangedListener);
+    mNavMenu = new NavMenu(activity, this);
     mOnSettingsClickListener = onSettingsClickListener;
     mMapButtonsController = mapButtonsController;
 
