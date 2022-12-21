@@ -139,7 +139,7 @@ bool ParseSetGpsTrackMinAccuracyCommand(string const & query)
 
 pair<MwmSet::MwmId, MwmSet::RegResult> Framework::RegisterMap(LocalCountryFile const & file)
 {
-  auto const res = m_featuresFetcher.RegisterMap(file);
+  auto res = m_featuresFetcher.RegisterMap(file);
   if (res.second == MwmSet::RegResult::Success)
   {
     auto const & id = res.first;
@@ -1128,6 +1128,8 @@ void Framework::MemoryWarning()
 
 void Framework::EnterBackground()
 {
+  m_usageStats.EnterBackground();
+
   if (m_drapeEngine)
     m_drapeEngine->OnEnterBackground();
 
@@ -1145,6 +1147,8 @@ void Framework::EnterBackground()
 
 void Framework::EnterForeground()
 {
+  m_usageStats.EnterForeground();
+
   if (m_drapeEngine)
     m_drapeEngine->OnEnterForeground();
 
