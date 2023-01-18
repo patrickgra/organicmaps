@@ -1311,9 +1311,13 @@
 
 "type.amenity.charging_station" = "Laddstation";
 
+"type.amenity.charging_station.motorcar" = "Laddstation";
+
 "type.amenity.childcare" = "Barnomsorg";
 
 "type.amenity.cinema" = "Bio";
+
+"type.leisure.bowling_alley" = "Bowlinghall";
 
 "type.amenity.clinic" = "Klinik";
 
@@ -2388,6 +2392,8 @@
 "type.leisure.swimming_pool.private" = "Simbassäng";
 
 "type.leisure.track" = "Track";
+
+"type.leisure.track.area" = "Track";
 
 "type.leisure.water_park" = "Äventyrspark";
 

@@ -1311,9 +1311,13 @@
 
 "type.amenity.charging_station" = "Charging Station";
 
+"type.amenity.charging_station.motorcar" = "Charging Station";
+
 "type.amenity.childcare" = "Nursery";
 
 "type.amenity.cinema" = "Cinema";
+
+"type.leisure.bowling_alley" = "Боўлінг";
 
 "type.amenity.clinic" = "Clinic";
 
@@ -2388,6 +2392,8 @@
 "type.leisure.swimming_pool.private" = "Басейн";
 
 "type.leisure.track" = "Track";
+
+"type.leisure.track.area" = "Track";
 
 "type.leisure.water_park" = "Water Park";
 

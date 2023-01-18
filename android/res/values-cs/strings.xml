@@ -700,8 +700,10 @@
 	<string name="type.amenity.car_sharing">Sdílení aut</string>
 	<string name="type.amenity.car_wash">Myčka aut</string>
 	<string name="type.amenity.charging_station">Nabíjecí stanice</string>
+	<string name="type.amenity.charging_station.motorcar">Nabíjecí stanice</string>
 	<string name="type.amenity.childcare">Jesle</string>
 	<string name="type.amenity.cinema">Kino</string>
+	<string name="type.leisure.bowling_alley">Bowlingová dráha</string>
 	<string name="type.amenity.clinic">Klinika</string>
 	<string name="type.amenity.college">Vysoká škola</string>
 	<string name="type.amenity.community_centre">Kulturní centrum</string>

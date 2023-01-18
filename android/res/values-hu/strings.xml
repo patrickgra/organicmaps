@@ -693,8 +693,10 @@
 	<string name="type.amenity.car_wash">Autómosó</string>
 	<string name="type.amenity.casino">Kaszinó</string>
 	<string name="type.amenity.charging_station">Töltő állomás</string>
+	<string name="type.amenity.charging_station.motorcar">Töltő állomás</string>
 	<string name="type.amenity.childcare">Bölcsőde</string>
 	<string name="type.amenity.cinema">Mozi</string>
+	<string name="type.leisure.bowling_alley">Tekepálya</string>
 	<string name="type.amenity.clinic">Klinika</string>
 	<string name="type.amenity.college">Kollégium</string>
 	<string name="type.amenity.community_centre">Közösségi központ</string>
@@ -1483,7 +1485,7 @@
 	<string name="type.shop.car_repair">Gépkocsi szervíz</string>
 	<string name="type.shop.car_repair.tyres">Gumiszerviz</string>
 	<string name="type.shop.chemist">Drogéria</string>
-	<string name="type.shop.chocolate">Bolt</string>
+	<string name="type.shop.chocolate">Csokoládébolt</string>
 	<string name="type.shop.clothes">Ruhabolt</string>
 	<string name="type.shop.coffee">Bolt</string>
 	<string name="type.shop.computer">Számítógép üzlet</string>
