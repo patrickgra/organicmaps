@@ -1311,9 +1311,13 @@
 
 "type.amenity.charging_station" = "चार्जिंग केंद्र";
 
+"type.amenity.charging_station.motorcar" = "चार्जिंग केंद्र";
+
 "type.amenity.childcare" = "बालवाडी";
 
 "type.amenity.cinema" = "चित्रपटगृह";
+
+"type.leisure.bowling_alley" = "गोलंदाजी गल्ली";
 
 "type.amenity.clinic" = "चिकित्सालय";
 
@@ -2388,6 +2392,8 @@
 "type.leisure.swimming_pool.private" = "जलतरण तलाव";
 
 "type.leisure.track" = "ट्रॅक";
+
+"type.leisure.track.area" = "ट्रॅक";
 
 "type.leisure.water_park" = "जल उद्यान";
 

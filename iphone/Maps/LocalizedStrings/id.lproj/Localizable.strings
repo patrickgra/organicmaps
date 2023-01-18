@@ -1311,9 +1311,13 @@
 
 "type.amenity.charging_station" = "Pusat Pengisian Daya";
 
+"type.amenity.charging_station.motorcar" = "Pusat Pengisian Daya";
+
 "type.amenity.childcare" = "Penitipan Anak";
 
 "type.amenity.cinema" = "Bioskop";
+
+"type.leisure.bowling_alley" = "Arena Bowling";
 
 "type.amenity.clinic" = "Klinik";
 
@@ -2388,6 +2392,8 @@
 "type.leisure.swimming_pool.private" = "Kolam renang";
 
 "type.leisure.track" = "Track";
+
+"type.leisure.track.area" = "Track";
 
 "type.leisure.water_park" = "Taman air";
 

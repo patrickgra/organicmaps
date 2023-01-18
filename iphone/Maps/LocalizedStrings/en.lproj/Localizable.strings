@@ -1311,9 +1311,13 @@
 
 "type.amenity.charging_station" = "Charging Station";
 
+"type.amenity.charging_station.motorcar" = "Charging Station";
+
 "type.amenity.childcare" = "Nursery";
 
 "type.amenity.cinema" = "Cinema";
+
+"type.leisure.bowling_alley" = "Bowling Alley";
 
 "type.amenity.clinic" = "Clinic";
 
@@ -2267,7 +2271,7 @@
 "type.landuse.cemetery" = "Cemetery";
 
 /* In most (European) countries, сemeteries are usually independent of places of worship (e.g. military cemeteries), while grave yards are usually the yard of a place of worship. */
-"type.landuse.cemetery.christian" = "Cementerio cristiano";
+"type.landuse.cemetery.christian" = "Christian Graveyard";
 
 "type.landuse.churchyard" = "Churchyard";
 
@@ -2388,6 +2392,8 @@
 "type.leisure.swimming_pool.private" = "Swimming Pool";
 
 "type.leisure.track" = "Track";
+
+"type.leisure.track.area" = "Track";
 
 "type.leisure.water_park" = "Water Park";
 

@@ -1311,9 +1311,13 @@
 
 "type.amenity.charging_station" = "Töltő állomás";
 
+"type.amenity.charging_station.motorcar" = "Töltő állomás";
+
 "type.amenity.childcare" = "Bölcsőde";
 
 "type.amenity.cinema" = "Mozi";
+
+"type.leisure.bowling_alley" = "Tekepálya";
 
 "type.amenity.clinic" = "Klinika";
 
@@ -2389,6 +2393,8 @@
 
 "type.leisure.track" = "Track";
 
+"type.leisure.track.area" = "Track";
+
 "type.leisure.water_park" = "Aquapark";
 
 "type.leisure.beach_resort" = "Beach Resort";
@@ -3215,7 +3221,7 @@
 
 "type.shop.chemist" = "Drogéria";
 
-"type.shop.chocolate" = "Bolt";
+"type.shop.chocolate" = "Csokoládébolt";
 
 "type.shop.clothes" = "Ruhabolt";
 

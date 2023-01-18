@@ -1311,9 +1311,13 @@
 
 "type.amenity.charging_station" = "Σταθμός φόρτισης";
 
+"type.amenity.charging_station.motorcar" = "Σταθμός φόρτισης";
+
 "type.amenity.childcare" = "Βρεφικός σταθμός";
 
 "type.amenity.cinema" = "Κινηματογράφος";
+
+"type.leisure.bowling_alley" = "Αίθουσα σφαιρίσεως";
 
 "type.amenity.clinic" = "Κλινική";
 
@@ -2388,6 +2392,8 @@
 "type.leisure.swimming_pool.private" = "Πισίνα";
 
 "type.leisure.track" = "Track";
+
+"type.leisure.track.area" = "Track";
 
 "type.leisure.water_park" = "Υδάτινο πάρκο";
 

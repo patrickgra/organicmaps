@@ -1311,9 +1311,13 @@
 
 "type.amenity.charging_station" = "Ladestation";
 
+"type.amenity.charging_station.motorcar" = "Ladestation";
+
 "type.amenity.childcare" = "Kindertagesstätte";
 
 "type.amenity.cinema" = "Kino";
+
+"type.leisure.bowling_alley" = "Bowlingbahn";
 
 "type.amenity.clinic" = "Klinik";
 
@@ -2388,6 +2392,8 @@
 "type.leisure.swimming_pool.private" = "Schwimmbecken";
 
 "type.leisure.track" = "Laufbahn";
+
+"type.leisure.track.area" = "Laufbahn";
 
 "type.leisure.water_park" = "Aquapark";
 
