@@ -1849,11 +1849,31 @@
 
 "type.emergency.phone" = "Emergency Phone";
 
+/* This is for secondary entrances, for main entrances see type.entrance.main */
 "type.entrance" = "Entrance";
+
+/* This is for main/primary entrances, for secondary entrances see type.entrance */
+"type.entrance.main" = "Галоўны ўваход";
 
 "type.healthcare.laboratory" = "Медыцынская лабараторыя";
 
 "type.healthcare.physiotherapist" = "Фізіятэрапеўт";
+
+"type.healthcare.alternative" = "Альтэрнатыўная медыцына";
+
+"type.healthcare.audiologist" = "Аўдыялогія";
+
+"type.healthcare.blood_donation" = "Цэнтр донарства крыві";
+
+"type.healthcare.optometrist" = "Оптаметрыя";
+
+"type.healthcare.podiatrist" = "Подологія";
+
+"type.healthcare.psychotherapist" = "Псіхатэрапія";
+
+"type.healthcare.sample_collection" = "Збор аналізаў";
+
+"type.healthcare.speech_therapist" = "лагапедыя";
 
 
 /********** Types: Roads **********/
@@ -1869,6 +1889,8 @@
 
 /* These translations are used for all type.highway.*.tunnel. */
 "type.highway.bridleway.tunnel" = "Тунэль";
+
+"type.highway.busway" = "Выдзеленая аўтобусная дарога";
 
 "type.highway.bus_stop" = "Bus Stop";
 

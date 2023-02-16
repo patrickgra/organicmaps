@@ -1849,11 +1849,31 @@
 
 "type.emergency.phone" = "Τηλέφωνο έκτακτης ανάγκης";
 
+/* This is for secondary entrances, for main entrances see type.entrance.main */
 "type.entrance" = "Είσοδος";
+
+/* This is for main/primary entrances, for secondary entrances see type.entrance */
+"type.entrance.main" = "Κύρια είσοδος";
 
 "type.healthcare.laboratory" = "Ιατρικό Εργαστήριο";
 
 "type.healthcare.physiotherapist" = "Φυσικοθεραπευτής";
+
+"type.healthcare.alternative" = "Εναλλακτική ιατρική";
+
+"type.healthcare.audiologist" = "Ακοολογία";
+
+"type.healthcare.blood_donation" = "Κέντρο αιμοδοσίας";
+
+"type.healthcare.optometrist" = "Οπτομετρία";
+
+"type.healthcare.podiatrist" = "Ποδιατρική";
+
+"type.healthcare.psychotherapist" = "Ψυχοθεραπεία";
+
+"type.healthcare.sample_collection" = "Δειγματοληψία";
+
+"type.healthcare.speech_therapist" = "Λογοθεραπεία";
 
 
 /********** Types: Roads **********/
@@ -1869,6 +1889,8 @@
 
 /* These translations are used for all type.highway.*.tunnel. */
 "type.highway.bridleway.tunnel" = "Σήραγγα";
+
+"type.highway.busway" = "Αφιερωμένος δρόμος λεωφορείων";
 
 "type.highway.bus_stop" = "Στάση λεωφορείου";
 

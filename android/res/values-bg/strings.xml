@@ -684,14 +684,25 @@
 	<string name="type.craft.winery">Винарна</string>
 	<string name="type.craft.tailor">Шивач</string>
 	<string name="type.cuisine.deli">Деликатеси</string>
+	<!-- This is for main/primary entrances, for secondary entrances see type.entrance -->
+	<string name="type.entrance.main">Главния вход</string>
 	<string name="type.healthcare.laboratory">Медицинска лаборатория</string>
 	<string name="type.healthcare.physiotherapist">Физиотерапевт</string>
+	<string name="type.healthcare.alternative">Алтернативна медицина</string>
+	<string name="type.healthcare.audiologist">Аудиология</string>
+	<string name="type.healthcare.blood_donation">Център за кръводаряване</string>
+	<string name="type.healthcare.optometrist">Оптометрия</string>
+	<string name="type.healthcare.podiatrist">Подиология</string>
+	<string name="type.healthcare.psychotherapist">Психотерапия</string>
+	<string name="type.healthcare.sample_collection">Вземане на проби</string>
+	<string name="type.healthcare.speech_therapist">Логопедия</string>
 
 	<!-- SECTION: Types: Roads -->
 	<!-- These translations are used for all type.highway.*.bridge. -->
 	<string name="type.highway.bridleway.bridge">Мост</string>
 	<!-- These translations are used for all type.highway.*.tunnel. -->
 	<string name="type.highway.bridleway.tunnel">Тунел</string>
+	<string name="type.highway.busway">Обособен автобусен път</string>
 	<!-- These translations are used for all type.highway.*.bridge. -->
 	<string name="type.highway.cycleway.bridge">Мост</string>
 	<!-- These translations are used for all type.highway.*.tunnel. -->

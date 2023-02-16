@@ -1849,11 +1849,31 @@
 
 "type.emergency.phone" = "संकटकालीन फोन";
 
+/* This is for secondary entrances, for main entrances see type.entrance.main */
 "type.entrance" = "प्रवेशद्वार";
+
+/* This is for main/primary entrances, for secondary entrances see type.entrance */
+"type.entrance.main" = "मुख्य प्रवेशद्वार";
 
 "type.healthcare.laboratory" = "वैद्यकीय प्रयोगशाळा";
 
 "type.healthcare.physiotherapist" = "फिजिओथेरपिस्ट";
+
+"type.healthcare.alternative" = "पर्यायी औषध";
+
+"type.healthcare.audiologist" = "ऑडिओलॉजी";
+
+"type.healthcare.blood_donation" = "रक्तदान केंद्र";
+
+"type.healthcare.optometrist" = "ऑप्टोमेट्री";
+
+"type.healthcare.podiatrist" = "पोडियाट्री";
+
+"type.healthcare.psychotherapist" = "मानसोपचार";
+
+"type.healthcare.sample_collection" = "नमुना";
+
+"type.healthcare.speech_therapist" = "स्पीच थेरपी";
 
 
 /********** Types: Roads **********/
@@ -1869,6 +1889,8 @@
 
 /* These translations are used for all type.highway.*.tunnel. */
 "type.highway.bridleway.tunnel" = "बोगदा";
+
+"type.highway.busway" = "समर्पित बस रस्ता";
 
 "type.highway.bus_stop" = "बस थांबा";
 

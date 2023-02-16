@@ -916,9 +916,20 @@
 	<string name="type.emergency.defibrillator">Hjertestarter</string>
 	<string name="type.emergency.fire_hydrant">Brannhydrant</string>
 	<string name="type.emergency.phone">Nødtelefon</string>
+	<!-- This is for secondary entrances, for main entrances see type.entrance.main -->
 	<string name="type.entrance">Inngang</string>
+	<!-- This is for main/primary entrances, for secondary entrances see type.entrance -->
+	<string name="type.entrance.main">Hovedinngang</string>
 	<string name="type.healthcare.laboratory">Medisinsk laboratorium</string>
 	<string name="type.healthcare.physiotherapist">Fysioterapeut</string>
+	<string name="type.healthcare.alternative">Alternativ medisin</string>
+	<string name="type.healthcare.audiologist">Audiologi</string>
+	<string name="type.healthcare.blood_donation">Bloddonasjonssenter</string>
+	<string name="type.healthcare.optometrist">Optometri</string>
+	<string name="type.healthcare.podiatrist">Fotterapi</string>
+	<string name="type.healthcare.psychotherapist">Psykoterapi</string>
+	<string name="type.healthcare.sample_collection">Prøvetaking</string>
+	<string name="type.healthcare.speech_therapist">Snakketerapi</string>
 
 	<!-- SECTION: Types: Roads -->
 	<string name="type.highway.bridleway">Ridevei</string>
@@ -927,6 +938,7 @@
 	<string name="type.highway.bridleway.permissive">Ridevei</string>
 	<!-- These translations are used for all type.highway.*.tunnel. -->
 	<string name="type.highway.bridleway.tunnel">Tunnel</string>
+	<string name="type.highway.busway">Dedikert bussvei</string>
 	<string name="type.highway.bus_stop">Busstopp</string>
 	<string name="type.highway.construction">Veikonstruksjon</string>
 	<string name="type.highway.cycleway">Sykkelvei</string>

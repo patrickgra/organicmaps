@@ -1849,11 +1849,31 @@
 
 "type.emergency.phone" = "Nødtelefon";
 
+/* This is for secondary entrances, for main entrances see type.entrance.main */
 "type.entrance" = "Inngang";
+
+/* This is for main/primary entrances, for secondary entrances see type.entrance */
+"type.entrance.main" = "Hovedinngang";
 
 "type.healthcare.laboratory" = "Medisinsk laboratorium";
 
 "type.healthcare.physiotherapist" = "Fysioterapeut";
+
+"type.healthcare.alternative" = "Alternativ medisin";
+
+"type.healthcare.audiologist" = "Audiologi";
+
+"type.healthcare.blood_donation" = "Bloddonasjonssenter";
+
+"type.healthcare.optometrist" = "Optometri";
+
+"type.healthcare.podiatrist" = "Fotterapi";
+
+"type.healthcare.psychotherapist" = "Psykoterapi";
+
+"type.healthcare.sample_collection" = "Prøvetaking";
+
+"type.healthcare.speech_therapist" = "Snakketerapi";
 
 
 /********** Types: Roads **********/
@@ -1869,6 +1889,8 @@
 
 /* These translations are used for all type.highway.*.tunnel. */
 "type.highway.bridleway.tunnel" = "Tunnel";
+
+"type.highway.busway" = "Dedikert bussvei";
 
 "type.highway.bus_stop" = "Busstopp";
 

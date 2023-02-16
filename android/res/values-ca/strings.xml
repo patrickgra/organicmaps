@@ -717,4 +717,11 @@
 
 	<!-- SECTION: Types -->
 	<string name="type.leisure.bowling_alley">Bolera</string>
+
+	<!-- SECTION: Types: Recycling -->
+	<!-- This is for main/primary entrances, for secondary entrances see type.entrance -->
+	<string name="type.entrance.main">Entrada principal</string>
+
+	<!-- SECTION: Types: Roads -->
+	<string name="type.highway.busway">Carretera dedicada a l\'autobús</string>
 </resources>

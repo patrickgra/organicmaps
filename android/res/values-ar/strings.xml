@@ -962,9 +962,20 @@
 	<string name="type.emergency.defibrillator">مزيل الرجفان</string>
 	<string name="type.emergency.fire_hydrant">صنبور الإطفاء</string>
 	<string name="type.emergency.phone">هاتف الطوارئ</string>
+	<!-- This is for secondary entrances, for main entrances see type.entrance.main -->
 	<string name="type.entrance">مدخل</string>
+	<!-- This is for main/primary entrances, for secondary entrances see type.entrance -->
+	<string name="type.entrance.main">ﻲﺴﻴﺋﺮﻟﺍ ﻞﺧﺪﻤﻟﺍ</string>
 	<string name="type.healthcare.laboratory">مختبر طبي</string>
 	<string name="type.healthcare.physiotherapist">اخصائي علاج طبيعي</string>
+	<string name="type.healthcare.alternative">الطب البديل</string>
+	<string name="type.healthcare.audiologist">السمع</string>
+	<string name="type.healthcare.blood_donation">مركز التبرع بالدم</string>
+	<string name="type.healthcare.optometrist">قياس البصر</string>
+	<string name="type.healthcare.podiatrist">علاج الأرجل</string>
+	<string name="type.healthcare.psychotherapist">العلاج النفسي</string>
+	<string name="type.healthcare.sample_collection">أخذ العينات</string>
+	<string name="type.healthcare.speech_therapist">علاج النطق</string>
 
 	<!-- SECTION: Types: Roads -->
 	<string name="type.highway">طريق السريع</string>
@@ -972,6 +983,7 @@
 	<string name="type.highway.bridleway.bridge">جسر</string>
 	<!-- These translations are used for all type.highway.*.tunnel. -->
 	<string name="type.highway.bridleway.tunnel">نفق</string>
+	<string name="type.highway.busway">ﺺﺼﺨﻣ ﺕﻼﻓﺎﺣ ﻖﻳﺮﻃ</string>
 	<string name="type.highway.bus_stop">موقف حافلة</string>
 	<string name="type.highway.construction">طريق تحت الإنشاء</string>
 	<string name="type.highway.cycleway">مسار للدراجات</string>

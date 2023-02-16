@@ -1021,9 +1021,20 @@
 	<string name="type.emergency.defibrillator">Defibrillaator</string>
 	<string name="type.emergency.fire_hydrant">Tuletõrjehüdrant</string>
 	<string name="type.emergency.phone">Hädaabi telefon</string>
+	<!-- This is for secondary entrances, for main entrances see type.entrance.main -->
 	<string name="type.entrance">Sissepääs</string>
+	<!-- This is for main/primary entrances, for secondary entrances see type.entrance -->
+	<string name="type.entrance.main">Peasissekäik</string>
 	<string name="type.healthcare.laboratory">Meditsiinilabor</string>
 	<string name="type.healthcare.physiotherapist">Füsioterapeut</string>
+	<string name="type.healthcare.alternative">Alternatiivne meditsiin</string>
+	<string name="type.healthcare.audiologist">Audioloogia</string>
+	<string name="type.healthcare.blood_donation">Vereloovutuskeskus</string>
+	<string name="type.healthcare.optometrist">Optomeetria</string>
+	<string name="type.healthcare.podiatrist">Jalaravi</string>
+	<string name="type.healthcare.psychotherapist">Psühhoteraapia</string>
+	<string name="type.healthcare.sample_collection">Proovivõtmine</string>
+	<string name="type.healthcare.speech_therapist">Logopeedia</string>
 
 	<!-- SECTION: Types: Roads -->
 	<string name="type.highway">Maantee</string>
@@ -1033,6 +1044,7 @@
 	<string name="type.highway.bridleway.permissive">Valjarada</string>
 	<!-- These translations are used for all type.highway.*.tunnel. -->
 	<string name="type.highway.bridleway.tunnel">Tunnel</string>
+	<string name="type.highway.busway">Spetsiaalne bussitee</string>
 	<string name="type.highway.bus_stop">Bussipeatus</string>
 	<string name="type.highway.construction">Ehitusjärgus tee</string>
 	<string name="type.highway.cycleway">Jalgrattatee</string>

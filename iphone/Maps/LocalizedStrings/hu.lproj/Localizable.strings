@@ -1849,11 +1849,31 @@
 
 "type.emergency.phone" = "Sürgősségi telefon";
 
+/* This is for secondary entrances, for main entrances see type.entrance.main */
 "type.entrance" = "Bejárat";
+
+/* This is for main/primary entrances, for secondary entrances see type.entrance */
+"type.entrance.main" = "Főbejárat";
 
 "type.healthcare.laboratory" = "Orvosi laboratórium";
 
 "type.healthcare.physiotherapist" = "Fizioterapeuta";
+
+"type.healthcare.alternative" = "Alternatív gyógyászat";
+
+"type.healthcare.audiologist" = "Audiológia";
+
+"type.healthcare.blood_donation" = "Véradó központ";
+
+"type.healthcare.optometrist" = "Optometria";
+
+"type.healthcare.podiatrist" = "Podiatria";
+
+"type.healthcare.psychotherapist" = "Pszichoterápia";
+
+"type.healthcare.sample_collection" = "Mintavétel";
+
+"type.healthcare.speech_therapist" = "Logopédia";
 
 
 /********** Types: Roads **********/
@@ -1869,6 +1889,8 @@
 
 /* These translations are used for all type.highway.*.tunnel. */
 "type.highway.bridleway.tunnel" = "Alagút";
+
+"type.highway.busway" = "Kijelölt buszút";
 
 "type.highway.bus_stop" = "Buszmegálló";
 

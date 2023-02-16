@@ -972,15 +972,27 @@
 	<string name="type.emergency.defibrillator">Desfibriladorea</string>
 	<string name="type.emergency.fire_hydrant">Suteen hidrantea</string>
 	<string name="type.emergency.phone">Larrialdi zenbakia</string>
+	<!-- This is for secondary entrances, for main entrances see type.entrance.main -->
 	<string name="type.entrance">Sarrera</string>
+	<!-- This is for main/primary entrances, for secondary entrances see type.entrance -->
+	<string name="type.entrance.main">Sarrera Nagusia</string>
 	<string name="type.healthcare.laboratory">Medikuntza laborategia</string>
 	<string name="type.healthcare.physiotherapist">Fisioterapeuta</string>
+	<string name="type.healthcare.alternative">Medikuntza alternatiboa</string>
+	<string name="type.healthcare.audiologist">Audiologia</string>
+	<string name="type.healthcare.blood_donation">Odol Emate Zentroa</string>
+	<string name="type.healthcare.optometrist">Optometria</string>
+	<string name="type.healthcare.podiatrist">Podologia</string>
+	<string name="type.healthcare.psychotherapist">Psikoterapia</string>
+	<string name="type.healthcare.sample_collection">Laginketa</string>
+	<string name="type.healthcare.speech_therapist">Logopedia</string>
 
 	<!-- SECTION: Types: Roads -->
 	<!-- These translations are used for all type.highway.*.bridge. -->
 	<string name="type.highway.bridleway.bridge">Zubia</string>
 	<!-- These translations are used for all type.highway.*.tunnel. -->
 	<string name="type.highway.bridleway.tunnel">Tunel</string>
+	<string name="type.highway.busway">Autobus errepidea</string>
 	<string name="type.highway.bus_stop">Autobus geltokia</string>
 	<string name="type.highway.construction">Eraikitzen ari diren errepidea</string>
 	<string name="type.highway.cycleway">Bizikletabidea</string>

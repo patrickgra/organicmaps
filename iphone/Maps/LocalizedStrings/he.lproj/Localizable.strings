@@ -1849,11 +1849,31 @@
 
 "type.emergency.phone" = "Emergency Phone";
 
+/* This is for secondary entrances, for main entrances see type.entrance.main */
 "type.entrance" = "Entrance";
+
+/* This is for main/primary entrances, for secondary entrances see type.entrance */
+"type.entrance.main" = "תישארה הסינכ";
 
 "type.healthcare.laboratory" = "תיאופר הדבעמ";
 
 "type.healthcare.physiotherapist" = "פיזיותרפיסט";
+
+"type.healthcare.alternative" = "רפואה אלטרנטיבית";
+
+"type.healthcare.audiologist" = "אודיולוגיה";
+
+"type.healthcare.blood_donation" = "מרכז תרומת דם";
+
+"type.healthcare.optometrist" = "אופטומטריה";
+
+"type.healthcare.podiatrist" = "פודיאטריה";
+
+"type.healthcare.psychotherapist" = "פסיכותרפיה";
+
+"type.healthcare.sample_collection" = "דְגִימָה";
+
+"type.healthcare.speech_therapist" = "ריפוי בדיבור";
 
 
 /********** Types: Roads **********/
@@ -1869,6 +1889,8 @@
 
 /* These translations are used for all type.highway.*.tunnel. */
 "type.highway.bridleway.tunnel" = "מִנהָרָה";
+
+"type.highway.busway" = "ידועיי סובוטוא שיבכ";
 
 "type.highway.bus_stop" = "Bus Stop";
 

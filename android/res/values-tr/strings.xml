@@ -1020,9 +1020,20 @@
 	<string name="type.emergency.defibrillator">Defibrilatör</string>
 	<string name="type.emergency.fire_hydrant">Yangın Söndürme Musluğu</string>
 	<string name="type.emergency.phone">Acil Telefon</string>
+	<!-- This is for secondary entrances, for main entrances see type.entrance.main -->
 	<string name="type.entrance">Giriş</string>
+	<!-- This is for main/primary entrances, for secondary entrances see type.entrance -->
+	<string name="type.entrance.main">Ana giriş</string>
 	<string name="type.healthcare.laboratory">Tıbbi Laboratuvar</string>
 	<string name="type.healthcare.physiotherapist">Fizyoterapist</string>
+	<string name="type.healthcare.alternative">Alternatif tıp</string>
+	<string name="type.healthcare.audiologist">Odyoloji</string>
+	<string name="type.healthcare.blood_donation">Kan Bağışı Merkezi</string>
+	<string name="type.healthcare.optometrist">Optometri</string>
+	<string name="type.healthcare.podiatrist">Podiatri</string>
+	<string name="type.healthcare.psychotherapist">Psikoterapi</string>
+	<string name="type.healthcare.sample_collection">Örnekleme</string>
+	<string name="type.healthcare.speech_therapist">Logopedi</string>
 
 	<!-- SECTION: Types: Roads -->
 	<string name="type.highway">Otoyol</string>
@@ -1032,6 +1043,7 @@
 	<string name="type.highway.bridleway.permissive">Atlı Yolu</string>
 	<!-- These translations are used for all type.highway.*.tunnel. -->
 	<string name="type.highway.bridleway.tunnel">Tünel</string>
+	<string name="type.highway.busway">Özel otobüs yolu</string>
 	<string name="type.highway.bus_stop">Otobüs Durağı</string>
 	<string name="type.highway.construction">Yapım Aşamasında Yol</string>
 	<string name="type.highway.cycleway">Bisiklet Yolu</string>

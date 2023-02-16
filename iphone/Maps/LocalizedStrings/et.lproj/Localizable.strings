@@ -1849,11 +1849,31 @@
 
 "type.emergency.phone" = "Hädaabi telefon";
 
+/* This is for secondary entrances, for main entrances see type.entrance.main */
 "type.entrance" = "Sissepääs";
+
+/* This is for main/primary entrances, for secondary entrances see type.entrance */
+"type.entrance.main" = "Peasissekäik";
 
 "type.healthcare.laboratory" = "Meditsiinilabor";
 
 "type.healthcare.physiotherapist" = "Füsioterapeut";
+
+"type.healthcare.alternative" = "Alternatiivne meditsiin";
+
+"type.healthcare.audiologist" = "Audioloogia";
+
+"type.healthcare.blood_donation" = "Vereloovutuskeskus";
+
+"type.healthcare.optometrist" = "Optomeetria";
+
+"type.healthcare.podiatrist" = "Jalaravi";
+
+"type.healthcare.psychotherapist" = "Psühhoteraapia";
+
+"type.healthcare.sample_collection" = "Proovivõtmine";
+
+"type.healthcare.speech_therapist" = "Logopeedia";
 
 
 /********** Types: Roads **********/
@@ -1869,6 +1889,8 @@
 
 /* These translations are used for all type.highway.*.tunnel. */
 "type.highway.bridleway.tunnel" = "Tunnel";
+
+"type.highway.busway" = "Spetsiaalne bussitee";
 
 "type.highway.bus_stop" = "Bussipeatus";
 

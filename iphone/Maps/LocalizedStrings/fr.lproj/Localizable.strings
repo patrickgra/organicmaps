@@ -1849,11 +1849,31 @@
 
 "type.emergency.phone" = "Téléphone d'urgence";
 
+/* This is for secondary entrances, for main entrances see type.entrance.main */
 "type.entrance" = "Entrée";
+
+/* This is for main/primary entrances, for secondary entrances see type.entrance */
+"type.entrance.main" = "Entrée principale";
 
 "type.healthcare.laboratory" = "Laboratoire médical";
 
 "type.healthcare.physiotherapist" = "Physiothérapeute";
+
+"type.healthcare.alternative" = "Médecine alternative";
+
+"type.healthcare.audiologist" = "Audiologie";
+
+"type.healthcare.blood_donation" = "Centre de don du sang";
+
+"type.healthcare.optometrist" = "Optométrie";
+
+"type.healthcare.podiatrist" = "Podologie";
+
+"type.healthcare.psychotherapist" = "Psychothérapie";
+
+"type.healthcare.sample_collection" = "Prélèvements biologiques";
+
+"type.healthcare.speech_therapist" = "Logopédie";
 
 
 /********** Types: Roads **********/
@@ -1869,6 +1889,8 @@
 
 /* These translations are used for all type.highway.*.tunnel. */
 "type.highway.bridleway.tunnel" = "Tunnel";
+
+"type.highway.busway" = "Route réservée aux bus";
 
 "type.highway.bus_stop" = "Arrêt de bus";
 

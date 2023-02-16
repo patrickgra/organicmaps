@@ -966,15 +966,27 @@
 	<string name="type.emergency.defibrillator">Defibrillaattori</string>
 	<string name="type.emergency.fire_hydrant">Paloposti</string>
 	<string name="type.emergency.phone">Hätäpuhelin</string>
+	<!-- This is for secondary entrances, for main entrances see type.entrance.main -->
 	<string name="type.entrance">Sisäänkäynti</string>
+	<!-- This is for main/primary entrances, for secondary entrances see type.entrance -->
+	<string name="type.entrance.main">Pääsisäänkäynti</string>
 	<string name="type.healthcare.laboratory">Lääketieteellinen laboratorio</string>
 	<string name="type.healthcare.physiotherapist">Fysioterapeutti</string>
+	<string name="type.healthcare.alternative">Vaihtoehtoinen lääketiede</string>
+	<string name="type.healthcare.audiologist">Audiologia</string>
+	<string name="type.healthcare.blood_donation">Verenluovutuskeskus</string>
+	<string name="type.healthcare.optometrist">Optometria</string>
+	<string name="type.healthcare.podiatrist">Jalkaterapia</string>
+	<string name="type.healthcare.psychotherapist">Psykoterapia</string>
+	<string name="type.healthcare.sample_collection">Näytteenotto</string>
+	<string name="type.healthcare.speech_therapist">Logopedia</string>
 
 	<!-- SECTION: Types: Roads -->
 	<!-- These translations are used for all type.highway.*.bridge. -->
 	<string name="type.highway.bridleway.bridge">Silta</string>
 	<!-- These translations are used for all type.highway.*.tunnel. -->
 	<string name="type.highway.bridleway.tunnel">Tunneli</string>
+	<string name="type.highway.busway">Oma bussitie</string>
 	<string name="type.highway.bus_stop">Bussipysäkki</string>
 	<string name="type.highway.construction">Rakenteilla oleva tie</string>
 	<!-- These translations are used for all type.highway.*.bridge. -->

@@ -1849,11 +1849,31 @@
 
 "type.emergency.phone" = "Tísňového volání";
 
+/* This is for secondary entrances, for main entrances see type.entrance.main */
 "type.entrance" = "Vchod";
+
+/* This is for main/primary entrances, for secondary entrances see type.entrance */
+"type.entrance.main" = "Hlavní vchod";
 
 "type.healthcare.laboratory" = "Lékařská laboratoř";
 
 "type.healthcare.physiotherapist" = "Fyzioterapeut";
+
+"type.healthcare.alternative" = "Alternativní medicína";
+
+"type.healthcare.audiologist" = "Audiologie";
+
+"type.healthcare.blood_donation" = "Centrum dárcovství krve";
+
+"type.healthcare.optometrist" = "Optometrie";
+
+"type.healthcare.podiatrist" = "Podiatrie";
+
+"type.healthcare.psychotherapist" = "Psychoterapie";
+
+"type.healthcare.sample_collection" = "Odběr vzorků";
+
+"type.healthcare.speech_therapist" = "Logopedie";
 
 
 /********** Types: Roads **********/
@@ -1869,6 +1889,8 @@
 
 /* These translations are used for all type.highway.*.tunnel. */
 "type.highway.bridleway.tunnel" = "Tunel";
+
+"type.highway.busway" = "Vyhrazená autobusová silnice";
 
 "type.highway.bus_stop" = "Autobusová zastávka";
 

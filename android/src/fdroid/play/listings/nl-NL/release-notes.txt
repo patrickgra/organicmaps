@@ -1,10 +1,7 @@
-• Nieuwe OpenStreetMap data vanaf 21 januari
-• Opgelost: importeren van KML routes
-• Opgelost: crash tijdens opstarten als WebView uitgeschakeld of afwezig was
-• Verbeterd: zoeken en routes berekenen
-• Correct behandelen van hoogtedata voor wandelen en fietsen
-• Bowling toegevoegd
-• Kroatië tot de Shengen zone toegevoegd
-• Maximum aanpasbare verdiepingen verhoogd van 25 naar 50
-• Baskisch, Wit-Russisch, Kroatisch, Noors, Marathi, Swahili ingeschakeld in TTS
+• Nieuwe OpenStreetMap data sinds 10 februari, inclusief veranderingen van het Humanitarian OpenStreetMap Team (HOT) na de aardbeving in Turkije en Syrië
+• Slechte zoekresultaten gefilterd in de lijst en op de kaart
+• Gefixt: crash bij openen
+• Betere iconen voor hoofd- en zij-ingangen
+• Betere navigatie stembegeleiding voor korte afstanden
+• Gefixt: Perzische, Poolse en Duitse vertalingen
 …meer: omaps.app/news

@@ -1849,11 +1849,31 @@
 
 "type.emergency.phone" = "تلفن اضطراری";
 
+/* This is for secondary entrances, for main entrances see type.entrance.main */
 "type.entrance" = "ورودی";
+
+/* This is for main/primary entrances, for secondary entrances see type.entrance */
+"type.entrance.main" = "ﯽﻠﺻﺍ ﯼﺩﻭﺭﻭ";
 
 "type.healthcare.laboratory" = "ﯽﮑﺷﺰﭘ ﻩﺎﮕﺸﯾﺎﻣﺯﺁ";
 
 "type.healthcare.physiotherapist" = "فیزیوتراپیست";
+
+"type.healthcare.alternative" = "طب جایگزین";
+
+"type.healthcare.audiologist" = "شنوایی شناسی";
+
+"type.healthcare.blood_donation" = "مرکز اهدای خون";
+
+"type.healthcare.optometrist" = "بینایی سنجی";
+
+"type.healthcare.podiatrist" = "پزشکی پا";
+
+"type.healthcare.psychotherapist" = "روان درمانی";
+
+"type.healthcare.sample_collection" = "نمونه برداری";
+
+"type.healthcare.speech_therapist" = "گفتار درمانی";
 
 
 /********** Types: Roads **********/
@@ -1869,6 +1889,8 @@
 
 /* These translations are used for all type.highway.*.tunnel. */
 "type.highway.bridleway.tunnel" = "تونل";
+
+"type.highway.busway" = "ﺱﻮﺑﻮﺗﺍ ﯽﺻﺎﺼﺘﺧﺍ ﻩﺩﺎﺟ";
 
 "type.highway.bus_stop" = "حمل و نقل";
 

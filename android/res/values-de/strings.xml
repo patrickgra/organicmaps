@@ -1000,9 +1000,20 @@
 	<string name="type.emergency.defibrillator">Defibrillator</string>
 	<string name="type.emergency.fire_hydrant">Hydrant</string>
 	<string name="type.emergency.phone">Notruftelefon</string>
+	<!-- This is for secondary entrances, for main entrances see type.entrance.main -->
 	<string name="type.entrance">Eingang</string>
+	<!-- This is for main/primary entrances, for secondary entrances see type.entrance -->
+	<string name="type.entrance.main">Haupteingang</string>
 	<string name="type.healthcare.laboratory">Medizinisches Labor</string>
 	<string name="type.healthcare.physiotherapist">Physiotherapeut</string>
+	<string name="type.healthcare.alternative">Alternative Medizin</string>
+	<string name="type.healthcare.audiologist">Audiologie</string>
+	<string name="type.healthcare.blood_donation">Blutspendezentrum</string>
+	<string name="type.healthcare.optometrist">Optometrie</string>
+	<string name="type.healthcare.podiatrist">Podologie</string>
+	<string name="type.healthcare.psychotherapist">Psychotherapie</string>
+	<string name="type.healthcare.sample_collection">Probenahme</string>
+	<string name="type.healthcare.speech_therapist">Logopedie</string>
 
 	<!-- SECTION: Types: Roads -->
 	<string name="type.highway">Straße</string>
@@ -1012,6 +1023,7 @@
 	<string name="type.highway.bridleway.permissive">Reitweg</string>
 	<!-- These translations are used for all type.highway.*.tunnel. -->
 	<string name="type.highway.bridleway.tunnel">Tunnel</string>
+	<string name="type.highway.busway">Eigene Busstraße</string>
 	<string name="type.highway.bus_stop">Bushaltestelle</string>
 	<string name="type.highway.construction">Straße im Bau</string>
 	<string name="type.highway.cycleway">Radweg</string>

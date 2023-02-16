@@ -1849,11 +1849,31 @@
 
 "type.emergency.phone" = "Acil Telefon";
 
+/* This is for secondary entrances, for main entrances see type.entrance.main */
 "type.entrance" = "Giriş";
+
+/* This is for main/primary entrances, for secondary entrances see type.entrance */
+"type.entrance.main" = "Ana giriş";
 
 "type.healthcare.laboratory" = "Tıbbi Laboratuvar";
 
 "type.healthcare.physiotherapist" = "Fizyoterapist";
+
+"type.healthcare.alternative" = "Alternatif tıp";
+
+"type.healthcare.audiologist" = "Odyoloji";
+
+"type.healthcare.blood_donation" = "Kan Bağışı Merkezi";
+
+"type.healthcare.optometrist" = "Optometri";
+
+"type.healthcare.podiatrist" = "Podiatri";
+
+"type.healthcare.psychotherapist" = "Psikoterapi";
+
+"type.healthcare.sample_collection" = "Örnekleme";
+
+"type.healthcare.speech_therapist" = "Logopedi";
 
 
 /********** Types: Roads **********/
@@ -1869,6 +1889,8 @@
 
 /* These translations are used for all type.highway.*.tunnel. */
 "type.highway.bridleway.tunnel" = "Tünel";
+
+"type.highway.busway" = "Özel otobüs yolu";
 
 "type.highway.bus_stop" = "Otobüs Durağı";
 

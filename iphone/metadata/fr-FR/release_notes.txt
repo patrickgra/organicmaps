@@ -1,29 +1,11 @@
-• Nouvelles données OpenStreetMap au 21 janvier 2023
-• Correction de l'import de certains tracés KML
-• Recherche automatique de la position actuelle après 30 heures d'inactivité au lieu de 8 heures
-• Amélioration des résultats de recherche des catégories
-• L'Australie est maintenant correctement orthographiée dans les résultats de recherche
-• leisure=track peut désormais être recherché
-• Correction d'aide textuelles invisibles avec le thème sombre dans les Paramètres
+• Nouvelles données OpenStreetMap au 10 février, avec modifications apportées par l'équipe humanitaire OpenStreetMap (HOT) après le tremblement de terre en Turquie et en Syrie
+• Résultats de recherche erronés sont filtrés dans la liste et sur la carte
+• Amélioration des annonces vocales du prochain virage pour les petites distances
+• Amélioration des icônes pour les entrées principales et secondaires des bâtiments
+• Correction des traductions en persan, polonais et allemand
+• Correction d'un crash lors de l'ouverture de liens om:// et https://omaps.app/
+• Afficher le nom du point d'intérêt partagé dans les liens om:// et https://omaps.app/
 
-Itinéraires
-• Gestion appropriée du dénivelé pour la randonnée et le vélo
-• Correction des itinéraires inter-région
-• Correction des itinéraires via certains ponts
-• Les voies Bus sont supportées
-• Ajout de la Croatie à l'espace Schengen
+Vous trouverez d'autres exemples de notre API et de nos schémas URL à l'adresse omaps.app/api
 
-Esthétique
-• Correction des icônes pour Buenos Aires et le métro de Bilbao
-• Ajout de Bowling Alley
-• Correction des icônes historic=fountain et tourism=information-office
-• Taille d'îcone identique pour les ressorts
-
-Editeur
-• Les nom d'édition avec les symboles /\°[] sont maintenant autorisés
-• Ajout de amenity=public_bookcase
-• Augmentation du nombre d'étages modifiables sur un bâtiment de 25 à 50
-
-Traductions
-• Correction des traductions pour le Brésilien, Tchèque, Français, Hongrois, Espagnol (Mexicain), et Turc
-• Correction des traductions TTS pour le Finlandais et le Portugais
+Suivez nos actualités sur omaps.app/news
