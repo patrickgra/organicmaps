@@ -710,8 +710,8 @@
 
 "editor_storey_number" = "Solairu kopurua (gehienez %d)";
 
-/* Error message in Editor when a user tries to set the number of floors for a building higher than 25 */
-"error_enter_correct_storey_number" = "Landare kopurua ez da 25etik gorakoa izan behar";
+/* Error message in Editor when a user tries to set the number of floors for a building higher than %d floors */
+"error_enter_correct_storey_number" = "Landare kopurua ez da %detik gorakoa izan behar";
 
 "editor_zip_code" = "Posta kodea";
 
@@ -1849,11 +1849,31 @@
 
 "type.emergency.phone" = "Larrialdi zenbakia";
 
+/* This is for secondary entrances, for main entrances see type.entrance.main */
 "type.entrance" = "Sarrera";
+
+/* This is for main/primary entrances, for secondary entrances see type.entrance */
+"type.entrance.main" = "Sarrera Nagusia";
 
 "type.healthcare.laboratory" = "Medikuntza laborategia";
 
 "type.healthcare.physiotherapist" = "Fisioterapeuta";
+
+"type.healthcare.alternative" = "Medikuntza alternatiboa";
+
+"type.healthcare.audiologist" = "Audiologia";
+
+"type.healthcare.blood_donation" = "Odol Emate Zentroa";
+
+"type.healthcare.optometrist" = "Optometria";
+
+"type.healthcare.podiatrist" = "Podologia";
+
+"type.healthcare.psychotherapist" = "Psikoterapia";
+
+"type.healthcare.sample_collection" = "Laginketa";
+
+"type.healthcare.speech_therapist" = "Logopedia";
 
 
 /********** Types: Roads **********/
@@ -1869,6 +1889,8 @@
 
 /* These translations are used for all type.highway.*.tunnel. */
 "type.highway.bridleway.tunnel" = "Tunel";
+
+"type.highway.busway" = "Autobus errepidea";
 
 "type.highway.bus_stop" = "Autobus geltokia";
 

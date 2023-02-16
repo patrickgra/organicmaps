@@ -338,10 +338,20 @@ world  +
         fire_hydrant  -
         phone  -
         {}
-    entrance  -
+    entrance  +
+        main  -
+        {}
     healthcare  +
+        alternative  -
+        audiologist  -
+        blood_donation  -
         laboratory  -
+        optometrist  -
         physiotherapist  -
+        podiatrist  -
+        psychotherapist  -
+        sample_collection  -
+        speech_therapist  -
         {}
     highway  +
         bridleway  +
@@ -839,6 +849,7 @@ world  +
                 beijing  -
                 bengalore  -
                 berlin  -
+                bilbao  -
                 brasilia  -
                 brescia  -
                 brussels  -

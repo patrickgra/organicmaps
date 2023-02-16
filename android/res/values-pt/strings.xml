@@ -436,8 +436,8 @@
 	<string name="download_over_mobile_message">Isto pode ser muito caro com alguns planos ou em roaming.</string>
 	<string name="error_enter_correct_house_number">Introduza um número de endereço correto</string>
 	<string name="editor_storey_number">Número de pisos (máx. %d)</string>
-	<!-- Error message in Editor when a user tries to set the number of floors for a building higher than 25 -->
-	<string name="error_enter_correct_storey_number">Editar o edifício com um máximo de 25 pisos</string>
+	<!-- Error message in Editor when a user tries to set the number of floors for a building higher than %d floors -->
+	<string name="error_enter_correct_storey_number">O número de pisos não pode ser maior que %d</string>
 	<string name="editor_zip_code">Código Postal</string>
 	<string name="error_enter_correct_zip_code">Introduza o código postal correto</string>
 	<!-- Place Page title for long tap -->
@@ -972,9 +972,20 @@
 	<string name="type.emergency.defibrillator">Desfibrilador</string>
 	<string name="type.emergency.fire_hydrant">Boca de incêndio</string>
 	<string name="type.emergency.phone">Telefone de emergência</string>
+	<!-- This is for secondary entrances, for main entrances see type.entrance.main -->
 	<string name="type.entrance">Entrada</string>
+	<!-- This is for main/primary entrances, for secondary entrances see type.entrance -->
+	<string name="type.entrance.main">Entrada principal</string>
 	<string name="type.healthcare.laboratory">Laboratório médico</string>
 	<string name="type.healthcare.physiotherapist">Fisioterapeuta</string>
+	<string name="type.healthcare.alternative">Medicina alternativa</string>
+	<string name="type.healthcare.audiologist">Audiologia</string>
+	<string name="type.healthcare.blood_donation">Centro de Doação de Sangue</string>
+	<string name="type.healthcare.optometrist">Optometria</string>
+	<string name="type.healthcare.podiatrist">Podiatria</string>
+	<string name="type.healthcare.psychotherapist">Psicoterapia</string>
+	<string name="type.healthcare.sample_collection">Amostragem</string>
+	<string name="type.healthcare.speech_therapist">Terapia da fala</string>
 
 	<!-- SECTION: Types: Roads -->
 	<string name="type.highway">Rodovia</string>
@@ -984,6 +995,7 @@
 	<string name="type.highway.bridleway.permissive">Caminho para cavaleiros</string>
 	<!-- These translations are used for all type.highway.*.tunnel. -->
 	<string name="type.highway.bridleway.tunnel">Túnel</string>
+	<string name="type.highway.busway">Via exclusiva de autocarro</string>
 	<string name="type.highway.bus_stop">Paragem de autocarros</string>
 	<string name="type.highway.construction">Estrada em construção</string>
 	<string name="type.highway.cycleway">Ciclovia</string>

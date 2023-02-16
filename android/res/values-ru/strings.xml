@@ -458,8 +458,8 @@
 	<string name="download_over_mobile_message">На некоторых тарифных планах или в роуминге это может привести к значительным расходам.</string>
 	<string name="error_enter_correct_house_number">Введите корректный номер дома</string>
 	<string name="editor_storey_number">Количество этажей (максимум %d)</string>
-	<!-- Error message in Editor when a user tries to set the number of floors for a building higher than 25 -->
-	<string name="error_enter_correct_storey_number">Количество этажей не должно превышать 25</string>
+	<!-- Error message in Editor when a user tries to set the number of floors for a building higher than %d floors -->
+	<string name="error_enter_correct_storey_number">Количество этажей не должно превышать %d</string>
 	<string name="editor_zip_code">Почтовый индекс</string>
 	<string name="error_enter_correct_zip_code">Введите корректный почтовый индекс</string>
 	<!-- Place Page title for long tap -->
@@ -1035,9 +1035,20 @@
 	<string name="type.emergency.defibrillator">Дефибриллятор</string>
 	<string name="type.emergency.fire_hydrant">Пожарный гидрант</string>
 	<string name="type.emergency.phone">Телефон для экстренных вызовов</string>
+	<!-- This is for secondary entrances, for main entrances see type.entrance.main -->
 	<string name="type.entrance">Вход</string>
+	<!-- This is for main/primary entrances, for secondary entrances see type.entrance -->
+	<string name="type.entrance.main">Главный вход</string>
 	<string name="type.healthcare.laboratory">Медицинская лаборатория</string>
 	<string name="type.healthcare.physiotherapist">Физиотерапевт</string>
+	<string name="type.healthcare.alternative">Альтернативная медицина</string>
+	<string name="type.healthcare.audiologist">Аудиология</string>
+	<string name="type.healthcare.blood_donation">Центр донорства крови</string>
+	<string name="type.healthcare.optometrist">Оптометрия</string>
+	<string name="type.healthcare.podiatrist">Подиатрия</string>
+	<string name="type.healthcare.psychotherapist">Психотерапия</string>
+	<string name="type.healthcare.sample_collection">Сбор анализов</string>
+	<string name="type.healthcare.speech_therapist">Логопедия</string>
 
 	<!-- SECTION: Types: Roads -->
 	<string name="type.highway">Дорога</string>
@@ -1047,6 +1058,7 @@
 	<string name="type.highway.bridleway.permissive">Конная дорожка</string>
 	<!-- These translations are used for all type.highway.*.tunnel. -->
 	<string name="type.highway.bridleway.tunnel">Тоннель</string>
+	<string name="type.highway.busway">Выделенная автобусная дорога</string>
 	<string name="type.highway.bus_stop">Остановка</string>
 	<string name="type.highway.construction">Строящаяся дорога</string>
 	<string name="type.highway.cycleway">Велодорожка</string>

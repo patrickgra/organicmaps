@@ -358,14 +358,25 @@
 	<string name="type.cuisine.vegan">מטבח טבעוני</string>
 	<string name="type.cuisine.vegetarian">מטבח צמחוני</string>
 	<string name="type.cuisine.vietnamese">מטבח וייטנאמי</string>
+	<!-- This is for main/primary entrances, for secondary entrances see type.entrance -->
+	<string name="type.entrance.main">תישארה הסינכ</string>
 	<string name="type.healthcare.laboratory">תיאופר הדבעמ</string>
 	<string name="type.healthcare.physiotherapist">פיזיותרפיסט</string>
+	<string name="type.healthcare.alternative">רפואה אלטרנטיבית</string>
+	<string name="type.healthcare.audiologist">אודיולוגיה</string>
+	<string name="type.healthcare.blood_donation">מרכז תרומת דם</string>
+	<string name="type.healthcare.optometrist">אופטומטריה</string>
+	<string name="type.healthcare.podiatrist">פודיאטריה</string>
+	<string name="type.healthcare.psychotherapist">פסיכותרפיה</string>
+	<string name="type.healthcare.sample_collection">דְגִימָה</string>
+	<string name="type.healthcare.speech_therapist">ריפוי בדיבור</string>
 
 	<!-- SECTION: Types: Roads -->
 	<!-- These translations are used for all type.highway.*.bridge. -->
 	<string name="type.highway.bridleway.bridge">לְגַשֵׁר</string>
 	<!-- These translations are used for all type.highway.*.tunnel. -->
 	<string name="type.highway.bridleway.tunnel">מִנהָרָה</string>
+	<string name="type.highway.busway">ידועיי סובוטוא שיבכ</string>
 	<!-- These translations are used for all type.highway.*.bridge. -->
 	<string name="type.highway.cycleway.bridge">לְגַשֵׁר</string>
 	<!-- These translations are used for all type.highway.*.tunnel. -->

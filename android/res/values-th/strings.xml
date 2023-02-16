@@ -431,8 +431,8 @@
 	<string name="download_over_mobile_message">มันอาจมีราคาสูงมากหากใช้แผนโทรศัพท์บางประเภทหรือหากทำการโรมมิ่ง</string>
 	<string name="error_enter_correct_house_number">กรอกบ้านเลขที่ให้ถูกต้อง</string>
 	<string name="editor_storey_number">จำนวนชั้น (มากสุด %d)</string>
-	<!-- Error message in Editor when a user tries to set the number of floors for a building higher than 25 -->
-	<string name="error_enter_correct_storey_number">แก้ไขอาคารที่มีจำนวนชั้นมากกว่า 25</string>
+	<!-- Error message in Editor when a user tries to set the number of floors for a building higher than %d floors -->
+	<string name="error_enter_correct_storey_number">แก้ไขอาคารที่มีจำนวนชั้นมากกว่า %d</string>
 	<string name="editor_zip_code">รหัสไปรษณีย์</string>
 	<string name="error_enter_correct_zip_code">กรุณาใส่รหัสไปรษณีย์ที่ถูกต้อง</string>
 	<!-- Place Page title for long tap -->
@@ -914,15 +914,27 @@
 	<string name="type.emergency.defibrillator">เครื่องกระตุ้นหัวใจ</string>
 	<string name="type.emergency.fire_hydrant">หัวจ่ายน้ำดับเพลิง</string>
 	<string name="type.emergency.phone">โทรศัพท์ฉุกเฉิน</string>
+	<!-- This is for secondary entrances, for main entrances see type.entrance.main -->
 	<string name="type.entrance">ทางเข้า</string>
+	<!-- This is for main/primary entrances, for secondary entrances see type.entrance -->
+	<string name="type.entrance.main">ทางเข้าหลัก</string>
 	<string name="type.healthcare.laboratory">ห้องปฏิบัติการทางการแพทย์</string>
 	<string name="type.healthcare.physiotherapist">นักกายภาพบำบัด</string>
+	<string name="type.healthcare.alternative">การแพทย์ทางเลือก</string>
+	<string name="type.healthcare.audiologist">โสตวิทยา</string>
+	<string name="type.healthcare.blood_donation">ศูนย์รับบริจาคโลหิต</string>
+	<string name="type.healthcare.optometrist">ทัศนมาตรศาสตร์</string>
+	<string name="type.healthcare.podiatrist">แก้โรคเท้า</string>
+	<string name="type.healthcare.psychotherapist">จิตบำบัด</string>
+	<string name="type.healthcare.sample_collection">การสุ่มตัวอย่าง</string>
+	<string name="type.healthcare.speech_therapist">การบำบัดด้วยการพูด</string>
 
 	<!-- SECTION: Types: Roads -->
 	<!-- These translations are used for all type.highway.*.bridge. -->
 	<string name="type.highway.bridleway.bridge">สะพาน</string>
 	<!-- These translations are used for all type.highway.*.tunnel. -->
 	<string name="type.highway.bridleway.tunnel">อุโมงค์</string>
+	<string name="type.highway.busway">ถนนทางเดินรถโดยเฉพาะ</string>
 	<string name="type.highway.bus_stop">ป้ายรถเมล์</string>
 	<string name="type.highway.construction">ทางกำลังอยู่ในการก่อสร้าง</string>
 	<!-- These translations are used for all type.highway.*.bridge. -->

@@ -710,8 +710,8 @@
 
 "editor_storey_number" = "楼号 (最大 %d)";
 
-/* Error message in Editor when a user tries to set the number of floors for a building higher than 25 */
-"error_enter_correct_storey_number" = "编辑最多 25 层的建筑";
+/* Error message in Editor when a user tries to set the number of floors for a building higher than %d floors */
+"error_enter_correct_storey_number" = "最多可编辑 %d 层的建筑";
 
 "editor_zip_code" = "邮政编码";
 
@@ -1849,11 +1849,31 @@
 
 "type.emergency.phone" = "紧急电话";
 
+/* This is for secondary entrances, for main entrances see type.entrance.main */
 "type.entrance" = "入口";
+
+/* This is for main/primary entrances, for secondary entrances see type.entrance */
+"type.entrance.main" = "主要入口";
 
 "type.healthcare.laboratory" = "医学实验室";
 
 "type.healthcare.physiotherapist" = "物理治疗师";
+
+"type.healthcare.alternative" = "替代医学";
+
+"type.healthcare.audiologist" = "听力学家";
+
+"type.healthcare.blood_donation" = "献血中心";
+
+"type.healthcare.optometrist" = "验光师";
+
+"type.healthcare.podiatrist" = "足疗师";
+
+"type.healthcare.psychotherapist" = "心理治疗师";
+
+"type.healthcare.sample_collection" = "样本采集设施";
+
+"type.healthcare.speech_therapist" = "语言治疗师";
 
 
 /********** Types: Roads **********/
@@ -1869,6 +1889,8 @@
 
 /* These translations are used for all type.highway.*.tunnel. */
 "type.highway.bridleway.tunnel" = "隧道";
+
+"type.highway.busway" = "巴士专用道";
 
 "type.highway.bus_stop" = "公交站";
 

@@ -433,8 +433,8 @@
 	<string name="download_over_mobile_message">Αυτό μπορεί να είναι σημαντικά πιο ακριβό για μερικά πακέτα ή στην περίπτωση περιαγωγής</string>
 	<string name="error_enter_correct_house_number">Εισαγάγετε έναν έγκυρο αριθμό κτιρίου</string>
 	<string name="editor_storey_number">Αριθμός ορόφων (μέγιστο %d)</string>
-	<!-- Error message in Editor when a user tries to set the number of floors for a building higher than 25 -->
-	<string name="error_enter_correct_storey_number">Ο αριθμός των ορόφων δεν πρέπει να υπερβαίνει τους 25</string>
+	<!-- Error message in Editor when a user tries to set the number of floors for a building higher than %d floors -->
+	<string name="error_enter_correct_storey_number">Ο αριθμός των ορόφων δεν πρέπει να υπερβαίνει τους %d</string>
 	<string name="editor_zip_code">Ταχυδρομικός κώδικας</string>
 	<string name="error_enter_correct_zip_code">Πληκτρολογήστε έναν έγκυρο ταχυδρομικό κώδικα</string>
 	<!-- Place Page title for long tap -->
@@ -911,15 +911,27 @@
 	<string name="type.emergency.defibrillator">Πρώτες βοήθειες</string>
 	<string name="type.emergency.fire_hydrant">Πυροσβεστικός κρουνός</string>
 	<string name="type.emergency.phone">Τηλέφωνο έκτακτης ανάγκης</string>
+	<!-- This is for secondary entrances, for main entrances see type.entrance.main -->
 	<string name="type.entrance">Είσοδος</string>
+	<!-- This is for main/primary entrances, for secondary entrances see type.entrance -->
+	<string name="type.entrance.main">Κύρια είσοδος</string>
 	<string name="type.healthcare.laboratory">Ιατρικό Εργαστήριο</string>
 	<string name="type.healthcare.physiotherapist">Φυσικοθεραπευτής</string>
+	<string name="type.healthcare.alternative">Εναλλακτική ιατρική</string>
+	<string name="type.healthcare.audiologist">Ακοολογία</string>
+	<string name="type.healthcare.blood_donation">Κέντρο αιμοδοσίας</string>
+	<string name="type.healthcare.optometrist">Οπτομετρία</string>
+	<string name="type.healthcare.podiatrist">Ποδιατρική</string>
+	<string name="type.healthcare.psychotherapist">Ψυχοθεραπεία</string>
+	<string name="type.healthcare.sample_collection">Δειγματοληψία</string>
+	<string name="type.healthcare.speech_therapist">Λογοθεραπεία</string>
 
 	<!-- SECTION: Types: Roads -->
 	<!-- These translations are used for all type.highway.*.bridge. -->
 	<string name="type.highway.bridleway.bridge">Γέφυρα</string>
 	<!-- These translations are used for all type.highway.*.tunnel. -->
 	<string name="type.highway.bridleway.tunnel">Σήραγγα</string>
+	<string name="type.highway.busway">Αφιερωμένος δρόμος λεωφορείων</string>
 	<string name="type.highway.bus_stop">Στάση λεωφορείου</string>
 	<string name="type.highway.construction">Οδός υπό κατασκευή</string>
 	<!-- These translations are used for all type.highway.*.bridge. -->

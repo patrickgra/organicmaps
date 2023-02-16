@@ -439,8 +439,8 @@
 	<string name="download_over_mobile_message">Aceasta poate fi destul de costisitoare în cazul unor abonamente sau în roaming.</string>
 	<string name="error_enter_correct_house_number">Introdu un număr corect</string>
 	<string name="editor_storey_number">Număr de etaje (maximum %d)</string>
-	<!-- Error message in Editor when a user tries to set the number of floors for a building higher than 25 -->
-	<string name="error_enter_correct_storey_number">Numărul de etaje nu trebuie să depășească 25</string>
+	<!-- Error message in Editor when a user tries to set the number of floors for a building higher than %d floors -->
+	<string name="error_enter_correct_storey_number">Numărul de etaje nu trebuie să depășească %d</string>
 	<string name="editor_zip_code">Cod poștal</string>
 	<string name="error_enter_correct_zip_code">Introdu codul poștal corect</string>
 	<!-- Place Page title for long tap -->
@@ -931,15 +931,27 @@
 	<string name="type.emergency.defibrillator">Defibrilator</string>
 	<string name="type.emergency.fire_hydrant">Hidrant</string>
 	<string name="type.emergency.phone">Telefon de urgență</string>
+	<!-- This is for secondary entrances, for main entrances see type.entrance.main -->
 	<string name="type.entrance">Intrare</string>
+	<!-- This is for main/primary entrances, for secondary entrances see type.entrance -->
+	<string name="type.entrance.main">Intrarea principala</string>
 	<string name="type.healthcare.laboratory">Laborator medical</string>
 	<string name="type.healthcare.physiotherapist">Fizioterapeut</string>
+	<string name="type.healthcare.alternative">Medicină alternativă</string>
+	<string name="type.healthcare.audiologist">Audiologie</string>
+	<string name="type.healthcare.blood_donation">Centrul de donare de sânge</string>
+	<string name="type.healthcare.optometrist">Optometrie</string>
+	<string name="type.healthcare.podiatrist">Podiatrie</string>
+	<string name="type.healthcare.psychotherapist">Psihoterapie</string>
+	<string name="type.healthcare.sample_collection">Eșantionare</string>
+	<string name="type.healthcare.speech_therapist">Logopedie</string>
 
 	<!-- SECTION: Types: Roads -->
 	<!-- These translations are used for all type.highway.*.bridge. -->
 	<string name="type.highway.bridleway.bridge">Pod</string>
 	<!-- These translations are used for all type.highway.*.tunnel. -->
 	<string name="type.highway.bridleway.tunnel">Tunel</string>
+	<string name="type.highway.busway">Drum dedicat autobuzului</string>
 	<string name="type.highway.bus_stop">Stație de autobuz</string>
 	<string name="type.highway.construction">Drum în construcție</string>
 	<!-- These translations are used for all type.highway.*.bridge. -->
