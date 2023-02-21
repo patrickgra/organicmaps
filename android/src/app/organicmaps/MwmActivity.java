@@ -1815,12 +1815,18 @@ public class MwmActivity extends BaseMwmFragmentActivity
       //if (!TextUtils.isEmpty(mDonatesUrl))
         //items.add(new MenuBottomSheetItem(R.string.donate, R.drawable.ic_donate, this::onDonateOptionSelected));
       items.add(new MenuBottomSheetItem(R.string.settings, R.drawable.ic_settings, this::onSettingsOptionSelected));
+      items.add(new MenuBottomSheetItem(R.string.boarding_screen_title, R.drawable.ic_question_mark, this::onExplanationSelected));
       items.add(new MenuBottomSheetItem(R.string.share_my_location, R.drawable.ic_share, this::onShareLocationOptionSelected));
       return items;
     }
     else if (id.equals(PLACEPAGE_MORE_MENU_ID))
       return mPlacePageController.getMenuBottomSheetItems();
     return null;
+  }
+
+  public void onExplanationSelected(){
+    Counters.resetFirstStartDialogSeen(this);
+    startActivity(new Intent(requireActivity(), BoardingScreenActivity.class));
   }
 
   @Override

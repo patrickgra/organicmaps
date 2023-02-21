@@ -349,11 +349,6 @@ public class SettingsPrefsFragment extends BaseXmlSettingsFragment
     {
       startActivity(new Intent(requireActivity(), HelpActivity.class));
     }
-    else if (preference.getKey() != null && preference.getKey().equals(getString(R.string.pref_boarding_screen)))
-    {
-      Counters.resetFirstStartDialogSeen(requireContext());
-      startActivity(new Intent(requireActivity(), BoardingScreenActivity.class));
-    }
     return super.onPreferenceTreeClick(preference);
   }
 
