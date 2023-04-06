@@ -1,7 +1,10 @@
-• Novos dados OSM de 10/2, incluindo alterações feitas pela Humanitarian OpenStreetMap Team (HOT) após o terremoto na Turquia e na Síria
-• Resultados de busca errados são filtrados na lista e mapa
-• Correção de erro na abertura
-• Melhoria nos ícones para entradas principais e secundárias
-• Melhoria nas notificações de voz da próxima curva para distâncias curtas
-• Traduções atualizadas para alemão, persa e polonês
+• Novos dados OSM de 29/03
+• Assistente de faixas (beta)
+• Correção da posição de seta de localização durante navegação
+• Correção do selecionador de cores dos favoritos para escritas RTL
+• Exibição correta da velocidade e distância no modo de navegação
+• Correção da API para selecionar um ponto no mapa
+• Muitos novos tipos de lojas
+• Adição de carregamento de bicicleta, transferência de dinheiro e usinas
+• Distinção de arbustos, florestas e parques
 …mais: omaps.app/news

@@ -18,6 +18,9 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
+import androidx.recyclerview.widget.RecyclerView;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
 
 import app.organicmaps.Framework;
@@ -31,6 +34,8 @@ import app.organicmaps.widget.menu.MainMenu;
 import app.organicmaps.widget.menu.NavMenu;
 import app.organicmaps.util.UiUtils;
 import app.organicmaps.util.Utils;
+
+import java.util.Arrays;
 
 public class NavigationController implements Application.ActivityLifecycleCallbacks,
                                              TrafficManager.TrafficCallback,
@@ -49,6 +54,13 @@ public class NavigationController implements Application.ActivityLifecycleCallba
 
   private final View mStreetFrame;
   private final TextView mNextStreet;
+
+  @NonNull
+  private final View mLanesFrame;
+  @NonNull
+  private final RecyclerView mLanes;
+  @NonNull
+  private final LanesAdapter mLanesAdapter;
 
   @NonNull
   private final MapButtonsController mMapButtonsController;
@@ -81,10 +93,26 @@ public class NavigationController implements Application.ActivityLifecycleCallba
     }
   };
 
-  public NavigationController(AppCompatActivity activity, @NonNull MapButtonsController mapButtonsController, View.OnClickListener onSettingsClickListener)
+  private void addWindowsInsets(@NonNull View topFrame)
+  {
+    ViewCompat.setOnApplyWindowInsetsListener(topFrame.findViewById(R.id.nav_next_turn_container), (view, windowInsets) -> {
+      view.setPadding(windowInsets.getInsets(WindowInsetsCompat.Type.systemBars()).left, view.getPaddingTop(),
+                      view.getPaddingRight(), view.getPaddingBottom());
+      return windowInsets;
+    });
+  }
+
+  private void initLanesRecycler()
+  {
+    mLanes.setAdapter(mLanesAdapter);
+    mLanes.setNestedScrollingEnabled(false);
+  }
+
+  public NavigationController(AppCompatActivity activity, @NonNull MapButtonsController mapButtonsController,
+                              View.OnClickListener onSettingsClickListener, NavMenu.OnMenuSizeChangedListener onMenuSizeChangedListener)
   {
     mFrame = activity.findViewById(R.id.navigation_frame);
-    mNavMenu = new NavMenu(activity, this);
+    mNavMenu = new NavMenu(activity, this, onMenuSizeChangedListener);
     mOnSettingsClickListener = onSettingsClickListener;
     mMapButtonsController = mapButtonsController;
 
@@ -95,11 +123,7 @@ public class NavigationController implements Application.ActivityLifecycleCallba
     mNextTurnDistance = turnFrame.findViewById(R.id.distance);
     mCircleExit = turnFrame.findViewById(R.id.circle_exit);
 
-    topFrame.findViewById(R.id.nav_next_turn_container).setOnApplyWindowInsetsListener((view, windowInsets) -> {
-      view.setPadding(windowInsets.getSystemWindowInsetLeft(), view.getPaddingTop(),
-                      view.getPaddingRight(), view.getPaddingBottom());
-      return windowInsets;
-    });
+    addWindowsInsets(topFrame);
 
     mNextNextTurnFrame = topFrame.findViewById(R.id.nav_next_next_turn_frame);
     mNextNextTurnImage = mNextNextTurnFrame.findViewById(R.id.turn);
@@ -107,14 +131,19 @@ public class NavigationController implements Application.ActivityLifecycleCallba
     mStreetFrame = topFrame.findViewById(R.id.street_frame);
     mNextStreet = mStreetFrame.findViewById(R.id.street);
 
+    mLanesFrame = topFrame.findViewById(R.id.lanes_frame);
+    mLanes = mLanesFrame.findViewById(R.id.lanes);
+    mLanesAdapter = new LanesAdapter();
+    initLanesRecycler();
+
     // Show a blank view below the navbar to hide the menu content
     final View navigationBarBackground = mFrame.findViewById(R.id.nav_bottom_sheet_nav_bar);
     final View nextTurnContainer = mFrame.findViewById(R.id.nav_next_turn_container);
-    mStreetFrame.setOnApplyWindowInsetsListener((v, windowInsets) -> {
-      UiUtils.extendViewWithStatusBar(v, windowInsets);
-      nextTurnContainer.setPadding(windowInsets.getSystemWindowInsetLeft(), nextTurnContainer.getPaddingTop(),
+    ViewCompat.setOnApplyWindowInsetsListener(mStreetFrame, (v, windowInsets) -> {
+      UiUtils.setViewInsetsPaddingNoBottom(v, windowInsets);
+      nextTurnContainer.setPadding(windowInsets.getInsets(WindowInsetsCompat.Type.systemBars()).left, nextTurnContainer.getPaddingTop(),
                                    nextTurnContainer.getPaddingRight(), nextTurnContainer.getPaddingBottom());
-      navigationBarBackground.getLayoutParams().height = windowInsets.getSystemWindowInsetBottom();
+      navigationBarBackground.getLayoutParams().height = windowInsets.getInsets(WindowInsetsCompat.Type.systemBars()).bottom;
       // The gesture navigation bar stays at the bottom in landscape
       // We need to add a background only above the nav menu
       navigationBarBackground.getLayoutParams().width = mFrame.findViewById(R.id.nav_bottom_sheet).getWidth();
@@ -180,6 +209,17 @@ public class NavigationController implements Application.ActivityLifecycleCallba
     UiUtils.showIf(info.nextCarDirection.containsNextTurn(), mNextNextTurnFrame);
     if (info.nextCarDirection.containsNextTurn())
       info.nextCarDirection.setNextTurnDrawable(mNextNextTurnImage);
+
+    if (info.lanes != null)
+    {
+      UiUtils.show(mLanesFrame);
+      mLanesAdapter.setItems(Arrays.asList(info.lanes));
+    }
+    else
+    {
+      UiUtils.hide(mLanesFrame);
+      mLanesAdapter.clearItems();
+    }
   }
 
   private void updatePedestrian(RoutingInfo info)

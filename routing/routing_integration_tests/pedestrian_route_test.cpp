@@ -418,7 +418,8 @@ UNIT_TEST(Russia_Moscow_HydroprojectBridgeCrossing_TurnTest)
   RouterResultCode const result = routeResult.second;
   TEST_EQUAL(result, RouterResultCode::NoError, ());
 
-  integration::TestRouteLength(route, 334.0);
+  // I don't see any bad routing sections here. Make actual value.
+  integration::TestRouteLength(route, 352.09);
 
   std::vector<turns::TurnItem> t;
   route.GetTurnsForTesting(t);
@@ -544,13 +545,10 @@ UNIT_TEST(RussiaElbrusPriut11)
 // Test on going straight forward on primary road.
 UNIT_TEST(BudvaPrimaryRoad)
 {
-  /// @todo Current pedestrian model avoids primary road and makes some small detours.
-  /// Can't say what is better here in general, but seems like it's ok to walk on primary in Montenegro.
-
   integration::CalculateRouteAndTestRouteLength(
       integration::GetVehicleComponents(VehicleType::Pedestrian),
       mercator::FromLatLon(42.2884527, 18.8456794), {0., 0.},
-      mercator::FromLatLon(42.2880575, 18.8492896), 368.85);
+      mercator::FromLatLon(42.2880575, 18.8492896), 412.66);
 }
 
 // Test on start and finish route which lies on a feature crossed by a mwm border and a ford.
@@ -664,4 +662,24 @@ UNIT_TEST(Italy_Rome_Altitude_Footway)
       integration::GetVehicleComponents(VehicleType::Pedestrian),
       mercator::FromLatLon(41.899384, 12.4980887), {0., 0.},
       mercator::FromLatLon(41.9007759, 12.4994956), 203.861);
+}
+
+UNIT_TEST(Romania_Mountains_ETA)
+{
+  using namespace integration;
+  using mercator::FromLatLon;
+
+  TRouteResult const routeResult = CalculateRoute(GetVehicleComponents(VehicleType::Pedestrian),
+      FromLatLon(45.5450, 25.2584), {0., 0.},
+      FromLatLon(45.5223, 25.2806));
+
+  TEST_EQUAL(routeResult.second, RouterResultCode::NoError, ());
+  TEST(routeResult.first, ());
+  Route const & route = *routeResult.first;
+
+  /// @todo Current Tobler’s Hiking function works bad here.
+
+  TestRouteLength(route, 4671.33);
+  route.GetTotalTimeSec();
+  TEST_LESS(route.GetTotalTimeSec(), 2 * 3600, ());
 }

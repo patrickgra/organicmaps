@@ -1,7 +1,11 @@
-• Neue OpenStreetMap-Daten vom 10. Februar, einschließlich Änderungen durch das Humanitarian OpenStreetMap Team (HOT) nach dem Erdbeben in der Türkei und Syrien
-• Falsche Suchergebnisse in der Liste und auf der Karte gefiltert
-• Absturz beim Öffnen behoben
-• Bessere Icons für Haupt- und Nebeneingänge von Gebäuden
-• Verbesserte Sprachbenachrichtigungen für kleinere Entfernungen bei der nächsten Abbiegung
-• Persische, polnische und deutsche Übersetzungen korrigiert
-…mehr: omaps.app/news
+• New OpenStreetMap data as of March 29
+• Experimental Lane assistant
+• Fix wrong location arrow position during navigation
+• Fix bookmark's color chooser for Right-To-Left languages
+• Properly display speed and distance in navigation mode
+• Fix API to select a point on the map
+• Many new shop types
+• Add money transfer, bicycle charging stations, power plant
+• Made park, forest, and scrub colors different
+• Improved ar, be, de, hu, tr translations
+…more: omaps.app/news

@@ -1,11 +1,25 @@
-• Nouvelles données OpenStreetMap au 10 février, avec modifications apportées par l'équipe humanitaire OpenStreetMap (HOT) après le tremblement de terre en Turquie et en Syrie
-• Résultats de recherche erronés sont filtrés dans la liste et sur la carte
-• Amélioration des annonces vocales du prochain virage pour les petites distances
-• Amélioration des icônes pour les entrées principales et secondaires des bâtiments
-• Correction des traductions en persan, polonais et allemand
-• Correction d'un crash lors de l'ouverture de liens om:// et https://omaps.app/
-• Afficher le nom du point d'intérêt partagé dans les liens om:// et https://omaps.app/
+• Nouvelles données OpenStreetMap du 29 Mars
+• Ajout de liens localisés pour la page wiki OpenStreetMap
+• Remplacement des icônes de montée et de descente par des flèches plus claires
+• Importation correcte des signets KML avec les données de la trace
+• Désactivation des préférences pour les bâtiments en 3D si l'économie d'énergie est activée
+• Les magasins de musique et d'instruments de musique peuvent être ajoutés à l'aide de l'éditeur
+• Les magasins de couture et les merceries peuvent être recherchés et ont une meilleure icône
+• La recherche d'un "supermarché" n'aboutit plus à des supérettes.
 
-Vous trouverez d'autres exemples de notre API et de nos schémas URL à l'adresse omaps.app/api
+Styles
 
-Suivez nos actualités sur omaps.app/news
+• Nouveaux types de magasins : agricole, appareils électroménagers, literie, point de retrait, gaz, reproduction de clés, serrurier, tapis, réparation de motos, toilettage pour animaux, hi-fi, ameublement de salle de bain, rideaux, accessoires de mode, cannabis, herboristerie
+• Ajout du transfert d'argent, des stations de recharge de vélos, des centrales électriques
+• Légendes optionnelles pour la plupart des icônes de POI
+• Différenciation des couleurs des parcs, des forêts et des broussailles
+• Ajout d'icônes de construction en métal
+• Amélioration des voies aériennes, des téléphériques, des lignes électriques, des clôtures
+• Réduction de la visibilité du métro de Barcelone
+• Correction des courbes de niveaux dessinées sur les bâtiments, les routes, etc
+• Correction du rendu des éléments de type multiple (par exemple, certaines légendes de POI s'affichaient trop tôt)
+
+Traductions
+
+• Amélioration des traductions en allemand, turc, biélorusse et hongrois
+• Amélioration des instructions TTS en arabe

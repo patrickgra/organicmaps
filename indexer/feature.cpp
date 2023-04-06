@@ -691,7 +691,7 @@ m2::RectD FeatureType::GetLimitRect(int scale)
 
   if (m_triangles.empty() && m_points.empty() && (GetGeomType() != GeomType::Point))
   {
-    ASSERT(false, ());
+    ASSERT(false, (m_id));
 
     // This function is called during indexing, when we need
     // to check visibility according to feature sizes.
@@ -704,9 +704,8 @@ m2::RectD FeatureType::GetLimitRect(int scale)
 
 m2::RectD const & FeatureType::GetLimitRectChecked() const
 {
-  /// @todo Replace with ASSERTs later.
-  CHECK(m_parsed.m_points && m_parsed.m_triangles, (m_id));
-  CHECK(m_limitRect.IsValid(), (m_id));
+  ASSERT(m_parsed.m_points && m_parsed.m_triangles, (m_id));
+  ASSERT(m_limitRect.IsValid(), (m_id));
   return m_limitRect;
 }
 
@@ -802,10 +801,10 @@ string_view FeatureType::GetName(int8_t lang)
 
   ParseCommon();
 
-  // We don't store empty names.
+  // We don't store empty names. UPD: We do for coast features :)
   string_view name;
   if (m_params.name.GetString(lang, name))
-    ASSERT(!name.empty(), ());
+    ASSERT(!name.empty() || m_id.m_mwmId.GetInfo()->GetType() == MwmInfo::COASTS, ());
 
   return name;
 }

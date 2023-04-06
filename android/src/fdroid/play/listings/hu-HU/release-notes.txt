@@ -1,7 +1,8 @@
-• Február 10-i OpenStreetMap adatok, a Humanitárius OpenStreetMap Csapat változtatásaival, a törökországi és szíriai földrengések következtében
-• Kiszűrtük a hibás keresési találatokat a listában és a térképen
-• A megnyitáskor történő összeomlást kijavítottuk
-• A főbejáratok mostantól megkülönböztethetőek az alsóbbrendű bejáratoktól a csodás új ikonokkal
-• Továbbfejlesztettük a hangnavigációt kisebb távolságok esetén
-• Javítottunk a perzsa, lengyel és német fordításokon
-https://omaps.app/news
+• Új OpenStreetMap térképadatok (március 29)
+• Kísérleti sávnavigációs funkció
+• A felhasználó helyzetét jelző nyíl pozícióját megváltoztattuk, a jobb élmény érdekében
+• Megjavítottuk a könyvjelzők színválasztóját a jobb oldalról balra haladó írásmódú nyelveknél
+• Immáron a sebesség és a távolság helyesen van megjelenítve navigáció közben
+• Sok új bolttípussal bővült alkalmazásunk
+• Hozzáadtuk a pénz átutalóhelyeket, bicikli töltőállomásokat, és erőműveket
+…további infó: omaps.app/news

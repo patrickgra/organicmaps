@@ -1,11 +1,26 @@
-• Nuevos datos de OpenStreetMap a partir del 10 de febrero, incluidos los cambios realizados por el Humanitarian OpenStreetMap Team (HOT) tras el terremoto de Turquía y Siria
-• Filtrados los resultados de búsqueda erróneos en la lista y en el mapa
-• Mejora de las notificaciones de voz de próximo giro para distancias más cortas
-• Mejores iconos para las entradas principales y secundarias de los edificios
-• Corregidas las traducciones al Persa, Polaco y Alemán
-• Corregido el fallo al abrir enlaces om:// y https://omaps.app/
-• Mostrar el nombre del POI compartido en los enlaces om:// y https://omaps.app/
+• New OpenStreetMap data as of March 29
+• Navigation directions are now correctly displayed on iPad
+• Replaced uphill and downhill icons with more clear arrows
+• Correctly import KML bookmarks with track data
+• Disable 3D buildings preference if power saving is enabled
+• Music and music instruments shops can be added using Editor
+• Sewing shops and haberdasheries are searchable and have a better icon
+• Searching for a "supermarket" doesn't result in convenience stores anymore
+• Add localized links for the OSM wiki page
 
-Vea más ejemplos de nuestra API y esquemas de URL en omaps.app/api
+Styles
+• New shop types: agrarian, appliance, bed, outpost, gas, key cutter, locksmith, carpet, motorcycle repair, pet grooming, hi-fi, bathroom furnishing, curtain, fashion accessories, cannabis, herbalist
+• Added money transfer, bicycle charging stations, power plant
+• Made captions optional for most of POI icons
+• Made park, forest, and scrub colors different
+• Added metal construction icons
+• Improved aerial ways, cable cars, power lines, fences
+• Reduce Barcelona subway visibility
+• Fixed isolines that are drawn over buildings, roads, etc.
+• Fixed rendering of multiple-type features (e.g. some POI captions were displayed too early)
 
-Siga nuestras noticias en omaps.app/news
+Translations:
+• Improved German, Turkish, Belarusian, Hungarian translations
+• Improved Arabic TTS instructions
+
+Follow our news at omaps.app/news

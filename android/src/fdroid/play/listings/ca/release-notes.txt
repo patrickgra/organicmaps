@@ -1,7 +1,8 @@
-• New OpenStreetMap data as of February 10, including changes by the Humanitarian OpenStreetMap Team (HOT) after the earthquake in Turkey and Syria
-• Filtered wrong search results in the list and on the map
-• Fixed crash on opening
-• Better icons for main and secondary building entrances
-• Improved next-turn voice notifications for smaller distances
-• Fixed Persian, Polish, and German translations
-…more: omaps.app/news
+• Dades planetàries noves de l’OSM al 29 de març
+• Auxiliar de carrils experimental
+• Es corregeix la posició incorrecta de la fletxa d’ubicació durant la navegació
+• S’arregla el selector de colors de les adreces d’interès en llengües escrites de dreta a esquerra
+• Es mostra apropiadament la velocitat i la distància al mode de navegació
+• Molts tipus de botigues nous
+• Afegeix transferències de diners, estacions de càrrega de bicicletes i centrals d’energia
+…i més: omaps.app/news
