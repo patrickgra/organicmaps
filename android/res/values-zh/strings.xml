@@ -689,6 +689,9 @@
 	<string name="splash_subtitle">地图数据来自OpenStreetMap</string>
 
 	<!-- SECTION: Types -->
+	<string name="type.addr_interpolation">地址/区块</string>
+	<string name="type.addr_interpolation.even">地址/区块</string>
+	<string name="type.addr_interpolation.odd">地址/区块</string>
 	<string name="type.aerialway">缆车要素</string>
 	<string name="type.aerialway.cable_car">缆车</string>
 	<string name="type.aerialway.chair_lift">登山吊椅</string>
@@ -889,6 +892,7 @@
 	<string name="type.craft.metal_construction">金属制造工</string>
 	<string name="type.craft.painter">油漆匠</string>
 	<string name="type.craft.photographer">摄影棚</string>
+	<string name="type.shop.camera">相机店</string>
 	<string name="type.craft.plumber">管道工</string>
 	<string name="type.craft.sawmill">锯木厂</string>
 	<string name="type.craft.shoemaker">鞋匠</string>

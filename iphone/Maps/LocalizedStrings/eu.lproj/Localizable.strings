@@ -1245,6 +1245,12 @@
 
 /********** Types **********/
 
+"type.addr_interpolation" = "Helbidea/Blokea";
+
+"type.addr_interpolation.even" = "Helbidea/Blokea";
+
+"type.addr_interpolation.odd" = "Helbidea/Blokea";
+
 "type.aerialway" = "Aire Garraioa";
 
 "type.aerialway.cable_car" = "Teleferikoa";
@@ -1674,6 +1680,8 @@
 "type.craft.painter" = "Margolaria";
 
 "type.craft.photographer" = "Argazkilaria";
+
+"type.shop.camera" = "Kamera Denda";
 
 "type.craft.plumber" = "Iturgina";
 
@@ -2365,7 +2373,7 @@
 
 "type.landuse.retail" = "Retail Area";
 
-"type.landuse.salt_pond" = "Pond";
+"type.landuse.salt_pond" = "Salt Pond";
 
 "type.landuse.village_green" = "Land";
 
@@ -3622,7 +3630,7 @@
 
 "type.waterway.canal" = "Canal";
 
-"type.waterway.canal.tunnel" = "Canal";
+"type.waterway.canal.tunnel" = "Canal Tunnel";
 
 "type.waterway.dam" = "Dam";
 

@@ -718,6 +718,9 @@
 	<string name="splash_subtitle">OpenStreetMap kaardiandmed</string>
 
 	<!-- SECTION: Types -->
+	<string name="type.addr_interpolation">Aadress/plokk</string>
+	<string name="type.addr_interpolation.even">Aadress/plokk</string>
+	<string name="type.addr_interpolation.odd">Aadress/plokk</string>
 	<string name="type.aerialway">Õhutee</string>
 	<string name="type.aerialway.cable_car">Tramm</string>
 	<string name="type.aerialway.chair_lift">Tooltõstuk</string>
@@ -935,6 +938,7 @@
 	<string name="type.craft.metal_construction">Metallitööline</string>
 	<string name="type.craft.painter">Maaler</string>
 	<string name="type.craft.photographer">Fotograaf</string>
+	<string name="type.shop.camera">Kaamerapood</string>
 	<string name="type.craft.plumber">Santehnik</string>
 	<string name="type.craft.sawmill">Saeveski</string>
 	<string name="type.craft.shoemaker">Kingsepp</string>

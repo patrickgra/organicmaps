@@ -1245,6 +1245,12 @@
 
 /********** Types **********/
 
+"type.addr_interpolation" = "地址/區塊";
+
+"type.addr_interpolation.even" = "地址/區塊";
+
+"type.addr_interpolation.odd" = "地址/區塊";
+
 "type.aerialway" = "纜車要素";
 
 "type.aerialway.cable_car" = "纜車";
@@ -1674,6 +1680,8 @@
 "type.craft.painter" = "油漆工";
 
 "type.craft.photographer" = "攝影師";
+
+"type.shop.camera" = "相機店";
 
 "type.craft.plumber" = "水管工人";
 
@@ -2365,7 +2373,7 @@
 
 "type.landuse.retail" = "Retail Area";
 
-"type.landuse.salt_pond" = "Pond";
+"type.landuse.salt_pond" = "Salt Pond";
 
 "type.landuse.village_green" = "Land";
 

@@ -1245,6 +1245,12 @@
 
 /********** Types **********/
 
+"type.addr_interpolation" = "Адрас/Блок";
+
+"type.addr_interpolation.even" = "Адрас/Блок";
+
+"type.addr_interpolation.odd" = "Адрас/Блок";
+
 "type.aerialway" = "Aerialway";
 
 "type.aerialway.cable_car" = "Cable Car";
@@ -1674,6 +1680,8 @@
 "type.craft.painter" = "Мастак";
 
 "type.craft.photographer" = "Фатограф";
+
+"type.shop.camera" = "Крама фотаапаратаў";
 
 "type.craft.plumber" = "Вадаправодчык";
 
@@ -2337,7 +2345,7 @@
 
 "type.landuse.garages" = "Garages";
 
-"type.landuse.grass" = "Lawn";
+"type.landuse.grass" = "Grass";
 
 "type.landuse.greenfield" = "Greenfield";
 
@@ -2359,13 +2367,13 @@
 
 "type.landuse.recreation_ground" = "Recreation Ground";
 
-"type.landuse.reservoir" = "Water";
+"type.landuse.reservoir" = "Reservoir";
 
 "type.landuse.residential" = "Residential Area";
 
 "type.landuse.retail" = "Retail Area";
 
-"type.landuse.salt_pond" = "Pond";
+"type.landuse.salt_pond" = "Salt Pond";
 
 "type.landuse.village_green" = "Land";
 
@@ -2407,7 +2415,7 @@
 
 "type.leisure.picnic_table" = "Стол для пікніка";
 
-"type.leisure.pitch" = "Sports Ground";
+"type.leisure.pitch" = "Sport Pitch";
 
 "type.leisure.playground" = "Playground";
 
@@ -3257,7 +3265,7 @@
 
 "type.shop" = "Shop";
 
-"type.shop.alcohol" = "Liquor Store";
+"type.shop.alcohol" = "Liquor Shop";
 
 "type.shop.bakery" = "Bakery";
 
@@ -3273,7 +3281,7 @@
 
 "type.shop.books" = "Bookstore";
 
-"type.shop.butcher" = "Butcher’s";
+"type.shop.butcher" = "Butcher";
 
 "type.shop.cannabis" = "Крама канабіса";
 
@@ -3289,7 +3297,7 @@
 
 "type.shop.carpet" = "Дываны";
 
-"type.shop.chemist" = "Chemist Shop";
+"type.shop.chemist" = "Chemist";
 
 "type.shop.chocolate" = "Крама шакалада";
 
@@ -3299,7 +3307,7 @@
 
 "type.shop.computer" = "Computer Store";
 
-"type.shop.confectionery" = "Sweets";
+"type.shop.confectionery" = "Sweet Shop";
 
 "type.shop.convenience" = "Convenience Store";
 
@@ -3317,7 +3325,7 @@
 
 "type.shop.dry_cleaning" = "Dry Cleaning";
 
-"type.shop.electronics" = "Electronics";
+"type.shop.electronics" = "Electronics Shop";
 
 "type.shop.erotic" = "Erotic Shop";
 
@@ -3327,7 +3335,7 @@
 
 "type.shop.fashion_accessories" = "Модныя аксэсуары";
 
-"type.shop.florist" = "Florist’s";
+"type.shop.florist" = "Florist";
 
 "type.shop.funeral_directors" = "Рытуальныя паслугі";
 
@@ -3355,7 +3363,7 @@
 
 "type.shop.houseware" = "Крама посуду";
 
-"type.shop.jewelry" = "Jewelry";
+"type.shop.jewelry" = "Jewelry Shop";
 
 "type.shop.kiosk" = "Kiosk";
 
@@ -3381,7 +3389,7 @@
 
 "type.shop.newsagent" = "Newspaper Stand";
 
-"type.shop.optician" = "Optician’s";
+"type.shop.optician" = "Optician";
 
 "type.shop.outdoor" = "Outdoor Equipment";
 
@@ -3401,9 +3409,9 @@
 
 "type.shop.second_hand" = "Крама сэканд-хэнд";
 
-"type.shop.shoes" = "Shoe Store";
+"type.shop.shoes" = "Shoe Shop";
 
-"type.shop.sports" = "Sports Goods";
+"type.shop.sports" = "Sports Shop";
 
 "type.shop.stationery" = "Stationery Shop";
 
@@ -3558,13 +3566,13 @@
 
 "type.tourism.artwork" = "Artwork";
 
-"type.tourism.artwork.architecture" = "Artwork";
+"type.tourism.artwork.architecture" = "Architectural Artwork";
 
-"type.tourism.artwork.painting" = "Artwork";
+"type.tourism.artwork.painting" = "Painting";
 
-"type.tourism.artwork.sculpture" = "Artwork";
+"type.tourism.artwork.sculpture" = "Sculpture";
 
-"type.tourism.artwork.statue" = "Artwork";
+"type.tourism.artwork.statue" = "Statue";
 
 "type.tourism.attraction" = "Attraction";
 
@@ -3572,7 +3580,7 @@
 
 "type.tourism.attraction.specified" = "Attraction";
 
-"type.tourism.camp_site" = "Camping";
+"type.tourism.camp_site" = "Camp Site";
 
 "type.tourism.caravan_site" = "Кемпінг для аўтадамоў";
 
@@ -3622,7 +3630,7 @@
 
 "type.waterway.canal" = "Canal";
 
-"type.waterway.canal.tunnel" = "Canal";
+"type.waterway.canal.tunnel" = "Canal Tunnel";
 
 "type.waterway.dam" = "Dam";
 

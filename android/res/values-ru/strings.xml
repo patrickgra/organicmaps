@@ -744,6 +744,9 @@
 	<string name="osm_wiki_about_url">https://wiki.openstreetmap.org/wiki/RU:О_проекте</string>
 
 	<!-- SECTION: Types -->
+	<string name="type.addr_interpolation">Адрес/Блок</string>
+	<string name="type.addr_interpolation.even">Адрес/Блок</string>
+	<string name="type.addr_interpolation.odd">Адрес/Блок</string>
 	<string name="type.aerialway">Канатная дорога</string>
 	<string name="type.aerialway.cable_car">Канатная дорога</string>
 	<string name="type.aerialway.chair_lift">Кресельная канатная дорога</string>
@@ -961,6 +964,7 @@
 	<string name="type.craft.metal_construction">Металлоконструкции</string>
 	<string name="type.craft.painter">Маляр</string>
 	<string name="type.craft.photographer">Фотограф</string>
+	<string name="type.shop.camera">Магазин фотоаппаратов</string>
 	<string name="type.craft.plumber">Сантехник</string>
 	<string name="type.craft.sawmill">Лесопилка</string>
 	<string name="type.craft.shoemaker">Ремонт обуви</string>

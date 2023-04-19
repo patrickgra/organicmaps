@@ -274,6 +274,8 @@ node[shop=charity],
 area[shop=charity],
 node[shop=second_hand],
 area[shop=second_hand],
+node[shop=antiques],
+area[shop=antiques],
 {z-index: 2500;}
 
 node[amenity=fuel],
@@ -2244,8 +2246,12 @@ node|z15-[shop=car_repair][service=tyres],
 area|z15-[shop=car_repair][service=tyres],
 node|z16-[shop=supermarket],
 area|z16-[shop=supermarket],
+node|z16-[shop=cheese],
+area|z16-[shop=cheese],
 node|z16-[shop=alcohol],
 area|z16-[shop=alcohol],
+node|z16-[shop=art],
+area|z16-[shop=art],
 node|z16-[shop=wine],
 area|z16-[shop=wine],
 node|z16-[shop=books],
@@ -2254,6 +2260,8 @@ node|z16-[shop=charity],
 area|z16-[shop=charity],
 node|z16-[shop=second_hand],
 area|z16-[shop=second_hand],
+node|z16-[shop=antiques],
+area|z16-[shop=antiques],
 node|z16-[shop=bookmaker],
 area|z16-[shop=bookmaker],
 node|z16-[shop=bakery],
@@ -2314,10 +2322,14 @@ node|z16-[shop=copyshop],
 area|z16-[shop=copyshop],
 node|z16-[shop=photo],
 area|z16-[shop=photo],
+node|z16-[shop=camera],
+area|z16-[shop=camera],
 node|z16-[shop=pet],
 area|z16-[shop=pet],
 node|z16-[shop=department_store],
 area|z16-[shop=department_store],
+node|z16-[shop=interior_decoration],
+area|z16-[shop=interior_decoration],
 node|z16-[shop=doityourself],
 area|z16-[shop=doityourself],
 node|z16-[shop=electronics],
@@ -2407,9 +2419,15 @@ node|z17-[shop=supermarket],
 area|z17-[shop=supermarket],
 {icon-image: grocery-m.svg;font-size: 11;icon-min-distance: 8;}
 
+node|z16[shop=cheese],
+area|z16[shop=cheese]
+{icon-image: cheese-m.svg;}
 node|z16[shop=alcohol],
 area|z16[shop=alcohol]
 {icon-image: alcohol-m.svg;}
+node|z16[shop=art],
+area|z16[shop=art]
+{icon-image: art-m.svg;}
 node|z16[shop=wine],
 area|z16[shop=wine]
 {icon-image: alcohol-m.svg;}
@@ -2422,6 +2440,9 @@ area|z16[shop=charity]
 node|z16[shop=second_hand],
 area|z16[shop=second_hand]
 {icon-image: second_hand_shop-m.svg;}
+node|z16[shop=antiques],
+area|z16[shop=antiques]
+{icon-image: antiques-m.svg;}
 node|z16[shop=bookmaker],
 area|z16[shop=bookmaker]
 {icon-image: bookmaker-m.svg;}
@@ -2506,6 +2527,9 @@ area|z16[shop=health_food],
 node|z16[shop=copyshop],
 area|z16[shop=copyshop]
 {icon-image: copyshop-m.svg;}
+node|z16[shop=camera],
+area|z16[shop=camera]
+{icon-image: photo-shop-m.svg;}
 node|z16[shop=photo],
 area|z16[shop=photo]
 {icon-image: photo-shop-m.svg;}
@@ -2515,6 +2539,9 @@ area|z16[shop=pet]
 node|z16[shop=department_store],
 area|z16[shop=department_store]
 {icon-image: department_store-m.svg;}
+node|z16[shop=interior_decoration],
+area|z16[shop=interior_decoration]
+{icon-image: interior_decoration-m.svg;}
 node|z16[shop=doityourself],
 area|z16[shop=doityourself]
 {icon-image: doityourself-m.svg;}
@@ -2601,9 +2628,15 @@ node|z16[shop=fabric],
 area|z16[shop=fabric]
 {icon-image: shop-m.svg;}
 
+node|z17-[shop=cheese],
+area|z17-[shop=cheese]
+{icon-image: cheese-m.svg;icon-min-distance: 24;}
 node|z17-[shop=alcohol],
 area|z17-[shop=alcohol]
 {icon-image: alcohol-m.svg;icon-min-distance: 24;}
+node|z17-[shop=art],
+area|z17-[shop=art]
+{icon-image: art-m.svg;icon-min-distance: 24;}
 node|z17-[shop=wine],
 area|z17-[shop=wine]
 {icon-image: alcohol-m.svg;icon-min-distance: 24;}
@@ -2616,6 +2649,9 @@ area|z17-[shop=charity]
 node|z17-[shop=second_hand],
 area|z17-[shop=second_hand]
 {icon-image: second_hand_shop-m.svg;icon-min-distance: 24;}
+node|z17-[shop=antiques],
+area|z17-[shop=antiques]
+{icon-image: antiques-m.svg;icon-min-distance: 24;}
 node|z17-[shop=bookmaker],
 area|z17-[shop=bookmaker]
 {icon-image: bookmaker-m.svg;icon-min-distance: 24;}
@@ -2700,6 +2736,9 @@ area|z17-[shop=health_food],
 node|z17-[shop=copyshop],
 area|z17-[shop=copyshop]
 {icon-image: copyshop-m.svg;icon-min-distance: 24;}
+node|z17-[shop=camera],
+area|z17-[shop=camera]
+{icon-image: photo-shop-m.svg;icon-min-distance: 24;}
 node|z17-[shop=photo],
 area|z17-[shop=photo]
 {icon-image: photo-shop-m.svg;icon-min-distance: 24;}
@@ -2709,6 +2748,9 @@ area|z17-[shop=pet]
 node|z17-[shop=department_store],
 area|z17-[shop=department_store]
 {icon-image: department_store-m.svg;icon-min-distance: 24;}
+node|z17-[shop=interior_decoration],
+area|z17-[shop=interior_decoration]
+{icon-image: interior_decoration-m.svg;icon-min-distance: 24;}
 node|z17-[shop=doityourself],
 area|z17-[shop=doityourself]
 {icon-image: doityourself-m.svg;icon-min-distance: 24;}

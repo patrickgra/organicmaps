@@ -682,6 +682,9 @@
 	<string name="splash_subtitle">Data peta dari OpenStreetMap</string>
 
 	<!-- SECTION: Types -->
+	<string name="type.addr_interpolation">Alamat/Blokir</string>
+	<string name="type.addr_interpolation.even">Alamat/Blokir</string>
+	<string name="type.addr_interpolation.odd">Alamat/Blokir</string>
 	<string name="type.aerialway.station">Stasiun kereta gantung</string>
 	<string name="type.aeroway.aerodrome">Bandar udara</string>
 	<string name="type.aeroway.aerodrome.international">Bandar udara</string>
@@ -834,6 +837,7 @@
 	<string name="type.craft.metal_construction">Tukang besi</string>
 	<string name="type.craft.painter">Tukang cat</string>
 	<string name="type.craft.photographer">Juru foto</string>
+	<string name="type.shop.camera">Toko Kamera</string>
 	<string name="type.craft.plumber">Tukang pipa</string>
 	<string name="type.craft.sawmill">Penggergajian kayu</string>
 	<string name="type.craft.shoemaker">Tukang sepatu</string>

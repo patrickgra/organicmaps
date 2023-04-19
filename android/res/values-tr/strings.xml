@@ -735,6 +735,9 @@
 	<string name="osm_wiki_about_url">https://wiki.openstreetmap.org/wiki/Tr:About</string>
 
 	<!-- SECTION: Types -->
+	<string name="type.addr_interpolation">Adres/Blok</string>
+	<string name="type.addr_interpolation.even">Adres/Blok</string>
+	<string name="type.addr_interpolation.odd">Adres/Blok</string>
 	<string name="type.aerialway">Teleferik</string>
 	<string name="type.aerialway.cable_car">Teleferik</string>
 	<string name="type.aerialway.chair_lift">Telesiyej</string>
@@ -947,6 +950,7 @@
 	<string name="type.craft.metal_construction">Dökümcü</string>
 	<string name="type.craft.painter">Boyacı</string>
 	<string name="type.craft.photographer">Fotoğraf Stüdyosu</string>
+	<string name="type.shop.camera">Kamera Dükkanı</string>
 	<string name="type.craft.plumber">Tesisatçı</string>
 	<string name="type.craft.sawmill">Kereste Fabrikası</string>
 	<string name="type.craft.shoemaker">Ayakkabı Tamircisi</string>

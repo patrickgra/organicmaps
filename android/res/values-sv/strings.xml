@@ -678,6 +678,9 @@
 	<string name="splash_subtitle">Kartdata från OpenStreetMap</string>
 
 	<!-- SECTION: Types -->
+	<string name="type.addr_interpolation">Adress/Block</string>
+	<string name="type.addr_interpolation.even">Adress/Block</string>
+	<string name="type.addr_interpolation.odd">Adress/Block</string>
 	<string name="type.aerialway.station">Linbanestation</string>
 	<string name="type.aeroway.aerodrome">Flygplats</string>
 	<string name="type.aeroway.aerodrome.international">Flygplats</string>
@@ -832,6 +835,7 @@
 	<string name="type.craft.metal_construction">Metallarbetare</string>
 	<string name="type.craft.painter">Målare</string>
 	<string name="type.craft.photographer">Fotograf</string>
+	<string name="type.shop.camera">Kameraaffär</string>
 	<string name="type.craft.plumber">Vvs-montör</string>
 	<string name="type.craft.sawmill">Sågverk</string>
 	<string name="type.craft.shoemaker">Skomakare</string>

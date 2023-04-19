@@ -681,6 +681,9 @@
 	<string name="osm_wiki_about_url">https://wiki.openstreetmap.org/wiki/Ko:OpenStreetMap_소개</string>
 
 	<!-- SECTION: Types -->
+	<string name="type.addr_interpolation">주소/블록</string>
+	<string name="type.addr_interpolation.even">주소/블록</string>
+	<string name="type.addr_interpolation.odd">주소/블록</string>
 	<string name="type.aerialway.station">케이블카 역</string>
 	<string name="type.aeroway.aerodrome">공항</string>
 	<string name="type.aeroway.aerodrome.international">공항</string>
@@ -839,6 +842,7 @@
 	<string name="type.craft.metal_construction">금속공</string>
 	<string name="type.craft.painter">페인트공</string>
 	<string name="type.craft.photographer">사진작가</string>
+	<string name="type.shop.camera">카메라 샵</string>
 	<string name="type.craft.plumber">배관공</string>
 	<string name="type.craft.sawmill">제재소</string>
 	<string name="type.craft.shoemaker">구두수선</string>

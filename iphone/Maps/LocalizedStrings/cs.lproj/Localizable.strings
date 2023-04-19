@@ -1245,6 +1245,12 @@
 
 /********** Types **********/
 
+"type.addr_interpolation" = "Adresa/blok";
+
+"type.addr_interpolation.even" = "Adresa/blok";
+
+"type.addr_interpolation.odd" = "Adresa/blok";
+
 "type.aerialway" = "Aerialway";
 
 "type.aerialway.cable_car" = "Cable Car";
@@ -1674,6 +1680,8 @@
 "type.craft.painter" = "Malíř";
 
 "type.craft.photographer" = "Fotograf";
+
+"type.shop.camera" = "Obchod s fotoaparáty";
 
 "type.craft.plumber" = "Instalatér";
 
@@ -2365,7 +2373,7 @@
 
 "type.landuse.retail" = "Retail Area";
 
-"type.landuse.salt_pond" = "Pond";
+"type.landuse.salt_pond" = "Salt Pond";
 
 "type.landuse.village_green" = "Land";
 

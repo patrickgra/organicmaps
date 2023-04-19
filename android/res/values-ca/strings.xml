@@ -722,6 +722,9 @@
 	<string name="osm_wiki_about_url">https://wiki.openstreetmap.org/wiki/Ca:About</string>
 
 	<!-- SECTION: Types -->
+	<string name="type.addr_interpolation">Adreça/Bloc</string>
+	<string name="type.addr_interpolation.even">Adreça/Bloc</string>
+	<string name="type.addr_interpolation.odd">Adreça/Bloc</string>
 	<string name="type.amenity.charging_station.bicycle">Estació de recàrrega de bicicletes</string>
 	<string name="type.amenity.charging_station.motorcar">Estació de recàrrega de cotxes</string>
 	<string name="type.leisure.bowling_alley">Bolera</string>
@@ -731,6 +734,7 @@
 	<!-- SECTION: Types: Recycling -->
 	<string name="type.craft.key_cutter">Tall de claus</string>
 	<string name="type.craft.locksmith">Serraller</string>
+	<string name="type.shop.camera">Botiga de càmeres</string>
 	<!-- This is for main/primary entrances, for secondary entrances see type.entrance -->
 	<string name="type.entrance.main">Entrada principal</string>
 
