@@ -1245,6 +1245,12 @@
 
 /********** Types **********/
 
+"type.addr_interpolation" = "Endereço/Bloco";
+
+"type.addr_interpolation.even" = "Endereço/Bloco";
+
+"type.addr_interpolation.odd" = "Endereço/Bloco";
+
 "type.aerialway" = "Transporte aéreo";
 
 "type.aerialway.cable_car" = "Teleférico";
@@ -1674,6 +1680,8 @@
 "type.craft.painter" = "Pintor";
 
 "type.craft.photographer" = "Fotógrafo";
+
+"type.shop.camera" = "Loja de câmeras";
 
 "type.craft.plumber" = "Picheleiro";
 

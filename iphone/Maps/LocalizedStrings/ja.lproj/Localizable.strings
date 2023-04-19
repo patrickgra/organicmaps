@@ -1245,6 +1245,12 @@
 
 /********** Types **********/
 
+"type.addr_interpolation" = "アドレス/ブロック";
+
+"type.addr_interpolation.even" = "アドレス/ブロック";
+
+"type.addr_interpolation.odd" = "アドレス/ブロック";
+
 "type.aerialway" = "索道";
 
 "type.aerialway.cable_car" = "ロープウェイ";
@@ -1674,6 +1680,8 @@
 "type.craft.painter" = "塗装工";
 
 "type.craft.photographer" = "写真家";
+
+"type.shop.camera" = "カメラショップ";
 
 "type.craft.plumber" = "配管工";
 

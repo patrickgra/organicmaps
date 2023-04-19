@@ -675,6 +675,9 @@
 	<string name="splash_subtitle">Maparen datuak OpenStreetMap-en</string>
 
 	<!-- SECTION: Types -->
+	<string name="type.addr_interpolation">Helbidea/Blokea</string>
+	<string name="type.addr_interpolation.even">Helbidea/Blokea</string>
+	<string name="type.addr_interpolation.odd">Helbidea/Blokea</string>
 	<string name="type.aerialway">Aire Garraioa</string>
 	<string name="type.aerialway.cable_car">Teleferikoa</string>
 	<string name="type.aerialway.chair_lift">Teleaulkia</string>
@@ -887,6 +890,7 @@
 	<string name="type.craft.metal_construction">Metalgintzako langilea</string>
 	<string name="type.craft.painter">Margolaria</string>
 	<string name="type.craft.photographer">Argazkilaria</string>
+	<string name="type.shop.camera">Kamera Denda</string>
 	<string name="type.craft.plumber">Iturgina</string>
 	<string name="type.craft.sawmill">Zerrategi</string>
 	<string name="type.craft.shoemaker">Zapataria</string>

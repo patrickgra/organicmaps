@@ -693,6 +693,9 @@
 	<string name="splash_subtitle">OpenStreetMapin karttatiedot</string>
 
 	<!-- SECTION: Types -->
+	<string name="type.addr_interpolation">Osoite/lohko</string>
+	<string name="type.addr_interpolation.even">Osoite/lohko</string>
+	<string name="type.addr_interpolation.odd">Osoite/lohko</string>
 	<string name="type.aerialway">Köysirata</string>
 	<string name="type.aerialway.cable_car">Kabiinihissi</string>
 	<string name="type.aerialway.chair_lift">Tuolihissi</string>
@@ -892,6 +895,7 @@
 	<string name="type.craft.metal_construction">Metallimies</string>
 	<string name="type.craft.painter">Maalari</string>
 	<string name="type.craft.photographer">Valokuvaaja</string>
+	<string name="type.shop.camera">Kamerakauppa</string>
 	<string name="type.craft.plumber">Putkimies</string>
 	<string name="type.craft.sawmill">Saha</string>
 	<string name="type.craft.shoemaker">Suutari</string>

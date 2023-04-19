@@ -728,6 +728,9 @@
 	<string name="splash_subtitle">Kartdata fra OpenStreetMap</string>
 
 	<!-- SECTION: Types -->
+	<string name="type.addr_interpolation">Adresse/blokk</string>
+	<string name="type.addr_interpolation.even">Adresse/blokk</string>
+	<string name="type.addr_interpolation.odd">Adresse/blokk</string>
 	<string name="type.aerialway">Taubane</string>
 	<string name="type.aerialway.cable_car">Pendeltaubane</string>
 	<string name="type.aerialway.chair_lift">Stolheis</string>
@@ -890,6 +893,7 @@
 	<string name="type.craft.metal_construction">Metallarbeider</string>
 	<string name="type.craft.painter">Maler</string>
 	<string name="type.craft.photographer">Fotograf</string>
+	<string name="type.shop.camera">Kamerabutikk</string>
 	<string name="type.craft.plumber">Rørlegger</string>
 	<string name="type.craft.sawmill">Sagbruk</string>
 	<string name="type.craft.shoemaker">Skoreparasjon</string>

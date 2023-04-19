@@ -1245,6 +1245,12 @@
 
 /********** Types **********/
 
+"type.addr_interpolation" = "Địa chỉ/Khối";
+
+"type.addr_interpolation.even" = "Địa chỉ/Khối";
+
+"type.addr_interpolation.odd" = "Địa chỉ/Khối";
+
 "type.aerialway" = "Aerialway";
 
 "type.aerialway.cable_car" = "Cable Car";
@@ -1674,6 +1680,8 @@
 "type.craft.painter" = "Họa sỹ";
 
 "type.craft.photographer" = "Thợ chụp ảnh";
+
+"type.shop.camera" = "Cửa hàng máy ảnh";
 
 "type.craft.plumber" = "Thợ đường ống";
 
@@ -2365,7 +2373,7 @@
 
 "type.landuse.retail" = "Retail Area";
 
-"type.landuse.salt_pond" = "Pond";
+"type.landuse.salt_pond" = "Salt Pond";
 
 "type.landuse.village_green" = "Land";
 

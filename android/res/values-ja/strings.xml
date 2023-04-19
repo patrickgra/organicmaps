@@ -679,6 +679,9 @@
 	<string name="osm_wiki_about_url">https://wiki.openstreetmap.org/wiki/JA:参加する</string>
 
 	<!-- SECTION: Types -->
+	<string name="type.addr_interpolation">アドレス/ブロック</string>
+	<string name="type.addr_interpolation.even">アドレス/ブロック</string>
+	<string name="type.addr_interpolation.odd">アドレス/ブロック</string>
 	<string name="type.aerialway">索道</string>
 	<string name="type.aerialway.cable_car">ロープウェイ</string>
 	<string name="type.aerialway.chair_lift">チェアリフト</string>
@@ -869,6 +872,7 @@
 	<string name="type.craft.metal_construction">金属工</string>
 	<string name="type.craft.painter">塗装工</string>
 	<string name="type.craft.photographer">写真家</string>
+	<string name="type.shop.camera">カメラショップ</string>
 	<string name="type.craft.plumber">配管工</string>
 	<string name="type.craft.sawmill">製材所</string>
 	<string name="type.craft.shoemaker">靴修理</string>

@@ -724,6 +724,9 @@
 	<string name="translated_om_site_url">https://organicmaps.app/ru/</string>
 
 	<!-- SECTION: Types -->
+	<string name="type.addr_interpolation">Адрас/Блок</string>
+	<string name="type.addr_interpolation.even">Адрас/Блок</string>
+	<string name="type.addr_interpolation.odd">Адрас/Блок</string>
 	<string name="type.amenity.bicycle_parking">Велапаркоўка</string>
 	<string name="type.amenity.charging_station.bicycle">Станцыя для зарадкі ровараў</string>
 	<string name="type.amenity.charging_station.motorcar">Аўтамабільная зарадная станцыя</string>
@@ -809,6 +812,7 @@
 	<string name="type.craft.metal_construction">Металаканструкцыі</string>
 	<string name="type.craft.painter">Мастак</string>
 	<string name="type.craft.photographer">Фатограф</string>
+	<string name="type.shop.camera">Крама фотаапаратаў</string>
 	<string name="type.craft.plumber">Вадаправодчык</string>
 	<string name="type.craft.sawmill">Лесапільня</string>
 	<string name="type.craft.shoemaker">Шавец</string>

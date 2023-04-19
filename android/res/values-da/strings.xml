@@ -684,6 +684,9 @@
 	<string name="osm_wiki_about_url">https://wiki.openstreetmap.org/wiki/Da:Om_OpenStreetMap</string>
 
 	<!-- SECTION: Types -->
+	<string name="type.addr_interpolation">Adresse/blok</string>
+	<string name="type.addr_interpolation.even">Adresse/blok</string>
+	<string name="type.addr_interpolation.odd">Adresse/blok</string>
 	<string name="type.aerialway.station">Kabelbanestation</string>
 	<string name="type.aeroway.aerodrome">Lufthavn</string>
 	<string name="type.aeroway.aerodrome.international">Lufthavn</string>
@@ -834,6 +837,7 @@
 	<string name="type.craft.metal_construction">Metalarbejder</string>
 	<string name="type.craft.painter">Maler</string>
 	<string name="type.craft.photographer">Fotograf</string>
+	<string name="type.shop.camera">Kamera butik</string>
 	<string name="type.craft.plumber">VVS-mand</string>
 	<string name="type.craft.sawmill">Savværk</string>
 	<string name="type.craft.shoemaker">Skomager</string>

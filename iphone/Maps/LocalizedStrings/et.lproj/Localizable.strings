@@ -1245,6 +1245,12 @@
 
 /********** Types **********/
 
+"type.addr_interpolation" = "Aadress/plokk";
+
+"type.addr_interpolation.even" = "Aadress/plokk";
+
+"type.addr_interpolation.odd" = "Aadress/plokk";
+
 "type.aerialway" = "Õhutee";
 
 "type.aerialway.cable_car" = "Tramm";
@@ -1674,6 +1680,8 @@
 "type.craft.painter" = "Maaler";
 
 "type.craft.photographer" = "Fotograaf";
+
+"type.shop.camera" = "Kaamerapood";
 
 "type.craft.plumber" = "Santehnik";
 

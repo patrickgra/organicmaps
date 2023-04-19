@@ -734,6 +734,9 @@
 	<string name="osm_wiki_about_url">https://wiki.openstreetmap.org/wiki/FR:À_propos_d’OpenStreetMap</string>
 
 	<!-- SECTION: Types -->
+	<string name="type.addr_interpolation">Adresse/Bloc</string>
+	<string name="type.addr_interpolation.even">Adresse/Bloc</string>
+	<string name="type.addr_interpolation.odd">Adresse/Bloc</string>
 	<string name="type.aerialway">Transport par câble aérien</string>
 	<string name="type.aerialway.cable_car">Téléphérique</string>
 	<string name="type.aerialway.chair_lift">Télésiège</string>
@@ -933,6 +936,7 @@
 	<string name="type.craft.metal_construction">Métallo</string>
 	<string name="type.craft.painter">Peintre</string>
 	<string name="type.craft.photographer">Photographe</string>
+	<string name="type.shop.camera">Boutique d\'appareils photo</string>
 	<string name="type.craft.plumber">Plombier</string>
 	<string name="type.craft.sawmill">Scierie</string>
 	<string name="type.craft.shoemaker">Cordonnier</string>
