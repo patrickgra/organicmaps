@@ -3,7 +3,7 @@
 #include "app/organicmaps/core/jni_helper.hpp"
 #include "app/organicmaps/UserMarkHelper.hpp"
 #include "app/organicmaps/opengl/androidoglcontextfactory.hpp"
-#include "app/organicmaps/platform/Platform.hpp"
+#include "app/organicmaps/platform/AndroidPlatform.hpp"
 #include "app/organicmaps/util/FeatureIdBuilder.hpp"
 #include "app/organicmaps/util/NetworkPolicy.hpp"
 #include "app/organicmaps/vulkan/android_vulkan_context_factory.hpp"
@@ -30,6 +30,7 @@
 #include "geometry/point_with_altitude.hpp"
 
 #include "indexer/feature_altitude.hpp"
+#include "indexer/validate_and_format_contacts.hpp"
 
 #include "routing/following_info.hpp"
 #include "routing/speed_camera_manager.hpp"
@@ -1653,6 +1654,16 @@ Java_app_organicmaps_Framework_nativeDeleteBookmarkFromMapObject(JNIEnv * env, j
   frm()->UpdatePlacePageInfoForCurrentSelection(buildInfo);
 
   return usermark_helper::CreateMapObject(env, g_framework->GetPlacePageInfo());
+}
+
+JNIEXPORT jstring JNICALL
+Java_app_organicmaps_Framework_nativeGetPoiContactUrl(JNIEnv *env, jclass, jint id)
+{
+  auto const metaID = static_cast<osm::MapObject::MetadataID>(id);
+  string_view const value = g_framework->GetPlacePageInfo().GetMetadata(metaID);
+  if (osm::isSocialContactTag(metaID))
+    return jni::ToJavaString(env, osm::socialContactToURL(metaID, value));
+  return jni::ToJavaString(env, value);
 }
 
 JNIEXPORT void JNICALL

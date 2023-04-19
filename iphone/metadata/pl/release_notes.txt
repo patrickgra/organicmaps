@@ -1,11 +1,26 @@
-• Nowe dane OpenStreetMap z 10 lutego, zawierające zmiany stworzone przez Humanitarian OpenStreetMap Team (HOT) po trzesięniu ziemi w Turcji i Syrii
-• Filtrowanie błędnych wyników wyszukiwania w liście i na mapie
-• Poprawiono informacje głosowe dla następnego zakrętu przy małych odległościach
-• Lepsze ikony dla głównych i dodatkowych wejść do budynku
-• Poprawiono perskie, polskie oraz niemieckie tłumaczenia
-• Poprawiono błąd przy otwieraniu linków om:// oraz https://omaps.app/
-• Pokazywanie nazwy POI w linkach om:// oraz https://omaps.app/
+• New OpenStreetMap data as of March 29
+• Navigation directions are now correctly displayed on iPad
+• Replaced uphill and downhill icons with more clear arrows
+• Correctly import KML bookmarks with track data
+• Disable 3D buildings preference if power saving is enabled
+• Music and music instruments shops can be added using Editor
+• Sewing shops and haberdasheries are searchable and have a better icon
+• Searching for a "supermarket" doesn't result in convenience stores anymore
+• Add localized links for the OSM wiki page
 
-Zobacz więcej przykładów użycia API oraz schematów URL na omaps.app/api
+Styles
+• New shop types: agrarian, appliance, bed, outpost, gas, key cutter, locksmith, carpet, motorcycle repair, pet grooming, hi-fi, bathroom furnishing, curtain, fashion accessories, cannabis, herbalist
+• Added money transfer, bicycle charging stations, power plant
+• Made captions optional for most of POI icons
+• Made park, forest, and scrub colors different
+• Added metal construction icons
+• Improved aerial ways, cable cars, power lines, fences
+• Reduce Barcelona subway visibility
+• Fixed isolines that are drawn over buildings, roads, etc.
+• Fixed rendering of multiple-type features (e.g. some POI captions were displayed too early)
 
-Więcej informacji na omaps.app/news
+Translations:
+• Improved German, Turkish, Belarusian, Hungarian translations
+• Improved Arabic TTS instructions
+
+Follow our news at omaps.app/news

@@ -118,7 +118,7 @@ See [GOVERNANCE](docs/GOVERNANCE.md).
 ## Contributing
 
 If you want to build the project, check [docs/INSTALL.md](docs/INSTALL.md). If you want to help the project,
-see [docs/CONTRIBUTING.md](docs/CONTRIBUTING.md) and read everything in the [docs folder](docs/) of the repository.
+see [docs/CONTRIBUTING.md](docs/CONTRIBUTING.md). You can [help in many ways](https://organicmaps.app/support-us/), the ability to code is not necessary.
 
 ## Beta
 
@@ -146,4 +146,4 @@ and [Google Play](https://play.google.com/store/apps/details?id=app.organicmaps)
 [Instagram](https://instagram.com/organicmaps.app/).
   - Güncellemelerimizi [Instagram](https://instagram.com/organicmapstr/) üzerinden takip edin.
 
-The Organic Maps community abides by the CNCF code of conduct.
+The Organic Maps community abides by the CNCF [code of conduct](https://github.com/organicmaps/organicmaps/blob/master/docs/CODE_OF_CONDUCT.md).

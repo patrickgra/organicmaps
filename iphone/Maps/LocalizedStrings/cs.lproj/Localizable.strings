@@ -226,6 +226,9 @@
 /* Settings «Map» category: «3D buildings» title */
 "pref_map_3d_buildings_title" = "3D budovy";
 
+/* A message in Settings/Preferences explaining why is it not possible to enable 3D buildings when max power saving mode is enabled */
+"pref_map_3d_buildings_disabled_summary" = "3D budovy jsou vypnuty v úsporném režimu";
+
 /* Settings «Route» category: «Tts enabled» title */
 "pref_tts_enable_title" = "Hlasové instrukce";
 
@@ -304,7 +307,7 @@
 "donate" = "Darovat";
 
 /* Button in the main Help dialog */
-"how_to_support_us" = "Jak nás podpořit?";
+"how_to_support_us" = "Podpořte projekt";
 
 /* Button in the main Help dialog */
 "copyright" = "Autorská práva";
@@ -1236,20 +1239,23 @@
 /* Translated Organic Maps site, add new translations here: https://github.com/organicmaps/organicmaps.github.io/tree/master/content */
 "translated_om_site_url" = "https://organicmaps.app/cs/";
 
+/* Link to OSM wiki for Editor, Profile and About pages */
+"osm_wiki_about_url" = "https://wiki.openstreetmap.org/wiki/About_OpenStreetMap";
+
 
 /********** Types **********/
 
 "type.aerialway" = "Aerialway";
 
-"type.aerialway.cable_car" = "Cable car";
+"type.aerialway.cable_car" = "Cable Car";
 
-"type.aerialway.chair_lift" = "Chair lift";
+"type.aerialway.chair_lift" = "Chair Lift";
 
-"type.aerialway.drag_lift" = "Drag lift";
+"type.aerialway.drag_lift" = "Drag Lift";
 
 "type.aerialway.gondola" = "Gondola";
 
-"type.aerialway.mixed_lift" = "Mixed lift";
+"type.aerialway.mixed_lift" = "Mixed Lift";
 
 "type.aerialway.station" = "Stanice lanové dráhy";
 
@@ -1311,7 +1317,9 @@
 
 "type.amenity.charging_station" = "Nabíjecí stanice";
 
-"type.amenity.charging_station.motorcar" = "Nabíjecí stanice";
+"type.amenity.charging_station.bicycle" = "Nabíjecí stanice pro jízdní kola";
+
+"type.amenity.charging_station.motorcar" = "Nabíjecí stanice pro automobily";
 
 "type.amenity.childcare" = "Jesle";
 
@@ -1334,6 +1342,8 @@
 "type.amenity.drinking_water" = "Pitná voda";
 
 "type.amenity.driving_school" = "Autoškola";
+
+"type.amenity.money_transfer" = "Převod peněz";
 
 "type.amenity.music_school" = "Hudební škola";
 
@@ -1370,6 +1380,8 @@
 "type.amenity.kindergarten" = "Školka";
 
 "type.amenity.library" = "Knihovna";
+
+"type.amenity.loading_dock" = "Nakládaci dok";
 
 "type.amenity.marketplace" = "Tržiště";
 
@@ -1652,6 +1664,10 @@
 
 /* Heating, Ventilation, and Air Conditioning */
 "type.craft.hvac" = "HVAC";
+
+"type.craft.key_cutter" = "Řezání klíčů";
+
+"type.craft.locksmith" = "Zámečník";
 
 "type.craft.metal_construction" = "Kovodílna";
 
@@ -2327,7 +2343,7 @@
 
 "type.landuse.greenhouse_horticulture" = "Greenhouse";
 
-"type.landuse.industrial" = "Industrial Land";
+"type.landuse.industrial" = "Industrial Area";
 
 "type.landuse.landfill" = "Skládka";
 
@@ -2345,9 +2361,9 @@
 
 "type.landuse.reservoir" = "Voda";
 
-"type.landuse.residential" = "Residential Land";
+"type.landuse.residential" = "Residential Area";
 
-"type.landuse.retail" = "Retail Land";
+"type.landuse.retail" = "Retail Area";
 
 "type.landuse.salt_pond" = "Pond";
 
@@ -2452,6 +2468,8 @@
 "type.man_made.surveillance" = "Bezpečnostní kamera";
 
 "type.man_made.tower" = "Věž";
+
+"type.man_made.tower.communication" = "Komunikační věž";
 
 "type.man_made.wastewater_plant" = "Wastewater treatment plant";
 
@@ -2645,11 +2663,31 @@
 
 "type.power.generator" = "Generator";
 
+"type.power.generator.solar" = "Solární generátor";
+
+"type.power.generator.wind" = "Větrný generátor";
+
+"type.power.generator.gas" = "Elektrárna s plynovou turbínou";
+
+"type.power.generator.hydro" = "Vodní elektrárna";
+
 "type.power.line" = "Power Line";
 
 "type.power.line.underground" = "Underground Power Line";
 
 "type.power.minor_line" = "Minor Power Line";
+
+"type.power.plant" = "Elektrárna";
+
+"type.power.plant.coal" = "Uhelná elektrárna";
+
+"type.power.plant.gas" = "Elektrárna s plynovou turbínou";
+
+"type.power.plant.hydro" = "Vodní elektrárna";
+
+"type.power.plant.solar" = "Solární elektrárna";
+
+"type.power.plant.wind" = "Větrná elektrárna";
 
 "type.power.pole" = "Sloup elektrického vedení";
 
@@ -2776,6 +2814,8 @@
 "type.railway.station.subway.bengalore" = "Metro";
 
 "type.railway.station.subway.berlin" = "Metro";
+
+"type.railway.station.subway.bilbao" = "Metro";
 
 "type.railway.station.subway.brasilia" = "Metro";
 
@@ -3001,6 +3041,8 @@
 
 "type.railway.subway_entrance.berlin" = "Vchod do podchodu";
 
+"type.railway.subway_entrance.bilbao" = "Vchod do podchodu";
+
 "type.railway.subway_entrance.brasilia" = "Vchod do podchodu";
 
 "type.railway.subway_entrance.brescia" = "Vchod do podchodu";
@@ -3219,6 +3261,8 @@
 
 "type.shop.bakery" = "Pekárna";
 
+"type.shop.bathroom_furnishing" = "Vybavení koupelny";
+
 "type.shop.beauty" = "Kosmetický salon";
 
 "type.shop.beverages" = "Nápoje";
@@ -3231,6 +3275,8 @@
 
 "type.shop.butcher" = "Řeznictví";
 
+"type.shop.cannabis" = "Obchod s konopím";
+
 "type.shop.car" = "Obchod s auty";
 
 "type.shop.car_parts" = "Autodíly";
@@ -3240,6 +3286,8 @@
 "type.shop.car_repair.tyres" = "Pneuservis";
 
 "type.shop.caravan" = "RV Dealership";
+
+"type.shop.carpet" = "Koberce";
 
 "type.shop.chemist" = "Drogerie";
 
@@ -3259,6 +3307,8 @@
 
 "type.shop.cosmetics" = "Kosmetika";
 
+"type.shop.curtain" = "Závěsy";
+
 "type.shop.deli" = "Prodejna lahůdek";
 
 "type.shop.department_store" = "Obchodní dům";
@@ -3275,6 +3325,8 @@
 
 "type.shop.farm" = "Prodejna farmářských potravin";
 
+"type.shop.fashion_accessories" = "Módní doplňky";
+
 "type.shop.florist" = "Květinářství";
 
 "type.shop.funeral_directors" = "Pohřební služba";
@@ -3282,6 +3334,8 @@
 "type.shop.furniture" = "Nábytek";
 
 "type.shop.garden_centre" = "Školka";
+
+"type.shop.gas" = "Obchod s plynem";
 
 "type.shop.gift" = "Obchod s dárkovým zbožím";
 
@@ -3294,6 +3348,10 @@
 "type.shop.hardware" = "Železářství";
 
 "type.shop.health_food" = "Prodejna zdravé výživy";
+
+"type.shop.herbalist" = "Obchod s bylinkami";
+
+"type.shop.hifi" = "HiFi audio";
 
 "type.shop.houseware" = "Obchod s domácími potřebami";
 
@@ -3315,6 +3373,8 @@
 
 "type.shop.motorcycle" = "Prodejna motocyklů";
 
+"type.shop.motorcycle_repair" = "Opravy motocyklů";
+
 "type.shop.music" = "Obchod";
 
 "type.shop.musical_instrument" = "Obchod";
@@ -3325,11 +3385,15 @@
 
 "type.shop.outdoor" = "Venkovní vybavení";
 
+"type.shop.outpost" = "Místo vyzvednutí";
+
 "type.shop.pastry" = "Pečivo";
 
 "type.shop.pawnbroker" = "Zastavárna";
 
 "type.shop.pet" = "Zverimex";
+
+"type.shop.pet_grooming" = "Péče o domácí mazlíčky";
 
 "type.shop.photo" = "Fotografický obchod";
 
@@ -3365,13 +3429,19 @@
 
 "type.shop.wine" = "Vinařství";
 
+"type.shop.agrarian" = "Zemědělský obchod";
+
 "type.shop.antiques" = "Starožitnosti";
+
+"type.shop.appliance" = "Obchod se spotřebiči";
 
 "type.shop.art" = "Obchod s uměním";
 
 "type.shop.baby_goods" = "Dětský obchod";
 
 "type.shop.bag" = "Obchod s taškami";
+
+"type.shop.bed" = "Prodejna postelí";
 
 "type.shop.boutique" = "Butik";
 

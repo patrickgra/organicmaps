@@ -776,8 +776,8 @@ UNIT_TEST(Turkey_AvoidMountainsSecondary)
                               FromLatLon(41.0027, 27.6752), {0., 0.},
                               FromLatLon(40.6119, 27.1136));
 
-  TestRouteLength(*res.first, 100329.0);
-  TestRouteTime(*res.first, 5342.23);
+  TestRouteLength(*res.first, 100386.0);
+  TestRouteTime(*res.first, 5096.9);
 }
 
 // https://github.com/organicmaps/organicmaps/issues/4110
@@ -797,4 +797,18 @@ UNIT_TEST(USA_Birmingham_AL_KeyWest_FL_NoMotorway)
       FromLatLon(24.5534713, -81.7932587), 1562980);
 }
 
+UNIT_TEST(Turkey_Salarialaca_Sanliurfa)
+{
+  TRouteResult const routeResult = CalculateRoute(GetVehicleComponents(VehicleType::Car),
+                                  FromLatLon(38.8244409, 34.0979749), {0., 0.},
+                                  FromLatLon(37.159585, 38.7919353));
+
+  RouterResultCode const result = routeResult.second;
+  TEST_EQUAL(result, RouterResultCode::NoError, ());
+
+  TEST(routeResult.first, ());
+  Route const & route = *routeResult.first;
+  TestRouteLength(route, 656891);
+  TestRouteTime(route, 21138);  // should be less than 6 hours (6 * 3600)
+}
 } // namespace route_test

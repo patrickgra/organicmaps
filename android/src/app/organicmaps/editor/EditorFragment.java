@@ -20,11 +20,12 @@ import androidx.annotation.IdRes;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.StringRes;
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.widget.SwitchCompat;
+import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.android.material.textfield.TextInputLayout;
 import app.organicmaps.Framework;
 import app.organicmaps.R;
@@ -180,12 +181,8 @@ public class EditorFragment extends BaseMwmFragment implements View.OnClickListe
       public void onTextChanged(CharSequence s, int start, int before, int count)
       {
         final Context context = mInputBuildingLevels.getContext();
-        final EditText editText = mInputBuildingLevels.getEditText();
         final boolean isValid = Editor.nativeIsLevelValid(s.toString());
-        mInputBuildingLevels.setError(isValid ? null
-            : context.getString(R.string.error_enter_correct_storey_number, Editor.nativeGetMaxEditableBuildingLevels()));
-        editText.setTextColor(isValid ? ThemeUtils.getColor(context, android.R.attr.textColorPrimary)
-            : context.getResources().getColor(R.color.base_red));
+        UiUtils.setInputError(mInputBuildingLevels, isValid ? null : context.getString(R.string.error_enter_correct_storey_number, Editor.nativeGetMaxEditableBuildingLevels()));
       }
     });
 
@@ -524,7 +521,7 @@ public class EditorFragment extends BaseMwmFragment implements View.OnClickListe
     else if (id == R.id.add_langs)
       mParent.addLanguage();
     else if (id == R.id.about_osm)
-      startActivity(new Intent((Intent.ACTION_VIEW), Uri.parse(Constants.Url.OSM_ABOUT)));
+      startActivity(new Intent((Intent.ACTION_VIEW), Uri.parse(getString(R.string.osm_wiki_about_url))));
     else if (id == R.id.reset)
       reset();
   }
@@ -641,7 +638,7 @@ public class EditorFragment extends BaseMwmFragment implements View.OnClickListe
       message = R.string.editor_reset_edits_message;
     }
 
-    new AlertDialog.Builder(requireActivity(), R.style.MwmTheme_AlertDialog)
+    new MaterialAlertDialogBuilder(requireActivity(), R.style.MwmTheme_AlertDialog)
         .setTitle(message)
         .setPositiveButton(title, (dialog, which) -> {
           Editor.nativeRollbackMapObject();

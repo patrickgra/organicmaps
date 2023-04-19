@@ -226,6 +226,9 @@
 /* Settings «Map» category: «3D buildings» title */
 "pref_map_3d_buildings_title" = "3D buildings";
 
+/* A message in Settings/Preferences explaining why is it not possible to enable 3D buildings when max power saving mode is enabled */
+"pref_map_3d_buildings_disabled_summary" = "Majengo ya 3D yamezimwa katika hali ya kuokoa nishati";
+
 /* Settings «Route» category: «Tts enabled» title */
 "pref_tts_enable_title" = "Voice Instructions";
 
@@ -304,7 +307,7 @@
 "donate" = "Changia";
 
 /* Button in the main Help dialog */
-"how_to_support_us" = "Jinsi ya kutuunga mkono?";
+"how_to_support_us" = "Saidia mradi";
 
 /* Button in the main Help dialog */
 "copyright" = "Copyright";
@@ -1236,20 +1239,23 @@
 /* Translated Organic Maps site, add new translations here: https://github.com/organicmaps/organicmaps.github.io/tree/master/content */
 "translated_om_site_url" = "https://organicmaps.app/";
 
+/* Link to OSM wiki for Editor, Profile and About pages */
+"osm_wiki_about_url" = "https://wiki.openstreetmap.org/wiki/About_OpenStreetMap";
+
 
 /********** Types **********/
 
 "type.aerialway" = "Aerialway";
 
-"type.aerialway.cable_car" = "Cable car";
+"type.aerialway.cable_car" = "Cable Car";
 
-"type.aerialway.chair_lift" = "Chair lift";
+"type.aerialway.chair_lift" = "Chair Lift";
 
-"type.aerialway.drag_lift" = "Drag lift";
+"type.aerialway.drag_lift" = "Drag Lift";
 
 "type.aerialway.gondola" = "Gondola";
 
-"type.aerialway.mixed_lift" = "Mixed lift";
+"type.aerialway.mixed_lift" = "Mixed Lift";
 
 "type.aerialway.station" = "Aerialway Station";
 
@@ -1311,7 +1317,9 @@
 
 "type.amenity.charging_station" = "Charging Station";
 
-"type.amenity.charging_station.motorcar" = "Charging Station";
+"type.amenity.charging_station.bicycle" = "Kituo cha Kuchaji Baiskeli";
+
+"type.amenity.charging_station.motorcar" = "Kituo cha Kuchaji Magari";
 
 "type.amenity.childcare" = "Nursery";
 
@@ -1334,6 +1342,8 @@
 "type.amenity.drinking_water" = "Drinking Water";
 
 "type.amenity.driving_school" = "Driving School";
+
+"type.amenity.money_transfer" = "Uhamisho wa pesa";
 
 "type.amenity.music_school" = "Shule ya Muziki";
 
@@ -1370,6 +1380,8 @@
 "type.amenity.kindergarten" = "Kindergarten";
 
 "type.amenity.library" = "Library";
+
+"type.amenity.loading_dock" = "Inapakia kituo";
 
 "type.amenity.marketplace" = "Marketplace";
 
@@ -1652,6 +1664,10 @@
 
 /* Heating, Ventilation, and Air Conditioning */
 "type.craft.hvac" = "Kiyoyozi";
+
+"type.craft.key_cutter" = "Kukata Muhimu";
+
+"type.craft.locksmith" = "Fundi wa kufuli";
 
 "type.craft.metal_construction" = "Mfanyikazi wa chuma";
 
@@ -2327,7 +2343,7 @@
 
 "type.landuse.greenhouse_horticulture" = "Greenhouse";
 
-"type.landuse.industrial" = "Industrial Land";
+"type.landuse.industrial" = "Industrial Area";
 
 "type.landuse.landfill" = "Shamba la Taka";
 
@@ -2345,9 +2361,9 @@
 
 "type.landuse.reservoir" = "Water";
 
-"type.landuse.residential" = "Residential Land";
+"type.landuse.residential" = "Residential Area";
 
-"type.landuse.retail" = "Retail Land";
+"type.landuse.retail" = "Retail Area";
 
 "type.landuse.salt_pond" = "Pond";
 
@@ -2452,6 +2468,8 @@
 "type.man_made.surveillance" = "Surveillance Camera";
 
 "type.man_made.tower" = "Tower";
+
+"type.man_made.tower.communication" = "Mnara wa Mawasiliano";
 
 "type.man_made.wastewater_plant" = "Wastewater treatment plant";
 
@@ -2645,11 +2663,31 @@
 
 "type.power.generator" = "Generator";
 
+"type.power.generator.solar" = "Jenereta ya jua";
+
+"type.power.generator.wind" = "Jenereta ya upepo";
+
+"type.power.generator.gas" = "Kiwanda cha nguvu cha turbine ya gesi";
+
+"type.power.generator.hydro" = "Kiwanda cha umeme wa maji";
+
 "type.power.line" = "Power Line";
 
 "type.power.line.underground" = "Underground Power Line";
 
 "type.power.minor_line" = "Minor Power Line";
+
+"type.power.plant" = "Kiwanda cha nguvu";
+
+"type.power.plant.coal" = "Kiwanda cha nguvu cha makaa ya mawe";
+
+"type.power.plant.gas" = "Kiwanda cha nguvu cha turbine ya gesi";
+
+"type.power.plant.hydro" = "Kiwanda cha umeme wa maji";
+
+"type.power.plant.solar" = "Kiwanda cha nishati ya jua";
+
+"type.power.plant.wind" = "Kiwanda cha nguvu cha upepo";
 
 "type.power.pole" = "Power Tower";
 
@@ -2776,6 +2814,8 @@
 "type.railway.station.subway.bengalore" = "Subway";
 
 "type.railway.station.subway.berlin" = "Subway";
+
+"type.railway.station.subway.bilbao" = "Subway";
 
 "type.railway.station.subway.brasilia" = "Subway";
 
@@ -3001,6 +3041,8 @@
 
 "type.railway.subway_entrance.berlin" = "Lango la kuingilia stesheni ya reli";
 
+"type.railway.subway_entrance.bilbao" = "Lango la kuingilia stesheni ya reli";
+
 "type.railway.subway_entrance.brasilia" = "Lango la kuingilia stesheni ya reli";
 
 "type.railway.subway_entrance.brescia" = "Lango la kuingilia stesheni ya reli";
@@ -3219,6 +3261,8 @@
 
 "type.shop.bakery" = "Bakery";
 
+"type.shop.bathroom_furnishing" = "Vyombo vya Bafuni";
+
 "type.shop.beauty" = "Beauty Shop";
 
 "type.shop.beverages" = "Beverages";
@@ -3231,6 +3275,8 @@
 
 "type.shop.butcher" = "Butcher’s";
 
+"type.shop.cannabis" = "Duka la Bangi";
+
 "type.shop.car" = "Car Dealership";
 
 "type.shop.car_parts" = "Car Parts";
@@ -3240,6 +3286,8 @@
 "type.shop.car_repair.tyres" = "Tyre Repair";
 
 "type.shop.caravan" = "RV Dealership";
+
+"type.shop.carpet" = "Mazulia";
 
 "type.shop.chemist" = "Chemist Shop";
 
@@ -3259,6 +3307,8 @@
 
 "type.shop.cosmetics" = "Cosmetics";
 
+"type.shop.curtain" = "Mapazia";
+
 "type.shop.deli" = "Duka la Delicatessen";
 
 "type.shop.department_store" = "Department Store";
@@ -3275,6 +3325,8 @@
 
 "type.shop.farm" = "Duka la Chakula cha shambani";
 
+"type.shop.fashion_accessories" = "Vifaa vya Mtindo";
+
 "type.shop.florist" = "Florist’s";
 
 "type.shop.funeral_directors" = "Funeral Directors";
@@ -3283,9 +3335,11 @@
 
 "type.shop.garden_centre" = "Garden Store";
 
+"type.shop.gas" = "Duka la gesi";
+
 "type.shop.gift" = "Gift Shop";
 
-"type.shop.greengrocer" = "Greengrocer's";
+"type.shop.greengrocer" = "Greengrocer";
 
 "type.shop.grocery" = "Chakula cha mboga";
 
@@ -3294,6 +3348,10 @@
 "type.shop.hardware" = "Duka la vifaa";
 
 "type.shop.health_food" = "Duka la Chakula cha Afya";
+
+"type.shop.herbalist" = "Duka la mimea";
+
+"type.shop.hifi" = "Sauti ya HiFi";
 
 "type.shop.houseware" = "Duka la Vifaa vya Nyumbani";
 
@@ -3315,6 +3373,8 @@
 
 "type.shop.motorcycle" = "Motorcycle Shop";
 
+"type.shop.motorcycle_repair" = "Ukarabati wa Pikipiki";
+
 "type.shop.music" = "Record Store";
 
 "type.shop.musical_instrument" = "Musical Instruments";
@@ -3325,11 +3385,15 @@
 
 "type.shop.outdoor" = "Outdoor Equipment";
 
+"type.shop.outpost" = "Sehemu ya kuchukua";
+
 "type.shop.pastry" = "Keki";
 
 "type.shop.pawnbroker" = "Pawnbroker";
 
-"type.shop.pet" = "Petshop";
+"type.shop.pet" = "Pet Store";
+
+"type.shop.pet_grooming" = "Utunzaji wa Kipenzi";
 
 "type.shop.photo" = "Photo Shop";
 
@@ -3365,13 +3429,19 @@
 
 "type.shop.wine" = "Wine Shop";
 
+"type.shop.agrarian" = "Duka la kilimo";
+
 "type.shop.antiques" = "Mambo ya kale";
+
+"type.shop.appliance" = "Duka la vifaa";
 
 "type.shop.art" = "Duka la Sanaa";
 
 "type.shop.baby_goods" = "Duka la watoto";
 
 "type.shop.bag" = "Hifadhi ya Mifuko";
+
+"type.shop.bed" = "Duka la vitanda";
 
 "type.shop.boutique" = "Boutique";
 
