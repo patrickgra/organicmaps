@@ -89,7 +89,8 @@ void DirectionsEngine::LoadPathAttributes(FeatureID const & featureId,
   pathSegment.m_roadNameInfo.m_junction_ref = ft->GetMetadata(feature::Metadata::FMD_JUNCTION_REF);
   pathSegment.m_roadNameInfo.m_destination_ref = ft->GetMetadata(feature::Metadata::FMD_DESTINATION_REF);
   pathSegment.m_roadNameInfo.m_destination = ft->GetMetadata(feature::Metadata::FMD_DESTINATION);
-  pathSegment.m_roadNameInfo.m_ref = ft->GetRoadNumber();
+  /// @todo Should make some better parsing here (@see further use in GetFullRoadName).
+  pathSegment.m_roadNameInfo.m_ref = ft->GetRef();
   pathSegment.m_roadNameInfo.m_name = ft->GetName(StringUtf8Multilang::kDefaultCode);
 }
 
@@ -210,8 +211,8 @@ void DirectionsEngine::FillPathSegmentsAndAdjacentEdgesMap(
     // |prevSegments| contains segments which corresponds to road edges between joints. In case of a
     // fake edge a fake segment is created.
     CHECK_EQUAL(prevSegments.size() + 1, prevJunctions.size(), ());
-    pathSegment.m_path = move(prevJunctions);
-    pathSegment.m_segments = move(prevSegments);
+    pathSegment.m_path = std::move(prevJunctions);
+    pathSegment.m_segments = std::move(prevSegments);
 
     LoadPathAttributes(segmentRange.GetFeature(), pathSegment, inEdge.IsForward());
 
@@ -221,11 +222,11 @@ void DirectionsEngine::FillPathSegmentsAndAdjacentEdgesMap(
       /// Entry already exists, when start-end points are on the same fake segments.
 
       //bool const isEmpty = adjacentEdges.m_outgoingTurns.candidates.empty();
-      //CHECK(m_adjacentEdges.emplace(segmentRange, move(adjacentEdges)).second || isEmpty, ());
-      m_adjacentEdges.emplace(segmentRange, move(adjacentEdges));
+      //CHECK(m_adjacentEdges.emplace(segmentRange, std::move(adjacentEdges)).second || isEmpty, ());
+      m_adjacentEdges.emplace(segmentRange, std::move(adjacentEdges));
     }
 
-    m_pathSegments.push_back(move(pathSegment));
+    m_pathSegments.push_back(std::move(pathSegment));
 
     prevJunctions.clear();
     prevSegments.clear();
