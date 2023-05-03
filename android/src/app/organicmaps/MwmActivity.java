@@ -1843,7 +1843,7 @@ public class MwmActivity extends BaseMwmFragmentActivity
 
   public void onExplanationSelected(){
     Counters.resetFirstStartDialogSeen(this);
-    startActivity(new Intent(requireActivity(), BoardingScreenActivity.class));
+    startActivity(new Intent(this, BoardingScreenActivity.class));
   }
 
   @Override

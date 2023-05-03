@@ -12,8 +12,12 @@
         android:orientation="vertical">
 
         <ImageView
-            android:layout_width="@dimen/bs_img_width"
-            android:layout_height="@dimen/bs_img_height"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingTop="@dimen/bs_desc_padding"
+            android:paddingLeft="@dimen/bs_desc_padding"
+            android:paddingRight="@dimen/bs_desc_padding"
             android:src="@drawable/boarding_screen3" />
 
         <TextView
@@ -30,6 +34,7 @@
             android:layout_height="wrap_content"
             android:paddingLeft="@dimen/bs_desc_padding"
             android:paddingRight="@dimen/bs_desc_padding"
+            android:paddingBottom="50sp"
             android:text="@string/bs_3_desc"
             android:textAlignment="center"
             android:textColor="@android:color/white"
