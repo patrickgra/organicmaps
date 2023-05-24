@@ -32,7 +32,7 @@
 /* A text for current gps location point/arrow selected on the map */
 "core_my_position" = "Minu asukoht";
 
-/* Update maps later/Buy pro version later button text */
+/* Update maps later button text */
 "later" = "Hiljem";
 
 /* View and button titles for accessibility, please also edit it in iphone/plist.txt */
@@ -274,7 +274,7 @@
 "telegram" = "Telegram";
 
 /* Text in menu */
-"matrix" = "[matrix]";
+"matrix" = "[Matrix]";
 
 /* Text in menu */
 "mastodon" = "Mastodon";
@@ -503,7 +503,7 @@
 "routing_planning_error" = "Marsruudi planeerimine ebaõnnestus";
 
 /* Arrive routing message in navigation view */
-"routing_arrive" = "Saabumine: %s";
+"routing_arrive" = "Saabumine: %@";
 
 /* Text for routing::RouterResultCode::FileTooOld dialog. */
 "dialog_routing_download_and_update_maps" = "Marsruudi arvutamiseks lae alla ja värskenda kõik kavandatud teekonnale jäävad kaardid.";
@@ -925,11 +925,11 @@
 
 "downloader_hide_screen" = "Peida vaade";
 
-"downloader_percent" = "%s (%s / %s)";
+"downloader_percent" = "%@ (%@ / %@)";
 
-"downloader_process" = "Allalaadimine %s…";
+"downloader_process" = "Allalaadimine %@…";
 
-"downloader_applying" = "%s rakendamine";
+"downloader_applying" = "%@ rakendamine";
 
 "bookmarks_error_message_share_general" = "Rakenduse vea tõttu ei saanud jagada";
 
@@ -1107,7 +1107,7 @@
 
 "download_map_carplay" = "Palun lae alla kaardid oma seadme Organic Maps rakenduses";
 
-"carplay_roundabout_exit" = "%s väljumine";
+"carplay_roundabout_exit" = "%@ väljumine";
 
 /* max. 10 symbols, both iOS and Android */
 "sort" = "Sorteeri…";
@@ -1213,7 +1213,7 @@
 "whats_new_auto_update_message" = "Kaartide värskendamine hoiab objektide info ajakohasena";
 
 /* Autoupdate dialog on start */
-"whats_new_auto_update_button_size" = "Värskenda (%s)";
+"whats_new_auto_update_button_size" = "Värskenda (%@)";
 
 /* Autoupdate dialog on start */
 "whats_new_auto_update_button_later" = "Värskenda hiljem käsitsi";
@@ -1638,9 +1638,11 @@
 
 "type.building.address" = "Hoone";
 
-"type.building.garage" = "Garaaž";
-
 "type.building.has_parts" = "Hoone";
+
+"type.building_part" = "Hoone";
+
+"type.building.garage" = "Garaaž";
 
 "type.building.train_station" = "Rongijaam";
 
@@ -3443,6 +3445,7 @@
 
 "type.shop.appliance" = "Tehnikapood";
 
+/* maybe change to Art Gallery for en-US when supported */
 "type.shop.art" = "Kunstipood";
 
 "type.shop.baby_goods" = "Lastekaubad";
@@ -3701,7 +3704,5 @@
 "type.piste_type.nordic" = "Murdmaa suusarada";
 
 "type.piste_type.sled" = "Kelgurada";
-
-"type.building_part" = "Hoone";
 
 "type.amenity.events_venue" = "Ürituste toimumiskoht";

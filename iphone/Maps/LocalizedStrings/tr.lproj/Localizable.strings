@@ -32,7 +32,7 @@
 /* A text for current gps location point/arrow selected on the map */
 "core_my_position" = "Konumum";
 
-/* Update maps later/Buy pro version later button text */
+/* Update maps later button text */
 "later" = "Daha sonra";
 
 /* View and button titles for accessibility, please also edit it in iphone/plist.txt */
@@ -274,7 +274,7 @@
 "telegram" = "Telegram";
 
 /* Text in menu */
-"matrix" = "[matrix]";
+"matrix" = "[Matrix]";
 
 /* Text in menu */
 "mastodon" = "Mastodon";
@@ -503,7 +503,7 @@
 "routing_planning_error" = "Rota Planlaması Başarısız";
 
 /* Arrive routing message in navigation view */
-"routing_arrive" = "Varış: %s";
+"routing_arrive" = "Varış: %@";
 
 /* Text for routing::RouterResultCode::FileTooOld dialog. */
 "dialog_routing_download_and_update_maps" = "Bir rota oluşturmak için lütfen rota üzerindeki tüm haritaları indirin ve güncelleyin.";
@@ -925,11 +925,11 @@
 
 "downloader_hide_screen" = "Ekranı Gizle";
 
-"downloader_percent" = "%s (%s / %s)";
+"downloader_percent" = "%@ (%@ / %@)";
 
-"downloader_process" = "%s indiriliyor…";
+"downloader_process" = "%@ indiriliyor…";
 
-"downloader_applying" = "%s uygulanıyor…";
+"downloader_applying" = "%@ uygulanıyor…";
 
 "bookmarks_error_message_share_general" = "Bir uygulama hatasından dolayı paylaşılamıyor";
 
@@ -1107,7 +1107,7 @@
 
 "download_map_carplay" = "Lütfen haritaları cihazınıza Organic Maps uygulamasından indirin";
 
-"carplay_roundabout_exit" = "%s çıkış";
+"carplay_roundabout_exit" = "%@ çıkış";
 
 /* max. 10 symbols, both iOS and Android */
 "sort" = "Sırala…";
@@ -1213,7 +1213,7 @@
 "whats_new_auto_update_message" = "Haritaları güncellemek, objelerle ilgili bilgilerin güncel kalmasını sağlar";
 
 /* Autoupdate dialog on start */
-"whats_new_auto_update_button_size" = "Güncelle (%s)";
+"whats_new_auto_update_button_size" = "Güncelle (%@)";
 
 /* Autoupdate dialog on start */
 "whats_new_auto_update_button_later" = "Daha sonra elle güncelle";
@@ -1530,7 +1530,7 @@
 
 "type.amenity.vending_machine.food" = "Food Dispenser";
 
-"type.amenity.vending_machine.newspapers" = "Newspapers Dispenser";
+"type.amenity.vending_machine.newspapers" = "Newspaper Dispenser";
 
 "type.amenity.vending_machine.parking_tickets" = "Otopark Fişi";
 
@@ -1638,9 +1638,11 @@
 
 "type.building.address" = "Bina";
 
-"type.building.garage" = "Garaj";
-
 "type.building.has_parts" = "Bina";
+
+"type.building_part" = "Bina";
+
+"type.building.garage" = "Garaj";
 
 "type.building.train_station" = "Tren İstasyonu";
 
@@ -2325,7 +2327,7 @@
 
 "type.landuse.construction" = "Yapı";
 
-"type.landuse.education" = "Educational Facilities";
+"type.landuse.education" = "Educational Facility";
 
 "type.landuse.farm" = "Çiftlik";
 
@@ -3443,6 +3445,7 @@
 
 "type.shop.appliance" = "Beyaz eşya dükkanı";
 
+/* maybe change to Art Gallery for en-US when supported */
 "type.shop.art" = "Sanat Mağazası";
 
 "type.shop.baby_goods" = "Çocuk mağazası";
@@ -3701,7 +3704,5 @@
 "type.piste_type.nordic" = "İskandinav Kayak Pisti";
 
 "type.piste_type.sled" = "Kızak Pisti";
-
-"type.building_part" = "Bina";
 
 "type.amenity.events_venue" = "Etkinlik mekanı";

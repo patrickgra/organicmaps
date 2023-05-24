@@ -31,6 +31,8 @@ public:
     auto const & c = classif();
     m_map[c.GetTypeByPath({"route", "ferry"})] = ftypes::HighwayClass::Transported;
     m_map[c.GetTypeByPath({"route", "shuttle_train"})] = ftypes::HighwayClass::Transported;
+    /// @todo Wow, actual highway type is railway-rail-motor_vehicle.
+    /// Should be carefull with GetHighwayClass function.
     m_map[c.GetTypeByPath({"railway", "rail"})] = ftypes::HighwayClass::Transported;
 
     m_map[c.GetTypeByPath({"highway", "motorway"})] = ftypes::HighwayClass::Trunk;
@@ -70,7 +72,7 @@ public:
   {
     auto const it = m_map.find(t);
     if (it == m_map.cend())
-      return ftypes::HighwayClass::Error;
+      return ftypes::HighwayClass::Undefined;
     return it->second;
   }
 };
@@ -80,7 +82,6 @@ char const * HighwayClassToString(ftypes::HighwayClass const cls)
   switch (cls)
   {
   case ftypes::HighwayClass::Undefined: return "Undefined";
-  case ftypes::HighwayClass::Error: return "Error";
   case ftypes::HighwayClass::Transported: return "Transported";
   case ftypes::HighwayClass::Trunk: return "Trunk";
   case ftypes::HighwayClass::Primary: return "Primary";
@@ -120,18 +121,17 @@ string DebugPrint(LocalityType const localityType)
 
 HighwayClass GetHighwayClass(feature::TypesHolder const & types)
 {
-  uint8_t constexpr kTruncLevel = 2;
   static HighwayClasses highwayClasses;
 
   for (auto t : types)
   {
-    ftype::TruncValue(t, kTruncLevel);
+    ftype::TruncValue(t, 2);
     HighwayClass const hc = highwayClasses.Get(t);
-    if (hc != HighwayClass::Error)
+    if (hc != HighwayClass::Undefined)
       return hc;
   }
 
-  return HighwayClass::Error;
+  return HighwayClass::Undefined;
 }
 
 uint32_t BaseChecker::PrepareToMatch(uint32_t type, uint8_t level)
@@ -564,18 +564,20 @@ IsPlaceChecker::IsPlaceChecker() : BaseChecker(1 /* level */)
   m_types.push_back(classif().GetTypeByPath({"place"}));
 }
 
-IsBridgeChecker::IsBridgeChecker() : BaseChecker(3 /* level */) {}
+IsBridgeOrTunnelChecker::IsBridgeOrTunnelChecker() : BaseChecker(3 /* level */) {}
 
-bool IsBridgeChecker::IsMatched(uint32_t type) const
+bool IsBridgeOrTunnelChecker::IsMatched(uint32_t type) const
 {
-  return IsTypeConformed(type, {"highway", "*", "bridge"});
-}
+  if (ftype::GetLevel(type) != 3)
+    return false;
 
-IsTunnelChecker::IsTunnelChecker() : BaseChecker(3 /* level */) {}
+  ClassifObject const * p = classif().GetRoot()->GetObject(ftype::GetValue(type, 0));
+  if (p->GetName() != "highway")
+    return false;
 
-bool IsTunnelChecker::IsMatched(uint32_t type) const
-{
-  return IsTypeConformed(type, {"highway", "*", "tunnel"});
+  p = p->GetObject(ftype::GetValue(type, 1));
+  p = p->GetObject(ftype::GetValue(type, 2));
+  return (p->GetName() == "bridge" || p->GetName() == "tunnel");
 }
 
 IsHotelChecker::IsHotelChecker()
@@ -948,26 +950,4 @@ uint64_t GetPopulationByRadius(double r)
   return base::SignedRound(pow(r / 550.0, 3.6));
 }
 
-bool IsTypeConformed(uint32_t type, base::StringIL const & path)
-{
-  ClassifObject const * p = classif().GetRoot();
-  ASSERT(p, ());
-
-  uint8_t val = 0, i = 0;
-  for (char const * s : path)
-  {
-    if (!ftype::GetValue(type, i, val))
-      return false;
-
-    p = p->GetObject(val);
-    if (p == 0)
-      return false;
-
-    if (p->GetName() != s && strcmp(s, "*") != 0)
-      return false;
-
-    ++i;
-  }
-  return true;
-}
 }  // namespace ftypes

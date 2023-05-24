@@ -21,7 +21,7 @@
 	<string name="miles">Mijlen</string>
 	<!-- A text for current gps location point/arrow selected on the map -->
 	<string name="core_my_position">Mijn locatie</string>
-	<!-- Update maps later/Buy pro version later button text -->
+	<!-- Update maps later button text -->
 	<string name="later">Later</string>
 	<!-- View and button titles for accessibility, please also edit it in iphone/plist.txt -->
 	<string name="search">Zoeken</string>
@@ -380,6 +380,10 @@
 	<string name="p2p_reroute_from_current">Wilt u dat wij een route plannen vanaf uw huidige locatie?</string>
 	<!-- Edit open hours/set time and minutes dialog -->
 	<string name="next_button">Volgende</string>
+	<!-- Tab title in the Edit Opening Hours time picker -->
+	<string name="editor_time_from">Van</string>
+	<!-- Tab title in the Edit Opening Hours time picker -->
+	<string name="editor_time_to">Tot</string>
 	<string name="editor_time_add">Schema toevoegen</string>
 	<string name="editor_time_delete">Schema verwijderen</string>
 	<!-- Text for allday switch. -->
@@ -493,9 +497,7 @@
 	<string name="miles_per_hour">mph</string>
 	<string name="hour">u</string>
 	<string name="minute">min</string>
-	<string name="placepage_place_description">Beschrijving</string>
 	<string name="placepage_more_button">Meer</string>
-	<string name="placepage_call_button">Bellen</string>
 	<string name="placepage_edit_bookmark_button">Bladwijzer bewerken</string>
 	<string name="editor_comment_hint">Reactie…</string>
 	<string name="editor_reset_edits_message">Alle lokale wijzigingen herstellen?</string>
@@ -722,6 +724,8 @@
 	<string name="enable_show_on_lock_screen_description">Indien ingeschakeld, hoeft het scherm niet te worden ontgrendeld wanneer de app actief is.</string>
 	<!-- OpenStreetMap text on splash screen -->
 	<string name="splash_subtitle">Kaartgegevens van OpenStreetMap</string>
+	<!-- Translated Organic Maps site, add new translations here: https://github.com/organicmaps/organicmaps.github.io/tree/master/content -->
+	<string name="translated_om_site_url">https://organicmaps.app/nl/</string>
 	<!-- Link to OSM wiki for Editor, Profile and About pages -->
 	<string name="osm_wiki_about_url">https://wiki.openstreetmap.org/wiki/NL:Wat_is_OpenStreetMap%3F</string>
 
@@ -813,8 +817,8 @@
 	<string name="type.amenity.parking_entrance.permissive">Parkeeringang</string>
 	<string name="type.amenity.parking_space">Parkeerplek</string>
 	<string name="type.amenity.parking_space.permissive">Parkeerplek</string>
-	<string name="type.amenity.parking_space.private">Privé parkeerplek</string>
-	<string name="type.amenity.parking_space.underground">Ondergrondse parkeerplek</string>
+	<string name="type.amenity.parking_space.private">Parkeerplek</string>
+	<string name="type.amenity.parking_space.underground">Parkeerplek</string>
 	<string name="type.amenity.parking_space.disabled">Invalide parkeerplaats</string>
 	<string name="type.amenity.payment_terminal">Betaalautomaat</string>
 	<string name="type.amenity.pharmacy">Apotheek</string>
@@ -921,8 +925,9 @@
 	<string name="type.boundary.national_park">Nationaal park</string>
 	<string name="type.building">Gebouw</string>
 	<string name="type.building.address">Gebouw</string>
-	<string name="type.building.garage">Garage</string>
 	<string name="type.building.has_parts">Gebouw</string>
+	<string name="type.building_part">Gebouw</string>
+	<string name="type.building.garage">Garage</string>
 	<string name="type.building.train_station">Treinstation</string>
 	<string name="type.building.warehouse">Magazijn</string>
 	<string name="type.cemetery.grave">Graf</string>
@@ -979,7 +984,6 @@
 	<string name="type.cuisine.filipino">Filipijns</string>
 	<string name="type.cuisine.fine_dining">Gastronomisch</string>
 	<string name="type.cuisine.fish">Vis</string>
-	<string name="type.cuisine.fish_and_chips">Fish and chips</string>
 	<string name="type.cuisine.french">Frans</string>
 	<string name="type.cuisine.friture">Frituur</string>
 	<string name="type.cuisine.georgian">Georgisch</string>
@@ -1312,9 +1316,9 @@
 	<string name="type.leisure.marina">Jachthaven</string>
 	<string name="type.leisure.nature_reserve">Natuurreservaat</string>
 	<string name="type.leisure.park">Park</string>
-	<string name="type.leisure.park.no.access">Ontoegankelijk park</string>
+	<string name="type.leisure.park.no.access">Park</string>
 	<string name="type.leisure.park.permissive">Park</string>
-	<string name="type.leisure.park.private">Privé park</string>
+	<string name="type.leisure.park.private">Park</string>
 	<string name="type.leisure.picnic_table">Picknicktafel</string>
 	<string name="type.leisure.pitch">Sportveld</string>
 	<string name="type.leisure.playground">Speeltuin</string>
@@ -1825,6 +1829,7 @@
 	<string name="type.shop.agrarian">Agrarische winkel</string>
 	<string name="type.shop.antiques">Antiekhandel</string>
 	<string name="type.shop.appliance">Apparaten winkel</string>
+	<!-- maybe change to Art Gallery for en-US when supported -->
 	<string name="type.shop.art">Kunstwinkel</string>
 	<string name="type.shop.baby_goods">Babyspullenwinkel</string>
 	<string name="type.shop.bag">Tassenwinkel</string>
@@ -1954,6 +1959,5 @@
 	<string name="type.piste_type.downhill.novice">Beginnersafdaling</string>
 	<string name="type.piste_type.nordic">Langlaufroute</string>
 	<string name="type.piste_type.sled">Sleebaan</string>
-	<string name="type.building_part">Gebouw</string>
 	<string name="type.amenity.events_venue">Evenementenlocatie</string>
 </resources>

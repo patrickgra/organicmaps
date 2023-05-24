@@ -21,7 +21,7 @@
 	<string name="miles">Mile</string>
 	<!-- A text for current gps location point/arrow selected on the map -->
 	<string name="core_my_position">Moje położenie</string>
-	<!-- Update maps later/Buy pro version later button text -->
+	<!-- Update maps later button text -->
 	<string name="later">Później</string>
 	<!-- View and button titles for accessibility, please also edit it in iphone/plist.txt -->
 	<string name="search">Wyszukaj</string>
@@ -384,6 +384,10 @@
 	<string name="p2p_reroute_from_current">Czy chcesz, byśmy zaplanowali trasę z Twojej bieżącej lokalizacji?</string>
 	<!-- Edit open hours/set time and minutes dialog -->
 	<string name="next_button">Dalej</string>
+	<!-- Tab title in the Edit Opening Hours time picker -->
+	<string name="editor_time_from">Od</string>
+	<!-- Tab title in the Edit Opening Hours time picker -->
+	<string name="editor_time_to">Do</string>
 	<string name="editor_time_add">Dodaj harmonogram</string>
 	<string name="editor_time_delete">Usuń harmonogram</string>
 	<!-- Text for allday switch. -->
@@ -497,9 +501,7 @@
 	<string name="miles_per_hour">mph</string>
 	<string name="hour">godz</string>
 	<string name="minute">min</string>
-	<string name="placepage_place_description">Opis</string>
 	<string name="placepage_more_button">Więcej</string>
-	<string name="placepage_call_button">Zadzwoń</string>
 	<string name="placepage_edit_bookmark_button">Edytuj zakładkę</string>
 	<string name="editor_comment_hint">Komentarz…</string>
 	<string name="editor_reset_edits_message">Usunąć wszystkie lokalne zmiany?</string>
@@ -727,6 +729,8 @@
 	<string name="enable_show_on_lock_screen_description">Po włączeniu tej funkcji nie będziesz musieć odblokowywać urządzenia za każdym razem, gdy aplikacja jest uruchomiona.</string>
 	<!-- OpenStreetMap text on splash screen -->
 	<string name="splash_subtitle">Dane mapy z OpenStreetMap</string>
+	<!-- Translated Organic Maps site, add new translations here: https://github.com/organicmaps/organicmaps.github.io/tree/master/content -->
+	<string name="translated_om_site_url">https://organicmaps.app/pl/</string>
 	<!-- Link to OSM wiki for Editor, Profile and About pages -->
 	<string name="osm_wiki_about_url">https://wiki.openstreetmap.org/wiki/Pl:Wstęp</string>
 
@@ -910,9 +914,10 @@
 	<string name="type.boundary.administrative.suburb">Granica przedmieść</string>
 	<string name="type.boundary.national_park">Park narodowy</string>
 	<string name="type.building">Budynek</string>
-	<string name="type.building.address">Adres</string>
+	<string name="type.building.address">Budynek</string>
+	<string name="type.building.has_parts">Budynek</string>
+	<string name="type.building_part">Budynek</string>
 	<string name="type.building.garage">Garaż</string>
-	<string name="type.building.has_parts">Część budynku</string>
 	<string name="type.building.train_station">Dworzec kolejowy</string>
 	<string name="type.cemetery.grave">Mogiła</string>
 	<string name="type.craft">Rzemiosło</string>
@@ -1749,6 +1754,7 @@
 	<string name="type.shop.agrarian">Sklep rolniczy</string>
 	<string name="type.shop.antiques">Antyki</string>
 	<string name="type.shop.appliance">Sklep AGD</string>
+	<!-- maybe change to Art Gallery for en-US when supported -->
 	<string name="type.shop.art">Sklep artystyczny</string>
 	<string name="type.shop.baby_goods">Sklep dla dzieci</string>
 	<string name="type.shop.bag">Sklep z torbami</string>
@@ -1852,6 +1858,5 @@
 	<string name="type.wheelchair.limited">Częściowo wyposażono dla osób niepełnosprawnych</string>
 	<string name="type.wheelchair.no">Nie wyposażono dla osób niepełnosprawnych</string>
 	<string name="type.wheelchair.yes">Wyposażono dla osób niepełnosprawnych</string>
-	<string name="type.building_part">Część budynku</string>
 	<string name="type.amenity.events_venue">Miejsce wydarzeń</string>
 </resources>

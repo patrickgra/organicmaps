@@ -24,7 +24,7 @@
 	<string name="miles">Мілі</string>
 	<!-- A text for current gps location point/arrow selected on the map -->
 	<string name="core_my_position">Маё месцазнаходжанне</string>
-	<!-- Update maps later/Buy pro version later button text -->
+	<!-- Update maps later button text -->
 	<string name="later">Потым</string>
 	<!-- View and button titles for accessibility, please also edit it in iphone/plist.txt -->
 	<string name="search">Шукаць</string>
@@ -383,6 +383,10 @@
 	<string name="p2p_reroute_from_current">Хочаце перапракласці маршрут ад цяперашняга месцазнаходжання?</string>
 	<!-- Edit open hours/set time and minutes dialog -->
 	<string name="next_button">Далей</string>
+	<!-- Tab title in the Edit Opening Hours time picker -->
+	<string name="editor_time_from">З</string>
+	<!-- Tab title in the Edit Opening Hours time picker -->
+	<string name="editor_time_to">Да</string>
 	<string name="editor_time_add">Дадаць расклад</string>
 	<string name="editor_time_delete">Выдаліць расклад</string>
 	<!-- Text for allday switch. -->
@@ -495,9 +499,7 @@
 	<string name="miles_per_hour">міль/г</string>
 	<string name="hour">г</string>
 	<string name="minute">хв</string>
-	<string name="placepage_place_description">Апісанне</string>
 	<string name="placepage_more_button">Яшчэ</string>
-	<string name="placepage_call_button">Патэлефанаваць</string>
 	<string name="placepage_edit_bookmark_button">Правіць закладку</string>
 	<string name="editor_comment_hint">Каментар…</string>
 	<string name="editor_reset_edits_message">Скінуць усе лакальныя змены?</string>
@@ -1100,6 +1102,7 @@
 	<string name="type.shop.agrarian">Сельскагаспадарчы магазін</string>
 	<string name="type.shop.antiques">Антыкварыят</string>
 	<string name="type.shop.appliance">Крама бытавой тэхнікі</string>
+	<!-- maybe change to Art Gallery for en-US when supported -->
 	<string name="type.shop.art">Крама мастацтваў</string>
 	<string name="type.shop.baby_goods">Дзіцячая крама</string>
 	<string name="type.shop.bag">Крама сумак</string>

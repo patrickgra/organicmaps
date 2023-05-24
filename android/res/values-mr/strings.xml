@@ -21,7 +21,7 @@
 	<string name="miles">मैल</string>
 	<!-- A text for current gps location point/arrow selected on the map -->
 	<string name="core_my_position">माझे स्थान</string>
-	<!-- Update maps later/Buy pro version later button text -->
+	<!-- Update maps later button text -->
 	<string name="later">नंतर</string>
 	<!-- View and button titles for accessibility, please also edit it in iphone/plist.txt -->
 	<string name="search">शोधा</string>
@@ -356,6 +356,10 @@
 	<string name="p2p_reroute_from_current">तुमच्या वर्तमान स्थानापासून मार्ग नियोजन करायचे का?</string>
 	<!-- Edit open hours/set time and minutes dialog -->
 	<string name="next_button">पुढे</string>
+	<!-- Tab title in the Edit Opening Hours time picker -->
+	<string name="editor_time_from">ते</string>
+	<!-- Tab title in the Edit Opening Hours time picker -->
+	<string name="editor_time_to">पर्यंत</string>
 	<string name="editor_time_add">वेळापत्रक जोडा</string>
 	<string name="editor_time_delete">वेळापत्रक मिटवा</string>
 	<!-- Text for allday switch. -->
@@ -464,9 +468,7 @@
 	<string name="miles_per_hour">mph</string>
 	<string name="hour">तास</string>
 	<string name="minute">मिनिट</string>
-	<string name="placepage_place_description">वर्णन</string>
 	<string name="placepage_more_button">अधिक</string>
-	<string name="placepage_call_button">फोन करा</string>
 	<string name="placepage_edit_bookmark_button">खूणपत्र संपादित करा</string>
 	<string name="editor_comment_hint">टिप्पणी</string>
 	<string name="editor_reset_edits_message">सर्व स्थानिक बदल टाकून द्यायचे?</string>
@@ -689,6 +691,8 @@
 	<string name="enable_show_on_lock_screen">लॉक पटलावर (स्क्रीनवर) दाखवा</string>
 	<!-- Description in preferences -->
 	<string name="enable_show_on_lock_screen_description">चालू असल्यास, ऍप चालू असताना प्रत्येक वेळी तुम्हाला तुमचे उपकरण अनलॉक करण्याची आवश्यकता नाही.</string>
+	<!-- Translated Organic Maps site, add new translations here: https://github.com/organicmaps/organicmaps.github.io/tree/master/content -->
+	<string name="translated_om_site_url">https://organicmaps.app/mr/</string>
 
 	<!-- SECTION: Types -->
 	<string name="type.addr_interpolation">पत्ता/ब्लॉक</string>
@@ -865,8 +869,9 @@
 	<string name="type.boundary.national_park">राष्ट्रीय उद्यान</string>
 	<string name="type.building">इमारत</string>
 	<string name="type.building.address">इमारत</string>
-	<string name="type.building.garage">गराज</string>
 	<string name="type.building.has_parts">इमारत</string>
+	<string name="type.building_part">इमारत</string>
+	<string name="type.building.garage">गराज</string>
 	<string name="type.building.train_station">रेल्वे स्थानक</string>
 	<string name="type.building.warehouse">वखार</string>
 	<string name="type.craft">हस्तकला</string>
@@ -1620,7 +1625,6 @@
 	<string name="type.shop.gift">भेटवस्तूंचे दुकान</string>
 	<string name="type.shop.greengrocer">भाजीवाला</string>
 	<string name="type.shop.hairdresser">न्हावी</string>
-	<string name="type.shop.hardware">हार्डवेअर दुकान</string>
 	<string name="type.shop.herbalist">औषधी वनस्पतींचे दुकान</string>
 	<string name="type.shop.hifi">हायफाय ऑडिओ</string>
 	<string name="type.shop.houseware">हार्डवेअर दुकान</string>
@@ -1740,6 +1744,5 @@
 	<string name="type.wheelchair.limited">चाकखुर्चीसाठी मर्यादित प्रवेश</string>
 	<string name="type.wheelchair.no">चाकखुर्चीसाठी प्रवेश नाही</string>
 	<string name="type.wheelchair.yes">चाकखुर्चीसाठी प्रवेश</string>
-	<string name="type.building_part">इमारत</string>
 	<string name="type.amenity.events_venue">कार्यक्रमाचे ठिकाण</string>
 </resources>

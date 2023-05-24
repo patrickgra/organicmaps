@@ -24,7 +24,7 @@
 	<string name="miles">مایل</string>
 	<!-- A text for current gps location point/arrow selected on the map -->
 	<string name="core_my_position">مکان من</string>
-	<!-- Update maps later/Buy pro version later button text -->
+	<!-- Update maps later button text -->
 	<string name="later">بعداً</string>
 	<!-- View and button titles for accessibility, please also edit it in iphone/plist.txt -->
 	<string name="search">جست‌وجو</string>
@@ -358,6 +358,10 @@
 	<string name="p2p_reroute_from_current">آیا می خواهید یک مسیر را از موقعیت فعلیتان برنامه ریزی کنیم؟</string>
 	<!-- Edit open hours/set time and minutes dialog -->
 	<string name="next_button">بعدی</string>
+	<!-- Tab title in the Edit Opening Hours time picker -->
+	<string name="editor_time_from">از ساعت</string>
+	<!-- Tab title in the Edit Opening Hours time picker -->
+	<string name="editor_time_to">الی</string>
 	<string name="editor_time_add">اضافه کردن برنامه ریزی</string>
 	<string name="editor_time_delete">حذف کردن برنامه ریزی</string>
 	<!-- Text for allday switch. -->
@@ -468,9 +472,7 @@
 	<string name="miles_per_hour">مایل بر ساعت (mph)</string>
 	<string name="hour">ساعت</string>
 	<string name="minute">دقیقه</string>
-	<string name="placepage_place_description">توضیحات</string>
 	<string name="placepage_more_button">بیشتر</string>
-	<string name="placepage_call_button">تماس</string>
 	<string name="placepage_edit_bookmark_button">ویرایش نشانه‌ها</string>
 	<string name="editor_comment_hint">اظهار نظر</string>
 	<string name="editor_reset_edits_message">آیا تغییرات محلی را نادیده می گیرید؟</string>
@@ -822,8 +824,9 @@
 	<string name="type.boundary.national_park">پارک ملی</string>
 	<string name="type.building">ساختمان</string>
 	<string name="type.building.address">ساختمان</string>
-	<string name="type.building.garage">گاراژ</string>
 	<string name="type.building.has_parts">ساختمان</string>
+	<string name="type.building_part">ساختمان</string>
+	<string name="type.building.garage">گاراژ</string>
 	<string name="type.building.train_station">ایستگاه قطار</string>
 	<string name="type.cemetery.grave">ﺮﺒﻗ</string>
 	<string name="type.craft">صنعت‌گری</string>
@@ -1521,6 +1524,7 @@
 	<string name="type.shop.agrarian">مغازه کشاورزی</string>
 	<string name="type.shop.antiques">ﺕﺎﺟ ﻪﻘﯿﺘﻋ</string>
 	<string name="type.shop.appliance">فروشگاه لوازم خانگی</string>
+	<!-- maybe change to Art Gallery for en-US when supported -->
 	<string name="type.shop.art">ﺮﻨﻫ ﻩﺎﮕﺷﻭﺮﻓ</string>
 	<string name="type.shop.baby_goods">ﻥﺎﮐﺩﻮﮐ ﻩﺎﮕﺷﻭﺮﻓ</string>
 	<string name="type.shop.bag">ﻒﯿﮐ ﻩﺎﮕﺷﻭﺮﻓ</string>
@@ -1620,6 +1624,5 @@
 	<string name="type.wheelchair.limited">دسترسی محدود با صندلی چرخ دار</string>
 	<string name="type.wheelchair.no">بدون دسترسی با صندلی چرخ دار</string>
 	<string name="type.wheelchair.yes">دسترسی کامل با صندلی چرخ دار</string>
-	<string name="type.building_part">ساختما</string>
 	<string name="type.amenity.events_venue">محل برگزاری رویدادها</string>
 </resources>

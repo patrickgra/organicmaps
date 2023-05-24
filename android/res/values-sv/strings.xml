@@ -21,7 +21,7 @@
 	<string name="miles">Mil</string>
 	<!-- A text for current gps location point/arrow selected on the map -->
 	<string name="core_my_position">Min position</string>
-	<!-- Update maps later/Buy pro version later button text -->
+	<!-- Update maps later button text -->
 	<string name="later">Senare</string>
 	<!-- View and button titles for accessibility, please also edit it in iphone/plist.txt -->
 	<string name="search">Sök</string>
@@ -361,6 +361,10 @@
 	<string name="p2p_reroute_from_current">Vill du att vi planerar en färdväg från din nuvarande plats?</string>
 	<!-- Edit open hours/set time and minutes dialog -->
 	<string name="next_button">Nästa</string>
+	<!-- Tab title in the Edit Opening Hours time picker -->
+	<string name="editor_time_from">Från</string>
+	<!-- Tab title in the Edit Opening Hours time picker -->
+	<string name="editor_time_to">Till</string>
 	<string name="editor_time_add">Lägg till schema</string>
 	<string name="editor_time_delete">Ta bort schema</string>
 	<!-- Text for allday switch. -->
@@ -469,9 +473,7 @@
 	<string name="miles_per_hour">mph</string>
 	<string name="hour">h</string>
 	<string name="minute">min</string>
-	<string name="placepage_place_description">Beskrivning</string>
 	<string name="placepage_more_button">Mer</string>
-	<string name="placepage_call_button">Ring</string>
 	<string name="placepage_edit_bookmark_button">Redigera bokmärke</string>
 	<string name="editor_comment_hint">kommentar…</string>
 	<string name="editor_reset_edits_message">Återställ alla lokala ändringar?</string>
@@ -676,6 +678,8 @@
 	<string name="enable_screen_sleep_description">När den är aktiverad får skärmen sova efter en period av inaktivitet.</string>
 	<!-- OpenStreetMap text on splash screen -->
 	<string name="splash_subtitle">Kartdata från OpenStreetMap</string>
+	<!-- Translated Organic Maps site, add new translations here: https://github.com/organicmaps/organicmaps.github.io/tree/master/content -->
+	<string name="translated_om_site_url">https://organicmaps.app/sv/</string>
 
 	<!-- SECTION: Types -->
 	<string name="type.addr_interpolation">Adress/Block</string>
@@ -816,6 +820,7 @@
 	<string name="type.building">Byggnad</string>
 	<string name="type.building.address">Byggnad</string>
 	<string name="type.building.has_parts">Byggnad</string>
+	<string name="type.building_part">Byggnad</string>
 	<string name="type.building.train_station">Tågstation</string>
 	<string name="type.cemetery.grave">Grav</string>
 	<string name="type.craft">Hantverk</string>
@@ -1595,6 +1600,7 @@
 	<string name="type.shop.agrarian">Lantbruksbutik</string>
 	<string name="type.shop.antiques">Antikviteter</string>
 	<string name="type.shop.appliance">Vitvarubutik</string>
+	<!-- maybe change to Art Gallery for en-US when supported -->
 	<string name="type.shop.art">Konstaffär</string>
 	<string name="type.shop.baby_goods">Barnbutik</string>
 	<string name="type.shop.bag">Väskor butik</string>
@@ -1692,6 +1698,5 @@
 	<string name="type.wheelchair.limited">Delvis utrustad för handikappade</string>
 	<string name="type.wheelchair.no">Ej utrustad för handikappade</string>
 	<string name="type.wheelchair.yes">Utrustad för handikappade</string>
-	<string name="type.building_part">Byggnad</string>
 	<string name="type.amenity.events_venue">Evenemangslokal</string>
 </resources>

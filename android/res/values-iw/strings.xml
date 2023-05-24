@@ -21,7 +21,7 @@
 	<string name="miles">מ\"ב</string>
 	<!-- A text for current gps location point/arrow selected on the map -->
 	<string name="core_my_position">מיקומי</string>
-	<!-- Update maps later/Buy pro version later button text -->
+	<!-- Update maps later button text -->
 	<string name="later">מאוחר יותר</string>
 	<!-- Search box placeholder text; Used when searching on the map itself, not when searching for a map -->
 	<string name="search_map">חפש במפה</string>
@@ -227,6 +227,10 @@
 	<!-- SECTION: Strings for downloading map from search -->
 	<string name="search_without_internet_advertisement">על מנת להתחיל לחפש וליצור מסלולים, הורידו בבקשה את המפה ולא תזדקקו יותר לחיבור לאינטרנט.</string>
 	<string name="search_select_map">בחרו את המפה</string>
+	<!-- Tab title in the Edit Opening Hours time picker -->
+	<string name="editor_time_from">משעה</string>
+	<!-- Tab title in the Edit Opening Hours time picker -->
+	<string name="editor_time_to">עד</string>
 	<string name="twentyfour_seven">יום ולילה</string>
 	<string name="login_osm">OpenStreetMap-ל סנכיה</string>
 	<string name="level">קוֹמָה</string>
@@ -629,6 +633,7 @@
 	<string name="type.shop.agrarian">חנות חקלאית</string>
 	<string name="type.shop.antiques">תוֹקיתִעַ</string>
 	<string name="type.shop.appliance">חנות מוצרי חשמל</string>
+	<!-- maybe change to Art Gallery for en-US when supported -->
 	<string name="type.shop.art">תויונמוא תונח</string>
 	<string name="type.shop.baby_goods">םידליל תונח</string>
 	<string name="type.shop.bag">םיקית תונח</string>

@@ -21,7 +21,7 @@
 	<string name="miles">Miilid</string>
 	<!-- A text for current gps location point/arrow selected on the map -->
 	<string name="core_my_position">Minu asukoht</string>
-	<!-- Update maps later/Buy pro version later button text -->
+	<!-- Update maps later button text -->
 	<string name="later">Hiljem</string>
 	<!-- View and button titles for accessibility, please also edit it in iphone/plist.txt -->
 	<string name="search">Otsi</string>
@@ -374,6 +374,10 @@
 	<string name="p2p_reroute_from_current">Kas soovid, et planeeriksime marsruudi Sinu praegusest asukohast?</string>
 	<!-- Edit open hours/set time and minutes dialog -->
 	<string name="next_button">Järgmine</string>
+	<!-- Tab title in the Edit Opening Hours time picker -->
+	<string name="editor_time_from">Kell</string>
+	<!-- Tab title in the Edit Opening Hours time picker -->
+	<string name="editor_time_to">Kuni</string>
 	<string name="editor_time_add">Lisa ajakava</string>
 	<string name="editor_time_delete">Kustuta ajakava</string>
 	<!-- Text for allday switch. -->
@@ -485,9 +489,7 @@
 	<string name="miles_per_hour">mph</string>
 	<string name="hour">h</string>
 	<string name="minute">min</string>
-	<string name="placepage_place_description">Kirjeldus</string>
 	<string name="placepage_more_button">Veel</string>
-	<string name="placepage_call_button">Helista</string>
 	<string name="placepage_edit_bookmark_button">Muuda järjehoidjat</string>
 	<string name="editor_comment_hint">Kommenteeri…</string>
 	<string name="editor_reset_edits_message">Loobu kõigist kohalikest muudatustest?</string>
@@ -916,8 +918,9 @@
 	<string name="type.boundary.national_park">Rahvuspark</string>
 	<string name="type.building">Hoone</string>
 	<string name="type.building.address">Hoone</string>
-	<string name="type.building.garage">Garaaž</string>
 	<string name="type.building.has_parts">Hoone</string>
+	<string name="type.building_part">Hoone</string>
+	<string name="type.building.garage">Garaaž</string>
 	<string name="type.building.train_station">Rongijaam</string>
 	<string name="type.building.warehouse">Ladu</string>
 	<string name="type.cemetery.grave">Haud</string>
@@ -1823,6 +1826,7 @@
 	<string name="type.shop.agrarian">Põllumajanduspood</string>
 	<string name="type.shop.antiques">Antikvariaat</string>
 	<string name="type.shop.appliance">Tehnikapood</string>
+	<!-- maybe change to Art Gallery for en-US when supported -->
 	<string name="type.shop.art">Kunstipood</string>
 	<string name="type.shop.baby_goods">Lastekaubad</string>
 	<string name="type.shop.bag">Kotipood</string>
@@ -1953,6 +1957,5 @@
 	<string name="type.piste_type.downhill.novice">Algajasõbralik laskumine</string>
 	<string name="type.piste_type.nordic">Murdmaa suusarada</string>
 	<string name="type.piste_type.sled">Kelgurada</string>
-	<string name="type.building_part">Hoone</string>
 	<string name="type.amenity.events_venue">Ürituste toimumiskoht</string>
 </resources>

@@ -21,7 +21,7 @@
 	<string name="miles">Mérföld</string>
 	<!-- A text for current gps location point/arrow selected on the map -->
 	<string name="core_my_position">Saját helyzet</string>
-	<!-- Update maps later/Buy pro version later button text -->
+	<!-- Update maps later button text -->
 	<string name="later">Később</string>
 	<!-- View and button titles for accessibility, please also edit it in iphone/plist.txt -->
 	<string name="search">Keresés</string>
@@ -377,6 +377,10 @@
 	<string name="p2p_reroute_from_current">Szeretne útvonaltervet készíttetni a jelenlegi pozíciójától?</string>
 	<!-- Edit open hours/set time and minutes dialog -->
 	<string name="next_button">Következő</string>
+	<!-- Tab title in the Edit Opening Hours time picker -->
+	<string name="editor_time_from">tól</string>
+	<!-- Tab title in the Edit Opening Hours time picker -->
+	<string name="editor_time_to">Ig</string>
 	<string name="editor_time_add">Időrend felvitele</string>
 	<string name="editor_time_delete">Időrend törlése</string>
 	<!-- Text for allday switch. -->
@@ -485,9 +489,7 @@
 	<string name="miles_per_hour">mph</string>
 	<string name="hour">ó</string>
 	<string name="minute">p</string>
-	<string name="placepage_place_description">Leírás</string>
 	<string name="placepage_more_button">Még</string>
-	<string name="placepage_call_button">Hívás</string>
 	<string name="placepage_edit_bookmark_button">Könyvjelző szerkesztése</string>
 	<string name="editor_comment_hint">Megjegyzés…</string>
 	<string name="editor_reset_edits_message">Elveti az összes helyi módosítást?</string>
@@ -698,6 +700,8 @@
 	<string name="enable_show_on_lock_screen_description">Ha engedélyezve van, nem kell minden alkalommal feloldanod a telefonod, amíg az alkalmazás fut.</string>
 	<!-- OpenStreetMap text on splash screen -->
 	<string name="splash_subtitle">Térképadatok az OpenStreetMapből</string>
+	<!-- Translated Organic Maps site, add new translations here: https://github.com/organicmaps/organicmaps.github.io/tree/master/content -->
+	<string name="translated_om_site_url">https://organicmaps.app/hu/</string>
 	<!-- Link to OSM wiki for Editor, Profile and About pages -->
 	<string name="osm_wiki_about_url">https://wiki.openstreetmap.org/wiki/Hu:Névjegy</string>
 
@@ -841,8 +845,9 @@
 	<string name="type.boundary.national_park">Nemzeti park</string>
 	<string name="type.building">Épület</string>
 	<string name="type.building.address">Épület</string>
-	<string name="type.building.garage">Garázs</string>
 	<string name="type.building.has_parts">Épület</string>
+	<string name="type.building_part">Épület</string>
+	<string name="type.building.garage">Garázs</string>
 	<string name="type.building.train_station">Vonatmegálló</string>
 	<string name="type.cemetery.grave">Sír</string>
 	<string name="type.craft">Kézművesség</string>
@@ -1626,6 +1631,7 @@
 	<string name="type.shop.agrarian">Mezőgazdasági bolt</string>
 	<string name="type.shop.antiques">Régiségek</string>
 	<string name="type.shop.appliance">Készülék bolt</string>
+	<!-- maybe change to Art Gallery for en-US when supported -->
 	<string name="type.shop.art">Művészeti Bolt</string>
 	<string name="type.shop.baby_goods">Bababolt</string>
 	<string name="type.shop.bag">Táskák bolt</string>
@@ -1725,6 +1731,5 @@
 	<string name="type.wheelchair.limited">Korlátozottan akadálymentesített</string>
 	<string name="type.wheelchair.no">Nem akadálymentesített</string>
 	<string name="type.wheelchair.yes">Teljesen akadálymentesített</string>
-	<string name="type.building_part">Épület</string>
 	<string name="type.amenity.events_venue">Rendezvények helyszíne</string>
 </resources>

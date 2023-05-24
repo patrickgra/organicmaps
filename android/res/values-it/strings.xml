@@ -21,7 +21,7 @@
 	<string name="miles">Miglia</string>
 	<!-- A text for current gps location point/arrow selected on the map -->
 	<string name="core_my_position">La mia posizione</string>
-	<!-- Update maps later/Buy pro version later button text -->
+	<!-- Update maps later button text -->
 	<string name="later">Più tardi</string>
 	<!-- View and button titles for accessibility, please also edit it in iphone/plist.txt -->
 	<string name="search">Cerca</string>
@@ -368,6 +368,10 @@
 	<string name="p2p_reroute_from_current">Vuoi che pianifichiamo un percorso dalla tua posizione attuale?</string>
 	<!-- Edit open hours/set time and minutes dialog -->
 	<string name="next_button">Avanti</string>
+	<!-- Tab title in the Edit Opening Hours time picker -->
+	<string name="editor_time_from">Dalle</string>
+	<!-- Tab title in the Edit Opening Hours time picker -->
+	<string name="editor_time_to">Alle</string>
 	<string name="editor_time_add">Aggiungi pianificazione</string>
 	<string name="editor_time_delete">Elimina pianificazione</string>
 	<!-- Text for allday switch. -->
@@ -478,9 +482,7 @@
 	<string name="mile">mi</string>
 	<string name="miles_per_hour">mph</string>
 	<string name="minute">min</string>
-	<string name="placepage_place_description">Descrizione</string>
 	<string name="placepage_more_button">Di più</string>
-	<string name="placepage_call_button">Chiama</string>
 	<string name="placepage_edit_bookmark_button">Modifica luogo preferito</string>
 	<string name="editor_comment_hint">Commento…</string>
 	<string name="editor_reset_edits_message">Cancellare tutte le modifiche locali?</string>
@@ -898,8 +900,9 @@
 	<string name="type.boundary.national_park">Parco nazionale</string>
 	<string name="type.building">Edificio</string>
 	<string name="type.building.address">Edificio</string>
-	<string name="type.building.garage">Garage</string>
 	<string name="type.building.has_parts">Edificio</string>
+	<string name="type.building_part">Edificio</string>
+	<string name="type.building.garage">Garage</string>
 	<string name="type.building.train_station">Stazione ferroviaria</string>
 	<string name="type.building.warehouse">Magazzino</string>
 	<string name="type.cemetery.grave">Tomba</string>
@@ -956,7 +959,6 @@
 	<string name="type.cuisine.filipino">Cucina filippina</string>
 	<string name="type.cuisine.fine_dining">Ristorante elegante</string>
 	<string name="type.cuisine.fish">Pesce</string>
-	<string name="type.cuisine.fish_and_chips">Fish and chips</string>
 	<string name="type.cuisine.french">Cucina francese</string>
 	<string name="type.cuisine.friture">Fritture</string>
 	<string name="type.cuisine.georgian">Cucina georgiana</string>
@@ -1280,7 +1282,7 @@
 	<string name="type.leisure.park">Parco</string>
 	<string name="type.leisure.park.no.access">Parco</string>
 	<string name="type.leisure.park.permissive">Parco</string>
-	<string name="type.leisure.park.private">Parco privato</string>
+	<string name="type.leisure.park.private">Parco</string>
 	<string name="type.leisure.picnic_table">Tavolo da picnic</string>
 	<string name="type.leisure.pitch">Campo sportivo</string>
 	<string name="type.leisure.playground">Campo giochi</string>
@@ -1698,7 +1700,6 @@
 	<string name="type.shop.greengrocer">Fruttivendolo</string>
 	<string name="type.shop.grocery">Drogheria</string>
 	<string name="type.shop.hairdresser">Parrucchiera</string>
-	<string name="type.shop.hardware">Ferramenta</string>
 	<string name="type.shop.health_food">Negozio di alimenti naturali</string>
 	<string name="type.shop.herbalist">Negozio di erbe</string>
 	<string name="type.shop.hifi">Audio ad alta fedeltà</string>
@@ -1743,6 +1744,7 @@
 	<string name="type.shop.agrarian">Negozio agricolo</string>
 	<string name="type.shop.antiques">Oggetti d\'antiquariato</string>
 	<string name="type.shop.appliance">Negozio di elettrodomestici</string>
+	<!-- maybe change to Art Gallery for en-US when supported -->
 	<string name="type.shop.art">Negozio d\'arte</string>
 	<string name="type.shop.baby_goods">Negozio per neonati</string>
 	<string name="type.shop.bag">Negozio di borse</string>
@@ -1857,6 +1859,5 @@
 	<string name="type.wheelchair.no">Non accessibile ai disabili</string>
 	<string name="type.wheelchair.yes">Accessibile ai disabili</string>
 	<string name="type.piste_type.sled">Pista per slitte</string>
-	<string name="type.building_part">Edificio</string>
 	<string name="type.amenity.events_venue">Sede degli eventi</string>
 </resources>

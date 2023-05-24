@@ -1,4 +1,4 @@
-package app.organicmaps.widget.placepage;
+package app.organicmaps.widget.placepage.sections;
 
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -17,6 +17,8 @@ import app.organicmaps.R;
 import app.organicmaps.bookmarks.data.MapObject;
 import app.organicmaps.bookmarks.data.Metadata;
 import app.organicmaps.util.Utils;
+import app.organicmaps.widget.placepage.PlacePageUtils;
+import app.organicmaps.widget.placepage.PlacePageViewModel;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -216,23 +218,26 @@ public class PlacePageLinksFragment extends Fragment implements Observer<MapObje
   }
 
   @Override
-  public void onResume()
+  public void onStart()
   {
-    super.onResume();
+    super.onStart();
     mViewModel.getMapObject().observe(requireActivity(), this);
   }
 
   @Override
-  public void onPause()
+  public void onStop()
   {
-    super.onPause();
+    super.onStop();
     mViewModel.getMapObject().removeObserver(this);
   }
 
   @Override
-  public void onChanged(MapObject mapObject)
+  public void onChanged(@Nullable  MapObject mapObject)
   {
-    mMapObject = mapObject;
-    refreshLinks();
+    if (mapObject != null)
+    {
+      mMapObject = mapObject;
+      refreshLinks();
+    }
   }
 }

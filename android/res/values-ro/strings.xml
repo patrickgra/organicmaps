@@ -21,7 +21,7 @@
 	<string name="miles">Mile</string>
 	<!-- A text for current gps location point/arrow selected on the map -->
 	<string name="core_my_position">Poziția mea</string>
-	<!-- Update maps later/Buy pro version later button text -->
+	<!-- Update maps later button text -->
 	<string name="later">Mai târziu</string>
 	<!-- View and button titles for accessibility, please also edit it in iphone/plist.txt -->
 	<string name="search">Caută</string>
@@ -370,6 +370,10 @@
 	<string name="p2p_reroute_from_current">Vrei să planifici un traseu din poziția ta actuală?</string>
 	<!-- Edit open hours/set time and minutes dialog -->
 	<string name="next_button">Următorul</string>
+	<!-- Tab title in the Edit Opening Hours time picker -->
+	<string name="editor_time_from">De la</string>
+	<!-- Tab title in the Edit Opening Hours time picker -->
+	<string name="editor_time_to">La</string>
 	<string name="editor_time_add">Adaugă planificare</string>
 	<string name="editor_time_delete">Elimină planificarea</string>
 	<!-- Text for allday switch. -->
@@ -478,9 +482,7 @@
 	<string name="mile">mi</string>
 	<string name="miles_per_hour">mph</string>
 	<string name="minute">min</string>
-	<string name="placepage_place_description">Descriere</string>
 	<string name="placepage_more_button">Mai mult</string>
-	<string name="placepage_call_button">Apelează</string>
 	<string name="placepage_edit_bookmark_button">Modifică locul preferat</string>
 	<string name="editor_comment_hint">Comentariu…</string>
 	<string name="editor_reset_edits_message">Ștergi toate modificările locale?</string>
@@ -839,8 +841,9 @@
 	<string name="type.boundary.national_park">Parcul național</string>
 	<string name="type.building">Clădire</string>
 	<string name="type.building.address">Clădire</string>
-	<string name="type.building.garage">Garaj</string>
 	<string name="type.building.has_parts">Clădire</string>
+	<string name="type.building_part">Clădire</string>
+	<string name="type.building.garage">Garaj</string>
 	<string name="type.building.train_station">Feroviar</string>
 	<string name="type.cemetery.grave">Mormânt</string>
 	<string name="type.craft">Meșteșuguri</string>
@@ -896,7 +899,6 @@
 	<string name="type.cuisine.filipino">Bucătărie filipinez</string>
 	<string name="type.cuisine.fine_dining">Restaurant elegant</string>
 	<string name="type.cuisine.fish">Pește</string>
-	<string name="type.cuisine.fish_and_chips">Restaurant fish and chips</string>
 	<string name="type.cuisine.french">Bucătărie francez</string>
 	<string name="type.cuisine.friture">Prăjit</string>
 	<string name="type.cuisine.georgian">Bucătărie georgian</string>
@@ -1623,6 +1625,7 @@
 	<string name="type.shop.agrarian">Magazin agricol</string>
 	<string name="type.shop.antiques">Antichități</string>
 	<string name="type.shop.appliance">Magazin de electrocasnice</string>
+	<!-- maybe change to Art Gallery for en-US when supported -->
 	<string name="type.shop.art">Magazin de arte</string>
 	<string name="type.shop.baby_goods">Magazin pentru copii</string>
 	<string name="type.shop.bag">Magazin de genti</string>
@@ -1717,6 +1720,5 @@
 	<string name="type.wheelchair.limited">Parțial utilat pentru invalizi</string>
 	<string name="type.wheelchair.no">Nu este utilat pentru invalizi</string>
 	<string name="type.wheelchair.yes">Utilat pentru invalizi</string>
-	<string name="type.building_part">Clădire</string>
 	<string name="type.amenity.events_venue">Locul de desfășurare a evenimentelor</string>
 </resources>

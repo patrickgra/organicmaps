@@ -24,7 +24,7 @@
 	<string name="miles">الأميال</string>
 	<!-- A text for current gps location point/arrow selected on the map -->
 	<string name="core_my_position">موقعي</string>
-	<!-- Update maps later/Buy pro version later button text -->
+	<!-- Update maps later button text -->
 	<string name="later">ًلاحقا</string>
 	<!-- View and button titles for accessibility, please also edit it in iphone/plist.txt -->
 	<string name="search">البحث</string>
@@ -387,6 +387,10 @@
 	<string name="p2p_reroute_from_current">هل ترغب في أن نرسم مسار لك من موقعك الحالي؟</string>
 	<!-- Edit open hours/set time and minutes dialog -->
 	<string name="next_button">التالي</string>
+	<!-- Tab title in the Edit Opening Hours time picker -->
+	<string name="editor_time_from">من الساعة</string>
+	<!-- Tab title in the Edit Opening Hours time picker -->
+	<string name="editor_time_to">إلى</string>
 	<string name="editor_time_add">إضافة جدول</string>
 	<string name="editor_time_delete">حذف جدول</string>
 	<!-- Text for allday switch. -->
@@ -500,9 +504,7 @@
 	<string name="miles_per_hour">ميل/ساعة</string>
 	<string name="hour">س</string>
 	<string name="minute">د</string>
-	<string name="placepage_place_description">الوصف</string>
 	<string name="placepage_more_button">المزيد</string>
-	<string name="placepage_call_button">اتصال</string>
 	<string name="placepage_edit_bookmark_button">تحرير العلامة المرجعية</string>
 	<string name="editor_comment_hint">تعليق…</string>
 	<string name="editor_reset_edits_message">هل تريد مسح كافة التغييرات المحلية؟</string>
@@ -907,8 +909,9 @@
 	<string name="type.boundary.national_park">منتزه وطني</string>
 	<string name="type.building">مبنى</string>
 	<string name="type.building.address">مبنى</string>
-	<string name="type.building.garage">جراج</string>
 	<string name="type.building.has_parts">مبنى</string>
+	<string name="type.building_part">مبنى</string>
+	<string name="type.building.garage">جراج</string>
 	<string name="type.building.train_station">محطة سكك حديدية</string>
 	<string name="type.building.warehouse">مستودع</string>
 	<string name="type.cemetery.grave">قبر</string>
@@ -1285,7 +1288,7 @@
 	<string name="type.leisure.park">موقف سيارات</string>
 	<string name="type.leisure.park.no.access">موقف سيارات</string>
 	<string name="type.leisure.park.permissive">موقف سيارات</string>
-	<string name="type.leisure.park.private">موقف سيارات خاص</string>
+	<string name="type.leisure.park.private">موقف سيارات</string>
 	<string name="type.leisure.picnic_table">ﺔﻫﺰﻨﻟﺍ ﺔﻟﻭﺎﻃ</string>
 	<string name="type.leisure.pitch">ملعب رياضي</string>
 	<string name="type.leisure.playground">ملعب</string>
@@ -1722,6 +1725,7 @@
 	<string name="type.shop.agrarian">محل زراعي</string>
 	<string name="type.shop.antiques">ﻒﺤﺘﻟﺍ</string>
 	<string name="type.shop.appliance">متجر الأجهزة</string>
+	<!-- maybe change to Art Gallery for en-US when supported -->
 	<string name="type.shop.art">ﻥﻮﻨﻔﻟﺍ ﺮﺠﺘﻣ</string>
 	<string name="type.shop.baby_goods">ﻝﺎﻔﻃﻸﻟ ﺮﺠﺘﻣ</string>
 	<string name="type.shop.bag">ﺐﺋﺎﻘﺤﻟﺍ ﺮﺠﺘﻣ</string>
@@ -1824,6 +1828,5 @@
 	<string name="type.wheelchair.limited">دعم محدود لكراسي المعاقين</string>
 	<string name="type.wheelchair.no">لا يدعم لكراسي المعاقين</string>
 	<string name="type.wheelchair.yes">دعم كامل لكراسي المعاقين</string>
-	<string name="type.building_part">مبنى</string>
 	<string name="type.amenity.events_venue">مكان الأحداث</string>
 </resources>

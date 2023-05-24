@@ -21,7 +21,7 @@
 	<string name="miles">Milhas</string>
 	<!-- A text for current gps location point/arrow selected on the map -->
 	<string name="core_my_position">A minha posição</string>
-	<!-- Update maps later/Buy pro version later button text -->
+	<!-- Update maps later button text -->
 	<string name="later">Mais tarde</string>
 	<!-- View and button titles for accessibility, please also edit it in iphone/plist.txt -->
 	<string name="search">Pesquisar</string>
@@ -370,6 +370,10 @@
 	<string name="p2p_reroute_from_current">Quer planear uma rota a partir da sua localização atual?</string>
 	<!-- Edit open hours/set time and minutes dialog -->
 	<string name="next_button">Próxima</string>
+	<!-- Tab title in the Edit Opening Hours time picker -->
+	<string name="editor_time_from">Das</string>
+	<!-- Tab title in the Edit Opening Hours time picker -->
+	<string name="editor_time_to">Às</string>
 	<string name="editor_time_add">Adicionar horário</string>
 	<string name="editor_time_delete">Eliminar horário</string>
 	<!-- Text for allday switch. -->
@@ -478,9 +482,7 @@
 	<string name="miles_per_hour">mph</string>
 	<string name="hour">h</string>
 	<string name="minute">min</string>
-	<string name="placepage_place_description">Descrição</string>
 	<string name="placepage_more_button">Mais</string>
-	<string name="placepage_call_button">Telefonar</string>
 	<string name="placepage_edit_bookmark_button">Editar favorito</string>
 	<string name="editor_comment_hint">Comentário…</string>
 	<string name="editor_reset_edits_message">Eliminar todas as alterações locais?</string>
@@ -787,8 +789,8 @@
 	<string name="type.amenity.parking_entrance.permissive">Entrada do estacionamento</string>
 	<string name="type.amenity.parking_space">Lugar de estacionamento</string>
 	<string name="type.amenity.parking_space.permissive">Lugar de estacionamento</string>
-	<string name="type.amenity.parking_space.private">Lugar de estacionamento privado</string>
-	<string name="type.amenity.parking_space.underground">Lugar de estacionamento subterrâneo</string>
+	<string name="type.amenity.parking_space.private">Lugar de estacionamento</string>
+	<string name="type.amenity.parking_space.underground">Lugar de estacionamento</string>
 	<string name="type.amenity.parking_space.disabled">Estacionamento para deficientes</string>
 	<string name="type.amenity.payment_terminal">Terminal de pagamento</string>
 	<string name="type.amenity.pharmacy">Farmácia</string>
@@ -880,8 +882,9 @@
 	<string name="type.boundary.national_park">Parque nacional</string>
 	<string name="type.building">Edifício</string>
 	<string name="type.building.address">Edifício</string>
-	<string name="type.building.garage">Garagem</string>
 	<string name="type.building.has_parts">Edifício</string>
+	<string name="type.building_part">Edifício</string>
+	<string name="type.building.garage">Garagem</string>
 	<string name="type.building.train_station">Estação de comboios</string>
 	<string name="type.building.warehouse">Armazém</string>
 	<string name="type.cemetery.grave">Túmulo</string>
@@ -1274,7 +1277,7 @@
 	<string name="type.leisure.park">Parque urbano</string>
 	<string name="type.leisure.park.no.access">Parque urbano</string>
 	<string name="type.leisure.park.permissive">Parque urbano</string>
-	<string name="type.leisure.park.private">Parque urbano privado</string>
+	<string name="type.leisure.park.private">Parque urbano</string>
 	<string name="type.leisure.picnic_table">Mesa de piqueniques</string>
 	<string name="type.leisure.pitch">Campo de desportos</string>
 	<string name="type.leisure.playground">Parque infantil</string>
@@ -1775,6 +1778,7 @@
 	<string name="type.shop.agrarian">Loja agrícola</string>
 	<string name="type.shop.antiques">Antiguidades</string>
 	<string name="type.shop.appliance">Loja de eletrodomésticos</string>
+	<!-- maybe change to Art Gallery for en-US when supported -->
 	<string name="type.shop.art">Loja de artes</string>
 	<string name="type.shop.baby_goods">Loja infantil</string>
 	<string name="type.shop.bag">Loja de bolsas</string>
@@ -1905,6 +1909,5 @@
 	<string name="type.piste_type.downhill.novice">Esqui alpino iniciante</string>
 	<string name="type.piste_type.nordic">Pista tipo nórdico</string>
 	<string name="type.piste_type.sled">Pista para trenós</string>
-	<string name="type.building_part">Parte de edifício</string>
 	<string name="type.amenity.events_venue">Local dos eventos</string>
 </resources>

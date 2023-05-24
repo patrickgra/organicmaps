@@ -1,4 +1,4 @@
-package app.organicmaps.widget.placepage;
+package app.organicmaps.widget.placepage.sections;
 
 import android.os.Bundle;
 import android.text.SpannableStringBuilder;
@@ -19,6 +19,9 @@ import app.organicmaps.bookmarks.data.MapObject;
 import app.organicmaps.bookmarks.data.Metadata;
 import app.organicmaps.util.Utils;
 import app.organicmaps.util.UiUtils;
+import app.organicmaps.widget.placepage.PlaceDescriptionActivity;
+import app.organicmaps.widget.placepage.PlacePageUtils;
+import app.organicmaps.widget.placepage.PlacePageViewModel;
 
 public class PlacePageWikipediaFragment extends Fragment implements Observer<MapObject>
 {
@@ -92,6 +95,7 @@ public class PlacePageWikipediaFragment extends Fragment implements Observer<Map
       UiUtils.hide(mPlaceDescriptionViewContainer);
     else
     {
+      UiUtils.show(mPlaceDescriptionViewContainer);
       mPlaceDescriptionView.setText(getShortDescription());
       final String descriptionString = mPlaceDescriptionView.getText().toString();
       mPlaceDescriptionView.setOnLongClickListener((v) -> {
@@ -109,23 +113,26 @@ public class PlacePageWikipediaFragment extends Fragment implements Observer<Map
   }
 
   @Override
-  public void onResume()
+  public void onStart()
   {
-    super.onResume();
+    super.onStart();
     mViewModel.getMapObject().observe(requireActivity(), this);
   }
 
   @Override
-  public void onPause()
+  public void onStop()
   {
-    super.onPause();
+    super.onStop();
     mViewModel.getMapObject().removeObserver(this);
   }
 
   @Override
-  public void onChanged(MapObject mapObject)
+  public void onChanged(@Nullable MapObject mapObject)
   {
-    mMapObject = mapObject;
-    updateViews();
+    if (mapObject != null)
+    {
+      mMapObject = mapObject;
+      updateViews();
+    }
   }
 }

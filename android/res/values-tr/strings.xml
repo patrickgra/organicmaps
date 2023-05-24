@@ -23,7 +23,7 @@
 	<string name="miles">Mil</string>
 	<!-- A text for current gps location point/arrow selected on the map -->
 	<string name="core_my_position">Konumum</string>
-	<!-- Update maps later/Buy pro version later button text -->
+	<!-- Update maps later button text -->
 	<string name="later">Daha sonra</string>
 	<!-- View and button titles for accessibility, please also edit it in iphone/plist.txt -->
 	<string name="search">Ara</string>
@@ -384,6 +384,10 @@
 	<string name="p2p_reroute_from_current">Mevcut konumunuzdan bir rota planlamamızı ister misiniz?</string>
 	<!-- Edit open hours/set time and minutes dialog -->
 	<string name="next_button">Sonraki</string>
+	<!-- Tab title in the Edit Opening Hours time picker -->
+	<string name="editor_time_from">Den itibaren</string>
+	<!-- Tab title in the Edit Opening Hours time picker -->
+	<string name="editor_time_to">A</string>
 	<string name="editor_time_add">Plan Ekle</string>
 	<string name="editor_time_delete">Planı Sil</string>
 	<!-- Text for allday switch. -->
@@ -497,9 +501,7 @@
 	<string name="miles_per_hour">saatte mil</string>
 	<string name="hour">sa</string>
 	<string name="minute">dk</string>
-	<string name="placepage_place_description">Açıklama</string>
 	<string name="placepage_more_button">Diğer</string>
-	<string name="placepage_call_button">Ara</string>
 	<string name="placepage_edit_bookmark_button">Yer İmini Düzenle</string>
 	<string name="editor_comment_hint">Yorum…</string>
 	<string name="editor_reset_edits_message">Tüm yerel değişiklikler sıfırlansın mı?</string>
@@ -928,8 +930,9 @@
 	<string name="type.boundary.national_park">Ulusal Park</string>
 	<string name="type.building">Bina</string>
 	<string name="type.building.address">Bina</string>
-	<string name="type.building.garage">Garaj</string>
 	<string name="type.building.has_parts">Bina</string>
+	<string name="type.building_part">Bina</string>
+	<string name="type.building.garage">Garaj</string>
 	<string name="type.building.train_station">Tren İstasyonu</string>
 	<string name="type.building.warehouse">Depo</string>
 	<string name="type.cemetery.grave">Mezar</string>
@@ -1828,6 +1831,7 @@
 	<string name="type.shop.agrarian">Tarım dükkanı</string>
 	<string name="type.shop.antiques">Antikalar</string>
 	<string name="type.shop.appliance">Beyaz eşya dükkanı</string>
+	<!-- maybe change to Art Gallery for en-US when supported -->
 	<string name="type.shop.art">Sanat Mağazası</string>
 	<string name="type.shop.baby_goods">Çocuk mağazası</string>
 	<string name="type.shop.bag">Çanta Mağazası</string>
@@ -1958,6 +1962,5 @@
 	<string name="type.piste_type.downhill.novice">Yeni başlayanlar için kayak pisti</string>
 	<string name="type.piste_type.nordic">İskandinav Kayak Pisti</string>
 	<string name="type.piste_type.sled">Kızak Pisti</string>
-	<string name="type.building_part">Bina</string>
 	<string name="type.amenity.events_venue">Etkinlik mekanı</string>
 </resources>

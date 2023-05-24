@@ -811,4 +811,46 @@ UNIT_TEST(Turkey_Salarialaca_Sanliurfa)
   TestRouteLength(route, 656891);
   TestRouteTime(route, 21138);  // should be less than 6 hours (6 * 3600)
 }
+
+// https://github.com/organicmaps/organicmaps/issues/4924
+// https://github.com/organicmaps/organicmaps/issues/4996
+UNIT_TEST(UK_MiniRoundabout)
+{
+  CalculateRouteAndTestRouteLength(GetVehicleComponents(VehicleType::Car),
+                FromLatLon(50.4155631, -4.17201038), {0., 0.},
+                FromLatLon(50.4161337, -4.17226314), 114.957);
+
+  CalculateRouteAndTestRouteLength(GetVehicleComponents(VehicleType::Car),
+                FromLatLon(50.4173675, -4.14913092), {0., 0.},
+                FromLatLon(50.4170013, -4.1471226), 153.223);
+
+  /// @todo Fancy case, changing start/end point a little and the route is OK. Also check m_exitNum.
+  CalculateRouteAndTestRouteLength(GetVehicleComponents(VehicleType::Car),
+                FromLatLon(51.5686491, -0.00590868183), {0., 0.},
+                FromLatLon(51.5684408, -0.00596725822), 40);
+}
+
+// https://github.com/organicmaps/organicmaps/issues/5069
+UNIT_TEST(Germany_Netherlands_AvoidLoops)
+{
+  TRouteResult const routeResult = CalculateRoute(GetVehicleComponents(VehicleType::Car),
+                                                  FromLatLon(51.6823791, 10.2197113), {0., 0.},
+                                                  FromLatLon(51.9187916, 5.8452563));
+
+  RouterResultCode const result = routeResult.second;
+  TEST_EQUAL(result, RouterResultCode::NoError, ());
+
+  TEST(routeResult.first, ());
+  Route const & route = *routeResult.first;
+  TestRouteLength(route, 405159);
+  TestRouteTime(route, 13768.9);
+}
+
+UNIT_TEST(Germany_Cologne_Croatia_Zagreb)
+{
+  CalculateRouteAndTestRouteLength(GetVehicleComponents(VehicleType::Car),
+                                   FromLatLon(50.924, 6.943), {0., 0.},
+                                   FromLatLon(45.806, 15.963), 1074730);
+}
+
 } // namespace route_test

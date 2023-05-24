@@ -24,7 +24,7 @@
 	<string name="miles">Милі</string>
 	<!-- A text for current gps location point/arrow selected on the map -->
 	<string name="core_my_position">Моє місцезнаходження</string>
-	<!-- Update maps later/Buy pro version later button text -->
+	<!-- Update maps later button text -->
 	<string name="later">Не зараз</string>
 	<!-- View and button titles for accessibility, please also edit it in iphone/plist.txt -->
 	<string name="search">Пошук</string>
@@ -380,6 +380,10 @@
 	<string name="p2p_reroute_from_current">Хочете спланувати маршрут із поточного місцезнаходження?</string>
 	<!-- Edit open hours/set time and minutes dialog -->
 	<string name="next_button">Далі</string>
+	<!-- Tab title in the Edit Opening Hours time picker -->
+	<string name="editor_time_from">З</string>
+	<!-- Tab title in the Edit Opening Hours time picker -->
+	<string name="editor_time_to">До</string>
 	<string name="editor_time_add">Додати розклад</string>
 	<string name="editor_time_delete">Видалити розклад</string>
 	<!-- Text for allday switch. -->
@@ -492,9 +496,7 @@
 	<string name="miles_per_hour">ми/год</string>
 	<string name="hour">год</string>
 	<string name="minute">хв</string>
-	<string name="placepage_place_description">Опис</string>
 	<string name="placepage_more_button">Ще</string>
-	<string name="placepage_call_button">Подзвонити</string>
 	<string name="placepage_edit_bookmark_button">Редагувати мiтку</string>
 	<string name="editor_comment_hint">Коментар…</string>
 	<string name="editor_reset_edits_message">Скинути всі локальні виправлення?</string>
@@ -711,6 +713,8 @@
 	<string name="enable_show_on_lock_screen_description">Якщо ввімкнено, вам не потрібно щоразу розблоковувати пристрій під час роботи програми.</string>
 	<!-- OpenStreetMap text on splash screen -->
 	<string name="splash_subtitle">Картографічні дані з OpenStreetMap</string>
+	<!-- Translated Organic Maps site, add new translations here: https://github.com/organicmaps/organicmaps.github.io/tree/master/content -->
+	<string name="translated_om_site_url">https://organicmaps.app/uk/</string>
 	<!-- Link to OSM wiki for Editor, Profile and About pages -->
 	<string name="osm_wiki_about_url">https://wiki.openstreetmap.org/wiki/Uk:Про_проект</string>
 
@@ -909,8 +913,9 @@
 	<string name="type.boundary.national_park">Національний парк</string>
 	<string name="type.building">Будівля</string>
 	<string name="type.building.address">Будівля</string>
-	<string name="type.building.garage">Гараж</string>
 	<string name="type.building.has_parts">Будівля</string>
+	<string name="type.building_part">Будівля</string>
+	<string name="type.building.garage">Гараж</string>
 	<string name="type.building.train_station">Залізничний вокзал</string>
 	<string name="type.building.warehouse">Склад</string>
 	<string name="type.cemetery.grave">Могила</string>
@@ -1810,6 +1815,7 @@
 	<string name="type.shop.agrarian">Сільськогосподарський магазин</string>
 	<string name="type.shop.antiques">Антикваріат</string>
 	<string name="type.shop.appliance">Магазин побутової техніки</string>
+	<!-- maybe change to Art Gallery for en-US when supported -->
 	<string name="type.shop.art">Магазин мистецтв</string>
 	<string name="type.shop.baby_goods">Дитячий магазин</string>
 	<string name="type.shop.bag">Магазин сумок</string>
@@ -1940,6 +1946,5 @@
 	<string name="type.piste_type.downhill.novice">Гірськолижна траса для новеньких</string>
 	<string name="type.piste_type.nordic">Лижня</string>
 	<string name="type.piste_type.sled">Траса для санок</string>
-	<string name="type.building_part">Будівля</string>
 	<string name="type.amenity.events_venue">Місце проведення подій</string>
 </resources>
