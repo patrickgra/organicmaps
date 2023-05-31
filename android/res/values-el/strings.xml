@@ -238,6 +238,10 @@
 	<string name="copyright">Πνευματικά δικαιώματα</string>
 	<!-- Text in menu + Button in the main Help dialog -->
 	<string name="report_a_bug">Αναφορά σφάλματος</string>
+	<!-- Toast text when compass calibration may improve the correctness of the current position arrow -->
+	<string name="compass_calibration_recommended">Βελτιώστε την κατεύθυνση των βελών μετακινώντας το τηλέφωνο με μια κίνηση σχήματος οκτώ για να βαθμονομήσετε την πυξίδα.</string>
+	<!-- Toast text when compass calibration may improve the correctness of the current position arrow -->
+	<string name="compass_calibration_required">Μετακινήστε το τηλέφωνο με μια κίνηση σχήματος οκτώ για να βαθμονομήσετε την πυξίδα και να καθορίσετε την κατεύθυνση του βέλους στο χάρτη.</string>
 	<!-- Update all button text -->
 	<string name="downloader_update_all_button">Ενημέρωση όλων</string>
 	<!-- Cancel all button text -->
@@ -1297,11 +1301,13 @@
 	<string name="type.power.pole">Πυλώνες μεταφοράς ρεύματος</string>
 	<string name="type.power.substation">Υποσταθμός</string>
 	<string name="type.power.tower">Πυλώνες μεταφοράς ρεύματος</string>
+	<string name="type.railway.funicular">Μονωτικό τρενάκι</string>
 	<string name="type.railway.halt">Σιδηροδρομικός σταθμός</string>
 	<string name="type.railway.level_crossing">Σιδηροδρομική διέλευση</string>
 	<string name="type.railway.monorail">Μονοαξονικός σιδηρόδρομος</string>
 	<string name="type.railway.rail">Σιδηρόδρομος</string>
 	<string name="type.railway.station">Σιδηροδρομικός σταθμός</string>
+	<string name="type.railway.station.funicular">Μονωτικό τρενάκι</string>
 	<string name="type.railway.station.light_rail">Σιδηροδρομικός σταθμός</string>
 	<string name="type.railway.station.monorail">Σιδηροδρομικός σταθμός</string>
 	<string name="type.railway.station.subway">Μετρό</string>

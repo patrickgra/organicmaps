@@ -248,6 +248,10 @@
 	<string name="copyright">版權</string>
 	<!-- Text in menu + Button in the main Help dialog -->
 	<string name="report_a_bug">報告錯誤</string>
+	<!-- Toast text when compass calibration may improve the correctness of the current position arrow -->
+	<string name="compass_calibration_recommended">通過以八字形移動手機來校準指南針來改善箭頭方向</string>
+	<!-- Toast text when compass calibration may improve the correctness of the current position arrow -->
+	<string name="compass_calibration_required">以 8 字形移動手機以校準指南針並固定地圖上的箭頭方向</string>
 	<!-- Update all button text -->
 	<string name="downloader_update_all_button">更新全部</string>
 	<!-- Cancel all button text -->
@@ -1328,6 +1332,7 @@
 	<string name="type.power.pole">電塔</string>
 	<string name="type.power.substation">變電所</string>
 	<string name="type.power.tower">電塔</string>
+	<string name="type.railway.funicular">纜車</string>
 	<string name="type.railway.halt">小站</string>
 	<string name="type.railway.level_crossing">鐵路道口</string>
 	<string name="type.railway.monorail">單軌軌道</string>
@@ -1338,6 +1343,7 @@
 	<string name="type.railway.rail.motor_vehicle">鐵路軌道</string>
 	<string name="type.railway.rail.tunnel">鐵路軌道</string>
 	<string name="type.railway.station">火車站</string>
+	<string name="type.railway.station.funicular">纜車</string>
 	<string name="type.railway.station.light_rail">輕軌車站</string>
 	<string name="type.railway.station.monorail">單軌車站</string>
 	<string name="type.railway.station.subway">捷運站</string>

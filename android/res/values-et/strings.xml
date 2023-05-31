@@ -246,6 +246,10 @@
 	<string name="copyright">Autoriõigused</string>
 	<!-- Text in menu + Button in the main Help dialog -->
 	<string name="report_a_bug">Teata veast</string>
+	<!-- Toast text when compass calibration may improve the correctness of the current position arrow -->
+	<string name="compass_calibration_recommended">Parandage noole suunda, liigutades telefoni kaheksakäigulise liigutusega, et kalibreerida kompass.</string>
+	<!-- Toast text when compass calibration may improve the correctness of the current position arrow -->
+	<string name="compass_calibration_required">Liigutage telefoni kaheksakandilise liigutusega, et kalibreerida kompass ja määrata noole suund kaardil.</string>
 	<!-- Update all button text -->
 	<string name="downloader_update_all_button">Värskenda kõik</string>
 	<!-- Cancel all button text -->
@@ -1471,7 +1475,7 @@
 	<string name="type.railway.construction">Raudtee ehitus</string>
 	<string name="type.railway.crossing">Raudtee ülesõit</string>
 	<string name="type.railway.disused">Kasutamata raudtee</string>
-	<string name="type.railway.funicular">Funikulöör</string>
+	<string name="type.railway.funicular">Funicular</string>
 	<string name="type.railway.funicular.bridge">Funikulöör</string>
 	<string name="type.railway.funicular.tunnel">Funikulöör</string>
 	<string name="type.railway.halt">Murdepunkt</string>
@@ -1501,6 +1505,7 @@
 	<string name="type.railway.spur.bridge">Rööbastee sild</string>
 	<string name="type.railway.spur.tunnel">Rööbastee tunnel</string>
 	<string name="type.railway.station">Raudtee jaam</string>
+	<string name="type.railway.station.funicular">Funicular</string>
 	<string name="type.railway.station.light_rail">Raudtee jaam</string>
 	<string name="type.railway.station.monorail">Raudtee jaam</string>
 	<string name="type.railway.station.subway">Metroo</string>

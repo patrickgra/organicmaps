@@ -255,6 +255,10 @@
 	<string name="copyright">Капірайт</string>
 	<!-- Text in menu + Button in the main Help dialog -->
 	<string name="report_a_bug">Паведаміць аб памылцы</string>
+	<!-- Toast text when compass calibration may improve the correctness of the current position arrow -->
+	<string name="compass_calibration_recommended">Палепшыце кірунак стрэлкі, перамяшчаючы тэлефон у выглядзе васьмёркі, каб адкалібраваць компас.</string>
+	<!-- Toast text when compass calibration may improve the correctness of the current position arrow -->
+	<string name="compass_calibration_required">Перамяшчайце тэлефон у выглядзе васьмёркі, каб адкалібраваць компас і зафіксаваць кірунак стрэлкі на карце.</string>
 	<!-- Update all button text -->
 	<string name="downloader_update_all_button">Абнавіць усё</string>
 	<!-- Cancel all button text -->
@@ -1068,7 +1072,9 @@
 	<string name="type.power.plant.hydro">Гідраэлектрастанцыя</string>
 	<string name="type.power.plant.solar">Сонечная электрастанцыя</string>
 	<string name="type.power.plant.wind">Ветраэлектрастанцыя</string>
+	<string name="type.railway.funicular">Фунікулёр</string>
 	<string name="type.railway.platform">Чыгуначная платформа</string>
+	<string name="type.railway.station.funicular">Фунікулёр</string>
 	<string name="type.shop.bathroom_furnishing">Мэбля для ванных пакояў</string>
 	<string name="type.shop.beverages">Напоі</string>
 	<string name="type.shop.cannabis">Крама канабіса</string>

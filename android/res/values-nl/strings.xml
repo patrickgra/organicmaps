@@ -254,6 +254,10 @@
 	<string name="copyright">Auteursrechten</string>
 	<!-- Text in menu + Button in the main Help dialog -->
 	<string name="report_a_bug">Meld een fout</string>
+	<!-- Toast text when compass calibration may improve the correctness of the current position arrow -->
+	<string name="compass_calibration_recommended">Verbeter de richting van de pijl door de telefoon in een achtvormige beweging te bewegen om het kompas te kalibreren.</string>
+	<!-- Toast text when compass calibration may improve the correctness of the current position arrow -->
+	<string name="compass_calibration_required">Beweeg de telefoon in een achtvormige beweging om het kompas te kalibreren en de richting van de pijl op de kaart vast te stellen.</string>
 	<!-- Update all button text -->
 	<string name="downloader_update_all_button">Update alles</string>
 	<!-- Cancel all button text -->
@@ -1476,7 +1480,7 @@
 	<string name="type.railway.construction">Treinspoor in aanbouw</string>
 	<string name="type.railway.crossing">Spoorwegovergang</string>
 	<string name="type.railway.disused">Ongebruikt spoor</string>
-	<string name="type.railway.funicular">Kabelspoorweg</string>
+	<string name="type.railway.funicular">Tunnel</string>
 	<string name="type.railway.funicular.bridge">Kabelspoorbuur</string>
 	<string name="type.railway.funicular.tunnel">Kabelspoortunnel</string>
 	<string name="type.railway.halt">Station</string>
@@ -1506,6 +1510,7 @@
 	<string name="type.railway.spur.bridge">Zijspoor-brug</string>
 	<string name="type.railway.spur.tunnel">Zijspoor-tunnel</string>
 	<string name="type.railway.station">Station</string>
+	<string name="type.railway.station.funicular">Tunnel</string>
 	<string name="type.railway.station.light_rail">Station</string>
 	<string name="type.railway.station.monorail">Station</string>
 	<string name="type.railway.station.subway">Metrostation</string>

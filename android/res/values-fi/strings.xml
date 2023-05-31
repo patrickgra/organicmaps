@@ -243,6 +243,10 @@
 	<string name="copyright">Tekijänoikeudet</string>
 	<!-- Text in menu + Button in the main Help dialog -->
 	<string name="report_a_bug">Ilmoita virheestä</string>
+	<!-- Toast text when compass calibration may improve the correctness of the current position arrow -->
+	<string name="compass_calibration_recommended">Paranna nuolien suuntaa liikuttamalla puhelinta kahdeksikon suuntaisesti kompassin kalibroimiseksi.</string>
+	<!-- Toast text when compass calibration may improve the correctness of the current position arrow -->
+	<string name="compass_calibration_required">Liikuta puhelinta kahdeksikon suuntaisella liikkeellä kompassin kalibroimiseksi ja nuolen suunnan määrittämiseksi kartalla.</string>
 	<!-- Update all button text -->
 	<string name="downloader_update_all_button">Päivitä kaikki</string>
 	<!-- Cancel all button text -->
@@ -1346,11 +1350,13 @@
 	<string name="type.power.pole">Sähköpylväs</string>
 	<string name="type.power.substation">Muuntoasema</string>
 	<string name="type.power.tower">Sähköpylväs</string>
+	<string name="type.railway.funicular">Köysirata</string>
 	<string name="type.railway.halt">Rautatieasema</string>
 	<string name="type.railway.level_crossing">Rautatien tasoristeys</string>
 	<string name="type.railway.monorail">Monorail (kohorata)</string>
 	<string name="type.railway.rail">Rautatie</string>
 	<string name="type.railway.station">Rautatieasema</string>
+	<string name="type.railway.station.funicular">Köysirata</string>
 	<string name="type.railway.station.light_rail">Rautatieasema</string>
 	<string name="type.railway.station.monorail">Rautatieasema</string>
 	<string name="type.railway.station.subway">Metro</string>

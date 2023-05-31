@@ -256,6 +256,10 @@
 	<string name="copyright">Prawa autorskie</string>
 	<!-- Text in menu + Button in the main Help dialog -->
 	<string name="report_a_bug">Zgłoś błąd</string>
+	<!-- Toast text when compass calibration may improve the correctness of the current position arrow -->
+	<string name="compass_calibration_recommended">Popraw kierunek strzałki, poruszając telefonem w ruchu w kształcie ósemki, aby skalibrować kompas.</string>
+	<!-- Toast text when compass calibration may improve the correctness of the current position arrow -->
+	<string name="compass_calibration_required">Przesuń telefon ruchem w kształcie ósemki, aby skalibrować kompas i ustalić kierunek strzałki na mapie.</string>
 	<!-- Update all button text -->
 	<string name="downloader_update_all_button">Aktualizuj wszystkie</string>
 	<!-- Cancel all button text -->
@@ -1439,11 +1443,13 @@
 	<string name="type.public_transport">Transport publiczny</string>
 	<string name="type.public_transport.platform">Przystanek transportu publicznego</string>
 	<string name="type.railway">Kolej</string>
+	<string name="type.railway.funicular">Kolejka linowa</string>
 	<string name="type.railway.halt">Przystanek kolejowy</string>
 	<string name="type.railway.level_crossing">Przejazd kolejowy</string>
 	<string name="type.railway.monorail">Kolej jednoszynowa</string>
 	<string name="type.railway.rail">Kolej</string>
 	<string name="type.railway.station">Dworzec kolejowy</string>
+	<string name="type.railway.station.funicular">Kolejka linowa</string>
 	<string name="type.railway.station.light_rail">Dworzec kolejowy</string>
 	<string name="type.railway.station.monorail">Dworzec kolejowy</string>
 	<string name="type.railway.station.subway">Metro</string>

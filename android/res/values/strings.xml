@@ -279,6 +279,10 @@
 	<string name="copyright">Copyright</string>
 	<!-- Text in menu + Button in the main Help dialog -->
 	<string name="report_a_bug">Report a bug</string>
+	<!-- Toast text when compass calibration may improve the correctness of the current position arrow -->
+	<string name="compass_calibration_recommended">Improve arrow direction by moving the phone in a figure-eight motion to calibrate the compass.</string>
+	<!-- Toast text when compass calibration may improve the correctness of the current position arrow -->
+	<string name="compass_calibration_required">Move the phone in a figure-eight motion to calibrate the compass and fix the arrow direction on the map.</string>
 	<!-- Update all button text -->
 	<string name="downloader_update_all_button">Update All</string>
 	<!-- Cancel all button text -->
@@ -1568,6 +1572,7 @@
 	<string name="type.railway.spur.bridge">Spur Rail Bridge</string>
 	<string name="type.railway.spur.tunnel">Spur Rail Tunnel</string>
 	<string name="type.railway.station">Train Station</string>
+	<string name="type.railway.station.funicular">Funicular</string>
 	<string name="type.railway.station.light_rail">Light Rail Station</string>
 	<string name="type.railway.station.monorail">Monorail Station</string>
 	<string name="type.railway.station.subway">Subway Station</string>
@@ -1989,6 +1994,7 @@
 	<string name="type.waterway">Waterway</string>
 	<string name="type.waterway.canal">Canal</string>
 	<string name="type.waterway.canal.tunnel">Canal Tunnel</string>
+	<string name="type.waterway.fish_pass">Fish Pass</string>
 	<string name="type.waterway.dam">Dam</string>
 	<string name="type.waterway.ditch">Ditch</string>
 	<string name="type.waterway.ditch.tunnel">Ditch</string>

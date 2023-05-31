@@ -251,6 +251,10 @@
 	<string name="copyright">Szerzői jog</string>
 	<!-- Text in menu + Button in the main Help dialog -->
 	<string name="report_a_bug">Hiba jelentése</string>
+	<!-- Toast text when compass calibration may improve the correctness of the current position arrow -->
+	<string name="compass_calibration_recommended">Javítsa a nyíl irányát a telefon nyolcas mozgatásával az iránytű kalibrálásához.</string>
+	<!-- Toast text when compass calibration may improve the correctness of the current position arrow -->
+	<string name="compass_calibration_required">Mozgassa a telefont egy nyolcas mozdulattal az iránytű kalibrálásához és a nyíl irányának rögzítéséhez a térképen.</string>
 	<!-- Update all button text -->
 	<string name="downloader_update_all_button">Mindegyik frissítése</string>
 	<!-- Cancel all button text -->
@@ -1314,11 +1318,13 @@
 	<string name="type.power.pole">Villanyoszlop</string>
 	<string name="type.power.substation">Kapcsolószekrény</string>
 	<string name="type.power.tower">Villanyoszlop</string>
+	<string name="type.railway.funicular">Funicular</string>
 	<string name="type.railway.halt">Vonatmegálló</string>
 	<string name="type.railway.level_crossing">Vasúti átjáró</string>
 	<string name="type.railway.monorail">Egysínű vasút</string>
 	<string name="type.railway.rail">Vasút</string>
 	<string name="type.railway.station">Vonatmegálló</string>
+	<string name="type.railway.station.funicular">Funicular</string>
 	<string name="type.railway.station.light_rail">Vonatmegálló</string>
 	<string name="type.railway.station.monorail">Vonatmegálló</string>
 	<string name="type.railway.station.subway">Földalatti</string>

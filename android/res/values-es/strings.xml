@@ -256,6 +256,10 @@
 	<string name="copyright">Derechos de autor</string>
 	<!-- Text in menu + Button in the main Help dialog -->
 	<string name="report_a_bug">Informar de un fallo</string>
+	<!-- Toast text when compass calibration may improve the correctness of the current position arrow -->
+	<string name="compass_calibration_recommended">Mejora la dirección de la flecha moviendo el teléfono en forma de ocho para calibrar la brújula.</string>
+	<!-- Toast text when compass calibration may improve the correctness of the current position arrow -->
+	<string name="compass_calibration_required">Mueve el teléfono en forma de ocho para calibrar la brújula y fijar la dirección de la flecha en el mapa.</string>
 	<!-- Update all button text -->
 	<string name="downloader_update_all_button">Actualizar todos</string>
 	<!-- Cancel all button text -->
@@ -1483,6 +1487,7 @@
 	<string name="type.railway.platform">Plataforma de vía férrea</string>
 	<string name="type.railway.rail">Ferrocarril</string>
 	<string name="type.railway.station">Estación de tren</string>
+	<string name="type.railway.station.funicular">Funicular</string>
 	<string name="type.railway.station.light_rail">Estación de tren</string>
 	<string name="type.railway.station.monorail">Estación de tren</string>
 	<string name="type.railway.station.subway">Metro</string>

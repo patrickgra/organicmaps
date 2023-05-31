@@ -235,6 +235,10 @@
 	<string name="copyright">Copyright</string>
 	<!-- Text in menu + Button in the main Help dialog -->
 	<string name="report_a_bug">Rapportera en bugg</string>
+	<!-- Toast text when compass calibration may improve the correctness of the current position arrow -->
+	<string name="compass_calibration_recommended">Förbättra pilens riktning genom att flytta telefonen i en åttarörelse för att kalibrera kompassen.</string>
+	<!-- Toast text when compass calibration may improve the correctness of the current position arrow -->
+	<string name="compass_calibration_required">Flytta telefonen i en åttarörelse för att kalibrera kompassen och fastställa pilens riktning på kartan.</string>
 	<!-- Update all button text -->
 	<string name="downloader_update_all_button">Uppdatera alla</string>
 	<!-- Cancel all button text -->
@@ -1285,11 +1289,13 @@
 	<string name="type.power.pole">Elstolpe</string>
 	<string name="type.power.substation">Ställverk</string>
 	<string name="type.power.tower">Elstolpe</string>
+	<string name="type.railway.funicular">Linbana</string>
 	<string name="type.railway.halt">Tågstation</string>
 	<string name="type.railway.level_crossing">Järnvägskorsning</string>
 	<string name="type.railway.monorail">Monorail</string>
 	<string name="type.railway.rail">Järnväg</string>
 	<string name="type.railway.station">Tågstation</string>
+	<string name="type.railway.station.funicular">Linbana</string>
 	<string name="type.railway.station.light_rail">Tågstation</string>
 	<string name="type.railway.station.monorail">Tågstation</string>
 	<string name="type.railway.station.subway">Tunnelbana</string>

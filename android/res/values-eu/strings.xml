@@ -256,6 +256,10 @@
 	<string name="copyright">Egile eskubideak</string>
 	<!-- Text in menu + Button in the main Help dialog -->
 	<string name="report_a_bug">Errore baten berri eman</string>
+	<!-- Toast text when compass calibration may improve the correctness of the current position arrow -->
+	<string name="compass_calibration_recommended">Hobetu geziaren norabidea telefonoa zortzi irudiko mugimenduan mugituz iparrorratza kalibratzeko.</string>
+	<!-- Toast text when compass calibration may improve the correctness of the current position arrow -->
+	<string name="compass_calibration_required">Mugitu telefonoa zortzi irudiko mugimenduan iparrorratza kalibratzeko eta geziaren norabidea mapan finkatzeko.</string>
 	<!-- Update all button text -->
 	<string name="downloader_update_all_button">Eguneratu guztiak</string>
 	<!-- Cancel all button text -->
@@ -1406,11 +1410,13 @@
 	<string name="type.power.substation">Azpiestazioa</string>
 	<string name="type.power.tower">Zutabe elektrikoa</string>
 	<string name="type.public_transport">Garraio publikoa</string>
+	<string name="type.railway.funicular">Funikularra</string>
 	<string name="type.railway.halt">Tren geltokian</string>
 	<string name="type.railway.level_crossing">Trenbide-pasagunea</string>
 	<string name="type.railway.monorail">Tren monoraila</string>
 	<string name="type.railway.rail">Trenbidea</string>
 	<string name="type.railway.station">Tren geltokian</string>
+	<string name="type.railway.station.funicular">Funikularra</string>
 	<string name="type.railway.station.light_rail">Tren geltokian</string>
 	<string name="type.railway.station.monorail">Tren geltokian</string>
 	<string name="type.railway.station.subway">Metroa</string>

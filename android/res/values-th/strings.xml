@@ -239,6 +239,10 @@
 	<string name="copyright">ลิขสิทธิ์</string>
 	<!-- Text in menu + Button in the main Help dialog -->
 	<string name="report_a_bug">แจ้งข้อผิดพลาด</string>
+	<!-- Toast text when compass calibration may improve the correctness of the current position arrow -->
+	<string name="compass_calibration_recommended">ปรับปรุงทิศทางลูกศรโดยขยับโทรศัพท์เป็นเลขแปดเพื่อปรับเทียบเข็มทิศ</string>
+	<!-- Toast text when compass calibration may improve the correctness of the current position arrow -->
+	<string name="compass_calibration_required">ขยับโทรศัพท์เป็นเลขแปดเพื่อปรับเทียบเข็มทิศและกำหนดทิศทางลูกศรบนแผนที่</string>
 	<!-- Update all button text -->
 	<string name="downloader_update_all_button">อัปเดตทั้งหมด</string>
 	<!-- Cancel all button text -->
@@ -1294,11 +1298,13 @@
 	<string name="type.power.pole">เสาไฟฟ้า</string>
 	<string name="type.power.substation">สถานีไฟฟ้า</string>
 	<string name="type.power.tower">เสาไฟฟ้า</string>
+	<string name="type.railway.funicular">รถกระเช้าไฟฟ้า</string>
 	<string name="type.railway.halt">สถานีรถไฟ</string>
 	<string name="type.railway.level_crossing">ทางรถไฟตัดผ่านถนน</string>
 	<string name="type.railway.monorail">รางรถไฟรางเดี่ยว</string>
 	<string name="type.railway.rail">รถไฟ</string>
 	<string name="type.railway.station">สถานีรถไฟ</string>
+	<string name="type.railway.station.funicular">รถกระเช้าไฟฟ้า</string>
 	<string name="type.railway.station.light_rail">สถานีรถไฟ</string>
 	<string name="type.railway.station.monorail">สถานีรถไฟ</string>
 	<string name="type.railway.station.subway">รถไฟ</string>

@@ -230,6 +230,10 @@
 	<string name="copyright">حق نشر و کپی رایت</string>
 	<!-- Text in menu + Button in the main Help dialog -->
 	<string name="report_a_bug">گزارش خطا</string>
+	<!-- Toast text when compass calibration may improve the correctness of the current position arrow -->
+	<string name="compass_calibration_recommended">برای کالیبره کردن قطب نما، جهت پیکان را با حرکت دادن تلفن در یک حرکت شکل هشت بهبود دهید.</string>
+	<!-- Toast text when compass calibration may improve the correctness of the current position arrow -->
+	<string name="compass_calibration_required">تلفن را به شکل هشت حرکت دهید تا قطب نما را کالیبره کنید و جهت پیکان را روی نقشه ثابت کنید.</string>
 	<!-- Update all button text -->
 	<string name="downloader_update_all_button">آپدیت همه</string>
 	<!-- Cancel all button text -->
@@ -1207,11 +1211,13 @@
 	<string name="type.power.plant.wind">نیروگاه بادی</string>
 	<string name="type.power.pole">برج قدرت</string>
 	<string name="type.power.tower">برج قدرت</string>
+	<string name="type.railway.funicular">فونیکولور</string>
 	<string name="type.railway.halt">ایستگاه قطار</string>
 	<string name="type.railway.level_crossing">تقاطع راه آهن</string>
 	<string name="type.railway.monorail">مونوریل</string>
 	<string name="type.railway.rail">راه آهن</string>
 	<string name="type.railway.station">ایستگاه قطار</string>
+	<string name="type.railway.station.funicular">فونیکولور</string>
 	<string name="type.railway.station.light_rail">ایستگاه قطار</string>
 	<string name="type.railway.station.monorail">ایستگاه قطار</string>
 	<string name="type.railway.station.subway">حمل و نقل</string>

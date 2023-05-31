@@ -252,6 +252,10 @@
 	<string name="copyright">Копірайт</string>
 	<!-- Text in menu + Button in the main Help dialog -->
 	<string name="report_a_bug">Сповістити про помилку</string>
+	<!-- Toast text when compass calibration may improve the correctness of the current position arrow -->
+	<string name="compass_calibration_recommended">Покращіть напрямок стрілки, повернувши телефон вісімкою, щоб відкалібрувати компас.</string>
+	<!-- Toast text when compass calibration may improve the correctness of the current position arrow -->
+	<string name="compass_calibration_required">Рухайте телефон вісімкою, щоб відкалібрувати компас і зафіксувати напрямок стрілки на карті.</string>
 	<!-- Update all button text -->
 	<string name="downloader_update_all_button">Оновити всі</string>
 	<!-- Cancel all button text -->
@@ -1491,6 +1495,7 @@
 	<string name="type.railway.spur.bridge">Під\'їздна залізниця</string>
 	<string name="type.railway.spur.tunnel">Під\'їздна залізниця</string>
 	<string name="type.railway.station">Залізничний вокзал</string>
+	<string name="type.railway.station.funicular">Фунікулер</string>
 	<string name="type.railway.station.light_rail">Залізничний вокзал</string>
 	<string name="type.railway.station.monorail">Залізничний вокзал</string>
 	<string name="type.railway.station.subway">Метро</string>
