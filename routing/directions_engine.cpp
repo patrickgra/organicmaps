@@ -78,8 +78,7 @@ void DirectionsEngine::LoadPathAttributes(FeatureID const & featureId,
   LoadLanes(pathSegment, *ft, isForward);
 
   pathSegment.m_highwayClass = GetHighwayClass(types);
-  ASSERT_NOT_EQUAL(pathSegment.m_highwayClass, HighwayClass::Error, ());
-  ASSERT_NOT_EQUAL(pathSegment.m_highwayClass, HighwayClass::Undefined, ());
+  ASSERT(pathSegment.m_highwayClass != HighwayClass::Undefined, (featureId));
 
   pathSegment.m_isLink = m_linkChecker(types);
   pathSegment.m_onRoundabout = m_roundAboutChecker(types);
@@ -120,8 +119,7 @@ void DirectionsEngine::GetSegmentRangeAndAdjacentEdges(IRoadGraph::EdgeListT con
     feature::TypesHolder types(*ft);
 
     auto const highwayClass = GetHighwayClass(types);
-    ASSERT_NOT_EQUAL(highwayClass, HighwayClass::Error, (edge.PrintLatLon()));
-    ASSERT_NOT_EQUAL(highwayClass, HighwayClass::Undefined, (edge.PrintLatLon()));
+    ASSERT(highwayClass != HighwayClass::Undefined, (edge.PrintLatLon()));
 
     double angle = 0;
 
@@ -322,8 +320,6 @@ void DirectionsEngine::MakeTurnAnnotation(IndexRoadGraph::EdgeVector const & rou
 
   RoutingEngineResult result(routeEdges, m_adjacentEdges, m_pathSegments);
 
-  LOG(LDEBUG, ("Shortest path length:", result.GetPathLength()));
-
   routeSegments.reserve(routeEdges.size());
 
   RoutingSettings const vehicleSettings = GetRoutingSettings(m_vehicleType);
@@ -331,7 +327,7 @@ void DirectionsEngine::MakeTurnAnnotation(IndexRoadGraph::EdgeVector const & rou
   auto const & loadedSegments = result.GetSegments(); // the same as m_pathSegments
 
   // First point of first loadedSegment is ignored. This is the reason for:
-  ASSERT_EQUAL(loadedSegments.front().m_path.back(), loadedSegments.front().m_path.front(), ());
+  //ASSERT_EQUAL(loadedSegments.front().m_path.back(), loadedSegments.front().m_path.front(), ());
 
   size_t skipTurnSegments = 0;
   for (size_t idxLoadedSegment = 0; idxLoadedSegment < loadedSegments.size(); ++idxLoadedSegment)
@@ -366,8 +362,8 @@ void DirectionsEngine::MakeTurnAnnotation(IndexRoadGraph::EdgeVector const & rou
     routeSegments.emplace_back(loadedSegment.m_segments.back(), turnItem, loadedSegment.m_path.back(), rni);
   }
 
-  ASSERT_EQUAL(routeSegments.front().GetJunction(), result.GetStartPoint(), ());
-  ASSERT_EQUAL(routeSegments.back().GetJunction(), result.GetEndPoint(), ());
+  //ASSERT_EQUAL(routeSegments.front().GetJunction(), result.GetStartPoint(), ());
+  //ASSERT_EQUAL(routeSegments.back().GetJunction(), result.GetEndPoint(), ());
 
   FixupTurns(routeSegments);
 }

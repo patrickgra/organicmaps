@@ -218,7 +218,7 @@ void RoadGeometry::Load(VehicleModelInterface const & vehicleModel, FeatureType 
   m_distances.resize(count - 1, -1);
 
   /// @todo Take out this logic into VehicleModel::GetSpeed to include
-  /// RouteShuttleTrain and RailwayRailMotorVehicle for bicycle and pedestrian.
+  /// RouteShuttleTrain for bicycle and pedestrian.
   if (m_routingOptions.Has(RoutingOptions::Road::Ferry))
   {
     /// @todo Also process "interval" OSM tag (without additional boarding penalties).
@@ -235,7 +235,7 @@ void RoadGeometry::Load(VehicleModelInterface const & vehicleModel, FeatureType 
       /// - Remove assert, but update A* algo heuristic somehow;
       /// - Reconsider ferry defaults;
       /// - Make _very big_ bicycle/pedestrian maxspeed;
-      ASSERT_LESS_OR_EQUAL(speed, vehicleModel.GetMaxWeightSpeed(), (roadLenKm, durationH));
+      ASSERT_LESS_OR_EQUAL(speed, vehicleModel.GetMaxWeightSpeed(), (roadLenKm, durationH, fID));
       m_forwardSpeed = m_backwardSpeed = SpeedKMpH(speed);
     }
   }

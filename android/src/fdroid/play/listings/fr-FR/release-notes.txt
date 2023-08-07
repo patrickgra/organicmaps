@@ -1,9 +1,10 @@
-• Nouvelles données Openstreetmap du 29 Mars
-• Indication expérimentale des voies de bifurcation
-• Correction position flèche de localisation en navigation
-• Correction sélecteur de couleur des signets
-• Correction affichage vitesse et distance en navigation
-• Beaucoup de nouveaux types de magasins
-• Ajout transfert d'argent, stations de recharge de vélos et centrales électriques
-• Différenciation des couleurs des parcs, des forêts et des broussailles
-…Plus : omaps.app/new
+• Actualisation des données OpenStreetMap au 10 juillet 2023
+• Correction de plusieurs plantages
+• Support de l'altitude, OsmAnd, et des couleurs Garmin dans l'import des trajets GPX
+• Correction du temps d'arrivée estimé pour les grandes pentes en trajet piéton
+• Le bouton Partage a été déplacé sur l'écran Emplacements
+• Ajout de nouveaux magasins et types d'événements
+• Amélioration du rendu des tunnels d'eau et ponts
+• Ajout de plus de types de voies ferroviaires
+
+…Plus sur : omaps.org/news

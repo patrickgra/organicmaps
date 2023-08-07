@@ -3,14 +3,11 @@
 #include "search/common.hpp"
 #include "search/query_params.hpp"
 
-#include "indexer/search_delimiters.hpp"
 #include "indexer/search_string_utils.hpp"
 
-#include "base/stl_helpers.hpp"
 #include "base/string_utils.hpp"
 
 #include <algorithm>
-#include <cstddef>
 #include <limits>
 #include <string>
 #include <vector>
@@ -273,8 +270,7 @@ NameScores GetNameScores(std::vector<strings::UniString> const & tokens, uint8_t
         // Update the match quality
         totalErrorsMade += errorsMade;
         matchedLength += slice.Get(i).GetOriginal().size();
-        isAltOrOldName =
-            lang == StringUtf8Multilang::kAltNameCode || lang == StringUtf8Multilang::kOldNameCode;
+        isAltOrOldName = StringUtf8Multilang::IsAltOrOldName(lang);
       }
       else
       {

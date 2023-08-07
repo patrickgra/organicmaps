@@ -10,6 +10,7 @@
 
 #include "platform/localization.hpp"
 #include "platform/measurement_utils.hpp"
+#include "platform/distance.hpp"
 
 #include "base/logging.hpp"
 #include "base/string_utils.hpp"
@@ -54,7 +55,10 @@ void MapObject::SetFromFeatureType(FeatureType & ft)
   {
     return !cl.IsTypeValid(t);
   });
-  // Actually, we can't select object on map with invalid (non-drawable type).
+  // Actually, we can't select object on map with invalid (non-drawable or deprecated) type.
+  // TODO: in android prod a user will see an "empty" PP if a spot is selected in old mwm
+  // where a deprecated feature was; and could crash if play with routing to it, bookmarking it..
+  // A desktop/qt prod segfaults when trying to select such spots.
   ASSERT(!m_types.Empty(), ());
 
   m_metadata = ft.GetMetadata();
@@ -62,7 +66,11 @@ void MapObject::SetFromFeatureType(FeatureType & ft)
   m_roadShields = ftypes::GetRoadShieldsNames(ft);
   m_featureID = ft.GetID();
   m_geomType = ft.GetGeomType();
+  m_layer = ft.GetLayer();
 
+  // TODO: BEST_GEOMETRY is likely needed for some special cases only,
+  // i.e. matching an edited OSM feature, in other cases like opening
+  // a place page WORST_GEOMETRY is going to be enough?
   if (m_geomType == feature::GeomType::Area)
     assign_range(m_triangles, ft.GetTrianglesAsPoints(FeatureType::BEST_GEOMETRY));
   else if (m_geomType == feature::GeomType::Line)
@@ -186,7 +194,7 @@ string MapObject::GetElevationFormatted() const
   {
     double value;
     if (strings::to_double(sv, value))
-      return measurement_utils::FormatAltitude(value);
+      return platform::Distance::CreateAltitudeFormatted(value).ToString();
     else
       LOG(LWARNING, ("Invalid elevation metadata:", sv));
   }

@@ -7,6 +7,7 @@
 #include "drape_frontend/traffic_renderer.hpp"
 #include "drape_frontend/visual_params.hpp"
 
+#include "indexer/drawing_rules.hpp"
 #include "indexer/feature.hpp"
 #include "indexer/feature_algo.hpp"
 #include "indexer/feature_visibility.hpp"
@@ -263,7 +264,7 @@ void RuleDrawer::ProcessAreaStyle(FeatureType & f, Stylist const & s,
     // Looks like nonsense, but there are some osm objects with types
     // highway-path-bridge and building (sic!) at the same time (pedestrian crossing).
     isBuilding = (isPart || IsBuildingChecker::Instance()(types)) &&
-                  !IsBridgeChecker::Instance()(types) && !IsTunnelChecker::Instance()(types);
+                  !IsBridgeOrTunnelChecker::Instance()(types);
 
     isBuildingOutline = isBuilding && hasParts && !isPart;
     is3dBuilding = m_context->Is3dBuildingsEnabled() && (isBuilding && !isBuildingOutline);
@@ -279,6 +280,7 @@ void RuleDrawer::ProcessAreaStyle(FeatureType & f, Stylist const & s,
   {
     double const heightInMeters = GetBuildingHeightInMeters(f);
     double const minHeightInMeters = GetBuildingMinHeightInMeters(f);
+    // Loads geometry of the feature.
     featureCenter = feature::GetCenter(f, zoomLevel);
     double const lon = mercator::XToLon(featureCenter.x);
     double const lat = mercator::YToLat(featureCenter.y);
@@ -294,12 +296,18 @@ void RuleDrawer::ProcessAreaStyle(FeatureType & f, Stylist const & s,
   if (applyPointStyle)
   {
     if (!is3dBuilding)
+    {
+      // Loads geometry of the feature.
       featureCenter = feature::GetCenter(f, zoomLevel);
+    }
     applyPointStyle = m_globalRect.IsPointInside(featureCenter);
   }
 
   if (applyPointStyle || is3dBuilding)
+  {
+    // At this point a proper geometry is loaded already.
     minVisibleScale = feature::GetMinDrawableScale(f);
+  }
 
   ApplyAreaFeature apply(m_context->GetTileKey(), insertShape, f.GetID(),
                          m_currentScaleGtoP, isBuilding,
@@ -312,6 +320,26 @@ void RuleDrawer::ProcessAreaStyle(FeatureType & f, Stylist const & s,
 
   if (CheckCancelled())
     return;
+
+#ifdef DEBUG
+  // Check that we have max 2 area styles (hatching and filling).
+  s.ForEachRule([count = 0](Stylist::TRuleWrapper const & rule) mutable
+  {
+    if (rule.m_rule->GetArea())
+    {
+      if (rule.m_hatching)
+      {
+        ASSERT_EQUAL(count, 0, ());
+        count = 1;
+      }
+      else
+      {
+        ASSERT_LESS(count, 2, ());
+        count = 2;
+      }
+    }
+  });
+#endif
 
   s.ForEachRule(std::bind(&ApplyAreaFeature::ProcessAreaRule, &apply, _1));
 

@@ -1,10 +1,13 @@
-• Novos dados OSM de 29/03
-• Assistente de faixas (beta)
-• Correção da posição de seta de localização durante navegação
-• Correção do selecionador de cores dos favoritos para escritas RTL
-• Exibição correta da velocidade e distância no modo de navegação
-• Correção da API para selecionar um ponto no mapa
-• Muitos novos tipos de lojas
-• Adição de carregamento de bicicleta, transferência de dinheiro e usinas
-• Distinção de arbustos, florestas e parques
-…mais: omaps.app/news
+• Novos dados OSM de 10/07
+• Correção de vários erros
+• Melhor suporte nas trilhas GPX importadas a altitude e cores
+• Correção do ETA para pedestres
+• Melhoria no roteamento de carros e na busca
+• Botão Compartilhar foi movido
+• Atualização de traduções para cz, de, fi, fr, it, pl, sv, tr
+• Adição de novas lojas e tipos de eventos
+• Melhoria na renderização de túneis de água e pontes
+• Detalhamento nos tipos de ferrovias
+• Adição de áreas protegidas
+
+https://omaps.org/news

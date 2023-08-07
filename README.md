@@ -8,19 +8,19 @@ No ads, no tracking, no data collection, no crapware. Your [donations](https://o
 
 <p float="left">
   <a href="https://apps.apple.com/app/organic-maps/id1567437057">
-    <img src="docs/badges/apple-appstore.png" width="180">
+    <img alt="Download on the App Store" src="docs/badges/apple-appstore.png" width="180">
   </a>
   <a href="https://play.google.com/store/apps/details?id=app.organicmaps">
-    <img src="docs/badges/google-play.png" width="180">
+    <img alt="Get it on Google Play" src="docs/badges/google-play.png" width="180">
   </a>
   <a href="https://appgallery.huawei.com/#/app/C104325611">
-    <img src="docs/badges/huawei-appgallery.png" width="180">
+    <img alt="Explore it on AppGallery" src="docs/badges/huawei-appgallery.png" width="180">
   </a>
   <a href="https://f-droid.org/en/packages/app.organicmaps/">
-    <img src="docs/badges/fdroid.png" width="180">
+    <img alt="Get it on F-Droid" src="docs/badges/fdroid.png" width="180">
   </a>
   <a href='https://flathub.org/apps/details/app.organicmaps.desktop'>
-    <img alt="Download on Flathub" src="https://flathub.org/assets/badges/flathub-badge-en.png" width="180"/>
+    <img alt="Download on Flathub" src="docs/badges/flathub.png" width="180"/>
   </a>
   <a href="https://repology.org/project/organicmaps/versions">
     <img src="https://repology.org/badge/vertical-allrepos/organicmaps.svg" width="180" alt="Packaging status">
@@ -43,7 +43,7 @@ Organic Maps is the ultimate companion app for travelers, tourists, hikers, and 
 - Contour lines, elevation profiles, peaks, and slopes
 - Turn-by-turn walking, cycling, and car navigation with voice guidance
 - Fast offline search on the map
-- Bookmarks export and import in KML/KMZ formats (GPX is [planned](https://github.com/organicmaps/organicmaps/issues/624))
+- Bookmarks and tracks export and import in KML, KMZ, GPX formats
 - Dark Mode to protect your eyes
 - Countries and regions don't take a lot of space
 - Free and open-source
@@ -69,9 +69,14 @@ Organic Maps app is free from trackers and other bad stuff:
 - No crapware
 - ~~No pesticides~~ Purely organic!
 
-The application is verified by <a href="https://reports.exodus-privacy.eu.org/en/reports/app.organicmaps/latest/">Exodus Privacy Project:
+The Android application is verified by <a href="https://reports.exodus-privacy.eu.org/en/reports/app.organicmaps/latest/">Exodus Privacy Project:
 
 <img src="docs/privacy/exodus.png" width="400">
+</a>
+
+The iOS application is verified by <a href="https://ios.trackercontrol.org/app/app.organicmaps">TrackerControl for iOS:
+
+<img src="docs/privacy/trackercontrol-ios.png" width="400">
 </a>
 
 <br/>

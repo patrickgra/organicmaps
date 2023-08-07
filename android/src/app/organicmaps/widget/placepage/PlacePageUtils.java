@@ -1,10 +1,8 @@
 package app.organicmaps.widget.placepage;
 
 import android.content.Context;
-import android.graphics.Rect;
 import android.view.Menu;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.PopupMenu;
 
 import androidx.annotation.NonNull;
@@ -15,20 +13,14 @@ import com.google.android.material.bottomsheet.BottomSheetBehavior;
 
 import java.util.List;
 
-class PlacePageUtils
+public class PlacePageUtils
 {
-  static void moveViewportUp(@NonNull View placePageView, int viewportMinHeight)
+  static void updateMapViewport(@NonNull View parent, int placePageDistanceToTop, int viewportMinHeight)
   {
-    placePageView.post(() -> {
-      final View coordinatorLayout = (ViewGroup) placePageView.getParent();
-      final int viewPortWidth = coordinatorLayout.getWidth();
-      int viewPortHeight = coordinatorLayout.getHeight();
-      Rect sheetRect = new Rect();
-      placePageView.getGlobalVisibleRect(sheetRect);
-
-      viewPortHeight -= sheetRect.height();
-      if (viewPortHeight >= viewportMinHeight)
-        Framework.nativeSetVisibleRect(0, 0, viewPortWidth, viewPortHeight);
+    parent.post(() -> {
+      final int screenWidth = parent.getWidth();
+      if (placePageDistanceToTop >= viewportMinHeight)
+        Framework.nativeSetVisibleRect(0, 0, screenWidth, placePageDistanceToTop);
     });
   }
 
@@ -45,11 +37,6 @@ class PlacePageUtils
   static boolean isCollapsedState(@BottomSheetBehavior.State int state)
   {
     return state == BottomSheetBehavior.STATE_COLLAPSED;
-  }
-
-  static boolean isHalfExpandedState(@BottomSheetBehavior.State int state)
-  {
-    return state == BottomSheetBehavior.STATE_HALF_EXPANDED;
   }
 
   static boolean isExpandedState(@BottomSheetBehavior.State int state)
@@ -84,15 +71,14 @@ class PlacePageUtils
     }
   }
 
-  static void copyToClipboard(Context context, View frame, String text)
+  public static void copyToClipboard(Context context, View frame, String text)
   {
     Utils.copyTextToClipboard(context, text);
-    Utils.showSnackbarAbove(frame,
-                            frame.getRootView().findViewById(R.id.pp_buttons_layout),
+    Utils.showSnackbarAbove(frame.getRootView().findViewById(R.id.pp_buttons_layout), frame,
                             context.getString(R.string.copied_to_clipboard, text));
   }
 
-  static void showCopyPopup(Context context, View popupAnchor, View frame, List<String> items)
+  public static void showCopyPopup(Context context, View popupAnchor, List<String> items)
   {
     final PopupMenu popup = new PopupMenu(context, popupAnchor);
     final Menu menu = popup.getMenu();
@@ -103,7 +89,7 @@ class PlacePageUtils
 
     popup.setOnMenuItemClickListener(item -> {
       final String text = items.get(item.getItemId());
-      copyToClipboard(context, frame, text);
+      copyToClipboard(context, popupAnchor, text);
       return true;
     });
     popup.show();

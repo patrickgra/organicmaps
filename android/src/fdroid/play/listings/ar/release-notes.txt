@@ -1,11 +1,14 @@
-• New OpenStreetMap data as of March 29
-• Experimental Lane assistant
-• Fix wrong location arrow position during navigation
-• Fix bookmark's color chooser for Right-To-Left languages
-• Properly display speed and distance in navigation mode
-• Fix API to select a point on the map
-• Many new shop types
-• Add money transfer, bicycle charging stations, power plant
-• Made park, forest, and scrub colors different
-• Improved ar, be, de, hu, tr translations
-…more: omaps.app/news
+• بيانات OpenStreetMap جديدة اعتبارًا من 10 يوليو 2023
+• Fixed several crashes
+• دعم ألوان Garmin و OsmAnd و altitude في مسارات GPX المستوردة
+• تم إصلاح ETA للمشاة للمنحدرات الكبيرة
+• توجيه أفضل للسيارة
+• تحسين ترتيب البحث
+• تم نقل زر المشاركة إلى صفحة المكان
+• تحديث العديد من الترجمات
+• تمت إضافة المتاجر الجديدة وأماكن الفعاليات
+• تحسين أنفاق وجسور المياه
+• سكك حديدية أكثر تفصيلا
+• الحدود المضافة=المنطقة_المحمية
+
+…المزيد: omaps.org/news

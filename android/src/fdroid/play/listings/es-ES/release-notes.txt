@@ -1,8 +1,14 @@
-• Datos planetarios nuevos de OSM al 29 de marzo
-• Asistente de carril experimental
-• Arreglada la posición incorrecta de la flecha de ubicación al navegar
-• Arreglado el selector de colores para marcadores en lenguas escritas de derecha a izquierda
-• Se muestran adecuadamente las velocidades y las distancias en el modo de navegación
-• Muchos tipos de tienda nuevos
-• Añade transferencias monetarias, estaciones de carga de bicicletas y centrales de energía
-…para saber más: omaps.app/news
+• Fresh OpenStreetMap data as of July 10, 2023
+• Fixed several crashes
+• Support altitude, OsmAnd and Garmin colors in imported GPX tracks
+• Fixed pedestrian ETA for big slopes
+• Better car routing
+• Improved search ranking
+• Share button has been moved to the Place Page
+• Updated many translations
+• Added new shops and event venues types
+• Improved water tunnels and bridges rendering
+• More detailed railways
+• Added boundary=protected_area
+
+…más: omaps.org/news

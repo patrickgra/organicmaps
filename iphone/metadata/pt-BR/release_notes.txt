@@ -1,25 +1,27 @@
-• Novos dados OSM de 29 de março
-• Adição de links localizados para a página da Wiki OSM
-• Substituição de ícones de subida e descida para setas melhores definidas
-• Importação correta de favoritos KML com dados de trilha
-• Desativação de edifícios 3D nas Configurações, se a economia de energia estiver ativada
-• O editor agora permite adicionar lojas de música e instrumentos musicais
-• As lojas de costura e de miudezas são pesquisáveis e têm um ícone melhor
-• Procurar um "supermercado" não resulta mais em lojas de conveniência
+• Novos dados OpenStreetMap de 10 de julho
+• Suporte, nas trilhas GPX importadas, a altitude, e cores do OSMand e Garmin
+• Mostra coordenadas nos formatos Open Location Code (OLC), UTM, MRGS e OpenStreetMap.org ao clicar e copiar as coordenadas com um toque longo
+• Correção na falha ao renderizar objetos grandes
+• As descrições das listas de favoritos agora são exibidas e salvas corretamente
+• Carregamento mais rápido de favoritos e trilhas
+• Correção de tempo de chegada para pedestres em grandes declives
+• Roteamento de veículos dá preferência a estradas terciárias do que estradas de serviço
+
+Busca
+• Melhoria na classificação dos resultados de pesquisa
+• Correção na busca de categorias de lojas
+• Correção nos resultados de pesquisa de aeroportos com nomes vazios
 
 Estilos
-• Novos tipos de loja: agrícola, acessórios de moda, cama, cannabis, chaveiro, cortina, eletrodomésticos, ervas, gás, móveis de banheiro, oficinas de motos, pet-shops, recolha de encomendas, serralheiro, som hi-fi e tapetes
-• Adição de estações de carregamento de bicicleta, transferência de dinheiro e usinas de energia
-• Legendas opcionais para a maioria dos ícones de pontos de interesse
-• Distinção das cores de arbustos, florestas e parques
-• Adição de ícones de construção de metal
-• Melhoria em caminhos aéreos, teleféricos, linhas de energia e cercas
-• Redução da visibilidade do metrô de Barcelona
-• Correção de isolinhas que eram desenhadas por cima de edifícios, estradas etc.
-• Correção da renderização de elementos multi-tipos (ex. algumas legendas de pontos de interesse eram mostradas muito cedo)
+• Adição de categoria de lojas de segunda mão, leilão, lojas de colecionadores, catraca e saída
+• Túneis de água aéreos transparentes e visíveis a partir do z15
+• Introdução de detalhamento nos tipos de ferrovias
+• Adição de contorno da estrutura da ponte
+• Adição de centro comunitário, centro de conferências, centro de exposições, local de eventos
+• Aumento da prioridade dos ícones da loja
+• Adição de áreas protegidas
 
-Traduções:
-• Melhoria nas traduções de alemão, bielorrusso, húngaro e turco
-• Melhoria nas instruções TTS de árabe
+Traduções
+• Traduções atualizadas em alemão, finlandês, francês, italiano, polonês, sueco, tcheco e turco
 
-Acompanhe nossas novidades em omaps.app/news
+Acompanhe nossas novidades em https://omaps.org/news

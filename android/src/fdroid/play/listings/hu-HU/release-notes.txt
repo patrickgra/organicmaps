@@ -1,8 +1,13 @@
-• Új OpenStreetMap térképadatok (március 29)
-• Kísérleti sávnavigációs funkció
-• A felhasználó helyzetét jelző nyíl pozícióját megváltoztattuk, a jobb élmény érdekében
-• Megjavítottuk a könyvjelzők színválasztóját a jobb oldalról balra haladó írásmódú nyelveknél
-• Immáron a sebesség és a távolság helyesen van megjelenítve navigáció közben
-• Sok új bolttípussal bővült alkalmazásunk
-• Hozzáadtuk a pénz átutalóhelyeket, bicikli töltőállomásokat, és erőműveket
-…további infó: omaps.app/news
+• Friss OpenStreetMap adatok (2023. július 10)
+• Számos összeomlás javítása
+• Magasság, OsmAnd és Garmin színek támogatása az importált GPX pályákon.
+• Javított gyalogos ETA a nagy lejtők esetében
+• Jobb autós útvonaltervezés
+• Javított keresés
+• A Megosztás gomb átkerült a Hely oldalra
+• Frissített fordítások
+• Új üzletek és eseménytípusok hozzáadása
+• Javítottuk a vízi alagutak és hidak megjelenítését
+• Részletesebb vasúti típusok
+
+omaps.org/news

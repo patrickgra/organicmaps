@@ -9,7 +9,7 @@
 
 #include "search/result.hpp"
 
-#include "routing/router.hpp"
+#include "indexer/map_style.hpp"
 
 #include <QtWidgets/QRubberBand>
 
@@ -59,8 +59,6 @@ public:
   Framework & GetFramework() { return m_framework; }
 
   void SetMapStyle(MapStyle mapStyle);
-
-  void SetRouter(routing::RouterType routerType);
 
   void SetRuler(bool enabled);
 
