@@ -27,20 +27,11 @@ UNIT_TEST(LowerUniChar)
 {
   // Load unicode case folding table.
 
-  // To use Platform class here, we need to add many link stuff ..
-  // string const fName = GetPlatform().WritablePathForFile("CaseFolding.test");
-  std::string const fName = "./data/CaseFolding.test";
-
-  std::ifstream file(fName.c_str());
-  if (!file.good())
-  {
-    LOG(LWARNING, ("Can't open unicode test file", fName));
-    return;
-  }
+  std::ifstream file("./data/CaseFolding.test");
+  TEST(file.is_open(), ());
 
   size_t fCount = 0, cCount = 0;
-  typedef std::unordered_map<strings::UniChar, strings::UniString> mymap;
-  mymap m;
+  std::unordered_map<strings::UniChar, strings::UniString> m;
   std::string line;
   while (file.good())
   {
@@ -103,7 +94,7 @@ UNIT_TEST(LowerUniChar)
   // full range unicode table test
   for (strings::UniChar c = 0; c < 0x11000; ++c)
   {
-    mymap::iterator found = m.find(c);
+    auto const found = m.find(c);
     if (found == m.end())
     {
       TEST_EQUAL(c, strings::LowerUniChar(c), ());
@@ -677,6 +668,17 @@ UNIT_TEST(to_string_dac)
   TEST_EQUAL(strings::to_string_dac(1.0E-15, 15), "0.000000000000001", ());
   TEST_EQUAL(strings::to_string_dac(1.0 + 1.0E-14, 15), "1.00000000000001", ());
 }
+
+UNIT_TEST(to_string_width)
+{
+  TEST_EQUAL(strings::to_string_width(123, 5), "00123", ());
+  TEST_EQUAL(strings::to_string_width(99, 3), "099", ());
+  TEST_EQUAL(strings::to_string_width(0, 4), "0000", ());
+  TEST_EQUAL(strings::to_string_width(-10, 4), "-0010", ());
+  TEST_EQUAL(strings::to_string_width(545, 1), "545", ());
+  TEST_EQUAL(strings::to_string_width(1073741824, 0), "1073741824", ());
+}
+
 
 struct FunctorTester
 {

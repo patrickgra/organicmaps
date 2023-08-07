@@ -71,8 +71,11 @@
 /* "Bookmark Lists" dialog title */
 "bookmark_sets" = "Bookmark Lists";
 
-/* "Bookmarks" dialog title, please also edit it in iphone/plist.txt */
+/* Should be used in the bookmarks-only context, see bookmarks_and_tracks if tracks are also implied. */
 "bookmarks" = "Bookmarks";
+
+/* "Bookmarks and Tracks" dialog title, also sync it with iphone/plist.txt */
+"bookmarks_and_tracks" = "Bookmarks and Tracks";
 
 /* Default bookmark list name */
 "core_my_places" = "My Places";
@@ -106,6 +109,9 @@
 
 /* Search category for clothes/shoes/gifts/jewellery/sport shops; any changes should be duplicated in categories.txt @shopping! */
 "shopping" = "Manunuzi";
+
+/* Search category for second_hand/charity/antique/auction shops; any changes should be duplicated in categories.txt @secondhand! */
+"secondhand" = "Mtumba";
 
 /* Search category for places to stay; any changes should be duplicated in categories.txt @hotel! */
 "hotel" = "Hotel";
@@ -762,24 +768,22 @@
 /* iOS Dialog for the case when the location permission is not granted */
 "location_services_disabled_3" = "3. Select While Using the App";
 
-"meter" = "m";
+"m" = "m";
 
-"kilometer" = "km";
+"km" = "km";
 
 "kilometers_per_hour" = "km/h";
 
-"mile" = "mi";
+"mi" = "mi";
 
 /* A unit of measure */
-"foot" = "ft";
+"ft" = "ft";
 
 "miles_per_hour" = "mph";
 
 "hour" = "h";
 
 "minute" = "min";
-
-"placepage_place_description" = "Description";
 
 "placepage_more_button" = "More";
 
@@ -1339,6 +1343,8 @@
 
 "type.amenity.community_centre" = "Community Centre";
 
+"type.amenity.conference_centre" = "Kituo cha Mikutano";
+
 "type.amenity.courthouse" = "Courthouse";
 
 "type.amenity.dentist" = "Dentist";
@@ -1348,6 +1354,8 @@
 "type.amenity.drinking_water" = "Drinking Water";
 
 "type.amenity.driving_school" = "Driving School";
+
+"type.amenity.exhibition_centre" = "Kituo cha Maonyesho";
 
 "type.amenity.money_transfer" = "Uhamisho wa pesa";
 
@@ -1506,7 +1514,7 @@
 
 "type.amenity.shower" = "Shower";
 
-"type.amenity.taxi" = "Taxi";
+"type.amenity.taxi" = "Taxi Stand";
 
 "type.amenity.telephone" = "Phone";
 
@@ -1586,6 +1594,8 @@
 
 "type.barrier.stile" = "Stile";
 
+"type.barrier.turnstile" = "Turnstile";
+
 "type.barrier.swing_gate" = "Swing Gate";
 
 "type.barrier.toll_booth" = "Toll Booth";
@@ -1633,6 +1643,20 @@
 "type.boundary.administrative.suburb" = "Suburb Boundary";
 
 "type.boundary.national_park" = "Hifadhi ya taifa";
+
+"type.boundary.protected_area" = "Eneo Lindwa";
+
+"type.boundary.protected_area.1" = "Eneo Lindwa";
+
+"type.boundary.protected_area.2" = "Eneo Lindwa";
+
+"type.boundary.protected_area.3" = "Eneo Lindwa";
+
+"type.boundary.protected_area.4" = "Eneo Lindwa";
+
+"type.boundary.protected_area.5" = "Eneo Lindwa";
+
+"type.boundary.protected_area.6" = "Eneo Lindwa";
 
 "type.building" = "Building";
 
@@ -1881,6 +1905,8 @@
 /* This is for main/primary entrances, for secondary entrances see type.entrance */
 "type.entrance.main" = "Mlango Mkuu";
 
+"type.entrance.exit" = "Utgång";
+
 "type.healthcare.laboratory" = "Maabara ya Matibabu";
 
 "type.healthcare.physiotherapist" = "Mtaalamu wa Physiotherapist";
@@ -2056,6 +2082,9 @@
 
 /* These translations are used for all type.highway.*.bridge. */
 "type.highway.road.bridge" = "Daraja";
+
+/* A bridge structure outline. */
+"type.man_made.bridge" = "Daraja";
 
 /* These translations are used for all type.highway.*.tunnel. */
 "type.highway.road.tunnel" = "Mtaro";
@@ -2304,6 +2333,8 @@
 "type.internet_access.wlan" = "Internet";
 
 "type.junction" = "Junction";
+
+"type.junction.circular" = "Roundabout";
 
 "type.junction.roundabout" = "Roundabout";
 
@@ -2773,25 +2804,54 @@
 
 "type.railway.rail" = "Njia ya Reli";
 
-"type.railway.rail.bridge" = "Railway Bridge";
+"type.railway.rail.highspeed" = "Reli ya mwendo wa kasi";
 
-"type.railway.rail.motor_vehicle" = "Railway";
+"type.railway.rail.tourism" = "Reli ya kitalii";
 
-"type.railway.rail.tunnel" = "Railway Tunnel";
+"type.railway.rail.main" = "Reli";
 
-"type.railway.razed" = "Razed Rail";
+/* Includes ordinary railway=rail w/o more specific usage= and service= tags. */
+"type.railway.rail.branch" = "Reli ya sekondari";
 
-"type.railway.siding" = "Siding Rail";
+/* Non-passenger utility tracks: industrial, military, test. */
+"type.railway.rail.utility" = "Utility railway";
 
-"type.railway.siding.bridge" = "Siding Rail Bridge";
+"type.railway.rail.spur" = "Railway spur";
 
-"type.railway.siding.tunnel" = "Siding Rail Tunnel";
+/* Short service tracks: siding, yard, crossover. */
+"type.railway.rail.service" = "Njia ya reli ya msaidizi";
 
-"type.railway.spur" = "Spur Rail";
+"type.railway.rail.bridge" = "Daraja la reli";
 
-"type.railway.spur.bridge" = "Spur Rail Bridge";
+"type.railway.rail.highspeed.bridge" = "Daraja la reli";
 
-"type.railway.spur.tunnel" = "Spur Rail Tunnel";
+"type.railway.rail.tourism.bridge" = "Daraja la reli";
+
+"type.railway.rail.main.bridge" = "Daraja la reli";
+
+"type.railway.rail.branch.bridge" = "Daraja la reli";
+
+"type.railway.rail.utility.bridge" = "Daraja la reli";
+
+"type.railway.rail.spur.bridge" = "Daraja la reli";
+
+"type.railway.rail.service.bridge" = "Daraja la reli";
+
+"type.railway.rail.tunnel" = "Njia ya reli";
+
+"type.railway.rail.highspeed.tunnel" = "Njia ya reli";
+
+"type.railway.rail.tourism.tunnel" = "Njia ya reli";
+
+"type.railway.rail.main.tunnel" = "Njia ya reli";
+
+"type.railway.rail.branch.tunnel" = "Njia ya reli";
+
+"type.railway.rail.utility.tunnel" = "Njia ya reli";
+
+"type.railway.rail.spur.tunnel" = "Njia ya reli";
+
+"type.railway.rail.service.tunnel" = "Njia ya reli";
 
 "type.railway.station" = "Train Station";
 
@@ -3002,6 +3062,8 @@
 "type.railway.station.subway.tashkent" = "Subway Station";
 
 "type.railway.station.subway.tbilisi" = "Subway Station";
+
+"type.railway.station.subway.tehran" = "Subway Station";
 
 "type.railway.station.subway.tianjin" = "Subway Station";
 
@@ -3229,6 +3291,8 @@
 
 "type.railway.subway_entrance.tbilisi" = "Lango la kuingilia stesheni ya reli";
 
+"type.railway.subway_entrance.tehran" = "Lango la kuingilia stesheni ya reli";
+
 "type.railway.subway_entrance.tianjin" = "Lango la kuingilia stesheni ya reli";
 
 "type.railway.subway_entrance.tokyo" = "Lango la kuingilia stesheni ya reli";
@@ -3255,17 +3319,11 @@
 
 "type.railway.tram_stop" = "Tram Stop";
 
-"type.railway.yard" = "Railway Yard";
-
-"type.railway.yard.bridge" = "Railway Yard Bridge";
-
-"type.railway.yard.tunnel" = "Railway Yard Tunnel";
-
 "type.route" = "Route";
 
 "type.route.ferry" = "Ferry";
 
-"type.route.shuttle_train" = "Shuttle Train";
+"type.route.shuttle_train" = "route-shuttle_train";
 
 "type.shop" = "Shop";
 
@@ -3637,7 +3695,7 @@
 
 "type.waterway.canal.tunnel" = "Canal Tunnel";
 
-"type.waterway.fish_pass" = "Fish Pass";
+"type.waterway.fish_pass" = "Ngazi ya samaki";
 
 "type.waterway.dam" = "Dam";
 
@@ -3710,3 +3768,7 @@
 "type.piste_type.sled" = "Sledding Piste";
 
 "type.amenity.events_venue" = "Ukumbi wa Matukio";
+
+"type.shop.auction" = "Mnada";
+
+"type.shop.collector" = "Mikusanyiko";

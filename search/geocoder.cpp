@@ -1220,10 +1220,12 @@ void Geocoder::ProcessStreets(BaseContext & ctx, CentersFilter const & centers, 
   vector<PredictionT> predictions;
   StreetsMatcher::Go(ctx, streets, *m_filter, m_params, predictions);
 
-  // Iterating from best to worst predictions here. Make "Relaxed" results for the best prediction only
-  // to avoid dummy streets results, matched by very _common_ tokens.
+  // Iterating from best to worst predictions here. Make "Relaxed" results for the best probability.
   for (size_t i = 0; i < predictions.size(); ++i)
-    CreateStreetsLayerAndMatchLowerLayers(ctx, predictions[i], centers, i == 0 /* makeRelaxed */);
+  {
+    CreateStreetsLayerAndMatchLowerLayers(ctx, predictions[i], centers,
+                                          predictions[0].SameForRelaxedMatch(predictions[i]) /* makeRelaxed */);
+  }
 }
 
 void Geocoder::GreedilyMatchStreetsWithSuburbs(BaseContext & ctx, CentersFilter const & centers)
@@ -1436,8 +1438,8 @@ void Geocoder::MatchPOIsAndBuildings(BaseContext & ctx, size_t curToken, CBV con
       }
     }
 
-    // Following code creates a fake layer with buildings and
-    // intersects it with the streets layer.
+    // Following code creates a fake TYPE_BUILDING layer and intersects it with the streets layer.
+    // Controversial: we can emit streets like buildings here. Filtered in IsFakeBuildingButStreet().
     layers.emplace_back();
     SCOPE_GUARD(cleanupGuard, [&]{ layers.pop_back(); });
 
@@ -1445,7 +1447,8 @@ void Geocoder::MatchPOIsAndBuildings(BaseContext & ctx, size_t curToken, CBV con
     InitLayer(Model::TYPE_BUILDING, m_postcodes.m_tokenRange, layer);
 
     vector<uint32_t> features;
-    m_postcodes.m_countryFeatures.ForEach([&features](uint64_t bit) {
+    m_postcodes.m_countryFeatures.ForEach([&features](uint64_t bit)
+    {
       features.push_back(base::asserted_cast<uint32_t>(bit));
     });
     layer.m_sortedFeatures = &features;
@@ -1683,8 +1686,12 @@ void Geocoder::FindPaths(BaseContext & ctx)
     return true;
   };
 
-  m_finder.ForEachReachableVertex(*m_matcher, sortedLayers, [&](IntersectionResult const & result) {
+  m_finder.ForEachReachableVertex(*m_matcher, sortedLayers, [&](IntersectionResult const & result)
+  {
     ASSERT(result.IsValid(), ());
+    if (result.IsFakeBuildingButStreet())
+      return;
+
     EmitResult(ctx, m_context->GetId(), result.InnermostResult(), innermostLayer.m_type,
                innermostLayer.m_tokenRange, &result, ctx.AllTokensUsed(),
                isExactMatch(ctx, result));

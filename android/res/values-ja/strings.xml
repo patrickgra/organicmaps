@@ -71,8 +71,10 @@
 	<string name="bookmark_color">ブックマーク表示色</string>
 	<!-- Add Bookmark list dialog - hint when the list name is empty -->
 	<string name="bookmark_set_name">ブックマークセット名称</string>
-	<!-- "Bookmarks" dialog title, please also edit it in iphone/plist.txt -->
+	<!-- Should be used in the bookmarks-only context, see bookmarks_and_tracks if tracks are also implied. -->
 	<string name="bookmarks">ブックマーク</string>
+	<!-- "Bookmarks and Tracks" dialog title, also sync it with iphone/plist.txt -->
+	<string name="bookmarks_and_tracks">ブックマークとトラック</string>
 	<!-- Default bookmark list name -->
 	<string name="core_my_places">マイロケーション</string>
 	<!-- Add bookmark dialog - bookmark name -->
@@ -111,6 +113,8 @@
 	<string name="parking">駐車場</string>
 	<!-- Search category for clothes/shoes/gifts/jewellery/sport shops; any changes should be duplicated in categories.txt @shopping! -->
 	<string name="shopping">ショッピング</string>
+	<!-- Search category for second_hand/charity/antique/auction shops; any changes should be duplicated in categories.txt @secondhand! -->
+	<string name="secondhand">中古品</string>
 	<!-- Search category for places to stay; any changes should be duplicated in categories.txt @hotel! -->
 	<string name="hotel">ホテル</string>
 	<!-- Search category sight seeings and touristic attractions; any changes should be duplicated in categories.txt @tourism! -->
@@ -468,12 +472,12 @@
 	<string name="current_location_unknown_message">現在地が不明です。建物の中やトンネル内の可能性があります。</string>
 	<string name="current_location_unknown_continue_button">続ける</string>
 	<string name="current_location_unknown_stop_button">止める</string>
-	<string name="meter">m</string>
-	<string name="kilometer">km</string>
+	<string name="m">m</string>
+	<string name="km">km</string>
 	<string name="kilometers_per_hour">キロメートル毎時</string>
-	<string name="mile">マイル</string>
+	<string name="mi">マイル</string>
 	<!-- A unit of measure -->
-	<string name="foot">フィート</string>
+	<string name="ft">フィート</string>
 	<string name="miles_per_hour">マイル毎時</string>
 	<string name="hour">時間</string>
 	<string name="minute">分</string>
@@ -542,6 +546,8 @@
 	<string name="bookmark_lists_hide_all">すべて非表示</string>
 	<string name="bookmark_lists_show_all">すべて表示</string>
 	<string name="bookmarks_create_new_group">新しいリストを作成する</string>
+	<!-- Bookmark categories screen, button that opens folder selection dialog to import KML/KMZ/GPX/KMB files -->
+	<string name="bookmarks_import">ブックマークとトラックをインポートする</string>
 	<string name="bookmarks_error_message_share_general">アプリケーションエラーのため共有できません</string>
 	<string name="bookmarks_error_title_share_empty">共有エラー</string>
 	<string name="bookmarks_error_message_share_empty">空のリストは共有できません</string>
@@ -731,11 +737,13 @@
 	<string name="type.amenity.clinic">クリニック</string>
 	<string name="type.amenity.college">カレッジ</string>
 	<string name="type.amenity.community_centre">コミュニティセンター</string>
+	<string name="type.amenity.conference_centre">カンファレンスセンター</string>
 	<string name="type.amenity.courthouse">裁判所</string>
 	<string name="type.amenity.dentist">歯医者</string>
 	<string name="type.amenity.doctors">医院</string>
 	<string name="type.amenity.drinking_water">水飲み場</string>
 	<string name="type.amenity.driving_school">自動車教習所</string>
+	<string name="type.amenity.exhibition_centre">エキシビションセンター</string>
 	<string name="type.amenity.money_transfer">送金</string>
 	<string name="type.amenity.music_school">音楽学校</string>
 	<string name="type.amenity.language_school">語学学校</string>
@@ -840,6 +848,7 @@
 	<string name="type.barrier.lift_gate">ブームバリア</string>
 	<string name="type.barrier.retaining_wall">擁壁</string>
 	<string name="type.barrier.stile">回転扉</string>
+	<string name="type.barrier.turnstile">ターンスタイル</string>
 	<string name="type.barrier.swing_gate">ブームバリア</string>
 	<string name="type.barrier.toll_booth">料金所</string>
 	<string name="type.barrier.wall">壁</string>
@@ -855,6 +864,13 @@
 	<string name="type.boundary.administrative.8">行政境界</string>
 	<string name="type.boundary.administrative.9">行政境界</string>
 	<string name="type.boundary.national_park">国立公園</string>
+	<string name="type.boundary.protected_area">保護区域</string>
+	<string name="type.boundary.protected_area.1">保護区域</string>
+	<string name="type.boundary.protected_area.2">保護区域</string>
+	<string name="type.boundary.protected_area.3">保護区域</string>
+	<string name="type.boundary.protected_area.4">保護区域</string>
+	<string name="type.boundary.protected_area.5">保護区域</string>
+	<string name="type.boundary.protected_area.6">保護区域</string>
 	<string name="type.building">建物</string>
 	<string name="type.building.address">建物</string>
 	<string name="type.building.has_parts">建物</string>
@@ -977,6 +993,7 @@
 	<string name="type.entrance">エントランス</string>
 	<!-- This is for main/primary entrances, for secondary entrances see type.entrance -->
 	<string name="type.entrance.main">正面玄関</string>
+	<string name="type.entrance.exit">終了する</string>
 	<string name="type.healthcare.laboratory">医療研究所</string>
 	<string name="type.healthcare.physiotherapist">理学療法士</string>
 	<string name="type.healthcare.alternative">代替医療</string>
@@ -1076,6 +1093,8 @@
 	<string name="type.highway.road">ストリート</string>
 	<!-- These translations are used for all type.highway.*.bridge. -->
 	<string name="type.highway.road.bridge">橋</string>
+	<!-- A bridge structure outline. -->
+	<string name="type.man_made.bridge">橋</string>
 	<!-- These translations are used for all type.highway.*.tunnel. -->
 	<string name="type.highway.road.tunnel">トンネル</string>
 	<string name="type.highway.secondary">ストリート</string>
@@ -1196,6 +1215,7 @@
 	<string name="type.internet_access">インターネット</string>
 	<string name="type.internet_access.wlan">インターネット</string>
 	<string name="type.junction">交差点</string>
+	<string name="type.junction.circular">ラウンドアバウト</string>
 	<string name="type.junction.roundabout">ラウンドアバウト</string>
 	<string name="type.landuse">土地利用</string>
 	<string name="type.landuse.allotments">市民農園</string>
@@ -1413,16 +1433,32 @@
 	<string name="type.railway.preserved.bridge">保存鉄道(橋)</string>
 	<string name="type.railway.preserved.tunnel">保存鉄道(トンネル)</string>
 	<string name="type.railway.rail">鉄道</string>
+	<string name="type.railway.rail.highspeed">高速鉄道</string>
+	<string name="type.railway.rail.tourism">観光鉄道</string>
+	<string name="type.railway.rail.main">鉄道</string>
+	<!-- Includes ordinary railway=rail w/o more specific usage= and service= tags. -->
+	<string name="type.railway.rail.branch">二次鉄道</string>
+	<!-- Non-passenger utility tracks: industrial, military, test. -->
+	<string name="type.railway.rail.utility">実用鉄道</string>
+	<string name="type.railway.rail.spur">引き込み線</string>
+	<!-- Short service tracks: siding, yard, crossover. -->
+	<string name="type.railway.rail.service">補助線路</string>
 	<string name="type.railway.rail.bridge">鉄道(橋)</string>
-	<string name="type.railway.rail.motor_vehicle">鉄道</string>
+	<string name="type.railway.rail.highspeed.bridge">鉄道(橋)</string>
+	<string name="type.railway.rail.tourism.bridge">鉄道(橋)</string>
+	<string name="type.railway.rail.main.bridge">鉄道(橋)</string>
+	<string name="type.railway.rail.branch.bridge">鉄道(橋)</string>
+	<string name="type.railway.rail.utility.bridge">鉄道(橋)</string>
+	<string name="type.railway.rail.spur.bridge">鉄道(橋)</string>
+	<string name="type.railway.rail.service.bridge">鉄道(橋)</string>
 	<string name="type.railway.rail.tunnel">鉄道(鉄道)</string>
-	<string name="type.railway.razed">撤去済の鉄道</string>
-	<string name="type.railway.siding">側線</string>
-	<string name="type.railway.siding.bridge">側線(橋)</string>
-	<string name="type.railway.siding.tunnel">側線(トンネル)</string>
-	<string name="type.railway.spur">引き込み線</string>
-	<string name="type.railway.spur.bridge">引き込み線(橋)</string>
-	<string name="type.railway.spur.tunnel">引き込み線(トンネル)</string>
+	<string name="type.railway.rail.highspeed.tunnel">鉄道(鉄道)</string>
+	<string name="type.railway.rail.tourism.tunnel">鉄道(鉄道)</string>
+	<string name="type.railway.rail.main.tunnel">鉄道(鉄道)</string>
+	<string name="type.railway.rail.branch.tunnel">鉄道(鉄道)</string>
+	<string name="type.railway.rail.utility.tunnel">鉄道(鉄道)</string>
+	<string name="type.railway.rail.spur.tunnel">鉄道(鉄道)</string>
+	<string name="type.railway.rail.service.tunnel">鉄道(鉄道)</string>
 	<string name="type.railway.station">鉄道駅</string>
 	<string name="type.railway.station.funicular">フニクラ</string>
 	<string name="type.railway.station.light_rail">鉄道駅</string>
@@ -1528,6 +1564,7 @@
 	<string name="type.railway.station.subway.taoyuan">地下鉄</string>
 	<string name="type.railway.station.subway.tashkent">地下鉄</string>
 	<string name="type.railway.station.subway.tbilisi">地下鉄</string>
+	<string name="type.railway.station.subway.tehran">地下鉄</string>
 	<string name="type.railway.station.subway.tianjin">地下鉄</string>
 	<string name="type.railway.station.subway.tokyo">地下鉄</string>
 	<string name="type.railway.station.subway.valencia">地下鉄</string>
@@ -1638,6 +1675,7 @@
 	<string name="type.railway.subway_entrance.taoyuan">地下鉄入り口</string>
 	<string name="type.railway.subway_entrance.tashkent">地下鉄入り口</string>
 	<string name="type.railway.subway_entrance.tbilisi">地下鉄入り口</string>
+	<string name="type.railway.subway_entrance.tehran">地下鉄入り口</string>
 	<string name="type.railway.subway_entrance.tianjin">地下鉄入り口</string>
 	<string name="type.railway.subway_entrance.tokyo">地下鉄入り口</string>
 	<string name="type.railway.subway_entrance.valencia">地下鉄入り口</string>
@@ -1651,9 +1689,6 @@
 	<string name="type.railway.tram.bridge">トラム(橋)</string>
 	<string name="type.railway.tram.tunnel">トラム(トンネル)</string>
 	<string name="type.railway.tram_stop">トラム</string>
-	<string name="type.railway.yard">ヤード</string>
-	<string name="type.railway.yard.bridge">ヤード(橋)</string>
-	<string name="type.railway.yard.tunnel">ヤード(トンネル)</string>
 	<string name="type.route">ルート</string>
 	<string name="type.route.ferry">フェリー航路</string>
 	<string name="type.shop">買い物</string>
@@ -1841,6 +1876,7 @@
 	<string name="type.waterway">水域</string>
 	<string name="type.waterway.canal">運河</string>
 	<string name="type.waterway.canal.tunnel">運河</string>
+	<string name="type.waterway.fish_pass">魚道</string>
 	<string name="type.waterway.dam">ダム</string>
 	<string name="type.waterway.ditch">排水路</string>
 	<string name="type.waterway.ditch.tunnel">排水路</string>
@@ -1862,4 +1898,6 @@
 	<string name="type.wheelchair.no">車椅子でのアクセスなし</string>
 	<string name="type.wheelchair.yes">車椅子でのアクセスあり</string>
 	<string name="type.amenity.events_venue">イベント会場</string>
+	<string name="type.shop.auction">オークション</string>
+	<string name="type.shop.collector">コレクタブル</string>
 </resources>

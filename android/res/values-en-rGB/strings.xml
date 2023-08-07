@@ -36,12 +36,15 @@
 
 	<!-- SECTION: Types -->
 	<string name="type.amenity.arts_centre">Arts Centre</string>
+	<string name="type.amenity.conference_centre">Conference Centre</string>
+	<string name="type.amenity.exhibition_centre">Exhibition Centre</string>
 	<string name="type.amenity.fuel">Petrol Station</string>
 	<string name="type.amenity.loading_dock">Loading Bay</string>
 	<string name="type.amenity.post_box">Postbox</string>
 
 	<!-- SECTION: Types: Recycling -->
 	<string name="type.amenity.recycling.centre">Recycling Centre</string>
+	<string name="type.amenity.taxi">Taxi Rank</string>
 	<string name="type.amenity.waste_basket">Rubbish Bin</string>
 	<string name="type.cuisine.donut">Doughnut</string>
 	<string name="type.cuisine.savory_pancakes">Savoury Pancakes</string>
@@ -155,6 +158,7 @@
 	<string name="type.railway.station.subway.taoyuan">Metro Station</string>
 	<string name="type.railway.station.subway.tashkent">Metro Station</string>
 	<string name="type.railway.station.subway.tbilisi">Metro Station</string>
+	<string name="type.railway.station.subway.tehran">Metro Station</string>
 	<string name="type.railway.station.subway.tianjin">Metro Station</string>
 	<string name="type.railway.station.subway.tokyo">Metro Station</string>
 	<string name="type.railway.station.subway.valencia">Metro Station</string>
@@ -268,6 +272,7 @@
 	<string name="type.railway.subway_entrance.taoyuan">Metro Entrance</string>
 	<string name="type.railway.subway_entrance.tashkent">Metro Entrance</string>
 	<string name="type.railway.subway_entrance.tbilisi">Metro Entrance</string>
+	<string name="type.railway.subway_entrance.tehran">Metro Entrance</string>
 	<string name="type.railway.subway_entrance.tianjin">Metro Entrance</string>
 	<string name="type.railway.subway_entrance.tokyo">Metro Entrance</string>
 	<string name="type.railway.subway_entrance.valencia">Metro Entrance</string>

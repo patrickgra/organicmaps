@@ -71,8 +71,11 @@
 /* "Bookmark Lists" dialog title */
 "bookmark_sets" = "书签集";
 
-/* "Bookmarks" dialog title, please also edit it in iphone/plist.txt */
+/* Should be used in the bookmarks-only context, see bookmarks_and_tracks if tracks are also implied. */
 "bookmarks" = "书签";
+
+/* "Bookmarks and Tracks" dialog title, also sync it with iphone/plist.txt */
+"bookmarks_and_tracks" = "书签和轨迹";
 
 /* Default bookmark list name */
 "core_my_places" = "我的位置";
@@ -106,6 +109,9 @@
 
 /* Search category for clothes/shoes/gifts/jewellery/sport shops; any changes should be duplicated in categories.txt @shopping! */
 "shopping" = "购物";
+
+/* Search category for second_hand/charity/antique/auction shops; any changes should be duplicated in categories.txt @secondhand! */
+"secondhand" = "二手货";
 
 /* Search category for places to stay; any changes should be duplicated in categories.txt @hotel! */
 "hotel" = "旅店";
@@ -762,24 +768,22 @@
 /* iOS Dialog for the case when the location permission is not granted */
 "location_services_disabled_3" = "3. 使用应用时选择";
 
-"meter" = "米";
+"m" = "米";
 
-"kilometer" = "公里";
+"km" = "公里";
 
 "kilometers_per_hour" = "公里每小时";
 
-"mile" = "英里";
+"mi" = "英里";
 
 /* A unit of measure */
-"foot" = "英尺";
+"ft" = "英尺";
 
 "miles_per_hour" = "英里每小时";
 
 "hour" = "小時";
 
 "minute" = "分鐘";
-
-"placepage_place_description" = "说明";
 
 "placepage_more_button" = "更多";
 
@@ -1339,6 +1343,8 @@
 
 "type.amenity.community_centre" = "社区活动中心";
 
+"type.amenity.conference_centre" = "会议中心";
+
 "type.amenity.courthouse" = "法院";
 
 "type.amenity.dentist" = "牙科医生";
@@ -1348,6 +1354,8 @@
 "type.amenity.drinking_water" = "饮用水";
 
 "type.amenity.driving_school" = "驾校";
+
+"type.amenity.exhibition_centre" = "展览中心";
 
 "type.amenity.money_transfer" = "汇款";
 
@@ -1586,6 +1594,8 @@
 
 "type.barrier.stile" = "台阶";
 
+"type.barrier.turnstile" = "旋转门";
+
 "type.barrier.swing_gate" = "道闸";
 
 "type.barrier.toll_booth" = "收费站";
@@ -1633,6 +1643,20 @@
 "type.boundary.administrative.suburb" = "市郊行政区域界线";
 
 "type.boundary.national_park" = "国家公园";
+
+"type.boundary.protected_area" = "保护区";
+
+"type.boundary.protected_area.1" = "保护区";
+
+"type.boundary.protected_area.2" = "保护区";
+
+"type.boundary.protected_area.3" = "保护区";
+
+"type.boundary.protected_area.4" = "保护区";
+
+"type.boundary.protected_area.5" = "保护区";
+
+"type.boundary.protected_area.6" = "保护区";
 
 "type.building" = "建筑物";
 
@@ -1881,6 +1905,8 @@
 /* This is for main/primary entrances, for secondary entrances see type.entrance */
 "type.entrance.main" = "主要入口";
 
+"type.entrance.exit" = "退出";
+
 "type.healthcare.laboratory" = "医学实验室";
 
 "type.healthcare.physiotherapist" = "物理治疗师";
@@ -2056,6 +2082,9 @@
 
 /* These translations are used for all type.highway.*.bridge. */
 "type.highway.road.bridge" = "桥";
+
+/* A bridge structure outline. */
+"type.man_made.bridge" = "桥";
 
 /* These translations are used for all type.highway.*.tunnel. */
 "type.highway.road.tunnel" = "隧道";
@@ -2304,6 +2333,8 @@
 "type.internet_access.wlan" = "无线热点";
 
 "type.junction" = "交叉口";
+
+"type.junction.circular" = "环岛";
 
 "type.junction.roundabout" = "环岛";
 
@@ -2773,25 +2804,54 @@
 
 "type.railway.rail" = "铁路轨道";
 
+"type.railway.rail.highspeed" = "高速铁路";
+
+"type.railway.rail.tourism" = "观光性铁路";
+
+"type.railway.rail.main" = "铁路";
+
+/* Includes ordinary railway=rail w/o more specific usage= and service= tags. */
+"type.railway.rail.branch" = "铁路支线";
+
+/* Non-passenger utility tracks: industrial, military, test. */
+"type.railway.rail.utility" = "公共铁路";
+
+"type.railway.rail.spur" = "铁路岔线";
+
+/* Short service tracks: siding, yard, crossover. */
+"type.railway.rail.service" = "服务性铁路";
+
 "type.railway.rail.bridge" = "铁路轨道";
 
-"type.railway.rail.motor_vehicle" = "铁路轨道";
+"type.railway.rail.highspeed.bridge" = "铁路轨道";
+
+"type.railway.rail.tourism.bridge" = "铁路轨道";
+
+"type.railway.rail.main.bridge" = "铁路轨道";
+
+"type.railway.rail.branch.bridge" = "铁路轨道";
+
+"type.railway.rail.utility.bridge" = "铁路轨道";
+
+"type.railway.rail.spur.bridge" = "铁路轨道";
+
+"type.railway.rail.service.bridge" = "铁路轨道";
 
 "type.railway.rail.tunnel" = "铁路轨道";
 
-"type.railway.razed" = "Razed Rail";
+"type.railway.rail.highspeed.tunnel" = "铁路轨道";
 
-"type.railway.siding" = "Siding Rail";
+"type.railway.rail.tourism.tunnel" = "铁路轨道";
 
-"type.railway.siding.bridge" = "Siding Rail Bridge";
+"type.railway.rail.main.tunnel" = "铁路轨道";
 
-"type.railway.siding.tunnel" = "Siding Rail Tunnel";
+"type.railway.rail.branch.tunnel" = "铁路轨道";
 
-"type.railway.spur" = "Spur Rail";
+"type.railway.rail.utility.tunnel" = "铁路轨道";
 
-"type.railway.spur.bridge" = "Spur Rail Bridge";
+"type.railway.rail.spur.tunnel" = "铁路轨道";
 
-"type.railway.spur.tunnel" = "Spur Rail Tunnel";
+"type.railway.rail.service.tunnel" = "铁路轨道";
 
 "type.railway.station" = "火车站";
 
@@ -3002,6 +3062,8 @@
 "type.railway.station.subway.tashkent" = "地铁车站";
 
 "type.railway.station.subway.tbilisi" = "地铁车站";
+
+"type.railway.station.subway.tehran" = "地铁车站";
 
 "type.railway.station.subway.tianjin" = "地铁车站";
 
@@ -3229,6 +3291,8 @@
 
 "type.railway.subway_entrance.tbilisi" = "地铁出入口";
 
+"type.railway.subway_entrance.tehran" = "地铁出入口";
+
 "type.railway.subway_entrance.tianjin" = "地铁出入口";
 
 "type.railway.subway_entrance.tokyo" = "地铁出入口";
@@ -3255,17 +3319,11 @@
 
 "type.railway.tram_stop" = "电车站";
 
-"type.railway.yard" = "铁路货场";
-
-"type.railway.yard.bridge" = "铁路货场";
-
-"type.railway.yard.tunnel" = "铁路货场";
-
 "type.route" = "线路";
 
 "type.route.ferry" = "航线";
 
-"type.route.shuttle_train" = "Shuttle Train";
+"type.route.shuttle_train" = "route-shuttle_train";
 
 "type.shop" = "商店";
 
@@ -3637,7 +3695,7 @@
 
 "type.waterway.canal.tunnel" = "运河";
 
-"type.waterway.fish_pass" = "Fish Pass";
+"type.waterway.fish_pass" = "鱼梯";
 
 "type.waterway.dam" = "水坝";
 
@@ -3710,3 +3768,7 @@
 "type.piste_type.sled" = "Sledding Piste";
 
 "type.amenity.events_venue" = "活动场所";
+
+"type.shop.auction" = "拍卖会";
+
+"type.shop.collector" = "收藏品";

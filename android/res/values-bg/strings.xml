@@ -74,8 +74,10 @@
 	<string name="bookmark_color">Цвят на отметка</string>
 	<!-- Add Bookmark list dialog - hint when the list name is empty -->
 	<string name="bookmark_set_name">Име на група</string>
-	<!-- "Bookmarks" dialog title, please also edit it in iphone/plist.txt -->
+	<!-- Should be used in the bookmarks-only context, see bookmarks_and_tracks if tracks are also implied. -->
 	<string name="bookmarks">Отметки</string>
+	<!-- "Bookmarks and Tracks" dialog title, also sync it with iphone/plist.txt -->
+	<string name="bookmarks_and_tracks">Отметки и пътеки</string>
 	<!-- Default bookmark list name -->
 	<string name="core_my_places">Мои места</string>
 	<!-- Add bookmark dialog - bookmark name -->
@@ -114,6 +116,8 @@
 	<string name="parking">Паркинг</string>
 	<!-- Search category for clothes/shoes/gifts/jewellery/sport shops; any changes should be duplicated in categories.txt @shopping! -->
 	<string name="shopping">Шопинг</string>
+	<!-- Search category for second_hand/charity/antique/auction shops; any changes should be duplicated in categories.txt @secondhand! -->
+	<string name="secondhand">Втора употреба</string>
 	<!-- Search category for places to stay; any changes should be duplicated in categories.txt @hotel! -->
 	<string name="hotel">Хотел</string>
 	<!-- Search category sight seeings and touristic attractions; any changes should be duplicated in categories.txt @tourism! -->
@@ -463,11 +467,11 @@
 	<string name="current_location_unknown_message">Настоящото местоположение е неизвестно. Може би се намирате в сграда или тунел.</string>
 	<string name="current_location_unknown_continue_button">Продължаване</string>
 	<string name="current_location_unknown_stop_button">Стоп</string>
-	<string name="meter">м</string>
-	<string name="kilometer">км</string>
-	<string name="mile">ми</string>
+	<string name="m">м</string>
+	<string name="km">км</string>
+	<string name="mi">ми</string>
 	<!-- A unit of measure -->
-	<string name="foot">фут</string>
+	<string name="ft">фут</string>
 	<string name="hour">ч</string>
 	<string name="minute">мин</string>
 	<string name="placepage_more_button">Още</string>
@@ -535,8 +539,8 @@
 	<string name="bookmark_lists_hide_all">Скриване на всичко</string>
 	<string name="bookmark_lists_show_all">Показване на всичко</string>
 	<string name="bookmarks_create_new_group">Създаване на нов списък</string>
-	<!-- Bookmark categories screen -->
-	<string name="bookmarks_import">Импортиране на отметки</string>
+	<!-- Bookmark categories screen, button that opens folder selection dialog to import KML/KMZ/GPX/KMB files -->
+	<string name="bookmarks_import">Импортиране на отметки и песни</string>
 	<string name="bookmarks_error_message_share_general">Не е възможно споделяне поради грешка в приложението</string>
 	<string name="bookmarks_error_title_share_empty">Грешка при споделяне</string>
 	<string name="bookmarks_error_message_share_empty">Не може да се споделя празен списък</string>
@@ -668,7 +672,9 @@
 	<string name="type.amenity.charging_station.bicycle">Станция за зареждане на велосипеди</string>
 	<string name="type.amenity.charging_station.motorcar">Станция за зареждане на автомобили</string>
 	<string name="type.leisure.bowling_alley">Боулинг писта</string>
+	<string name="type.amenity.conference_centre">Конферентен център</string>
 	<string name="type.amenity.driving_school">Автошкола</string>
+	<string name="type.amenity.exhibition_centre">Изложбен център</string>
 	<string name="type.amenity.money_transfer">Паричен превод</string>
 	<string name="type.amenity.music_school">Музикално училище</string>
 	<string name="type.amenity.language_school">Езиково училище</string>
@@ -689,6 +695,14 @@
 	<string name="type.recycling.batteries">Батерии</string>
 	<string name="type.barrier.city_wall">Градска стена</string>
 	<string name="type.barrier.ditch">Ров</string>
+	<string name="type.barrier.turnstile">Турникет</string>
+	<string name="type.boundary.protected_area">Защитена местност</string>
+	<string name="type.boundary.protected_area.1">Защитена местност</string>
+	<string name="type.boundary.protected_area.2">Защитена местност</string>
+	<string name="type.boundary.protected_area.3">Защитена местност</string>
+	<string name="type.boundary.protected_area.4">Защитена местност</string>
+	<string name="type.boundary.protected_area.5">Защитена местност</string>
+	<string name="type.boundary.protected_area.6">Защитена местност</string>
 	<string name="type.cemetery.grave">Гроб</string>
 	<string name="type.craft">Занаяти</string>
 	<string name="type.craft.beekeeper">Пчелар</string>
@@ -716,6 +730,7 @@
 	<string name="type.cuisine.deli">Деликатеси</string>
 	<!-- This is for main/primary entrances, for secondary entrances see type.entrance -->
 	<string name="type.entrance.main">Главния вход</string>
+	<string name="type.entrance.exit">Изход</string>
 	<string name="type.healthcare.laboratory">Медицинска лаборатория</string>
 	<string name="type.healthcare.physiotherapist">Физиотерапевт</string>
 	<string name="type.healthcare.alternative">Алтернативна медицина</string>
@@ -775,6 +790,8 @@
 	<string name="type.highway.residential.tunnel">Тунел</string>
 	<!-- These translations are used for all type.highway.*.bridge. -->
 	<string name="type.highway.road.bridge">Мост</string>
+	<!-- A bridge structure outline. -->
+	<string name="type.man_made.bridge">Мост</string>
 	<!-- These translations are used for all type.highway.*.tunnel. -->
 	<string name="type.highway.road.tunnel">Тунел</string>
 	<!-- These translations are used for all type.highway.*.bridge. -->
@@ -944,6 +961,32 @@
 	<string name="type.power.plant.solar">Слънчева електроцентрала</string>
 	<string name="type.power.plant.wind">Вятърна електроцентрала</string>
 	<string name="type.railway.funicular">Фуникуляр</string>
+	<string name="type.railway.rail.highspeed">Високоскоростна железница</string>
+	<string name="type.railway.rail.tourism">Туристическа железница</string>
+	<string name="type.railway.rail.main">Железопътна линия</string>
+	<!-- Includes ordinary railway=rail w/o more specific usage= and service= tags. -->
+	<string name="type.railway.rail.branch">Вторична железница</string>
+	<!-- Non-passenger utility tracks: industrial, military, test. -->
+	<string name="type.railway.rail.utility">Сервизна железница</string>
+	<string name="type.railway.rail.spur">Железопътна отбивка</string>
+	<!-- Short service tracks: siding, yard, crossover. -->
+	<string name="type.railway.rail.service">Спомагателен релсов път</string>
+	<string name="type.railway.rail.bridge">Железопътен мост</string>
+	<string name="type.railway.rail.highspeed.bridge">Железопътен мост</string>
+	<string name="type.railway.rail.tourism.bridge">Железопътен мост</string>
+	<string name="type.railway.rail.main.bridge">Железопътен мост</string>
+	<string name="type.railway.rail.branch.bridge">Железопътен мост</string>
+	<string name="type.railway.rail.utility.bridge">Железопътен мост</string>
+	<string name="type.railway.rail.spur.bridge">Железопътен мост</string>
+	<string name="type.railway.rail.service.bridge">Железопътен мост</string>
+	<string name="type.railway.rail.tunnel">Железопътен тунел</string>
+	<string name="type.railway.rail.highspeed.tunnel">Железопътен тунел</string>
+	<string name="type.railway.rail.tourism.tunnel">Железопътен тунел</string>
+	<string name="type.railway.rail.main.tunnel">Железопътен тунел</string>
+	<string name="type.railway.rail.branch.tunnel">Железопътен тунел</string>
+	<string name="type.railway.rail.utility.tunnel">Железопътен тунел</string>
+	<string name="type.railway.rail.spur.tunnel">Железопътен тунел</string>
+	<string name="type.railway.rail.service.tunnel">Железопътен тунел</string>
 	<string name="type.railway.station.funicular">Фуникуляр</string>
 	<string name="type.shop.bathroom_furnishing">Обзавеждане за баня</string>
 	<string name="type.shop.cannabis">Магазин за канабис</string>
@@ -1018,5 +1061,8 @@
 	<string name="type.tourism.information.guidepost">Пътеводител</string>
 	<string name="type.tourism.information.map">Карта</string>
 	<string name="type.tourism.information.office">Туристически офис</string>
+	<string name="type.waterway.fish_pass">Стълба за риба</string>
 	<string name="type.amenity.events_venue">Място за провеждане на събития</string>
+	<string name="type.shop.auction">Търг</string>
+	<string name="type.shop.collector">Колекционерски стоки</string>
 </resources>

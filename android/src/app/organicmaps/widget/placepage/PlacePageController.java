@@ -205,8 +205,18 @@ public class PlacePageController extends Fragment implements
     return items;
   }
 
+  private void setPlacePageInteractions(boolean enabled)
+  {
+    // Prevent place page scrolling when playing the close animation
+    mPlacePageBehavior.setDraggable(enabled);
+    mPlacePage.setNestedScrollingEnabled(enabled);
+    // Prevent user interaction with place page content when closing
+    mPlacePageContainer.setEnabled(enabled);
+  }
+
   private void close()
   {
+    setPlacePageInteractions(false);
     mPlacePageBehavior.setState(BottomSheetBehavior.STATE_HIDDEN);
   }
 
@@ -343,6 +353,12 @@ public class PlacePageController extends Fragment implements
   }
 
   @Override
+  public void onPlacePageRequestClose()
+  {
+    mPlacePageBehavior.setState(BottomSheetBehavior.STATE_HIDDEN);
+  }
+
+  @Override
   public void onPlacePageButtonClick(PlacePageButtons.ButtonType item)
   {
     switch (item)
@@ -350,10 +366,6 @@ public class PlacePageController extends Fragment implements
       case BOOKMARK_SAVE:
       case BOOKMARK_DELETE:
         onBookmarkBtnClicked();
-        break;
-
-      case SHARE:
-        onShareBtnClicked();
         break;
 
       case BACK:
@@ -392,17 +404,15 @@ public class PlacePageController extends Fragment implements
 
   private void onBookmarkBtnClicked()
   {
+    // mMapObject is set to null when the place page closes
+    // We don't want users to interact with the buttons when the PP is closing
+    if (mMapObject == null)
+      return;
     // No need to call setMapObject here as the native methods will reopen the place page
     if (MapObject.isOfType(MapObject.BOOKMARK, mMapObject))
       Framework.nativeDeleteBookmarkFromMapObject();
     else
       BookmarkManager.INSTANCE.addNewBookmark(mMapObject.getLat(), mMapObject.getLon());
-  }
-
-  private void onShareBtnClicked()
-  {
-    if (mMapObject != null)
-      SharingUtils.shareMapObject(requireContext(), mMapObject);
   }
 
   private void onBackBtnClicked()
@@ -480,7 +490,8 @@ public class PlacePageController extends Fragment implements
 
   private void onAvoidBtnClicked(@NonNull RoadType roadType)
   {
-    mPlacePageRouteSettingsListener.onPlacePageRequestToggleRouteSettings(roadType);
+    if (mMapObject != null)
+      mPlacePageRouteSettingsListener.onPlacePageRequestToggleRouteSettings(roadType);
   }
 
   private void removePlacePageFragments()
@@ -566,7 +577,6 @@ public class PlacePageController extends Fragment implements
                       ? PlacePageButtons.ButtonType.BOOKMARK_DELETE
                       : PlacePageButtons.ButtonType.BOOKMARK_SAVE);
       }
-      buttons.add(PlacePageButtons.ButtonType.SHARE);
     }
     mViewModel.setCurrentButtons(buttons);
   }
@@ -577,6 +587,7 @@ public class PlacePageController extends Fragment implements
     mMapObject = mapObject;
     if (mapObject != null)
     {
+      setPlacePageInteractions(true);
       // Only collapse the place page if the data is different from the one already available
       mShouldCollapse = PlacePageUtils.isHiddenState(mPlacePageBehavior.getState()) || !MapObject.same(mPreviousMapObject, mMapObject);
       mPreviousMapObject = mMapObject;
@@ -586,7 +597,8 @@ public class PlacePageController extends Fragment implements
           mapObject,
           MapObject.isOfType(MapObject.API_POINT, mMapObject),
           !MapObject.isOfType(MapObject.MY_POSITION, mMapObject));
-    } else
+    }
+    else
       close();
   }
 

@@ -71,8 +71,10 @@
 	<string name="bookmark_color">Bladwijzer-kleur</string>
 	<!-- Add Bookmark list dialog - hint when the list name is empty -->
 	<string name="bookmark_set_name">Naam van bladwijzergroep</string>
-	<!-- "Bookmarks" dialog title, please also edit it in iphone/plist.txt -->
+	<!-- Should be used in the bookmarks-only context, see bookmarks_and_tracks if tracks are also implied. -->
 	<string name="bookmarks">Bladwijzers</string>
+	<!-- "Bookmarks and Tracks" dialog title, also sync it with iphone/plist.txt -->
+	<string name="bookmarks_and_tracks">Bladwijzers en tracks</string>
 	<!-- Default bookmark list name -->
 	<string name="core_my_places">Mijn plaatsen</string>
 	<!-- Add bookmark dialog - bookmark name -->
@@ -123,6 +125,8 @@
 	<string name="parking">Parkeerplaats</string>
 	<!-- Search category for clothes/shoes/gifts/jewellery/sport shops; any changes should be duplicated in categories.txt @shopping! -->
 	<string name="shopping">Winkelen</string>
+	<!-- Search category for second_hand/charity/antique/auction shops; any changes should be duplicated in categories.txt @secondhand! -->
+	<string name="secondhand">Tweedehands</string>
 	<!-- Search category for places to stay; any changes should be duplicated in categories.txt @hotel! -->
 	<string name="hotel">Hotel</string>
 	<!-- Search category sight seeings and touristic attractions; any changes should be duplicated in categories.txt @tourism! -->
@@ -492,12 +496,12 @@
 	<string name="current_location_unknown_message">Huidige locatie is onbekend. Misschien bevindt u zich in een gebouw of tunnel.</string>
 	<string name="current_location_unknown_continue_button">Doorgaan</string>
 	<string name="current_location_unknown_stop_button">Stoppen</string>
-	<string name="meter">m</string>
-	<string name="kilometer">km</string>
+	<string name="m">m</string>
+	<string name="km">km</string>
 	<string name="kilometers_per_hour">km/h</string>
-	<string name="mile">mijl</string>
+	<string name="mi">mijl</string>
 	<!-- A unit of measure -->
-	<string name="foot">voet</string>
+	<string name="ft">voet</string>
 	<string name="miles_per_hour">mph</string>
 	<string name="hour">u</string>
 	<string name="minute">min</string>
@@ -573,8 +577,8 @@
 	<string name="bookmark_lists_hide_all">Alles verbergen</string>
 	<string name="bookmark_lists_show_all">Alles weergeven</string>
 	<string name="bookmarks_create_new_group">Nieuwe lijst maken</string>
-	<!-- Bookmark categories screen -->
-	<string name="bookmarks_import">Bladwijzers importeren</string>
+	<!-- Bookmark categories screen, button that opens folder selection dialog to import KML/KMZ/GPX/KMB files -->
+	<string name="bookmarks_import">Bladwijzers en tracks importeren</string>
 	<string name="bookmarks_error_message_share_general">Delen is onmogelijk wegens een toepassingsfout</string>
 	<string name="bookmarks_error_title_share_empty">Deelfout</string>
 	<string name="bookmarks_error_message_share_empty">Een lege lijst kan niet gedeeld worden</string>
@@ -598,7 +602,7 @@
 	  <item quantity="other">%d plaatsen</item>
 	</plurals>
 	<plurals name="tracks">
-	  <item quantity="other">%d routes</item>
+	  <item quantity="other">%d tracks</item>
 	</plurals>
 	<!-- used to choose between the Google and Android location services -->
 	<string name="subtittle_opt_out">Tracking-instellingen</string>
@@ -779,11 +783,13 @@
 	<string name="type.amenity.clinic">Kliniek</string>
 	<string name="type.amenity.college">Hogeschool</string>
 	<string name="type.amenity.community_centre">Gemeenschapscentrum</string>
+	<string name="type.amenity.conference_centre">Conferentiecentrum</string>
 	<string name="type.amenity.courthouse">Rechtbank</string>
 	<string name="type.amenity.dentist">Tandarts</string>
 	<string name="type.amenity.doctors">Huisartsenpost</string>
 	<string name="type.amenity.drinking_water">Drinkwater</string>
 	<string name="type.amenity.driving_school">Rijschool</string>
+	<string name="type.amenity.exhibition_centre">Expositiecentrum</string>
 	<string name="type.amenity.money_transfer">Overschrijving</string>
 	<string name="type.amenity.music_school">Muziekschool</string>
 	<string name="type.amenity.language_school">Taalschool</string>
@@ -903,6 +909,7 @@
 	<string name="type.barrier.lift_gate">Slagboom</string>
 	<string name="type.barrier.retaining_wall">Keermuur</string>
 	<string name="type.barrier.stile">Tourniquet</string>
+	<string name="type.barrier.turnstile">Tourniquet</string>
 	<string name="type.barrier.swing_gate">Slagboom</string>
 	<string name="type.barrier.toll_booth">Tolhokje</string>
 	<string name="type.barrier.wall">Muur</string>
@@ -927,6 +934,13 @@
 	<string name="type.boundary.administrative.state">Staatsgrens</string>
 	<string name="type.boundary.administrative.suburb">Buitenwijkgrens</string>
 	<string name="type.boundary.national_park">Nationaal park</string>
+	<string name="type.boundary.protected_area">Beschermd gebied</string>
+	<string name="type.boundary.protected_area.1">Beschermd gebied</string>
+	<string name="type.boundary.protected_area.2">Beschermd gebied</string>
+	<string name="type.boundary.protected_area.3">Beschermd gebied</string>
+	<string name="type.boundary.protected_area.4">Beschermd gebied</string>
+	<string name="type.boundary.protected_area.5">Beschermd gebied</string>
+	<string name="type.boundary.protected_area.6">Beschermd gebied</string>
 	<string name="type.building">Gebouw</string>
 	<string name="type.building.address">Gebouw</string>
 	<string name="type.building.has_parts">Gebouw</string>
@@ -1050,6 +1064,7 @@
 	<string name="type.entrance">Ingang</string>
 	<!-- This is for main/primary entrances, for secondary entrances see type.entrance -->
 	<string name="type.entrance.main">Hoofdingang</string>
+	<string name="type.entrance.exit">Ga naar</string>
 	<string name="type.healthcare.laboratory">Medisch laboratorium</string>
 	<string name="type.healthcare.physiotherapist">Fysiotherapeut</string>
 	<string name="type.healthcare.alternative">Alternatieve geneeskunde</string>
@@ -1150,6 +1165,8 @@
 	<string name="type.highway.road">Straat</string>
 	<!-- These translations are used for all type.highway.*.bridge. -->
 	<string name="type.highway.road.bridge">Brug</string>
+	<!-- A bridge structure outline. -->
+	<string name="type.man_made.bridge">Brug</string>
 	<!-- These translations are used for all type.highway.*.tunnel. -->
 	<string name="type.highway.road.tunnel">Tunnel</string>
 	<string name="type.highway.secondary">Secundaire weg</string>
@@ -1270,6 +1287,7 @@
 	<string name="type.internet_access">Internet</string>
 	<string name="type.internet_access.wlan">Draadloos internet</string>
 	<string name="type.junction">Kruispunt</string>
+	<string name="type.junction.circular">Rotonde</string>
 	<string name="type.junction.roundabout">Rotonde</string>
 	<string name="type.landuse">Landgebruik</string>
 	<string name="type.landuse.allotments">Volkstuinen</string>
@@ -1499,16 +1517,32 @@
 	<string name="type.railway.preserved.bridge">Museumspoorbaanbrug</string>
 	<string name="type.railway.preserved.tunnel">Museumspoorbaantunnel</string>
 	<string name="type.railway.rail">Spoorlijn</string>
+	<string name="type.railway.rail.highspeed">Hogesnelheidstrein</string>
+	<string name="type.railway.rail.tourism">Toeristische spoorlijn</string>
+	<string name="type.railway.rail.main">Spoor</string>
+	<!-- Includes ordinary railway=rail w/o more specific usage= and service= tags. -->
+	<string name="type.railway.rail.branch">Secundaire spoorwegen</string>
+	<!-- Non-passenger utility tracks: industrial, military, test. -->
+	<string name="type.railway.rail.utility">Spoorwegen</string>
+	<string name="type.railway.rail.spur">Zijspoor</string>
+	<!-- Short service tracks: siding, yard, crossover. -->
+	<string name="type.railway.rail.service">Hulpspoor</string>
 	<string name="type.railway.rail.bridge">Treinspoorbrug</string>
-	<string name="type.railway.rail.motor_vehicle">Spoorweg</string>
+	<string name="type.railway.rail.highspeed.bridge">Treinspoorbrug</string>
+	<string name="type.railway.rail.tourism.bridge">Treinspoorbrug</string>
+	<string name="type.railway.rail.main.bridge">Treinspoorbrug</string>
+	<string name="type.railway.rail.branch.bridge">Treinspoorbrug</string>
+	<string name="type.railway.rail.utility.bridge">Treinspoorbrug</string>
+	<string name="type.railway.rail.spur.bridge">Treinspoorbrug</string>
+	<string name="type.railway.rail.service.bridge">Treinspoorbrug</string>
 	<string name="type.railway.rail.tunnel">Spoortunnel</string>
-	<string name="type.railway.razed">Verwijderde spoorbaan</string>
-	<string name="type.railway.siding">Nevenspoor</string>
-	<string name="type.railway.siding.bridge">Nevenspoor-brug</string>
-	<string name="type.railway.siding.tunnel">Nevenspoor-tunnel</string>
-	<string name="type.railway.spur">Zijspoor</string>
-	<string name="type.railway.spur.bridge">Zijspoor-brug</string>
-	<string name="type.railway.spur.tunnel">Zijspoor-tunnel</string>
+	<string name="type.railway.rail.highspeed.tunnel">Spoortunnel</string>
+	<string name="type.railway.rail.tourism.tunnel">Spoortunnel</string>
+	<string name="type.railway.rail.main.tunnel">Spoortunnel</string>
+	<string name="type.railway.rail.branch.tunnel">Spoortunnel</string>
+	<string name="type.railway.rail.utility.tunnel">Spoortunnel</string>
+	<string name="type.railway.rail.spur.tunnel">Spoortunnel</string>
+	<string name="type.railway.rail.service.tunnel">Spoortunnel</string>
 	<string name="type.railway.station">Station</string>
 	<string name="type.railway.station.funicular">Tunnel</string>
 	<string name="type.railway.station.light_rail">Station</string>
@@ -1614,6 +1648,7 @@
 	<string name="type.railway.station.subway.taoyuan">Metrostation</string>
 	<string name="type.railway.station.subway.tashkent">Metrostation</string>
 	<string name="type.railway.station.subway.tbilisi">Metrostation</string>
+	<string name="type.railway.station.subway.tehran">Metrostation</string>
 	<string name="type.railway.station.subway.tianjin">Metrostation</string>
 	<string name="type.railway.station.subway.tokyo">Metrostation</string>
 	<string name="type.railway.station.subway.valencia">Metrostation</string>
@@ -1727,6 +1762,7 @@
 	<string name="type.railway.subway_entrance.taoyuan">Metro ingang</string>
 	<string name="type.railway.subway_entrance.tashkent">Metro ingang</string>
 	<string name="type.railway.subway_entrance.tbilisi">Metro ingang</string>
+	<string name="type.railway.subway_entrance.tehran">Metro ingang</string>
 	<string name="type.railway.subway_entrance.tianjin">Metro ingang</string>
 	<string name="type.railway.subway_entrance.tokyo">Metro ingang</string>
 	<string name="type.railway.subway_entrance.valencia">Metro ingang</string>
@@ -1740,11 +1776,7 @@
 	<string name="type.railway.tram.bridge">Trambrug</string>
 	<string name="type.railway.tram.tunnel">Tramtunnel</string>
 	<string name="type.railway.tram_stop">Tramhalte</string>
-	<string name="type.railway.yard">Rangeerterrein</string>
-	<string name="type.railway.yard.bridge">Rangeerterrein brug</string>
-	<string name="type.railway.yard.tunnel">Rangeerterrein tunnel</string>
 	<string name="type.route.ferry">Veerboot</string>
-	<string name="type.route.shuttle_train">Shuttle-trein</string>
 	<string name="type.shop">Winkel</string>
 	<string name="type.shop.alcohol">Slijterij</string>
 	<string name="type.shop.bakery">Bakkerij</string>
@@ -1929,6 +1961,7 @@
 	<string name="type.waterway">Waterweg</string>
 	<string name="type.waterway.canal">Kanaal</string>
 	<string name="type.waterway.canal.tunnel">Kanaal</string>
+	<string name="type.waterway.fish_pass">Vistrap</string>
 	<string name="type.waterway.dam">Dam</string>
 	<string name="type.waterway.ditch">Sloot</string>
 	<string name="type.waterway.ditch.tunnel">Sloot</string>
@@ -1965,4 +1998,6 @@
 	<string name="type.piste_type.nordic">Langlaufroute</string>
 	<string name="type.piste_type.sled">Sleebaan</string>
 	<string name="type.amenity.events_venue">Evenementenlocatie</string>
+	<string name="type.shop.auction">Veiling</string>
+	<string name="type.shop.collector">Verzamelobjecten</string>
 </resources>

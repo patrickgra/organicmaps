@@ -71,8 +71,11 @@
 /* "Bookmark Lists" dialog title */
 "bookmark_sets" = "Bookmark Lists";
 
-/* "Bookmarks" dialog title, please also edit it in iphone/plist.txt */
+/* Should be used in the bookmarks-only context, see bookmarks_and_tracks if tracks are also implied. */
 "bookmarks" = "Bookmarks";
+
+/* "Bookmarks and Tracks" dialog title, also sync it with iphone/plist.txt */
+"bookmarks_and_tracks" = "Bookmarks and Tracks";
 
 /* Default bookmark list name */
 "core_my_places" = "My Places";
@@ -106,6 +109,9 @@
 
 /* Search category for clothes/shoes/gifts/jewellery/sport shops; any changes should be duplicated in categories.txt @shopping! */
 "shopping" = "Shopping";
+
+/* Search category for second_hand/charity/antique/auction shops; any changes should be duplicated in categories.txt @secondhand! */
+"secondhand" = "Second Hand";
 
 /* Search category for places to stay; any changes should be duplicated in categories.txt @hotel! */
 "hotel" = "Hotel";
@@ -762,24 +768,22 @@
 /* iOS Dialog for the case when the location permission is not granted */
 "location_services_disabled_3" = "3. Select While Using the App";
 
-"meter" = "m";
+"m" = "m";
 
-"kilometer" = "km";
+"km" = "km";
 
 "kilometers_per_hour" = "km/h";
 
-"mile" = "mi";
+"mi" = "mi";
 
 /* A unit of measure */
-"foot" = "ft";
+"ft" = "ft";
 
 "miles_per_hour" = "mph";
 
 "hour" = "h";
 
 "minute" = "min";
-
-"placepage_place_description" = "Description";
 
 "placepage_more_button" = "More";
 
@@ -1339,6 +1343,8 @@
 
 "type.amenity.community_centre" = "Community Centre";
 
+"type.amenity.conference_centre" = "Conference Center";
+
 "type.amenity.courthouse" = "Courthouse";
 
 "type.amenity.dentist" = "Dentist";
@@ -1348,6 +1354,8 @@
 "type.amenity.drinking_water" = "Drinking Water";
 
 "type.amenity.driving_school" = "Driving School";
+
+"type.amenity.exhibition_centre" = "Exhibition Center";
 
 "type.amenity.money_transfer" = "Money Transfer";
 
@@ -1506,7 +1514,7 @@
 
 "type.amenity.shower" = "Shower";
 
-"type.amenity.taxi" = "Taxi";
+"type.amenity.taxi" = "Taxi Stand";
 
 "type.amenity.telephone" = "Phone";
 
@@ -1586,6 +1594,8 @@
 
 "type.barrier.stile" = "Stile";
 
+"type.barrier.turnstile" = "Turnstile";
+
 "type.barrier.swing_gate" = "Swing Gate";
 
 "type.barrier.toll_booth" = "Toll Booth";
@@ -1633,6 +1643,20 @@
 "type.boundary.administrative.suburb" = "Suburb Boundary";
 
 "type.boundary.national_park" = "National Park";
+
+"type.boundary.protected_area" = "Protected Area";
+
+"type.boundary.protected_area.1" = "Protected Area";
+
+"type.boundary.protected_area.2" = "Protected Area";
+
+"type.boundary.protected_area.3" = "Protected Area";
+
+"type.boundary.protected_area.4" = "Protected Area";
+
+"type.boundary.protected_area.5" = "Protected Area";
+
+"type.boundary.protected_area.6" = "Protected Area";
 
 "type.building" = "Building";
 
@@ -1881,6 +1905,8 @@
 /* This is for main/primary entrances, for secondary entrances see type.entrance */
 "type.entrance.main" = "Main Entrance";
 
+"type.entrance.exit" = "Exit";
+
 "type.healthcare.laboratory" = "Medical Laboratory";
 
 "type.healthcare.physiotherapist" = "Physiotherapist";
@@ -2056,6 +2082,9 @@
 
 /* These translations are used for all type.highway.*.bridge. */
 "type.highway.road.bridge" = "Bridge";
+
+/* A bridge structure outline. */
+"type.man_made.bridge" = "Bridge";
 
 /* These translations are used for all type.highway.*.tunnel. */
 "type.highway.road.tunnel" = "Tunnel";
@@ -2304,6 +2333,8 @@
 "type.internet_access.wlan" = "Internet";
 
 "type.junction" = "Junction";
+
+"type.junction.circular" = "Roundabout";
 
 "type.junction.roundabout" = "Roundabout";
 
@@ -2773,25 +2804,54 @@
 
 "type.railway.rail" = "Railway";
 
+"type.railway.rail.highspeed" = "High-Speed Railway";
+
+"type.railway.rail.tourism" = "Touristic Railway";
+
+"type.railway.rail.main" = "Railway";
+
+/* Includes ordinary railway=rail w/o more specific usage= and service= tags. */
+"type.railway.rail.branch" = "Railway Branch";
+
+/* Non-passenger utility tracks: industrial, military, test. */
+"type.railway.rail.utility" = "Utility Railway";
+
+"type.railway.rail.spur" = "Railway Spur";
+
+/* Short service tracks: siding, yard, crossover. */
+"type.railway.rail.service" = "Service Rail Track";
+
 "type.railway.rail.bridge" = "Railway Bridge";
 
-"type.railway.rail.motor_vehicle" = "Railway";
+"type.railway.rail.highspeed.bridge" = "Railway Bridge";
+
+"type.railway.rail.tourism.bridge" = "Railway Bridge";
+
+"type.railway.rail.main.bridge" = "Railway Bridge";
+
+"type.railway.rail.branch.bridge" = "Railway Bridge";
+
+"type.railway.rail.utility.bridge" = "Railway Bridge";
+
+"type.railway.rail.spur.bridge" = "Railway Bridge";
+
+"type.railway.rail.service.bridge" = "Railway Bridge";
 
 "type.railway.rail.tunnel" = "Railway Tunnel";
 
-"type.railway.razed" = "Razed Rail";
+"type.railway.rail.highspeed.tunnel" = "Railway Tunnel";
 
-"type.railway.siding" = "Siding Rail";
+"type.railway.rail.tourism.tunnel" = "Railway Tunnel";
 
-"type.railway.siding.bridge" = "Siding Rail Bridge";
+"type.railway.rail.main.tunnel" = "Railway Tunnel";
 
-"type.railway.siding.tunnel" = "Siding Rail Tunnel";
+"type.railway.rail.branch.tunnel" = "Railway Tunnel";
 
-"type.railway.spur" = "Spur Rail";
+"type.railway.rail.utility.tunnel" = "Railway Tunnel";
 
-"type.railway.spur.bridge" = "Spur Rail Bridge";
+"type.railway.rail.spur.tunnel" = "Railway Tunnel";
 
-"type.railway.spur.tunnel" = "Spur Rail Tunnel";
+"type.railway.rail.service.tunnel" = "Railway Tunnel";
 
 "type.railway.station" = "Train Station";
 
@@ -3002,6 +3062,8 @@
 "type.railway.station.subway.tashkent" = "Subway Station";
 
 "type.railway.station.subway.tbilisi" = "Subway Station";
+
+"type.railway.station.subway.tehran" = "Subway Station";
 
 "type.railway.station.subway.tianjin" = "Subway Station";
 
@@ -3229,6 +3291,8 @@
 
 "type.railway.subway_entrance.tbilisi" = "Subway Entrance";
 
+"type.railway.subway_entrance.tehran" = "Subway Entrance";
+
 "type.railway.subway_entrance.tianjin" = "Subway Entrance";
 
 "type.railway.subway_entrance.tokyo" = "Subway Entrance";
@@ -3255,17 +3319,11 @@
 
 "type.railway.tram_stop" = "Tram Stop";
 
-"type.railway.yard" = "Railway Yard";
-
-"type.railway.yard.bridge" = "Railway Yard Bridge";
-
-"type.railway.yard.tunnel" = "Railway Yard Tunnel";
-
 "type.route" = "Route";
 
 "type.route.ferry" = "Ferry";
 
-"type.route.shuttle_train" = "Shuttle Train";
+"type.route.shuttle_train" = "route-shuttle_train";
 
 "type.shop" = "Shop";
 
@@ -3710,3 +3768,7 @@
 "type.piste_type.sled" = "Sledding Piste";
 
 "type.amenity.events_venue" = "Events Venue";
+
+"type.shop.auction" = "Auction";
+
+"type.shop.collector" = "Collectables";

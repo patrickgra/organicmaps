@@ -71,8 +71,11 @@
 /* "Bookmark Lists" dialog title */
 "bookmark_sets" = "قائمة الإشارات المرجعية";
 
-/* "Bookmarks" dialog title, please also edit it in iphone/plist.txt */
+/* Should be used in the bookmarks-only context, see bookmarks_and_tracks if tracks are also implied. */
 "bookmarks" = "الإشارات المرجعية";
+
+/* "Bookmarks and Tracks" dialog title, also sync it with iphone/plist.txt */
+"bookmarks_and_tracks" = "الإشارات المرجعية والمسارات";
 
 /* Default bookmark list name */
 "core_my_places" = "أماكني";
@@ -106,6 +109,9 @@
 
 /* Search category for clothes/shoes/gifts/jewellery/sport shops; any changes should be duplicated in categories.txt @shopping! */
 "shopping" = "تسوق";
+
+/* Search category for second_hand/charity/antique/auction shops; any changes should be duplicated in categories.txt @secondhand! */
+"secondhand" = "اليد الثانية";
 
 /* Search category for places to stay; any changes should be duplicated in categories.txt @hotel! */
 "hotel" = "فندق";
@@ -762,24 +768,22 @@
 /* iOS Dialog for the case when the location permission is not granted */
 "location_services_disabled_3" = "3. اختيار التفعيل أثناء استخدام التطبيق";
 
-"meter" = "متر";
+"m" = "متر";
 
-"kilometer" = "كم";
+"km" = "كم";
 
 "kilometers_per_hour" = "كم/ساعة";
 
-"mile" = "ميل";
+"mi" = "ميل";
 
 /* A unit of measure */
-"foot" = "قدم";
+"ft" = "قدم";
 
 "miles_per_hour" = "ميل/ساعة";
 
 "hour" = "س";
 
 "minute" = "د";
-
-"placepage_place_description" = "الوصف";
 
 "placepage_more_button" = "المزيد";
 
@@ -1339,6 +1343,8 @@
 
 "type.amenity.community_centre" = "مركز اجتماعي";
 
+"type.amenity.conference_centre" = "مركز المؤتمرات";
+
 "type.amenity.courthouse" = "محكمة";
 
 "type.amenity.dentist" = "طبيب أسنان";
@@ -1348,6 +1354,8 @@
 "type.amenity.drinking_water" = "مياه شرب";
 
 "type.amenity.driving_school" = "مدرسة قيادة";
+
+"type.amenity.exhibition_centre" = "مركز المعرض";
 
 "type.amenity.money_transfer" = "تحويل المال";
 
@@ -1586,6 +1594,8 @@
 
 "type.barrier.stile" = "ممر عبور";
 
+"type.barrier.turnstile" = "الباب الدوار";
+
 "type.barrier.swing_gate" = "حاجز بوابة";
 
 "type.barrier.toll_booth" = "كشك رسوم عبور";
@@ -1633,6 +1643,20 @@
 "type.boundary.administrative.suburb" = "Suburb Boundary";
 
 "type.boundary.national_park" = "منتزه وطني";
+
+"type.boundary.protected_area" = "منطقة محمية";
+
+"type.boundary.protected_area.1" = "منطقة محمية";
+
+"type.boundary.protected_area.2" = "منطقة محمية";
+
+"type.boundary.protected_area.3" = "منطقة محمية";
+
+"type.boundary.protected_area.4" = "منطقة محمية";
+
+"type.boundary.protected_area.5" = "منطقة محمية";
+
+"type.boundary.protected_area.6" = "منطقة محمية";
 
 "type.building" = "مبنى";
 
@@ -1881,6 +1905,8 @@
 /* This is for main/primary entrances, for secondary entrances see type.entrance */
 "type.entrance.main" = "ﻲﺴﻴﺋﺮﻟﺍ ﻞﺧﺪﻤﻟﺍ";
 
+"type.entrance.exit" = "مخرج";
+
 "type.healthcare.laboratory" = "مختبر طبي";
 
 "type.healthcare.physiotherapist" = "اخصائي علاج طبيعي";
@@ -2056,6 +2082,9 @@
 
 /* These translations are used for all type.highway.*.bridge. */
 "type.highway.road.bridge" = "جسر";
+
+/* A bridge structure outline. */
+"type.man_made.bridge" = "جسر";
 
 /* These translations are used for all type.highway.*.tunnel. */
 "type.highway.road.tunnel" = "نفق";
@@ -2304,6 +2333,8 @@
 "type.internet_access.wlan" = "إنترنت لا سلكي";
 
 "type.junction" = "تقاطع";
+
+"type.junction.circular" = "دوّار";
 
 "type.junction.roundabout" = "دوّار";
 
@@ -2773,25 +2804,54 @@
 
 "type.railway.rail" = "خط سكة حديد";
 
-"type.railway.rail.bridge" = "Railway Bridge";
+"type.railway.rail.highspeed" = "سكة حديد عالية السرعة";
 
-"type.railway.rail.motor_vehicle" = "Railway";
+"type.railway.rail.tourism" = "السكك الحديدية السياحية";
 
-"type.railway.rail.tunnel" = "Railway Tunnel";
+"type.railway.rail.main" = "سكة حديدية";
 
-"type.railway.razed" = "Razed Rail";
+/* Includes ordinary railway=rail w/o more specific usage= and service= tags. */
+"type.railway.rail.branch" = "السكك الحديدية الثانوية";
 
-"type.railway.siding" = "Siding Rail";
+/* Non-passenger utility tracks: industrial, military, test. */
+"type.railway.rail.utility" = "سكة حديد المرافق";
 
-"type.railway.siding.bridge" = "Siding Rail Bridge";
+"type.railway.rail.spur" = "سكة حديد سبير";
 
-"type.railway.siding.tunnel" = "Siding Rail Tunnel";
+/* Short service tracks: siding, yard, crossover. */
+"type.railway.rail.service" = "مسار السكك الحديدية المساعدة";
 
-"type.railway.spur" = "Spur Rail";
+"type.railway.rail.bridge" = "جسر للسكك الحديدية";
 
-"type.railway.spur.bridge" = "Spur Rail Bridge";
+"type.railway.rail.highspeed.bridge" = "جسر للسكك الحديدية";
 
-"type.railway.spur.tunnel" = "Spur Rail Tunnel";
+"type.railway.rail.tourism.bridge" = "جسر للسكك الحديدية";
+
+"type.railway.rail.main.bridge" = "جسر للسكك الحديدية";
+
+"type.railway.rail.branch.bridge" = "جسر للسكك الحديدية";
+
+"type.railway.rail.utility.bridge" = "جسر للسكك الحديدية";
+
+"type.railway.rail.spur.bridge" = "جسر للسكك الحديدية";
+
+"type.railway.rail.service.bridge" = "جسر للسكك الحديدية";
+
+"type.railway.rail.tunnel" = "نفق السكة الحديد";
+
+"type.railway.rail.highspeed.tunnel" = "نفق السكة الحديد";
+
+"type.railway.rail.tourism.tunnel" = "نفق السكة الحديد";
+
+"type.railway.rail.main.tunnel" = "نفق السكة الحديد";
+
+"type.railway.rail.branch.tunnel" = "نفق السكة الحديد";
+
+"type.railway.rail.utility.tunnel" = "نفق السكة الحديد";
+
+"type.railway.rail.spur.tunnel" = "نفق السكة الحديد";
+
+"type.railway.rail.service.tunnel" = "نفق السكة الحديد";
 
 "type.railway.station" = "محطة سكك حديدية";
 
@@ -3002,6 +3062,8 @@
 "type.railway.station.subway.tashkent" = "محطة مترو";
 
 "type.railway.station.subway.tbilisi" = "محطة مترو";
+
+"type.railway.station.subway.tehran" = "محطة مترو";
 
 "type.railway.station.subway.tianjin" = "محطة مترو";
 
@@ -3229,6 +3291,8 @@
 
 "type.railway.subway_entrance.tbilisi" = "مدخل المترو";
 
+"type.railway.subway_entrance.tehran" = "مدخل المترو";
+
 "type.railway.subway_entrance.tianjin" = "مدخل المترو";
 
 "type.railway.subway_entrance.tokyo" = "مدخل المترو";
@@ -3255,17 +3319,11 @@
 
 "type.railway.tram_stop" = "موقف ترام";
 
-"type.railway.yard" = "Railway Yard";
-
-"type.railway.yard.bridge" = "Railway Yard Bridge";
-
-"type.railway.yard.tunnel" = "Railway Yard Tunnel";
-
 "type.route" = "Route";
 
 "type.route.ferry" = "Ferry";
 
-"type.route.shuttle_train" = "Shuttle Train";
+"type.route.shuttle_train" = "route-shuttle_train";
 
 "type.shop" = "متجر";
 
@@ -3637,7 +3695,7 @@
 
 "type.waterway.canal.tunnel" = "قناة";
 
-"type.waterway.fish_pass" = "Fish Pass";
+"type.waterway.fish_pass" = "سلم سمك";
 
 "type.waterway.dam" = "Dam";
 
@@ -3710,3 +3768,7 @@
 "type.piste_type.sled" = "Sledding Piste";
 
 "type.amenity.events_venue" = "مكان الأحداث";
+
+"type.shop.auction" = "مزاد علني";
+
+"type.shop.collector" = "المقتنيات";

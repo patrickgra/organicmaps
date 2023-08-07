@@ -559,7 +559,7 @@ UNIT_CLASS_TEST(ProcessorTest, TestRankingInfo_PureCategory)
   }
 }
 
-UNIT_CLASS_TEST(ProcessorTest, TestRankingInfo_ErrorsMade)
+UNIT_CLASS_TEST(ProcessorTest, RankingInfo_ErrorsMade_1)
 {
   TestCity chekhov({0, 0}, "Чеховъ Антонъ Павловичъ", "ru", 100 /* rank */);
 
@@ -605,6 +605,7 @@ UNIT_CLASS_TEST(ProcessorTest, TestRankingInfo_ErrorsMade)
 
   checkErrors("Cafe Yesenina", ErrorsMade(0));
   checkErrors("Cafe Jesenina", ErrorsMade(1));
+  /// @see search_string_utils.cpp, kAllowedMisprints
   // We allow only Y->{E, J, I, U} misprints for the first letter.
   checkErrors("Cafe Esenina", ErrorsMade(2));
 
@@ -632,6 +633,33 @@ UNIT_CLASS_TEST(ProcessorTest, TestRankingInfo_ErrorsMade)
   checkErrors("трактиръ лер", ErrorsMade(0));
 
   checkErrors("лермонтов чеховъ антон павлович", ErrorsMade(2));
+}
+
+// https://github.com/organicmaps/organicmaps/issues/5296
+UNIT_CLASS_TEST(ProcessorTest, RankingInfo_ErrorsMade_2)
+{
+  TestStreet hernandes({{-0.5, -0.5}, {0, 0}, {0.5, 0.5}}, "José Hernández", "es");
+
+  auto wonderlandId = BuildCountry("Wonderland", [&](TestMwmBuilder & builder)
+  {
+    builder.Add(hernandes);
+  });
+
+  SetViewport(m2::RectD(-1, -1, 1, 1));
+
+  auto checkErrors = [&](string const & query, ErrorsMade const & errorsMade)
+  {
+    auto request = MakeRequest(query, "es");
+    auto const & results = request->Results();
+
+    Rules rules{ExactMatch(wonderlandId, hernandes)};
+    TEST(ResultsMatch(results, rules), (query));
+    TEST_EQUAL(results.size(), 1, (query));
+    TEST_EQUAL(results[0].GetRankingInfo().m_errorsMade, errorsMade, (query));
+  };
+
+  checkErrors("Hose", ErrorsMade(1));
+  checkErrors("Fernández", ErrorsMade(1));
 }
 
 UNIT_CLASS_TEST(ProcessorTest, TestHouseNumbers)
@@ -3386,6 +3414,44 @@ UNIT_CLASS_TEST(ProcessorTest, StreetCategories)
       ExactMatch(wonderlandId, bus),
     };
     TEST(OrderedResultsMatch(MakeRequest("avenida santa fe улица ", "ru")->Results(), rules), ());
+  }
+}
+
+// https://github.com/organicmaps/organicmaps/issues/4421
+UNIT_CLASS_TEST(ProcessorTest, BarcelonaStreet)
+{
+  TestStreet street({{-1, -1}, {1, 1}}, "Carrer de la Concòrdia", "default");
+  street.SetType({"highway", "residential"});
+  TestStreet highway({{-0.9, -0.9}, {0.9, -0.9}}, "C-59 Carretera de Mollet", "default");
+  highway.SetType({"highway", "trunk"});
+  highway.SetRoadNumber("C-59");
+
+  auto wonderlandId = BuildCountry("Wonderland", [&](TestMwmBuilder & builder)
+  {
+    builder.Add(street);
+    builder.Add(highway);
+  });
+
+  SetViewport(m2::RectD(-0.5, -0.5, 0.5, 0.5));
+
+  {
+    Rules const rules = {
+      ExactMatch(wonderlandId, street),
+      // 1 token match is discarded for _relaxed_
+      //ExactMatch(wonderlandId, highway),
+    };
+    TEST(OrderedResultsMatch(MakeRequest("carrer de concordia 59", "en")->Results(), rules), ());
+    // Add some misspellings.
+    TEST(OrderedResultsMatch(MakeRequest("carrer concoria 59", "en")->Results(), rules), ());
+    TEST(OrderedResultsMatch(MakeRequest("carer la concoria 59", "en")->Results(), rules), ());
+  }
+
+  {
+    Rules const rules = {
+        ExactMatch(wonderlandId, street),
+        ExactMatch(wonderlandId, highway),
+    };
+    TEST(OrderedResultsMatch(MakeRequest("concordia 59", "en")->Results(), rules), ());
   }
 }
 

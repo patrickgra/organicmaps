@@ -71,8 +71,11 @@
 /* "Bookmark Lists" dialog title */
 "bookmark_sets" = "Bokmerk sett";
 
-/* "Bookmarks" dialog title, please also edit it in iphone/plist.txt */
+/* Should be used in the bookmarks-only context, see bookmarks_and_tracks if tracks are also implied. */
 "bookmarks" = "Bokmerker";
+
+/* "Bookmarks and Tracks" dialog title, also sync it with iphone/plist.txt */
+"bookmarks_and_tracks" = "Bokmerker og ruter";
 
 /* Default bookmark list name */
 "core_my_places" = "Mine steder";
@@ -106,6 +109,9 @@
 
 /* Search category for clothes/shoes/gifts/jewellery/sport shops; any changes should be duplicated in categories.txt @shopping! */
 "shopping" = "Shopping";
+
+/* Search category for second_hand/charity/antique/auction shops; any changes should be duplicated in categories.txt @secondhand! */
+"secondhand" = "Brukt";
 
 /* Search category for places to stay; any changes should be duplicated in categories.txt @hotel! */
 "hotel" = "Hotell";
@@ -762,24 +768,22 @@
 /* iOS Dialog for the case when the location permission is not granted */
 "location_services_disabled_3" = "3.Velg når appen er i bruk";
 
-"meter" = "m";
+"m" = "m";
 
-"kilometer" = "km";
+"km" = "km";
 
 "kilometers_per_hour" = "km/t";
 
-"mile" = "mi";
+"mi" = "mi";
 
 /* A unit of measure */
-"foot" = "fot";
+"ft" = "fot";
 
 "miles_per_hour" = "mph";
 
 "hour" = "t";
 
 "minute" = "min";
-
-"placepage_place_description" = "Beskrivelse";
 
 "placepage_more_button" = "Mer";
 
@@ -1339,6 +1343,8 @@
 
 "type.amenity.community_centre" = "Samfunnshus";
 
+"type.amenity.conference_centre" = "Konferansesenter";
+
 "type.amenity.courthouse" = "Domstol";
 
 "type.amenity.dentist" = "Tannlege";
@@ -1348,6 +1354,8 @@
 "type.amenity.drinking_water" = "Drikkevann";
 
 "type.amenity.driving_school" = "Kjøreskole";
+
+"type.amenity.exhibition_centre" = "Utstillingssenter";
 
 "type.amenity.money_transfer" = "Pengeoverføring";
 
@@ -1586,6 +1594,8 @@
 
 "type.barrier.stile" = "Gjerdeklyver";
 
+"type.barrier.turnstile" = "Turnstile";
+
 "type.barrier.swing_gate" = "Bom";
 
 "type.barrier.toll_booth" = "Bomstasjon";
@@ -1633,6 +1643,20 @@
 "type.boundary.administrative.suburb" = "Suburb Boundary";
 
 "type.boundary.national_park" = "Nasjonalpark";
+
+"type.boundary.protected_area" = "Vernet område";
+
+"type.boundary.protected_area.1" = "Vernet område";
+
+"type.boundary.protected_area.2" = "Vernet område";
+
+"type.boundary.protected_area.3" = "Vernet område";
+
+"type.boundary.protected_area.4" = "Vernet område";
+
+"type.boundary.protected_area.5" = "Vernet område";
+
+"type.boundary.protected_area.6" = "Vernet område";
 
 "type.building" = "Bygning";
 
@@ -1881,6 +1905,8 @@
 /* This is for main/primary entrances, for secondary entrances see type.entrance */
 "type.entrance.main" = "Hovedinngang";
 
+"type.entrance.exit" = "Utgang";
+
 "type.healthcare.laboratory" = "Medisinsk laboratorium";
 
 "type.healthcare.physiotherapist" = "Fysioterapeut";
@@ -2056,6 +2082,9 @@
 
 /* These translations are used for all type.highway.*.bridge. */
 "type.highway.road.bridge" = "Bru";
+
+/* A bridge structure outline. */
+"type.man_made.bridge" = "Bru";
 
 /* These translations are used for all type.highway.*.tunnel. */
 "type.highway.road.tunnel" = "Tunnel";
@@ -2304,6 +2333,8 @@
 "type.internet_access.wlan" = "Internet";
 
 "type.junction" = "Junction";
+
+"type.junction.circular" = "Roundabout";
 
 "type.junction.roundabout" = "Roundabout";
 
@@ -2773,25 +2804,54 @@
 
 "type.railway.rail" = "Toglinje";
 
-"type.railway.rail.bridge" = "Railway Bridge";
+"type.railway.rail.highspeed" = "Høyhastighetsjernbane";
 
-"type.railway.rail.motor_vehicle" = "Railway";
+"type.railway.rail.tourism" = "Turistjernbane";
 
-"type.railway.rail.tunnel" = "Railway Tunnel";
+"type.railway.rail.main" = "Jernbane";
 
-"type.railway.razed" = "Razed Rail";
+/* Includes ordinary railway=rail w/o more specific usage= and service= tags. */
+"type.railway.rail.branch" = "Sekundær jernbane";
 
-"type.railway.siding" = "Siding Rail";
+/* Non-passenger utility tracks: industrial, military, test. */
+"type.railway.rail.utility" = "Service jernbane";
 
-"type.railway.siding.bridge" = "Siding Rail Bridge";
+"type.railway.rail.spur" = "Jernbanespor";
 
-"type.railway.siding.tunnel" = "Siding Rail Tunnel";
+/* Short service tracks: siding, yard, crossover. */
+"type.railway.rail.service" = "Ekstra jernbanespor";
 
-"type.railway.spur" = "Spur Rail";
+"type.railway.rail.bridge" = "Jernbanebro";
 
-"type.railway.spur.bridge" = "Spur Rail Bridge";
+"type.railway.rail.highspeed.bridge" = "Jernbanebro";
 
-"type.railway.spur.tunnel" = "Spur Rail Tunnel";
+"type.railway.rail.tourism.bridge" = "Jernbanebro";
+
+"type.railway.rail.main.bridge" = "Jernbanebro";
+
+"type.railway.rail.branch.bridge" = "Jernbanebro";
+
+"type.railway.rail.utility.bridge" = "Jernbanebro";
+
+"type.railway.rail.spur.bridge" = "Jernbanebro";
+
+"type.railway.rail.service.bridge" = "Jernbanebro";
+
+"type.railway.rail.tunnel" = "Jernbanetunnel";
+
+"type.railway.rail.highspeed.tunnel" = "Jernbanetunnel";
+
+"type.railway.rail.tourism.tunnel" = "Jernbanetunnel";
+
+"type.railway.rail.main.tunnel" = "Jernbanetunnel";
+
+"type.railway.rail.branch.tunnel" = "Jernbanetunnel";
+
+"type.railway.rail.utility.tunnel" = "Jernbanetunnel";
+
+"type.railway.rail.spur.tunnel" = "Jernbanetunnel";
+
+"type.railway.rail.service.tunnel" = "Jernbanetunnel";
 
 "type.railway.station" = "Togstasjon";
 
@@ -3002,6 +3062,8 @@
 "type.railway.station.subway.tashkent" = "T-bane";
 
 "type.railway.station.subway.tbilisi" = "T-bane";
+
+"type.railway.station.subway.tehran" = "T-bane";
 
 "type.railway.station.subway.tianjin" = "T-bane";
 
@@ -3229,6 +3291,8 @@
 
 "type.railway.subway_entrance.tbilisi" = "T-bane inngang";
 
+"type.railway.subway_entrance.tehran" = "T-bane inngang";
+
 "type.railway.subway_entrance.tianjin" = "T-bane inngang";
 
 "type.railway.subway_entrance.tokyo" = "T-bane inngang";
@@ -3255,17 +3319,11 @@
 
 "type.railway.tram_stop" = "Trikkestopp";
 
-"type.railway.yard" = "Railway Yard";
-
-"type.railway.yard.bridge" = "Railway Yard Bridge";
-
-"type.railway.yard.tunnel" = "Railway Yard Tunnel";
-
 "type.route" = "Route";
 
 "type.route.ferry" = "Ferry";
 
-"type.route.shuttle_train" = "Shuttle Train";
+"type.route.shuttle_train" = "route-shuttle_train";
 
 "type.shop" = "Butikk";
 
@@ -3637,7 +3695,7 @@
 
 "type.waterway.canal.tunnel" = "Kanal";
 
-"type.waterway.fish_pass" = "Fish Pass";
+"type.waterway.fish_pass" = "Fiskestige";
 
 "type.waterway.dam" = "Dam";
 
@@ -3710,3 +3768,7 @@
 "type.piste_type.sled" = "Sledding Piste";
 
 "type.amenity.events_venue" = "Arrangementssted";
+
+"type.shop.auction" = "Auksjon";
+
+"type.shop.collector" = "Samleobjekter";

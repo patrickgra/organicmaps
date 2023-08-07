@@ -58,6 +58,7 @@ set(OMIM_ROOT ${CMAKE_SOURCE_DIR})
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${OMIM_ROOT}/cmake")
 
 include(OmimHelpers)
+include(OmimTesting)
 
 if (CMAKE_SYSTEM_NAME MATCHES "Linux")
   set(LINUX_DETECTED TRUE)
@@ -209,6 +210,8 @@ endif()
 
 if (NOT SKIP_TESTS)
   set(SKIP_TESTS FALSE)
+  enable_testing()
+  set(CTEST_CONFIGURATION_TYPE ${CMAKE_BUILD_TYPE})
 endif()
 
 if (NOT PYTHON_VERSION)
@@ -238,18 +241,10 @@ if (NOT PLATFORM_IPHONE AND NOT PLATFORM_ANDROID)
     list(APPEND qt_components Widgets)
   endif()
   if (NOT SKIP_DESKTOP)
-    list(APPEND qt_components Gui Xml Svg)
+    list(APPEND qt_components Gui Xml Svg OpenGL OpenGLWidgets)
   endif()
-  if (DEFINED ENV{HOMEBREW_PREFIX})
-    set(HOMEBREW_PREFIX $ENV{HOMEBREW_PREFIX})
-  else()
-    set(HOMEBREW_PREFIX /opt/homebrew)
-  endif()
-  # PATHS are hard-coded hints where to look for qt5 in addition to other places.
-  find_package(Qt5 COMPONENTS REQUIRED ${qt_components} PATHS $ENV{QT_PATH} ${HOMEBREW_PREFIX}/opt/qt@5 /usr/local/opt/qt@5 /usr/lib/x86_64-linux-gnu/qt5)
-  if (Qt5_VERSION VERSION_LESS 5.5.0)
-    message(FATAL_ERROR "Minimum supported Qt5 version is 5.5")
-  endif()
+  # PATHS are hard-coded hints where to look for qt6 in addition to other places.
+  find_package(Qt6 COMPONENTS REQUIRED ${qt_components} PATHS $ENV{QT_PATH} /opt/homebrew/opt/qt@6 /usr/local/opt/qt@6 /usr/lib/x86_64-linux-gnu/qt6)
 endif()
 
 find_library(LIBZ NAMES z)
@@ -293,6 +288,12 @@ endif()
 
 # Include 3party dependencies.
 add_subdirectory(3party)
+
+# Not needed for the usual build process, but it fixes QtCreator editor,
+# that doesn't see gflags/gflags.h in binary dir (gflags has tricky cmake configuration).
+if (PLATFORM_DESKTOP)
+  include_directories("${PROJECT_BINARY_DIR}/3party/gflags/include")
+endif()
 
 if (LINUX_DETECTED)
   find_package(ICU COMPONENTS uc i18n data REQUIRED)

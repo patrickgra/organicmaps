@@ -71,8 +71,11 @@
 /* "Bookmark Lists" dialog title */
 "bookmark_sets" = "खूणपत्र याद्या";
 
-/* "Bookmarks" dialog title, please also edit it in iphone/plist.txt */
+/* Should be used in the bookmarks-only context, see bookmarks_and_tracks if tracks are also implied. */
 "bookmarks" = "खूणपत्रे";
+
+/* "Bookmarks and Tracks" dialog title, also sync it with iphone/plist.txt */
+"bookmarks_and_tracks" = "खूणपत्रे आणि ट्रॅक";
 
 /* Default bookmark list name */
 "core_my_places" = "माझी ठिकाणे";
@@ -106,6 +109,9 @@
 
 /* Search category for clothes/shoes/gifts/jewellery/sport shops; any changes should be duplicated in categories.txt @shopping! */
 "shopping" = "खरेदी";
+
+/* Search category for second_hand/charity/antique/auction shops; any changes should be duplicated in categories.txt @secondhand! */
+"secondhand" = "वापरलेले";
 
 /* Search category for places to stay; any changes should be duplicated in categories.txt @hotel! */
 "hotel" = "मुक्कामगृह";
@@ -762,24 +768,22 @@
 /* iOS Dialog for the case when the location permission is not granted */
 "location_services_disabled_3" = "३. \"ऍप वापरत असताना\" निवडा";
 
-"meter" = "m";
+"m" = "m";
 
-"kilometer" = "किमी";
+"km" = "किमी";
 
 "kilometers_per_hour" = "km/h";
 
-"mile" = "mi";
+"mi" = "mi";
 
 /* A unit of measure */
-"foot" = "फूट";
+"ft" = "फूट";
 
 "miles_per_hour" = "mph";
 
 "hour" = "तास";
 
 "minute" = "मिनिट";
-
-"placepage_place_description" = "वर्णन";
 
 "placepage_more_button" = "अधिक";
 
@@ -1339,6 +1343,8 @@
 
 "type.amenity.community_centre" = "समुदाय केंद्र";
 
+"type.amenity.conference_centre" = "परिषद केंद्र";
+
 "type.amenity.courthouse" = "न्यायालय";
 
 "type.amenity.dentist" = "दंतवैद्य";
@@ -1348,6 +1354,8 @@
 "type.amenity.drinking_water" = "पिण्याचे पाणी";
 
 "type.amenity.driving_school" = "वाहनचालक शाळा";
+
+"type.amenity.exhibition_centre" = "प्रदर्शन केंद्र";
 
 "type.amenity.money_transfer" = "पैसे हस्तांतरण";
 
@@ -1586,6 +1594,8 @@
 
 "type.barrier.stile" = "Stile";
 
+"type.barrier.turnstile" = "टर्नस्टाइल";
+
 "type.barrier.swing_gate" = "झुलते दार";
 
 "type.barrier.toll_booth" = "टोल बूथ";
@@ -1633,6 +1643,20 @@
 "type.boundary.administrative.suburb" = "उपनगर सीमा";
 
 "type.boundary.national_park" = "राष्ट्रीय उद्यान";
+
+"type.boundary.protected_area" = "संरक्षित क्षेत्र";
+
+"type.boundary.protected_area.1" = "संरक्षित क्षेत्र";
+
+"type.boundary.protected_area.2" = "संरक्षित क्षेत्र";
+
+"type.boundary.protected_area.3" = "संरक्षित क्षेत्र";
+
+"type.boundary.protected_area.4" = "संरक्षित क्षेत्र";
+
+"type.boundary.protected_area.5" = "संरक्षित क्षेत्र";
+
+"type.boundary.protected_area.6" = "संरक्षित क्षेत्र";
 
 "type.building" = "इमारत";
 
@@ -1881,6 +1905,8 @@
 /* This is for main/primary entrances, for secondary entrances see type.entrance */
 "type.entrance.main" = "मुख्य प्रवेशद्वार";
 
+"type.entrance.exit" = "बाहेर पडा";
+
 "type.healthcare.laboratory" = "वैद्यकीय प्रयोगशाळा";
 
 "type.healthcare.physiotherapist" = "फिजिओथेरपिस्ट";
@@ -2056,6 +2082,9 @@
 
 /* These translations are used for all type.highway.*.bridge. */
 "type.highway.road.bridge" = "पूल";
+
+/* A bridge structure outline. */
+"type.man_made.bridge" = "पूल";
 
 /* These translations are used for all type.highway.*.tunnel. */
 "type.highway.road.tunnel" = "बोगदा";
@@ -2304,6 +2333,8 @@
 "type.internet_access.wlan" = "इंटरनेट";
 
 "type.junction" = "जंक्शन";
+
+"type.junction.circular" = "गोलमार्ग";
 
 "type.junction.roundabout" = "गोलमार्ग";
 
@@ -2773,25 +2804,54 @@
 
 "type.railway.rail" = "रेल्वे";
 
+"type.railway.rail.highspeed" = "हाय-स्पीड रेल्वे";
+
+"type.railway.rail.tourism" = "पर्यटन रेल्वे";
+
+"type.railway.rail.main" = "रेल्वे";
+
+/* Includes ordinary railway=rail w/o more specific usage= and service= tags. */
+"type.railway.rail.branch" = "दुय्यम रेल्वे";
+
+/* Non-passenger utility tracks: industrial, military, test. */
+"type.railway.rail.utility" = "उपयुक्तता रेल्वे";
+
+"type.railway.rail.spur" = "रेल्वे स्पर";
+
+/* Short service tracks: siding, yard, crossover. */
+"type.railway.rail.service" = "सहायक रेल्वे ट्रॅक";
+
 "type.railway.rail.bridge" = "रेल्वे";
 
-"type.railway.rail.motor_vehicle" = "रेल्वे";
+"type.railway.rail.highspeed.bridge" = "रेल्वे";
+
+"type.railway.rail.tourism.bridge" = "रेल्वे";
+
+"type.railway.rail.main.bridge" = "रेल्वे";
+
+"type.railway.rail.branch.bridge" = "रेल्वे";
+
+"type.railway.rail.utility.bridge" = "रेल्वे";
+
+"type.railway.rail.spur.bridge" = "रेल्वे";
+
+"type.railway.rail.service.bridge" = "रेल्वे";
 
 "type.railway.rail.tunnel" = "रेल्वे";
 
-"type.railway.razed" = "Razed Rail";
+"type.railway.rail.highspeed.tunnel" = "रेल्वे";
 
-"type.railway.siding" = "Siding Rail";
+"type.railway.rail.tourism.tunnel" = "रेल्वे";
 
-"type.railway.siding.bridge" = "Siding Rail Bridge";
+"type.railway.rail.main.tunnel" = "रेल्वे";
 
-"type.railway.siding.tunnel" = "Siding Rail Tunnel";
+"type.railway.rail.branch.tunnel" = "रेल्वे";
 
-"type.railway.spur" = "Spur Rail";
+"type.railway.rail.utility.tunnel" = "रेल्वे";
 
-"type.railway.spur.bridge" = "Spur Rail Bridge";
+"type.railway.rail.spur.tunnel" = "रेल्वे";
 
-"type.railway.spur.tunnel" = "Spur Rail Tunnel";
+"type.railway.rail.service.tunnel" = "रेल्वे";
 
 "type.railway.station" = "रेल्वे स्थानक";
 
@@ -3002,6 +3062,8 @@
 "type.railway.station.subway.tashkent" = "भुयारी मार्ग";
 
 "type.railway.station.subway.tbilisi" = "भुयारी मार्ग";
+
+"type.railway.station.subway.tehran" = "भुयारी मार्ग";
 
 "type.railway.station.subway.tianjin" = "भुयारी मार्ग";
 
@@ -3229,6 +3291,8 @@
 
 "type.railway.subway_entrance.tbilisi" = "भुयारी प्रवेशद्वार";
 
+"type.railway.subway_entrance.tehran" = "भुयारी प्रवेशद्वार";
+
 "type.railway.subway_entrance.tianjin" = "भुयारी प्रवेशद्वार";
 
 "type.railway.subway_entrance.tokyo" = "भुयारी प्रवेशद्वार";
@@ -3255,17 +3319,11 @@
 
 "type.railway.tram_stop" = "ट्राम थांबा";
 
-"type.railway.yard" = "रेल्वे आवार";
-
-"type.railway.yard.bridge" = "रेल्वे आवार";
-
-"type.railway.yard.tunnel" = "रेल्वे आवार";
-
 "type.route" = "मार्ग";
 
 "type.route.ferry" = "होडी";
 
-"type.route.shuttle_train" = "Shuttle Train";
+"type.route.shuttle_train" = "route-shuttle_train";
 
 "type.shop" = "दुकान";
 
@@ -3637,7 +3695,7 @@
 
 "type.waterway.canal.tunnel" = "कालवा";
 
-"type.waterway.fish_pass" = "Fish Pass";
+"type.waterway.fish_pass" = "मासे शिडी";
 
 "type.waterway.dam" = "धरण";
 
@@ -3710,3 +3768,7 @@
 "type.piste_type.sled" = "Sledding Piste";
 
 "type.amenity.events_venue" = "कार्यक्रमाचे ठिकाण";
+
+"type.shop.auction" = "लिलाव";
+
+"type.shop.collector" = "संग्रहणीय वस्तू";

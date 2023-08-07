@@ -71,8 +71,11 @@
 /* "Bookmark Lists" dialog title */
 "bookmark_sets" = "Markagailuen zerrenda";
 
-/* "Bookmarks" dialog title, please also edit it in iphone/plist.txt */
+/* Should be used in the bookmarks-only context, see bookmarks_and_tracks if tracks are also implied. */
 "bookmarks" = "Markagailuak";
+
+/* "Bookmarks and Tracks" dialog title, also sync it with iphone/plist.txt */
+"bookmarks_and_tracks" = "Markagailuak eta ibilbideak";
 
 /* Default bookmark list name */
 "core_my_places" = "Nire tokiak";
@@ -106,6 +109,9 @@
 
 /* Search category for clothes/shoes/gifts/jewellery/sport shops; any changes should be duplicated in categories.txt @shopping! */
 "shopping" = "Erosketak";
+
+/* Search category for second_hand/charity/antique/auction shops; any changes should be duplicated in categories.txt @secondhand! */
+"secondhand" = "Bigarren eskuko";
 
 /* Search category for places to stay; any changes should be duplicated in categories.txt @hotel! */
 "hotel" = "Hotela";
@@ -762,24 +768,22 @@
 /* iOS Dialog for the case when the location permission is not granted */
 "location_services_disabled_3" = "3. Hautatu aplikazioa erabiltzean";
 
-"meter" = "m";
+"m" = "m";
 
-"kilometer" = "km";
+"km" = "km";
 
 "kilometers_per_hour" = "km/h";
 
-"mile" = "mi";
+"mi" = "mi";
 
 /* A unit of measure */
-"foot" = "oin";
+"ft" = "oin";
 
 "miles_per_hour" = "mph";
 
 "hour" = "h";
 
 "minute" = "min";
-
-"placepage_place_description" = "Deskribapena";
 
 "placepage_more_button" = "Gehiago";
 
@@ -1339,6 +1343,8 @@
 
 "type.amenity.community_centre" = "Komunitate Zentroa";
 
+"type.amenity.conference_centre" = "Biltzar Jauregia";
+
 "type.amenity.courthouse" = "Auzitegia";
 
 "type.amenity.dentist" = "Dentista";
@@ -1348,6 +1354,8 @@
 "type.amenity.drinking_water" = "Ur edangarria";
 
 "type.amenity.driving_school" = "Autoeskola";
+
+"type.amenity.exhibition_centre" = "Erakusketa Zentroa";
 
 "type.amenity.money_transfer" = "Diru transferentzia";
 
@@ -1586,6 +1594,8 @@
 
 "type.barrier.stile" = "Urratsa";
 
+"type.barrier.turnstile" = "Tornuska";
+
 "type.barrier.swing_gate" = "Hesia";
 
 "type.barrier.toll_booth" = "Bidesaria";
@@ -1633,6 +1643,20 @@
 "type.boundary.administrative.suburb" = "Auzoko muga";
 
 "type.boundary.national_park" = "Parke Nazionala";
+
+"type.boundary.protected_area" = "Babestutako Eremua";
+
+"type.boundary.protected_area.1" = "Babestutako Eremua";
+
+"type.boundary.protected_area.2" = "Babestutako Eremua";
+
+"type.boundary.protected_area.3" = "Babestutako Eremua";
+
+"type.boundary.protected_area.4" = "Babestutako Eremua";
+
+"type.boundary.protected_area.5" = "Babestutako Eremua";
+
+"type.boundary.protected_area.6" = "Babestutako Eremua";
 
 "type.building" = "Eraikin";
 
@@ -1881,6 +1905,8 @@
 /* This is for main/primary entrances, for secondary entrances see type.entrance */
 "type.entrance.main" = "Sarrera Nagusia";
 
+"type.entrance.exit" = "Irten";
+
 "type.healthcare.laboratory" = "Medikuntza laborategia";
 
 "type.healthcare.physiotherapist" = "Fisioterapeuta";
@@ -2056,6 +2082,9 @@
 
 /* These translations are used for all type.highway.*.bridge. */
 "type.highway.road.bridge" = "Zubia";
+
+/* A bridge structure outline. */
+"type.man_made.bridge" = "Zubia";
 
 /* These translations are used for all type.highway.*.tunnel. */
 "type.highway.road.tunnel" = "Tunel";
@@ -2304,6 +2333,8 @@
 "type.internet_access.wlan" = "Internet";
 
 "type.junction" = "Junction";
+
+"type.junction.circular" = "Biribilgunea";
 
 "type.junction.roundabout" = "Biribilgunea";
 
@@ -2773,25 +2804,54 @@
 
 "type.railway.rail" = "Trenbidea";
 
-"type.railway.rail.bridge" = "Railway Bridge";
+"type.railway.rail.highspeed" = "Abiadura handiko trena";
 
-"type.railway.rail.motor_vehicle" = "Railway";
+"type.railway.rail.tourism" = "Tren turistikoa";
 
-"type.railway.rail.tunnel" = "Railway Tunnel";
+"type.railway.rail.main" = "Trenbidea";
 
-"type.railway.razed" = "Razed Rail";
+/* Includes ordinary railway=rail w/o more specific usage= and service= tags. */
+"type.railway.rail.branch" = "Bigarren mailako trenbidea";
 
-"type.railway.siding" = "Siding Rail";
+/* Non-passenger utility tracks: industrial, military, test. */
+"type.railway.rail.utility" = "Erabilgarritasun trena";
 
-"type.railway.siding.bridge" = "Siding Rail Bridge";
+"type.railway.rail.spur" = "Trenbide-spur";
 
-"type.railway.siding.tunnel" = "Siding Rail Tunnel";
+/* Short service tracks: siding, yard, crossover. */
+"type.railway.rail.service" = "Trenbide laguntzailea";
 
-"type.railway.spur" = "Spur Rail";
+"type.railway.rail.bridge" = "Trenbide zubia";
 
-"type.railway.spur.bridge" = "Spur Rail Bridge";
+"type.railway.rail.highspeed.bridge" = "Trenbide zubia";
 
-"type.railway.spur.tunnel" = "Spur Rail Tunnel";
+"type.railway.rail.tourism.bridge" = "Trenbide zubia";
+
+"type.railway.rail.main.bridge" = "Trenbide zubia";
+
+"type.railway.rail.branch.bridge" = "Trenbide zubia";
+
+"type.railway.rail.utility.bridge" = "Trenbide zubia";
+
+"type.railway.rail.spur.bridge" = "Trenbide zubia";
+
+"type.railway.rail.service.bridge" = "Trenbide zubia";
+
+"type.railway.rail.tunnel" = "Trenbide-tunela";
+
+"type.railway.rail.highspeed.tunnel" = "Trenbide-tunela";
+
+"type.railway.rail.tourism.tunnel" = "Trenbide-tunela";
+
+"type.railway.rail.main.tunnel" = "Trenbide-tunela";
+
+"type.railway.rail.branch.tunnel" = "Trenbide-tunela";
+
+"type.railway.rail.utility.tunnel" = "Trenbide-tunela";
+
+"type.railway.rail.spur.tunnel" = "Trenbide-tunela";
+
+"type.railway.rail.service.tunnel" = "Trenbide-tunela";
 
 "type.railway.station" = "Tren geltokian";
 
@@ -3002,6 +3062,8 @@
 "type.railway.station.subway.tashkent" = "Metroa";
 
 "type.railway.station.subway.tbilisi" = "Metroa";
+
+"type.railway.station.subway.tehran" = "Metroa";
 
 "type.railway.station.subway.tianjin" = "Metroa";
 
@@ -3229,6 +3291,8 @@
 
 "type.railway.subway_entrance.tbilisi" = "Metroko sarrera";
 
+"type.railway.subway_entrance.tehran" = "Metroko sarrera";
+
 "type.railway.subway_entrance.tianjin" = "Metroko sarrera";
 
 "type.railway.subway_entrance.tokyo" = "Metroko sarrera";
@@ -3255,17 +3319,11 @@
 
 "type.railway.tram_stop" = "Tranbiaren geltokia";
 
-"type.railway.yard" = "Railway Yard";
-
-"type.railway.yard.bridge" = "Railway Yard Bridge";
-
-"type.railway.yard.tunnel" = "Railway Yard Tunnel";
-
 "type.route" = "Route";
 
 "type.route.ferry" = "Ferry";
 
-"type.route.shuttle_train" = "Shuttle Train";
+"type.route.shuttle_train" = "route-shuttle_train";
 
 "type.shop" = "Denda";
 
@@ -3637,7 +3695,7 @@
 
 "type.waterway.canal.tunnel" = "Canal Tunnel";
 
-"type.waterway.fish_pass" = "Fish Pass";
+"type.waterway.fish_pass" = "Arrainen eskailera";
 
 "type.waterway.dam" = "Dam";
 
@@ -3710,3 +3768,7 @@
 "type.piste_type.sled" = "Sledding Piste";
 
 "type.amenity.events_venue" = "Ekitaldien Lekua";
+
+"type.shop.auction" = "Enkantea";
+
+"type.shop.collector" = "Bildumagarriak";

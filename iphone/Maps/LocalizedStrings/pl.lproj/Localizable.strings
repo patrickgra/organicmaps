@@ -71,8 +71,11 @@
 /* "Bookmark Lists" dialog title */
 "bookmark_sets" = "Zestawy zakładek";
 
-/* "Bookmarks" dialog title, please also edit it in iphone/plist.txt */
+/* Should be used in the bookmarks-only context, see bookmarks_and_tracks if tracks are also implied. */
 "bookmarks" = "Zakładki";
+
+/* "Bookmarks and Tracks" dialog title, also sync it with iphone/plist.txt */
+"bookmarks_and_tracks" = "Zakładki i trasy";
 
 /* Default bookmark list name */
 "core_my_places" = "Moje miejsca";
@@ -106,6 +109,9 @@
 
 /* Search category for clothes/shoes/gifts/jewellery/sport shops; any changes should be duplicated in categories.txt @shopping! */
 "shopping" = "Shopping";
+
+/* Search category for second_hand/charity/antique/auction shops; any changes should be duplicated in categories.txt @secondhand! */
+"secondhand" = "Z drugiej ręki";
 
 /* Search category for places to stay; any changes should be duplicated in categories.txt @hotel! */
 "hotel" = "Hotel";
@@ -762,24 +768,22 @@
 /* iOS Dialog for the case when the location permission is not granted */
 "location_services_disabled_3" = "3. Zaznacz Podczas korzystania z aplikacji";
 
-"meter" = "m";
+"m" = "m";
 
-"kilometer" = "km";
+"km" = "km";
 
 "kilometers_per_hour" = "km/h";
 
-"mile" = "mi";
+"mi" = "mi";
 
 /* A unit of measure */
-"foot" = "ft";
+"ft" = "ft";
 
 "miles_per_hour" = "mph";
 
 "hour" = "godz";
 
 "minute" = "min";
-
-"placepage_place_description" = "Opis";
 
 "placepage_more_button" = "Więcej";
 
@@ -1339,6 +1343,8 @@
 
 "type.amenity.community_centre" = "Centrum społecznościowe";
 
+"type.amenity.conference_centre" = "Centrum konferencyjne";
+
 "type.amenity.courthouse" = "Sąd";
 
 "type.amenity.dentist" = "Dentysta";
@@ -1348,6 +1354,8 @@
 "type.amenity.drinking_water" = "Woda pitna";
 
 "type.amenity.driving_school" = "Szkoła nauki jazdy";
+
+"type.amenity.exhibition_centre" = "Centrum wystawowe";
 
 "type.amenity.money_transfer" = "Transfer pieniędzy";
 
@@ -1586,6 +1594,8 @@
 
 "type.barrier.stile" = "Przełaz";
 
+"type.barrier.turnstile" = "Bramka obrotowa";
+
 "type.barrier.swing_gate" = "Szlaban";
 
 "type.barrier.toll_booth" = "Kasa";
@@ -1633,6 +1643,20 @@
 "type.boundary.administrative.suburb" = "Granica przedmieść";
 
 "type.boundary.national_park" = "Park narodowy";
+
+"type.boundary.protected_area" = "Strefa chroniona";
+
+"type.boundary.protected_area.1" = "Strefa chroniona";
+
+"type.boundary.protected_area.2" = "Strefa chroniona";
+
+"type.boundary.protected_area.3" = "Strefa chroniona";
+
+"type.boundary.protected_area.4" = "Strefa chroniona";
+
+"type.boundary.protected_area.5" = "Strefa chroniona";
+
+"type.boundary.protected_area.6" = "Strefa chroniona";
 
 "type.building" = "Budynek";
 
@@ -1881,6 +1905,8 @@
 /* This is for main/primary entrances, for secondary entrances see type.entrance */
 "type.entrance.main" = "Główne wejście";
 
+"type.entrance.exit" = "Wyjdź";
+
 "type.healthcare.laboratory" = "Laboratorium Medyczne";
 
 "type.healthcare.physiotherapist" = "Fizjoterapeuta";
@@ -2056,6 +2082,9 @@
 
 /* These translations are used for all type.highway.*.bridge. */
 "type.highway.road.bridge" = "Most";
+
+/* A bridge structure outline. */
+"type.man_made.bridge" = "Most";
 
 /* These translations are used for all type.highway.*.tunnel. */
 "type.highway.road.tunnel" = "Tunel";
@@ -2304,6 +2333,8 @@
 "type.internet_access.wlan" = "Internet";
 
 "type.junction" = "Skrzyżowanie";
+
+"type.junction.circular" = "Rondo";
 
 "type.junction.roundabout" = "Rondo";
 
@@ -2773,25 +2804,54 @@
 
 "type.railway.rail" = "Kolej";
 
-"type.railway.rail.bridge" = "Railway Bridge";
+"type.railway.rail.highspeed" = "Kolej dużych prędkości";
 
-"type.railway.rail.motor_vehicle" = "Railway";
+"type.railway.rail.tourism" = "Kolej turystyczna";
 
-"type.railway.rail.tunnel" = "Railway Tunnel";
+"type.railway.rail.main" = "Kolej";
 
-"type.railway.razed" = "Razed Rail";
+/* Includes ordinary railway=rail w/o more specific usage= and service= tags. */
+"type.railway.rail.branch" = "Kolej drugorzędna";
 
-"type.railway.siding" = "Siding Rail";
+/* Non-passenger utility tracks: industrial, military, test. */
+"type.railway.rail.utility" = "Kolej użytkowa";
 
-"type.railway.siding.bridge" = "Siding Rail Bridge";
+"type.railway.rail.spur" = "Ostroga kolejowa";
 
-"type.railway.siding.tunnel" = "Siding Rail Tunnel";
+/* Short service tracks: siding, yard, crossover. */
+"type.railway.rail.service" = "Pomocniczy tor kolejowy";
 
-"type.railway.spur" = "Spur Rail";
+"type.railway.rail.bridge" = "Most kolejowy";
 
-"type.railway.spur.bridge" = "Spur Rail Bridge";
+"type.railway.rail.highspeed.bridge" = "Most kolejowy";
 
-"type.railway.spur.tunnel" = "Spur Rail Tunnel";
+"type.railway.rail.tourism.bridge" = "Most kolejowy";
+
+"type.railway.rail.main.bridge" = "Most kolejowy";
+
+"type.railway.rail.branch.bridge" = "Most kolejowy";
+
+"type.railway.rail.utility.bridge" = "Most kolejowy";
+
+"type.railway.rail.spur.bridge" = "Most kolejowy";
+
+"type.railway.rail.service.bridge" = "Most kolejowy";
+
+"type.railway.rail.tunnel" = "Tunel kolejowy";
+
+"type.railway.rail.highspeed.tunnel" = "Tunel kolejowy";
+
+"type.railway.rail.tourism.tunnel" = "Tunel kolejowy";
+
+"type.railway.rail.main.tunnel" = "Tunel kolejowy";
+
+"type.railway.rail.branch.tunnel" = "Tunel kolejowy";
+
+"type.railway.rail.utility.tunnel" = "Tunel kolejowy";
+
+"type.railway.rail.spur.tunnel" = "Tunel kolejowy";
+
+"type.railway.rail.service.tunnel" = "Tunel kolejowy";
 
 "type.railway.station" = "Dworzec kolejowy";
 
@@ -3002,6 +3062,8 @@
 "type.railway.station.subway.tashkent" = "Metro";
 
 "type.railway.station.subway.tbilisi" = "Metro";
+
+"type.railway.station.subway.tehran" = "Metro";
 
 "type.railway.station.subway.tianjin" = "Metro";
 
@@ -3229,6 +3291,8 @@
 
 "type.railway.subway_entrance.tbilisi" = "Wejście do metra";
 
+"type.railway.subway_entrance.tehran" = "Wejście do metra";
+
 "type.railway.subway_entrance.tianjin" = "Wejście do metra";
 
 "type.railway.subway_entrance.tokyo" = "Wejście do metra";
@@ -3255,17 +3319,11 @@
 
 "type.railway.tram_stop" = "Przystanek tramwajowy";
 
-"type.railway.yard" = "Railway Yard";
-
-"type.railway.yard.bridge" = "Railway Yard Bridge";
-
-"type.railway.yard.tunnel" = "Railway Yard Tunnel";
-
 "type.route" = "Route";
 
 "type.route.ferry" = "Ferry";
 
-"type.route.shuttle_train" = "Shuttle Train";
+"type.route.shuttle_train" = "route-shuttle_train";
 
 "type.shop" = "Sklep";
 
@@ -3637,7 +3695,7 @@
 
 "type.waterway.canal.tunnel" = "Kanał";
 
-"type.waterway.fish_pass" = "Fish Pass";
+"type.waterway.fish_pass" = "Przepławka";
 
 "type.waterway.dam" = "Dam";
 
@@ -3710,3 +3768,7 @@
 "type.piste_type.sled" = "Sledding Piste";
 
 "type.amenity.events_venue" = "Miejsce wydarzeń";
+
+"type.shop.auction" = "Aukcja";
+
+"type.shop.collector" = "Przedmioty kolekcjonerskie";

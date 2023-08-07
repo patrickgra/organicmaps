@@ -71,8 +71,11 @@
 /* "Bookmark Lists" dialog title */
 "bookmark_sets" = "ブックマークセット";
 
-/* "Bookmarks" dialog title, please also edit it in iphone/plist.txt */
+/* Should be used in the bookmarks-only context, see bookmarks_and_tracks if tracks are also implied. */
 "bookmarks" = "ブックマーク";
+
+/* "Bookmarks and Tracks" dialog title, also sync it with iphone/plist.txt */
+"bookmarks_and_tracks" = "ブックマークとトラック";
 
 /* Default bookmark list name */
 "core_my_places" = "マイロケーション";
@@ -106,6 +109,9 @@
 
 /* Search category for clothes/shoes/gifts/jewellery/sport shops; any changes should be duplicated in categories.txt @shopping! */
 "shopping" = "ショッピング";
+
+/* Search category for second_hand/charity/antique/auction shops; any changes should be duplicated in categories.txt @secondhand! */
+"secondhand" = "中古品";
 
 /* Search category for places to stay; any changes should be duplicated in categories.txt @hotel! */
 "hotel" = "ホテル";
@@ -762,24 +768,22 @@
 /* iOS Dialog for the case when the location permission is not granted */
 "location_services_disabled_3" = "3. アプリの使用中を選択してください";
 
-"meter" = "m";
+"m" = "m";
 
-"kilometer" = "km";
+"km" = "km";
 
 "kilometers_per_hour" = "キロメートル毎時";
 
-"mile" = "マイル";
+"mi" = "マイル";
 
 /* A unit of measure */
-"foot" = "フィート";
+"ft" = "フィート";
 
 "miles_per_hour" = "マイル毎時";
 
 "hour" = "時間";
 
 "minute" = "分";
-
-"placepage_place_description" = "説明";
 
 "placepage_more_button" = "さらに詳しく";
 
@@ -1339,6 +1343,8 @@
 
 "type.amenity.community_centre" = "コミュニティセンター";
 
+"type.amenity.conference_centre" = "カンファレンスセンター";
+
 "type.amenity.courthouse" = "裁判所";
 
 "type.amenity.dentist" = "歯医者";
@@ -1348,6 +1354,8 @@
 "type.amenity.drinking_water" = "水飲み場";
 
 "type.amenity.driving_school" = "自動車教習所";
+
+"type.amenity.exhibition_centre" = "エキシビションセンター";
 
 "type.amenity.money_transfer" = "送金";
 
@@ -1586,6 +1594,8 @@
 
 "type.barrier.stile" = "回転扉";
 
+"type.barrier.turnstile" = "ターンスタイル";
+
 "type.barrier.swing_gate" = "ブームバリア";
 
 "type.barrier.toll_booth" = "料金所";
@@ -1633,6 +1643,20 @@
 "type.boundary.administrative.suburb" = "Suburb Boundary";
 
 "type.boundary.national_park" = "国立公園";
+
+"type.boundary.protected_area" = "保護区域";
+
+"type.boundary.protected_area.1" = "保護区域";
+
+"type.boundary.protected_area.2" = "保護区域";
+
+"type.boundary.protected_area.3" = "保護区域";
+
+"type.boundary.protected_area.4" = "保護区域";
+
+"type.boundary.protected_area.5" = "保護区域";
+
+"type.boundary.protected_area.6" = "保護区域";
 
 "type.building" = "建物";
 
@@ -1881,6 +1905,8 @@
 /* This is for main/primary entrances, for secondary entrances see type.entrance */
 "type.entrance.main" = "正面玄関";
 
+"type.entrance.exit" = "終了する";
+
 "type.healthcare.laboratory" = "医療研究所";
 
 "type.healthcare.physiotherapist" = "理学療法士";
@@ -2056,6 +2082,9 @@
 
 /* These translations are used for all type.highway.*.bridge. */
 "type.highway.road.bridge" = "橋";
+
+/* A bridge structure outline. */
+"type.man_made.bridge" = "橋";
 
 /* These translations are used for all type.highway.*.tunnel. */
 "type.highway.road.tunnel" = "トンネル";
@@ -2304,6 +2333,8 @@
 "type.internet_access.wlan" = "インターネット";
 
 "type.junction" = "交差点";
+
+"type.junction.circular" = "ラウンドアバウト";
 
 "type.junction.roundabout" = "ラウンドアバウト";
 
@@ -2773,25 +2804,54 @@
 
 "type.railway.rail" = "鉄道";
 
+"type.railway.rail.highspeed" = "高速鉄道";
+
+"type.railway.rail.tourism" = "観光鉄道";
+
+"type.railway.rail.main" = "鉄道";
+
+/* Includes ordinary railway=rail w/o more specific usage= and service= tags. */
+"type.railway.rail.branch" = "二次鉄道";
+
+/* Non-passenger utility tracks: industrial, military, test. */
+"type.railway.rail.utility" = "実用鉄道";
+
+"type.railway.rail.spur" = "引き込み線";
+
+/* Short service tracks: siding, yard, crossover. */
+"type.railway.rail.service" = "補助線路";
+
 "type.railway.rail.bridge" = "鉄道(橋)";
 
-"type.railway.rail.motor_vehicle" = "鉄道";
+"type.railway.rail.highspeed.bridge" = "鉄道(橋)";
+
+"type.railway.rail.tourism.bridge" = "鉄道(橋)";
+
+"type.railway.rail.main.bridge" = "鉄道(橋)";
+
+"type.railway.rail.branch.bridge" = "鉄道(橋)";
+
+"type.railway.rail.utility.bridge" = "鉄道(橋)";
+
+"type.railway.rail.spur.bridge" = "鉄道(橋)";
+
+"type.railway.rail.service.bridge" = "鉄道(橋)";
 
 "type.railway.rail.tunnel" = "鉄道(鉄道)";
 
-"type.railway.razed" = "撤去済の鉄道";
+"type.railway.rail.highspeed.tunnel" = "鉄道(鉄道)";
 
-"type.railway.siding" = "側線";
+"type.railway.rail.tourism.tunnel" = "鉄道(鉄道)";
 
-"type.railway.siding.bridge" = "側線(橋)";
+"type.railway.rail.main.tunnel" = "鉄道(鉄道)";
 
-"type.railway.siding.tunnel" = "側線(トンネル)";
+"type.railway.rail.branch.tunnel" = "鉄道(鉄道)";
 
-"type.railway.spur" = "引き込み線";
+"type.railway.rail.utility.tunnel" = "鉄道(鉄道)";
 
-"type.railway.spur.bridge" = "引き込み線(橋)";
+"type.railway.rail.spur.tunnel" = "鉄道(鉄道)";
 
-"type.railway.spur.tunnel" = "引き込み線(トンネル)";
+"type.railway.rail.service.tunnel" = "鉄道(鉄道)";
 
 "type.railway.station" = "鉄道駅";
 
@@ -3002,6 +3062,8 @@
 "type.railway.station.subway.tashkent" = "地下鉄";
 
 "type.railway.station.subway.tbilisi" = "地下鉄";
+
+"type.railway.station.subway.tehran" = "地下鉄";
 
 "type.railway.station.subway.tianjin" = "地下鉄";
 
@@ -3229,6 +3291,8 @@
 
 "type.railway.subway_entrance.tbilisi" = "地下鉄入り口";
 
+"type.railway.subway_entrance.tehran" = "地下鉄入り口";
+
 "type.railway.subway_entrance.tianjin" = "地下鉄入り口";
 
 "type.railway.subway_entrance.tokyo" = "地下鉄入り口";
@@ -3255,17 +3319,11 @@
 
 "type.railway.tram_stop" = "トラム";
 
-"type.railway.yard" = "ヤード";
-
-"type.railway.yard.bridge" = "ヤード(橋)";
-
-"type.railway.yard.tunnel" = "ヤード(トンネル)";
-
 "type.route" = "ルート";
 
 "type.route.ferry" = "フェリー航路";
 
-"type.route.shuttle_train" = "Shuttle Train";
+"type.route.shuttle_train" = "route-shuttle_train";
 
 "type.shop" = "買い物";
 
@@ -3637,7 +3695,7 @@
 
 "type.waterway.canal.tunnel" = "運河";
 
-"type.waterway.fish_pass" = "Fish Pass";
+"type.waterway.fish_pass" = "魚道";
 
 "type.waterway.dam" = "ダム";
 
@@ -3710,3 +3768,7 @@
 "type.piste_type.sled" = "Sledding Piste";
 
 "type.amenity.events_venue" = "イベント会場";
+
+"type.shop.auction" = "オークション";
+
+"type.shop.collector" = "コレクタブル";

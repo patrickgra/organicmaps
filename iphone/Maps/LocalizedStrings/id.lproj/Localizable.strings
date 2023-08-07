@@ -71,8 +71,11 @@
 /* "Bookmark Lists" dialog title */
 "bookmark_sets" = "Set Penanda";
 
-/* "Bookmarks" dialog title, please also edit it in iphone/plist.txt */
+/* Should be used in the bookmarks-only context, see bookmarks_and_tracks if tracks are also implied. */
 "bookmarks" = "Penanda";
+
+/* "Bookmarks and Tracks" dialog title, also sync it with iphone/plist.txt */
+"bookmarks_and_tracks" = "Penanda dan jalur";
 
 /* Default bookmark list name */
 "core_my_places" = "Tempat-tempat Saya";
@@ -106,6 +109,9 @@
 
 /* Search category for clothes/shoes/gifts/jewellery/sport shops; any changes should be duplicated in categories.txt @shopping! */
 "shopping" = "Berbelanja";
+
+/* Search category for second_hand/charity/antique/auction shops; any changes should be duplicated in categories.txt @secondhand! */
+"secondhand" = "Tangan kedua";
 
 /* Search category for places to stay; any changes should be duplicated in categories.txt @hotel! */
 "hotel" = "Hotel";
@@ -762,24 +768,22 @@
 /* iOS Dialog for the case when the location permission is not granted */
 "location_services_disabled_3" = "3. Pilih While Using the App";
 
-"meter" = "m";
+"m" = "m";
 
-"kilometer" = "km";
+"km" = "km";
 
 "kilometers_per_hour" = "km/j";
 
-"mile" = "mil";
+"mi" = "mil";
 
 /* A unit of measure */
-"foot" = "kaki";
+"ft" = "kaki";
 
 "miles_per_hour" = "mpj";
 
 "hour" = "j";
 
 "minute" = "mnt";
-
-"placepage_place_description" = "Deskripsi";
 
 "placepage_more_button" = "Lainnya";
 
@@ -1339,6 +1343,8 @@
 
 "type.amenity.community_centre" = "Pusat komunitas";
 
+"type.amenity.conference_centre" = "Pusat konferensi";
+
 "type.amenity.courthouse" = "Gedung pengadilan";
 
 "type.amenity.dentist" = "Dokter gigi";
@@ -1348,6 +1354,8 @@
 "type.amenity.drinking_water" = "Air minum";
 
 "type.amenity.driving_school" = "Sekolah Mengemudi";
+
+"type.amenity.exhibition_centre" = "Pusat pameran";
 
 "type.amenity.money_transfer" = "Transfer uang";
 
@@ -1586,6 +1594,8 @@
 
 "type.barrier.stile" = "Undakan";
 
+"type.barrier.turnstile" = "Pintu putar";
+
 "type.barrier.swing_gate" = "Polisi tidur";
 
 "type.barrier.toll_booth" = "Gerbang tol";
@@ -1633,6 +1643,20 @@
 "type.boundary.administrative.suburb" = "Suburb Boundary";
 
 "type.boundary.national_park" = "Taman Nasional";
+
+"type.boundary.protected_area" = "Kawasan Lindung";
+
+"type.boundary.protected_area.1" = "Kawasan Lindung";
+
+"type.boundary.protected_area.2" = "Kawasan Lindung";
+
+"type.boundary.protected_area.3" = "Kawasan Lindung";
+
+"type.boundary.protected_area.4" = "Kawasan Lindung";
+
+"type.boundary.protected_area.5" = "Kawasan Lindung";
+
+"type.boundary.protected_area.6" = "Kawasan Lindung";
 
 "type.building" = "Gedung";
 
@@ -1881,6 +1905,8 @@
 /* This is for main/primary entrances, for secondary entrances see type.entrance */
 "type.entrance.main" = "Pintu masuk utama";
 
+"type.entrance.exit" = "Keluar";
+
 "type.healthcare.laboratory" = "Laboratorium medis";
 
 "type.healthcare.physiotherapist" = "Fisioterapis";
@@ -2056,6 +2082,9 @@
 
 /* These translations are used for all type.highway.*.bridge. */
 "type.highway.road.bridge" = "Menjembatani";
+
+/* A bridge structure outline. */
+"type.man_made.bridge" = "Menjembatani";
 
 /* These translations are used for all type.highway.*.tunnel. */
 "type.highway.road.tunnel" = "Terowongan";
@@ -2304,6 +2333,8 @@
 "type.internet_access.wlan" = "Internet";
 
 "type.junction" = "Junction";
+
+"type.junction.circular" = "Roundabout";
 
 "type.junction.roundabout" = "Roundabout";
 
@@ -2773,25 +2804,54 @@
 
 "type.railway.rail" = "Kereta api";
 
-"type.railway.rail.bridge" = "Railway Bridge";
+"type.railway.rail.highspeed" = "Kereta api berkecepatan tinggi";
 
-"type.railway.rail.motor_vehicle" = "Railway";
+"type.railway.rail.tourism" = "Kereta api wisata";
 
-"type.railway.rail.tunnel" = "Railway Tunnel";
+"type.railway.rail.main" = "Kereta api";
 
-"type.railway.razed" = "Razed Rail";
+/* Includes ordinary railway=rail w/o more specific usage= and service= tags. */
+"type.railway.rail.branch" = "Kereta api sekunder";
 
-"type.railway.siding" = "Siding Rail";
+/* Non-passenger utility tracks: industrial, military, test. */
+"type.railway.rail.utility" = "Kereta api utilitas";
 
-"type.railway.siding.bridge" = "Siding Rail Bridge";
+"type.railway.rail.spur" = "Pacu kereta api";
 
-"type.railway.siding.tunnel" = "Siding Rail Tunnel";
+/* Short service tracks: siding, yard, crossover. */
+"type.railway.rail.service" = "Jalur rel bantu";
 
-"type.railway.spur" = "Spur Rail";
+"type.railway.rail.bridge" = "Jembatan kereta api";
 
-"type.railway.spur.bridge" = "Spur Rail Bridge";
+"type.railway.rail.highspeed.bridge" = "Jembatan kereta api";
 
-"type.railway.spur.tunnel" = "Spur Rail Tunnel";
+"type.railway.rail.tourism.bridge" = "Jembatan kereta api";
+
+"type.railway.rail.main.bridge" = "Jembatan kereta api";
+
+"type.railway.rail.branch.bridge" = "Jembatan kereta api";
+
+"type.railway.rail.utility.bridge" = "Jembatan kereta api";
+
+"type.railway.rail.spur.bridge" = "Jembatan kereta api";
+
+"type.railway.rail.service.bridge" = "Jembatan kereta api";
+
+"type.railway.rail.tunnel" = "Terowongan kereta api";
+
+"type.railway.rail.highspeed.tunnel" = "Terowongan kereta api";
+
+"type.railway.rail.tourism.tunnel" = "Terowongan kereta api";
+
+"type.railway.rail.main.tunnel" = "Terowongan kereta api";
+
+"type.railway.rail.branch.tunnel" = "Terowongan kereta api";
+
+"type.railway.rail.utility.tunnel" = "Terowongan kereta api";
+
+"type.railway.rail.spur.tunnel" = "Terowongan kereta api";
+
+"type.railway.rail.service.tunnel" = "Terowongan kereta api";
 
 "type.railway.station" = "Rel kereta api";
 
@@ -3002,6 +3062,8 @@
 "type.railway.station.subway.tashkent" = "Stasiun bawah tanah";
 
 "type.railway.station.subway.tbilisi" = "Stasiun bawah tanah";
+
+"type.railway.station.subway.tehran" = "Stasiun bawah tanah";
 
 "type.railway.station.subway.tianjin" = "Stasiun bawah tanah";
 
@@ -3229,6 +3291,8 @@
 
 "type.railway.subway_entrance.tbilisi" = "Pintu masuk kereta bawah tanah";
 
+"type.railway.subway_entrance.tehran" = "Pintu masuk kereta bawah tanah";
+
 "type.railway.subway_entrance.tianjin" = "Pintu masuk kereta bawah tanah";
 
 "type.railway.subway_entrance.tokyo" = "Pintu masuk kereta bawah tanah";
@@ -3255,17 +3319,11 @@
 
 "type.railway.tram_stop" = "Perhentian trem";
 
-"type.railway.yard" = "Railway Yard";
-
-"type.railway.yard.bridge" = "Railway Yard Bridge";
-
-"type.railway.yard.tunnel" = "Railway Yard Tunnel";
-
 "type.route" = "Route";
 
 "type.route.ferry" = "Ferry";
 
-"type.route.shuttle_train" = "Shuttle Train";
+"type.route.shuttle_train" = "route-shuttle_train";
 
 "type.shop" = "Toko";
 
@@ -3637,7 +3695,7 @@
 
 "type.waterway.canal.tunnel" = "Kanal";
 
-"type.waterway.fish_pass" = "Fish Pass";
+"type.waterway.fish_pass" = "Tangga ikan";
 
 "type.waterway.dam" = "Dam";
 
@@ -3710,3 +3768,7 @@
 "type.piste_type.sled" = "Sledding Piste";
 
 "type.amenity.events_venue" = "Tempat acara";
+
+"type.shop.auction" = "Lelang";
+
+"type.shop.collector" = "Barang koleksi";

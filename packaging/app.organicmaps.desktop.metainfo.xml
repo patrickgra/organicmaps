@@ -42,7 +42,7 @@
         <li>Contour lines, elevation profiles, peaks, and slopes</li>
         <li>Turn-by-turn walking, cycling, and car navigation with voice guidance</li>
         <li>Fast offline search on the map</li>
-        <li>Bookmarks export and import in KML/KMZ formats (GPX is planned)</li>
+        <li>Bookmarks and tracks export and import in KML, KMZ, GPX formats</li>
         <li>Dark Mode to protect your eyes</li>
         <li>Countries and regions don&apos;t take a lot of space</li>
         <li>Free and open-source</li>
@@ -113,6 +113,70 @@
   </screenshots>
 
   <releases>
+   <release version="2023.07.13-10" date="2023-07-13">
+     <description>
+       <p>Highlights:</p>
+         <ul>
+           <li>Fresh OpenStreetMap data as of July 10, 2023</li>
+           <li>Use Qt6 instead of Qt5, please report any log errors or issues</li>
+           <li>Add preference for larger map font size</li>
+           <li>Feature's layer is displayed in the Place Page</li>
+           <li>Fixed crash when rendering large objects</li>
+           <li>Faster loading of bookmarks and tracks</li>
+           <li>Support altitude, OsmAnd, and Garmin colors in imported GPX tracks</li>
+           <li>Fixed pedestrian ETA for big slopes</li>
+           <li>Prefer tertiary roads to service roads in car routing</li>
+           <li>Better Devanagari (Marathi) font</li>
+         </ul>
+       <p>Search:</p>
+         <ul>
+           <li>Improved search results ranking</li>
+           <li>Fixed shop categories search</li>
+           <li>Fixed airport search results with empty names</li>
+         </ul>
+       <p>Translations:</p>
+         <ul>
+           <li>Updated Catalan, Czech, Finnish, French, German, Italian, Polish, Spanish, Swedish, and Turkish translations</li>
+         </ul>
+       <p>Map Styles:</p>
+         <ul>
+           <li>Improve visibility and findability of highway services and rest areas</li>
+           <li>Added second-hand category, auction, collectors shops, turnstile &amp; exit</li>
+           <li>Fixed underwater tunnels not being visible</li>
+           <li>Fixed areal water tunnels being drawn over other areas</li>
+           <li>Introduced more detailed railway-rail-* types</li>
+           <li>Fixed railway-abandoned/preserved bridges</li>
+           <li>Added a bridge structure outline man_made-bridge</li>
+           <li>Added community center, conference center, exhibition center, events venue</li>
+           <li>Increased shop icons priority</li>
+           <li>Added boundary=protected_area</li>
+         </ul>
+     </description>
+   </release>
+   <release version="2023.06.04-13" date="2023-06-04">
+     <description>
+       <p>Highlights:</p>
+         <ul>
+           <li>New OpenStreetMap data as of June 2, 2023</li>
+           <li>GPX import support</li>
+           <li>Fixed disappearing bookmark lists when wrong characters were saved in a bookmark name or description</li>
+           <li>Improved car and bicycle routing</li>
+           <li>Fixed bookmarks dialog color in the dark mode</li>
+         </ul>
+       <p>Map Styles:</p>
+         <ul>
+           <li>Fixed funicular icon</li>
+           <li>Changed desert color in the dark mode</li>
+           <li>Added Fish Pass</li>
+           <li>New Icon for Parcel Locker</li>
+           <li>Fixed icon for northernmost Munich underground station</li>
+         </ul>
+       <p>Translations:</p>
+         <ul>
+           <li>Corrected Basque, Belarusian, British, English, and Ukrainian translations</li>
+         </ul>
+     </description>
+   </release>
    <release version="2023.05.08-7" date="2023-05-08">
      <description>
        <p>Highlights:</p>

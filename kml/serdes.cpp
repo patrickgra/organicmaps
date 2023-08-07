@@ -13,8 +13,6 @@
 #include "base/string_utils.hpp"
 #include "base/timer.hpp"
 
-#include <sstream>
-
 namespace kml
 {
 namespace
@@ -52,11 +50,6 @@ std::string const kExtendedDataFooter =
 
 std::string const kCompilationFooter = "</" + kCompilation + ">\n";
 
-auto const kDefaultLang = StringUtf8Multilang::kDefaultCode;
-
-auto const kDefaultTrackWidth = 5.0;
-auto const kDefaultTrackColor = 0x006ec7ff;
-
 std::string Indent(size_t count)
 {
   return std::string(count, ' ');
@@ -68,25 +61,6 @@ std::string const kIndent4 = Indent(4);
 std::string const kIndent6 = Indent(6);
 std::string const kIndent8 = Indent(8);
 std::string const kIndent10 = Indent(10);
-
-std::string PointToString(m2::PointD const & org)
-{
-  double const lon = mercator::XToLon(org.x);
-  double const lat = mercator::YToLat(org.y);
-
-  std::ostringstream ss;
-  ss.precision(8);
-
-  ss << lon << "," << lat;
-  return ss.str();
-}
-
-std::string PointToString(geometry::PointWithAltitude const & pt)
-{
-  if (pt.GetAltitude() != geometry::kInvalidAltitude)
-    return PointToString(pt.GetPoint()) + "," + strings::to_string(pt.GetAltitude());
-  return PointToString(pt.GetPoint());
-}
 
 std::string GetLocalizableString(LocalizableString const & s, int8_t lang)
 {
@@ -171,13 +145,6 @@ BookmarkIcon GetIcon(std::string const & iconName)
       return icon;
   }
   return BookmarkIcon::None;
-}
-
-template <typename Channel>
-uint32_t ToRGBA(Channel red, Channel green, Channel blue, Channel alpha)
-{
-  return static_cast<uint8_t>(red) << 24 | static_cast<uint8_t>(green) << 16 |
-         static_cast<uint8_t>(blue) << 8 | static_cast<uint8_t>(alpha);
 }
 
 void SaveStringWithCDATA(KmlWriter::WriterWrapper & writer, std::string s)
@@ -846,9 +813,10 @@ double KmlParser::GetTrackWidthForStyle(std::string const & styleUrl) const
   return kDefaultTrackWidth;
 }
 
-bool KmlParser::Push(std::string const & tag)
+bool KmlParser::Push(std::string movedTag)
 {
-  m_tags.push_back(tag);
+  std::string const & tag = m_tags.emplace_back(std::move(movedTag));
+
   if (tag == kCompilation)
   {
     m_categoryData = &m_compilationData;
@@ -862,53 +830,51 @@ bool KmlParser::Push(std::string const & tag)
   return true;
 }
 
-void KmlParser::AddAttr(std::string const & attr, std::string const & value)
+void KmlParser::AddAttr(std::string attr, std::string value)
 {
-  std::string attrInLowerCase = attr;
-  strings::AsciiToLower(attrInLowerCase);
+  strings::AsciiToLower(attr);
 
-  if (IsValidAttribute(kStyle, value, attrInLowerCase))
+  if (IsValidAttribute(kStyle, value, attr))
   {
     m_styleId = value;
   }
-  else if (IsValidAttribute(kStyleMap, value, attrInLowerCase))
+  else if (IsValidAttribute(kStyleMap, value, attr))
   {
     m_mapStyleId = value;
   }
-  else if (IsValidAttribute(kCompilation, value, attrInLowerCase))
+  else if (IsValidAttribute(kCompilation, value, attr))
   {
     if (!strings::to_uint64(value, m_categoryData->m_compilationId))
       m_categoryData->m_compilationId = 0;
   }
 
-  if (attrInLowerCase == "code")
+  if (attr == "code")
   {
     m_attrCode = StringUtf8Multilang::GetLangIndex(value);
   }
-  else if (attrInLowerCase == "id")
+  else if (attr == "id")
   {
     m_attrId = value;
   }
-  else if (attrInLowerCase == "key")
+  else if (attr == "key")
   {
     m_attrKey = value;
   }
-  else if (attrInLowerCase == "type" && !value.empty() && GetTagFromEnd(0) == kCompilation)
+  else if (attr == "type" && !value.empty() && GetTagFromEnd(0) == kCompilation)
   {
-    std::string valueInLowerCase = value;
-    strings::AsciiToLower(valueInLowerCase);
-    if (valueInLowerCase == "category")
+    strings::AsciiToLower(value);
+    if (value == "category")
       m_categoryData->m_type = CompilationType::Category;
-    else if (valueInLowerCase == "collection")
+    else if (value == "collection")
       m_categoryData->m_type = CompilationType::Collection;
-    else if (valueInLowerCase == "day")
+    else if (value == "day")
       m_categoryData->m_type = CompilationType::Day;
     else
       m_categoryData->m_type = CompilationType::Category;
   }
 }
 
-bool KmlParser::IsValidAttribute(std::string_view const & type, std::string const & value,
+bool KmlParser::IsValidAttribute(std::string_view type, std::string const & value,
                                  std::string const & attrInLowerCase) const
 {
   return (GetTagFromEnd(0) == type && !value.empty() && attrInLowerCase == "id");
@@ -926,7 +892,7 @@ bool KmlParser::IsProcessTrackTag() const
   return n >= 3 && IsTrack(m_tags[n - 1]) && (m_tags[n - 2] == kPlacemark || m_tags[n - 3] == kPlacemark);
 }
 
-void KmlParser::Pop(std::string const & tag)
+void KmlParser::Pop(std::string_view tag)
 {
   ASSERT_EQUAL(m_tags.back(), tag, ());
 
@@ -1042,18 +1008,19 @@ void KmlParser::Pop(std::string const & tag)
   m_tags.pop_back();
 }
 
-void KmlParser::CharData(std::string value)
+void KmlParser::CharData(std::string & value)
 {
   strings::Trim(value);
 
   size_t const count = m_tags.size();
   if (count > 1 && !value.empty())
   {
-    std::string const & currTag = m_tags[count - 1];
-    std::string const & prevTag = m_tags[count - 2];
-    std::string const ppTag = count > 2 ? m_tags[count - 3] : std::string();
-    std::string const pppTag = count > 3 ? m_tags[count - 4] : std::string();
-    std::string const ppppTag = count > 4 ? m_tags[count - 5] : std::string();
+    using namespace std;
+    string const & currTag = m_tags[count - 1];
+    string const & prevTag = m_tags[count - 2];
+    string_view const ppTag = count > 2 ? m_tags[count - 3] : string_view{};
+    string_view const pppTag = count > 3 ? m_tags[count - 4] : string_view{};
+    string_view const ppppTag = count > 4 ? m_tags[count - 5] : string_view{};
 
     auto const TrackTag = [this, &prevTag, &currTag, &value]()
     {

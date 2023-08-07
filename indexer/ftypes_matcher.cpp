@@ -13,7 +13,7 @@
 #include <iterator>
 #include <map>
 #include <sstream>
-#include <unordered_map>
+
 
 namespace ftypes
 {
@@ -31,9 +31,6 @@ public:
     auto const & c = classif();
     m_map[c.GetTypeByPath({"route", "ferry"})] = ftypes::HighwayClass::Transported;
     m_map[c.GetTypeByPath({"route", "shuttle_train"})] = ftypes::HighwayClass::Transported;
-    /// @todo Wow, actual highway type is railway-rail-motor_vehicle.
-    /// Should be carefull with GetHighwayClass function.
-    m_map[c.GetTypeByPath({"railway", "rail"})] = ftypes::HighwayClass::Transported;
 
     m_map[c.GetTypeByPath({"highway", "motorway"})] = ftypes::HighwayClass::Trunk;
     m_map[c.GetTypeByPath({"highway", "motorway_link"})] = ftypes::HighwayClass::Trunk;
@@ -142,7 +139,7 @@ uint32_t BaseChecker::PrepareToMatch(uint32_t type, uint8_t level)
 
 bool BaseChecker::IsMatched(uint32_t type) const
 {
-  return (find(m_types.begin(), m_types.end(), PrepareToMatch(type, m_level)) != m_types.end());
+  return base::IsExist(m_types, PrepareToMatch(type, m_level));
 }
 
 void BaseChecker::ForEachType(function<void(uint32_t)> const & fn) const
@@ -346,16 +343,16 @@ IsWayChecker::IsWayChecker()
       {"primary",       Regular},
       {"primary_link",  Regular},
       {"residential",   Residential},
-      {"road",          Outdoor},
+      {"road",          Minors},
       {"secondary",     Regular},
       {"secondary_link",Regular},
-      {"service",       Residential},
+      {"service",       Minors},
       {"tertiary",      Regular},
       {"tertiary_link", Regular},
       {"track",         Outdoor},
       {"trunk",         Motorway},
       {"trunk_link",    Motorway},
-      {"unclassified",  Outdoor},
+      {"unclassified",  Minors},
   };
 
   m_ranks.Reserve(std::size(types));
@@ -413,6 +410,7 @@ IsOneWayChecker::IsOneWayChecker()
 IsRoundAboutChecker::IsRoundAboutChecker()
 {
   Classificator const & c = classif();
+  m_types.push_back(c.GetTypeByPath({"junction", "circular"}));
   m_types.push_back(c.GetTypeByPath({"junction", "roundabout"}));
 }
 
@@ -772,10 +770,9 @@ IsMotorwayJunctionChecker::IsMotorwayJunctionChecker()
   m_types.push_back(c.GetTypeByPath({"highway", "motorway_junction"}));
 }
 
-IsWayWithDurationChecker::IsWayWithDurationChecker() : BaseChecker(3 /* level */)
+IsWayWithDurationChecker::IsWayWithDurationChecker()
 {
   base::StringIL const types[] = {{"route", "ferry"},
-                                  {"railway", "rail", "motor_vehicle"},
                                   {"route", "shuttle_train"}};
   Classificator const & c = classif();
   for (auto const & e : types)
