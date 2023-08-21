@@ -289,7 +289,7 @@
 "facebook" = "Facebook";
 
 /* Text in menu */
-"twitter" = "Twitter";
+"twitter" = "X (Twitter)";
 
 /* Text in menu */
 "instagram" = "Instagram";
@@ -1421,6 +1421,10 @@
 
 "type.amenity.parking.underground" = "Mélygarázs";
 
+"type.amenity.parking.street_side" = "Parkoló";
+
+"type.amenity.parking.lane" = "Parkoló";
+
 "type.amenity.parking_entrance" = "Parkoló bejárata";
 
 "type.amenity.parking_entrance.private" = "Parkoló bejárata";
@@ -1513,6 +1517,8 @@
 "type.amenity.shelter" = "Menedék";
 
 "type.amenity.shower" = "Tusoló";
+
+"type.amenity.stripclub" = "Stripclub";
 
 "type.amenity.taxi" = "Taxi Stand";
 
@@ -1893,6 +1899,8 @@
 
 "type.emergency" = "Emergency";
 
+"type.emergency.assembly_point" = "Sürgősségi gyülekezési pont";
+
 "type.emergency.defibrillator" = "Defibrillátor";
 
 "type.emergency.fire_hydrant" = "Tűzcsap";
@@ -1943,6 +1951,12 @@
 "type.highway.bridleway.tunnel" = "Alagút";
 
 "type.highway.busway" = "Kijelölt buszút";
+
+/* These translations are used for all type.highway.*.bridge. */
+"type.highway.busway.bridge" = "Híd";
+
+/* These translations are used for all type.highway.*.tunnel. */
+"type.highway.busway.tunnel" = "Alagút";
 
 "type.highway.bus_stop" = "Buszmegálló";
 
@@ -3623,6 +3637,8 @@
 
 "type.tourism" = "Tourism";
 
+"type.tourism.aquarium" = "Akvárium";
+
 "type.tourism.alpine_hut" = "Hegyi menedék";
 
 "type.tourism.apartment" = "Apartmanok";
@@ -3707,7 +3723,7 @@
 
 "type.waterway.drain" = "Drain";
 
-"type.waterway.drain.tunnel" = "Drain";
+"type.waterway.drain.tunnel" = "Ditch";
 
 "type.waterway.lock_gate" = "Zsilip";
 

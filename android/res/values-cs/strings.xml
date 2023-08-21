@@ -776,6 +776,8 @@
 	<string name="type.amenity.parking.private">Soukromé parkoviště</string>
 	<string name="type.amenity.parking.park_and_ride">Parkoviště</string>
 	<string name="type.amenity.parking.underground">Podzemní parkoviště</string>
+	<string name="type.amenity.parking.street_side">Parkoviště</string>
+	<string name="type.amenity.parking.lane">Parkoviště</string>
 	<string name="type.amenity.parking_entrance">Vjezd na parkoviště</string>
 	<string name="type.amenity.parking_entrance.private">Vjezd na parkoviště</string>
 	<string name="type.amenity.parking_entrance.permissive">Vjezd na parkoviště</string>
@@ -816,6 +818,7 @@
 	<string name="type.amenity.school">Škola</string>
 	<string name="type.amenity.shelter">Přístřešek</string>
 	<string name="type.amenity.shower">Sprcha</string>
+	<string name="type.amenity.stripclub">Stripcklub</string>
 	<string name="type.amenity.telephone">Telefon</string>
 	<string name="type.amenity.theatre">Divadlo</string>
 	<string name="type.amenity.toilets">Záchody</string>
@@ -965,6 +968,7 @@
 	<string name="type.cuisine.vegan">Veganská kuchyně</string>
 	<string name="type.cuisine.vegetarian">Vegetariánská kuchyně</string>
 	<string name="type.cuisine.vietnamese">Vietnamská kuchyně</string>
+	<string name="type.emergency.assembly_point">Nouzové shromažďovací místo</string>
 	<string name="type.emergency.defibrillator">Defibrilátor</string>
 	<string name="type.emergency.fire_hydrant">Požární hydrant</string>
 	<string name="type.emergency.phone">Tísňového volání</string>
@@ -990,6 +994,10 @@
 	<!-- These translations are used for all type.highway.*.tunnel. -->
 	<string name="type.highway.bridleway.tunnel">Tunel</string>
 	<string name="type.highway.busway">Vyhrazená autobusová silnice</string>
+	<!-- These translations are used for all type.highway.*.bridge. -->
+	<string name="type.highway.busway.bridge">Most</string>
+	<!-- These translations are used for all type.highway.*.tunnel. -->
+	<string name="type.highway.busway.tunnel">Tunel</string>
 	<string name="type.highway.bus_stop">Autobusová zastávka</string>
 	<string name="type.highway.construction">Silnice v rekonstrukci</string>
 	<!-- These translations are used for all type.highway.*.bridge. -->
@@ -1727,6 +1735,7 @@
 	<string name="type.sport.field_hockey">Pozemní hokej</string>
 	<string name="type.sport.badminton">Badminton</string>
 	<string name="type.sport.pelota">Baskická pelota</string>
+	<string name="type.tourism.aquarium">Akvárium</string>
 	<string name="type.tourism.alpine_hut">Ubytování v horách</string>
 	<string name="type.tourism.apartment">Byty</string>
 	<string name="type.tourism.artwork">Umělecké dílo</string>

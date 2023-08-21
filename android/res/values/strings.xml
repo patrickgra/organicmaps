@@ -258,7 +258,7 @@
 	<!-- Text in menu -->
 	<string name="facebook">Facebook</string>
 	<!-- Text in menu -->
-	<string name="twitter">Twitter</string>
+	<string name="twitter">X (Twitter)</string>
 	<!-- Text in menu -->
 	<string name="instagram">Instagram</string>
 	<!-- Text in the editor -->
@@ -863,6 +863,8 @@
 	<string name="type.amenity.parking.private">Private Parking</string>
 	<string name="type.amenity.parking.park_and_ride">Park And Ride Parking</string>
 	<string name="type.amenity.parking.underground">Underground Parking</string>
+	<string name="type.amenity.parking.street_side">Street-Side Parking</string>
+	<string name="type.amenity.parking.lane">Roadside Lane Parking</string>
 	<string name="type.amenity.parking_entrance">Parking Entrance</string>
 	<string name="type.amenity.parking_entrance.private">Parking Entrance</string>
 	<string name="type.amenity.parking_entrance.permissive">Parking Entrance</string>
@@ -910,6 +912,7 @@
 	<string name="type.amenity.school">School</string>
 	<string name="type.amenity.shelter">Shelter</string>
 	<string name="type.amenity.shower">Shower</string>
+	<string name="type.amenity.stripclub">Stripclub</string>
 	<string name="type.amenity.taxi">Taxi Stand</string>
 	<string name="type.amenity.telephone">Phone</string>
 	<string name="type.amenity.theatre">Theatre</string>
@@ -1100,6 +1103,7 @@
 	<string name="type.cuisine.vegetarian">Vegetarian</string>
 	<string name="type.cuisine.vietnamese">Vietnamese</string>
 	<string name="type.emergency">Emergency</string>
+	<string name="type.emergency.assembly_point">Emergency Assembly Point</string>
 	<string name="type.emergency.defibrillator">Defibrillator</string>
 	<string name="type.emergency.fire_hydrant">Fire Hydrant</string>
 	<string name="type.emergency.phone">Emergency Phone</string>
@@ -1128,6 +1132,10 @@
 	<!-- These translations are used for all type.highway.*.tunnel. -->
 	<string name="type.highway.bridleway.tunnel">Tunnel</string>
 	<string name="type.highway.busway">Dedicated Bus Road</string>
+	<!-- These translations are used for all type.highway.*.bridge. -->
+	<string name="type.highway.busway.bridge">Bridge</string>
+	<!-- These translations are used for all type.highway.*.tunnel. -->
+	<string name="type.highway.busway.tunnel">Tunnel</string>
 	<string name="type.highway.bus_stop">Bus Stop</string>
 	<string name="type.highway.construction">Road Under Construction</string>
 	<string name="type.highway.cycleway">Cycle Path</string>
@@ -1993,6 +2001,7 @@
 	<string name="type.sport.badminton">Badminton</string>
 	<string name="type.sport.pelota">Basque Pelota</string>
 	<string name="type.tourism">Tourism</string>
+	<string name="type.tourism.aquarium">Aquarium</string>
 	<string name="type.tourism.alpine_hut">Alpine Lodging</string>
 	<string name="type.tourism.apartment">Holiday Apartment</string>
 	<string name="type.tourism.artwork">Artwork</string>
@@ -2032,10 +2041,10 @@
 	<string name="type.waterway.fish_pass">Fish Pass</string>
 	<string name="type.waterway.dam">Dam</string>
 	<string name="type.waterway.ditch">Ditch</string>
-	<string name="type.waterway.ditch.tunnel">Ditch</string>
+	<string name="type.waterway.ditch.tunnel">Culvert</string>
 	<string name="type.waterway.dock">Waterway Dock</string>
 	<string name="type.waterway.drain">Drain</string>
-	<string name="type.waterway.drain.tunnel">Drain</string>
+	<string name="type.waterway.drain.tunnel">Culvert</string>
 	<string name="type.waterway.lock_gate">Lock Gate</string>
 	<string name="type.waterway.river">River</string>
 	<string name="type.waterway.river.tunnel">River</string>

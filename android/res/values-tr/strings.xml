@@ -832,6 +832,8 @@
 	<string name="type.amenity.parking.private">Özel Otopark</string>
 	<string name="type.amenity.parking.park_and_ride">Otopark</string>
 	<string name="type.amenity.parking.underground">Yeraltı otoparkı</string>
+	<string name="type.amenity.parking.street_side">Otopark</string>
+	<string name="type.amenity.parking.lane">Otopark</string>
 	<string name="type.amenity.parking_entrance">Otopark girişi</string>
 	<string name="type.amenity.parking_entrance.private">Otopark girişi</string>
 	<string name="type.amenity.parking_entrance.permissive">Otopark girişi</string>
@@ -879,6 +881,7 @@
 	<string name="type.amenity.school">Okul</string>
 	<string name="type.amenity.shelter">Barınak</string>
 	<string name="type.amenity.shower">Duş</string>
+	<string name="type.amenity.stripclub">Striptiz kulübü</string>
 	<string name="type.amenity.taxi">Taksi</string>
 	<string name="type.amenity.telephone">Telefon</string>
 	<string name="type.amenity.theatre">Tiyatro</string>
@@ -1063,6 +1066,7 @@
 	<string name="type.cuisine.vegetarian">Vejetaryen mutfağı</string>
 	<string name="type.cuisine.vietnamese">Vietnam mutfağı</string>
 	<string name="type.emergency">Acil</string>
+	<string name="type.emergency.assembly_point">Acil Toplanma Noktası</string>
 	<string name="type.emergency.defibrillator">Defibrilatör</string>
 	<string name="type.emergency.fire_hydrant">Yangın Söndürme Musluğu</string>
 	<string name="type.emergency.phone">Acil Telefon</string>
@@ -1091,6 +1095,10 @@
 	<!-- These translations are used for all type.highway.*.tunnel. -->
 	<string name="type.highway.bridleway.tunnel">Tünel</string>
 	<string name="type.highway.busway">Özel otobüs yolu</string>
+	<!-- These translations are used for all type.highway.*.bridge. -->
+	<string name="type.highway.busway.bridge">Köprü</string>
+	<!-- These translations are used for all type.highway.*.tunnel. -->
+	<string name="type.highway.busway.tunnel">Tünel</string>
 	<string name="type.highway.bus_stop">Otobüs Durağı</string>
 	<string name="type.highway.construction">Yapım Aşamasında Yol</string>
 	<string name="type.highway.cycleway">Bisiklet Yolu</string>
@@ -1928,6 +1936,7 @@
 	<string name="type.sport.badminton">Badminton</string>
 	<string name="type.sport.pelota">Bask pelotası</string>
 	<string name="type.tourism">Turizm</string>
+	<string name="type.tourism.aquarium">Akvaryum</string>
 	<string name="type.tourism.alpine_hut">Dağda Konaklama</string>
 	<string name="type.tourism.apartment">Apart Otel</string>
 	<string name="type.tourism.artwork">Sanat</string>
@@ -1970,7 +1979,7 @@
 	<string name="type.waterway.ditch.tunnel">Hendek</string>
 	<string name="type.waterway.dock">Rıhtım</string>
 	<string name="type.waterway.drain">Lağım</string>
-	<string name="type.waterway.drain.tunnel">Lağım</string>
+	<string name="type.waterway.drain.tunnel">Hendek</string>
 	<string name="type.waterway.lock_gate">Eklüz Kapağı</string>
 	<string name="type.waterway.river">Nehir</string>
 	<string name="type.waterway.river.tunnel">Nehir</string>

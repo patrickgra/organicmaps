@@ -768,6 +768,8 @@
 	<string name="type.amenity.parking.private">ﯽﺻﺎﺼﺘﺧﺍ ﮓﻨﯿﮐﺭﺎﭘ</string>
 	<string name="type.amenity.parking.park_and_ride">پارکینگ</string>
 	<string name="type.amenity.parking.underground">ﯽﻨﯿﻣﺯ ﺮﯾﺯ ﮓﻨﯿﮐﺭﺎﭘ</string>
+	<string name="type.amenity.parking.street_side">پارکینگ</string>
+	<string name="type.amenity.parking.lane">پارکینگ</string>
 	<string name="type.amenity.parking_entrance">ﮓﻨﯿﮐﺭﺎﭘ ﯼﺩﻭﺭﻭ</string>
 	<string name="type.amenity.parking_entrance.private">ﮓﻨﯿﮐﺭﺎﭘ ﯼﺩﻭﺭﻭ</string>
 	<string name="type.amenity.parking_entrance.permissive">ﮓﻨﯿﮐﺭﺎﭘ ﯼﺩﻭﺭﻭ</string>
@@ -807,6 +809,7 @@
 	<string name="type.amenity.school">مدرسه</string>
 	<string name="type.amenity.shelter">پناهگاه</string>
 	<string name="type.amenity.shower">حمام</string>
+	<string name="type.amenity.stripclub">باشگاه استریپ</string>
 	<string name="type.amenity.taxi">تاکسی</string>
 	<string name="type.amenity.telephone">تلفن خانه</string>
 	<string name="type.amenity.theatre">سرگرمی</string>
@@ -872,6 +875,7 @@
 	<string name="type.craft.shoemaker">کفاش</string>
 	<string name="type.craft.winery">شراب‌خانه</string>
 	<string name="type.craft.tailor">خیاطی</string>
+	<string name="type.emergency.assembly_point">محل تجمع اضطراری</string>
 	<string name="type.emergency.defibrillator">دستگاه شوک</string>
 	<string name="type.emergency.fire_hydrant">شیر آتش‌نشانی</string>
 	<string name="type.emergency.phone">تلفن اضطراری</string>
@@ -897,6 +901,10 @@
 	<!-- These translations are used for all type.highway.*.tunnel. -->
 	<string name="type.highway.bridleway.tunnel">تونل</string>
 	<string name="type.highway.busway">ﺱﻮﺑﻮﺗﺍ ﯽﺻﺎﺼﺘﺧﺍ ﻩﺩﺎﺟ</string>
+	<!-- These translations are used for all type.highway.*.bridge. -->
+	<string name="type.highway.busway.bridge">پل</string>
+	<!-- These translations are used for all type.highway.*.tunnel. -->
+	<string name="type.highway.busway.tunnel">تونل</string>
 	<string name="type.highway.bus_stop">حمل و نقل</string>
 	<string name="type.highway.construction">جاده در دست ساخت است</string>
 	<!-- These translations are used for all type.highway.*.bridge. -->
@@ -1636,6 +1644,7 @@
 	<string name="type.sport.field_hockey">ﻦﻤﭼ ﯼﻭﺭ ﯽﮐﺎﻫ</string>
 	<string name="type.sport.badminton">ﻥﻮﺘﻨﯿﻣﺪﺑ</string>
 	<string name="type.sport.pelota">ﯽﮑﺳﺎﺑ ﯼﺎﺗﻮﻠﭘ</string>
+	<string name="type.tourism.aquarium">آکواریوم</string>
 	<string name="type.tourism.apartment">اپارتمان</string>
 	<string name="type.tourism.artwork">گردشگری</string>
 	<string name="type.tourism.artwork.architecture">گردشگری</string>

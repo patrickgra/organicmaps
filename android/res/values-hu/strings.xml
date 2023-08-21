@@ -787,6 +787,8 @@
 	<string name="type.amenity.parking.private">Saját parkoló</string>
 	<string name="type.amenity.parking.park_and_ride">Parkoló</string>
 	<string name="type.amenity.parking.underground">Mélygarázs</string>
+	<string name="type.amenity.parking.street_side">Parkoló</string>
+	<string name="type.amenity.parking.lane">Parkoló</string>
 	<string name="type.amenity.parking_entrance">Parkoló bejárata</string>
 	<string name="type.amenity.parking_entrance.private">Parkoló bejárata</string>
 	<string name="type.amenity.parking_entrance.permissive">Parkoló bejárata</string>
@@ -827,6 +829,7 @@
 	<string name="type.amenity.school">Iskola</string>
 	<string name="type.amenity.shelter">Menedék</string>
 	<string name="type.amenity.shower">Tusoló</string>
+	<string name="type.amenity.stripclub">Stripclub</string>
 	<string name="type.amenity.telephone">Telefon</string>
 	<string name="type.amenity.theatre">Színház</string>
 	<string name="type.amenity.toilets">Mosdó</string>
@@ -976,6 +979,7 @@
 	<string name="type.cuisine.vegan">Vegán konyha</string>
 	<string name="type.cuisine.vegetarian">Vegetáriánus konyha</string>
 	<string name="type.cuisine.vietnamese">Vietnami konyha</string>
+	<string name="type.emergency.assembly_point">Sürgősségi gyülekezési pont</string>
 	<string name="type.emergency.defibrillator">Defibrillátor</string>
 	<string name="type.emergency.fire_hydrant">Tűzcsap</string>
 	<string name="type.emergency.phone">Sürgősségi telefon</string>
@@ -1001,6 +1005,10 @@
 	<!-- These translations are used for all type.highway.*.tunnel. -->
 	<string name="type.highway.bridleway.tunnel">Alagút</string>
 	<string name="type.highway.busway">Kijelölt buszút</string>
+	<!-- These translations are used for all type.highway.*.bridge. -->
+	<string name="type.highway.busway.bridge">Híd</string>
+	<!-- These translations are used for all type.highway.*.tunnel. -->
+	<string name="type.highway.busway.tunnel">Alagút</string>
 	<string name="type.highway.bus_stop">Buszmegálló</string>
 	<string name="type.highway.construction">Útépítés</string>
 	<!-- These translations are used for all type.highway.*.bridge. -->
@@ -1740,6 +1748,7 @@
 	<string name="type.sport.field_hockey">Gyeplabda</string>
 	<string name="type.sport.badminton">Tollaslabda</string>
 	<string name="type.sport.pelota">Baszk pelota</string>
+	<string name="type.tourism.aquarium">Akvárium</string>
 	<string name="type.tourism.alpine_hut">Hegyi menedék</string>
 	<string name="type.tourism.apartment">Apartmanok</string>
 	<string name="type.tourism.artwork">Szobor</string>

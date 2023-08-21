@@ -765,6 +765,8 @@
 	<string name="type.amenity.parking.private">Privat parkering</string>
 	<string name="type.amenity.parking.park_and_ride">Parkering</string>
 	<string name="type.amenity.parking.underground">Underjordisk parkering</string>
+	<string name="type.amenity.parking.street_side">Parkering</string>
+	<string name="type.amenity.parking.lane">Parkering</string>
 	<string name="type.amenity.parking_entrance">Parkering entré</string>
 	<string name="type.amenity.parking_entrance.private">Parkering entré</string>
 	<string name="type.amenity.parking_entrance.permissive">Parkering entré</string>
@@ -805,6 +807,7 @@
 	<string name="type.amenity.school">Skola</string>
 	<string name="type.amenity.shelter">Skyddsrum</string>
 	<string name="type.amenity.shower">Dusch</string>
+	<string name="type.amenity.stripclub">Stripklubb</string>
 	<string name="type.amenity.telephone">Telefon</string>
 	<string name="type.amenity.theatre">Teater</string>
 	<string name="type.amenity.toilets">Toalett</string>
@@ -953,6 +956,7 @@
 	<string name="type.cuisine.vegan">Vegansk mat</string>
 	<string name="type.cuisine.vegetarian">Vegetarisk mat</string>
 	<string name="type.cuisine.vietnamese">Vietnamesisk mat</string>
+	<string name="type.emergency.assembly_point">Nöduppsamlingsplats</string>
 	<string name="type.emergency.fire_hydrant">Brandpost</string>
 	<string name="type.emergency.phone">Nödtelefon</string>
 	<!-- This is for secondary entrances, for main entrances see type.entrance.main -->
@@ -977,6 +981,10 @@
 	<!-- These translations are used for all type.highway.*.tunnel. -->
 	<string name="type.highway.bridleway.tunnel">Tunnel</string>
 	<string name="type.highway.busway">Dedikerad bussväg</string>
+	<!-- These translations are used for all type.highway.*.bridge. -->
+	<string name="type.highway.busway.bridge">Bro</string>
+	<!-- These translations are used for all type.highway.*.tunnel. -->
+	<string name="type.highway.busway.tunnel">Tunnel</string>
 	<string name="type.highway.bus_stop">Busshållplats</string>
 	<string name="type.highway.construction">Väg under uppförande</string>
 	<!-- These translations are used for all type.highway.*.bridge. -->
@@ -1712,6 +1720,7 @@
 	<string name="type.sport.field_hockey">Landhockey</string>
 	<string name="type.sport.badminton">Badminton</string>
 	<string name="type.sport.pelota">Baskisk pelota</string>
+	<string name="type.tourism.aquarium">Akvarium</string>
 	<string name="type.tourism.alpine_hut">Bergsboende</string>
 	<string name="type.tourism.apartment">Lägenheter</string>
 	<string name="type.tourism.artwork">Konstverk</string>

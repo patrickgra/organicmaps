@@ -2817,7 +2817,7 @@ sk:3Vyhliadka
 sw:Genge|utalii
 fa:مناظرگردشگری
 
-tourism-information|@tourism
+tourism-information
 en:4Tourist Information|4information|U+1F481
 ru:4Туринформация|3информация
 bg:3информация
@@ -2891,7 +2891,7 @@ sk:3Piknik
 sw:Sehemu ya madhazi
 fa:مکان پیک نیک
 
-amenity-place_of_worship|@tourism
+amenity-place_of_worship
 en:Place of Worship|3temple|U+1F64F
 ru:Храм
 bg:Храм|молитва|църква|черква|поп|свещеник
@@ -6111,6 +6111,46 @@ sw:Malazi
 fa:پناهگاه
 mr:निवारा
 
+amenity-stripclub
+en:Stripclub
+ar:Stripclub
+be:Стрыптыз-клуб
+bg:Стриптийз клуб
+ca:Club de striptease
+cs:Stripcklub
+da:Stripklub
+de:Stripclub
+el:Stripclub
+es:Club de striptease
+et:Stripiklubi
+eu:Stripclub
+fa:باشگاه استریپ
+fi:Stripclub
+fr:Club de strip-tease
+he:מועדון חשפנות
+hu:Stripclub
+id:Klub telanjang
+it:Stripclub
+ja:ストリップクラブ
+ko:스트립클럽
+mr:स्ट्रिपक्लब
+nb:Stripklubb
+nl:Stripclub
+pl:Klub ze striptizem
+pt:Clube de striptease
+pt-BR:Clube de striptease
+ro:Stripclub
+ru:Стриптиз-клуб
+sk:Stripclub
+sv:Stripklubb
+sw:Klabu ya Strip
+th:สตริปคลับ
+tr:Striptiz kulübü
+uk:Стриптиз-клуб
+vi:Câu lạc bộ thoát y
+zh-Hans:脱衣舞俱乐部
+zh-Hant:脫衣舞俱樂部
+
 amenity-telephone
 en:2Phone|U+260E|U+1F4DE|5Telephone
 ru:3Телефон|4таксофон
@@ -7041,7 +7081,7 @@ sw:Msitu
 fa:جنگل
 mr:वन
 
-leisure-park|@tourism
+leisure-park
 en:Park|U+1F332|U+1F333|U+1F60C
 ru:Парк
 bg:Парк|отдих
@@ -7077,6 +7117,45 @@ sk:Park
 sw:Mbuga
 fa:پارک
 mr:उद्यान|पार्क
+
+tourism-aquarium|@tourism
+en:Aquarium
+ar:حوض سمك
+be:Акварыум
+bg:Аквариум
+ca:Aquari
+cs:Akvárium
+da:Akvarium
+de:Aquarium
+el:Ενυδρείο
+es:Acuario
+et:Akvaarium
+eu:Aquariuma
+fa:آکواریوم
+fi:Akvaario
+fr:Aquarium
+he:אַקוַרִיוּם
+hu:Akvárium
+id:Akuarium
+it:Acquario
+ja:水族館
+ko:수족관
+mr:मत्स्यालय
+nb:Akvarium
+nl:Aquarium
+pl:Akwarium
+pt:Aquário
+ro:Acvariu
+ru:Аквариум
+sk:Akvárium
+sv:Akvarium
+sw:Aquarium
+th:พิพิธภัณฑ์สัตว์น้ำ
+tr:Akvaryum
+uk:Акваріум
+vi:Bể nuôi cá
+zh-Hans:水族馆
+zh-Hant:水族館
 
 tourism-hostel|@hotel
 en:3Hostel|motel|U+1F3E8|backpack|backpacking
@@ -12109,7 +12188,7 @@ el:Σαλέ
 sk:4Chata
 fa:کلبه
 
-tourism-information-board|@tourism
+tourism-information-board
 en:Information Board
 ru:Информационный щит
 bg:Информация|туризъм|бюро|табло
@@ -12145,7 +12224,7 @@ sk:Informačné centrum
 fa:تابلو اعلانات
 mr:माहिती फलक|सूचना फलक
 
-tourism-information-map|@tourism
+tourism-information-map
 en:Tourist Map
 ru:Карта
 bg:Карта|информация|туризъм
@@ -13274,6 +13353,45 @@ zh-Hans:淋浴
 zh-Hant:淋浴間
 fa:مرحاض
 mr:अंघोळ|शॉवर
+
+emergency-assembly_point
+en:Emergency Assembly Point
+ar:نقطة التجمع في حالات الطوارئ
+be:Аварыйны зборны пункт
+bg:Авариен сборен пункт
+ca:Punt de reunió d'emergència
+cs:Nouzové shromažďovací místo
+da:Nødsamlingssted
+de:Notfall-Sammelpunkt
+el:Σημείο συναρμολόγησης έκτακτης ανάγκης
+es:Punto de reunión de emergencia
+et:Erakorraline kogunemispunkt
+eu:Larrialdietako Batzar Puntua
+fa:محل تجمع اضطراری
+fi:Hätäkokouspiste
+fr:Point de rassemblement d'urgence
+he:נקודת כינוס חירום
+hu:Sürgősségi gyülekezési pont
+id:Titik Berkumpul Darurat
+it:Punto di raccolta di emergenza
+ja:緊急集合場所
+ko:비상 집결지
+mr:आपत्कालीन विधानसभा पॉइंट
+nb:Nødsamlingssted
+nl:Verzamelpunt voor noodgevallen
+pl:Punkt Zgromadzeń Awaryjnych
+pt:Ponto de Reunião de Emergência
+ro:Punct de adunare de urgență
+ru:Пункт аварийного сбора
+sk:Núdzové zhromaždenie
+sv:Nöduppsamlingsplats
+sw:Sehemu ya Mkutano wa Dharura
+th:จุดรวมพลฉุกเฉิน
+tr:Acil Toplanma Noktası
+uk:Аварійний збірний пункт
+vi:Điểm tập hợp khẩn cấp
+zh-Hans:紧急集合点
+zh-Hant:緊急集合點
 
 emergency-defibrillator
 en:4Defibrillator|AED

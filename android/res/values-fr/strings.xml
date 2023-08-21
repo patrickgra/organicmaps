@@ -828,6 +828,8 @@
 	<string name="type.amenity.parking.private">Stationnement privé</string>
 	<string name="type.amenity.parking.park_and_ride">Parking relais</string>
 	<string name="type.amenity.parking.underground">Stationnement souterrain</string>
+	<string name="type.amenity.parking.street_side">Stationnement</string>
+	<string name="type.amenity.parking.lane">Stationnement</string>
 	<string name="type.amenity.parking_entrance">Entrée du stationnement</string>
 	<string name="type.amenity.parking_entrance.private">Entrée du stationnement</string>
 	<string name="type.amenity.parking_entrance.permissive">Entrée du stationnement</string>
@@ -868,6 +870,7 @@
 	<string name="type.amenity.school">École</string>
 	<string name="type.amenity.shelter">Abri</string>
 	<string name="type.amenity.shower">Douche</string>
+	<string name="type.amenity.stripclub">Club de strip-tease</string>
 	<string name="type.amenity.telephone">Téléphone</string>
 	<string name="type.amenity.theatre">Théâtre</string>
 	<string name="type.amenity.toilets">Toilettes</string>
@@ -1053,6 +1056,7 @@
 	<string name="type.cuisine.vegetarian">Cuisine végétarienne</string>
 	<string name="type.cuisine.vietnamese">Cuisine vietnamienne</string>
 	<string name="type.emergency">Urgence</string>
+	<string name="type.emergency.assembly_point">Point de rassemblement d\'urgence</string>
 	<string name="type.emergency.defibrillator">Défibrillateur</string>
 	<string name="type.emergency.fire_hydrant">Bouche d’incendie</string>
 	<string name="type.emergency.phone">Téléphone d\'urgence</string>
@@ -1080,6 +1084,10 @@
 	<!-- These translations are used for all type.highway.*.tunnel. -->
 	<string name="type.highway.bridleway.tunnel">Tunnel</string>
 	<string name="type.highway.busway">Route réservée aux bus</string>
+	<!-- These translations are used for all type.highway.*.bridge. -->
+	<string name="type.highway.busway.bridge">Pont</string>
+	<!-- These translations are used for all type.highway.*.tunnel. -->
+	<string name="type.highway.busway.tunnel">Tunnel</string>
 	<string name="type.highway.bus_stop">Arrêt de bus</string>
 	<string name="type.highway.construction">Route en construction</string>
 	<string name="type.highway.cycleway">Piste cyclable</string>
@@ -1887,6 +1895,7 @@
 	<string name="type.sport.badminton">Badminton</string>
 	<string name="type.sport.pelota">Pelote basque</string>
 	<string name="type.tourism">Tourisme</string>
+	<string name="type.tourism.aquarium">Aquarium</string>
 	<string name="type.tourism.alpine_hut">Refuge de montagne</string>
 	<string name="type.tourism.apartment">Appart\'hôtel</string>
 	<string name="type.tourism.artwork">Œuvre</string>
@@ -1917,8 +1926,9 @@
 	<string name="type.waterway.fish_pass">Échelle à poissons</string>
 	<string name="type.waterway.dam">Barrage</string>
 	<string name="type.waterway.ditch">Fossé</string>
-	<string name="type.waterway.ditch.tunnel">Fossé</string>
+	<string name="type.waterway.ditch.tunnel">Drain</string>
 	<string name="type.waterway.dock">Cale</string>
+	<string name="type.waterway.drain.tunnel">Drain</string>
 	<string name="type.waterway.lock_gate">Porte d\'écluse</string>
 	<string name="type.waterway.river">Rivière</string>
 	<string name="type.waterway.river.tunnel">Rivière</string>

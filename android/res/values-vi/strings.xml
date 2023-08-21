@@ -765,6 +765,8 @@
 	<string name="type.amenity.parking.private">Bãi đậu xe tư nhân</string>
 	<string name="type.amenity.parking.park_and_ride">đỗ xe</string>
 	<string name="type.amenity.parking.underground">Bãi đậu xe ngầm</string>
+	<string name="type.amenity.parking.street_side">đỗ xe</string>
+	<string name="type.amenity.parking.lane">đỗ xe</string>
 	<string name="type.amenity.parking_entrance">Lối vào bãi đậu xe</string>
 	<string name="type.amenity.parking_entrance.private">Lối vào bãi đậu xe</string>
 	<string name="type.amenity.parking_entrance.permissive">Lối vào bãi đậu xe</string>
@@ -805,6 +807,7 @@
 	<string name="type.amenity.school">Trường học</string>
 	<string name="type.amenity.shelter">Chổ nương thân</string>
 	<string name="type.amenity.shower">Nhà tắm</string>
+	<string name="type.amenity.stripclub">Câu lạc bộ thoát y</string>
 	<string name="type.amenity.telephone">Điện thoại</string>
 	<string name="type.amenity.theatre">Điểm trú ẩn</string>
 	<string name="type.amenity.toilets">Nhà vệ sinh</string>
@@ -954,6 +957,7 @@
 	<string name="type.cuisine.vegan">Ẩm thực chay</string>
 	<string name="type.cuisine.vegetarian">Ẩm thực chay</string>
 	<string name="type.cuisine.vietnamese">Ẩm thực việt</string>
+	<string name="type.emergency.assembly_point">Điểm tập hợp khẩn cấp</string>
 	<string name="type.emergency.defibrillator">Máy khử rung tim</string>
 	<string name="type.emergency.fire_hydrant">Vòi chữa cháy</string>
 	<string name="type.emergency.phone">Điện thoại khẩn cấp</string>
@@ -979,6 +983,10 @@
 	<!-- These translations are used for all type.highway.*.tunnel. -->
 	<string name="type.highway.bridleway.tunnel">Đường hầm</string>
 	<string name="type.highway.busway">Đường dành riêng cho xe buýt</string>
+	<!-- These translations are used for all type.highway.*.bridge. -->
+	<string name="type.highway.busway.bridge">Cầu</string>
+	<!-- These translations are used for all type.highway.*.tunnel. -->
+	<string name="type.highway.busway.tunnel">Đường hầm</string>
 	<string name="type.highway.bus_stop">Bến xe buýt</string>
 	<string name="type.highway.construction">Đường đang thi công</string>
 	<!-- These translations are used for all type.highway.*.bridge. -->
@@ -1717,6 +1725,7 @@
 	<string name="type.sport.field_hockey">Khúc côn cầu</string>
 	<string name="type.sport.badminton">Cầu lông</string>
 	<string name="type.sport.pelota">Pơ mu Basque</string>
+	<string name="type.tourism.aquarium">Bể nuôi cá</string>
 	<string name="type.tourism.alpine_hut">Nhà ở trên núi</string>
 	<string name="type.tourism.apartment">Căn hộ</string>
 	<string name="type.tourism.artwork">Du lịch</string>

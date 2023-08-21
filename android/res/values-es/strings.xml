@@ -389,7 +389,7 @@
 	<string name="p2p_from_here">Ruta desde</string>
 	<string name="p2p_to_here">Ruta hacia</string>
 	<string name="p2p_only_from_current">La navegación solo está disponible desde su ubicación actual.</string>
-	<string name="p2p_reroute_from_current">¿Quiere que planeemos un ruta desde su ubicación actual?</string>
+	<string name="p2p_reroute_from_current">¿Quiere que planeemos una ruta desde su ubicación actual?</string>
 	<!-- Edit open hours/set time and minutes dialog -->
 	<string name="next_button">Siguiente</string>
 	<!-- Tab title in the Edit Opening Hours time picker -->
@@ -614,7 +614,7 @@
 	<!-- used to choose between the Google and Android location services -->
 	<string name="subtittle_opt_out">Configuraciones de seguimiento</string>
 	<string name="crash_reports">Informe de incidentes</string>
-	<string name="crash_reports_description">Puede que utilicemos sus datos para mejorar la experiencia de Organic Maps. Los cambios tendrán efecto después dw que reinicie la aplicación.</string>
+	<string name="crash_reports_description">Puede que utilicemos sus datos para mejorar la experiencia de Organic Maps. Los cambios tendrán efecto después de que reinicie la aplicación.</string>
 	<string name="privacy_policy">Política de privacidad</string>
 	<string name="terms_of_use">Condiciones de uso</string>
 	<string name="button_layer_traffic">Tráfico</string>
@@ -832,6 +832,8 @@
 	<string name="type.amenity.parking.private">Aparcamiento privado</string>
 	<string name="type.amenity.parking.park_and_ride">Aparcamiento</string>
 	<string name="type.amenity.parking.underground">Aparcamiento subterráneo</string>
+	<string name="type.amenity.parking.street_side">Aparcamiento</string>
+	<string name="type.amenity.parking.lane">Aparcamiento</string>
 	<string name="type.amenity.parking_entrance">Entrada al aparcamiento</string>
 	<string name="type.amenity.parking_entrance.private">Entrada al aparcamiento</string>
 	<string name="type.amenity.parking_entrance.permissive">Entrada al aparcamiento</string>
@@ -879,6 +881,7 @@
 	<string name="type.amenity.school">Escuela</string>
 	<string name="type.amenity.shelter">Refugio</string>
 	<string name="type.amenity.shower">Ducha</string>
+	<string name="type.amenity.stripclub">Club de striptease</string>
 	<string name="type.amenity.taxi">Taxi</string>
 	<string name="type.amenity.telephone">Teléfono</string>
 	<string name="type.amenity.theatre">Teatro</string>
@@ -1069,6 +1072,7 @@
 	<string name="type.cuisine.vegetarian">Cocina vegetariana</string>
 	<string name="type.cuisine.vietnamese">Cocina vietnamita</string>
 	<string name="type.emergency">Emergencia</string>
+	<string name="type.emergency.assembly_point">Punto de reunión de emergencia</string>
 	<string name="type.emergency.defibrillator">Desfibrilador</string>
 	<string name="type.emergency.fire_hydrant">Boca de incendio</string>
 	<string name="type.emergency.phone">Teléfono de emergencias</string>
@@ -1097,6 +1101,10 @@
 	<!-- These translations are used for all type.highway.*.tunnel. -->
 	<string name="type.highway.bridleway.tunnel">Túnel</string>
 	<string name="type.highway.busway">Carretera exclusiva para autobuses</string>
+	<!-- These translations are used for all type.highway.*.bridge. -->
+	<string name="type.highway.busway.bridge">Puente</string>
+	<!-- These translations are used for all type.highway.*.tunnel. -->
+	<string name="type.highway.busway.tunnel">Túnel</string>
 	<string name="type.highway.bus_stop">Parada de autobús</string>
 	<string name="type.highway.construction">Carretera en construcción</string>
 	<string name="type.highway.cycleway">Ciclovía</string>
@@ -1910,6 +1918,7 @@
 	<string name="type.sport.badminton">Bádminton</string>
 	<string name="type.sport.pelota">Pelota vasca</string>
 	<string name="type.tourism">Turismo</string>
+	<string name="type.tourism.aquarium">Acuario</string>
 	<string name="type.tourism.alpine_hut">Refugio de montaña</string>
 	<string name="type.tourism.apartment">Apartamentos</string>
 	<string name="type.tourism.artwork">Obras de arte</string>
@@ -1949,10 +1958,10 @@
 	<string name="type.waterway.fish_pass">Escalera de peces</string>
 	<string name="type.waterway.dam">Presa</string>
 	<string name="type.waterway.ditch">Zanja</string>
-	<string name="type.waterway.ditch.tunnel">Zanja</string>
+	<string name="type.waterway.ditch.tunnel">Obra de drenaje</string>
 	<string name="type.waterway.dock">Muelle</string>
 	<string name="type.waterway.drain">Desagüe</string>
-	<string name="type.waterway.drain.tunnel">Desagüe</string>
+	<string name="type.waterway.drain.tunnel">Obra de drenaje</string>
 	<string name="type.waterway.lock_gate">Compuerta</string>
 	<string name="type.waterway.river">Río</string>
 	<string name="type.waterway.river.tunnel">Río</string>

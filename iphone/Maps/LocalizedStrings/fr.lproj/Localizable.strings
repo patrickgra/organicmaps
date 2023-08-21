@@ -289,7 +289,7 @@
 "facebook" = "Facebook";
 
 /* Text in menu */
-"twitter" = "Twitter";
+"twitter" = "X (Twitter)";
 
 /* Text in menu */
 "instagram" = "Instagram";
@@ -1421,6 +1421,10 @@
 
 "type.amenity.parking.underground" = "Stationnement souterrain";
 
+"type.amenity.parking.street_side" = "Stationnement";
+
+"type.amenity.parking.lane" = "Stationnement";
+
 "type.amenity.parking_entrance" = "Entrée du stationnement";
 
 "type.amenity.parking_entrance.private" = "Entrée du stationnement";
@@ -1513,6 +1517,8 @@
 "type.amenity.shelter" = "Abri";
 
 "type.amenity.shower" = "Douche";
+
+"type.amenity.stripclub" = "Club de strip-tease";
 
 "type.amenity.taxi" = "Taxi Stand";
 
@@ -1893,6 +1899,8 @@
 
 "type.emergency" = "Urgence";
 
+"type.emergency.assembly_point" = "Point de rassemblement d'urgence";
+
 "type.emergency.defibrillator" = "Défibrillateur";
 
 "type.emergency.fire_hydrant" = "Bouche d’incendie";
@@ -1943,6 +1951,12 @@
 "type.highway.bridleway.tunnel" = "Tunnel";
 
 "type.highway.busway" = "Route réservée aux bus";
+
+/* These translations are used for all type.highway.*.bridge. */
+"type.highway.busway.bridge" = "Pont";
+
+/* These translations are used for all type.highway.*.tunnel. */
+"type.highway.busway.tunnel" = "Tunnel";
 
 "type.highway.bus_stop" = "Arrêt de bus";
 
@@ -3623,6 +3637,8 @@
 
 "type.tourism" = "Tourisme";
 
+"type.tourism.aquarium" = "Aquarium";
+
 "type.tourism.alpine_hut" = "Refuge de montagne";
 
 "type.tourism.apartment" = "Appart'hôtel";
@@ -3701,7 +3717,7 @@
 
 "type.waterway.ditch" = "Fossé";
 
-"type.waterway.ditch.tunnel" = "Fossé";
+"type.waterway.ditch.tunnel" = "Drain";
 
 "type.waterway.dock" = "Cale";
 

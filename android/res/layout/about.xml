@@ -211,7 +211,7 @@
                 style="@style/MwmWidget.TextView.Item"
                 android:text="@string/twitter"
                 android:visibility="gone"
-                app:drawableStartCompat="@drawable/ic_twitter" />
+                app:drawableStartCompat="@drawable/ic_twitterx" />
 
       <TextView android:id="@+id/instagram"
                 style="@style/MwmWidget.TextView.Item"

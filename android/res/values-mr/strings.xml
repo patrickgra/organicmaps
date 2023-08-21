@@ -776,6 +776,8 @@
 	<string name="type.amenity.nursing_home">वृद्धाश्रम</string>
 	<string name="type.amenity.parking">वाहनतळ</string>
 	<string name="type.amenity.parking.park_and_ride">वाहनतळ</string>
+	<string name="type.amenity.parking.street_side">वाहनतळ</string>
+	<string name="type.amenity.parking.lane">वाहनतळ</string>
 	<string name="type.amenity.parking_space">पार्किंगची जागा</string>
 	<string name="type.amenity.parking_space.permissive">पार्किंगची जागा</string>
 	<string name="type.amenity.parking_space.private">पार्किंगची जागा</string>
@@ -816,6 +818,7 @@
 	<string name="type.amenity.school">शाळा</string>
 	<string name="type.amenity.shelter">निवारा</string>
 	<string name="type.amenity.shower">अंघोळ</string>
+	<string name="type.amenity.stripclub">स्ट्रिपक्लब</string>
 	<string name="type.amenity.taxi">टॅक्सी</string>
 	<string name="type.amenity.telephone">फोन</string>
 	<string name="type.amenity.theatre">नाट्यगृह</string>
@@ -938,6 +941,7 @@
 	<string name="type.cuisine.tea">चहा</string>
 	<string name="type.cuisine.vegetarian">शाकाहारी</string>
 	<string name="type.emergency">आणीबाणी</string>
+	<string name="type.emergency.assembly_point">आपत्कालीन विधानसभा पॉइंट</string>
 	<string name="type.emergency.defibrillator">कंपनरोधक</string>
 	<string name="type.emergency.fire_hydrant">अग्निशामक नळ</string>
 	<string name="type.emergency.phone">संकटकालीन फोन</string>
@@ -964,6 +968,10 @@
 	<!-- These translations are used for all type.highway.*.tunnel. -->
 	<string name="type.highway.bridleway.tunnel">बोगदा</string>
 	<string name="type.highway.busway">समर्पित बस रस्ता</string>
+	<!-- These translations are used for all type.highway.*.bridge. -->
+	<string name="type.highway.busway.bridge">पूल</string>
+	<!-- These translations are used for all type.highway.*.tunnel. -->
+	<string name="type.highway.busway.tunnel">बोगदा</string>
 	<string name="type.highway.bus_stop">बस थांबा</string>
 	<string name="type.highway.construction">बांधकामाधीन रस्ता</string>
 	<string name="type.highway.cycleway">सायकल वाट</string>
@@ -1740,6 +1748,7 @@
 	<string name="type.sport.10pin">गोलंदाजी</string>
 	<string name="type.sport.9pin">गोलंदाजी</string>
 	<string name="type.tourism">पर्यटन</string>
+	<string name="type.tourism.aquarium">मत्स्यालय</string>
 	<string name="type.tourism.apartment">सदनिका</string>
 	<string name="type.tourism.artwork">कलाकृती</string>
 	<string name="type.tourism.artwork.architecture">कलाकृती</string>
@@ -1775,7 +1784,7 @@
 	<string name="type.waterway.ditch.tunnel">खंदक</string>
 	<string name="type.waterway.dock">जलमार्ग गोद</string>
 	<string name="type.waterway.drain">नाला</string>
-	<string name="type.waterway.drain.tunnel">नाला</string>
+	<string name="type.waterway.drain.tunnel">खंदक</string>
 	<string name="type.waterway.lock_gate">जलद्वार</string>
 	<string name="type.waterway.river">नदी</string>
 	<string name="type.waterway.river.tunnel">नदी</string>

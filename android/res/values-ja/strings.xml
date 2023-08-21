@@ -777,6 +777,8 @@
 	<string name="type.amenity.parking.private">専用駐車場</string>
 	<string name="type.amenity.parking.park_and_ride">駐車場</string>
 	<string name="type.amenity.parking.underground">地下駐車場</string>
+	<string name="type.amenity.parking.street_side">駐車場</string>
+	<string name="type.amenity.parking.lane">駐車場</string>
 	<string name="type.amenity.parking_entrance">駐車場入口</string>
 	<string name="type.amenity.parking_entrance.private">駐車場入口</string>
 	<string name="type.amenity.parking_entrance.permissive">駐車場入口</string>
@@ -818,6 +820,7 @@
 	<string name="type.amenity.school">学校</string>
 	<string name="type.amenity.shelter">避難所</string>
 	<string name="type.amenity.shower">シャワー</string>
+	<string name="type.amenity.stripclub">ストリップクラブ</string>
 	<string name="type.amenity.taxi">タクシー</string>
 	<string name="type.amenity.telephone">公衆電話</string>
 	<string name="type.amenity.theatre">劇場</string>
@@ -986,6 +989,7 @@
 	<string name="type.cuisine.vegan">ビーガン料理</string>
 	<string name="type.cuisine.vegetarian">ベジタリアン料理</string>
 	<string name="type.cuisine.vietnamese">ベトナム料理</string>
+	<string name="type.emergency.assembly_point">緊急集合場所</string>
 	<string name="type.emergency.defibrillator">除細動器</string>
 	<string name="type.emergency.fire_hydrant">消火栓</string>
 	<string name="type.emergency.phone">緊急電話</string>
@@ -1014,6 +1018,10 @@
 	<!-- These translations are used for all type.highway.*.tunnel. -->
 	<string name="type.highway.bridleway.tunnel">馬道(トンネル)</string>
 	<string name="type.highway.busway">バス専用道路</string>
+	<!-- These translations are used for all type.highway.*.bridge. -->
+	<string name="type.highway.busway.bridge">橋</string>
+	<!-- These translations are used for all type.highway.*.tunnel. -->
+	<string name="type.highway.busway.tunnel">トンネル</string>
 	<string name="type.highway.bus_stop">バス停</string>
 	<string name="type.highway.construction">工事中の道路</string>
 	<string name="type.highway.cycleway">自転車道</string>
@@ -1840,6 +1848,7 @@
 	<string name="type.sport.badminton">バドミントン</string>
 	<string name="type.sport.pelota">バスクペロタ</string>
 	<string name="type.tourism">観光</string>
+	<string name="type.tourism.aquarium">水族館</string>
 	<string name="type.tourism.alpine_hut">山小屋</string>
 	<string name="type.tourism.apartment">アパート</string>
 	<string name="type.tourism.artwork">芸術</string>
@@ -1879,10 +1888,10 @@
 	<string name="type.waterway.fish_pass">魚道</string>
 	<string name="type.waterway.dam">ダム</string>
 	<string name="type.waterway.ditch">排水路</string>
-	<string name="type.waterway.ditch.tunnel">排水路</string>
+	<string name="type.waterway.ditch.tunnel">暗渠</string>
 	<string name="type.waterway.dock">ドック</string>
 	<string name="type.waterway.drain">用水路</string>
-	<string name="type.waterway.drain.tunnel">用水路</string>
+	<string name="type.waterway.drain.tunnel">暗渠</string>
 	<string name="type.waterway.lock_gate">水門</string>
 	<string name="type.waterway.river">河川</string>
 	<string name="type.waterway.river.tunnel">河川</string>

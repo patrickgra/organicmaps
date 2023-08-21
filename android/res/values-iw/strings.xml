@@ -280,6 +280,8 @@
 	<string name="type.amenity.parking.permissive">תיטרפ הינח</string>
 	<string name="type.amenity.parking.private">תיטרפ הינח</string>
 	<string name="type.amenity.parking.underground">תיעקרק - תת הינח</string>
+	<string name="type.amenity.parking.street_side">היָנָחֲ</string>
+	<string name="type.amenity.parking.lane">היָנָחֲ</string>
 	<string name="type.amenity.parking_entrance">הינחל הסינכ</string>
 	<string name="type.amenity.parking_entrance.private">הינחל הסינכ</string>
 	<string name="type.amenity.parking_entrance.permissive">הינחל הסינכ</string>
@@ -287,6 +289,7 @@
 
 	<!-- SECTION: Types: Recycling -->
 	<string name="type.recycling.batteries">תוללוס</string>
+	<string name="type.amenity.stripclub">מועדון חשפנות</string>
 	<string name="type.barrier.city_wall">חומת העיר</string>
 	<string name="type.barrier.ditch">ןגֵמָ תלַעָתְ</string>
 	<string name="type.barrier.turnstile">קרוסלת</string>
@@ -406,6 +409,7 @@
 	<string name="type.cuisine.vegan">מטבח טבעוני</string>
 	<string name="type.cuisine.vegetarian">מטבח צמחוני</string>
 	<string name="type.cuisine.vietnamese">מטבח וייטנאמי</string>
+	<string name="type.emergency.assembly_point">נקודת כינוס חירום</string>
 	<!-- This is for main/primary entrances, for secondary entrances see type.entrance -->
 	<string name="type.entrance.main">תישארה הסינכ</string>
 	<string name="type.entrance.exit">יְצִיאָה</string>
@@ -426,6 +430,10 @@
 	<!-- These translations are used for all type.highway.*.tunnel. -->
 	<string name="type.highway.bridleway.tunnel">מִנהָרָה</string>
 	<string name="type.highway.busway">ידועיי סובוטוא שיבכ</string>
+	<!-- These translations are used for all type.highway.*.bridge. -->
+	<string name="type.highway.busway.bridge">לְגַשֵׁר</string>
+	<!-- These translations are used for all type.highway.*.tunnel. -->
+	<string name="type.highway.busway.tunnel">מִנהָרָה</string>
 	<!-- These translations are used for all type.highway.*.bridge. -->
 	<string name="type.highway.cycleway.bridge">לְגַשֵׁר</string>
 	<!-- These translations are used for all type.highway.*.tunnel. -->
@@ -739,6 +747,7 @@
 	<string name="type.sport.field_hockey">הדש יקוה</string>
 	<string name="type.sport.badminton">תיצונ</string>
 	<string name="type.sport.pelota">תיקסאב הטלפ</string>
+	<string name="type.tourism.aquarium">אַקוַרִיוּם</string>
 	<string name="type.tourism.information">מידע לתייר</string>
 	<string name="type.tourism.information.board">לוח מידע</string>
 	<string name="type.tourism.information.guidepost">מנחה</string>

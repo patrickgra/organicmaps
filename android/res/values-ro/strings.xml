@@ -785,6 +785,8 @@
 	<string name="type.amenity.parking.private">Parcare privată</string>
 	<string name="type.amenity.parking.park_and_ride">Parcare</string>
 	<string name="type.amenity.parking.underground">Parcare subterană</string>
+	<string name="type.amenity.parking.street_side">Parcare</string>
+	<string name="type.amenity.parking.lane">Parcare</string>
 	<string name="type.amenity.parking_entrance">Intrare parcare</string>
 	<string name="type.amenity.parking_entrance.private">Intrare parcare</string>
 	<string name="type.amenity.parking_entrance.permissive">Intrare parcare</string>
@@ -823,6 +825,7 @@
 	<string name="type.amenity.school">Școală</string>
 	<string name="type.amenity.shelter">Adăpost</string>
 	<string name="type.amenity.shower">Duș</string>
+	<string name="type.amenity.stripclub">Stripclub</string>
 	<string name="type.amenity.telephone">Telefon</string>
 	<string name="type.amenity.theatre">Teatru</string>
 	<string name="type.amenity.toilets">Toaletă</string>
@@ -971,6 +974,7 @@
 	<string name="type.cuisine.vegan">Bucătărie vegan</string>
 	<string name="type.cuisine.vegetarian">Bucătărie vegetarian</string>
 	<string name="type.cuisine.vietnamese">Bucătărie vietnamez</string>
+	<string name="type.emergency.assembly_point">Punct de adunare de urgență</string>
 	<string name="type.emergency.defibrillator">Defibrilator</string>
 	<string name="type.emergency.fire_hydrant">Hidrant</string>
 	<string name="type.emergency.phone">Telefon de urgență</string>
@@ -996,6 +1000,10 @@
 	<!-- These translations are used for all type.highway.*.tunnel. -->
 	<string name="type.highway.bridleway.tunnel">Tunel</string>
 	<string name="type.highway.busway">Drum dedicat autobuzului</string>
+	<!-- These translations are used for all type.highway.*.bridge. -->
+	<string name="type.highway.busway.bridge">Pod</string>
+	<!-- These translations are used for all type.highway.*.tunnel. -->
+	<string name="type.highway.busway.tunnel">Tunel</string>
 	<string name="type.highway.bus_stop">Stație de autobuz</string>
 	<string name="type.highway.construction">Drum în construcție</string>
 	<!-- These translations are used for all type.highway.*.bridge. -->
@@ -1733,6 +1741,7 @@
 	<string name="type.sport.field_hockey">Hochei pe iarbă</string>
 	<string name="type.sport.badminton">Badminton</string>
 	<string name="type.sport.pelota">Pilota bascilor</string>
+	<string name="type.tourism.aquarium">Acvariu</string>
 	<string name="type.tourism.alpine_hut">Cabană de munte</string>
 	<string name="type.tourism.apartment">Apartamente</string>
 	<string name="type.tourism.artwork">Turism</string>

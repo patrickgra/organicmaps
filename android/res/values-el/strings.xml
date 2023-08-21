@@ -767,6 +767,8 @@
 	<string name="type.amenity.parking.private">Ιδιωτικός χώρος στάθμευσης</string>
 	<string name="type.amenity.parking.park_and_ride">Χώρος στάθμευσης</string>
 	<string name="type.amenity.parking.underground">Υπόγειος χώρος στάθμευσης</string>
+	<string name="type.amenity.parking.street_side">Χώρος στάθμευσης</string>
+	<string name="type.amenity.parking.lane">Χώρος στάθμευσης</string>
 	<string name="type.amenity.parking_entrance">Είσοδος στάθμευσης</string>
 	<string name="type.amenity.parking_entrance.private">Είσοδος στάθμευσης</string>
 	<string name="type.amenity.parking_entrance.permissive">Είσοδος στάθμευσης</string>
@@ -807,6 +809,7 @@
 	<string name="type.amenity.school">Σχολείο</string>
 	<string name="type.amenity.shelter">Καταφύγιο</string>
 	<string name="type.amenity.shower">Ντους</string>
+	<string name="type.amenity.stripclub">Stripclub</string>
 	<string name="type.amenity.taxi">Ταξί</string>
 	<string name="type.amenity.telephone">Τηλέφωνο</string>
 	<string name="type.amenity.theatre">Θέατρο</string>
@@ -957,6 +960,7 @@
 	<string name="type.cuisine.vegan">Για χορτοφάγους</string>
 	<string name="type.cuisine.vegetarian">Χορτοφαγική</string>
 	<string name="type.cuisine.vietnamese">Βιετναμέζικη</string>
+	<string name="type.emergency.assembly_point">Σημείο συναρμολόγησης έκτακτης ανάγκης</string>
 	<string name="type.emergency.defibrillator">Πρώτες βοήθειες</string>
 	<string name="type.emergency.fire_hydrant">Πυροσβεστικός κρουνός</string>
 	<string name="type.emergency.phone">Τηλέφωνο έκτακτης ανάγκης</string>
@@ -982,6 +986,10 @@
 	<!-- These translations are used for all type.highway.*.tunnel. -->
 	<string name="type.highway.bridleway.tunnel">Σήραγγα</string>
 	<string name="type.highway.busway">Αφιερωμένος δρόμος λεωφορείων</string>
+	<!-- These translations are used for all type.highway.*.bridge. -->
+	<string name="type.highway.busway.bridge">Γέφυρα</string>
+	<!-- These translations are used for all type.highway.*.tunnel. -->
+	<string name="type.highway.busway.tunnel">Σήραγγα</string>
 	<string name="type.highway.bus_stop">Στάση λεωφορείου</string>
 	<string name="type.highway.construction">Οδός υπό κατασκευή</string>
 	<!-- These translations are used for all type.highway.*.bridge. -->
@@ -1724,6 +1732,7 @@
 	<string name="type.sport.field_hockey">Χόκεϊ επί χόρτου</string>
 	<string name="type.sport.badminton">Αντιπτέριση</string>
 	<string name="type.sport.pelota">Βασκική πελότα</string>
+	<string name="type.tourism.aquarium">Ενυδρείο</string>
 	<string name="type.tourism.alpine_hut">Ορεινό καταφύγιο</string>
 	<string name="type.tourism.apartment">Διαμερίσματα</string>
 	<string name="type.tourism.artwork">Έργα τέχνης</string>

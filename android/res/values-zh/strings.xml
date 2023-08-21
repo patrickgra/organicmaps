@@ -232,7 +232,7 @@
 	<!-- Text in menu -->
 	<string name="facebook">脸书</string>
 	<!-- Text in menu -->
-	<string name="twitter">推特</string>
+	<string name="twitter">X (推特)</string>
 	<!-- Settings: Send feedback button and dialog title -->
 	<string name="feedback">反馈</string>
 	<!-- Text in menu -->
@@ -788,6 +788,8 @@
 	<string name="type.amenity.parking.private">私人停车场</string>
 	<string name="type.amenity.parking.park_and_ride">停车场</string>
 	<string name="type.amenity.parking.underground">地下停车场</string>
+	<string name="type.amenity.parking.street_side">停车场</string>
+	<string name="type.amenity.parking.lane">停车场</string>
 	<string name="type.amenity.parking_entrance">停车场入口</string>
 	<string name="type.amenity.parking_entrance.private">停车场入口</string>
 	<string name="type.amenity.parking_entrance.permissive">停车场入口</string>
@@ -829,6 +831,7 @@
 	<string name="type.amenity.school">学校</string>
 	<string name="type.amenity.shelter">庇护所</string>
 	<string name="type.amenity.shower">淋浴间</string>
+	<string name="type.amenity.stripclub">脱衣舞俱乐部</string>
 	<string name="type.amenity.taxi">出租车</string>
 	<string name="type.amenity.telephone">电话</string>
 	<string name="type.amenity.theatre">剧院</string>
@@ -1007,6 +1010,7 @@
 	<string name="type.cuisine.vegetarian">素菜</string>
 	<string name="type.cuisine.vietnamese">越南菜</string>
 	<string name="type.emergency">应急要素</string>
+	<string name="type.emergency.assembly_point">紧急集合点</string>
 	<string name="type.emergency.defibrillator">除颤器</string>
 	<string name="type.emergency.fire_hydrant">消防栓</string>
 	<string name="type.emergency.phone">紧急电话</string>
@@ -1035,6 +1039,10 @@
 	<!-- These translations are used for all type.highway.*.tunnel. -->
 	<string name="type.highway.bridleway.tunnel">隧道</string>
 	<string name="type.highway.busway">巴士专用道</string>
+	<!-- These translations are used for all type.highway.*.bridge. -->
+	<string name="type.highway.busway.bridge">桥</string>
+	<!-- These translations are used for all type.highway.*.tunnel. -->
+	<string name="type.highway.busway.tunnel">隧道</string>
 	<string name="type.highway.bus_stop">公交站</string>
 	<string name="type.highway.construction">在建道路</string>
 	<string name="type.highway.cycleway">自行车道</string>
@@ -1849,6 +1857,7 @@
 	<string name="type.sport.badminton">羽毛球</string>
 	<string name="type.sport.pelota">巴斯克回力球</string>
 	<string name="type.tourism">旅游要素</string>
+	<string name="type.tourism.aquarium">水族馆</string>
 	<string name="type.tourism.alpine_hut">山上住宿</string>
 	<string name="type.tourism.apartment">公寓</string>
 	<string name="type.tourism.artwork">艺术品</string>
@@ -1885,10 +1894,10 @@
 	<string name="type.waterway.fish_pass">鱼梯</string>
 	<string name="type.waterway.dam">水坝</string>
 	<string name="type.waterway.ditch">水沟</string>
-	<string name="type.waterway.ditch.tunnel">水沟</string>
+	<string name="type.waterway.ditch.tunnel">涵洞</string>
 	<string name="type.waterway.dock">船坞</string>
 	<string name="type.waterway.drain">渠</string>
-	<string name="type.waterway.drain.tunnel">渠</string>
+	<string name="type.waterway.drain.tunnel">涵洞</string>
 	<string name="type.waterway.lock_gate">闸门</string>
 	<string name="type.waterway.river">河流</string>
 	<string name="type.waterway.river.tunnel">河流</string>

@@ -289,7 +289,7 @@
 "facebook" = "Facebook";
 
 /* Text in menu */
-"twitter" = "Twitter";
+"twitter" = "X (Twitter)";
 
 /* Text in menu */
 "instagram" = "Instagram";
@@ -1421,6 +1421,10 @@
 
 "type.amenity.parking.underground" = "موقف سيارات تحت الأرض";
 
+"type.amenity.parking.street_side" = "موقف سيارات";
+
+"type.amenity.parking.lane" = "موقف سيارات";
+
 "type.amenity.parking_entrance" = "مدخل موقف سيارات";
 
 "type.amenity.parking_entrance.private" = "مدخل موقف سيارات";
@@ -1513,6 +1517,8 @@
 "type.amenity.shelter" = "ملجأ";
 
 "type.amenity.shower" = "حمام";
+
+"type.amenity.stripclub" = "Stripclub";
 
 "type.amenity.taxi" = "سيارة أجرة";
 
@@ -1893,6 +1899,8 @@
 
 "type.emergency" = "طوارئ";
 
+"type.emergency.assembly_point" = "نقطة التجمع في حالات الطوارئ";
+
 "type.emergency.defibrillator" = "مزيل الرجفان";
 
 "type.emergency.fire_hydrant" = "صنبور الإطفاء";
@@ -1943,6 +1951,12 @@
 "type.highway.bridleway.tunnel" = "نفق";
 
 "type.highway.busway" = "ﺺﺼﺨﻣ ﺕﻼﻓﺎﺣ ﻖﻳﺮﻃ";
+
+/* These translations are used for all type.highway.*.bridge. */
+"type.highway.busway.bridge" = "جسر";
+
+/* These translations are used for all type.highway.*.tunnel. */
+"type.highway.busway.tunnel" = "نفق";
 
 "type.highway.bus_stop" = "موقف حافلة";
 
@@ -3623,6 +3637,8 @@
 
 "type.tourism" = "Tourism";
 
+"type.tourism.aquarium" = "حوض سمك";
+
 "type.tourism.alpine_hut" = "مساكن جبلية";
 
 "type.tourism.apartment" = "شُقَق";
@@ -3707,7 +3723,7 @@
 
 "type.waterway.drain" = "Drain";
 
-"type.waterway.drain.tunnel" = "Drain";
+"type.waterway.drain.tunnel" = "Ditch";
 
 "type.waterway.lock_gate" = "بوابة هويس";
 

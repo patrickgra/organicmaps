@@ -826,6 +826,8 @@
 	<string name="type.amenity.parking.private">Aparkaleku pribatua</string>
 	<string name="type.amenity.parking.park_and_ride">Aparkalekua</string>
 	<string name="type.amenity.parking.underground">Lurpeko Aparkalekua</string>
+	<string name="type.amenity.parking.street_side">Aparkalekua</string>
+	<string name="type.amenity.parking.lane">Aparkalekua</string>
 	<string name="type.amenity.parking_entrance">Aparkalekuaren sarrera</string>
 	<string name="type.amenity.parking_entrance.private">Aparkalekuaren sarrera</string>
 	<string name="type.amenity.parking_entrance.permissive">Aparkalekuaren sarrera</string>
@@ -872,6 +874,7 @@
 	<string name="type.amenity.school">Eskola</string>
 	<string name="type.amenity.shelter">Aterpea</string>
 	<string name="type.amenity.shower">Dutxa</string>
+	<string name="type.amenity.stripclub">Stripclub</string>
 	<string name="type.amenity.taxi">Taxia</string>
 	<string name="type.amenity.telephone">Telefonoa</string>
 	<string name="type.amenity.theatre">Antzerkia</string>
@@ -1059,6 +1062,7 @@
 	<string name="type.cuisine.vegan">Sukaldaritza beganoa</string>
 	<string name="type.cuisine.vegetarian">Sukaldaritza begetarianoa</string>
 	<string name="type.cuisine.vietnamese">Vietnamgo sukaldaritza</string>
+	<string name="type.emergency.assembly_point">Larrialdietako Batzar Puntua</string>
 	<string name="type.emergency.defibrillator">Desfibriladorea</string>
 	<string name="type.emergency.fire_hydrant">Suteen hidrantea</string>
 	<string name="type.emergency.phone">Larrialdi zenbakia</string>
@@ -1084,6 +1088,10 @@
 	<!-- These translations are used for all type.highway.*.tunnel. -->
 	<string name="type.highway.bridleway.tunnel">Tunel</string>
 	<string name="type.highway.busway">Autobus errepidea</string>
+	<!-- These translations are used for all type.highway.*.bridge. -->
+	<string name="type.highway.busway.bridge">Zubia</string>
+	<!-- These translations are used for all type.highway.*.tunnel. -->
+	<string name="type.highway.busway.tunnel">Tunel</string>
 	<string name="type.highway.bus_stop">Autobus geltokia</string>
 	<string name="type.highway.construction">Eraikitzen ari diren errepidea</string>
 	<string name="type.highway.cycleway">Bizikletabidea</string>
@@ -1834,6 +1842,7 @@
 	<string name="type.sport.badminton">Badminton</string>
 	<string name="type.sport.pelota">Eusko pilota</string>
 	<string name="type.tourism">Turismoa</string>
+	<string name="type.tourism.aquarium">Aquariuma</string>
 	<string name="type.tourism.alpine_hut">Kabina</string>
 	<string name="type.tourism.apartment">Apartamentuak</string>
 	<string name="type.tourism.artwork">Artelanak</string>

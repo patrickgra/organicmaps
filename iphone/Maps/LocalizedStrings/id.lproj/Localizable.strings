@@ -289,7 +289,7 @@
 "facebook" = "Facebook";
 
 /* Text in menu */
-"twitter" = "Twitter";
+"twitter" = "X (Twitter)";
 
 /* Text in menu */
 "instagram" = "Instagram";
@@ -1421,6 +1421,10 @@
 
 "type.amenity.parking.underground" = "Parkir bawah tanah";
 
+"type.amenity.parking.street_side" = "Parkir";
+
+"type.amenity.parking.lane" = "Parkir";
+
 "type.amenity.parking_entrance" = "Pintu masuk parkir";
 
 "type.amenity.parking_entrance.private" = "Pintu masuk parkir";
@@ -1513,6 +1517,8 @@
 "type.amenity.shelter" = "Tempat penampungan";
 
 "type.amenity.shower" = "Pancuran";
+
+"type.amenity.stripclub" = "Klub telanjang";
 
 "type.amenity.taxi" = "Taksi";
 
@@ -1893,6 +1899,8 @@
 
 "type.emergency" = "Emergency";
 
+"type.emergency.assembly_point" = "Titik Berkumpul Darurat";
+
 "type.emergency.defibrillator" = "Defibrilator";
 
 "type.emergency.fire_hydrant" = "Keran Kebakaran";
@@ -1943,6 +1951,12 @@
 "type.highway.bridleway.tunnel" = "Terowongan";
 
 "type.highway.busway" = "Jalan khusus bus";
+
+/* These translations are used for all type.highway.*.bridge. */
+"type.highway.busway.bridge" = "Menjembatani";
+
+/* These translations are used for all type.highway.*.tunnel. */
+"type.highway.busway.tunnel" = "Terowongan";
 
 "type.highway.bus_stop" = "Halte bus";
 
@@ -3623,6 +3637,8 @@
 
 "type.tourism" = "Tourism";
 
+"type.tourism.aquarium" = "Akuarium";
+
 "type.tourism.alpine_hut" = "Penginapan di pegunungan";
 
 "type.tourism.apartment" = "Apartemen";
@@ -3707,7 +3723,7 @@
 
 "type.waterway.drain" = "Drain";
 
-"type.waterway.drain.tunnel" = "Drain";
+"type.waterway.drain.tunnel" = "Ditch";
 
 "type.waterway.lock_gate" = "Gerbang pengunci";
 

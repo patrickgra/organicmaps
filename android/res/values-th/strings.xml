@@ -767,6 +767,8 @@
 	<string name="type.amenity.parking.private">ที่จอดรถส่วนตัว</string>
 	<string name="type.amenity.parking.park_and_ride">ที่จอดรถ</string>
 	<string name="type.amenity.parking.underground">ที่จอดรถใต้ดิน</string>
+	<string name="type.amenity.parking.street_side">ที่จอดรถ</string>
+	<string name="type.amenity.parking.lane">ที่จอดรถ</string>
 	<string name="type.amenity.parking_entrance">ทางเข้าที่จอดรถ</string>
 	<string name="type.amenity.parking_entrance.private">ทางเข้าที่จอดรถ</string>
 	<string name="type.amenity.parking_entrance.permissive">ทางเข้าที่จอดรถ</string>
@@ -807,6 +809,7 @@
 	<string name="type.amenity.school">โรงเรียน</string>
 	<string name="type.amenity.shelter">ที่อยู่อาศัย</string>
 	<string name="type.amenity.shower">ฝักบัวอาบน้ำ</string>
+	<string name="type.amenity.stripclub">สตริปคลับ</string>
 	<string name="type.amenity.taxi">แท็กซี่</string>
 	<string name="type.amenity.telephone">โทรศัพท์</string>
 	<string name="type.amenity.theatre">โรงละคร</string>
@@ -957,6 +960,7 @@
 	<string name="type.cuisine.vegan">อาหารมังสวิรัติ</string>
 	<string name="type.cuisine.vegetarian">อาหารมังสวิรัติ</string>
 	<string name="type.cuisine.vietnamese">อาหารเวียดนาม</string>
+	<string name="type.emergency.assembly_point">จุดรวมพลฉุกเฉิน</string>
 	<string name="type.emergency.defibrillator">เครื่องกระตุ้นหัวใจ</string>
 	<string name="type.emergency.fire_hydrant">หัวจ่ายน้ำดับเพลิง</string>
 	<string name="type.emergency.phone">โทรศัพท์ฉุกเฉิน</string>
@@ -982,6 +986,10 @@
 	<!-- These translations are used for all type.highway.*.tunnel. -->
 	<string name="type.highway.bridleway.tunnel">อุโมงค์</string>
 	<string name="type.highway.busway">ถนนทางเดินรถโดยเฉพาะ</string>
+	<!-- These translations are used for all type.highway.*.bridge. -->
+	<string name="type.highway.busway.bridge">สะพาน</string>
+	<!-- These translations are used for all type.highway.*.tunnel. -->
+	<string name="type.highway.busway.tunnel">อุโมงค์</string>
 	<string name="type.highway.bus_stop">ป้ายรถเมล์</string>
 	<string name="type.highway.construction">ทางกำลังอยู่ในการก่อสร้าง</string>
 	<!-- These translations are used for all type.highway.*.bridge. -->
@@ -1720,6 +1728,7 @@
 	<string name="type.sport.field_hockey">กีฬาฮอกกี้</string>
 	<string name="type.sport.badminton">แบดมินตัน</string>
 	<string name="type.sport.pelota">Basque pelota</string>
+	<string name="type.tourism.aquarium">พิพิธภัณฑ์สัตว์น้ำ</string>
 	<string name="type.tourism.alpine_hut">ที่พักบนภูเขาโรงแรม</string>
 	<string name="type.tourism.apartment">อพาร์ตเมนต์</string>
 	<string name="type.tourism.artwork">งานศิลปะ</string>

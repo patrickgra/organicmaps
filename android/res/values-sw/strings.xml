@@ -268,6 +268,8 @@
 	<string name="type.amenity.parking.permissive">Maegesho ya Kibinafsi</string>
 	<string name="type.amenity.parking.private">Maegesho ya Kibinafsi</string>
 	<string name="type.amenity.parking.underground">Maegesho ya chini ya ardhi</string>
+	<string name="type.amenity.parking.street_side">Maegesho</string>
+	<string name="type.amenity.parking.lane">Maegesho</string>
 	<string name="type.amenity.parking_entrance">Mlango wa maegesho</string>
 	<string name="type.amenity.parking_entrance.private">Mlango wa maegesho</string>
 	<string name="type.amenity.parking_entrance.permissive">Mlango wa maegesho</string>
@@ -280,6 +282,7 @@
 
 	<!-- SECTION: Types: Recycling -->
 	<string name="type.recycling.batteries">Betri</string>
+	<string name="type.amenity.stripclub">Klabu ya Strip</string>
 	<string name="type.amenity.vending_machine.public_transport_tickets">Mashine ya kuuzia tiketi za usafiri wa umma</string>
 	<string name="type.barrier.city_wall">Ukuta wa jiji</string>
 	<string name="type.barrier.ditch">Moti</string>
@@ -317,6 +320,7 @@
 	<string name="type.craft.winery">Mvinyo</string>
 	<string name="type.craft.tailor">Mshonaji nguo</string>
 	<string name="type.cuisine.coffee_shop">Kahawa</string>
+	<string name="type.emergency.assembly_point">Sehemu ya Mkutano wa Dharura</string>
 	<!-- This is for main/primary entrances, for secondary entrances see type.entrance -->
 	<string name="type.entrance.main">Mlango Mkuu</string>
 	<string name="type.entrance.exit">Utgång</string>
@@ -337,6 +341,10 @@
 	<!-- These translations are used for all type.highway.*.tunnel. -->
 	<string name="type.highway.bridleway.tunnel">Mtaro</string>
 	<string name="type.highway.busway">Barabara ya basi iliyotengwa</string>
+	<!-- These translations are used for all type.highway.*.bridge. -->
+	<string name="type.highway.busway.bridge">Daraja</string>
+	<!-- These translations are used for all type.highway.*.tunnel. -->
+	<string name="type.highway.busway.tunnel">Mtaro</string>
 	<string name="type.highway.construction">Barabara inatengenezwa</string>
 	<!-- These translations are used for all type.highway.*.bridge. -->
 	<string name="type.highway.cycleway.bridge">Daraja</string>
@@ -779,6 +787,7 @@
 	<string name="type.sport.field_hockey">Hoki ya shamba</string>
 	<string name="type.sport.badminton">Badminton</string>
 	<string name="type.sport.pelota">Basque pelota</string>
+	<string name="type.tourism.aquarium">Aquarium</string>
 	<string name="type.tourism.information">Taarifa za Watalii</string>
 	<string name="type.tourism.information.board">Bodi ya habari</string>
 	<string name="type.tourism.information.guidepost">Chapisho la mwongozo</string>

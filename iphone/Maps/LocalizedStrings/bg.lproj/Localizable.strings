@@ -289,7 +289,7 @@
 "facebook" = "Facebook";
 
 /* Text in menu */
-"twitter" = "Twitter";
+"twitter" = "X (Twitter)";
 
 /* Text in menu */
 "instagram" = "Instagram";
@@ -1421,6 +1421,10 @@
 
 "type.amenity.parking.underground" = "Подземен паркинг";
 
+"type.amenity.parking.street_side" = "Паркинг";
+
+"type.amenity.parking.lane" = "Паркинг";
+
 "type.amenity.parking_entrance" = "Вход за паркинг";
 
 "type.amenity.parking_entrance.private" = "Вход за паркинг";
@@ -1513,6 +1517,8 @@
 "type.amenity.shelter" = "Shelter";
 
 "type.amenity.shower" = "Shower";
+
+"type.amenity.stripclub" = "Стриптийз клуб";
 
 "type.amenity.taxi" = "Taxi Stand";
 
@@ -1893,6 +1899,8 @@
 
 "type.emergency" = "Emergency";
 
+"type.emergency.assembly_point" = "Авариен сборен пункт";
+
 "type.emergency.defibrillator" = "Defibrillator";
 
 "type.emergency.fire_hydrant" = "Fire Hydrant";
@@ -1943,6 +1951,12 @@
 "type.highway.bridleway.tunnel" = "Тунел";
 
 "type.highway.busway" = "Обособен автобусен път";
+
+/* These translations are used for all type.highway.*.bridge. */
+"type.highway.busway.bridge" = "Мост";
+
+/* These translations are used for all type.highway.*.tunnel. */
+"type.highway.busway.tunnel" = "Тунел";
 
 "type.highway.bus_stop" = "Bus Stop";
 
@@ -3623,6 +3637,8 @@
 
 "type.tourism" = "Tourism";
 
+"type.tourism.aquarium" = "Аквариум";
+
 "type.tourism.alpine_hut" = "Alpine Lodging";
 
 "type.tourism.apartment" = "Holiday Apartment";
@@ -3707,7 +3723,7 @@
 
 "type.waterway.drain" = "Drain";
 
-"type.waterway.drain.tunnel" = "Drain";
+"type.waterway.drain.tunnel" = "Ditch";
 
 "type.waterway.lock_gate" = "Lock Gate";
 

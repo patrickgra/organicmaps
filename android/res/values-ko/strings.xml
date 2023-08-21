@@ -766,6 +766,8 @@
 	<string name="type.amenity.parking.private">전용 주차장</string>
 	<string name="type.amenity.parking.park_and_ride">주차</string>
 	<string name="type.amenity.parking.underground">지하주차장</string>
+	<string name="type.amenity.parking.street_side">주차</string>
+	<string name="type.amenity.parking.lane">주차</string>
 	<string name="type.amenity.parking_entrance">주차장 입구</string>
 	<string name="type.amenity.parking_entrance.private">주차장 입구</string>
 	<string name="type.amenity.parking_entrance.permissive">주차장 입구</string>
@@ -806,6 +808,7 @@
 	<string name="type.amenity.school">학교</string>
 	<string name="type.amenity.shelter">대피소</string>
 	<string name="type.amenity.shower">샤워시설</string>
+	<string name="type.amenity.stripclub">스트립클럽</string>
 	<string name="type.amenity.taxi">택시</string>
 	<string name="type.amenity.telephone">전화</string>
 	<string name="type.amenity.theatre">연극</string>
@@ -956,6 +959,7 @@
 	<string name="type.cuisine.vegan">비건 음식</string>
 	<string name="type.cuisine.vegetarian">채식주의자 음식</string>
 	<string name="type.cuisine.vietnamese">베트남식 음식</string>
+	<string name="type.emergency.assembly_point">비상 집결지</string>
 	<string name="type.emergency.defibrillator">제세동기</string>
 	<string name="type.emergency.fire_hydrant">소화전</string>
 	<string name="type.emergency.phone">긴급 전화</string>
@@ -981,6 +985,10 @@
 	<!-- These translations are used for all type.highway.*.tunnel. -->
 	<string name="type.highway.bridleway.tunnel">터널</string>
 	<string name="type.highway.busway">버스전용도로</string>
+	<!-- These translations are used for all type.highway.*.bridge. -->
+	<string name="type.highway.busway.bridge">다리</string>
+	<!-- These translations are used for all type.highway.*.tunnel. -->
+	<string name="type.highway.busway.tunnel">터널</string>
 	<string name="type.highway.bus_stop">버스 정류장</string>
 	<string name="type.highway.construction">공사 중 도로</string>
 	<!-- These translations are used for all type.highway.*.bridge. -->
@@ -1722,6 +1730,7 @@
 	<string name="type.sport.field_hockey">필드 하키</string>
 	<string name="type.sport.badminton">배드민턴</string>
 	<string name="type.sport.pelota">바스크 펠로타</string>
+	<string name="type.tourism.aquarium">수족관</string>
 	<string name="type.tourism.alpine_hut">고산 오두막</string>
 	<string name="type.tourism.apartment">아파트</string>
 	<string name="type.tourism.artwork">작품</string>
